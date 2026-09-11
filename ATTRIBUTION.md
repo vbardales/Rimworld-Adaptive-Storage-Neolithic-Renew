@@ -40,7 +40,7 @@ and Russian translations.
   copies are the authors' deliberate choice, not redundancy.
 - **`Languages/French/`**, by [Elzetia](https://github.com/elzetia), and **`Languages/Russian/`**,
   translator unnamed in the mod.
-- **`About/Preview.png`** and **`Textures/ASNeolithic/ModIcon.png`**, the authors' own.
+- **`About/Preview.png`**, the authors' own showcase, unchanged.
 
 ## What was left out of the published folder
 
@@ -48,13 +48,19 @@ Four things, none of them content:
 
 - **`About/PublishedFileId.txt`** — the authors' own Workshop item id. Carrying it forward would
   aim the first upload at *their* Workshop item instead of creating a new one.
-- **`About/ModIcon.png`**, removed on 2026-09-11 with the repository-wide icon pass: an icon taken
-  from the source mod is the source author's art standing in for the identity of the port, which
-  is the one place a port should speak for itself. **The question is not closed by that deletion.**
-  `About/ModIcon.png` is only RimWorld's fallback; the icon actually shown comes from
-  `<modIconPath>ASNeolithic/ModIcon</modIconPath>`, which resolves to
-  `Textures/ASNeolithic/ModIcon` — still the authors' art. This mod needs its own mascot icon, to
-  the ModIcon block of `STYLE_RIMWORLD.md`, before it is published.
+- **The mod icon, in all three places it lived.** `About/ModIcon.png` went with the
+  repository-wide icon pass of 2026-09-11, on the rule that a port must not wear the source
+  author's art as its own identity — the one file that is supposed to speak for the port rather
+  than for the mod it carries. That deletion settled nothing on its own: `About/ModIcon.png` is
+  only RimWorld's fallback, and `<modIconPath>ASNeolithic/ModIcon</modIconPath>` went on resolving
+  to `Textures/ASNeolithic/ModIcon`, which is the authors' icon shipped whole — not even a crop.
+  So the field is gone too, with `ModIcon.png` and `ModIcon.dds` beneath it. The original is kept
+  at `Art/ModIcon-original.png`, outside the published folder.
+
+  The mod therefore ships **no icon at all**, deliberately. RimWorld loads happily without one and
+  some forty mods in this repository are in the same state, waiting for theirs. Its own mascot
+  icon, to the ModIcon block of `STYLE_RIMWORLD.md`, is owed before publication: a hors-style icon
+  reads worse than none at 32 px, which is the size that decides.
 - **`About/Preview.dds`** (1.2 MB) and **`About/ModIcon.dds`** — never read by anything.
   `Verse.ModMetaData` looks for the literal filenames `About/Preview.png` and `About/ModIcon.png`,
   verified by reading the two property getters out of `Assembly-CSharp.dll`. The `.dds` pair in
@@ -112,7 +118,8 @@ The original `defName`s are kept, so a save moves between the two mods without l
   children in Core and one in Odyssey. The xpath can never come up empty, so the failure that
   broke Medieval Homestead — a patch aimed at a mod that is not installed — cannot occur here.
 - **No orphan textures.** All 91 `texPath` and `uiIconPath` values resolve to a file, and every
-  file under `Textures/` is reachable from a def, the `Patches/` generators, or `modIconPath`.
+  file under `Textures/` is reachable from a def or from the `Patches/` generators. The one
+  exception used to be `ASNeolithic/ModIcon`, reachable only from `modIconPath`; both are gone.
   The 16 MB is all load-bearing.
 - **`ASFAdaptiveStorage`, the research tab, is defined by this module and no other.** It carries
   the framework's `ASF` prefix, which reads as if the framework owned it, but the framework

@@ -40,10 +40,14 @@ RimWorld 1.6.
   `.dds` there — and all of those are kept.
 - `Misc/`, nine textures the mod's own `info.txt` describes as shelved and never loaded. Moved to
   `Art/shelved-textures/`, outside the published folder.
-- `About/ModIcon.png`, with the repository-wide icon pass of 2026-09-11: a port should not wear the
-  source author's art as its own identity. That deletion alone does not settle it — `About/ModIcon.png`
-  is the fallback, and `<modIconPath>` still resolves to `Textures/ASNeolithic/ModIcon`, which is
-  the authors'. An icon of this mod's own, to the house style, is owed before publication.
+- The mod icon, everywhere it lived: `About/ModIcon.png` with the repository-wide icon pass of
+  2026-09-11, then the `<modIconPath>` field and the `Textures/ASNeolithic/ModIcon.png` and
+  `.dds` it pointed at. A port must not wear the source author's art as its own identity, and
+  here it was not even a crop — it was the authors' icon file, shipped whole and named by the
+  About. Removing only the `About/` fallback had changed nothing on screen. The original is kept
+  at `Art/ModIcon-original.png`, outside the published folder. The mod now ships no icon, which
+  RimWorld handles without complaint; its own mascot, to the house style, is owed before
+  publication.
 
 ### Unchanged
 
@@ -54,6 +58,6 @@ RimWorld 1.6.
 - The three patches, `ChunkStorage.xml`, `LargePot.xml` and `Plinth.xml`. They carry no
   `PatchOperationFindMod` guard and need none: they target `ChunkRockBase`, a Core def.
 - All 352 texture files, in both `.png` and `.dds`.
-- `About/Preview.png` and `Textures/ASNeolithic/ModIcon.png`, the authors' own.
+- `About/Preview.png`, the authors' own showcase.
 - `LICENSE` — the MIT notice, `Copyright (c) 2023 Soul, Phaneron, bradson`, verbatim, at the
   repository root and inside `Mod/`.

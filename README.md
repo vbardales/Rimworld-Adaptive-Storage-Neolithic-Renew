@@ -91,9 +91,15 @@ duplicate all 71 defs. The `defName`s being identical is also what lets a save m
 ```
 Mod/     the published folder — this is what the junction into RimWorld/Mods points at,
          and what Steam uploads, unfiltered
-Art/     source material kept out of the upload: the original preview, and the nine
-         shelved textures the mod never loaded
+Art/     source material kept out of the upload: the original preview, the original
+         mod icon the port no longer wears, and the nine shelved textures the mod
+         never loaded
 ```
+
+The mod ships **no icon**. The one it had was the original authors', and a port must not wear the
+source author's art as its own identity — that is the single file meant to speak for the port
+rather than for the mod it carries. Its own mascot icon is owed before publication; until then
+RimWorld simply shows none, as it does for some forty other mods here.
 
 `Mod/LICENSE` is not a stray duplicate. MIT requires the notice to accompany every distribution,
 and Steam ships the contents of `Mod/` and nothing else.
@@ -104,7 +110,7 @@ and Steam ships the contents of `Mod/` and nothing else.
   both openly.
 - **[Elzetia](https://github.com/elzetia)** — the French translation this port extends.
 - The port work was done with the help of an AI assistant (Claude, by Anthropic), under human
-  direction and in-game testing.
+  direction. The mod has never been run in game.
 
 ## Licence
 
