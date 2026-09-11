@@ -1,4 +1,4 @@
-# Adaptive Storage Neolithic Module Renew
+# Adaptive Storage Neolithic Renew
 
 Port of **Soul, Phaneron and bradson's Adaptive Storage Neolithic Module** to RimWorld 1.6.
 
