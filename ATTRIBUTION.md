@@ -40,7 +40,23 @@ and Russian translations.
   copies are the authors' deliberate choice, not redundancy.
 - **`Languages/French/`**, by [Elzetia](https://github.com/elzetia), and **`Languages/Russian/`**,
   translator unnamed in the mod.
-- **`About/Preview.png`**, the authors' own showcase, unchanged.
+## The two images, which are the only things here that are not the authors'
+
+Both were generated with an image model on 2026-09-11, under direction, and neither borrows a
+pixel from the mod. They are offered under the same MIT terms as the rest of the port work.
+
+- **`About/ModIcon.png`** (128x128) — the repository's mascot, with the mod's containers around
+  her. An icon is the one file that speaks for the port rather than for the mod it carries, so
+  it must not be the source author's art. See below for what used to be there.
+- **`About/Preview.png`** (896x504) — a neolithic storeroom where every container shows its
+  contents, which is the one thing this mod does. It replaces the authors' own showcase, which
+  had been carried over unchanged until this date and is kept at `Art/Preview-original.png`,
+  outside the published folder. Their showcase was never a problem: the MIT licence covers it
+  and it was theirs to lend. The port simply has its own now.
+
+Full-resolution sources are kept at `Art/AdaptiveStorageNeolithic-icon-source.png` and
+`Art/Preview-source.png`. Neither overwrites the authors' files, which sit beside them under
+their own names.
 
 ## What was left out of the published folder
 
@@ -57,10 +73,9 @@ Four things, none of them content:
   So the field is gone too, with `ModIcon.png` and `ModIcon.dds` beneath it. The original is kept
   at `Art/ModIcon-original.png`, outside the published folder.
 
-  The mod therefore ships **no icon at all**, deliberately. RimWorld loads happily without one and
-  some forty mods in this repository are in the same state, waiting for theirs. Its own mascot
-  icon, to the ModIcon block of `STYLE_RIMWORLD.md`, is owed before publication: a hors-style icon
-  reads worse than none at 32 px, which is the size that decides.
+  The mod shipped no icon at all for the rest of that day. It now has its own, generated rather
+  than cropped, and `About/ModIcon.png` is once more the file RimWorld reads. `<modIconPath>`
+  stays gone: restoring it would point back at the authors' texture and undo the whole point.
 - **`About/Preview.dds`** (1.2 MB) and **`About/ModIcon.dds`** — never read by anything.
   `Verse.ModMetaData` looks for the literal filenames `About/Preview.png` and `About/ModIcon.png`,
   verified by reading the two property getters out of `Assembly-CSharp.dll`. The `.dds` pair in

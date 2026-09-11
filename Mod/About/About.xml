@@ -58,7 +58,7 @@ Content mod: removing it mid-save destroys any of these containers already built
 
 Source, changelog and attribution: https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew
 
-The port work was done with the help of an AI assistant (Claude, by Anthropic), under human direction. Thanks to Soul, Phaneron and bradson for the mod and for licensing it openly, and to Elzetia for the French translation this port extends.
+The port work was done with the help of an AI assistant (Claude, by Anthropic), and the mod icon and the preview image were generated with an image model, under human direction. Those two images are the only things here that are not the authors' own: the artwork you see in game is entirely theirs. Thanks to Soul, Phaneron and bradson for the mod and for licensing it openly, and to Elzetia for the French translation this port extends.
 
 If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.</description>
 </ModMetaData>

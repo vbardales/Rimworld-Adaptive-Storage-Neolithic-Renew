@@ -91,15 +91,16 @@ duplicate all 71 defs. The `defName`s being identical is also what lets a save m
 ```
 Mod/     the published folder — this is what the junction into RimWorld/Mods points at,
          and what Steam uploads, unfiltered
-Art/     source material kept out of the upload: the original preview, the original
-         mod icon the port no longer wears, and the nine shelved textures the mod
-         never loaded
+Art/     source material kept out of the upload: the authors' original preview and mod
+         icon, which the port no longer wears, the full-resolution sources of the two
+         images it wears instead, and the nine shelved textures the mod never loaded
 ```
 
-The mod ships **no icon**. The one it had was the original authors', and a port must not wear the
-source author's art as its own identity — that is the single file meant to speak for the port
-rather than for the mod it carries. Its own mascot icon is owed before publication; until then
-RimWorld simply shows none, as it does for some forty other mods here.
+**The icon and the preview are the port's own, and the only things here that are not the
+authors'.** Both were generated with an image model rather than cropped out of the mod, because
+a port must not wear the source author's art as its own identity — the icon especially, being
+the single file meant to speak for the port rather than for the mod it carries. The authors'
+originals are kept under `Art/`, unaltered.
 
 `Mod/LICENSE` is not a stray duplicate. MIT requires the notice to accompany every distribution,
 and Steam ships the contents of `Mod/` and nothing else.

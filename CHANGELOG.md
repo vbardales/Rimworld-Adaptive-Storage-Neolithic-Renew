@@ -45,9 +45,23 @@ RimWorld 1.6.
   `.dds` it pointed at. A port must not wear the source author's art as its own identity, and
   here it was not even a crop — it was the authors' icon file, shipped whole and named by the
   About. Removing only the `About/` fallback had changed nothing on screen. The original is kept
-  at `Art/ModIcon-original.png`, outside the published folder. The mod now ships no icon, which
-  RimWorld handles without complaint; its own mascot, to the house style, is owed before
-  publication.
+  at `Art/ModIcon-original.png`, outside the published folder. The mod went without an icon for
+  the rest of that day, before receiving its own — see below. `<modIconPath>` stays gone either
+  way: it named the authors' texture.
+
+### Added
+
+- `About/ModIcon.png` (128x128, 28 KB) and `About/Preview.png` (896x504, 630 KB), both generated
+  with an image model rather than cropped out of the mod, and the only files here that are not
+  the authors'. The icon is the repository's mascot with the mod's containers around her; the
+  preview is a neolithic storeroom where every container shows its contents, which is the one
+  thing this mod does.
+
+  The preview replaces the authors' own showcase, which had shipped unchanged until now. Nothing
+  was wrong with theirs — the MIT licence covers it and it was theirs to lend — the port simply
+  has its own. Both originals are kept at `Art/Preview-original.png` and
+  `Art/ModIcon-original.png`, and the full-resolution generator output at
+  `Art/Preview-source.png` and `Art/AdaptiveStorageNeolithic-icon-source.png`.
 
 ### Unchanged
 
