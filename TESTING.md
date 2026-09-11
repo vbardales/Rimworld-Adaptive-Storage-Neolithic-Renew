@@ -82,6 +82,25 @@ appear with Odyssey active, the generation is matching on something narrower tha
 **Also confirm:** the stone variants collapse into ONE architect entry with a dropdown, not six
 loose buttons. That is the `DesignatorDropdownGroupDef` doing its job.
 
+### 4b. A stone this mod has never met
+
+This is the only test in the file that can catch a regression rather than an installation mistake,
+and it is the case players will actually hit. Vacstone proves the generation picks up what Odyssey
+adds, but Odyssey is official content that keeps the game's own conventions. A stone from a third
+party is the real edge.
+
+1. Activate any mod that adds a stone type — Alpha Biomes and Vanilla Factions Expanded each add
+   several, and anything whose chunk derives from `ChunkRockBase` will do.
+2. Open the same three dropdowns.
+
+**Pass:** that stone's pot, plinth and chunk stack are there too, carrying the stone's own label
+and colour, exactly as the official five do.
+
+**Fail, and read it carefully.** A stone that is absent means its chunk does not derive from
+`ChunkRockBase`, which is the other mod's choice and not a defect here. A stone that is present
+but untinted, or labelled with its raw defName, means the interpolation found the node and not the
+field — that one IS this mod's bug, and it would hit every third-party stone alike.
+
 ## 5. The one thing this mod exists for
 
 Every container shows what is inside it. If this fails, nothing else being right matters.
@@ -156,17 +175,7 @@ the bug looked like before.
 Separately, and this is the reason the defNames were kept: a save made with the original should
 load with this mod in its place, containers and contents intact.
 
-## 10. The furniture behaves like furniture
-
-Quick checks, all on a basket:
-
-- **Minify and re-install.** `minifiedDef` is set, so it should uninstall into a carryable item.
-- **Paint it.** `paintable` is true, so the paint designator should take.
-- **Leave food in it outdoors.** `preventDeteriorationOnTop` is true, so what is inside must not
-  rot from exposure the way an open stockpile would.
-- **Deconstruct it.** `leaveResourcesWhenKilled` is true on baskets, so materials come back.
-
-## 11. The icon and the showcase
+## 10. The icon and the showcase
 
 Both images are the port's own, generated rather than cropped, and neither has been seen in place.
 
@@ -179,7 +188,7 @@ old icon appearing instead. That would mean `<modIconPath>` came back, which wou
 The 896x504 showcase can only be judged on the Workshop page after the first upload, where it is
 drawn about 268 px wide.
 
-## 12. A save survives a reload
+## 11. A save survives a reload
 
 Build one of each, fill them, save, quit to the menu, reload.
 
