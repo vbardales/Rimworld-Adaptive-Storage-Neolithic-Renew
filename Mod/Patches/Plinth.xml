@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="GeneratorOperation.DefGenerator">
+		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"]</xpath>
+		<value><![CDATA[
+			<ThingDef ParentName="ASNeolithicPlinthStone">
+				<defName>ASNeolithicPlinth{defName/text()}</defName>
+				<graphicData>{graphicData/color}</graphicData>
+				<label>{label/text()} plinth</label>
+				<uiIconColor>{graphicData/color/text()}</uiIconColor>
+				<costList>
+					<{defName/text()}>2</{defName/text()}>
+				</costList>
+			</ThingDef>
+		]]></value>
+	</Operation>
+
+	<Operation Class="GeneratorOperation.PatchGenerator">
+		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"]</xpath>
+		<value><![CDATA[
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="ASNeolithicPlinthStone"]/targetDefs</xpath>
+				<value>
+					<li>ASNeolithicPlinth{defName/text()}</li>
+				</value>
+			</Operation>
+		]]></value>
+	</Operation>
+</Patch>

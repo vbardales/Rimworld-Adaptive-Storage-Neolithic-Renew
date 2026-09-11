@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ASNeolithicStorageBase" Name="ASNeolithicChunkStorageBase" Abstract="True">
+		<graphicData>
+			<texPath>ASNeolithic/ChunkStorage/StoneChunksStage1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+		<label>stacked chunks</label>
+		<description>A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover.</description>
+		<fillPercent>0.50</fillPercent>
+		<uiIconPath>ASNeolithic/ChunkStorage/StoneChunksStage3_south</uiIconPath>
+		<uiIconScale>1.6</uiIconScale>
+		<size>(2,1)</size>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>-16</Beauty>
+			<Cleanliness>-2</Cleanliness>
+			<Mass>40</Mass>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<maxItemsInCell>3</maxItemsInCell>
+		</building>
+		<designatorDropdown>ASNeolithicChunkStorage</designatorDropdown>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,44 @@
+MIT License
+
+Copyright (c) 2023 Soul, Phaneron, bradson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---------------------------------------------------------------------------
+SCOPE OF THE ABOVE
+
+The notice above is the ORIGINAL AUTHORS'. It is Soul, Phaneron and bradson's
+own MIT licence, shipped with Adaptive Storage Neolithic Module:
+
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895
+
+It travels with this port because MIT requires it to, and because it is what
+grants the right to publish this port at all. The one thing the authors ask in
+their README is that they be credited; About/About.xml and ATTRIBUTION.md do
+that by name.
+
+The 1.6 port work - the Definjected folder-name correction, the six French keys
+for vacstone, the packaging and the documentation - is nelim's, and is offered
+under the same MIT terms as the notice above. Nothing in it is claimed apart
+from the original.
+
+The buildings, their stats, their graphics, their research and their 71 defs are
+the original authors'. ATTRIBUTION.md records what was taken and what was
+changed.

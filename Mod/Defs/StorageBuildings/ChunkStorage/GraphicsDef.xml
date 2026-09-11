@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AdaptiveStorage.GraphicsDef>
+		<defName>ASNeolithicChunkStorageA</defName>
+		<targetDefs />
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/ChunkStorage/StoneChunksStage1</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,2)</drawSize>
+				</graphicData>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/ChunkStorage/StoneChunksStage2</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,2)</drawSize>
+				</graphicData>
+				<minimumStackCount>2</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/ChunkStorage/StoneChunksStage3</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,2)</drawSize>
+				</graphicData>
+				<minimumStackCount>6</minimumStackCount>
+			</li>
+		</graphics>
+		<showContainedItems>false</showContainedItems>
+		<useDominantContentColor>true</useDominantContentColor>
+	</AdaptiveStorage.GraphicsDef>
+
+	<!-- disabled for now -->
+	<!-- AdaptiveStorage.GraphicsDef>
+		<defName>ASNeolithicChunkStorageB</defName>
+		<targetDefs />
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/ChunkStorage/StoneChunksStage1a</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(3,2)</drawSize>
+				</graphicData>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/ChunkStorage/StoneChunksStage2a</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(3,2)</drawSize>
+				</graphicData>
+				<minimumStackCount>2</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/ChunkStorage/StoneChunksStage3a</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(3,2)</drawSize>
+				</graphicData>
+				<minimumStackCount>6</minimumStackCount>
+			</li>
+		</graphics>
+		<showContainedItems>false</showContainedItems>
+		<useDominantContentColor>true</useDominantContentColor>
+	</AdaptiveStorage.GraphicsDef -->
+</Defs>

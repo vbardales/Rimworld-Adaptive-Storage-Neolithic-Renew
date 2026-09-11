@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AdaptiveStorage.GraphicsDef Name="ASNeolithicBasketBase" Abstract="True">
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<drawOffset>(0,0,0.45)</drawOffset>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffsetFactor>0.3</stackOffsetFactor>
+						</r0>
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+	</AdaptiveStorage.GraphicsDef>
+	
+	<AdaptiveStorage.GraphicsDef ParentName="ASNeolithicBasketBase">
+		<defName>ASNeolithicBasketWoody</defName>
+		<targetDef>ASNeolithicBasketWoody</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/Basket/BasketBase</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(1.9,1.9)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+		</graphics>
+	</AdaptiveStorage.GraphicsDef>
+	
+	<AdaptiveStorage.GraphicsDef ParentName="ASNeolithicBasketBase">
+		<defName>ASNeolithicBasketFabric</defName>
+		<targetDef>ASNeolithicBasketFabric</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/Basket/BasketFabric</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(1.9,1.9)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+		</graphics>
+	</AdaptiveStorage.GraphicsDef>
+</Defs>

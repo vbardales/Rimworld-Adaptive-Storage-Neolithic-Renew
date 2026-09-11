@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Basket -->
+  <ASNeolithicBasketWoody.label>Корзина</ASNeolithicBasketWoody.label>
+  <ASNeolithicBasketWoody.description>Большая корзина из дерева для хранения самых разных вещей.</ASNeolithicBasketWoody.description>
+  <ASNeolithicBasketFabric.label>Корзина</ASNeolithicBasketFabric.label>
+  <ASNeolithicBasketFabric.description>Большая корзина из ткани или высушенной кожи для хранения самых разных вещей.</ASNeolithicBasketFabric.description>
+
+  <!-- Haypile -->
+  <ASNeolithicHayPile.label>Стог сена</ASNeolithicHayPile.label>
+  <ASNeolithicHayPile.description>Стог сена для удобства хранения.</ASNeolithicHayPile.description>
+
+  <!-- Large Pot -->
+  <ASNeolithicLargePot.label>Большой горшок</ASNeolithicLargePot.label>
+  <ASNeolithicLargePot.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePot.description>
+  <ASNeolithicLargePotChunkGranite.label>Большой горшок из гранита</ASNeolithicLargePotChunkGranite.label>
+  <ASNeolithicLargePotChunkGranite.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePotChunkGranite.description>
+  <ASNeolithicLargePotChunkSandstone.label>Большой горшок из песчаника</ASNeolithicLargePotChunkSandstone.label>
+  <ASNeolithicLargePotChunkSandstone.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePotChunkSandstone.description>
+  <ASNeolithicLargePotChunkLimestone.label>Большой горшок из известняка</ASNeolithicLargePotChunkLimestone.label>
+  <ASNeolithicLargePotChunkLimestone.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePotChunkLimestone.description>
+  <ASNeolithicLargePotChunkSlate.label>Большой горшок из сланца</ASNeolithicLargePotChunkSlate.label>
+  <ASNeolithicLargePotChunkSlate.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePotChunkSlate.description>
+  <ASNeolithicLargePotChunkMarble.label>Большой горшок из мрамора</ASNeolithicLargePotChunkMarble.label>
+  <ASNeolithicLargePotChunkMarble.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePotChunkMarble.description>
+
+  <!-- MealShelf -->
+  <ASNeolithicMealShelf.label>Полки для блюд</ASNeolithicMealShelf.label>
+  <ASNeolithicMealShelf.description>Импровизированные полки для хранения блюд.</ASNeolithicMealShelf.description>
+
+  <!-- Plinth -->
+  <ASNeolithicPlinthWoody.label>Подиум</ASNeolithicPlinthWoody.label>
+  <ASNeolithicPlinthWoody.description>Деревянный подиум с красивой гравировкой для демонстрации предметов.</ASNeolithicPlinthWoody.description>
+  <ASNeolithicPlinthChunkGranite.label>Подиум из гранита</ASNeolithicPlinthChunkGranite.label>
+  <ASNeolithicPlinthChunkGranite.description>Подиум из необработанного гранита с красивой гравировкой для демонстрации предметов.</ASNeolithicPlinthChunkGranite.description>
+  <ASNeolithicPlinthChunkSandstone.label>Подиум из песчаника</ASNeolithicPlinthChunkSandstone.label>
+  <ASNeolithicPlinthChunkSandstone.description>Подиум из необработанного песчаника с красивой гравировкой для отображения предметов.</ASNeolithicPlinthChunkSandstone.description>
+  <ASNeolithicPlinthChunkLimestone.label>Подиум из известняка</ASNeolithicPlinthChunkLimestone.label>
+  <ASNeolithicPlinthChunkLimestone.description>Подиум из необработанного известняка с красивой гравировкой для отображения предметов.</ASNeolithicPlinthChunkLimestone.description>
+  <ASNeolithicPlinthChunkSlate.label>Подиум из сланца</ASNeolithicPlinthChunkSlate.label>
+  <ASNeolithicPlinthChunkSlate.description>Подиум из необработанного сланца с красивой гравировкой для отображения предметов.</ASNeolithicPlinthChunkSlate.description>
+  <ASNeolithicPlinthChunkMarble.label>Подиум из мрамора</ASNeolithicPlinthChunkMarble.label>
+  <ASNeolithicPlinthChunkMarble.description>Подиум из необработанного мрамора с красивой гравировкой для демонстрации предметов.</ASNeolithicPlinthChunkMarble.description>
+
+  <!-- Textile Bundle -->
+  <ASNeolithicTextileBundleFabric.label>Свёрток</ASNeolithicTextileBundleFabric.label>
+  <ASNeolithicTextileBundleFabric.description>Несколько свёртков ткани сложены друг на друга в аккуратную стопку.</ASNeolithicTextileBundleFabric.description>
+  <ASNeolithicTextileBundleLeather.label>Свёрток</ASNeolithicTextileBundleLeather.label>
+  <ASNeolithicTextileBundleLeather.description>Несколько свёртков кожи сложены друг на друга в аккуратную стопку.</ASNeolithicTextileBundleLeather.description>
+
+  <!-- WoodPile -->
+  <ASNeolithicWoodPile.label>Поленница</ASNeolithicWoodPile.label>
+  <ASNeolithicWoodPile.description>Несколько грубых бревен, брошенных друг на друга в кучу.</ASNeolithicWoodPile.description>
+
+  <!-- ChunkStorage -->
+  <ASNeolithicChunkStorageChunkGranite.label>Куча гранитных обломков</ASNeolithicChunkStorageChunkGranite.label>
+  <ASNeolithicChunkStorageChunkGranite.description>Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия.</ASNeolithicChunkStorageChunkGranite.description>
+  <ASNeolithicChunkStorageChunkSandstone.label>Куча песчаниковых обломков</ASNeolithicChunkStorageChunkSandstone.label>
+  <ASNeolithicChunkStorageChunkSandstone.description>Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия.</ASNeolithicChunkStorageChunkSandstone.description>
+  <ASNeolithicChunkStorageChunkLimestone.label>Куча известняковых обломков</ASNeolithicChunkStorageChunkLimestone.label>
+  <ASNeolithicChunkStorageChunkLimestone.description>Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия.</ASNeolithicChunkStorageChunkLimestone.description>
+  <ASNeolithicChunkStorageChunkSlate.label>Куча сланцевых обломков</ASNeolithicChunkStorageChunkSlate.label>
+  <ASNeolithicChunkStorageChunkSlate.description>Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия.</ASNeolithicChunkStorageChunkSlate.description>
+  <ASNeolithicChunkStorageChunkMarble.label>Куча мраморных обломков</ASNeolithicChunkStorageChunkMarble.label>
+  <ASNeolithicChunkStorageChunkMarble.description>Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия.</ASNeolithicChunkStorageChunkMarble.description>
+
+</LanguageData>

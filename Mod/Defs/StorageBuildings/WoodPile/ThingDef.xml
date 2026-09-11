@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ASNeolithicStorageBase">
+		<defName>ASNeolithicWoodPile</defName>
+		<label>pile</label>
+		<graphicData>
+			<texPath>ASNeolithic/WoodPile/WoodPilea</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.9,1.9)</drawSize>
+		</graphicData>
+		<description>A couple of rough looking logs thrown upon each other into a pile.</description>
+		<fillPercent>0.30</fillPercent>
+		<uiIconPath>ASNeolithic/WoodPile/WoodPilec_south</uiIconPath>
+		<uiIconScale>1.4</uiIconScale>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>-2</Beauty>
+			<Mass>8</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<maxItemsInCell>3</maxItemsInCell>
+		</building>
+		<!-- designatorDropdown>ASNeolithicWoodPile</designatorDropdown -->
+		<modExtensions>
+			<li Class="AdaptiveStorage.Extension">
+				<lockStorageSettingsToStuff>true</lockStorageSettingsToStuff>
+				<labelFormat>StuffAsNoun</labelFormat>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

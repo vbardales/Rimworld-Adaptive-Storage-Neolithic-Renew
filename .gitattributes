@@ -1,0 +1,28 @@
+# Normalise line endings in the repository, while each machine keeps its own.
+#
+# The monorepo's own .gitattributes covers this folder while it lives there, but
+# `git subtree split` exports the folder alone and the root's rules do not travel with it.
+# This copy is what the published repository gets.
+#
+# It matters more here than in most mods: 352 of this mod's files are textures, and half of
+# them are .dds.
+
+* text=auto
+
+# ---------- Text ----------
+
+*.xml  text
+*.md   text
+*.txt  text
+
+# ---------- Binaries: neither normalised nor diffed as text ----------
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# DirectDraw Surface: RimWorld accepts .dds alongside .png and this mod ships one for nearly
+# every texture. Listed rather than left to git's NUL-byte sniffing, and twice because
+# attribute patterns are not case-folded.
+*.dds binary
+*.DDS binary

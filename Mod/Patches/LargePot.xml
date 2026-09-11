@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="GeneratorOperation.DefGenerator">
+		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"]</xpath>
+		<value><![CDATA[
+			<ThingDef ParentName="ASNeolithicLargePotStoneThingBase">
+				<defName>ASNeolithicLargePot{defName/text()}</defName>
+				<label>{label/text()} large pot</label>
+				<graphicData>
+					<color>{graphicData/color/text()}</color>
+				</graphicData>
+				<uiIconColor>{graphicData/color/text()}</uiIconColor>
+				<costList>
+					<{defName/text()}>1</{defName/text()}>
+				</costList>
+			</ThingDef>
+		]]></value>
+	</Operation>
+
+	<Operation Class="GeneratorOperation.PatchGenerator">
+		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"]</xpath>
+		<value><![CDATA[
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AdaptiveStorage.GraphicsDef[@Name="ASNeolithicLargePotStoneBase"]/targetDefs</xpath>
+				<value>
+					<li>ASNeolithicLargePot{defName/text()}</li>
+				</value>
+			</Operation>
+		]]></value>
+	</Operation>
+</Patch>

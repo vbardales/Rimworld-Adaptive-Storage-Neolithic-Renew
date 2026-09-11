@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ASNeolithicStorageBase" Name="ASNeolithicLargePotThingBase" Abstract="True">
+		<label>large pot</label>
+		<graphicData>
+			<texPath>ASNeolithic/LargePot/LargePotBase</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.9,1.9)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<description>A large carved pot meant for the storage of perishable food.</description>
+		<fillPercent>0.20</fillPercent>
+		<uiIconPath>ASNeolithic/LargePot/LargePotMixed</uiIconPath>
+		<uiIconScale>1.6</uiIconScale>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Beauty>-2</Beauty>
+			<Mass>8</Mass>
+		</statBases>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<maxItemsInCell>3</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Kibble</li>
+						<li>Pemmican</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<paintable>true</paintable>
+		</building>
+		<!-- designatorDropdown>ASNeolithicLargePot</designatorDropdown -->
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ASNeolithicLargePotThingBase">
+		<defName>ASNeolithicLargePot</defName>
+		<statBases>
+			<Flammability>1</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="ASNeolithicLargePotThingBase" Name="ASNeolithicLargePotStoneThingBase" Abstract="True">
+		<graphicData>
+			<texPath>ASNeolithic/LargePot/LargePotBaseStone</texPath>
+		</graphicData>
+		<uiIconPath>ASNeolithic/LargePot/LargePotMixedStone</uiIconPath>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<designatorDropdown>ASNeolithicLargePot</designatorDropdown>
+	</ThingDef>
+</Defs>

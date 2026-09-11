@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ASNeolithicItemDisplayBase" Name="ASNeolithicPlinthBase" Abstract="True">
+		<label>plinth</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.9,1.9)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<description>A rough plinth with beautiful engravings for displaying items.</description>
+		<fillPercent>0.20</fillPercent>
+		<uiIconScale>1.3</uiIconScale>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>21600</WorkToBuild>
+			<Beauty>30</Beauty>
+			<Mass>16</Mass>
+		</statBases>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<building>
+			<maxItemsInCell>1</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>Root</li> <!-- everything -->
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Awful</minQualityForArtistic>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="ASNeolithicPlinthBase">
+		<defName>ASNeolithicPlinthWoody</defName>
+		<graphicData>
+			<texPath>ASNeolithic/Plinth/WoodenPlinth</texPath>
+		</graphicData>
+		<uiIconPath>ASNeolithic/Plinth/WoodenPlinth</uiIconPath>
+		<statBases>
+			<Flammability>1</Flammability>
+		</statBases>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ASNeolithicPlinthBase" Name="ASNeolithicPlinthStone" Abstract="True">
+		<graphicData>
+			<texPath>ASNeolithic/Plinth/StonePlinth</texPath>
+		</graphicData>
+		<uiIconPath>ASNeolithic/Plinth/StonePlinth</uiIconPath>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<designatorDropdown>ASNeolithicPlinthStone</designatorDropdown>
+	</ThingDef>
+</Defs>

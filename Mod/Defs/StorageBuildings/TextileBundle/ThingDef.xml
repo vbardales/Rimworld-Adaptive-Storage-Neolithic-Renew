@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ASNeolithicStorageBase" Name="ASNeolithicTextileBundleBase" Abstract="True">
+		<label>bundle</label>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.9,1.9)</drawSize>
+		</graphicData>
+		<description>A couple of textiles stacked upon each other into a neat pile.</description>
+		<fillPercent>0.20</fillPercent>
+		<uiIconScale>1.4</uiIconScale>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>-2</Beauty>
+			<Mass>5</Mass>
+		</statBases>
+		<costStuffCount>30</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+		</building>
+		<!-- designatorDropdown>ASNeolithicTextileBundle</designatorDropdown -->
+		<modExtensions>
+			<li Class="AdaptiveStorage.Extension">
+				<lockStorageSettingsToStuff>true</lockStorageSettingsToStuff>
+				<labelFormat>StuffAsNoun</labelFormat>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="ASNeolithicTextileBundleBase">
+		<defName>ASNeolithicTextileBundleFabric</defName>
+		<graphicData>
+			<texPath>ASNeolithic/TextileBundle/TextileBundleFabrica</texPath>
+		</graphicData>
+		<uiIconPath>ASNeolithic/TextileBundle/TextileBundleFabricc_south</uiIconPath>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+	<ThingDef ParentName="ASNeolithicTextileBundleBase">
+		<defName>ASNeolithicTextileBundleLeather</defName>
+		<graphicData>
+			<texPath>ASNeolithic/TextileBundle/TextileBundleLeathera</texPath>
+		</graphicData>
+		<uiIconPath>ASNeolithic/TextileBundle/TextileBundleLeatherc_south</uiIconPath>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- mixing dropdowns with stuffables behaves fucky in the architect menu -->
+	<!-- DesignatorDropdownGroupDef>
+		<defName>ASNeolithicTextileBundle</defName> 
+	</DesignatorDropdownGroupDef -->
+</Defs>

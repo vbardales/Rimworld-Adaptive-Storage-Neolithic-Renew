@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Basket -->
+  <ASNeolithicBasketWoody.label>panier</ASNeolithicBasketWoody.label>
+  <ASNeolithicBasketWoody.description>Un grand panier fait de bois, de tissus ou de cuir séché pour stocker toutes sortes d'objets différents.</ASNeolithicBasketWoody.description>
+  <ASNeolithicBasketFabric.label>panier</ASNeolithicBasketFabric.label>
+  <ASNeolithicBasketFabric.description>Un grand panier fait de bois, de tissus ou de cuir séché pour stocker toutes sortes d'objets différents.</ASNeolithicBasketFabric.description>
+
+  <!-- Haypile -->
+  <ASNeolithicHayPile.label>botte de foin</ASNeolithicHayPile.label>
+  <ASNeolithicHayPile.description>Un tas de foin pour un stockage plus facile.</ASNeolithicHayPile.description>
+
+  <!-- Large Pot -->
+  <ASNeolithicLargePot.label>grand pot</ASNeolithicLargePot.label>
+  <ASNeolithicLargePot.description>Un grand pot taillé destiné au stockage des aliments périssables.</ASNeolithicLargePot.description>
+  <ASNeolithicLargePotChunkGranite.label>Grand pot en granite</ASNeolithicLargePotChunkGranite.label>
+  <ASNeolithicLargePotChunkGranite.description>Un grand pot taillé destiné au stockage des aliments périssables.</ASNeolithicLargePotChunkGranite.description>
+  <ASNeolithicLargePotChunkSandstone.label>Grand pot en grès</ASNeolithicLargePotChunkSandstone.label>
+  <ASNeolithicLargePotChunkSandstone.description>Un grand pot taillé destiné au stockage des aliments périssables.</ASNeolithicLargePotChunkSandstone.description>
+  <ASNeolithicLargePotChunkLimestone.label>Grand pot en calcaire</ASNeolithicLargePotChunkLimestone.label>
+  <ASNeolithicLargePotChunkLimestone.description>Un grand pot taillé destiné au stockage des aliments périssables.</ASNeolithicLargePotChunkLimestone.description>
+  <ASNeolithicLargePotChunkSlate.label>Grand pot en ardoise</ASNeolithicLargePotChunkSlate.label>
+  <ASNeolithicLargePotChunkSlate.description>Un grand pot taillé destiné au stockage des aliments périssables.</ASNeolithicLargePotChunkSlate.description>
+  <ASNeolithicLargePotChunkMarble.label>Grand pot en marbre</ASNeolithicLargePotChunkMarble.label>
+  <ASNeolithicLargePotChunkMarble.description>Un grand pot taillé destiné au stockage des aliments périssables.</ASNeolithicLargePotChunkMarble.description>
+
+  <!-- Vacstone comes with Odyssey, and only exists in 1.6. The three defs below are generated
+       by Patches/ from every ChunkRockBase child, so they appear as soon as Odyssey is on. -->
+  <ASNeolithicLargePotChunkVacstone.label>Grand pot en vaccolithe</ASNeolithicLargePotChunkVacstone.label>
+  <ASNeolithicLargePotChunkVacstone.description>Un grand pot taillé destiné au stockage des aliments périssables.</ASNeolithicLargePotChunkVacstone.description>
+
+  <!-- MealShelf -->
+  <ASNeolithicMealShelf.label>étagère à repas</ASNeolithicMealShelf.label>
+  <ASNeolithicMealShelf.description>Une étagère de fortune à des fins de stockage de repas.</ASNeolithicMealShelf.description>
+
+  <!-- Plinth -->
+  <ASNeolithicPlinthWoody.label>socle</ASNeolithicPlinthWoody.label>
+  <ASNeolithicPlinthWoody.description>Un socle en bois avec de belles gravures pour exposer des objets.</ASNeolithicPlinthWoody.description>
+  <ASNeolithicPlinthChunkGranite.label>socle en granite</ASNeolithicPlinthChunkGranite.label>
+  <ASNeolithicPlinthChunkGranite.description>Un socle en granite brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkGranite.description>
+  <ASNeolithicPlinthChunkSandstone.label>socle en grès</ASNeolithicPlinthChunkSandstone.label>
+  <ASNeolithicPlinthChunkSandstone.description>Un socle en grès brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkSandstone.description>
+  <ASNeolithicPlinthChunkLimestone.label>socle en calcaire</ASNeolithicPlinthChunkLimestone.label>
+  <ASNeolithicPlinthChunkLimestone.description>Un socle en calcaire brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkLimestone.description>
+  <ASNeolithicPlinthChunkSlate.label>socle en ardoise</ASNeolithicPlinthChunkSlate.label>
+  <ASNeolithicPlinthChunkSlate.description>Un socle en ardoise brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkSlate.description>
+  <ASNeolithicPlinthChunkMarble.label>socle en marbre</ASNeolithicPlinthChunkMarble.label>
+  <ASNeolithicPlinthChunkMarble.description>Un socle en marbre brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkMarble.description>
+  <ASNeolithicPlinthChunkVacstone.label>socle en vaccolithe</ASNeolithicPlinthChunkVacstone.label>
+  <ASNeolithicPlinthChunkVacstone.description>Un socle en vaccolithe avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkVacstone.description>
+
+  <!-- Textile Bundle -->
+  <ASNeolithicTextileBundleFabric.label>ballot</ASNeolithicTextileBundleFabric.label>
+  <ASNeolithicTextileBundleFabric.description>Plusieurs textiles empilés les uns sur les autres en une pile soignée.</ASNeolithicTextileBundleFabric.description>
+  <ASNeolithicTextileBundleLeather.label>ballot</ASNeolithicTextileBundleLeather.label>
+  <ASNeolithicTextileBundleLeather.description>Plusieurs textiles empilés les uns sur les autres en une pile soignée.</ASNeolithicTextileBundleLeather.description>
+
+  <!-- WoodPile -->
+  <ASNeolithicWoodPile.label>fagot</ASNeolithicWoodPile.label>
+  <ASNeolithicWoodPile.description>Quelques bûches à l'aspect brut jetées les unes sur les autres en un tas.</ASNeolithicWoodPile.description>
+
+  <!-- ChunkStorage -->
+  <ASNeolithicChunkStorageChunkGranite.label>Amas de granite</ASNeolithicChunkStorageChunkGranite.label>
+  <ASNeolithicChunkStorageChunkGranite.description>Un tas de débris, constitué de morceaux et soutenant d'autres morceaux. Facile à réaliser et assez efficace comme couverture.</ASNeolithicChunkStorageChunkGranite.description>
+  <ASNeolithicChunkStorageChunkSandstone.label>Amas de grès</ASNeolithicChunkStorageChunkSandstone.label>
+  <ASNeolithicChunkStorageChunkSandstone.description>Un tas de débris, constitué de morceaux et soutenant d'autres morceaux. Facile à réaliser et assez efficace comme couverture.</ASNeolithicChunkStorageChunkSandstone.description>
+  <ASNeolithicChunkStorageChunkLimestone.label>Amas de calcaire</ASNeolithicChunkStorageChunkLimestone.label>
+  <ASNeolithicChunkStorageChunkLimestone.description>Un tas de débris, constitué de morceaux et soutenant d'autres morceaux. Facile à réaliser et assez efficace comme couverture.</ASNeolithicChunkStorageChunkLimestone.description>
+  <ASNeolithicChunkStorageChunkSlate.label>Amas d'ardoise</ASNeolithicChunkStorageChunkSlate.label>
+  <ASNeolithicChunkStorageChunkSlate.description>Un tas de débris, constitué de morceaux et soutenant d'autres morceaux. Facile à réaliser et assez efficace comme couverture.</ASNeolithicChunkStorageChunkSlate.description>
+  <ASNeolithicChunkStorageChunkMarble.label>Amas de marbre</ASNeolithicChunkStorageChunkMarble.label>
+  <ASNeolithicChunkStorageChunkMarble.description>Un tas de débris, constitué de morceaux et soutenant d'autres morceaux. Facile à réaliser et assez efficace comme couverture.</ASNeolithicChunkStorageChunkMarble.description>
+  <ASNeolithicChunkStorageChunkVacstone.label>Amas de vaccolithe</ASNeolithicChunkStorageChunkVacstone.label>
+  <ASNeolithicChunkStorageChunkVacstone.description>Un tas de débris, constitué de morceaux et soutenant d'autres morceaux. Facile à réaliser et assez efficace comme couverture.</ASNeolithicChunkStorageChunkVacstone.description>
+
+</LanguageData>

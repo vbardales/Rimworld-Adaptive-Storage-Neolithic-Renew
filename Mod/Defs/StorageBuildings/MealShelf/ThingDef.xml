@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ASNeolithicStorageBase">
+		<defName>ASNeolithicMealShelf</defName>
+		<label>meal shelf</label>
+		<graphicData>
+			<texPath>ASNeolithic/MealShelf/MealShelf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.9,1.9)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<description>A makeshift shelf for the purposes of meal storage.</description>
+		<fillPercent>0.20</fillPercent>
+		<uiIconPath>ASNeolithic/MealShelf/MealShelf</uiIconPath>
+		<uiIconScale>1.3</uiIconScale>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>-2</Beauty>
+			<Mass>8</Mass>
+		</statBases>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<maxItemsInCell>3</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>FoodMeals</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<paintable>true</paintable>
+		</building>
+	</ThingDef>
+</Defs>

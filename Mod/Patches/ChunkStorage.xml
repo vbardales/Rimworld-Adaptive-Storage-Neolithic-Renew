@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="GeneratorOperation.DefGenerator">
+		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"]</xpath>
+		<value><![CDATA[
+			<ThingDef ParentName="ASNeolithicChunkStorageBase">
+				<defName>ASNeolithicChunkStorage{defName/text()}</defName>
+				<label>stacked {label/text()}s</label>
+				<uiIconColor>{graphicData/color/text()}</uiIconColor>
+				<costList>
+					<{defName/text()}>2</{defName/text()}>
+				</costList>
+				<building>
+					<fixedStorageSettings>
+						<filter>
+							<disallowNotEverStorable>true</disallowNotEverStorable>
+							<thingDefs>
+								<li>{defName/text()}</li>
+							</thingDefs>
+						</filter>
+					</fixedStorageSettings>
+				</building>
+			</ThingDef>
+		]]></value>
+	</Operation>
+
+	<Operation Class="GeneratorOperation.PatchGenerator">
+		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"]</xpath>
+		<value><![CDATA[
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/AdaptiveStorage.GraphicsDef[
+					defName="ASNeolithicChunkStorageA"
+					or defName="ASNeolithicChunkStorageB"]/targetDefs</xpath>
+				<value>
+					<li>ASNeolithicChunkStorage{defName/text()}</li>
+				</value>
+			</Operation>
+		]]></value>
+	</Operation>
+</Patch>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AdaptiveStorage.GraphicsDef>
+		<defName>ASNeolithicWoodPileA</defName>
+		<targetDef>ASNeolithicWoodPile</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/WoodPile/WoodPilea</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.9,1.9)</drawSize>
+				</graphicData>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/WoodPile/WoodPileb</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.9,1.9)</drawSize>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASNeolithic/WoodPile/WoodPilec</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.9,1.9)</drawSize>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+		</graphics>
+		<showContainedItems>false</showContainedItems>
+		<useDominantContentColor>true</useDominantContentColor>
+	</AdaptiveStorage.GraphicsDef>
+</Defs>
