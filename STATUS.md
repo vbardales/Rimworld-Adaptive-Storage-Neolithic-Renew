@@ -44,7 +44,8 @@ the sweep that wrote this file. It is empty, which means the mod has never been 
 `stage` vocabulary: `port`, `showcase`, `preTest`, `done`, `tested`, `published`.
 
 `licence` vocabulary: `open` an explicit licence, `silent` no licence and a dead source,
-`alive` no licence but a living source, `forbidden` a written refusal, `original` nothing reused.
+`alive` no licence but a living source, `forbidden` a written refusal, `original` owing nothing
+to anyone — not a name, not an idea traceable to one mod, not a value derived from its assets.
 
 ## What makes this sheet stale
 
