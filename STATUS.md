@@ -62,3 +62,39 @@ Three events, and none of them corrects it on its own.
   declared, `none` when the mod needs nothing. An undeclared dependency is not cosmetic: on
   2026-09-11 Reequilibrage animaux took 47 vanilla animals down with it, Muffalo included, because
   the class it injects belongs to a mod that was not declared and not loaded.
+
+## Preview overlay — 2026-09-12
+
+- Delivered image: `Mod/About/Preview.png`, 896 x 504, 608,863 bytes (under 900 KB).
+- Text-free illustration: `Art/Preview.png`, copied unchanged from the preserved
+  `Art/Preview-source.png`. No replacement illustration was generated; the original source
+  remains available under its distinct existing name. The existing crop is retained.
+- Composition and layout parameters: `Art/preview.html`; sole colour reference:
+  `Art/preview-palette.json`; renderer: `Art/render-preview.cjs`.
+- The veil follows the warm stone/packed-earth surfaces, slightly desaturated. The blue
+  accent comes from the folded textile in the storage basket, with saturation and lightness
+  increased. Its cool hue clearly separates it from the dominant warm ochre family and
+  the secondary ink at both output sizes. The secondary ink follows the dominant ochre
+  family of the lit stone, wicker and earth, lightened to pass contrast while retaining
+  its colour. It colours the Renew suffix; no status tag is displayed
+  because this mod is public/open and its name has no unofficial suffix.
+- Existing title and summary preserved, including case and word order. Strong title words
+  and summary use exactly the same primary ink. Renew is a direct title span at 0.65em
+  (29.9 px), secondary ink, still weight 600. Text begins at (50, 54); title 46 px/600,
+  summary 21 px/400; rule 58 x 3 px.
+  The dark veil holds its opacity over the text before fading, to maintain contrast across
+  the illuminated floor. Text shadow follows the guide. Version 1.6 is read from the highest
+  stable supportedVersions entry in the delivered About.xml, not hardcoded.
+- Actual fonts verified through Chrome's platform-font API after `document.fonts.ready`:
+  Segoe UI Semibold for the title and suffix, Segoe UI Regular for the summary, Segoe UI Bold for the
+  version; no fallback. Badge triangle and rotated version use the guide's coordinates.
+- Contrast measured on a separate render with text hidden, over EVERY pixel in each full
+  text rectangle: primary title minimum 6.30:1; Renew suffix 4.87:1; summary 6.07:1;
+  version on opaque badge 6.72:1.
+  Tag contrast is not applicable because there is no tag. Evidence: `Art/preview-qa.json`
+  and `Art/preview-background-qa.png`.
+- Visually checked at 896 x 504 and at 268 px wide (`Art/preview-268.png`): title and version
+  identifiable, reduced Renew suffix readable, blue rule visible and distinct from the ochre
+  suffix, no overlap or clipping. The small summary is intended for
+  the full-size image. No publication performed; this local overlay supersedes the older
+  showcase mentioned as pushed above.

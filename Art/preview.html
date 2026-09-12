@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Adaptive Storage Neolithic Renew — Preview</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; width: 896px; height: 504px; overflow: hidden; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; }
+  .frame { position: relative; width: 896px; height: 504px;
+    background: url("Preview.png") 0 -43.5px / 896px auto no-repeat; }
+  .veil { position: absolute; inset: 0;
+    background: radial-gradient(ellipse 900px 680px at top left,
+      rgb(var(--veil-rgb) / .96) 0%, rgb(var(--veil-rgb) / .90) 50%,
+      rgb(var(--veil-rgb) / 0) 100%); }
+  .text { position: absolute; left: 50px; top: 54px; color: var(--inkPrimary);
+    text-shadow: 0 3px 10px rgb(0 0 0 / .75); }
+  h1 { margin: 0; font-size: 46px; font-weight: 600; line-height: 1.1; letter-spacing: 0; }
+  h1 > .suffix { font-size: .65em; color: var(--inkSecondary); }
+  .tag { margin: 8px 0 0; font-size: 24px; font-weight: 400; line-height: 1.1;
+    letter-spacing: .2px; color: var(--inkSecondary); }
+  .rule { width: 58px; height: 3px; margin: 20px 0 16px; background: var(--accent); }
+  p { margin: 0; width: 430px; font-size: 21px; font-weight: 400;
+    line-height: 1.45; letter-spacing: 0; color: var(--inkPrimary); }
+  .badge { position: absolute; right: 0; top: 0; width: 80px; height: 80px;
+    background: var(--accent); clip-path: polygon(0 0, 100% 0, 100% 100%); }
+  .version { position: absolute; left: 869px; top: 27px;
+    transform: translate(-50%, -50%) rotate(45deg); color: var(--badgeInk);
+    font-size: 26px; font-weight: 700; line-height: 1; text-shadow: none; }
+  .background-only .text, .background-only .version { visibility: hidden; }
+</style>
+<div class="frame">
+  <div class="veil"></div>
+  <div class="text">
+    <h1>Adaptive Storage<br>Neolithic <span class="suffix">Renew</span></h1>
+    <div class="rule"></div>
+    <p>Neolithic storage for the Adaptive Storage Framework: every container shows what is inside it.</p>
+  </div>
+  <div class="badge"></div><div class="version"></div>
+</div>
+<script>
+window.previewReady = (async () => {
+  const palette = await (await fetch('preview-palette.json')).json();
+  for (const [name, hex] of Object.entries(palette)) {
+    document.documentElement.style.setProperty('--' + name, hex);
+  }
+  document.documentElement.style.setProperty('--veil-rgb',
+    palette.veil.match(/[0-9a-f]{2}/gi).map(v => parseInt(v, 16)).join(' '));
+  const about = new DOMParser().parseFromString(
+    await (await fetch('../Mod/About/About.xml')).text(), 'text/xml');
+  const versions = [...about.querySelectorAll('supportedVersions > li')]
+    .map(n => n.textContent.trim()).filter(v => /^\d+\.\d+(\.\d+)?$/.test(v));
+  versions.sort((a,b) => {
+    const aa = a.split('.').map(Number), bb = b.split('.').map(Number);
+    for (let i=0; i<Math.max(aa.length,bb.length); i++) {
+      const d = (bb[i] || 0) - (aa[i] || 0); if (d) return d;
+    } return 0;
+  });
+  if (!versions.length) throw new Error('No declared stable version');
+  document.querySelector('.version').textContent = versions[0];
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(img => img.decode()));
+  const source = new Image(); source.src = 'Preview.png'; await source.decode();
+})();
+</script>
+</html>
