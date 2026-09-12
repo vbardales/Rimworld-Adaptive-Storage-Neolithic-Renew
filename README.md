@@ -105,6 +105,12 @@ originals are kept under `Art/`, unaltered.
 `Mod/LICENSE` is not a stray duplicate. MIT requires the notice to accompany every distribution,
 and Steam ships the contents of `Mod/` and nothing else.
 
+## Tests
+
+Run `pwsh -NoProfile -File tests/Test-Mod.ps1` for standalone XML and generator contract
+checks. See [TESTING.md](TESTING.md) for coverage, limitations and manual in-game scenarios.
+GitHub Actions runs the suite on pushes and pull requests.
+
 ## Credits
 
 - **Soul**, **Phaneron** and **bradson** — the mod, the framework, and the decision to license

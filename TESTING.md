@@ -1,4 +1,34 @@
-# Adaptive Storage Neolithic Renew — in-game test scenarios
+# Adaptive Storage Neolithic Renew — automated checks and in-game scenarios
+
+## Automated checks
+
+From the repository root, with PowerShell 7 installed:
+
+```powershell
+pwsh -NoProfile -File tests/Test-Mod.ps1
+```
+
+The suite needs neither RimWorld nor a Workshop installation. It exits with a nonzero code
+on failure. GitHub Actions runs it on pushes and pull requests. It checks XML syntax,
+duplicate defNames within each Def type, the GitHub link in the published description,
+dependency metadata, texture paths with exact casing, directional textures, language-folder
+casing and duplicate translation keys.
+
+It expands the actual three stone templates against synthetic Core (five stones), Odyssey
+(six), and third-party (seven) fixtures. Expected totals are 15, 18 and 21 buildings. Checks
+cover generated identities, parents, labels, colours, material costs, chunk filters,
+collisions, graphics patch XPath matches and final graphics bindings. An unrelated resource
+must not be selected.
+
+These are static contract tests using .NET XPath and a small template-expansion helper,
+not execution of GeneratorOperation.dll. Framework loading, inherited game behaviour,
+hauling and rendering still require the manual scenarios below, which remain unexecuted.
+The external `../scripts/Check-XmlFields.ps1` and `Check-DefRefs.ps1` additionally validate
+against installed game/framework data; they are not included in this standalone suite.
+
+Latest local run: 747 assertions passed on 2026-09-12.
+
+## Manual scenarios
 
 Nothing in this mod has ever been seen running. The XML checkers are clean, every element maps to
 a field that still exists in 1.6, every C# type it names is still present in the framework's 1.6

@@ -1,0 +1,12 @@
+name: Mod XML tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  xml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate XML and generator contracts
+        shell: pwsh
+        run: ./tests/Test-Mod.ps1
