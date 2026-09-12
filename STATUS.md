@@ -96,5 +96,17 @@ Three events, and none of them corrects it on its own.
 - Visually checked at 896 x 504 and at 268 px wide (`Art/preview-268.png`): title and version
   identifiable, reduced Renew suffix readable, blue rule visible and distinct from the ochre
   suffix, no overlap or clipping. The small summary is intended for
-  the full-size image. No publication performed; this local overlay supersedes the older
-  showcase mentioned as pushed above.
+  the full-size image. Preview, composition sources, palette and QA evidence were pushed
+  to GitHub on origin/main in commit 77936db. No Workshop publication performed.
+
+## Automated tests — 2026-09-12
+
+- `tests/Test-Mod.ps1`: 747 assertions passed locally. Covers XML syntax, metadata including
+  the published GitHub link, texture paths and casing, translation keys, and static stone
+  generator contracts with five, six and seven stone types (15, 18 and 21 buildings).
+- Tests, documentation and `.github/workflows/test.yml` were pushed to origin/main in
+  commit 9c43cc9. The workflow runs on pushes and pull requests; its remote result has not
+  been verified in this session.
+- These static checks do not execute the framework in RimWorld or verify rendering and
+  hauling. Manual scenarios remain unexecuted, so `tested_on` stays empty and `stage`
+  stays `done`.
