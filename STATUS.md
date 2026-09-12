@@ -1,21 +1,22 @@
 ---
-mod:        Adaptive Storage Neolithic Renew
-packageId:  nelim.adaptivestorageneolithic
-repo:       Rimworld-Adaptive-Storage-Neolithic-Renew
-visibility: public
-detached:   yes
-stage:      done
-licence:    open
-licence_at: the mod's LICENSE file, MIT, and its README says so too
-showcase:   complete
+mod:          Adaptive Storage Neolithic Renew
+packageId:    nelim.adaptivestorageneolithic
+repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
+visibility:   public
+detached:     yes
+stage:        done
+licence:      open
+licence_at:   the mod's LICENSE file, MIT, and its README says so too
+dependencies: declared
+showcase:     complete
 tested_on:
 workshop:
 remaining:
   - unverified: never seen running; the eleven scenarios are written out in TESTING.md
   - unverified: the Russian translation only proves itself on a case-sensitive filesystem, so on the Steam Deck
   - defect: the icon carries four containers where its sheet called for one, and they merge into one mass at 32 px
-session:    local_db1227c9-d5d1-40e9-991f-1efee093b86b
-updated:    2026-09-12, confirmed by the session that holds this mod
+session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
+updated:      2026-09-12, confirmed by the session that holds this mod
 ---
 
 # Adaptive Storage Neolithic Renew — status
@@ -54,3 +55,9 @@ Three events, and none of them corrects it on its own.
 - **A Workshop upload.** Fill `workshop` with the item id and move `stage` to `published`.
 - **A new icon.** Drop the `defect` line. The regeneration prompt is kept in the mod's showcase
   sheet, which lives in the monorepo and is ignored there.
+
+- **`dependencies`** — `declared` when every mod this one needs is named in the About's
+  `modDependencies`, `to check` when a non-vanilla `loadAfter` suggests a dependency that is not
+  declared, `none` when the mod needs nothing. An undeclared dependency is not cosmetic: on
+  2026-09-11 Reequilibrage animaux took 47 vanilla animals down with it, Muffalo included, because
+  the class it injects belongs to a mod that was not declared and not loaded.
