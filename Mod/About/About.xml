@@ -9,6 +9,11 @@
   <url>https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew</url>
   <modDependencies>
     <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+    <li>
       <packageId>adaptive.storage.framework</packageId>
       <displayName>Adaptive Storage Framework</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/3033901359</steamWorkshopUrl>
@@ -16,6 +21,7 @@
     </li>
   </modDependencies>
   <loadAfter>
+    <li>brrainz.harmony</li>
     <li>Ludeon.RimWorld</li>
     <li>adaptive.storage.framework</li>
   </loadAfter>

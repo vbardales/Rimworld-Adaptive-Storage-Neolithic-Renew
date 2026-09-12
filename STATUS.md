@@ -1,23 +1,105 @@
 ---
+localization: partial
+translation_en: partial
+translation_fr: partial
 mod:          Adaptive Storage Neolithic Renew
 packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-stage:        done
+stage:        dansMonoRepo
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 dependencies: declared
-showcase:     complete
+showcase:     partial
 tested_on:
 workshop:
+settings_audit: partial
+build_audit: partial
+audit_revision: b0cf4fdff6fd8e569d85c4f631ce92361d8dc675 plus working tree
+audit_evidence: tests/audit-2026-09-13/README.md
 remaining:
-  - unverified: never seen running; the eleven scenarios are written out in TESTING.md
-  - unverified: the Russian translation only proves itself on a case-sensitive filesystem, so on the Steam Deck
-  - defect: the icon carries four containers where its sheet called for one, and they merge into one mass at 32 px
+  - defect: No remote in the parent monorepo points to this autonomous GitHub repository; gate 1 is incomplete.
+  - defect: ModIcon contains more than two objects and loses object separation at 32 px.
+  - defect: About.xml lacks the required final Steam-formatted Source code on GitHub link.
+  - unverified: Concurrent CSharp, DLL and translation changes require stable source-to-delivered-binary verification and relevant regression tests.
+  - unverified: Settings usefulness and inherited framework controls need runtime verification; no empty page or shortcut has been verified in game.
+  - unverified: Generated-translation resources and paths pass local checks; verify the Harmony hook, blueprints, frames and completed buildings in a full English/French game load.
+  - unverified: Complete Preview colour-family measurement and comparison with an actual game screenshot.
+  - unverified: Execute functional scenarios, inspect logs and all owned UI in English and French, on new and existing saves.
+  - unverified: Test options, persistence and optional MainButtons integrations if applicable after the settings decision.
+  - unverified: Russian Odyssey coverage remains incomplete and case-sensitive runtime verification remains pending outside the EN/FR gate.
 session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
-updated:      2026-09-12, confirmed by the session that holds this mod
+updated:      2026-09-13
 ---
+
+# Adaptive Storage Neolithic Renew — status
+
+## Current cumulative workflow audit — 2026-09-13
+
+**Authoritative result: `done` -> `dansMonoRepo`.** The user-supplied chain and cumulative
+criteria override the older stage vocabulary and the historical statements below. This is
+the baseline before gate 1 is fully demonstrated; it does **not** mean the standalone Git
+repository was moved back into the parent repository.
+
+Audited HEAD: `b0cf4fdff6fd8e569d85c4f631ce92361d8dc675`, plus the working tree inventoried
+in [the evidence manifest](tests/audit-2026-09-13/manifest.json). Read parent PUBLISHING.md,
+STYLE_RIMWORLD.md, MOD_SETTINGS.md, TRANSLATIONS.md and AGENTS.md. Commands, outputs,
+limitations and the pre-edit status are preserved in [audit evidence](tests/audit-2026-09-13/README.md).
+
+Existing edits were preserved. During the audit, other work added Source/GeneratedTranslations.cs,
+Source/Build.ps1, Mod/Assemblies/NeolithicRenew.dll, EN/FR Keyed resources, Harmony metadata
+and installed-translation tests. No implementation or image replacement was made by this audit.
+The historical claim that no CSharp/build/Keyed exists is therefore superseded. Changes after
+the manifest require renewed checks; a successful old check cannot certify the new code.
+
+| Transition | Finding and evidence |
+| --- | --- |
+| dansMonoRepo -> horsMonoRepo | **Defect:** no parent-monorepo remote points to this mod's GitHub URL (complete remote inventory saved). **Validated:** independent .git and Git top-level; no mod files tracked by parent; origin exists, GitHub PUBLIC/main verified live and HEAD confirmed pushed. The folder is physically nested under the parent workspace but is Git-independent. Names are coherent: nelim.adaptivestorageneolithic, Adaptive Storage Neolithic Renew, Rimworld-Adaptive-Storage-Neolithic-Renew, AdaptiveStorageNeolithicRenew. **Validated:** English README, ATTRIBUTION, LICENSE and CHANGELOG initialized; original installed MIT notice inspected, authors credited, root/distributed LICENSE and ATTRIBUTION identical. public/open is supported; no unofficial/prohibited suffix is required. |
+| horsMonoRepo -> ModIcon generee | **Defect:** icon exceeds the one-or-two-object rule; the mascot remains readable but the containers merge at 32 px. Viewed the delivered 128 px PNG and an inspection-only 32 px reduction. **Validated:** 128x128 PNG, 28,385 bytes. **Non verified:** development completion and correspondence between new source and delivered DLL. A separate control build succeeded with one CS1684 reference warning; it did not replace or certify the delivered DLL. Compilation is now applicable. |
+| ModIcon generee -> Preview generee | **Validated:** actual PNG 896x504, 608,863 bytes; viewed at full size and 268 px, title/version identifiable, no clipping. Original sources preserved in Art. **Non verified:** current style checklist's quantitative hue-family measurement and comparison against an actual game screenshot. No game or Workshop display was inspected. |
+| Preview generee -> preOptions | **Validated in isolation:** English description, correct Renew name/suffix, no linking words requiring reduction; warm secondary ink and blue accent visibly distinct at both sizes. Art/preview-palette.json drives the composition. Historical font and contrast evidence remains applicable to unchanged art/layout/version inputs (minima 6.30/4.87/6.07/6.72). **Defect under PUBLISHING.md:** description contains a raw GitHub URL instead of ending with the required [url=...]Source code on GitHub[/url] link. No new render/contrast measurement was performed. |
+| preOptions -> options | **Non verified:** settings_audit=partial; static inventory and rationale below do not establish functioning or absence of UI in game. No RIMMSQOL integration tested. |
+| options -> l10n | **Non verified:** new CSharp fallback changes the translation mechanism and coverage, so previous complete localization/English claims cannot certify the current tree. Six paired EN/FR Keyed entries exist and contain meaningful text; generated injection targets and fallback behaviour still need verification. Initial standalone run: 1,276 assertions; rerun after new resources: 1,282. Shared DefInjected check: 112 keys, zero reported errors, 66 UNVERIFIED generated paths. These are not a translation-gate pass. |
+| l10n -> preTest | **Validated statically for inspected files:** framework types and generator operations are really used and framework is declared before this mod; new code directly uses Harmony, now explicitly declared/loadAfter. Installed framework also declares Harmony and supports 1.6. Biotech toxipotato graphics use MayRequire; Odyssey vacstone and other chunks are discovered by generators, so these integrations are optional. No module LoadFolders or version folders; single supportedVersion 1.6. No unresolved Def references/parents in the installed-data check. **Non verified:** actual loading/optional-DLC combinations and future dependency versions; no version constraint was invented. |
+| preTest -> done | **Validated within scope:** existing functional scenarios have preconditions/actions/expected outcomes; static XML/contracts pass, 28 files pass reflected field checks, installed-data references resolve. **Non verified:** new translation code tests and delivered-binary provenance on a stable snapshot. Installed-translation tests appeared and were being edited during the audit; not executed by this audit to avoid racing their shared outputs. Existing scenarios do not fully cover the new hook, complete FR/EN UI inventory, or the settings gate. |
+| done -> tested | **Non verified:** no game scenarios, runtime logs, complete EN/FR UI, fresh/existing save runs, settings/persistence/shortcut checks or regression runs performed. tested_on remains empty. Russian case-sensitive and missing Odyssey coverage remain separately recorded. |
+
+Later isolated successes do not bypass the first failed gate.
+
+### Settings audit
+
+Inventory includes the module's costs, capacity limits, storage filters, research requirements,
+graphics thresholds, art generation, new translation hook and inherited framework settings.
+Costs/capacities/research are authored balancing values; no concrete player requirement was found
+that warrants exposing every constant. Storage contents/filters are per-building game/framework
+controls; wood/textile filters intentionally lock to their construction material. The new translation
+hook has no player setting. No module settings category or MainButtonDef was found.
+
+The installed framework exposes global contents-tab selection, automatic opening, label style,
+zoom hiding/threshold and mouse-over hiding through its own settings category. These are relevant
+inherited controls, not evidence of a module-named page or of a module-specific shortcut.
+A duplicate page is not automatically warranted. Verify the inherited controls' real effects and
+confirm whether a module-specific option has a concrete use; if none, observe absence of an empty
+module page and shortcut in a clean game before recording not_applicable. If useful module settings
+are required, validate the primary route, hidden optional shortcut, effects and persistence.
+No runtime/integration versions are claimed as tested. Installed assemblies permit static checks;
+the available computer-control surface does not provide native RimWorld interaction.
+
+### Exact next transition
+
+To reach **horsMonoRepo**, register the existing repository URL
+`https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew.git`
+as a remote in `C:/Users/nelim/Documents/rimworld`, then verify that registration and the already
+established standalone/public/licence/naming/documentation/pushed-commit evidence remain current.
+This audit deliberately did not change Git configuration, move files or push anything.
+The icon, settings, localization and runtime work listed above concerns later transitions.
+
+## Historical records (superseded where inconsistent with the audit above)
+
+The following records are retained as history, not current certification. In particular,
+statements that stage stays done, that compilation is unnecessary, and that localization is
+complete do not override the current front matter and audit.
 
 # Adaptive Storage Neolithic Renew — status
 
@@ -33,7 +115,7 @@ were confirmed the same day.
   own, and the run itself is recorded by `tested_on` and by the first `remaining` line.
 - **`tested_on` stays empty**, meaning never. That is true of nearly the whole repository, not
   only here.
-- **`remaining` carries three lines.** The first two are checks that were impossible rather than
+- **The original `remaining` entries carry three lines.** The first two are checks that were impossible rather than
   skipped: the mod has never run, and the case of the Russian `DefInjected` folder only fails on
   a case-sensitive filesystem, which is the Steam Deck and not this machine. The third is a real
   known fault, small and cosmetic.
@@ -110,3 +192,77 @@ Three events, and none of them corrects it on its own.
 - These static checks do not execute the framework in RimWorld or verify rendering and
   hauling. Manual scenarios remain unexecuted, so `tested_on` stays empty and `stage`
   stays `done`.
+
+## Translation audit — 2026-09-13
+
+Applied the new parent-workspace PUBLISHING.md / TRANSLATIONS.md gate to revision
+`b0cf4fdff6fd8e569d85c4f631ce92361d8dc675` plus the changes in this working tree.
+The existing stage and unexecuted in-game checks are preserved. French remains `partial`;
+this audit does not certify the new gate as passed.
+
+- Inventory: all 24 XML files under `Mod/Defs`, all three `Mod/Patches` templates and
+  both language folders. There is no owned C# code, assembly, Keyed UI, LoadFolders file
+  or version-specific content. Nine concrete buildings contribute 18 label/description
+  fields; two research projects contribute four; the research tab contributes one.
+  Generated buildings contribute 30 fields for Core, or 36 with Odyssey: 53 or 59
+  English/French texts in total. Abstract parent text is counted on concrete children.
+- Localization: owned text uses Def label/description fields, including generated labels;
+  these admit DefInjected translation. English comes from the Defs and generator templates,
+  so an English language folder would duplicate the native source. No owned parameterized
+  UI sentences, rich-text tags or grammar rules were found. Graphics identifiers, texture
+  paths, dropdown defNames and metadata are not player-facing translation entries.
+- French: all 59 Core/Odyssey entries are nonempty and were read for meaning. Fixed
+  `brute` to `brut` for granite, sandstone, limestone and marble plinth descriptions.
+  Existing ardoise agreement is correct. The automatic generators also accept arbitrary
+  third-party chunks, whose generated identities have no bundled French entries: they
+  fall back to English. A finite list of six stones does not establish universal coverage.
+- `pwsh -NoProfile -File tests/Test-Mod.ps1`: **1,276 assertions passed**. Added checks
+  against concrete Defs and inherited English fields, French coverage for both supported
+  stone sets, nonempty values, placeholders and duplicate French keys across files of
+  the same Def type. The seven-stone scenario checks English but explicitly does not
+  certify French coverage for an unknown stone.
+- `pwsh -NoProfile -File ../scripts/Check-DefInjected.ps1 -TransMod ./Mod`:
+  **112 keys, zero reported errors, 66 UNVERIFIED generated paths** (36 French, 30 Russian).
+  The script explicitly does not implement DefGenerator/PatchGenerator. The standalone
+  template tests provide additional structural evidence, but do not turn these findings
+  into a successful check against the actual runtime.
+- Dependency boundary: inspected the installed framework's `Defs/ThingDefBase.xml`;
+  the inherited storage base adds no literal label/description. Storage UI remains
+  framework/game-owned. Plinths reference vanilla `NamerArtFurniture` and
+  `ArtDescription_Furniture`; those defs exist in installed Core. Their rendered names,
+  descriptions and inherited UI still need English/French testing in game.
+- Russian is outside the new EN/FR gate. Its six missing Odyssey entries and the existing
+  Steam Deck check remain unresolved. Nothing was published or tested in RimWorld.
+
+Reaudit the affected fields after changes to Defs, patches or language resources. Resolve
+the French coverage gap and generated-target verification before claiming the gate passed.
+
+## Translation implementation and revalidation — 2026-09-13
+
+This update supersedes the missing-third-party-French and unresolved-generated-target
+findings in the earlier translation audit. It does not override the concurrent workflow
+or settings audit, and does not certify in-game behavior.
+
+- Added `Source/GeneratedTranslations.cs` and the compiled `Mod/Assemblies/NeolithicRenew.dll`.
+  Harmony is now an explicit dependency. The mod constructor patches the early language
+  injection pass with a postfix, before vanilla generates blueprints and frames. This order
+  was verified in the installed RimWorld 1.6 PlayDataLoader and LoadedLanguage code.
+- Six English/French Keyed resources provide complete phrases, with a named CHUNK parameter
+  for labels. The fallback uses the chunk's translated label and preserves successful
+  DefInjected entries per field. English native text, languages without these resources,
+  and unrelated building identities remain unchanged. This adds no settings page or button.
+- Rebuilt successfully with `pwsh -NoProfile -File Source/Build.ps1`. The installed game
+  reference produces CS1684 about System.Span; the code does not use that type.
+- Standalone tests: 1,310 assertions passed. Installed-assembly tests: 28 assertions passed,
+  including the delivered fallback code and the actual GeneratorOperation.dll using all
+  six installed stone chunks. Field tests bypass Unity constructors and substitute resource
+  parameters through a callback, so they are not a full engine or Harmony integration test.
+- The shared Check-DefInjected script, given those materialized Defs and the framework,
+  checked 112 paths with zero errors and zero UNVERIFIED paths. The earlier 66 unresolved
+  generated paths are resolved by this additional evidence. Exact command: TESTING.md.
+- Evidence and source/binary SHA-256 hashes: `tests/translation-validation-2026-09-13/`.
+  The separate concurrent audit snapshot is historical and was not rewritten.
+- Still unverified: full game load and hook execution, blueprints/frames, finished buildings,
+  plinth art and UI in English/French. A third-party stone's own untranslated material name
+  remains that mod's responsibility. Settings/runtime gates from the workflow audit remain
+  pending; top-level partial statuses are preserved for that reason.

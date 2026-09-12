@@ -26,7 +26,48 @@ hauling and rendering still require the manual scenarios below, which remain une
 The external `../scripts/Check-XmlFields.ps1` and `Check-DefRefs.ps1` additionally validate
 against installed game/framework data; they are not included in this standalone suite.
 
-Latest local run: 747 assertions passed on 2026-09-12.
+Translation checks also compare concrete buildings (including inherited text), research
+projects and the research tab with French resources: 53 fields with Core, 59 with Odyssey.
+They check English source values, nonempty French coverage, unresolved placeholders and
+duplicate French keys across files of the same Def type. The extra third-party stone
+fixture verifies native English; installed-assembly tests below exercise the French fallback
+for an arbitrary stone. Six Keyed resources per language supply the generic text, and the
+standalone suite checks their completeness and named parameters.
+See the translation audit in [STATUS.md](STATUS.md) for the gate and unresolved checks.
+
+Latest local run: 1,310 assertions passed on 2026-09-13.
+
+### Installed translation checks
+
+On Windows with RimWorld, Adaptive Storage Framework and Harmony installed:
+
+```powershell
+pwsh -NoProfile -File Source/Build.ps1
+pwsh -NoProfile -File tests/Test-InstalledTranslations.ps1
+```
+
+The build uses the Windows .NET Framework compiler. The local game reference emits CS1684
+about System.Span; compilation succeeds. The translation code does not use Span.
+The test script accepts `-Managed`, `-Framework` and `-Harmony` overrides. It runs the shipped
+translation code against real game types, bypassing Unity constructors, with a resource
+substitution callback. It checks unknown stones, preservation of specific translations,
+placeholder fallback, unchanged native English/Russian and unrelated Defs: 23 assertions.
+Five more assertions exercise the installed DefGenerator on the installed six stone chunks.
+It writes materialized targets under `.build/translation-targets` for the shared checker:
+
+```powershell
+$framework = 'C:/Program Files (x86)/Steam/steamapps/workshop/content/294100/3033901359'
+& ../scripts/Check-DefInjected.ps1 -TransMod ./Mod `
+    -Targets @('./.build/translation-targets', $framework) `
+    -ExtraAssemblies @("$framework/1.6/Assemblies/AdaptiveStorageFramework.dll")
+```
+
+Result: 112 paths checked, zero errors and zero UNVERIFIED paths. Framework conditional-patch
+warnings concern its own unrelated targets. This does not launch the game, execute Harmony's
+hook in a full load, or verify UI rendering. In English and French, test an extra stone mod,
+construction blueprints/frames, finished containers, inspect strings and artistic plinths.
+Specific stone translations must survive; a stone mod without French names may still supply
+an English material name. Restart the game when switching language.
 
 ## Manual scenarios
 

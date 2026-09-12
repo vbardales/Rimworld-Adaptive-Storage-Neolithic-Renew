@@ -1,0 +1,2 @@
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll: warning CS1684: Une r�f�rence au type 'System.Span`1' d�clare qu'il est d�fini dans 'c:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll', mais il est introuvable
+Compiler exit code: 0

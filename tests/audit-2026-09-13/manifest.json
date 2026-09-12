@@ -1,0 +1,1670 @@
+[
+  {
+    "Path": "Mod\\ATTRIBUTION.md",
+    "SHA256": "D422BE7F7FA5BF4E3FA6216128D0DC23F72371C4797777DAB6E5804F728E34CE"
+  },
+  {
+    "Path": "Mod\\LICENSE",
+    "SHA256": "B6529759668FC71EBAE8C6B5478CC83D93E03D0643790199718674CEEC8A40ED"
+  },
+  {
+    "Path": "Mod\\About\\About.xml",
+    "SHA256": "1F8F31818430DCFB1DA22C2F0E9228A2F92116BCBFC7878B2B74C61E9278F7B6"
+  },
+  {
+    "Path": "Mod\\About\\ModIcon.png",
+    "SHA256": "CE64C1B4A4200C52C44239170207C736D530D46D581EEA72CD8C2E17738450CD"
+  },
+  {
+    "Path": "Mod\\About\\Preview.png",
+    "SHA256": "AEB6F9BDE1D9E1B7B550981A2EECD418507F9A09FCF6F4736DA3480E50222922"
+  },
+  {
+    "Path": "Mod\\Assemblies\\NeolithicRenew.dll",
+    "SHA256": "E620FADB365BAB61B5ED6DAFD5D0DAEC89DA3072B83497191932A6D22583603A"
+  },
+  {
+    "Path": "Mod\\Defs\\ResearchProjects\\ResearchProjectDefs.xml",
+    "SHA256": "9F29821F9777235F5E9B3E14C3B10066BD15CF1E9FBAEBC6766D2D2179DD9B07"
+  },
+  {
+    "Path": "Mod\\Defs\\ResearchProjects\\ResearchTabDef.xml",
+    "SHA256": "7F0B0E3D3D65683EC9A84104E7B94FE564ADBC575E31FEE6DAD7E03352D4A072"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\NeolithicItemDisplayBase.xml",
+    "SHA256": "A368509A7C998A08AE6B3855D5B4304C0BDCA6F88D3E7334A4F1B031B6D6BD16"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\NeolithicStorageBase.xml",
+    "SHA256": "0446F885C5B551E4A562FB022BCFBE358BB8CE40E9D92D75FB387BA385BDB0EF"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\Basket\\GraphicsDef.xml",
+    "SHA256": "EA3B65C0B830795B5E591F4C6A532A202D12C3CF186201C1E1A14FBB6BF68094"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\Basket\\ThingDef.xml",
+    "SHA256": "A2DA573E94C4FE3D8CA8DA2379307499EDA726AE93BBC8DD6F4A82864A4E275D"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\ChunkStorage\\DesignatorDropdownGroupDef.xml",
+    "SHA256": "A94CE0CC0D11867A747FE1B6EE6E9EBC6E30D32FA713DB08CF7400E784F5BF62"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\ChunkStorage\\GraphicsDef.xml",
+    "SHA256": "32D3A80E1ED6DE9FE89BECDAF26CB612378AC45F298D75C20574C071F71EB908"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\ChunkStorage\\ThingDef.xml",
+    "SHA256": "2C48E095213253D2DF56155170A6D4B388D31ED42257F71765ABA0E27289AB0D"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\HayPile\\GraphicsDef.xml",
+    "SHA256": "245498193C5E348243BC2ADE7C328DD6FC6E619CA609F9017820CC9378E6DA0E"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\HayPile\\ThingDef.xml",
+    "SHA256": "35D62A68BB1C910B7603AD19275566EA91CE740B0EED914C1320E1E033DBD0D3"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\LargePot\\DesignatorDropdownGroupDef.xml",
+    "SHA256": "9B0BB4C37643278F36758EBBA494CD62740D1F7ACEBCA69C2EC2E08909FE182B"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\LargePot\\GraphicsDef.xml",
+    "SHA256": "D28D6F0D587C7995B416B972150E0C440B24F7590E8C18CA980D28CDBA86E7D2"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\LargePot\\ThingDef.xml",
+    "SHA256": "57AE405A4CABA00AAB52A8F09514B538F9D225DF2ACD38559F4DEB738F598ADE"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\MealShelf\\GraphicsDef.xml",
+    "SHA256": "DB70F551DA7565AA6A9C2933E4DB826D6CBB506DFA956CC612A34DD026948371"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\MealShelf\\ThingDef.xml",
+    "SHA256": "24202A9A75104DBACCC7894B3F5934B112886E517ED9A368F2AE4C7F740C00C5"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\Plinth\\DesignatorDropdownGroupDef.xml",
+    "SHA256": "5D4AFB49A5E93F6A2793D106413129CCC28A620309CD77824905D3E869BE7A2D"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\Plinth\\GraphicsDef.xml",
+    "SHA256": "51442BFECECC7EBE47F7F175F0079534BBCBDA87A0107BDA50DC5662A758750B"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\Plinth\\ThingDef.xml",
+    "SHA256": "3D4FAC03C75BBF61A22F36EA0CBF9646DA543BE02EC053B0DC4F397647880DCB"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\TextileBundle\\DesignatorDropdownGroupDef.xml",
+    "SHA256": "87E512BC41801C791AEA0C0144F7ABCED2A92E8AAA04D15B14A9171381C746F6"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\TextileBundle\\GraphicsDef.xml",
+    "SHA256": "57121612E9DFBC548364777AE18E43AC2B8EBC062A851ECCD47982A7E2E0289A"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\TextileBundle\\ThingDef.xml",
+    "SHA256": "EC75BDE00CC8FAF28C0BBD881477AF295337C87490D35B06BC900458B912D757"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\WoodPile\\GraphicsDef.xml",
+    "SHA256": "9A94E5A2D6F63EDBE5B82E9BD826E0FA0BBB03D96EB6F788A6CB4030B49CD973"
+  },
+  {
+    "Path": "Mod\\Defs\\StorageBuildings\\WoodPile\\ThingDef.xml",
+    "SHA256": "4361023059BA057446081750FA375EE81404E71E029D0F2391E16E65F7D1427B"
+  },
+  {
+    "Path": "Mod\\Languages\\English\\Keyed\\Generated.xml",
+    "SHA256": "118EB1033ABBF38119DB82A2265A3CEBE764A17928A563CEE31F7C433DA962E0"
+  },
+  {
+    "Path": "Mod\\Languages\\French\\DefInjected\\ResearchProjectDef\\ResearchProjectDefs.xml",
+    "SHA256": "13A7D341A64A099BD54D122FB345483A056C9B78B8115DEA957FAD85B89481EB"
+  },
+  {
+    "Path": "Mod\\Languages\\French\\DefInjected\\ResearchTabDef\\ResearchTabDef.xml",
+    "SHA256": "C249817624A200A4D6E3016112FEDACBD3C985D3ACFDED16F7B8FAF9B85CB400"
+  },
+  {
+    "Path": "Mod\\Languages\\French\\DefInjected\\ThingDef\\ThingDef.xml",
+    "SHA256": "906F4E1D95F578745156D63A6ED60EDBBB35B32BE1B1524001544E90A8257A27"
+  },
+  {
+    "Path": "Mod\\Languages\\French\\Keyed\\Generated.xml",
+    "SHA256": "6FAA78DBBE418A29E48E4E6F2ABD869CACB78CA81A08DFB6C276308B325267D4"
+  },
+  {
+    "Path": "Mod\\Languages\\Russian\\DefInjected\\ResearchProjectDef\\ResearchProjectDefs.xml",
+    "SHA256": "23609F1F7E11A6F21BABEBB6887A59E00103A4E841BA7C44B259B090D72EBB32"
+  },
+  {
+    "Path": "Mod\\Languages\\Russian\\DefInjected\\ResearchTabDef\\ResearchTabDef.xml",
+    "SHA256": "FBD8903AAE8D00220EC0E7EE1C395DF2070463E231F54F468231183998D85A34"
+  },
+  {
+    "Path": "Mod\\Languages\\Russian\\DefInjected\\ThingDef\\ThingDef.xml",
+    "SHA256": "61E745FE026DC6DD7BCB62CD1376F887E06CF31BE952008E7FB3F2E0328CEFF9"
+  },
+  {
+    "Path": "Mod\\Patches\\ChunkStorage.xml",
+    "SHA256": "60856F987F5030FF0D3D6CE2C9303A44FA4E09F810CDB8BE081E82FE826CC7DF"
+  },
+  {
+    "Path": "Mod\\Patches\\LargePot.xml",
+    "SHA256": "3BB7182EE443C204D5455559A7526F8D68FBE476D49FD6EB5075C5946C80807E"
+  },
+  {
+    "Path": "Mod\\Patches\\Plinth.xml",
+    "SHA256": "17209EEE215FC67F4DBCF057AD62E676BE863D2965FD400ABF0E5DEE3EBF43C9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Basket\\BasketBase.dds",
+    "SHA256": "AA1F7A3B47357F8202E48F591558BE85523C258F8B82BF53BEF7BFEB51277A7E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Basket\\BasketBase.png",
+    "SHA256": "D28325EEDD9BEEC201296CEBD066EF9ED22662844F5B1C198167A1DB87E61998"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Basket\\BasketFabric_m.dds",
+    "SHA256": "453B98A0C149D20B39298DA3426E3A96A649D322D3355F164CAF8C41747208E6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Basket\\BasketFabric_m.png",
+    "SHA256": "FE4529C0BD6509D739E4C87F398ECBDFADAC8BEA947E0554B89A09ECC99A0261"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Basket\\BasketFabric.dds",
+    "SHA256": "A22BB49D220255B96D59157C047A1593954AB82160B5268D1941CF128C015A96"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Basket\\BasketFabric.png",
+    "SHA256": "35CA7E07C24FC849D735729D1879A15149700FE24B46ED9D514ACC1450CCBED6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage1_east.dds",
+    "SHA256": "7D5517C33C25B25535D454CB5D3837FE98475A7858B6E5A5F75F6431689041F8"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage1_east.png",
+    "SHA256": "88A85547B3EE0909EAD52A85A1558631D6D6D236EE634785C1993650BFA42EA2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage1_north.dds",
+    "SHA256": "26DCE4DC5F36BDB27ED63407A8A9A8A212FD2A3EA86AAD0A5B201D268DC4BDD6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage1_north.png",
+    "SHA256": "C09FCCC10B9B02A967F871414A7A4D1F693C6617555DDB008E4F409A2FDCB11B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage1_south.dds",
+    "SHA256": "3A100F59FF2266DD980C945B02D8BAF7D8469E82C0B2D8C86D28F8292E4713CB"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage1_south.png",
+    "SHA256": "A298CB72C0588298A050EED0CA453FABC6A42706BFFCAD33207819701EE409DD"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage1a.dds",
+    "SHA256": "562625A78BBB84C2F59AF407688E9327A14A2ACF562458355E01512E455ABBF2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage1a.png",
+    "SHA256": "EAB06157FBCA25942698A775BB2C7FC1B75D878F294BE9F2E63D06A6C60DA01B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage2_east.dds",
+    "SHA256": "F7F899F85A6348DFD6A7A5ABF9B1B409EE8E9F439E2D0B71BCF48305CD1A804A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage2_east.png",
+    "SHA256": "1A762D00269D225E16E4EF805721030945815553366034926CCF691EB95FCB84"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage2_north.dds",
+    "SHA256": "2040BD01C2509D6EB177EADA7FBA44E734BE5E8E9A28F95461730D914D7DED8D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage2_north.png",
+    "SHA256": "906171E52AC25FC49112AB8415146CEBB1E4CC149053E02A10D87EB2EAD111F1"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage2_south.dds",
+    "SHA256": "D5B1D2D7846E64915BD97CE5C6FE600A18F45D94A1C5BB9D560FFCAC3F825FF6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage2_south.png",
+    "SHA256": "B2CEB2E7D4665A40394EF7E48ED39BDF476EEBA2EB0905A3A9F3124728F3937C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage2a.dds",
+    "SHA256": "9AC51AF2C2D9D38F0CC7FD86C8E5DB86BAF3B1AC7C02B37A0AABF21383CDDD4C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage2a.png",
+    "SHA256": "E050406EA5D2D57F8A6120B06219B9453F7B67C8829FB5594968CA89C50701EB"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage3_east.dds",
+    "SHA256": "7E2CD901675903973FC78AF30EFD209F648E4931AE83A4E83169322BCA037672"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage3_east.png",
+    "SHA256": "BB1268D0BEA22DA1EB8064FAED33596FB37753EDBA4CD782E825DCB6FD2C9A69"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage3_north.dds",
+    "SHA256": "DC255F5B7566C2F351D15614EF630EA892F5312FA94D386E3528450493D26862"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage3_north.png",
+    "SHA256": "3D94B0BBFEEF8A9B3ACFF5248895A0B9179945D3A5FD2AA0F03C2D70FA110FBA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage3_south.dds",
+    "SHA256": "D67C723285D60C510EAE8FA64E5F3C6AD9DF9D4F2B44C247261E0D1B793B1C98"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage3_south.png",
+    "SHA256": "47913B2F2FFEFAD11A22FCC6B55B45D95D2B33EF743D2DA930C3987267715F01"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage3a.dds",
+    "SHA256": "35C459C4B9A7670DC168794C89B0478E0D22C8A570D63DD5ED90BD02F22249F3"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\ChunkStorage\\StoneChunksStage3a.png",
+    "SHA256": "7FF52B193065D45B6B0D9E7D6AE51EA579F750887A45E20AEB2D50D3A6F4784F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage1_m.dds",
+    "SHA256": "11537F2D6ECFBB5802B55D1A1A6A6A4AF7FF76C5A04FAFCB6F68C2D3C30F34B9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage1_m.png",
+    "SHA256": "E4E8949D9903BDFA5F2571EECF6423AAC10F34BD598E51D73CB2B66EB67B168C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage1.dds",
+    "SHA256": "D3144816137C5308D2541A0F0CD5D60A47AE7A5DCBF6B64DA1AFEB76DBD2147E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage1.png",
+    "SHA256": "D91CD32B5AC4C8E2BE561D53A53E5BA02B90FFD5761B7CBFEE09F66A5C039B3A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage2_m.dds",
+    "SHA256": "2706EE51ABE7C95AFB0CEF702FA672FC295CE2F44078E97BA22BD99FECDBBF43"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage2_m.png",
+    "SHA256": "35A740B0E9D9C0D6B6088FC89E86AED13DE2B080935211D7F7A11D104C66827F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage2.dds",
+    "SHA256": "F77CE9ABC43E6DBE2F9568DD3E883366EC6F069B8004C15AD534C0C8B1E22EB1"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage2.png",
+    "SHA256": "E7E50018279547C2F61D7EF00248D922F3E2DFFA3667E5D45FC55E024EC42A9D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage3_m.dds",
+    "SHA256": "8A11318F855C6A9A1E3F3156E2AF15402C7B0CD75AAC9A8EF1627D1694DFEABC"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage3_m.png",
+    "SHA256": "DBF5D046E0261DDBC88CD00156A35BC003BC0D0BB76A910D166739CDCEE7351B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage3.dds",
+    "SHA256": "2716EAE69719E9C7BF888882FC1BFFEB00BAFF0335AF41A02C9E0933237BEBB8"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\HayPile\\HayPileStage3.png",
+    "SHA256": "FFD6C8A6164136F25AAE54C5DACD9534E6C59944DDBF2F4507B29C1BF67ED81A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotAgave_Full_m.dds",
+    "SHA256": "C8BBDDDB9C2CA9FA07EBFFE71EEE8A118F3D58E3E7872C3F8E54D37179916DF2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotAgave_Full_m.png",
+    "SHA256": "649C43F7B477F185C2C421FFCB16C76D0CF756A816DA4D4D633C5FF13D33A9A6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotAgave_Full.dds",
+    "SHA256": "CFD197E2B21F6BF811BCA6BC0AD536CDF61BFABD9A8860BB60A864ADA0901A24"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotAgave_Full.png",
+    "SHA256": "E47961193A7229CEE4CA4E4D91B1D0644FF7E6CC41260EBC4D9A7FC8B79F6BB4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotAgave_HalfFull_m.dds",
+    "SHA256": "C349D5BE06FF8869DE550375F1D242A73783922D6A8B1C6BF960079DDFB54C8E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotAgave_HalfFull_m.png",
+    "SHA256": "3862AD2BC7D402968FE0E057AC3010DF8F30F2E8715CD574CA9750121D0EEFD5"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotAgave_HalfFull.dds",
+    "SHA256": "35D3CD3106735D1B43449803524068FBCF43BDEA990467090CAA8CE0AF51753A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotAgave_HalfFull.png",
+    "SHA256": "A36BC427DA1F33D1E5735298083D93C289DC6338F2686F52C2C70F7B59495B72"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBase.dds",
+    "SHA256": "8A3DF795BB0C22AD8D9B4ACB181805567D3DD43C7F6A5AD8226E0CD1C6EF3858"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBase.png",
+    "SHA256": "A7CDD8B671CA5EA2F3A93FEEA6973898749A03D83DACC989B74371CF4645D434"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBaseStone.dds",
+    "SHA256": "78203AB48FA93F7878C9C6D519C67B7BDE8AE1973FA423A9FA87B1F16BFE0349"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBaseStone.png",
+    "SHA256": "20CD393719171D63284C5DEA4A9D55E5E68E669FE678A75C8AAB7AE43DCDF82D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBerries_Full_m.dds",
+    "SHA256": "43422E7BC852B6FDE63D5193901103A159EEFABE34B9061D272E33B6D142E75B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBerries_Full_m.png",
+    "SHA256": "379113621C2B47F5886DAC4CE7BA47EC80F410EBEE71BFCB054E64F125315F12"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBerries_Full.dds",
+    "SHA256": "1F5E0D237D39A502829EB90E06AE1DEEAF20C725895E51A8A16973B002F31F57"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBerries_Full.png",
+    "SHA256": "624BCB4D26F0EA31667614EFBF51C5B9ECDBBC1C2BE4C561977F2888BF3923F0"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBerries_HalfFull_m.dds",
+    "SHA256": "C201D9417EA535147DA9B3F1AC1704DB214233FF1D2CC40F44F0960C54C301CC"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBerries_HalfFull_m.png",
+    "SHA256": "E22FF0A262B1763A9BBA6F208AD2DA160B6B027CDB3F69343E017652E0A09A82"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBerries_HalfFull.dds",
+    "SHA256": "CBA216984C743C1013A3C6070FC9EC3F4E020ADDEFCF9347C1CBB1E926D370F5"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotBerries_HalfFull.png",
+    "SHA256": "F44BE9D6BDB77B32F04F4FE44DEAF24ACD2AC5CF19A3BBF8147C427C02FBB0D1"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotCorn_Full_m.dds",
+    "SHA256": "CE33DE69D3DBD50D39EFAF20EE757D81172D98A5EF6EC3652004BE9E29AA3615"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotCorn_Full_m.png",
+    "SHA256": "EE6815D57B3C96E917B86CDB94FECFFEE377653A21895B6C48863EA9C93313FA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotCorn_Full.dds",
+    "SHA256": "2197B81F852FCDD77B5F151CFB2CD6A832042CD1C15BA129ACF0BA780F849D2E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotCorn_Full.png",
+    "SHA256": "B2994A947073207A4C9CD7A8C7157915BD255A5EEE84997AFBE92E03FB328240"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotCorn_HalfFull_m.dds",
+    "SHA256": "6FC6A1EF6FAC2562718065598F8A3F55B2D2CDF12A66BC8225622E6EBAC77062"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotCorn_HalfFull_m.png",
+    "SHA256": "DDABC7F4BEE1BE307510596FAF0C9ABE12AB3B67DB8854198AD2FBC1DEC9694B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotCorn_HalfFull.dds",
+    "SHA256": "1E956AE4D56C75C5F77AC2F78D289229343BDCB562EE2EA0C2932D3D1726137A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotCorn_HalfFull.png",
+    "SHA256": "9D5E7A2A95B3D1CD565BBBAFCA5F8AB5249C7C1EE53C52E7184FC9775195D927"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotEgg_Full_m.dds",
+    "SHA256": "AFA2973EE76A6F2F4D392AFFCD215A431FF0D7C013F96DAE354ABBB0688B9ECD"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotEgg_Full_m.png",
+    "SHA256": "4248B7638459F2947567BB019F9E64A2B41FDC8B330CBD8FBF00E2C4B4ABF5E3"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotEgg_Full.dds",
+    "SHA256": "084ACF15C05756E00194361A45C858E904C6BEB3E4FA5090A81FD4ED8600F615"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotEgg_Full.png",
+    "SHA256": "79253EDCBD4657A076915BBEB5C7957516664B4D7127AF5B509D7FE20193D8FE"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotEgg_HalfFull_m.dds",
+    "SHA256": "2AC320A85F7DEB63BC9684C3496011E79C9169A2B9296620F0CB2EB65B571DEF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotEgg_HalfFull_m.png",
+    "SHA256": "8050BC0B2AEDBD22EA195A323921019AB1BBA4E57C6F8682BCFDE93A7F54C898"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotEgg_HalfFull.dds",
+    "SHA256": "552D91639D008F745C811900F47756F95E74C3F21E2F6D475C5BFB057FCCBF63"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotEgg_HalfFull.png",
+    "SHA256": "EC7B2374D482741AD9E6BE39CE488BE00B97149BC77212D9BF31C07FBB649171"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotFungus_Full_m.dds",
+    "SHA256": "49F2123DF3D84429354905670B97A49BCB79AB70D28F9C303CDF02CB210B8C42"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotFungus_Full_m.png",
+    "SHA256": "5FE3AEAFAE27077E497628842961C429CE035592FCF97FF05A92C53671BA08BA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotFungus_Full.dds",
+    "SHA256": "217E938861CA9EB2FFA9E6695C0440237D09B4F595F161CA9E92A624479E3F43"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotFungus_Full.png",
+    "SHA256": "AC0CC6F6F381C13673E10C5242DCB3812D829823C1B92A8740171B5F5213FE39"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotFungus_HalfFull_m.dds",
+    "SHA256": "37A2EC2EBA94525009B08EB3AA35D9B00936DC3968CAC06693F7041D910BD34F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotFungus_HalfFull_m.png",
+    "SHA256": "C10875AA619C5832B703A420E059B2395D22734D847EC7E713C09980C324DB20"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotFungus_HalfFull.dds",
+    "SHA256": "A063FB58E8508F0CE2F6F8D0BBCC317D6560D05764CFA7CD9988427863C810C5"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotFungus_HalfFull.png",
+    "SHA256": "2650FAD84EBAD30ABA922368ACDF2D60945962EC023783F8CA4AD355F91DAD0E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotHumanMeat_Full_m.dds",
+    "SHA256": "092B2A2B505B3F4C7E8537D6BC1BE0817F1F67732E3C48B6914E3D77B86FDDB8"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotHumanMeat_Full_m.png",
+    "SHA256": "834F28C5F28323DA37EF14A1CB40E6122CBA36DF1CBFDABC9E8039ABECBD2034"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotHumanMeat_Full.dds",
+    "SHA256": "4B5A2EDEA3B404B5BE3115874C1E3CFD5B3C0D796A6C6B3A385F99D8500C34FA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotHumanMeat_Full.png",
+    "SHA256": "0754DF120303999F098588245B544BCDA12ED11882A1561F995CAA1B50CEF98F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotHumanMeat_HalfFull_m.dds",
+    "SHA256": "141B8A05113FBA76A8B62E9ED502CDE590064942F36933AB88F7BC1070D8BE7B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotHumanMeat_HalfFull_m.png",
+    "SHA256": "903D8F433F15BB85603704F5CB2859E3BB49CF0483D6683AA651B475D794B10A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotHumanMeat_HalfFull.dds",
+    "SHA256": "92F587D1D7367C2AD7F603E1B6C592C25B929A732E024E9511D3A1DF3D24C23A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotHumanMeat_HalfFull.png",
+    "SHA256": "55F3E8B4ACC759FD4118497D15D9D6DF2AB275FAF72DD56AB4DE1403A4176257"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotInsectMeat_Full_m.dds",
+    "SHA256": "E5A3A7972543AB4AC149B1C3AEEBE12AE05DF88A96F6958957714B6026BDC9AD"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotInsectMeat_Full_m.png",
+    "SHA256": "D4F87388043BA95EF2DBF52EB28546884F2B58C6249A82FA0F0DFFC980E82124"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotInsectMeat_Full.dds",
+    "SHA256": "648773A2A051D3458FB03C52773B0B5525A417B42B152025525E3043970C89A2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotInsectMeat_Full.png",
+    "SHA256": "48738C39CF55640FD9255DA5161918DF7086B5DA8DA0D597B75F6A8C0FA5DF52"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotInsectMeat_HalfFull_m.dds",
+    "SHA256": "71FBB6976A28664ED3F1492D3260CE21B61E899BC5E23AF71B62781351EE1BF0"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotInsectMeat_HalfFull_m.png",
+    "SHA256": "C64D9AC534F1A390A1CEB595F75C29D6D9113D7C6D0D451F3A1A1293BF4E6F78"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotInsectMeat_HalfFull.dds",
+    "SHA256": "97FE8F58707EDBE2455575EE3FD3DD735F5446C92731C65CC2A670A6081DD5EF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotInsectMeat_HalfFull.png",
+    "SHA256": "B6B36785273C647AE4BF5C8B0F19D9B0ECF8BE9706581E74F432CD10A926A36B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotJelly_Full_m.dds",
+    "SHA256": "2B93352FF98DFB4D0790C8D95B668D8252A1D7ED3F912FD5159E7E3A23CC672E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotJelly_Full_m.png",
+    "SHA256": "6242E573C853865541A8F9E3440E1883F7AE0BA3F8CC6FDD2641F7D25EC7E37D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotJelly_Full.dds",
+    "SHA256": "ABFDBDFC38371819C076BD1AF5871E5A9C4898DBE6285088A41932903F1B6FD9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotJelly_Full.png",
+    "SHA256": "63541E1D60399A954149A8E618D8E09328BA810D3848B2AC1E44722D01603959"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotJelly_HalfFull_m.dds",
+    "SHA256": "42134501DF3581DE9BC109B9D80DBA72DA01343E008CBA448FFD7557E45A98F2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotJelly_HalfFull_m.png",
+    "SHA256": "AE53A8B1540C357997420CD33F5F2A9CFF2C97A9190677DF643285115BFED1F3"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotJelly_HalfFull.dds",
+    "SHA256": "725807C51CAECD16F4243E7955F77020818434A188A2973EC00C335F4D038B6C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotJelly_HalfFull.png",
+    "SHA256": "B2AAF8B575E09650123D2983F8E955D7871BFD7077B6CB57B6C20FE7645317BB"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotKibble_Full_m.dds",
+    "SHA256": "43422E7BC852B6FDE63D5193901103A159EEFABE34B9061D272E33B6D142E75B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotKibble_Full_m.png",
+    "SHA256": "379113621C2B47F5886DAC4CE7BA47EC80F410EBEE71BFCB054E64F125315F12"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotKibble_Full.dds",
+    "SHA256": "5CE1990A25A89AF1A7A4770C2AE1D8A55B08B7B50DEE74C87A948C4B7E6EA791"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotKibble_Full.png",
+    "SHA256": "28B428C9B7411EF2967B9D80CD02309B77480718833FBDBEA23AA24FD384CE9B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotKibble_HalfFull_m.dds",
+    "SHA256": "FCB4D8E25CCFE8BEF5FDF81A2527AEE93901221AD1ED1492A3E776B22FED3602"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotKibble_HalfFull_m.png",
+    "SHA256": "EA75B6BCD282EDADFC4D05EB7F500B335289AB837A77E2F9541A18B17E1A231B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotKibble_HalfFull.dds",
+    "SHA256": "DCC0D2E41B335E80C9729D00D2407E3629554A1B56F1EA8826CD988843B20F80"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotKibble_HalfFull.png",
+    "SHA256": "B1C5B8FFC18AED3C8C7D578636C0DF7D1CACDD686F10D7CCB08E331881B3795A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMeat_Full_m.dds",
+    "SHA256": "064B2DF6C85171599BC2583AA633D772E258C47BA80D37F20A18AF5A57BB4DFF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMeat_Full_m.png",
+    "SHA256": "20399A0D537013500BB8DAD59CB21194503E332556FAF84F60260950DB67E569"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMeat_Full.dds",
+    "SHA256": "4E6B003DBC74E3203934FE7D9B86D5C9333C3607E87791E9D57E209F30C10B0A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMeat_Full.png",
+    "SHA256": "CC004DC71F3A8ED591A7D9ABB3A0DC9A97088374DD647543236CFF9B8071E189"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMeat_HalfFull_m.dds",
+    "SHA256": "46864A264F30D63FE70308D021B52FD5C7B608709E1FA78EFE7F30D629E82748"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMeat_HalfFull_m.png",
+    "SHA256": "185AA5AF97D0C789B051A6D5183430EB0D7D422E3511776399CB7150306BD9E2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMeat_HalfFull.dds",
+    "SHA256": "B085FFC0210504444FE8463CA7A9D55244CFEB3DDE9E36DAE8AC3120780EDC94"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMeat_HalfFull.png",
+    "SHA256": "CB40743E46956F4777FE5F03014E64B240032F3E11D08D668A8954C67B57F05B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMilk_Full_m.dds",
+    "SHA256": "7BB7E3D4B6803FA5D3DA76D9C5E96729F772CF0F6EC7FDDAAD87F3D352860E8C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMilk_Full_m.png",
+    "SHA256": "B3927A86C46323CDE5E77FA4CC146E6FCA4D994F4A9A2976A94B4EA42EF26139"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMilk_Full.dds",
+    "SHA256": "C71F451AA484E29EB402433E6F117E0A30B650FCB86441595C70D70BD2660079"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMilk_Full.png",
+    "SHA256": "CAE2867E6AF7FF4AA34F3ABC2B4A836463011FD304FFCAE2FD81087657E6C1EF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMilk_HalfFull_m.dds",
+    "SHA256": "41AFE95BC350C50DCEF6EF3B21A6278341482F1292B37DBE5EF9DBAA773BAD13"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMilk_HalfFull_m.png",
+    "SHA256": "B3974750B52636A95C99581E620C7886CDF2AF1063936D6566096754ED433455"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMilk_HalfFull.dds",
+    "SHA256": "B97A753C7CB1C04E49090DDD670616C6D395397188C7090FC355860B6264BFFC"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMilk_HalfFull.png",
+    "SHA256": "9976378015F9A1F59340EE8F0404F923A6100E240E77E69F3DFC3D53C1856282"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMixed.dds",
+    "SHA256": "AD92F2024D0E12E2DADFEDDCE5AF9C11FAF4C02A80D26B0704B729FD18F742FB"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMixed.png",
+    "SHA256": "3FBFEE9E78C7766584AE9CD4DF156DBB6EEF51FD45745EC132A452CEE6DC630F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMixedStone.dds",
+    "SHA256": "E14D406D39E12E1171E7295E703614587B7B7EC69AE2D025CB256AAD85A27150"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotMixedStone.png",
+    "SHA256": "DD6E85E5D0475B9C17F0775C02E2A4C8E2CB628CF6046DAD11A788BCE994F2BA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPemmican_Full_m.dds",
+    "SHA256": "32CFABA6BA6AF4AF5F31A64F343418A28F740F6C82A9689A19D28FA3F0528A27"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPemmican_Full_m.png",
+    "SHA256": "0E7228EEBDE79DF9C8F65ABBCF3817A01FFF1C103D9342CE6ACBF72F0AB0E72E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPemmican_Full.dds",
+    "SHA256": "920F96A07D4E48E61FAEC4DE802006B134895957373710685A9FB207D32A3FCB"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPemmican_Full.png",
+    "SHA256": "939E5B1DCAB0625E005CE7272AEC75E36A7B2B09B33E23A2D7A79563426C9723"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPemmican_HalfFull_m.dds",
+    "SHA256": "5E81B69B282F919045D7FBA63BC109B5ADA48F429372D35C040AED088F21D0DE"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPemmican_HalfFull_m.png",
+    "SHA256": "2777FDFC28130330D933429C06223062D8531EB7D89AF0A57BE30E4242E2EE37"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPemmican_HalfFull.dds",
+    "SHA256": "516441038FE449915E0437AEA2083FAB8F4505C812C8EF6BF5493F365115FB2E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPemmican_HalfFull.png",
+    "SHA256": "7C4E23842B5E7E1331C8CEAC8A9C54E60CAF64FB7DBF9E7F337B71E7CD63A9C8"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPotato_Full_m.dds",
+    "SHA256": "E7812A7D63AE052201ABE3838AC20C50A6D5198DB1E8927061768C3AB165B420"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPotato_Full_m.png",
+    "SHA256": "324F7A8D5FC7EAF8C4599884D908E6F0A7B9A91B6F63E8B1A22D6CF212343E38"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPotato_Full.dds",
+    "SHA256": "62EFA38D2F30D9E40B89A124A98252C0D2B2983BD580C01377C8A0C53A6BE625"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPotato_Full.png",
+    "SHA256": "25B4CFF5D3CA144CB020AF318FC4031BB808CA69DEE88A5BA75506033AA62012"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPotato_HalfFull_m.dds",
+    "SHA256": "22EFE9831877E288BE40C0A7B6480464E918FFC8E7AEA882E45E9BCC1057B0C3"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPotato_HalfFull_m.png",
+    "SHA256": "6904C113F42BECD9B4413FFA83E8B79A74B99095A913F3C2908E5016B744F7D4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPotato_HalfFull.dds",
+    "SHA256": "09A0C9ED42FAC75554D1A709EDFF25E626A95089B7235728842E6942D031A603"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotPotato_HalfFull.png",
+    "SHA256": "42D5D56AEEA85F06FEC408D3356D9980047A2449C6641EACF3A42D9C419047B9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotRice_Full_m.dds",
+    "SHA256": "A90335C0576A77F2EAE07B71290D1924E38220EC05BBC2CF0F42441978C3ACB6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotRice_Full_m.png",
+    "SHA256": "0C3CCD3C19461C6840F455B5E45979A9AACFB4C0E53D7891203C9F19DC75D906"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotRice_Full.dds",
+    "SHA256": "D0A041B2D658BCB96A13930352E9E8CDAC632B2BAAEB34878594E55C3B1521CC"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotRice_Full.png",
+    "SHA256": "C7BEC126C439A55B4AB21EB668208EA74FB4F146614595E5135502312DA3C8EA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotRice_HalfFull_m.dds",
+    "SHA256": "D2869D1796D9015CC9D1BF6C38EF9BA52B2F8C8C46C28CFD5D6296E388A87BA7"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotRice_HalfFull_m.png",
+    "SHA256": "320214665AA6D9C78DF4A0BD212D7D15C3729D4A9F5D29A6A534F336B8A6278B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotRice_HalfFull.dds",
+    "SHA256": "4649970C84EFC1073E173CA320EA4F4EBE409B0F9A9B44BF7FAA3C396F460DC2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotRice_HalfFull.png",
+    "SHA256": "E794CFFA9ADD92F03867DDB532F13E40F69AC4DF7957A2C6E0BA08F791C8BDD2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneAgave_Full_m.dds",
+    "SHA256": "C8BBDDDB9C2CA9FA07EBFFE71EEE8A118F3D58E3E7872C3F8E54D37179916DF2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneAgave_Full_m.png",
+    "SHA256": "649C43F7B477F185C2C421FFCB16C76D0CF756A816DA4D4D633C5FF13D33A9A6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneAgave_Full.dds",
+    "SHA256": "6BEF358D9362CA17F724401AB93DBFE168CF6840CC2E52F560C6B2ACAAE48AE6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneAgave_Full.png",
+    "SHA256": "F4034776A3F6F0B2077C66FD22589F2201C0EB4D8BAC02E2DB9BA7148C0229EF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneAgave_HalfFull_m.dds",
+    "SHA256": "C349D5BE06FF8869DE550375F1D242A73783922D6A8B1C6BF960079DDFB54C8E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneAgave_HalfFull_m.png",
+    "SHA256": "3862AD2BC7D402968FE0E057AC3010DF8F30F2E8715CD574CA9750121D0EEFD5"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneAgave_HalfFull.dds",
+    "SHA256": "185BD3899B49DB35D8C523BF50DCECDC0DD63791AF526D08E560100DE7F1398F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneAgave_HalfFull.png",
+    "SHA256": "0F1DB0A21945851F035964F4AA1ADF9B88924319A216780A488A0210AF6FA5BA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneBerries_Full_m.dds",
+    "SHA256": "43422E7BC852B6FDE63D5193901103A159EEFABE34B9061D272E33B6D142E75B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneBerries_Full_m.png",
+    "SHA256": "379113621C2B47F5886DAC4CE7BA47EC80F410EBEE71BFCB054E64F125315F12"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneBerries_Full.dds",
+    "SHA256": "22DB2D52047B9683FA9059144758B2BCC2C2834C42FE96F6E03853AA58B36042"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneBerries_Full.png",
+    "SHA256": "3FA151462CC886EFFE92695D61BDE9CB242614806C9559FAD432273493415A09"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneBerries_HalfFull_m.dds",
+    "SHA256": "C201D9417EA535147DA9B3F1AC1704DB214233FF1D2CC40F44F0960C54C301CC"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneBerries_HalfFull_m.png",
+    "SHA256": "E22FF0A262B1763A9BBA6F208AD2DA160B6B027CDB3F69343E017652E0A09A82"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneBerries_HalfFull.dds",
+    "SHA256": "A2D7C0B78C4B81C713A32B734A721A5C6D30CF05E42832539D23ABF3DB2EEAFD"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneBerries_HalfFull.png",
+    "SHA256": "EE5C2803E665FA4E7F6863171E4CB73D855B3581BF5906594933E87F8723E395"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneCorn_Full_m.dds",
+    "SHA256": "CE33DE69D3DBD50D39EFAF20EE757D81172D98A5EF6EC3652004BE9E29AA3615"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneCorn_Full_m.png",
+    "SHA256": "EE6815D57B3C96E917B86CDB94FECFFEE377653A21895B6C48863EA9C93313FA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneCorn_Full.dds",
+    "SHA256": "9772470EFD7590EE989DFFB8A3569FB10D4449FA6866206B519CCC6BE15599FC"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneCorn_Full.png",
+    "SHA256": "8A88D6FF22EE57E1177FF86FA8267F6655A461DA7833767E26C41D3BF6C0A353"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneCorn_HalfFull_m.dds",
+    "SHA256": "6FC6A1EF6FAC2562718065598F8A3F55B2D2CDF12A66BC8225622E6EBAC77062"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneCorn_HalfFull_m.png",
+    "SHA256": "DDABC7F4BEE1BE307510596FAF0C9ABE12AB3B67DB8854198AD2FBC1DEC9694B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneCorn_HalfFull.dds",
+    "SHA256": "B606FFFA9B669BC9AB235AE37EE7EF07374BF7C8250E6B9BC870E42799CE0B66"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneCorn_HalfFull.png",
+    "SHA256": "5C9B3EA3835140F38079F7C1161357252E3B63B043B3C1C873A601E216BE4153"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneEgg_Full_m.dds",
+    "SHA256": "AFA2973EE76A6F2F4D392AFFCD215A431FF0D7C013F96DAE354ABBB0688B9ECD"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneEgg_Full_m.png",
+    "SHA256": "4248B7638459F2947567BB019F9E64A2B41FDC8B330CBD8FBF00E2C4B4ABF5E3"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneEgg_Full.dds",
+    "SHA256": "EFC61F777AE9ED78A717DF3931FA506DA7D41EBB92AA1D9FD1CD242A2090364D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneEgg_Full.png",
+    "SHA256": "1FE4B0201B2CC35EAC26BD4B29BDC457A4EED70779BB1CC2750EF187736A31CF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneEgg_HalfFull_m.dds",
+    "SHA256": "2AC320A85F7DEB63BC9684C3496011E79C9169A2B9296620F0CB2EB65B571DEF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneEgg_HalfFull_m.png",
+    "SHA256": "8050BC0B2AEDBD22EA195A323921019AB1BBA4E57C6F8682BCFDE93A7F54C898"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneEgg_HalfFull.dds",
+    "SHA256": "B4161574F988668D4857CB1F7AF250912E43CD7BCB7E5682A22DE11383D9772D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneEgg_HalfFull.png",
+    "SHA256": "B145245ECFA8DC36618632885ABE55A4AD24B6926EE36EF308E0C7A980CAA006"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneFungus_Full_m.dds",
+    "SHA256": "49F2123DF3D84429354905670B97A49BCB79AB70D28F9C303CDF02CB210B8C42"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneFungus_Full_m.png",
+    "SHA256": "5FE3AEAFAE27077E497628842961C429CE035592FCF97FF05A92C53671BA08BA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneFungus_Full.dds",
+    "SHA256": "E2F54959CF5CFB07FB2F1FD2A5C3DA4451D5E264DB917002D96AF640CCCAD0D8"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneFungus_Full.png",
+    "SHA256": "9271693453C8E421204EFBCCAAA83BA4C14298E62CDA4308E5020DC1985DDCE7"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneFungus_HalfFull_m.dds",
+    "SHA256": "37A2EC2EBA94525009B08EB3AA35D9B00936DC3968CAC06693F7041D910BD34F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneFungus_HalfFull_m.png",
+    "SHA256": "C10875AA619C5832B703A420E059B2395D22734D847EC7E713C09980C324DB20"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneFungus_HalfFull.dds",
+    "SHA256": "A057EB340A80921221E38F1AF7CEB56ED3388864C9F68DA228DCF7EA7552D594"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneFungus_HalfFull.png",
+    "SHA256": "F298B0519C34162219584D41765A500C97146F742685C1AFF0B5274F87D37E32"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneHumanMeat_Full_m.dds",
+    "SHA256": "092B2A2B505B3F4C7E8537D6BC1BE0817F1F67732E3C48B6914E3D77B86FDDB8"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneHumanMeat_Full_m.png",
+    "SHA256": "834F28C5F28323DA37EF14A1CB40E6122CBA36DF1CBFDABC9E8039ABECBD2034"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneHumanMeat_Full.dds",
+    "SHA256": "5D6836020928321B161F87DE751A2571092E4D4FD5521451E3CAAA8CEA5A8BF4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneHumanMeat_Full.png",
+    "SHA256": "1E3CA644F5AE4548EC4CF63854D7865BA91560B093DFB9C56D86F7D210D61580"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneHumanMeat_HalfFull_m.dds",
+    "SHA256": "141B8A05113FBA76A8B62E9ED502CDE590064942F36933AB88F7BC1070D8BE7B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneHumanMeat_HalfFull_m.png",
+    "SHA256": "903D8F433F15BB85603704F5CB2859E3BB49CF0483D6683AA651B475D794B10A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneHumanMeat_HalfFull.dds",
+    "SHA256": "985210C7F2EAD6BE10765CFA31EDD6E74901C9D8D397A17BA665B40B8A8A315A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneHumanMeat_HalfFull.png",
+    "SHA256": "783FF539F3F7E84F998E4EFB799DE781223FBDB33C0C93350AAC103084197BE0"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneInsectMeat_Full_m.dds",
+    "SHA256": "E5A3A7972543AB4AC149B1C3AEEBE12AE05DF88A96F6958957714B6026BDC9AD"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneInsectMeat_Full_m.png",
+    "SHA256": "D4F87388043BA95EF2DBF52EB28546884F2B58C6249A82FA0F0DFFC980E82124"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneInsectMeat_Full.dds",
+    "SHA256": "A5822BC3369C15962582CBFD043AB1CDB0E9535AEE3B25937E8BAF02C6CCCE35"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneInsectMeat_Full.png",
+    "SHA256": "5623DA9276165DE9CFA336AC06D88D6E75823C78C521EEFC8544CCA2BE3F232C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneInsectMeat_HalfFull_m.dds",
+    "SHA256": "71FBB6976A28664ED3F1492D3260CE21B61E899BC5E23AF71B62781351EE1BF0"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneInsectMeat_HalfFull_m.png",
+    "SHA256": "C64D9AC534F1A390A1CEB595F75C29D6D9113D7C6D0D451F3A1A1293BF4E6F78"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneInsectMeat_HalfFull.dds",
+    "SHA256": "E19E1C84CD5BBEA1F076D61F258D3DC0DC79C62B7B229F2635DA1E2A6B51A3F0"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneInsectMeat_HalfFull.png",
+    "SHA256": "5F222AC95BF6CB47D62CCE88CCA1248B8A3E5139535C37813CCE6ACC84DB7EB5"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneJelly_Full_m.dds",
+    "SHA256": "2B93352FF98DFB4D0790C8D95B668D8252A1D7ED3F912FD5159E7E3A23CC672E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneJelly_Full_m.png",
+    "SHA256": "6242E573C853865541A8F9E3440E1883F7AE0BA3F8CC6FDD2641F7D25EC7E37D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneJelly_Full.dds",
+    "SHA256": "AE55955CE2B776D1E324BC1F82F398F6F0B3B305D5B501A99C2DFD229A55B938"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneJelly_Full.png",
+    "SHA256": "21367C65E3DFA0C2DE2342D4D37946B6017E6D1FC05B9D3A2801D0FDFB903E05"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneJelly_HalfFull_m.dds",
+    "SHA256": "42134501DF3581DE9BC109B9D80DBA72DA01343E008CBA448FFD7557E45A98F2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneJelly_HalfFull_m.png",
+    "SHA256": "AE53A8B1540C357997420CD33F5F2A9CFF2C97A9190677DF643285115BFED1F3"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneJelly_HalfFull.dds",
+    "SHA256": "622C9618891E228FE138AD5B3CD7E0515E8A769A2C2559D8C2E080E60AF6F6C4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneJelly_HalfFull.png",
+    "SHA256": "6268FD9B47E93334254CB96055717475BAFC33EC21D704D42D66DD287EE3060E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneKibble_Full_m.dds",
+    "SHA256": "43422E7BC852B6FDE63D5193901103A159EEFABE34B9061D272E33B6D142E75B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneKibble_Full_m.png",
+    "SHA256": "379113621C2B47F5886DAC4CE7BA47EC80F410EBEE71BFCB054E64F125315F12"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneKibble_Full.dds",
+    "SHA256": "3871202D00B2B4DBC2FC8BA34EFFB69E2103B7952B4FC9ED5A6A2F1189FB3E01"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneKibble_Full.png",
+    "SHA256": "CA167D43E6DF9BE44FF52B224FBF2F860BCB2681F039741BC00AEC279B9E92B4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneKibble_HalfFull_m.dds",
+    "SHA256": "FCB4D8E25CCFE8BEF5FDF81A2527AEE93901221AD1ED1492A3E776B22FED3602"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneKibble_HalfFull_m.png",
+    "SHA256": "EA75B6BCD282EDADFC4D05EB7F500B335289AB837A77E2F9541A18B17E1A231B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneKibble_HalfFull.dds",
+    "SHA256": "C5C8B9E8A4A00D14D277EA93D055983EE12ED6A84FE1DB2D018F32545FB6B48B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneKibble_HalfFull.png",
+    "SHA256": "A708E2D9EA545C99363D851D4E314739AD8678CA1C68F070AFA86424FA814D2F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMeat_Full_m.dds",
+    "SHA256": "064B2DF6C85171599BC2583AA633D772E258C47BA80D37F20A18AF5A57BB4DFF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMeat_Full_m.png",
+    "SHA256": "1D8F9CB231A72CE1CA2E0B0294E7B10032A82FC1FE04196A056C220DEB0ACBAA"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMeat_Full.dds",
+    "SHA256": "1CD3D9B1A4D0A676E000553A91074B8D00CC441291CF146FCF51E83D125FE4DE"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMeat_Full.png",
+    "SHA256": "D0E82585F5718B54C1A35CBB52D618FA204700712EF8A75D378FA9BE092CE7FD"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMeat_HalfFull_m.dds",
+    "SHA256": "46864A264F30D63FE70308D021B52FD5C7B608709E1FA78EFE7F30D629E82748"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMeat_HalfFull_m.png",
+    "SHA256": "B6C07989FDD5353CB304FA105B551ED6B1E0444F4EDC5CB6E1E34B1CC58627D7"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMeat_HalfFull.dds",
+    "SHA256": "7C2B5FA68D9BC21BBC4B467A8937E3082A7201EC7F1EEADB4359C15BBB98E777"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMeat_HalfFull.png",
+    "SHA256": "235502EF007244532CE00DC13231890C44C06C3A6909350AAA3C5E525D4C328C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMilk_Full_m.dds",
+    "SHA256": "7BB7E3D4B6803FA5D3DA76D9C5E96729F772CF0F6EC7FDDAAD87F3D352860E8C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMilk_Full_m.png",
+    "SHA256": "B3927A86C46323CDE5E77FA4CC146E6FCA4D994F4A9A2976A94B4EA42EF26139"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMilk_Full.dds",
+    "SHA256": "480FF1CB94E13A5C735FA10AD2F7CC8CB6A2F2B168C1648A729D72EFCE2275BB"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMilk_Full.png",
+    "SHA256": "9542D1EC78AE04C4D8AE6C0578FF35492DB9268774AD08C12908ABE4C85360EB"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMilk_HalfFull_m.dds",
+    "SHA256": "41AFE95BC350C50DCEF6EF3B21A6278341482F1292B37DBE5EF9DBAA773BAD13"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMilk_HalfFull_m.png",
+    "SHA256": "B3974750B52636A95C99581E620C7886CDF2AF1063936D6566096754ED433455"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMilk_HalfFull.dds",
+    "SHA256": "A033FE32650E6D53A0C147B8892B2A1FA2A28725BB28DE07BB76CE4A58941487"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneMilk_HalfFull.png",
+    "SHA256": "689B052FC926C6EA35B8922BF766AE12035562B56429F5011F49C7953BF2D797"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePemmican_Full_m.dds",
+    "SHA256": "32CFABA6BA6AF4AF5F31A64F343418A28F740F6C82A9689A19D28FA3F0528A27"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePemmican_Full_m.png",
+    "SHA256": "0E7228EEBDE79DF9C8F65ABBCF3817A01FFF1C103D9342CE6ACBF72F0AB0E72E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePemmican_Full.dds",
+    "SHA256": "B60928B4DF1F9DE5644A30FB7F78C6AC45ACDF7A5DB3A5289D316DE8AF5299D6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePemmican_Full.png",
+    "SHA256": "F823C4495A501063A2BB14DA57ED5F46D1DCCAFBC9316D7395873C3DF770EDA0"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePemmican_HalfFull_m.dds",
+    "SHA256": "5E81B69B282F919045D7FBA63BC109B5ADA48F429372D35C040AED088F21D0DE"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePemmican_HalfFull_m.png",
+    "SHA256": "2777FDFC28130330D933429C06223062D8531EB7D89AF0A57BE30E4242E2EE37"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePemmican_HalfFull.dds",
+    "SHA256": "8C537AD291BBF786EE2C368834C1D0D4E137D994D74BAA8A6DA0916B32544CB9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePemmican_HalfFull.png",
+    "SHA256": "1A3B236EA841DF5651D4659685AB5ED8CEA8A97E145529EA10B92D0A0A19FA44"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePotato_Full_m.dds",
+    "SHA256": "E7812A7D63AE052201ABE3838AC20C50A6D5198DB1E8927061768C3AB165B420"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePotato_Full_m.png",
+    "SHA256": "0796491D9A12616873117BDDF13A303266A69C00FD82A8DF1BCD9A6BFD6173A3"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePotato_Full.dds",
+    "SHA256": "21A89B9BF3519BED9580B0A76C6387C30F138F601136A00331D2665844BB34E1"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePotato_Full.png",
+    "SHA256": "A5E62A6B110533A4EDE980B41CC151BCA16381A10B0DADA8B3F0A5B896F717B4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePotato_HalfFull_m.dds",
+    "SHA256": "22EFE9831877E288BE40C0A7B6480464E918FFC8E7AEA882E45E9BCC1057B0C3"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePotato_HalfFull_m.png",
+    "SHA256": "AFDD21F0555BA28731824475FE188CFACCCAE54A2BA7ED7FE1338FF45566A821"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePotato_HalfFull.dds",
+    "SHA256": "667012A88C8E67D6E47DCA01D8B37DB387D019529319FCD6595E2FFCE6C9F8B3"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStonePotato_HalfFull.png",
+    "SHA256": "EA9DBE18F9DB23F7346D4DE788CDDF34231F1277F677821EBBE4F222736D81E1"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneRice_Full_m.dds",
+    "SHA256": "A90335C0576A77F2EAE07B71290D1924E38220EC05BBC2CF0F42441978C3ACB6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneRice_Full_m.png",
+    "SHA256": "0E9A502014B3581899C64EA8F579C2C9B8FB1A1371A4052BB0EEE71A8B3A2E4E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneRice_Full.dds",
+    "SHA256": "448098542014FB49F3C94A98C7A713D2A95AD3A8EEE4220A4C304D35643DBBD4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneRice_Full.png",
+    "SHA256": "3038891F7BDF6771A827D777140CF1CBBE2000175EA37157C2138C68C049343F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneRice_HalfFull_m.dds",
+    "SHA256": "D2869D1796D9015CC9D1BF6C38EF9BA52B2F8C8C46C28CFD5D6296E388A87BA7"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneRice_HalfFull_m.png",
+    "SHA256": "8EA84B552BE4BDEB5C52F419FE6C83C48CDEF9E5750071CCD4B5FD60C35D89BB"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneRice_HalfFull.dds",
+    "SHA256": "622C8998FE0B598F0FDF5A2EF75AEAEC6E0FCE7B632EEA6F255113D2A305A7D6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneRice_HalfFull.png",
+    "SHA256": "E553E5990EECC4D44AF1AA0EA35CAF7E57EAE70AF9C1B4604BD9AAF021AF4F95"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneToxiPotato_Full_m.dds",
+    "SHA256": "43C5E494070A4CA6FDA72C90F7AC74364F83C0576B7B124B81BED0E4CC3F82C6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneToxiPotato_Full_m.png",
+    "SHA256": "DC2D147773AD231488E48A655641137EB057647E4D3359374EAA5DA22AE02FF7"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneToxiPotato_Full.dds",
+    "SHA256": "AACF8D56C93490D4355234B5884885442C37A20BE5831B1FEF8EC7F9628F0871"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneToxiPotato_Full.png",
+    "SHA256": "C9028B07FC92FAAFFBB7B862C59BEB7A6A035D1EDEB16E7671109E231ADA3DA9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneToxiPotato_HalfFull_m.dds",
+    "SHA256": "43C5E494070A4CA6FDA72C90F7AC74364F83C0576B7B124B81BED0E4CC3F82C6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneToxiPotato_HalfFull_m.png",
+    "SHA256": "DC2D147773AD231488E48A655641137EB057647E4D3359374EAA5DA22AE02FF7"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneToxiPotato_HalfFull.dds",
+    "SHA256": "379BBBFAE858E2322DDA81FC08C2AA723E55AAB5FB6454B1F3789F739E4344EF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotStoneToxiPotato_HalfFull.png",
+    "SHA256": "A915F64BAC26DF5FE5213407198C32996430D4716EBFB183CC685AF4A6638377"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotToxiPotato_Full_m.dds",
+    "SHA256": "C3448D3F9D3221F9AAC49BCD5C59C27153E406805126373117711BB121BA2AB4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotToxiPotato_Full_m.png",
+    "SHA256": "93AF826524382F1371354E54A524045EE0FFB05562B6C113F88F4A9F9B35E3BD"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotToxiPotato_Full.dds",
+    "SHA256": "20A3771EA75ED3A41919E29EFA2CF269F04958D6E457B170B3E27E2642AE5E42"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotToxiPotato_Full.png",
+    "SHA256": "03666D4197CEE1ECD1C0EF5FFEBB43E8ECDFAC94E83F046AB3FA32C1CA667C3E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotToxiPotato_HalfFull_m.dds",
+    "SHA256": "C3448D3F9D3221F9AAC49BCD5C59C27153E406805126373117711BB121BA2AB4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotToxiPotato_HalfFull_m.png",
+    "SHA256": "93AF826524382F1371354E54A524045EE0FFB05562B6C113F88F4A9F9B35E3BD"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotToxiPotato_HalfFull.dds",
+    "SHA256": "5A164DE1818092660FFAB061BB575FD0BB26791549BF0BF3A6BA640DDADDC1ED"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\LargePot\\LargePotToxiPotato_HalfFull.png",
+    "SHA256": "862740526C7C8E157F73DE4BDB9A55B116913FD23ADB89C9B676EAB402BC929B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\MealShelf\\MealShelf.dds",
+    "SHA256": "1290200CDC0FB62106F5B82A8A1C5397AAD5913F41EDA06E423801C9A3049F66"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\MealShelf\\MealShelf.png",
+    "SHA256": "1279DF396429B612AE146B667A1B2F81A1F00BBD75E23C99843E4AC5421B5C6B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Plinth\\StonePlinth.dds",
+    "SHA256": "CC44AA83285EC5F341BA019EAF9E3DB73C48E5E81285EA97CCDEA2B4D503DDE6"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Plinth\\StonePlinth.png",
+    "SHA256": "E223A8F4A3DFCABEAF32BF0CE60ABCFDED66D97268E70D852FA0ACACEDEACF81"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Plinth\\WoodenPlinth.dds",
+    "SHA256": "6ADC739517948AFF5DFC49BB21E20563E73F3849FE6E6EB8448C7BEAA478D920"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\Plinth\\WoodenPlinth.png",
+    "SHA256": "CE433663B956A26149378F1D9234832FDE9EF2389659A8E05236073F02052123"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabrica_east.dds",
+    "SHA256": "6533D293A0125E3BBB61FC7BC54E2255032F2F09772C8FF7FD2C20F0D55B95E9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabrica_east.png",
+    "SHA256": "40D7BC7B56EF803DB6A1E8522C3F1FDD0D1E26C3E07A7BA9A7D07EB473FD6E95"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabrica_north.dds",
+    "SHA256": "0BC6B9EE37D0E01C3DA300D3FA5A59622144DEC0BC3B7064989D0BB5FAC11F46"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabrica_north.png",
+    "SHA256": "6E58CB1F3676F6951A578A226AED9DCA42D5037D0380DDE9668FD83F831F4D2A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabrica_south.dds",
+    "SHA256": "13ACF13D7649C013F7F60E9DE2622ECB0A212EB2C67890334F1CD2FAC19B0812"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabrica_south.png",
+    "SHA256": "C3A2372F8AB7E2EE95C28AAF1EB0240224E65545A1F667E093831C54995F4CCB"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricb_east.dds",
+    "SHA256": "38A85A6A3447C32F1D069697CA9596AE5D3492105B9399B237CD824692E30ABC"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricb_east.png",
+    "SHA256": "67C61C890AE151B60D0F6620EB0535488DF727816EDA9CC6B9F0ABC3048CF3DE"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricb_north.dds",
+    "SHA256": "CAB34F5180F989D1A25894D93BB244E341D51E42393503DDFEC85106988A9D26"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricb_north.png",
+    "SHA256": "4DAB24DFC672B648EA7B305E511AEC85E065065B7646DDDCE6F19411AA8EE370"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricb_south.dds",
+    "SHA256": "523BE4156F1675141AD67FE960351E90C756A3E7D7E8677EF25902EF9CE498A9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricb_south.png",
+    "SHA256": "26F65CF9CDAF3CFE85AB5835FBE7406E26353D809FE8CBF03F47D7308945792A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricc_east.dds",
+    "SHA256": "4CAEE97ECE13CB7F4B34B1325FD0F9F71C1D98BEC04164DC1CD70079A8E318BE"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricc_east.png",
+    "SHA256": "7D8D21DAF85E00A1AC9513156B78B6E8FC28089735383340932EF4F98527A354"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricc_north.dds",
+    "SHA256": "C972EB3AAB481094C53EC54453D0F1C5F2E35D68D893C13577C4C02A3A2EA10A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricc_north.png",
+    "SHA256": "2413CFCCB6823DB96444F80DD8F95C4962AE269B4274E6C4B41C0B785770BBC2"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricc_south.dds",
+    "SHA256": "AE8B73CE943619358AADF3A8F0EF858AE87B7143B41AB1C57EBA706D2E6181BF"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleFabricc_south.png",
+    "SHA256": "9BACC13802FAC7249B7925A7126C9F9E86DCCF880B39D11155663C7B66EE4B10"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeathera_east.dds",
+    "SHA256": "12DFF9B141C3F928D9CFF98DBAA97D8F4534BADEA94A2B4EB170D10FD99F5D82"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeathera_east.png",
+    "SHA256": "88BF5EC2DA28629BE98082BD044533CB3150B8D89F2616DB7F6F021A6EBE3681"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeathera_north.dds",
+    "SHA256": "70BB0F1DEB88DEDBDE0FA5A56A8B1D551505BED1E87D5D06EDDF7D7D5526EE48"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeathera_north.png",
+    "SHA256": "C61EABB95F43AB29EE1EC82EDB4236667FD091C7E8D0B5AE187D2BF4F4B441E9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeathera_south.dds",
+    "SHA256": "C342216608682C4A90DF6DF681416BF334217260FADF7978C24AA8F1FD63C3C4"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeathera_south.png",
+    "SHA256": "39E76DC23FF7345615976AF09E13D2C4C28A7D26F735D6BDF7B660285E8C5983"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherb_east.dds",
+    "SHA256": "1439A2934A4DC351BD04D24BAABDBCDCC86796DBA55D08F54ADBCEBA90E7996C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherb_east.png",
+    "SHA256": "79100820329FCB9A91B41D38DD818405172362D4724CE6D39C352C05A74FAF3B"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherb_north.dds",
+    "SHA256": "E1BD0C69DEF2BC848961C5721EB17B35506F937872E801C4139C1064306ADC34"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherb_north.png",
+    "SHA256": "BB8723539FBA8D65FAB86366FFC944D130E40B94814AC25C585AA4ADE19CBD70"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherb_south.dds",
+    "SHA256": "32E95F6246F26AAED76F4B0236A8F412304781B129A63D15A398E4E07963B266"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherb_south.png",
+    "SHA256": "BB5C253F1EC3A381C5BAA1DD3EB09AC8F38ED8F8052482AE0AF02A06213E538A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherc_east.dds",
+    "SHA256": "A3EE6988BB8D5A3D29722FC84F912B86A1C34341DE652CC1064F1EF201C97A7A"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherc_east.png",
+    "SHA256": "CC41F381D5416C03A36061BA7036F03EEB835AECA7BD517D36997AA30F9667E9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherc_north.dds",
+    "SHA256": "DDC95B00EAF5CE03EC7075003F39717DF29F7F923F56955D43C02B1BDDF32A3D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherc_north.png",
+    "SHA256": "2A4021F2FB3FBBD93D06635DF72543B81F709A8C7D1B204F3384AB07A94983BE"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherc_south.dds",
+    "SHA256": "1FEBDC73E87DAE3512A161813B1C9E9D3BD3FA5BF6253F0553C5A32A3FCD655E"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\TextileBundle\\TextileBundleLeatherc_south.png",
+    "SHA256": "A4F4100205B42CA6A553E73FF31DC65B4E1C15CF8327A7D0D781A0C30FE7A061"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilea_east.dds",
+    "SHA256": "ABBF1ADDCC1A13632397B0106F4E5E003E98435717B236470BD3BEEED957D88C"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilea_east.png",
+    "SHA256": "9443AD73A3CC559AB2C9A5C9BDD28798985951EE836FB691621046BC61258D42"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilea_north.dds",
+    "SHA256": "957DA6203301DEFFE9BFCB4019D29A6807C9B9E146EFDF821149096DAFC53315"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilea_north.png",
+    "SHA256": "E451C8953153C9DAF00F5433F26626142799B582B083634268F47CBBD010E509"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilea_south.dds",
+    "SHA256": "EA0249D6DA4F65EA7EED579027EE692C2B9891846E395AEEAE00DF96F9DC1D20"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilea_south.png",
+    "SHA256": "04F1279967588AF9EEF3327D83D81E79C6EB8154F81DB3037E03E8D9E3351479"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPileb_east.dds",
+    "SHA256": "F322AE55176D635CD2362C40BBFA74EE543D892CC13E90B81B1307DC4D9E637D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPileb_east.png",
+    "SHA256": "8AF049FFFE1E3A324CC9C80CE80AC13FDD5CECDF33DEB0B1D44BD9559A0D6696"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPileb_north.dds",
+    "SHA256": "F10DA40FAFB791915DC203F3E207EA8414DB9AFC7196345C3C1ED387E84E47C9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPileb_north.png",
+    "SHA256": "1511EA9D1AE4086D85CB5564AC7A20227D63053340CE289E995315DDE66BA476"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPileb_south.dds",
+    "SHA256": "ADE74EC423AB16AF55FFC273C0BB2D0427C00D8B1983C55CDCB246E898C5678F"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPileb_south.png",
+    "SHA256": "20CEF4610F094AC3550BD869DAF723C410CB7045B7A454A45DAA907B84FAAEA8"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilec_east.dds",
+    "SHA256": "16301741892814247EF6EEE5A7258E8DFF42CF1B00A00620A4F34602ED64EF95"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilec_east.png",
+    "SHA256": "933CA1321ACFC8F82B12A8EA06573AF97B610BFD1E8D37F88E56269D15BC449D"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilec_north.dds",
+    "SHA256": "441F7E410525A69B9816EC1F3498B11720A082235E75AE84258D2A9AF6554DC1"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilec_north.png",
+    "SHA256": "39A7CE875C5C5C031647028B5058D374ED1A0A2420572126929DACFB1A923EB9"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilec_south.dds",
+    "SHA256": "81DAB80E9D844B0451554B7A8B14D5CFA82C529466E1F9395F070A6D7AF53BCE"
+  },
+  {
+    "Path": "Mod\\Textures\\ASNeolithic\\WoodPile\\WoodPilec_south.png",
+    "SHA256": "26846B7911DF6E8D55AFFD99A57A42496F2766CDC6090D0544BE611D07619F02"
+  },
+  {
+    "Path": "Source\\Build.ps1",
+    "SHA256": "958F35EC6ED3F4115EA57682D1F51EE4BECE10D2D1204B3C111331203DC69F7B"
+  },
+  {
+    "Path": "Source\\GeneratedTranslations.cs",
+    "SHA256": "BAF26510E9932AD2A6D6FB998837D4ECF14D693627565DEBBC41696B756EBC62"
+  },
+  {
+    "Path": "Art\\AdaptiveStorageNeolithic-icon-source.png",
+    "SHA256": "48553ED9C7D397E83E3603627E8CB8F31DF0AB99B2F202E5DDFA4FEC71D6DF57"
+  },
+  {
+    "Path": "Art\\ModIcon-original.png",
+    "SHA256": "7FE3E8C06B44BBEB824DD39393FBB1255729849D1BB64C22A69F9810F596959A"
+  },
+  {
+    "Path": "Art\\preview-268.png",
+    "SHA256": "E2DF0EFFE36BD40C7A0BF6E8D99E8B83FBFBB51A1C1D02B5E93C9628C5D96778"
+  },
+  {
+    "Path": "Art\\preview-background-qa.png",
+    "SHA256": "54CF135F0DD2B74736237120591FF0730ACC7D3DEB377CDB4FA77EC0F7103D83"
+  },
+  {
+    "Path": "Art\\Preview-original.png",
+    "SHA256": "FB057F17CCAC1D73C6BE0999072285F0615D6A6CB6675073F90BCF157236BF10"
+  },
+  {
+    "Path": "Art\\preview-palette.json",
+    "SHA256": "C4B40DE07DE6F24BBCC01939A1EA97EA86CA8D0179BC24EDCE39437E1D6D486F"
+  },
+  {
+    "Path": "Art\\preview-qa.json",
+    "SHA256": "D43CAA4C6D0B0E49AE32952A579D0ABD4FBB45E340AFCC4A262AF4B4437C76A2"
+  },
+  {
+    "Path": "Art\\Preview-source.png",
+    "SHA256": "9AB329A54692C649A731A98AB66767E6EC7726CB38CC6CC6756BBD39ADC23183"
+  },
+  {
+    "Path": "Art\\preview.html",
+    "SHA256": "B35F1CA58FB1B3F5FD8BDC99700906A40E336A6D22AD28F356FEB13088C909F4"
+  },
+  {
+    "Path": "Art\\PREVIEW.md",
+    "SHA256": "9FD66E1A3377CFCB3E73A17C41678F28C0DAE7995EDF055D3C8827F417977A9C"
+  },
+  {
+    "Path": "Art\\Preview.png",
+    "SHA256": "9AB329A54692C649A731A98AB66767E6EC7726CB38CC6CC6756BBD39ADC23183"
+  },
+  {
+    "Path": "Art\\render-preview.cjs",
+    "SHA256": "E041FD8833A57285FFEE9F89D16E79CF5E6C212039EB1AA92CCBFCC495229424"
+  },
+  {
+    "Path": "Art\\shelved-textures\\ASF_NeolithicPouches_east.png",
+    "SHA256": "72DB1EC321EA642C410BC034D2B91217989DECD9FAB4F0DF63EB9B59F8EE7852"
+  },
+  {
+    "Path": "Art\\shelved-textures\\ASF_NeolithicPouches_north.png",
+    "SHA256": "E6815311F03AC38202B27AD741EEF499C3B09226E527AD257F5744CB7243E943"
+  },
+  {
+    "Path": "Art\\shelved-textures\\ASF_NeolithicPouches_south.png",
+    "SHA256": "83F774A8ACD1081F88AF77698374F66B1AFBE2581EEB1D6697F603239B07CE38"
+  },
+  {
+    "Path": "Art\\shelved-textures\\ASF_NeolithicSlingSack_east.png",
+    "SHA256": "2E3AFDAF3834CD86CBB6A0589BAAC8C4EEE3ACE8B49817BE8C7C224D9B0D7363"
+  },
+  {
+    "Path": "Art\\shelved-textures\\ASF_NeolithicSlingSack_north.png",
+    "SHA256": "36C706293F7DD17BEC22FA0BFA692FF655F1163E960F8CF409AFF32B767490B3"
+  },
+  {
+    "Path": "Art\\shelved-textures\\ASF_NeolithicSlingSack_south.png",
+    "SHA256": "EC65E24E5780BC2857D1094977F9057BFC232F9A39B988F73FBFC7A8CAFAFBB8"
+  },
+  {
+    "Path": "Art\\shelved-textures\\ASF_NeolithicWovenBackpack_east.png",
+    "SHA256": "3C5A6E30F1D2A09F6E397C1A6C08B45A36051D0109E7181F473327BBB9243E7D"
+  },
+  {
+    "Path": "Art\\shelved-textures\\ASF_NeolithicWovenBackpack_north.png",
+    "SHA256": "E6D36DE124194A16466A360D19E62FAB5F8ADCB33C2555FFA0058FF2CAB2B21F"
+  },
+  {
+    "Path": "Art\\shelved-textures\\ASF_NeolithicWovenBackpack_south.png",
+    "SHA256": "056ABCB5FFCBE555F1511CB31129B93F61FD37EC336C2BE1A69E677A63921D1B"
+  },
+  {
+    "Path": "Art\\shelved-textures\\info.txt",
+    "SHA256": "AB09FF60C03DDD936C057DC8C1A124E74C3EF26D662A1B06B231AC86524E22C4"
+  },
+  {
+    "Path": "tests\\Test-InstalledTranslations.ps1",
+    "SHA256": "EFF598DB1665177CF4F99368D3AD3DD105E1F8294D217CE0A7F72DB001F210EB"
+  },
+  {
+    "Path": "tests\\Test-Mod.ps1",
+    "SHA256": "4ECF017FC47A496F4F106F54175026FB60392495B66536D32DBDFACDE0669FA7"
+  }
+]

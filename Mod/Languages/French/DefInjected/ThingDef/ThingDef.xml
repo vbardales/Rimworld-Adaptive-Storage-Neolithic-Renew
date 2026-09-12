@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- Basket -->
@@ -38,15 +38,15 @@
   <ASNeolithicPlinthWoody.label>socle</ASNeolithicPlinthWoody.label>
   <ASNeolithicPlinthWoody.description>Un socle en bois avec de belles gravures pour exposer des objets.</ASNeolithicPlinthWoody.description>
   <ASNeolithicPlinthChunkGranite.label>socle en granite</ASNeolithicPlinthChunkGranite.label>
-  <ASNeolithicPlinthChunkGranite.description>Un socle en granite brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkGranite.description>
+  <ASNeolithicPlinthChunkGranite.description>Un socle en granite brut avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkGranite.description>
   <ASNeolithicPlinthChunkSandstone.label>socle en grès</ASNeolithicPlinthChunkSandstone.label>
-  <ASNeolithicPlinthChunkSandstone.description>Un socle en grès brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkSandstone.description>
+  <ASNeolithicPlinthChunkSandstone.description>Un socle en grès brut avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkSandstone.description>
   <ASNeolithicPlinthChunkLimestone.label>socle en calcaire</ASNeolithicPlinthChunkLimestone.label>
-  <ASNeolithicPlinthChunkLimestone.description>Un socle en calcaire brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkLimestone.description>
+  <ASNeolithicPlinthChunkLimestone.description>Un socle en calcaire brut avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkLimestone.description>
   <ASNeolithicPlinthChunkSlate.label>socle en ardoise</ASNeolithicPlinthChunkSlate.label>
   <ASNeolithicPlinthChunkSlate.description>Un socle en ardoise brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkSlate.description>
   <ASNeolithicPlinthChunkMarble.label>socle en marbre</ASNeolithicPlinthChunkMarble.label>
-  <ASNeolithicPlinthChunkMarble.description>Un socle en marbre brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkMarble.description>
+  <ASNeolithicPlinthChunkMarble.description>Un socle en marbre brut avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkMarble.description>
   <ASNeolithicPlinthChunkVacstone.label>socle en vaccolithe</ASNeolithicPlinthChunkVacstone.label>
   <ASNeolithicPlinthChunkVacstone.description>Un socle en vaccolithe avec de belles gravures pour exposer des objets.</ASNeolithicPlinthChunkVacstone.description>
 

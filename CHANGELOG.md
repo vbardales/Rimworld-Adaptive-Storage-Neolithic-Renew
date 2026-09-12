@@ -2,6 +2,15 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased]
+
+- Correct French adjective agreement in four stone plinth descriptions.
+- Add parameterized French text for buildings generated from third-party stones, preserving
+  specific DefInjected translations and using the stone mod's translated chunk name.
+- Add a small translation assembly and declare its Harmony dependency explicitly.
+- Add English/French resource checks and installed-assembly tests, including execution of the
+  actual framework generator and preservation of English and Russian behavior.
+
 ## [1.0.0] — 2026-09-05
 
 First release. Port of Soul, Phaneron and bradson's **Adaptive Storage Neolithic Module** to

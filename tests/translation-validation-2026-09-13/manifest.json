@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Source/GeneratedTranslations.cs",
+    "sha256": "BAF26510E9932AD2A6D6FB998837D4ECF14D693627565DEBBC41696B756EBC62"
+  },
+  {
+    "path": "Source/Build.ps1",
+    "sha256": "958F35EC6ED3F4115EA57682D1F51EE4BECE10D2D1204B3C111331203DC69F7B"
+  },
+  {
+    "path": "Mod/Assemblies/NeolithicRenew.dll",
+    "sha256": "E620FADB365BAB61B5ED6DAFD5D0DAEC89DA3072B83497191932A6D22583603A"
+  },
+  {
+    "path": "Mod/Languages/English/Keyed/Generated.xml",
+    "sha256": "118EB1033ABBF38119DB82A2265A3CEBE764A17928A563CEE31F7C433DA962E0"
+  },
+  {
+    "path": "Mod/Languages/French/Keyed/Generated.xml",
+    "sha256": "6FAA78DBBE418A29E48E4E6F2ABD869CACB78CA81A08DFB6C276308B325267D4"
+  },
+  {
+    "path": "Mod/Languages/French/DefInjected/ThingDef/ThingDef.xml",
+    "sha256": "906F4E1D95F578745156D63A6ED60EDBBB35B32BE1B1524001544E90A8257A27"
+  },
+  {
+    "path": "tests/Test-InstalledTranslations.ps1",
+    "sha256": "3C34DFA4ABAA12186753AB0D631DD7530ECC65C14FB9FA0ABEB44840EFCB6257"
+  },
+  {
+    "path": "tests/TranslationChecks.cs",
+    "sha256": "7EC585A5A1800B1A2CB426DD23287DEFA98EC521B8593625F3707AB364B6BCD7"
+  },
+  {
+    "path": "tests/Test-Mod.ps1",
+    "sha256": "1FA81F6E924724D218499947C16A6959D3FC5960BA65872A64C541585C954517"
+  }
+]

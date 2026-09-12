@@ -48,6 +48,7 @@ was inside them.
 
 ## Requirements
 
+- **Harmony**, also required by the framework, for the generated-translation hook.
 - **[Adaptive Storage
   Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359)** by Soul, Phaneron
   and bradson — supports 1.4, 1.5 and 1.6. The module does nothing without it.
@@ -110,6 +111,18 @@ and Steam ships the contents of `Mod/` and nothing else.
 Run `pwsh -NoProfile -File tests/Test-Mod.ps1` for standalone XML and generator contract
 checks. See [TESTING.md](TESTING.md) for coverage, limitations and manual in-game scenarios.
 GitHub Actions runs the suite on pushes and pull requests.
+
+Generated buildings from additional stone mods receive French labels and descriptions through
+six parameterized Keyed resources. Existing DefInjected translations take priority. The stone
+name comes from the stone mod's translated chunk label; its own missing translation cannot be
+supplied by this module. English keeps its native Def text; languages without the new resources
+keep their existing behavior.
+
+Build the small translation assembly on Windows with `pwsh -NoProfile -File Source/Build.ps1`.
+The script accepts `-Managed` and `-Harmony` paths and uses the installed .NET Framework compiler.
+Run `pwsh -NoProfile -File tests/Test-InstalledTranslations.ps1` to test against installed game
+types and execute the framework's generator. These local tests complement the standalone CI
+suite; they do not launch RimWorld. Source and test artifacts stay outside the published `Mod/`.
 
 ## Credits
 

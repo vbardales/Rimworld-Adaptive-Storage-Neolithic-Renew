@@ -1,7 +1,5 @@
-# This mod ships no assembly and has nothing to build, so the compilation rules below are
-# inherited convention rather than a live need. The entry that earns its place here is
-# .claude/: a session worktree is a full copy of the monorepo, hundreds of megabytes, and it
-# has already landed inside a mod folder once.
+# Translation source and build scripts live in Source/; only the compiled assembly ships.
+# .claude/ excludes session worktrees, which have already landed inside a mod folder once.
 #
 # Two separate reasons to have this file, and only the first is about git:
 #

@@ -59,7 +59,9 @@ foreach ($node in $defs.SelectNodes('//texPath | //uiIconPath')) {
     }
 }
 foreach ($language in Get-ChildItem (Join-Path $modRoot 'Languages') -Directory) {
-    Assert-True (@(Get-ChildItem $language.FullName -Directory | Where-Object Name -ceq 'DefInjected').Count -eq 1) "DefInjected casing: $($language.Name)"
+    foreach ($folder in Get-ChildItem $language.FullName -Directory) {
+        Assert-True (@('DefInjected', 'Keyed') -ccontains $folder.Name) "Language folder casing: $($language.Name)/$($folder.Name)"
+    }
     foreach ($file in Get-ChildItem $language.FullName -Recurse -Filter *.xml) {
         $translation = [xml](Get-Content $file.FullName -Raw)
         $keys = @($translation.SelectNodes('/LanguageData/*') | ForEach-Object Name)
@@ -68,6 +70,61 @@ foreach ($language in Get-ChildItem (Join-Path $modRoot 'Languages') -Directory)
 }
 
 $patches = @(Get-ChildItem (Join-Path $modRoot 'Patches') -Filter *.xml)
+foreach ($language in 'English', 'French') {
+    $resource = [xml](Get-Content (Join-Path $modRoot "Languages/$language/Keyed/Generated.xml") -Raw)
+    $entries = @($resource.SelectNodes('/LanguageData/*'))
+    Assert-True ($entries.Count -eq 6) "Six generated-text resources: $language"
+    foreach ($kind in 'LargePot', 'Plinth', 'ChunkStorage') {
+        foreach ($field in 'label', 'description') {
+            $key = "ASNeolithic.Generated.$kind.$field"
+            $value = $resource.SelectSingleNode("/LanguageData/$key").InnerText
+            Assert-True (-not [string]::IsNullOrWhiteSpace($value)) "Generated text: ${language}:$key"
+            $tokens = @([regex]::Matches($value, '\{([^{}]+)\}') | ForEach-Object { $_.Groups[1].Value })
+            Assert-True (($field -eq 'label' -and $tokens.Count -eq 1 -and $tokens[0] -ceq 'CHUNK') -or
+                ($field -eq 'description' -and $tokens.Count -eq 0)) "Generated text parameters: ${language}:$key"
+        }
+    }
+}
+Assert-True ($meta.ModMetaData.modDependencies.li.packageId -contains 'brrainz.harmony') 'Direct Harmony dependency'
+Assert-True (Test-Path (Join-Path $modRoot 'Assemblies/NeolithicRenew.dll')) 'Translation assembly delivered'
+# Compare translations with concrete Defs, including inherited English fields.
+$french = @{}
+foreach ($file in Get-ChildItem (Join-Path $modRoot 'Languages/French/DefInjected') -Recurse -Filter *.xml) {
+    $xml = [xml](Get-Content $file.FullName -Raw)
+    foreach ($entry in $xml.SelectNodes('/LanguageData/*')) {
+        $key = "$($file.Directory.Name):$($entry.Name)"
+        Assert-True (-not $french.ContainsKey($key)) "Unique French key across files: $key"
+        $french[$key] = $entry.InnerText
+    }
+}
+function Get-OwnedText($Node, [string]$Field, $Tree) {
+    $seen = @{}
+    while ($null -ne $Node) {
+        $value = $Node.SelectSingleNode($Field)
+        if ($null -ne $value) { return $value.InnerText }
+        $parent = $Node.GetAttribute('ParentName')
+        if (-not $parent) { return $null }
+        if ($seen.ContainsKey($parent)) { throw "Inheritance cycle: $parent" }
+        $seen[$parent] = $true
+        $Node = $Tree.SelectSingleNode("/Defs/*[@Name='$parent']")
+    }
+    return $null
+}
+function Test-OwnedTranslations($Tree, [bool]$RequireFrench) {
+    foreach ($node in $Tree.SelectNodes('/Defs/ThingDef[defName[starts-with(., "ASNeolithic")]] | /Defs/ResearchProjectDef[defName] | /Defs/ResearchTabDef[defName]')) {
+        $fields = if ($node.Name -eq 'ResearchTabDef') { @('label') } else { @('label', 'description') }
+        foreach ($field in $fields) {
+            $key = "$($node.Name):$($node.defName).$field"
+            $english = Get-OwnedText $node $field $Tree
+            Assert-True (-not [string]::IsNullOrWhiteSpace($english)) "English source text: $key"
+            if ($RequireFrench) {
+                Assert-True (-not [string]::IsNullOrWhiteSpace($french[$key])) "French coverage: $key"
+                Assert-True ($french[$key] -notmatch '\{[^{}]+\}|TODO|TODO_TRANSLATE') "No unresolved French placeholder: $key"
+            }
+        }
+    }
+}
+Test-OwnedTranslations $defs $true
 Assert-True ($patches.Count -eq 3) 'Three stone generators covered'
 # Independent expected output counts for Core, Odyssey and an extra third-party stone.
 foreach ($scenario in @(
@@ -120,6 +177,8 @@ foreach ($scenario in @(
         }
     }
     Assert-True ($generated.Count -eq $scenario.Count) "Expected $($scenario.Count) generated buildings"
+    # Arbitrary third-party stones have no bundled French entries; do not certify them.
+    Test-OwnedTranslations $working ($scenario.Stones -notcontains 'TestStone')
     foreach ($name in $generated) {
         Assert-True ($null -ne $working.SelectSingleNode("/Defs/AdaptiveStorage.GraphicsDef/targetDefs/li[text()='$name']")) "Generated graphics binding: $name"
     }
