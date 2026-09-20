@@ -37,7 +37,7 @@ RimWorld 1.6.
   would duplicate all 71 defs.
 - `<supportedVersions>` set to 1.6.
 - `<description>` rewritten. `<url>` points at this repository.
-- `<author>` reads `Soul, Phaneron, bradson - 1.6 port: nelim`.
+- `<author>` reads `Soul, Phaneron, bradson - 1.6 adapted by Nelim`.
 
 ### Removed from the published folder
 
