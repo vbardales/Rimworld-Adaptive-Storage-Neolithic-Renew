@@ -23,7 +23,7 @@ things follow, and all three are done:
   without permission. It has no place here — the authors already said yes, and the terms of the
   yes are in the file.
 
-The `<author>` field reads `Soul, Phaneron, bradson - 1.6 port: nelim`.
+The `<author>` field reads `Soul, Phaneron, bradson - 1.6 adapted by Nelim`.
 
 ## What was carried over
 
