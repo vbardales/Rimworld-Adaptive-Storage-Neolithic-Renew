@@ -35,7 +35,7 @@ for an arbitrary stone. Six Keyed resources per language supply the generic text
 standalone suite checks their completeness and named parameters.
 See the translation audit in [STATUS.md](STATUS.md) for the gate and unresolved checks.
 
-Latest local run: 1,392 assertions passed on 2026-09-21.
+Latest local run: 1,410 assertions passed on 2026-09-21.
 
 ### Installed translation checks
 
@@ -69,6 +69,16 @@ construction blueprints/frames, finished containers, inspect strings and artisti
 Specific stone translations must survive; a stone mod without French names may still supply
 an English material name. Restart the game when switching language.
 
+### A chunk with no colour
+
+The three patches copy `graphicData/color` from each stone chunk into the building they generate, and a chunk without it (the
+crystal chunk of *Biomes! Caverns*, reported on the original mod's page) crashed the game. The selectors now read
+`Defs/ThingDef[@ParentName="ChunkRockBase"][graphicData/color/text()]`, in both operations of each patch. `tests/Test-Mod.ps1` adds
+three chunks (no colour, no `graphicData`, an empty colour) to each stone scenario and requires them to be neither selected nor
+generated from, and that the two operations of a patch select the same chunks; it failed on the old selectors before the fix.
+`tests/Test-InstalledTranslations.ps1` feeds the framework's own generator two such chunks: it raises an error with the old patches
+and none with the new ones. Neither has been seen in a running game, which would take a mod that adds such a chunk.
+
 ## Pickle (Gherkin) scenarios
 
 Scenarios 1 to 7 and 11 below that only a running game can show are written as a Pickle suite in
@@ -84,7 +94,7 @@ Where each manual scenario below ended up, decided on 2026-09-21.
   decides its content, the research prerequisite of each building and the dropdown group of each generated one.
 - **4b** (a third-party stone): `06` and the French half of `05`, run beside [K]Extra Stone in the "stones" pass. **Seen working in
   French on 2026-09-21**: the stone's pot, plinth and chunk stack read `grand pot (andesite chunk)`, `socle (andesite chunk)` and
-  `amas de blocs (andesite chunk)`, and the pot's blueprint `Grand pot (andesite chunk) (plan)`. The English half, `06`, has not run.
+  `amas de blocs (andesite chunk)`, and the pot's blueprint `Grand pot (andesite chunk) (plan)`. The English half, `06`, **passed the same day** (41 of 41 played beside the stone mod).
 - **8** (Russian on a case-sensitive filesystem): `07`, run in a Russian game in the WSL, which is ext4. **Seen working on 2026-09-21**: 5 of 5 passed, the labels, descriptions and research text read as Russian.
 - **9** and **10**: out of scope, About.xml and icon-file mechanisms checked statically, no backward compatibility pursued.
 - **5, 6, 7, 11** and the parts of **1 and 2** that show in a game: the suite above. The framework's research tab could not be opened by

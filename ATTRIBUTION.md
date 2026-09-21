@@ -87,7 +87,7 @@ Four things, none of them content:
 
 ## What changed in the port
 
-**Nothing in the defs.** Every XML element in the mod still maps to a field that exists on the
+**Nothing in the defs; one change in the patches, below.** Every XML element in the mod still maps to a field that exists on the
 1.6 class — checked by reflection with `scripts/Check-XmlFields.ps1` against RimWorld's
 `Assembly-CSharp.dll` and the framework's own 1.6 assemblies, 28 files, zero unknown fields. Every
 C# type the XML names still exists in those assemblies. No renames, no removals, nothing to
@@ -108,6 +108,15 @@ was written when there were five, so those three came out in English. Six French
 the official RimWorld translation of *vacstone*, **vaccolithe**. Russian now covers all six as well: the six
 vacstone entries were written by Claude with the official Russian Odyssey term, **вакуумит**, following
 the phrasing of the existing entries, and have not been reviewed by a Russian speaker.
+
+**A stone chunk without a colour is left alone.** The three generators copy `graphicData/color` from each chunk into the building
+they build. A player reported on the original mod's page (May 2026) that a chunk without that node, the crystal chunk of *Biomes!
+Caverns*, took the game down, because the template expression could not be resolved. The selectors now read
+`Defs/ThingDef[@ParentName="ChunkRockBase"][graphicData/color/text()]`, in both operations of each patch, so such a chunk gets no
+pot, plinth or chunk stack instead of a crash. `tests/Test-Mod.ps1` checks the selection, and `tests/Test-InstalledTranslations.ps1`
+feeds the framework's own generator a chunk with no colour and one with an empty colour: with the old selectors that generator
+raises an error, with the new ones it does not. Not yet seen in a running game. The cost is that a stone with no colour of its
+own in its def gets no buildings.
 
 **`packageId`** changed from `adaptive.storage.neolithic` to `nelim.adaptivestorageneolithic`, and
 the original is declared in `<incompatibleWith>`: the two share every `defName`, so running both

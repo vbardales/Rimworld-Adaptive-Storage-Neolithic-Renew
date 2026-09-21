@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="GeneratorOperation.DefGenerator">
-		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"]</xpath>
+		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"][graphicData/color/text()]</xpath>
 		<value><![CDATA[
 			<ThingDef ParentName="ASNeolithicPlinthStone">
 				<defName>ASNeolithicPlinth{defName/text()}</defName>
@@ -16,7 +16,7 @@
 	</Operation>
 
 	<Operation Class="GeneratorOperation.PatchGenerator">
-		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"]</xpath>
+		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"][graphicData/color/text()]</xpath>
 		<value><![CDATA[
 			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="ASNeolithicPlinthStone"]/targetDefs</xpath>

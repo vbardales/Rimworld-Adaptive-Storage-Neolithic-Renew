@@ -192,11 +192,25 @@ foreach ($scenario in @(
         $fixture = [xml]"<ThingDef ParentName='ChunkRockBase'><defName>Chunk$stone</defName><label>$stone chunk</label><graphicData><color>(0.2,0.4,0.6)</color></graphicData></ThingDef>"
         [void]$working.DocumentElement.AppendChild($working.ImportNode($fixture.DocumentElement, $true))
     }
+    # A chunk whose def has no colour, or an empty one, must be left alone rather than crash the generators: the templates
+    # copy `graphicData/color` into the building, and a chunk without it (the crystal chunk of Biomes! Caverns, reported on the
+    # original mod's page in May 2026) leaves a template expression unresolved. Neither may be selected, or be generated from.
+    foreach ($colourless in @(
+        "<ThingDef ParentName='ChunkRockBase'><defName>ChunkNoColour</defName><label>colourless chunk</label></ThingDef>",
+        "<ThingDef ParentName='ChunkRockBase'><defName>ChunkNoGraphic</defName><label>graphicless chunk</label><graphicData><texPath>x</texPath></graphicData></ThingDef>",
+        "<ThingDef ParentName='ChunkRockBase'><defName>ChunkEmptyColour</defName><label>empty-colour chunk</label><graphicData><color/></graphicData></ThingDef>")) {
+        $fixture = [xml]$colourless
+        [void]$working.DocumentElement.AppendChild($working.ImportNode($fixture.DocumentElement, $true))
+    }
     $unrelated = [xml]'<ThingDef ParentName="ResourceBase"><defName>UnrelatedResource</defName></ThingDef>'
     [void]$working.DocumentElement.AppendChild($working.ImportNode($unrelated.DocumentElement, $true))
     $generated = @()
     foreach ($patch in $patches) {
         $xml = [xml](Get-Content $patch.FullName -Raw)
+        # The two operations of a patch must select the same chunks: the second adds each generated building to a GraphicsDef,
+        # so a chunk it selected that the first did not generate would leave a reference to a def that does not exist.
+        Assert-True (@($xml.Patch.Operation).Count -eq 2) "Two operations per generator: $($patch.Name)"
+        Assert-True ($xml.Patch.Operation[0].xpath -ceq $xml.Patch.Operation[1].xpath) "Both operations select the same chunks: $($patch.Name)"
         foreach ($operation in $xml.Patch.Operation) {
             $sources = @($working.SelectNodes($operation.xpath))
             Assert-True ($sources.Count -eq $scenario.Stones.Count) "Stone selector excludes unrelated defs: $($patch.Name)"

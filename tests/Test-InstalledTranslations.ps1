@@ -41,6 +41,14 @@ foreach ($file in Get-ChildItem $gameData -Recurse -Filter *.xml | Where-Object 
 }
 $stoneCount = $tree.SelectNodes('/Defs/ThingDef[@ParentName="ChunkRockBase"]').Count
 Check ($stoneCount -ge 5) 'Installed Core chunks not found'
+# A chunk without a colour, or with an empty one, must not reach the framework's own generator, which would leave a template
+# expression unresolved and take the game down: the crash reported on the original mod's page for the crystal chunk of
+# Biomes! Caverns. Added after the count above, and the count below stays 3 per real stone, so none of them is generated from.
+foreach ($colourless in @(
+    '<ThingDef ParentName="ChunkRockBase"><defName>ChunkNoColour</defName><label>colourless chunk</label></ThingDef>',
+    '<ThingDef ParentName="ChunkRockBase"><defName>ChunkEmptyColour</defName><label>empty-colour chunk</label><graphicData><color/></graphicData></ThingDef>')) {
+    [void]$tree.DocumentElement.AppendChild($tree.ImportNode(([xml]$colourless).DocumentElement, $true))
+}
 $beforeGeneration = $tree.SelectNodes('/Defs/ThingDef').Count
 foreach ($file in Get-ChildItem "$root/Mod/Patches" -Filter *.xml) {
     $xml = [xml](Get-Content $file.FullName -Raw)

@@ -4,6 +4,11 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased]
 
+- Leave stone chunks that have no colour alone. The three generators copy `graphicData/color` from each chunk, and a chunk without
+  it (the crystal chunk of Biomes! Caverns, reported on the original mod's page) took the game down; such a chunk now gets no
+  buildings instead. Both operations of each patch select `[graphicData/color/text()]`. Covered by the static tests and by the
+  framework's own generator run on a chunk with no colour and one with an empty colour. Not yet seen in a running game.
+
 - Add the six missing Russian vacstone entries (large pot, plinth, chunk stack), using the official
   Russian Odyssey term *вакуумит*. Written by Claude, not reviewed by a Russian speaker.
 - Correct French adjective agreement in four stone plinth descriptions.
