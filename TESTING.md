@@ -72,8 +72,8 @@ an English material name. Restart the game when switching language.
 ## Pickle (Gherkin) scenarios
 
 Scenarios 1 to 7 and 11 below that only a running game can show are written as a Pickle suite in
-[tests/Pickle](tests/Pickle/README.md): 20 scenarios in five features (19 when first run), with 16 `@review` captures for a
-person to open. It was run three times on 2026-09-21: English 20 of 20 played (18 passed, 2 `@wip` skipped), French with `-IncludeWip` 20 of 20 passed; see [first run](tests/pickle-run-2026-09-21/README.md), [second](tests/pickle-run-2026-09-21-second/README.md) and [French pass](tests/pickle-run-2026-09-21-french/README.md). Both passes are criteria of `done -> tested`, still to be judged by a person.
+[tests/Pickle](tests/Pickle/README.md): 32 scenarios in five features, with 18 `@review` captures for a
+person to open. Twenty of them were run three times on 2026-09-21 (English 20 of 20 played, 18 passed, 2 `@wip` skipped; French with `-IncludeWip` 20 of 20 passed); see [first run](tests/pickle-run-2026-09-21/README.md), [second](tests/pickle-run-2026-09-21-second/README.md) and [French pass](tests/pickle-run-2026-09-21-french/README.md). The twelve added afterwards, covering the research projects, the blueprints and frames and the French descriptions, have not been played. Both passes are criteria of `done -> tested`, still to be judged by a person.
 Its README states what stays in Gherkin and why, what was left out on purpose (architect menu
 dropdowns, a third-party stone, Russian, the mod list, the icon), and the assumptions a first run has to
 confirm. Everything the automated checks above can prove stays out of Gherkin.

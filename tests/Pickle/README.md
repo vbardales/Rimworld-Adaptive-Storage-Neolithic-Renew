@@ -10,6 +10,14 @@ Third run, French with `-IncludeWip`, 11:46: **20 of 20 played, 20 passed, 0 ski
 Results: [`../pickle-run-2026-09-21/`](../pickle-run-2026-09-21/), [`-second/`](../pickle-run-2026-09-21-second/) and
 [`-french/`](../pickle-run-2026-09-21-french/).
 
+**Widened the same day, after those passes, and not yet played: 32 scenarios, 18 `@review` captures.** The three
+passes showed the generated buildings named right and left the rest of the mod's text unseen, so twelve scenarios
+were added: the research projects' tab, cost and tech level; the window that holds them, with a capture in each
+language; the blueprints and frames vanilla builds from the generated defs; and in French their descriptions,
+their research text, the names their blueprints and frames carry, and a container naming itself through the
+inspect pane. A default pass now plays 23 scenarios and skips the 9 `@wip` ones; a French pass plays all 32.
+They have been checked for syntax and step vocabulary only. What each of them assumes is at the end of this file.
+
 ## Scope: what stays in Gherkin, and what does not
 
 Everything provable outside the game is proved outside it, by `tests/Test-Mod.ps1` (1,310 assertions:
@@ -23,11 +31,16 @@ helper and never draw a sprite:
 
 | Feature | What only a running game shows | TESTING.md |
 | --- | --- | --- |
-| `01-loads-on-the-framework` | The parents resolve against the framework on a real load: a def that exists proves its parent did. Load order. No error raised by a loaded save. | 1, 2, 3 |
-| `02-generated-stones` | The generated defs exist after the game's own patch pipeline, vacstone included with Odyssey, and one of each kind can be placed without an error (a broken GraphicsDef binding shows there). | 4 |
+| `01-loads-on-the-framework` | The parents resolve against the framework on a real load: a def that exists proves its parent did. Load order. The projects sit in the framework's tab, at the cost the file asks for, and the window that holds them opens. No error raised by a loaded save. **1 capture, `@review`.** | 1, 2, 3 |
+| `02-generated-stones` | The generated defs exist after the game's own patch pipeline, vacstone included with Odyssey; vanilla accepted them as buildings, since it made each one a blueprint and a frame; and one of each kind can be placed without an error (a broken GraphicsDef binding shows there). | 4 |
 | `03-contents-review` | Every container shows what is in it; the chunk stack swaps its sprite at one, two and six chunks and takes its colour from its stone. **16 captures, `@review`.** | 5, 6 |
 | `04-save-reload` | State derived rather than stored rebuilds after a save and a reload. `the save round trips` fails on a scribe error. **2 captures, `@review`.** | 11 |
-| `05-french-names` | French names on generated buildings in a French game. `@wip`: skipped by a default run. | 7 |
+| `05-french-names` | In a French game: the generated and hand-written names, the descriptions, the research text, and the names vanilla copied onto the blueprints and frames — which is where the mod's Harmony hook proves it ran between the language injection and the implied defs. A container names itself through the inspect pane. **1 capture, `@review`.** `@wip`: skipped by a default run. | 7 |
+
+A def whose name the framework also gives a `GraphicsDef` — the basket, the hay pile, the meal shelf, the
+plinth, both bundles — cannot be read by `def ... field ...`, which refuses an ambiguous name and cost the
+first run its only failure. Seven of the nine hand-written buildings are in that case, so their text is read
+through the map instead, by the inspect pane, which looks at the thing rather than at the def.
 
 Deliberately **not** here:
 
@@ -99,9 +112,26 @@ Read off the captures and the report of 2026-09-21, not assumed:
    skipped ones are the two `@wip`.
 6. **`no errors were logged` holds** on a loaded test colony.
 
-Nothing of the suite itself is still open: `05` was played in the French pass. Every vanilla defName used as contents
-or as a stone chunk exists in the installed Core or
-Odyssey data, and the French labels in `05` are the ones in `Languages/French/DefInjected`.
+Every vanilla defName used as contents or as a stone chunk exists in the installed Core or Odyssey data, and the
+French labels and descriptions in `05` are the ones in `Languages/French/DefInjected`.
+
+## What the twelve new scenarios assume, and nobody has played yet
+
+Written on 2026-09-21 after the three passes, checked for syntax and step vocabulary, never run. Each of these
+was read off the game's files rather than seen working, and a wrong one fails its scenario loudly:
+
+1. **`field "tab.defName"` walks a dotted path onto a Def reference.** The step's own documentation says it
+   walks public fields and properties; `tab` is one, and so is `defName`. Nothing was found that does it already.
+2. **`baseCost` stringifies as `400`.** It is a float; a rendering as `400.0` would fail the assertion.
+3. **`techLevel` stringifies as `Neolithic`**, the enum's own name.
+4. **Vanilla names a blueprint `<defName>_Blueprint` and a frame `<defName>_Frame`**, and labels them with the
+   building's label plus Core's ` (plan)` and ` (construction)` in French. The two patterns are in the game's
+   own assembly; the label formula is long-standing vanilla behaviour, read from the code rather than observed.
+5. **`I select` matches a thing by the label it displays.** The stacked chunks are built from a cost list, not
+   from stuff, so their thing label is their def label with nothing appended — no `en bois`, no `(normal)`.
+   Whether the match is exact, case-sensitive or a substring is not documented.
+6. **`I open the "Research" tab` names the tab by its `MainButtonDef`**, as Pickle's own `ui-steps.feature` does,
+   and the window it opens is `MainTabWindow_Research` in any language.
 
 ## What the captures showed, and their limits
 

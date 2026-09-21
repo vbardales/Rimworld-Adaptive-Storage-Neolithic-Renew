@@ -38,6 +38,32 @@ Feature: the mod loads on top of the Adaptive Storage Framework
     Then def "ASNeolithicNeolithicStorage" of type "ResearchProjectDef" exists
     And def "ASNeolithicNeolithicItemDisplay" of type "ResearchProjectDef" exists
 
+  # TESTING.md scenario 2. The tab belongs to the framework, so a project pointing at it is the
+  # cross-reference resolving; a missing tab is the framework's absence showing again. The cost and
+  # the tech level are read here rather than in a unit test because the value the game ends up with
+  # is what matters, not the one the XML asks for.
+  Scenario: both projects sit in the framework's tab, at the cost the file asks for
+    Then def "ASNeolithicNeolithicStorage" field "tab.defName" is "ASFAdaptiveStorage"
+    And def "ASNeolithicNeolithicStorage" field "baseCost" is "400"
+    And def "ASNeolithicNeolithicStorage" field "techLevel" is "Neolithic"
+    And def "ASNeolithicNeolithicItemDisplay" field "tab.defName" is "ASFAdaptiveStorage"
+    And def "ASNeolithicNeolithicItemDisplay" field "baseCost" is "400"
+    And def "ASNeolithicNeolithicItemDisplay" field "techLevel" is "Neolithic"
+
   Scenario: loading a game with the mod raises no error
     Given the save "test-colony" is loaded
     Then no errors were logged
+
+  # The rest of TESTING.md scenario 2: the window itself, and a picture of the two projects sitting in
+  # the framework's tab under the name the tab carries. The scenario asserts only that the window
+  # opened; whether the two projects read correctly, and in which language, is the capture's business.
+  # It is taken in both passes, so there is an English one and a French one.
+  @review
+  Scenario: the research window opens on the tab that holds them
+    Given the save "test-colony" is loaded
+    When I open the "Research" tab
+    And I wait 30 ticks
+    Then window "MainTabWindow_Research" is open
+    And I take a screenshot "the research window, with the storage tab"
+    When I close all dialogs
+    Then window "MainTabWindow_Research" is closed

@@ -34,6 +34,27 @@ Feature: the stone variants are generated at load time
     And def "ASNeolithicPlinthChunkVacstone" exists
     And def "ASNeolithicChunkStorageChunkVacstone" exists
 
+  # Vanilla makes a blueprint and a frame out of every buildable def, after the patches have run. Their
+  # presence is the game having accepted the generated defs as buildings rather than merely storing
+  # them: a def the game refuses to treat as buildable gets neither. The French pass checks the names
+  # they carry, which is where the mod's Harmony hook proves it ran early enough.
+  Scenario: vanilla made a blueprint and a frame for the generated buildings
+    Then def "ASNeolithicLargePotChunkGranite_Blueprint" of type "ThingDef" exists
+    And def "ASNeolithicLargePotChunkGranite_Frame" of type "ThingDef" exists
+    And def "ASNeolithicPlinthChunkGranite_Blueprint" of type "ThingDef" exists
+    And def "ASNeolithicChunkStorageChunkGranite_Blueprint" of type "ThingDef" exists
+    And def "ASNeolithicChunkStorageChunkGranite_Frame" of type "ThingDef" exists
+
+  Scenario: and for the hand-written ones
+    Then def "ASNeolithicLargePot_Blueprint" of type "ThingDef" exists
+    And def "ASNeolithicLargePot_Frame" of type "ThingDef" exists
+    And def "ASNeolithicWoodPile_Blueprint" of type "ThingDef" exists
+
+  @requires:Odyssey
+  Scenario: the vacstone buildings have theirs too
+    Then def "ASNeolithicLargePotChunkVacstone_Blueprint" of type "ThingDef" exists
+    And def "ASNeolithicLargePotChunkVacstone_Frame" of type "ThingDef" exists
+
   Scenario: one generated building of each kind can be placed without an error
     Given the save "test-colony" is loaded
     And a "ASNeolithicLargePotChunkGranite" is built at (140, 155)
