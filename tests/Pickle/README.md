@@ -3,12 +3,12 @@
 The scenarios of [TESTING.md](../../TESTING.md) that a running game is needed for, and only those.
 `Mod/` is a companion mod, **Adaptive Storage Neolithic Renew - Pickle tests**, never published.
 
-**Status: run once, 2026-09-21 10:34 to 10:40, in the WSL under Xvfb: 19 scenarios played of 19 written, 16 passed,
-1 failed, 2 skipped (the two `@wip`), `exitReason: failed`.** The failure was the suite's own: a hand-written
-building shares its defName with the framework GraphicsDef that draws it, so `is defined by mod` refused the
-ambiguous name. The scenario was rewritten by type and split in two (20 scenarios now); the rewritten
-version has been checked for syntax and step vocabulary only and has not been played. Results and the
-run's summary are in [`../pickle-run-2026-09-21/`](../pickle-run-2026-09-21/).
+**Status: run three times on 2026-09-21 in the WSL under Xvfb.** First run, 10:34: 19 played of 19 written, 16 passed, 1 failed, 2 skipped
+(the two `@wip`) - a defect of the suite, an ambiguous defName that `is defined by mod` refuses, fixed by naming the def type
+(20 scenarios now). Second run, English, 11:39: **20 of 20 played, 18 passed, 0 failed, 2 skipped, `exitReason: passed`.**
+Third run, French with `-IncludeWip`, 11:46: **20 of 20 played, 20 passed, 0 skipped, `exitReason: passed`**, `05` included.
+Results: [`../pickle-run-2026-09-21/`](../pickle-run-2026-09-21/), [`-second/`](../pickle-run-2026-09-21-second/) and
+[`-french/`](../pickle-run-2026-09-21-french/).
 
 ## Scope: what stays in Gherkin, and what does not
 
@@ -99,8 +99,8 @@ Read off the captures and the report of 2026-09-21, not assumed:
    skipped ones are the two `@wip`.
 6. **`no errors were logged` holds** on a loaded test colony.
 
-Still open: the rewritten scenarios of `01` have not been played, and `05` has never been played (it needs
-the French pass). Every vanilla defName used as contents or as a stone chunk exists in the installed Core or
+Nothing of the suite itself is still open: `05` was played in the French pass. Every vanilla defName used as contents
+or as a stone chunk exists in the installed Core or
 Odyssey data, and the French labels in `05` are the ones in `Languages/French/DefInjected`.
 
 ## What the captures showed, and their limits
