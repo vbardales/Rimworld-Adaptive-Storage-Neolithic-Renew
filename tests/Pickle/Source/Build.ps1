@@ -12,5 +12,5 @@ $compiler = Join-Path $env:WINDIR 'Microsoft.NET/Framework64/v4.0.30319/csc.exe'
 & $compiler /nologo /target:library /optimize+ "/out:$output/AdaptiveStorageNeolithicRenew.PickleSteps.dll" `
     "/reference:$Managed/Assembly-CSharp.dll" "/reference:$Managed/UnityEngine.CoreModule.dll" `
     "/reference:$Pickle/RimWorks.Pickle.dll" "/reference:$Pickle/RimWorks.Pickle.Core.dll" `
-    (Join-Path $PSScriptRoot 'ResearchTabSteps.cs')
+    (Join-Path $PSScriptRoot 'ResearchTabSteps.cs') (Join-Path $PSScriptRoot 'PublicationSteps.cs')
 if ($LASTEXITCODE -ne 0) { throw 'Pickle step assembly compilation failed.' }

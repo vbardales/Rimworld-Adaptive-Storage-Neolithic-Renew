@@ -34,7 +34,7 @@ Every container shows what is inside it. Fill a basket and you see the basket fi
 
 Two neolithic research projects unlock the set, both available from a tribal start.
 
-REQUIRES the Adaptive Storage Framework. It does nothing on its own.
+REQUIRES the Adaptive Storage Framework and Harmony. It does nothing on its own.
 
 I am not the author of this mod. The buildings, their artwork and their stats are Soul's, Phaneron's and bradson's - all I did was bring the module forward to 1.6. Credit goes to them; mistakes in the port are mine.
 
@@ -44,27 +44,47 @@ WHAT CHANGED
 
 Almost nothing, and that is the honest answer. Three quarters of this mod is declarative graphics carried by the framework, and the framework itself already supports 1.6. Every XML element in the mod still maps to a field that exists in 1.6, and every C# type it names is still present in the framework's 1.6 assemblies. Nothing had to be rewritten.
 
-Two faults were fixed on the way through.
+A few faults were fixed on the way through.
 
 The Russian translation lived in a folder spelled "Definjected". RimWorld looks for the exact string "DefInjected", so on Windows it worked by accident and on Linux - the Steam Deck included - the whole Russian translation was silently dropped. The folder is now spelled correctly.
 
 1.6 added a sixth kind of stone chunk, vacstone, with the Odyssey expansion. The mod builds a large pot, a plinth and a chunk stack out of every stone chunk in the game, so it picks vacstone up automatically - but the French translation was written when there were five, and the vacstone pieces came out untranslated. French and Russian now cover all six; the Russian entries use Odyssey's own term for vacstone and were written with an AI assistant, without review by a Russian speaker.
 
+The buildings made from a stone of another mod are now translated into French as well, using that mod's own name for the stone. This is what needs a small assembly, and so Harmony.
+
+A stone chunk with no colour of its own, such as the crystal chunk of Biomes! Caverns, took the game down on the original mod, as a player reported on its page: the mod copies each chunk's colour into the buildings it builds. Such a chunk is now left alone and gets no buildings. This was checked against the framework's own generator; I have not tried it with that mod.
+
 Unused files that shipped with the original are not published here: a shelved folder of textures the mod never loads, and a duplicate .dds copy of the Workshop preview image that nothing reads. They are kept in the repository, out of the published folder.
 
 The buildings themselves - their stats, their costs, their graphics - are untouched.
 
-CREDIT AND LICENCE
+LICENCE
 
 This mod is MIT licensed by its authors, and the LICENSE file travels with it, here and in the repository. That is a written permission, not an assumption: unlike most ports, this one did not need anybody's silence.
 
-The original defNames are kept, so a save moves between the two mods without losing anything. The two cannot run together - the original is declared incompatible above. Run one or the other.
+The original defNames are kept. The two mods cannot run together - the original is declared incompatible above. Run one or the other.
 
 Content mod: removing it mid-save destroys any of these containers already built, and drops what was inside them.
 
-Source, changelog and attribution: https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew
+IF I GO QUIET
 
-The port work was done with the help of an AI assistant (Claude, by Anthropic), and the mod icon and the preview image were generated with an image model, under human direction. Those two images are the only things here that are not the authors' own: the artwork you see in game is entirely theirs. Thanks to Soul, Phaneron and bradson for the mod and for licensing it openly, and to Elzetia for the French translation this port extends.
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
 
-If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.</description>
+AI-GENERATED
+
+The port work was done with Claude Code (Anthropic): the translation code, the automated and in-game tests, the documentation and the six Russian vacstone entries. The mod icon and the preview image were generated with an image model. All of it under human direction and review, except that no Russian speaker has read the Russian entries. The buildings, their artwork and their stats are not AI-generated: they are the original authors' work.
+
+THANKS
+
+Soul, Phaneron and bradson, for the mod, for the Adaptive Storage Framework, and for licensing them openly.
+
+Elzetia, for the French translation this port extends.
+
+Brrainz (Andreas Pardeike), for Harmony.
+
+Claude Code (Anthropic).
+
+Full attribution, including what was carried over and what changed: https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/ATTRIBUTION.md. Released under the MIT licence: https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/LICENSE
+
+[url=https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew]Source code on GitHub[/url]</description>
 </ModMetaData>
