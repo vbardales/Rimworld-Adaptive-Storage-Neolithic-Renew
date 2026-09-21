@@ -18,7 +18,7 @@ carries, and a container naming itself through the inspect pane. A default pass 
 `@wip` ones. The French feature is aimed by filter: `-Language French -Filter '05-french-names.feature' -IncludeWip`,
 because the wrapper refuses `-IncludeWip` without one (Pickle #26).
 
-Four passes of the widened suite, all on 2026-09-21 (each pass stages the working tree):
+Five passes of the widened suite, all on 2026-09-21 (each pass stages the working tree):
 
 | Pass | Played | Result | Folder |
 | --- | --- | --- | --- |
@@ -26,10 +26,11 @@ Four passes of the widened suite, all on 2026-09-21 (each pass stages the workin
 | English, 14:32, blueprints rewritten | 31 of 31 | 22 passed, 0 failed, 9 skipped, `passed` | `../pickle-run-2026-09-21-widened-en2/` |
 | French, 14:42, without `@wip` | 31 of 31 | 22 passed, 0 failed, 9 skipped, `passed` | `../pickle-run-2026-09-21-widened-fr/` |
 | French, 14:46, `05` only, `-IncludeWip` | 9 of 9 | 6 passed, **3 failed**, 0 skipped, `failed` | `../pickle-run-2026-09-21-widened-fr-wip/` |
+| French, 15:14, `05` only, after the rewrite | 8 of 8 | **8 passed**, 0 failed, 0 skipped, `passed` | `../pickle-run-2026-09-21-widened-fr-wip2/` |
 
-Every failure so far was the suite's own, never the mod's: the first three looked up vanilla's implied blueprint defs
+Every failure was the suite's own, never the mod's: the first three looked up vanilla's implied blueprint defs
 by name, which Pickle's lookup does not see; the last three, below, are two more ambiguous names and one blueprint label
-I guessed. The `05` scenarios were rewritten again (8 scenarios now, one of them dropped) and have not been replayed.
+I guessed. The `05` scenarios were rewritten (8 scenarios now, one of them dropped) and replayed: 8 of 8 passed.
 
 ## Scope: what stays in Gherkin, and what does not
 
@@ -151,7 +152,7 @@ the fourth was wrong, and two more turned up.
    framework's GraphicsDef shares seven hand-written names (found on the first run), and `ASNeolithicLargePot` is also a
    `DesignatorDropdownGroupDef` (found in the French pass of `05`, which failed two scenarios on it). The large pot is now
    read through the map, as the others are.
-8. **A hand-written building's blueprint label is its label plus ` (plan)`. Wrong, and not replayed.** Every hand-written
+8. **A hand-written building's blueprint label is its label plus ` (plan)`. Wrong.** Every hand-written
    building takes wood as stuff, so it is displayed with the stuff in its name (`Grand pot en bois`); the scenario that
    selected `grand pot (plan)` found nothing. It was dropped: the same names are already read off the containers'
    mouse-over lines in the captures, in French.
