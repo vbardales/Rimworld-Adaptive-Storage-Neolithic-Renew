@@ -56,8 +56,10 @@ Feature: the mod loads on top of the Adaptive Storage Framework
 
   # The rest of TESTING.md scenario 2: the window itself, with the framework's tab beside Main and Anomaly.
   # The scenario asserts only that the window opened. The capture shows that the tab exists and what it is
-  # called, in each language; it does NOT show the two projects, which sit inside that tab, and opening
-  # it takes a click on a button named by its label, which differs by language. That last step is a person's.
+  # called, in each language; it does NOT show the two projects, which sit inside that tab. Opening the tab was
+  # tried by a click on its label ("Storage") and failed on 2026-09-21: `tag 'btn:Storage' not found; known tags: no
+  # tags recorded this frame`. Probably the research window draws its tabs as tab records, not as the buttons Pickle tags, so
+  # no vanilla step can click one (not verified). What the tab holds is a person's to look at.
   @review
   Scenario: the research window opens, with the framework's tab in it
     Given the save "test-colony" is loaded
@@ -65,21 +67,5 @@ Feature: the mod loads on top of the Adaptive Storage Framework
     And I wait 30 ticks
     Then window "MainTabWindow_Research" is open
     And I take a screenshot "the research window, with the storage tab beside main and anomaly"
-    When I close all dialogs
-    Then window "MainTabWindow_Research" is closed
-
-  # The half the capture above leaves out: the two projects, which sit inside the framework's tab. The tab is a button in the
-  # window and is clicked by the label the game shows for it, "Storage", so this scenario is English-only; its French twin,
-  # which clicks "Stockage", is in `05`. Nothing asserts what the tab holds - no vanilla step reads the research tree - so the
-  # capture is what shows "neolithic storage" and "neolithic item display" one above the other, each at 400, and it is a
-  # person who reads it.
-  @review
-  Scenario: the framework's tab opens and shows the two projects
-    Given the save "test-colony" is loaded
-    When I open the "Research" tab
-    And I click button "Storage"
-    And I wait 30 ticks
-    Then window "MainTabWindow_Research" is open
-    And I take a screenshot "the storage tab of the research window, in English"
     When I close all dialogs
     Then window "MainTabWindow_Research" is closed

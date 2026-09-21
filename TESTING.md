@@ -72,12 +72,24 @@ an English material name. Restart the game when switching language.
 ## Pickle (Gherkin) scenarios
 
 Scenarios 1 to 7 and 11 below that only a running game can show are written as a Pickle suite in
-[tests/Pickle](tests/Pickle/README.md): 43 scenarios in seven features, with 24 `@review` captures for a
+[tests/Pickle](tests/Pickle/README.md): 41 scenarios in seven features, with 22 `@review` captures for a
 person to open. Twenty of them were run three times on 2026-09-21 (English 20 of 20 played, 18 passed, 2 `@wip` skipped; French with `-IncludeWip` 20 of 20 passed); see [first run](tests/pickle-run-2026-09-21/README.md), [second](tests/pickle-run-2026-09-21-second/README.md) and [French pass](tests/pickle-run-2026-09-21-french/README.md). The widened suite was played four times the same day (English twice, French twice, see the [README](tests/Pickle/README.md) of the suite): English 22 of 22 passed and French 22 of 22 passed on the non-`@wip` scenarios, after a first version failed three on a wrong assumption of mine; the French feature `05` passed 6 of 9 at first, its three failures being two ambiguous names and a guessed label, and 8 of 8 once rewritten. Both passes are criteria of `done -> tested`, still to be judged by a person.
 Its README states what stays in Gherkin and why, what was left out on purpose (architect menu
 dropdowns, a third-party stone, Russian, the mod list, the icon), and the assumptions a first run has to
 confirm. Everything the automated checks above can prove stays out of Gherkin.
-Where each manual scenario below ended up, decided on 2026-09-21. **3 and 4** (the architect menu and its dropdown groups): noPickle step reads the menu, so `tests/Test-Mod.ps1` checks what decides its content, the research prerequisite of each buildingand the dropdown group of each generated one. **4b** (a third-party stone): `06` and the French half of `05`, run beside[K]Extra Stone in the "stones" pass. **8** (Russian on a case-sensitive filesystem): `07`, run in a Russian game in the WSL, which isext4. **9** and **10**: out of scope, About.xml and icon-file mechanisms checked statically, no backward compatibility pursued.**5, 6, 7, 11** and the parts of **1 and 2** that show in a game: the suite above. The features written that day for 4b, 8 and theresearch tab have not been played yet.
+
+Where each manual scenario below ended up, decided on 2026-09-21.
+
+- **3 and 4** (the architect menu and its dropdown groups): no Pickle step reads the menu, so `tests/Test-Mod.ps1` checks what
+  decides its content, the research prerequisite of each building and the dropdown group of each generated one.
+- **4b** (a third-party stone): `06` and the French half of `05`, run beside [K]Extra Stone in the "stones" pass. **Seen working in
+  French on 2026-09-21**: the stone's pot, plinth and chunk stack read `grand pot (andesite chunk)`, `socle (andesite chunk)` and
+  `amas de blocs (andesite chunk)`, and the pot's blueprint `Grand pot (andesite chunk) (plan)`. The English half, `06`, has not run.
+- **8** (Russian on a case-sensitive filesystem): `07`, run in a Russian game in the WSL, which is ext4. **Seen working on 2026-09-21**: 5 of 5 passed, the labels, descriptions and research text read as Russian.
+- **9** and **10**: out of scope, About.xml and icon-file mechanisms checked statically, no backward compatibility pursued.
+- **5, 6, 7, 11** and the parts of **1 and 2** that show in a game: the suite above. The framework's research tab could not be opened by
+  a Pickle click (no button tag is recorded for it, tried in English and French on 2026-09-21), so the two projects inside their tab are
+  a person's to look at.
 
 ## Manual scenarios
 

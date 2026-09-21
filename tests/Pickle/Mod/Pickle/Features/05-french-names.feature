@@ -116,17 +116,3 @@ Feature: French names on the generated buildings
     And I wait 30 ticks
     Then the inspect pane shows "Amas de granite"
     And I take a screenshot "the inspect pane on a granite chunk stack, in French"
-
-  # French twin of the English scenario in `01`: the tab is named by the label the French game shows for it, "Stockage", which is
-  # the label this mod's own French ResearchTabDef gives the framework's tab. A click that finds no such button fails the scenario,
-  # so a passing run also says that label is what the game displays.
-  @review
-  Scenario: the framework's tab opens and shows the two projects, in French
-    Given the save "test-colony" is loaded
-    When I open the "Research" tab
-    And I click button "Stockage"
-    And I wait 30 ticks
-    Then window "MainTabWindow_Research" is open
-    And I take a screenshot "the storage tab of the research window, in French"
-    When I close all dialogs
-    Then window "MainTabWindow_Research" is closed

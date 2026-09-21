@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite name="Russian names, on a case-sensitive filesystem" tests="5" failures="0" skipped="0" flakes="0" time="25.050">
+    <testcase name="the generated stone buildings are Russian" classname="Russian names, on a case-sensitive filesystem" time="0.659">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the vacstone buildings are Russian, with Odyssey's own term" classname="Russian names, on a case-sensitive filesystem" time="0.442">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="a hand-written building and the research are Russian" classname="Russian names, on a case-sensitive filesystem" time="0.854">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="a container on the map names itself in Russian" classname="Russian names, on a case-sensitive filesystem" time="14.648">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+Attachment: the inspect pane on a granite chunk stack, in Russian -&gt; /mnt/c/Users/nelim/Documents/rimworld/pickle-reports/screenshots/manual--the-inspect-pane-on-a-granite-chunk-stack--in-Russian--step0.png
+</system-out>
+    </testcase>
+    <testcase name="loading a game in Russian raises no error" classname="Russian names, on a case-sensitive filesystem" time="8.447">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
