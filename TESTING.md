@@ -72,15 +72,17 @@ an English material name. Restart the game when switching language.
 ## Pickle (Gherkin) scenarios
 
 Scenarios 1 to 7 and 11 below that only a running game can show are written as a Pickle suite in
-[tests/Pickle](tests/Pickle/README.md): 19 scenarios in five features, with 16 `@review` captures for a
-person to open. It is written and has never been run; running it is a criterion of `done -> tested`.
+[tests/Pickle](tests/Pickle/README.md): 20 scenarios in five features (19 when first run), with 16 `@review` captures for a
+person to open. It was run once on 2026-09-21 (16 passed, 1 failed on a defect of the suite, 2 skipped); see [tests/pickle-run-2026-09-21](tests/pickle-run-2026-09-21/README.md). Its full run in English and French is a criterion of `done -> tested`.
 Its README states what stays in Gherkin and why, what was left out on purpose (architect menu
 dropdowns, a third-party stone, Russian, the mod list, the icon), and the assumptions a first run has to
 confirm. Everything the automated checks above can prove stays out of Gherkin.
 
 ## Manual scenarios
 
-Nothing in this mod has ever been seen running. The XML checkers are clean, every element maps to
+Until the Pickle run of 2026-09-21 nothing in this mod had ever been seen running, and that run
+covers only the scenarios listed above; the rest of this file is still to be watched by a person.
+The XML checkers are clean, every element maps to
 a field that still exists in 1.6, every C# type it names is still present in the framework's 1.6
 assemblies, and none of that draws a single sprite. This file is the list of what has to be
 watched, and what counts as a pass.

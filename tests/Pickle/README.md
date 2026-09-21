@@ -3,10 +3,12 @@
 The scenarios of [TESTING.md](../../TESTING.md) that a running game is needed for, and only those.
 `Mod/` is a companion mod, **Adaptive Storage Neolithic Renew - Pickle tests**, never published.
 
-**Status: written, never run.** Nothing here has been played. The step texts were checked against the
-step patterns installed with Pickle (156 steps, all matched) and the five files parse with Pickle's own
-Gherkin parser, which proves the syntax and the vocabulary, not the behaviour. Running the suite is a
-criterion of `done -> tested`; the assumptions that a first run must confirm are listed at the end.
+**Status: run once, 2026-09-21 10:34 to 10:40, in the WSL under Xvfb: 19 scenarios played of 19 written, 16 passed,
+1 failed, 2 skipped (the two `@wip`), `exitReason: failed`.** The failure was the suite's own: a hand-written
+building shares its defName with the framework GraphicsDef that draws it, so `is defined by mod` refused the
+ambiguous name. The scenario was rewritten by type and split in two (20 scenarios now); the rewritten
+version has been checked for syntax and step vocabulary only and has not been played. Results and the
+run's summary are in [`../pickle-run-2026-09-21/`](../pickle-run-2026-09-21/).
 
 ## Scope: what stays in Gherkin, and what does not
 
@@ -81,26 +83,37 @@ powershell.exe -ExecutionPolicy Bypass -File scripts/Run-PickleWsl.ps1 -Mod Adap
 ```
 
 An include-wip pass has once selected almost nothing while reporting success. Read `exitReason` first,
-then compare the scenarios played with the 19 written (5 features) before trusting the result.
+then compare the scenarios played with the 20 written (5 features; the first run played 19) before trusting the result.
 
-## Assumptions the first run has to confirm
+## What the first run settled
 
-None of these could be checked without playing:
+Read off the captures and the report of 2026-09-21, not assumed:
 
-1. A thing spawned by `I spawn a "..." at (x, z)` on a storage building's cell is held by it, which is
-   the state the framework draws from. If it is not, the captures show items lying beside empty
-   containers and `03` and `04` need a hauling step instead.
-2. Spawning a second and third `ChunkGranite` at one cell puts them there rather than merging or
-   scattering them. Chunks are not stackable, so the stack's three-per-cell load relies on it.
-3. The cells (140..150, 155) of `test-colony` are open ground: they sit beside cells other Pickle
-   features already build on, but were not looked at.
-4. `a "..." is built at (x, z)` skips research: the buildings are placed without either of the two
-   neolithic projects finished.
-5. The WSL game activates Odyssey, so `@requires:Odyssey` scenarios run rather than skip. Its `Data/Odyssey`
-   folder is there; whether the staged `ModsConfig.xml` enables it is read off the report.
-6. `no errors were logged` is not tripped by something the fixture raises on its own.
+1. **A thing spawned on a storage building's cell is held by it.** The mouse-over line of the basket capture
+   reads "Cloth / Wooden basket", and the basket draws the cloth inside it. Hauling is not needed.
+2. **Several chunks spawned at one cell stay there.** The chunk stack's mouse-over lists three granite chunks
+   in one cell, and the stack draws its stages.
+3. **The cells (140..150, 155) are open ground** and the containers stand alone in the frame.
+4. **`is built at` skips research**: the buildings were placed with neither project finished.
+5. **Odyssey is active in the WSL game**: the vacstone scenarios passed rather than skipped; the only
+   skipped ones are the two `@wip`.
+6. **`no errors were logged` holds** on a loaded test colony.
 
-Checked without playing: every vanilla defName used as contents or as a stone chunk (`Cloth`, `Steel`,
-`WoodLog`, `Hay`, `RawBerries`, `MealSimple`, `Gold`, `ChunkGranite`, `ChunkMarble`, `ChunkVacstone`) is
-declared in the installed Core or Odyssey data, and the French labels in `05` are the ones in
-`Languages/French/DefInjected`.
+Still open: the rewritten scenarios of `01` have not been played, and `05` has never been played (it needs
+the French pass). Every vanilla defName used as contents or as a stone chunk exists in the installed Core or
+Odyssey data, and the French labels in `05` are the ones in `Languages/French/DefInjected`.
+
+## What the captures showed, and their limits
+
+Sixteen captures were taken and fifteen looked at. Opened at full size: the wooden basket with one item, the granite chunk stack
+with six. Cropped on their centre and opened: the wooden basket (empty, one item, full), the granite stack
+(one, two, six chunks), the marble stack, the large pot (empty, berries), the fabric basket full, both
+plinths, the pile/shelf capture, and the two after a reload. Not looked at: the fabric basket empty; and partly
+the textile bundle in the pile/shelf capture, which falls outside the crop.
+
+- The basket draws empty, then with the cloth inside it, then with two items arranged in it.
+- The chunk stack swaps its sprite at one, two and six chunks; the marble stack is lighter than the granite one.
+- The pot shows purple berries, both plinths show the gold, and both containers redraw after a reload.
+- **Framing is wide.** The whole colony is in frame and the container is about 45 px a cell in the middle of
+  it. Judgeable, not good enough for the Workshop page, which needs its own scene. The game's interface is
+  drawn in every capture. Not a defect of the mod.
