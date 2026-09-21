@@ -1,0 +1,9 @@
+# The "stones" pass: the suite beside a stone mod the mod has never met. Used with
+#   Run-PickleWsl.ps1 -Mod AdaptiveStorageNeolithicRenew -DepMap wsl-deps.stones.map
+# and read by scripts/stage-pickle-wsl.sh. The pass is named "stones" in the report.
+#
+# [K]Extra Stone (Kura.ExtraStone) adds about a dozen stones whose chunks derive from ChunkRockBase, so the mod's three
+# generators build a pot, a plinth and a chunk stack for each of them. Its only dependency is Harmony, it declares 1.6,
+# and it ships no French, so its chunk labels stay English: exactly the case the mod's Harmony fallback exists for.
+adaptive.storage.framework   3033901359
+Kura.ExtraStone              852103845

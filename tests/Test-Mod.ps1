@@ -43,6 +43,27 @@ Assert-True ($meta.ModMetaData.name -ceq 'Adaptive Storage Neolithic Renew') 'Di
 Assert-True ($meta.ModMetaData.modDependencies.li.packageId -contains 'adaptive.storage.framework') 'Framework dependency'
 Assert-True ($meta.ModMetaData.loadAfter.li -contains 'adaptive.storage.framework') 'Framework load order'
 Assert-True ($meta.ModMetaData.incompatibleWith.li -contains 'adaptive.storage.neolithic') 'Original mod incompatibility'
+# The mod-list icon and the Workshop image are read by RimWorld and Steam from fixed paths, so a file check is the whole
+# test. `<modIconPath>` would point the game at the authors' old icon instead of About/ModIcon.png, undoing the reason it
+# was removed. PNG size is read off the IHDR chunk, which needs no imaging library and so runs on the CI's Linux runner too.
+function Get-PngSize([string]$Path) {
+    $b = [IO.File]::ReadAllBytes($Path)
+    $signature = ($b.Length -ge 24) -and ($b[0] -eq 0x89) -and ($b[1] -eq 0x50) -and ($b[2] -eq 0x4E) -and ($b[3] -eq 0x47)
+    if (-not $signature) { return $null }
+    [pscustomobject]@{
+        Width  = ($b[16] * 16777216) + ($b[17] * 65536) + ($b[18] * 256) + $b[19]
+        Height = ($b[20] * 16777216) + ($b[21] * 65536) + ($b[22] * 256) + $b[23]
+        Bytes  = $b.Length
+    }
+}
+$icon = Get-PngSize (Join-Path $modRoot 'About/ModIcon.png')
+Assert-True ($null -ne $icon) 'ModIcon.png is a PNG'
+Assert-True (($icon.Width -eq 128) -and ($icon.Height -eq 128)) 'ModIcon.png is 128x128'
+$preview = Get-PngSize (Join-Path $modRoot 'About/Preview.png')
+Assert-True ($null -ne $preview) 'Preview.png is a PNG'
+Assert-True (($preview.Width -eq 896) -and ($preview.Height -eq 504)) 'Preview.png is 896x504'
+Assert-True ($preview.Bytes -lt 1000000) 'Preview.png is under 1 MB, the Workshop limit'
+Assert-True ($null -eq $meta.ModMetaData.modIconPath) 'No modIconPath in About.xml, so the game reads About/ModIcon.png'
 
 $textureRoot = (Resolve-Path (Join-Path $modRoot 'Textures')).Path
 $textures = @(Get-ChildItem $textureRoot -Recurse -File | ForEach-Object {
@@ -126,6 +147,40 @@ function Test-OwnedTranslations($Tree, [bool]$RequireFrench) {
 }
 Test-OwnedTranslations $defs $true
 Assert-True ($patches.Count -eq 3) 'Three stone generators covered'
+# TESTING.md scenario 3: which research unlocks which building. The architect menu is the game's own mechanism and no test
+# reads it; what the mod controls is each building's researchPrerequisites, inherited from one of two abstract bases, and that
+# is what decides the menu's content. Eight hand-written buildings need "neolithic storage", the plinth "neolithic item display".
+function Get-Prerequisites($Node, $Tree) {
+    $seen = @{}
+    while ($null -ne $Node) {
+        $own = @($Node.SelectNodes('researchPrerequisites/li') | ForEach-Object InnerText)
+        if ($own.Count -gt 0) { return $own }
+        $parent = $Node.GetAttribute('ParentName')
+        if (-not $parent) { return @() }
+        if ($seen.ContainsKey($parent)) { throw "Inheritance cycle: $parent" }
+        $seen[$parent] = $true
+        $Node = $Tree.SelectSingleNode("/Defs/*[@Name='$parent']")
+    }
+    return @()
+}
+foreach ($name in 'ASNeolithicBasketWoody', 'ASNeolithicBasketFabric', 'ASNeolithicHayPile', 'ASNeolithicWoodPile',
+                  'ASNeolithicLargePot', 'ASNeolithicMealShelf', 'ASNeolithicTextileBundleFabric', 'ASNeolithicTextileBundleLeather') {
+    $node = $defs.SelectSingleNode("/Defs/ThingDef[defName='$name']")
+    Assert-True ($null -ne $node) "Hand-written building exists: $name"
+    Assert-True (((Get-Prerequisites $node $defs) -join ',') -ceq 'ASNeolithicNeolithicStorage') "Unlocked by neolithic storage: $name"
+}
+$plinth = $defs.SelectSingleNode("/Defs/ThingDef[defName='ASNeolithicPlinthWoody']")
+Assert-True (((Get-Prerequisites $plinth $defs) -join ',') -ceq 'ASNeolithicNeolithicItemDisplay') 'Unlocked by neolithic item display: ASNeolithicPlinthWoody'
+foreach ($project in 'ASNeolithicNeolithicStorage', 'ASNeolithicNeolithicItemDisplay') {
+    Assert-True ($null -ne $defs.SelectSingleNode("/Defs/ResearchProjectDef[defName='$project']")) "Research project defined: $project"
+}
+# Scenario 4's second half: the stone variants collapse into ONE architect entry per kind, which is a DesignatorDropdownGroupDef
+# named by each building's designatorDropdown. A building naming a group nobody defines, or a group nobody uses, breaks that.
+$groupOfKind = @{ LargePot = 'ASNeolithicLargePot'; Plinth = 'ASNeolithicPlinthStone'; ChunkStorage = 'ASNeolithicChunkStorage' }
+foreach ($kind in $groupOfKind.Keys) {
+    $group = $groupOfKind[$kind]
+    Assert-True (@($defs.SelectNodes("/Defs/DesignatorDropdownGroupDef[defName='$group']")).Count -eq 1) "One dropdown group defined: $group"
+}
 # Independent expected output counts for Core, Odyssey and an extra third-party stone.
 foreach ($scenario in @(
     @{ Stones = @('Granite','Sandstone','Limestone','Slate','Marble'); Count = 15 },
@@ -163,6 +218,7 @@ foreach ($scenario in @(
                         Assert-True ($building.graphicData.color -ceq $source.graphicData.color) "Stone graphic tint: $name"
                     }
                     Assert-True ($null -eq $working.SelectSingleNode("/Defs/ThingDef[defName='$name']")) "No generated collision: $name"
+                    Assert-True ((Get-OwnedText $building 'designatorDropdown' $working) -ceq $groupOfKind[[string]$patch.BaseName]) "Generated building joins its dropdown group: $name"
                     [void]$working.DocumentElement.AppendChild($working.ImportNode($building, $true))
                     $generated += $name
                 } elseif ($operation.Class -eq 'GeneratorOperation.PatchGenerator') {

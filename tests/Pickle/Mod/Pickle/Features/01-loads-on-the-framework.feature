@@ -67,3 +67,19 @@ Feature: the mod loads on top of the Adaptive Storage Framework
     And I take a screenshot "the research window, with the storage tab beside main and anomaly"
     When I close all dialogs
     Then window "MainTabWindow_Research" is closed
+
+  # The half the capture above leaves out: the two projects, which sit inside the framework's tab. The tab is a button in the
+  # window and is clicked by the label the game shows for it, "Storage", so this scenario is English-only; its French twin,
+  # which clicks "Stockage", is in `05`. Nothing asserts what the tab holds - no vanilla step reads the research tree - so the
+  # capture is what shows "neolithic storage" and "neolithic item display" one above the other, each at 400, and it is a
+  # person who reads it.
+  @review
+  Scenario: the framework's tab opens and shows the two projects
+    Given the save "test-colony" is loaded
+    When I open the "Research" tab
+    And I click button "Storage"
+    And I wait 30 ticks
+    Then window "MainTabWindow_Research" is open
+    And I take a screenshot "the storage tab of the research window, in English"
+    When I close all dialogs
+    Then window "MainTabWindow_Research" is closed

@@ -67,9 +67,37 @@ Feature: French names on the generated buildings
     And I select "Grand pot en vaccolithe (plan)"
     Then the inspect pane shows "Grand pot en vaccolithe (plan)"
 
+  # TESTING.md scenario 4b, French half. A stone from a mod this one has never met has no bundled French entry, so its
+  # buildings are translated by the mod's Harmony fallback, from six Keyed resources with the chunk's own label as a named
+  # parameter. [K]Extra Stone ships no French, so the label it hands over stays English: "grand pot (andesite chunk)". Needs
+  # the "stones" pass (`-DepMap wsl-deps.stones.map`); skipped without it.
+  @requires:Kura.ExtraStone
+  Scenario: the fallback translates the buildings of a stone the mod never met
+    Then def "ASNeolithicLargePotChunkKura_Andesite" field "label" is "grand pot (andesite chunk)"
+    And def "ASNeolithicPlinthChunkKura_Andesite" field "label" is "socle (andesite chunk)"
+    And def "ASNeolithicChunkStorageChunkKura_Andesite" field "label" is "amas de blocs (andesite chunk)"
+    And def "ASNeolithicLargePotChunkKura_Andesite" field "description" is "Un grand pot taillé destiné au stockage des aliments périssables."
+    And def "ASNeolithicPlinthChunkKura_Andesite" field "description" is "Un socle brut avec de belles gravures pour exposer des objets."
+    And def "ASNeolithicChunkStorageChunkKura_Andesite" field "description" is "Un empilement de blocs de pierre qui en soutiennent d'autres. Facile à réaliser et assez efficace comme couverture."
+
+  # The same window as the vacstone blueprint above: the fallback runs in the same postfix, so a French name on this blueprint
+  # says it landed before vanilla copied the label.
+  @requires:Kura.ExtraStone
+  @review
+  Scenario: the blueprint of a third-party stone's pot carries the fallback's French name
+    Given the save "test-colony" is loaded
+    When I designate a "ASNeolithicLargePotChunkKura_Andesite" from (145, 155) to (145, 155)
+    And I select "Grand pot (andesite chunk) (plan)"
+    And I zoom all the way in
+    And I move the camera to (145, 155)
+    And I wait 30 ticks
+    Then the inspect pane shows "Grand pot (andesite chunk) (plan)"
+    And I take a screenshot "the blueprint of an andesite pot, in French, from the fallback"
+
   # TESTING.md scenario 2, the half of it the English pass could not reach.
   Scenario: the research projects and their text are French
-    Then def "ASNeolithicNeolithicStorage" field "label" is "stockage néolithique"
+    Then def "ASFAdaptiveStorage" field "label" is "Stockage"
+    And def "ASNeolithicNeolithicStorage" field "label" is "stockage néolithique"
     And def "ASNeolithicNeolithicStorage" field "description" is "Construire des conteneurs simples et des moyens de stockage pour les matériaux de base."
     And def "ASNeolithicNeolithicItemDisplay" field "label" is "présentoir néolithique"
     And def "ASNeolithicNeolithicItemDisplay" field "description" is "Construire des socles simples, mais esthétiques pour exposer des objets."
@@ -88,3 +116,17 @@ Feature: French names on the generated buildings
     And I wait 30 ticks
     Then the inspect pane shows "Amas de granite"
     And I take a screenshot "the inspect pane on a granite chunk stack, in French"
+
+  # French twin of the English scenario in `01`: the tab is named by the label the French game shows for it, "Stockage", which is
+  # the label this mod's own French ResearchTabDef gives the framework's tab. A click that finds no such button fails the scenario,
+  # so a passing run also says that label is what the game displays.
+  @review
+  Scenario: the framework's tab opens and shows the two projects, in French
+    Given the save "test-colony" is loaded
+    When I open the "Research" tab
+    And I click button "Stockage"
+    And I wait 30 ticks
+    Then window "MainTabWindow_Research" is open
+    And I take a screenshot "the storage tab of the research window, in French"
+    When I close all dialogs
+    Then window "MainTabWindow_Research" is closed

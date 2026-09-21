@@ -10,13 +10,15 @@ Third run, French with `-IncludeWip`, 11:46: **20 of 20 played, 20 passed, 0 ski
 Results: [`../pickle-run-2026-09-21/`](../pickle-run-2026-09-21/), [`-second/`](../pickle-run-2026-09-21-second/) and
 [`-french/`](../pickle-run-2026-09-21-french/).
 
-**Widened the same day, after those passes: 30 scenarios, 19 `@review` captures.** The three passes showed the
+**Widened the same day, after those passes: 43 scenarios in seven features, 24 `@review` captures.** The three passes showed the
 generated buildings named right and left the rest of the mod's text unseen, so scenarios were added: the research
 projects' tab, cost and tech level; the window that holds them, with a capture in each language; blueprints placed for
 the generated and hand-written buildings; and in French their descriptions, their research text, the name a blueprint
-carries, and a container naming itself through the inspect pane. A default pass plays 22 scenarios and skips the 8
-`@wip` ones. The French feature is aimed by filter: `-Language French -Filter '05-french-names.feature' -IncludeWip`,
-because the wrapper refuses `-IncludeWip` without one (Pickle #26).
+carries, and a container naming itself through the inspect pane. Then, once the manual scenarios 4b and 8 were decided (9 and 10 are out
+of scope), a third-party stone, Russian, and the research tab opened by a click. A default pass plays 23 scenarios; the "stones" pass plays 27;
+the `@wip` features (`05`, `07`) are skipped by both and each has a pass of its own, below. The
+wrapper refuses `-IncludeWip` without a filter (Pickle #26), so a `@wip` feature is aimed by file name:
+
 
 Five passes of the widened suite, all on 2026-09-21 (each pass stages the working tree):
 
@@ -34,8 +36,8 @@ I guessed. The `05` scenarios were rewritten (8 scenarios now, one of them dropp
 
 ## Scope: what stays in Gherkin, and what does not
 
-Everything provable outside the game is proved outside it, by `tests/Test-Mod.ps1` (1,310 assertions:
-XML, template expansion against five, six and seven stone fixtures, translation coverage) and
+Everything provable outside the game is proved outside it, by `tests/Test-Mod.ps1` (1,316 assertions:
+XML, template expansion against five, six and seven stone fixtures, translation coverage, the icon and preview files, the original mod's incompatibility) and
 `tests/Test-InstalledTranslations.ps1` (28 assertions against the shipped assembly and the installed
 generator), in seconds. So the defNames' uniqueness, the generated counts, the stone templates, the
 translation keys and the fallback logic appear in no scenario here as a claim of their own.
@@ -50,24 +52,25 @@ helper and never draw a sprite:
 | `03-contents-review` | Every container shows what is in it; the chunk stack swaps its sprite at one, two and six chunks and takes its colour from its stone. **16 captures, `@review`.** | 5, 6 |
 | `04-save-reload` | State derived rather than stored rebuilds after a save and a reload. `the save round trips` fails on a scribe error. **2 captures, `@review`.** | 11 |
 | `05-french-names` | In a French game: the generated and hand-written names, the descriptions, the research text, and the name a blueprint carries — which is where the mod's Harmony hook proves it ran between the language injection and the implied defs. A container names itself through the inspect pane. **2 captures, `@review`.** `@wip`: skipped by a default run. | 7 |
+| `06-third-party-stone` | A stone from a mod this one has never met (`[K]Extra Stone`, in the "stones" pass): the generators built its pot, plinth and chunk stack, in the stone's own English label, and they can be placed without an error. **1 capture, `@review`.** `@requires`: skipped without that mod. | 4b |
+| `07-russian-names` | In a Russian game on a case-sensitive filesystem, which the WSL is: the labels, the descriptions and the research text are Russian, so the folder is found. **1 capture, `@review`.** `@wip`. | 8 |
 
 A def whose name the framework also gives a `GraphicsDef` — the basket, the hay pile, the meal shelf, the
 plinth, both bundles — cannot be read by `def ... field ...`, which refuses an ambiguous name and cost the
 first run its only failure. Seven of the nine hand-written buildings are in that case, so their text is read
 through the map instead, by the inspect pane, which looks at the thing rather than at the def.
 
-Deliberately **not** here:
 
-- **The architect menu and its dropdown groups.** No vanilla Pickle step reads them, and a step
-  assembly would be maintained for one question. `02` counts the generated defs instead; the dropdown
-  itself stays a manual check.
-- **A stone from a third-party mod (TESTING.md 4b)** and the Harmony fallback that translates its
-  buildings. It needs a stone mod staged beside the suite, and no such mod has been chosen. Manual.
-- **Russian (TESTING.md 8).** The point of that test is a case-sensitive filesystem; the WSL game
-  has one, so `-Language Russian` with a copy of `05` would serve, but the six vacstone entries were
-  only added on 2026-09-21 and no such scenario was written.
-- **The mod list refusing the original mod (TESTING.md 9)** and **the icon in the mod list (10)**: the
-  mod list is not something a scenario drives.
+Left out, or moved:
+
+- **The architect menu itself.** No vanilla Pickle step reads it. What decides its content is checked statically by
+  `Test-Mod.ps1` (decided 2026-09-21): each hand-written building is unlocked by the right research project, and each
+  generated building joins the dropdown group of its kind, so the stone variants collapse into one entry.
+- **A stone from a third-party mod (TESTING.md 4b)**: written the same day, in `06` and the French half of `05`, run in the "stones" pass.
+- **Russian on a case-sensitive filesystem (TESTING.md 8)**: written the same day, as `07`, run in a Russian game: the WSL is ext4.
+- **The original mod refused (TESTING.md 9)**: out of scope. It is an `About.xml` declaration checked by `Test-Mod.ps1`, and
+  backward compatibility with the original is not pursued (decided 2026-09-21). **The icon in the mod list (10)**: out of scope,
+  the same reasoning: the game reads `About/ModIcon.png` from a fixed path and `Test-Mod.ps1` checks the file.
 - **Settings, MainButtons shortcut**: the mod has none (`settings_audit: not_applicable`).
 
 ## No step assembly
@@ -103,15 +106,22 @@ mod, the companion, Pickle, Harmony and the framework (`wsl-deps.map`) into the 
 The staging script looks for `Tests/Pickle`; this repository tracks the folder as `tests/Pickle`. Windows
 and the WSL mount are case-insensitive, so it resolves; a case-sensitive checkout would not.
 
-Then the French passes, two of them, because the wrapper refuses `-IncludeWip` without a filter (Pickle #26): one that plays the 22 non-`@wip` scenarios in French, and one aimed at `05`, the only `@wip` feature:
+Then the other passes. Each is a run of its own, and a `@wip` feature is aimed by file name because the wrapper refuses
+`-IncludeWip` alone (Pickle #26):
 
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File scripts/Run-PickleWsl.ps1 -Mod AdaptiveStorageNeolithicRenew -Language French
-powershell.exe -ExecutionPolicy Bypass -File scripts/Run-PickleWsl.ps1 -Mod AdaptiveStorageNeolithicRenew -Language French -Filter "05-french-names.feature" -IncludeWip
+# English, without optional mods: 23 scenarios; `06` is skipped for want of its stone mod.
+powershell.exe -ExecutionPolicy Bypass -File scripts/Run-PickleWsl.ps1 -Mod AdaptiveStorageNeolithicRenew
+# English beside [K]Extra Stone (the "stones" pass): 27 scenarios, `06` included.
+powershell.exe -ExecutionPolicy Bypass -File scripts/Run-PickleWsl.ps1 -Mod AdaptiveStorageNeolithicRenew -DepMap wsl-deps.stones.map
+# French, `05` only, with the stone mod so that its two third-party scenarios play (11 scenarios; 9 without it).
+powershell.exe -ExecutionPolicy Bypass -File scripts/Run-PickleWsl.ps1 -Mod AdaptiveStorageNeolithicRenew -Language French -DepMap wsl-deps.stones.map -Filter "05-french-names.feature" -IncludeWip
+# Russian, `07` only (5 scenarios): the case-sensitive filesystem test.
+powershell.exe -ExecutionPolicy Bypass -File scripts/Run-PickleWsl.ps1 -Mod AdaptiveStorageNeolithicRenew -Language Russian -Filter "07-russian-names.feature" -IncludeWip
 ```
 
 An include-wip pass has once selected almost nothing while reporting success. Read `exitReason` first,
-then compare the scenarios played with the number written (22 default, 9 in `05`; 31 in all) before trusting the result.
+then compare the scenarios played with the number written before trusting the result: 23 by default, 27 in the "stones" pass, 11 or 9 in `05`, 5 in `07`.
 
 ## What the first run settled
 

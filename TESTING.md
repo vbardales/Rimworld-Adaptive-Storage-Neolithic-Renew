@@ -35,7 +35,7 @@ for an arbitrary stone. Six Keyed resources per language supply the generic text
 standalone suite checks their completeness and named parameters.
 See the translation audit in [STATUS.md](STATUS.md) for the gate and unresolved checks.
 
-Latest local run: 1,310 assertions passed on 2026-09-13.
+Latest local run: 1,392 assertions passed on 2026-09-21.
 
 ### Installed translation checks
 
@@ -72,11 +72,12 @@ an English material name. Restart the game when switching language.
 ## Pickle (Gherkin) scenarios
 
 Scenarios 1 to 7 and 11 below that only a running game can show are written as a Pickle suite in
-[tests/Pickle](tests/Pickle/README.md): 30 scenarios in five features, with 19 `@review` captures for a
+[tests/Pickle](tests/Pickle/README.md): 43 scenarios in seven features, with 24 `@review` captures for a
 person to open. Twenty of them were run three times on 2026-09-21 (English 20 of 20 played, 18 passed, 2 `@wip` skipped; French with `-IncludeWip` 20 of 20 passed); see [first run](tests/pickle-run-2026-09-21/README.md), [second](tests/pickle-run-2026-09-21-second/README.md) and [French pass](tests/pickle-run-2026-09-21-french/README.md). The widened suite was played four times the same day (English twice, French twice, see the [README](tests/Pickle/README.md) of the suite): English 22 of 22 passed and French 22 of 22 passed on the non-`@wip` scenarios, after a first version failed three on a wrong assumption of mine; the French feature `05` passed 6 of 9 at first, its three failures being two ambiguous names and a guessed label, and 8 of 8 once rewritten. Both passes are criteria of `done -> tested`, still to be judged by a person.
 Its README states what stays in Gherkin and why, what was left out on purpose (architect menu
 dropdowns, a third-party stone, Russian, the mod list, the icon), and the assumptions a first run has to
 confirm. Everything the automated checks above can prove stays out of Gherkin.
+Where each manual scenario below ended up, decided on 2026-09-21. **3 and 4** (the architect menu and its dropdown groups): noPickle step reads the menu, so `tests/Test-Mod.ps1` checks what decides its content, the research prerequisite of each buildingand the dropdown group of each generated one. **4b** (a third-party stone): `06` and the French half of `05`, run beside[K]Extra Stone in the "stones" pass. **8** (Russian on a case-sensitive filesystem): `07`, run in a Russian game in the WSL, which isext4. **9** and **10**: out of scope, About.xml and icon-file mechanisms checked statically, no backward compatibility pursued.**5, 6, 7, 11** and the parts of **1 and 2** that show in a game: the suite above. The features written that day for 4b, 8 and theresearch tab have not been played yet.
 
 ## Manual scenarios
 
@@ -247,28 +248,29 @@ case-sensitive filesystem proves it.
 **Pass:** Russian labels. **Fail:** English labels, and silence in the log — which is exactly what
 the bug looked like before.
 
-## 9. The original mod is refused
+## 9. The original mod is refused — out of scope
 
-`adaptive.storage.neolithic` is declared in `<incompatibleWith>`. Both mods use the same
-`defName`s, so running them together would duplicate all 71 defs.
+`adaptive.storage.neolithic` is declared in `<incompatibleWith>`. Both mods use the same `defName`s, so running them
+together would duplicate all 71 defs. That is a declaration in `About.xml`, not behaviour of the game, and
+`tests/Test-Mod.ps1` already checks it ("Original mod incompatibility"). Nothing is left to watch in game, and Pickle does
+not read the mod list's warning.
 
-**Pass:** with both active, RimWorld says so in the mod list before the game starts.
+Decided by Virginie on 2026-09-21: **no backward compatibility with the original mod is pursued.** The second half of this
+scenario, that a save made with the original should load with this mod in its place, is not tested and not promised. The
+defNames do still match the original's one for one (57 defs on each side, no difference, the three generator patches
+byte-identical, compared that day), so a save may well load; it is not a criterion.
 
-Separately, and this is the reason the defNames were kept: a save made with the original should
-load with this mod in its place, containers and contents intact.
+## 10. The icon and the showcase — out of scope
 
-## 10. The icon and the showcase
+The mod list reads `About/ModIcon.png` and Steam reads `About/Preview.png` from fixed paths, so what can be wrong is the
+file, and `tests/Test-Mod.ps1` checks the file: `ModIcon.png` is a 128x128 PNG, `Preview.png` is an 896x504 PNG under
+1 MB, and `About.xml` has no `<modIconPath>` (which would point the game at the authors' old icon and undo the reason
+the field was removed). How the game draws a 128 px image at 32 px is the game's mechanism, not something this mod does,
+and there is nothing to test in game. Whether the icon reads well at 32 px is a visual judgement already settled: Virginie
+accepted the icon on 2026-09-13 ("moi, j'override, je valide"). The showcase can only be judged on the Workshop page after
+the first upload, where it is drawn about 268 px wide.
 
-Both images are the port's own, generated rather than cropped, and neither has been seen in place.
-
-1. Open the mod list and look at this mod's row.
-
-**Pass:** the mascot icon shows at 32 px, from `About/ModIcon.png`. **Watch for:** the authors'
-old icon appearing instead. That would mean `<modIconPath>` came back, which would point at
-`Textures/ASNeolithic/ModIcon` and undo the whole reason the field was removed.
-
-The 896x504 showcase can only be judged on the Workshop page after the first upload, where it is
-drawn about 268 px wide.
+Decided on 2026-09-21: like scenario 9, a RimWorld mechanism that is not tested in game.
 
 ## 11. A save survives a reload
 
