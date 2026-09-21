@@ -10,17 +10,17 @@ Third run, French with `-IncludeWip`, 11:46: **20 of 20 played, 20 passed, 0 ski
 Results: [`../pickle-run-2026-09-21/`](../pickle-run-2026-09-21/), [`-second/`](../pickle-run-2026-09-21-second/) and
 [`-french/`](../pickle-run-2026-09-21-french/).
 
-**Widened the same day, after those passes: 41 scenarios in seven features, 22 `@review` captures.** The three passes showed the
+**Widened the same day, after those passes: 42 scenarios in seven features, 23 `@review` captures** (41 and 22 until the research-tab scenario of `05` was added; that one and the rewritten one of `01` have not been played, see "The research tab, opened by defName" below). The three passes showed the
 generated buildings named right and left the rest of the mod's text unseen, so scenarios were added: the research
 projects' tab, cost and tech level; the window that holds them, with a capture in each language; blueprints placed for
 the generated and hand-written buildings; and in French their descriptions, their research text, the name a blueprint
 carries, and a container naming itself through the inspect pane. Then, once the manual scenarios 4b and 8 were decided (9 and 10 are out
-of scope), a third-party stone, Russian, and the research tab opened by a click (tried, and it failed: see `01`). A default pass plays 22 scenarios; the "stones" pass plays 26;
+of scope), a third-party stone, Russian, and the research tab: opened by a click first (it failed, see "One step assembly"), then by defName with this suite's own steps. A default pass plays 22 scenarios; the "stones" pass plays 26;
 the `@wip` features (`05`, `07`) are skipped by both and each has a pass of its own, below. The
 wrapper refuses `-IncludeWip` without a filter (Pickle #26), so a `@wip` feature is aimed by file name:
 
 
-Eight passes of the widened suite, all on 2026-09-21 (the first five stage the working tree, the last three commit `2be9d4f`):
+Nine passes of the widened suite, all on 2026-09-21 (the first five stage the working tree, the next three commit `2be9d4f`, the last a tree I did not record):
 
 | Pass | Played | Result | Folder |
 | --- | --- | --- | --- |
@@ -32,6 +32,7 @@ Eight passes of the widened suite, all on 2026-09-21 (the first five stage the w
 | English, 17:40, "stones" pass | 34 reported of 43 | 22 passed, 1 failed (the removed tab click), 11 skipped, **`in-progress`: did not run to the end, `06` not played** | `../pickle-run-2026-09-21-stones-en/` |
 | French, 17:42, `05`, "stones" pass | 11 of 11 | 10 passed, 1 failed (the removed tab click), `failed`; **the third-party stone's French names and blueprint passed** | `../pickle-run-2026-09-21-stones-fr/` |
 | Russian, 17:44, `07` | 5 of 5 | **5 passed**, 0 failed, 0 skipped, `passed`: the case-sensitive filesystem test | `../pickle-run-2026-09-21-russian/` |
+| English, 19:03, "stones" pass, whole | 41 of 41 | **26 passed**, 0 failed, 15 skipped, `passed`: `06`, the third-party stone in English, passed | `../pickle-run-2026-09-21-stones-en2/` |
 
 Every failure was the suite's own, never the mod's: the first three looked up vanilla's implied blueprint defs
 by name, which Pickle's lookup does not see; the last three, below, are two more ambiguous names and one blueprint label
@@ -50,11 +51,11 @@ helper and never draw a sprite:
 
 | Feature | What only a running game shows | TESTING.md |
 | --- | --- | --- |
-| `01-loads-on-the-framework` | The parents resolve against the framework on a real load: a def that exists proves its parent did. Load order. The projects sit in the framework's tab, at the cost the file asks for, and the research window opens with that tab in it. No error raised by a loaded save. **1 capture, `@review`.** | 1, 2, 3 |
+| `01-loads-on-the-framework` | The parents resolve against the framework on a real load: a def that exists proves its parent did. Load order. The projects sit in the framework's tab, at the cost the file asks for, and the research window opens on that tab, opened by defName, and lists both (own steps, **not yet played**). No error raised by a loaded save. **1 capture, `@review`.** | 1, 2, 3 |
 | `02-generated-stones` | The generated defs exist after the game's own patch pipeline, vacstone included with Odyssey; a blueprint can be placed for a generated and for a hand-written building, which is vanilla accepting the defs as buildable; and one of each kind can be placed without an error (a broken GraphicsDef binding shows there). | 4 |
 | `03-contents-review` | Every container shows what is in it; the chunk stack swaps its sprite at one, two and six chunks and takes its colour from its stone. **16 captures, `@review`.** | 5, 6 |
 | `04-save-reload` | State derived rather than stored rebuilds after a save and a reload. `the save round trips` fails on a scribe error. **2 captures, `@review`.** | 11 |
-| `05-french-names` | In a French game: the generated and hand-written names, the descriptions, the research text, and the name a blueprint carries — which is where the mod's Harmony hook proves it ran between the language injection and the implied defs. A container names itself through the inspect pane. **2 captures, `@review`.** `@wip`: skipped by a default run. | 7 |
+| `05-french-names` | In a French game: the generated and hand-written names, the descriptions, the research text, and the name a blueprint carries — which is where the mod's Harmony hook proves it ran between the language injection and the implied defs. A container names itself through the inspect pane. The framework's research tab reads `Stockage` and lists both projects (own steps, **not yet played**). **3 captures, `@review`.** `@wip`: skipped by a default run. | 7 |
 | `06-third-party-stone` | A stone from a mod this one has never met (`[K]Extra Stone`, in the "stones" pass): the generators built its pot, plinth and chunk stack, in the stone's own English label, and they can be placed without an error. **1 capture, `@review`.** `@requires`: skipped without that mod. | 4b |
 | `07-russian-names` | In a Russian game on a case-sensitive filesystem, which the WSL is: the labels, the descriptions and the research text are Russian, so the folder is found. **1 capture, `@review`.** `@wip`. | 8 |
 
@@ -76,12 +77,31 @@ Left out, or moved:
   the same reasoning: the game reads `About/ModIcon.png` from a fixed path and `Test-Mod.ps1` checks the file.
 - **Settings, MainButtons shortcut**: the mod has none (`settings_audit: not_applicable`).
 
-## No step assembly
+## One step assembly, for the research tab
 
-Every step is a Pickle vanilla step. If a scenario ever needs one, `ArchitectStudio/Tests/Pickle/Source/`
-is the model, and the step text must carry this mod's name: Pickle loads every active suite's steps
-into one namespace, and two suites declaring the same text produce "Ambiguous step" on healthy
-scenarios.
+Every step is a Pickle vanilla step except five, in `Source/ResearchTabSteps.cs`, built by `Source/Build.ps1` into
+`Mod/Pickle/Assemblies/AdaptiveStorageNeolithicRenew.PickleSteps.dll` (the test companion, never `Mod/`, which Steam receives).
+`ArchitectStudio/Tests/Pickle/Source/` was the model; the build differs, it uses the Windows .NET Framework compiler as
+`Source/Build.ps1` does for the mod, so the source is C# 5.
+
+Why a step was needed. The research window draws its tabs as `TabRecord`s through `TabDrawer.DrawTabsOverflow`, read off the
+game's `MainTabWindow_Research`; that records no button tag, so `I click button "Storage"` could never find one (the failure of
+2026-09-21, "no tags recorded this frame"). The guess in the first version of this file was right. The steps do not click:
+
+- `I open the Adaptive Storage Neolithic Renew research tab {string}` opens the window (`MainTabsRoot.SetCurrentTab`) and runs
+  the `clickedAction` of the tab record the window built for that `ResearchTabDef`, which is all a click on the tab runs. By defName,
+  so no language is involved.
+- `... research window is on the tab {string}`: `CurTab` is that def, the window drew a selected record for it, and
+  `ResearchManager.TabInfoVisible` is true (otherwise the window draws "not discovered" in place of the projects).
+- `... research window lists the project {string} costing {int}`: the project is among `VisibleResearchProjects` whose `tab` is `CurTab`,
+  the very list `ListProjects` draws from, is not hidden, and has that cost. Game state, not pixels.
+- `... research window draws no two of its projects on the same spot`: no two listed projects share a `researchViewX`/`Y`.
+- `... research window labels the tab {string} as {string}`: the label of the tab record, which the window built from
+  `LabelCap` when it opened. Used in `05`, in French.
+
+The step text carries the mod's name: Pickle loads every active suite's steps into one namespace, and two suites declaring the same
+text produce "Ambiguous step" on healthy scenarios. What none of it can say is whether the tab looks right: the two `@review`
+captures are for that.
 
 ## What the captures are for, and what they are not
 
@@ -170,9 +190,21 @@ the fourth was wrong, and two more turned up.
    selected `grand pot (plan)` found nothing. It was dropped: the same names are already read off the containers'
    mouse-over lines in the captures, in French.
 
-The research capture shows the window on its Main tab, with the framework's tab, `Storage`, beside Main and
-Anomaly. It does not show the two projects, which sit inside that tab; opening it takes a click on a button
-named by its label, which changes with the language, and is left to a person.
+**The research tab, opened by defName (written 2026-09-21, after the passes above; NOT YET PLAYED).** The old capture showed the
+window on its Main tab, with the framework's tab beside Main and Anomaly, and not the two projects. The click that was meant to open
+the tab failed (see "One step assembly" above). Its replacement is the scenario of `01` (any language) and the one of `05` (French).
+Assumptions the first run has to confirm, each read off the game's decompiled code and never seen working:
+
+1. **`SetCurrentTab(MainButtonDefOf.Research, false)` adds the window and `PostOpen` fills its `tabs` list at once.** The step waits
+   up to 10 s for a record to exist and fails naming what the window built if none does.
+2. **The record's `clickedAction` sets `CurTab`.** It is the delegate `PostOpen` builds (`CurTab = tabDef; UpdateSelectedProject(...)`).
+3. **`ASFAdaptiveStorage` is visible.** `ResearchTabDef.visibleByDefault` defaults to `true` and the mod's tab def
+   (`Mod/Defs/ResearchProjects/ResearchTabDef.xml`) does not set it; nothing else in the staged mod set patches it that I know of.
+4. **Both projects are listed unless `hideWhen` hides them**: `VisibleResearchProjects` keeps a project when the difficulty allows it.
+   No project of this mod sets `hideWhen`, so the default difficulty is expected to list both.
+5. **`Cost` is 400**: `baseCost` is 400 (already asserted by `01`) and `Cost` returns it when it is positive.
+
+What the steps cannot say: that the tab looks right. The captures are for a person.
 
 ## What the captures showed, and their limits
 

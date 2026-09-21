@@ -2,7 +2,7 @@
 # right and left everything else unseen. Only true in a French game, so the whole feature is `@wip`
 # and skipped by a default run, where it would fail on English text. The wrapper refuses `-IncludeWip`
 # without a filter (Pickle #26: it plays only the first feature), so aim at this file:
-# `-Language French -Filter '05-french-names.feature' -IncludeWip`, and compare the scenarios played with the nine written.
+# `-Language French -Filter '05-french-names.feature' -IncludeWip`, and compare the scenarios played with the eleven written (nine without the "stones" pass, which skips the two third-party ones).
 #
 # Why a running game is needed for any of it. The generated buildings are built at load time from
 # every ChunkRockBase child, so no file on disk declares them and their French text comes from
@@ -101,6 +101,21 @@ Feature: French names on the generated buildings
     And def "ASNeolithicNeolithicStorage" field "description" is "Construire des conteneurs simples et des moyens de stockage pour les matériaux de base."
     And def "ASNeolithicNeolithicItemDisplay" field "label" is "présentoir néolithique"
     And def "ASNeolithicNeolithicItemDisplay" field "description" is "Construire des socles simples, mais esthétiques pour exposer des objets."
+
+  # The same tab as in `01`, in French: the label the window drew on the tab record is the translation
+  # as the window got it (LabelCap when it opened), where the scenario above reads the def's field.
+  # The tab is opened by defName with this suite's own step (see `01` for why no click can do it).
+  @review
+  Scenario: the framework's research tab reads Stockage and lists both projects
+    Given the save "test-colony" is loaded
+    When I open the Adaptive Storage Neolithic Renew research tab "ASFAdaptiveStorage"
+    And I wait 30 ticks
+    Then the Adaptive Storage Neolithic Renew research window is on the tab "ASFAdaptiveStorage"
+    And the Adaptive Storage Neolithic Renew research window labels the tab "ASFAdaptiveStorage" as "Stockage"
+    And the Adaptive Storage Neolithic Renew research window lists the project "ASNeolithicNeolithicStorage" costing 400
+    And the Adaptive Storage Neolithic Renew research window lists the project "ASNeolithicNeolithicItemDisplay" costing 400
+    And I take a screenshot "the research window on the storage tab, in French"
+    When I close all dialogs
 
   # The inspect pane reads the thing on the map, not the def, which is the only way to see the name of
   # a building whose defName the framework also gives a GraphicsDef. The stacked chunks are built from

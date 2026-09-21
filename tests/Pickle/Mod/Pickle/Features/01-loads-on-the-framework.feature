@@ -54,18 +54,31 @@ Feature: the mod loads on top of the Adaptive Storage Framework
     Given the save "test-colony" is loaded
     Then no errors were logged
 
-  # The rest of TESTING.md scenario 2: the window itself, with the framework's tab beside Main and Anomaly.
-  # The scenario asserts only that the window opened. The capture shows that the tab exists and what it is
-  # called, in each language; it does NOT show the two projects, which sit inside that tab. Opening the tab was
-  # tried by a click on its label ("Storage") and failed on 2026-09-21: `tag 'btn:Storage' not found; known tags: no
-  # tags recorded this frame`. Probably the research window draws its tabs as tab records, not as the buttons Pickle tags, so
-  # no vanilla step can click one (not verified). What the tab holds is a person's to look at.
+  # The rest of TESTING.md scenario 2: the window itself, on the framework's tab, with the two projects in it.
+  #
+  # No vanilla step can open that tab. A click on its label ("Storage") failed on 2026-09-21, in English and in
+  # French: `tag 'btn:Storage' not found; known tags: no tags recorded this frame`. The cause, read off the
+  # game's MainTabWindow_Research: it draws its tabs as TabRecords through TabDrawer.DrawTabsOverflow, which
+  # records no button tag. The step below is this suite's own (Source/ResearchTabSteps.cs, built into
+  # Mod/Pickle/Assemblies): it opens the window and runs the click action of the tab record the window
+  # built for that def, so the tab is chosen by defName and the language is never involved. The steps that
+  # follow read what the window would list (its visible projects whose tab is the selected one), not the picture.
+  # The picture is the capture, for a person to judge. The label the tab is drawn with is not asserted here, so this
+  # scenario plays in every language (the default pass includes French); `05` asserts it in French, and the capture
+  # shows it in the language of the pass.
+  #
+  # `Then window ... is open` is a vanilla step and stays, so the window is proved open by the game's own
+  # window stack and not only by the step that opened it.
   @review
-  Scenario: the research window opens, with the framework's tab in it
+  Scenario: the framework's research tab, opened by its defName, lists both projects
     Given the save "test-colony" is loaded
-    When I open the "Research" tab
+    When I open the Adaptive Storage Neolithic Renew research tab "ASFAdaptiveStorage"
     And I wait 30 ticks
     Then window "MainTabWindow_Research" is open
-    And I take a screenshot "the research window, with the storage tab beside main and anomaly"
+    And the Adaptive Storage Neolithic Renew research window is on the tab "ASFAdaptiveStorage"
+    And the Adaptive Storage Neolithic Renew research window lists the project "ASNeolithicNeolithicStorage" costing 400
+    And the Adaptive Storage Neolithic Renew research window lists the project "ASNeolithicNeolithicItemDisplay" costing 400
+    And the Adaptive Storage Neolithic Renew research window draws no two of its projects on the same spot
+    And I take a screenshot "the research window on the storage tab, with the two neolithic projects"
     When I close all dialogs
     Then window "MainTabWindow_Research" is closed

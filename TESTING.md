@@ -83,7 +83,7 @@ and none with the new ones. Neither has been seen in a running game, which would
 
 Scenarios 1 to 7 and 11 below that only a running game can show are written as a Pickle suite in
 [tests/Pickle](tests/Pickle/README.md): 41 scenarios in seven features, with 22 `@review` captures for a
-person to open. Twenty of them were run three times on 2026-09-21 (English 20 of 20 played, 18 passed, 2 `@wip` skipped; French with `-IncludeWip` 20 of 20 passed); see [first run](tests/pickle-run-2026-09-21/README.md), [second](tests/pickle-run-2026-09-21-second/README.md) and [French pass](tests/pickle-run-2026-09-21-french/README.md). The widened suite was played four times the same day (English twice, French twice, see the [README](tests/Pickle/README.md) of the suite): English 22 of 22 passed and French 22 of 22 passed on the non-`@wip` scenarios, after a first version failed three on a wrong assumption of mine; the French feature `05` passed 6 of 9 at first, its three failures being two ambiguous names and a guessed label, and 8 of 8 once rewritten. Both passes are criteria of `done -> tested`, still to be judged by a person.
+person to open (42 and 23 since the research-tab scenario of `05`, see below). Twenty of them were run three times on 2026-09-21 (English 20 of 20 played, 18 passed, 2 `@wip` skipped; French with `-IncludeWip` 20 of 20 passed); see [first run](tests/pickle-run-2026-09-21/README.md), [second](tests/pickle-run-2026-09-21-second/README.md) and [French pass](tests/pickle-run-2026-09-21-french/README.md). The widened suite was played four times the same day (English twice, French twice, see the [README](tests/Pickle/README.md) of the suite): English 22 of 22 passed and French 22 of 22 passed on the non-`@wip` scenarios, after a first version failed three on a wrong assumption of mine; the French feature `05` passed 6 of 9 at first, its three failures being two ambiguous names and a guessed label, and 8 of 8 once rewritten. Both passes are criteria of `done -> tested`, still to be judged by a person.
 Its README states what stays in Gherkin and why, what was left out on purpose (architect menu
 dropdowns, a third-party stone, Russian, the mod list, the icon), and the assumptions a first run has to
 confirm. Everything the automated checks above can prove stays out of Gherkin.
@@ -98,8 +98,13 @@ Where each manual scenario below ended up, decided on 2026-09-21.
 - **8** (Russian on a case-sensitive filesystem): `07`, run in a Russian game in the WSL, which is ext4. **Seen working on 2026-09-21**: 5 of 5 passed, the labels, descriptions and research text read as Russian.
 - **9** and **10**: out of scope, About.xml and icon-file mechanisms checked statically, no backward compatibility pursued.
 - **5, 6, 7, 11** and the parts of **1 and 2** that show in a game: the suite above. The framework's research tab could not be opened by
-  a Pickle click (no button tag is recorded for it, tried in English and French on 2026-09-21), so the two projects inside their tab are
-  a person's to look at.
+  a Pickle click (no button tag is recorded for it, tried in English and French on 2026-09-21: the research window draws its tabs as
+  `TabRecord`s, not as buttons). It is now opened by defName with five steps of the suite's own
+  ([Source/ResearchTabSteps.cs](tests/Pickle/Source/ResearchTabSteps.cs)), which read what the window lists: the tab selected, both projects
+  listed at cost 400, no two on the same spot, and in French the tab labelled `Stockage` (scenarios in `01` and `05`).
+  **Written and compiled on 2026-09-21, not yet played:** two runs (English `01`, French `05`) are queued and unread. Until they are, the
+  two projects inside their tab are still a person's to look at, and what the steps assume is listed in
+  [tests/Pickle/README.md](tests/Pickle/README.md). The layout of the tab stays a person's judgement either way (`@review` captures).
 
 ## Manual scenarios
 
