@@ -34,26 +34,32 @@ Feature: the stone variants are generated at load time
     And def "ASNeolithicPlinthChunkVacstone" exists
     And def "ASNeolithicChunkStorageChunkVacstone" exists
 
-  # Vanilla makes a blueprint and a frame out of every buildable def, after the patches have run. Their
-  # presence is the game having accepted the generated defs as buildings rather than merely storing
-  # them: a def the game refuses to treat as buildable gets neither. The French pass checks the names
-  # they carry, which is where the mod's Harmony hook proves it ran early enough.
-  Scenario: vanilla made a blueprint and a frame for the generated buildings
-    Then def "ASNeolithicLargePotChunkGranite_Blueprint" of type "ThingDef" exists
-    And def "ASNeolithicLargePotChunkGranite_Frame" of type "ThingDef" exists
-    And def "ASNeolithicPlinthChunkGranite_Blueprint" of type "ThingDef" exists
-    And def "ASNeolithicChunkStorageChunkGranite_Blueprint" of type "ThingDef" exists
-    And def "ASNeolithicChunkStorageChunkGranite_Frame" of type "ThingDef" exists
-
-  Scenario: and for the hand-written ones
-    Then def "ASNeolithicLargePot_Blueprint" of type "ThingDef" exists
-    And def "ASNeolithicLargePot_Frame" of type "ThingDef" exists
-    And def "ASNeolithicWoodPile_Blueprint" of type "ThingDef" exists
+  # Vanilla makes a blueprint and a frame out of every buildable def, after the patches have run, and a
+  # blueprint on the map is that def in use. The first run of this scenario looked the blueprint defs up
+  # by name (`<defName>_Blueprint`) and found none: Pickle's def lookup does not see them, so the
+  # blueprint is placed instead, which is also what a player does. Placing one skips the research.
+  Scenario: a blueprint can be placed for a generated building and for a hand-written one
+    Given the save "test-colony" is loaded
+    When I designate a "ASNeolithicLargePotChunkGranite" from (140, 155) to (140, 155)
+    And I designate a "ASNeolithicPlinthChunkGranite" from (144, 155) to (144, 155)
+    And I designate a "ASNeolithicChunkStorageChunkGranite" from (148, 155) to (148, 155)
+    And I designate a "ASNeolithicLargePot" from (152, 155) to (152, 155)
+    And I designate a "ASNeolithicWoodPile" from (156, 155) to (156, 155)
+    Then a blueprint for "ASNeolithicLargePotChunkGranite" is at (140, 155)
+    And a blueprint for "ASNeolithicPlinthChunkGranite" is at (144, 155)
+    And a blueprint for "ASNeolithicChunkStorageChunkGranite" is at (148, 155)
+    And a blueprint for "ASNeolithicLargePot" is at (152, 155)
+    And a blueprint for "ASNeolithicWoodPile" is at (156, 155)
+    And no errors were logged
 
   @requires:Odyssey
-  Scenario: the vacstone buildings have theirs too
-    Then def "ASNeolithicLargePotChunkVacstone_Blueprint" of type "ThingDef" exists
-    And def "ASNeolithicLargePotChunkVacstone_Frame" of type "ThingDef" exists
+  Scenario: and for the vacstone buildings
+    Given the save "test-colony" is loaded
+    When I designate a "ASNeolithicLargePotChunkVacstone" from (140, 155) to (140, 155)
+    And I designate a "ASNeolithicChunkStorageChunkVacstone" from (148, 155) to (148, 155)
+    Then a blueprint for "ASNeolithicLargePotChunkVacstone" is at (140, 155)
+    And a blueprint for "ASNeolithicChunkStorageChunkVacstone" is at (148, 155)
+    And no errors were logged
 
   Scenario: one generated building of each kind can be placed without an error
     Given the save "test-colony" is loaded

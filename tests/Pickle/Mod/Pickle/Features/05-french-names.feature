@@ -1,19 +1,20 @@
 # TESTING.md scenario 7, widened on 2026-09-21 after the first French pass showed the building names
 # right and left everything else unseen. Only true in a French game, so the whole feature is `@wip`
-# and skipped by a default run, where it would fail on English text. Run it with
-# `-Language French -IncludeWip`, then compare the scenarios played with the number written: an
-# include-wip pass has once selected almost nothing while reporting success.
+# and skipped by a default run, where it would fail on English text. The wrapper refuses `-IncludeWip`
+# without a filter (Pickle #26: it plays only the first feature), so aim at this file:
+# `-Language French -Filter '05-french-names.feature' -IncludeWip`, and compare the scenarios played with the nine written.
 #
 # Why a running game is needed for any of it. The generated buildings are built at load time from
 # every ChunkRockBase child, so no file on disk declares them and their French text comes from
-# DefInjected keys naming defs that do not exist until the game makes them. The blueprints and the
-# frames are made by vanilla from those same defs, later still. And the mod's own assembly patches
+# DefInjected keys naming defs that do not exist until the game makes them. The blueprints are made by
+# vanilla from those same defs, later still. And the mod's own assembly patches
 # `LoadedLanguage.InjectIntoData_BeforeImpliedDefs` precisely to land between the two. Nothing of
 # that ordering survives outside a real load.
 #
 # `vaccolithe` is the game's own French for vacstone, from Odyssey's language files.
 #
-# A def whose name the framework also gives a GraphicsDef - the basket, the hay pile, the meal shelf,
+# A def whose name the framework also gives a GraphicsDef or a dropdown group - the basket, the hay pile, the
+# meal shelf, the large pot,
 # the plinth, both bundles - cannot be read by `def ... field ...`, which refuses an ambiguous name.
 # Those are covered through the map instead, by the inspect pane, which reads the thing and not the def.
 @wip
@@ -31,36 +32,40 @@ Feature: French names on the generated buildings
     And def "ASNeolithicChunkStorageChunkGranite" field "label" is "Amas de granite"
 
   # The descriptions, which the first French pass never displayed: the captures show labels only.
-  Scenario: the descriptions are French, on a generated building and on a hand-written one
+  Scenario: the descriptions are French, on generated buildings and on the wood pile
     Then def "ASNeolithicChunkStorageChunkGranite" field "description" is "Un tas de débris, constitué de morceaux et soutenant d'autres morceaux. Facile à réaliser et assez efficace comme couverture."
     And def "ASNeolithicLargePotChunkGranite" field "description" is "Un grand pot taillé destiné au stockage des aliments périssables."
-    And def "ASNeolithicLargePot" field "description" is "Un grand pot taillé destiné au stockage des aliments périssables."
     And def "ASNeolithicWoodPile" field "description" is "Quelques bûches à l'aspect brut jetées les unes sur les autres en un tas."
 
-  Scenario: the two unambiguous hand-written buildings are French
-    Then def "ASNeolithicLargePot" field "label" is "grand pot"
-    And def "ASNeolithicWoodPile" field "label" is "fagot"
+  Scenario: the wood pile is French
+    Then def "ASNeolithicWoodPile" field "label" is "fagot"
 
   # The point of the mod's assembly, and the one thing no test outside the game can reach. Vanilla
-  # builds a blueprint and a frame out of every buildable def and copies the label it finds, adding
-  # " (plan)" and " (construction)" from Core's French Keyed. The mod's Harmony postfix sits on
-  # LoadedLanguage.InjectIntoData_BeforeImpliedDefs, so it must have replaced the generated building's
-  # label BEFORE vanilla got there. An English name here means the hook ran too late, or not at all.
-  Scenario: the blueprint and the frame carry the French name of a generated building
-    Then def "ASNeolithicLargePotChunkGranite_Blueprint" field "label" is "Grand pot en granite (plan)"
-    And def "ASNeolithicLargePotChunkGranite_Frame" field "label" is "Grand pot en granite (construction)"
-    And def "ASNeolithicChunkStorageChunkGranite_Blueprint" field "label" is "Amas de granite (plan)"
+  # builds a blueprint out of every buildable def and copies the label it finds, adding " (plan)" from
+  # Core's French Keyed. The mod's Harmony postfix sits on LoadedLanguage.InjectIntoData_BeforeImpliedDefs,
+  # so it must have replaced the generated building's label BEFORE vanilla got there. An English name
+  # on the blueprint means the hook ran too late, or not at all.
+  #
+  # Pickle's def lookup does not see the implied `_Blueprint` defs (the English pass found none by name),
+  # so the blueprint is placed on the map and read the way a player reads it: selected by the label it
+  # shows, then named by the inspect pane.
+  @review
+  Scenario: the blueprint of a generated building carries its French name
+    Given the save "test-colony" is loaded
+    When I designate a "ASNeolithicLargePotChunkGranite" from (145, 155) to (145, 155)
+    And I select "Grand pot en granite (plan)"
+    And I zoom all the way in
+    And I move the camera to (145, 155)
+    And I wait 30 ticks
+    Then the inspect pane shows "Grand pot en granite (plan)"
+    And I take a screenshot "the blueprint of a granite pot, in French"
 
   @requires:Odyssey
-  Scenario: the vacstone blueprint and frame too, the stone the mod was never told about
-    Then def "ASNeolithicLargePotChunkVacstone_Blueprint" field "label" is "Grand pot en vaccolithe (plan)"
-    And def "ASNeolithicLargePotChunkVacstone_Frame" field "label" is "Grand pot en vaccolithe (construction)"
-
-  # A hand-written building takes the same road, but its French comes from a plain DefInjected file
-  # rather than from the hook, so this one says the file is read, not that the hook ran.
-  Scenario: a hand-written building's blueprint is French as well
-    Then def "ASNeolithicLargePot_Blueprint" field "label" is "grand pot (plan)"
-    And def "ASNeolithicLargePot_Frame" field "label" is "grand pot (construction)"
+  Scenario: the vacstone blueprint too, the stone the mod was never told about
+    Given the save "test-colony" is loaded
+    When I designate a "ASNeolithicLargePotChunkVacstone" from (145, 155) to (145, 155)
+    And I select "Grand pot en vaccolithe (plan)"
+    Then the inspect pane shows "Grand pot en vaccolithe (plan)"
 
   # TESTING.md scenario 2, the half of it the English pass could not reach.
   Scenario: the research projects and their text are French

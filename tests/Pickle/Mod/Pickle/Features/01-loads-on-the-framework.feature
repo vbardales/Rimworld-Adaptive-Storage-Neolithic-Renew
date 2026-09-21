@@ -54,16 +54,16 @@ Feature: the mod loads on top of the Adaptive Storage Framework
     Given the save "test-colony" is loaded
     Then no errors were logged
 
-  # The rest of TESTING.md scenario 2: the window itself, and a picture of the two projects sitting in
-  # the framework's tab under the name the tab carries. The scenario asserts only that the window
-  # opened; whether the two projects read correctly, and in which language, is the capture's business.
-  # It is taken in both passes, so there is an English one and a French one.
+  # The rest of TESTING.md scenario 2: the window itself, with the framework's tab beside Main and Anomaly.
+  # The scenario asserts only that the window opened. The capture shows that the tab exists and what it is
+  # called, in each language; it does NOT show the two projects, which sit inside that tab, and opening
+  # it takes a click on a button named by its label, which differs by language. That last step is a person's.
   @review
-  Scenario: the research window opens on the tab that holds them
+  Scenario: the research window opens, with the framework's tab in it
     Given the save "test-colony" is loaded
     When I open the "Research" tab
     And I wait 30 ticks
     Then window "MainTabWindow_Research" is open
-    And I take a screenshot "the research window, with the storage tab"
+    And I take a screenshot "the research window, with the storage tab beside main and anomaly"
     When I close all dialogs
     Then window "MainTabWindow_Research" is closed
