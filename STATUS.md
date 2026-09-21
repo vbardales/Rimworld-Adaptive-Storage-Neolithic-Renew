@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-stage:        preTest
+stage:        done
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 dependencies: declared
@@ -19,7 +19,9 @@ build_audit: complete
 audit_revision: ae237ea0103df912b531075d330c6c8089b2fddc
 audit_evidence: tests/workflow-audit-2026-09-21/README.md
 remaining:
-  - blocking (preTest -> done): Pickle (Gherkin) tests are not written and their scope is not justified. No Tests/Pickle, no .feature, no statement that Gherkin does not apply. Several scenarios of TESTING.md can only be shown by a running game. Write the suite, or justify in writing why none applies. Running it is NOT required for done.
+  - resolved 2026-09-21 (preTest -> done): the Pickle suite is written in tests/Pickle (19 scenarios, 5 features, 16 @review captures, no step assembly), scope justified in tests/Pickle/README.md and TESTING.md. Never run, which done does not require. Its step texts match the installed Pickle step patterns and its files parse with Pickle's Gherkin parser; behaviour is unproven.
+  - unverified (done -> tested): run the Pickle suite (English, then French with -IncludeWip, comparing scenarios played with the 19 written) and confirm the seven assumptions listed at the end of tests/Pickle/README.md. Open every @review capture: a green run does not show that a basket visibly fills up.
+  - not covered by any scenario, on purpose: architect-menu dropdowns, a third-party stone and its Harmony fallback (TESTING.md 4b), Russian on a case-sensitive filesystem, the mod list and icon. Manual, at done -> tested.
   - unverified (done -> tested): Full English/French game load of the translation hook, blueprints, frames, finished buildings, plinth art and UI, in developer mode.
   - unverified (done -> tested): Execute the TESTING.md scenarios in game on a new game and an existing save, inspect logs, run the Pickle suite and open its @review captures. Options, persistence and MainButtons shortcut are not applicable (no settings).
   - publishing (tested -> prepublished): About.xml description lacks the final [url=...]Source code on GitHub[/url] line and the IF I GO QUIET / AI-GENERATED / THANKS sections in the required order; no PUBLICATION.md; no v* tag or GitHub release; PublishedFileId absent as expected.
@@ -34,7 +36,7 @@ modicon_audit: complete
 
 ## Current audit under AUDIT.md — 2026-09-21
 
-**Retained stage: `preTest` (previously `done`).** `stage` uses the workflow's literal states
+**Retained stage: `done` (the audit first retained `preTest`, previously `done`, until the Pickle suite below was written the same day).** `stage` uses the workflow's literal states
 (dansMonoRepo, horsMonoRepo, ModIcon générée, Preview générée, preOptions, options, l10n, preTest,
 done, tested, prepublished, published); the old codes `port`/`showcase` of the historical sections
 below are not in use. The retreat is caused by one criterion added to `preTest -> done` by the
@@ -56,18 +58,13 @@ launched (no process running on Windows or WSL); no image, feature or publicatio
 | preOptions -> options | **Validated: `settings_audit: not_applicable`.** Source/Defs/Patches contain no ModSettings, settings window, MainButtonDef or tab; therefore no empty page and no shortcut. |
 | options -> l10n | **Validated.** 1,310 static and 28 installed-assembly assertions pass; six Keyed entries EN and FR; DefInjected 112 keys, 0 errors; French covers all owned fields; the C# hook holds no player-facing literal. English comes from native Def text. |
 | l10n -> preTest | **Validated.** Harmony and the framework are declared in `modDependencies` and `loadAfter` and match real use (Harmony by the C# hook, framework by parents/GraphicsDef); packageIds checked against installed About.xml; Biotech gated by `MayRequire`; Odyssey and third-party stones are generator inputs, not dependencies; no LoadFolders. |
-| preTest -> done | **Not established.** Validated: scenarios with preconditions/actions/expected results (TESTING.md), automated tests and XML tests written, run on this revision and green. **Missing: Pickle (Gherkin) tests neither written nor justified as inapplicable** (no `Tests/Pickle`, no `.feature`, no justification). |
+| preTest -> done | **Not established at the first pass, established after the same day's work.** The audit found no Pickle (Gherkin) tests and no justification (no `Tests/Pickle`, no `.feature`). The suite was then written (`tests/Pickle`, 19 scenarios in 5 features, scope and exclusions justified in its README and in TESTING.md). Scenarios with preconditions/actions/expected results exist (TESTING.md); automated and XML tests are written and green, rerun after the Russian edit and the suite (Test-Mod 1,310, installed-assembly 28, DefInjected 118 keys). Pickle execution is not a criterion here. **Caveat:** the suite has only been checked for syntax and step vocabulary, not played. |
 | done -> tested | Not evaluated beyond the above; nothing was run in game. `tested_on` stays empty. |
 | tested -> prepublished, prepublished -> published | Not reached. Known gaps recorded in `remaining`. |
 
-### Strictly necessary for `done`
+### Strictly necessary for `tested`
 
-Write the Pickle features for what only a running game can show, and state their scope in
-TESTING.md (or state in writing why none applies). Candidates already in TESTING.md: contained
-items drawn inside a basket, chunk stack sprite at 1/2/6 chunks, dropdown group with the six stone
-variants, FR labels on the generated stone buildings, container contents after a save/reload. A
-scenario that a unit test already proves does not belong there. Running the suite is not required
-for `done`; it is a criterion of `done -> tested`, with its `@review` captures actually opened.
+Run the Pickle suite in the WSL (`scripts/Run-PickleWsl.ps1 -Mod AdaptiveStorageNeolithicRenew`, then again with `-Language French -IncludeWip`), taking the machine lock first and launching nothing on Windows. Read `exitReason`, compare scenarios played with the 19 written, open the 16 `@review` captures. Confirm the assumptions at the end of `tests/Pickle/README.md`. Execute the manual scenarios the suite does not cover (TESTING.md 4b, 8, 9, 10), check the logs, the interface in English and French in developer mode, a new game and an existing save. Fix what turns up and rerun the affected checks. Settings and shortcut checks are not applicable.
 
 ### Optional, not blocking
 

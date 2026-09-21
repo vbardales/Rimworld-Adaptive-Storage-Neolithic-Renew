@@ -69,6 +69,15 @@ construction blueprints/frames, finished containers, inspect strings and artisti
 Specific stone translations must survive; a stone mod without French names may still supply
 an English material name. Restart the game when switching language.
 
+## Pickle (Gherkin) scenarios
+
+Scenarios 1 to 7 and 11 below that only a running game can show are written as a Pickle suite in
+[tests/Pickle](tests/Pickle/README.md): 19 scenarios in five features, with 16 `@review` captures for a
+person to open. It is written and has never been run; running it is a criterion of `done -> tested`.
+Its README states what stays in Gherkin and why, what was left out on purpose (architect menu
+dropdowns, a third-party stone, Russian, the mod list, the icon), and the assumptions a first run has to
+confirm. Everything the automated checks above can prove stays out of Gherkin.
+
 ## Manual scenarios
 
 Nothing in this mod has ever been seen running. The XML checkers are clean, every element maps to

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Adaptive Storage Neolithic Renew - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.adaptivestorageneolithic.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game functional tests for Adaptive Storage Neolithic Renew, run by Pickle. Development only: never published.
+
+The scenarios build the mod's containers on the Pickle test colony and spawn items into them. Scenarios tagged @review assert nothing about the image: they attach screenshots for a person to judge, because whether a basket visibly fills up, or a stack of chunks swaps its sprite at one, two and six chunks, is a judgement about a picture.
+
+One feature is tagged @wip and only makes sense in a French game: run the suite a second time with the language set to French.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.adaptivestorageneolithic</packageId>
+      <displayName>Adaptive Storage Neolithic Renew</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.adaptivestorageneolithic</li>
+    <li>rimworks.pickle</li>
+  </loadAfter>
+</ModMetaData>

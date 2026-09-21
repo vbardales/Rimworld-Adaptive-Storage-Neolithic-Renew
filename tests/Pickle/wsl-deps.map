@@ -1,0 +1,6 @@
+# Mods this suite needs staged and enabled in the WSL game, beyond Harmony and Pickle.
+# One line per mod: packageId then its Workshop id. Read by scripts/stage-pickle-wsl.sh.
+#
+# The framework is a hard dependency of the mod, but the shared table in the staging script does
+# not know its Workshop id, and a dependency it cannot place stops the run.
+adaptive.storage.framework   3033901359
