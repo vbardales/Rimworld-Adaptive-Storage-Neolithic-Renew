@@ -80,8 +80,9 @@ English, and nothing is logged. Renamed.
 there were five, and the three vacstone buildings came out in English. Six keys added, using
 RimWorld's own French for *vacstone*: **vaccolithe**.
 
-Russian still covers five. I do not write Russian, and a fabricated translation would be worse
-than a visible gap — a Russian speaker is welcome to send the six keys.
+Russian now covers all six too. The six vacstone entries were written by Claude from the official
+Russian Odyssey wording (**вакуумит**), following the phrasing of the existing entries, and have not
+been reviewed by a Russian speaker — corrections are welcome.
 
 **`packageId`** is now `nelim.adaptivestorageneolithic`, and the original is declared in
 `<incompatibleWith>`: both mods use the same `defName`s, so running the two together would

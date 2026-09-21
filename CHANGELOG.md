@@ -4,6 +4,8 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased]
 
+- Add the six missing Russian vacstone entries (large pot, plinth, chunk stack), using the official
+  Russian Odyssey term *вакуумит*. Written by Claude, not reviewed by a Russian speaker.
 - Correct French adjective agreement in four stone plinth descriptions.
 - Add parameterized French text for buildings generated from third-party stones, preserving
   specific DefInjected translations and using the stone mod's translated chunk name.

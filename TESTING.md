@@ -219,8 +219,8 @@ language files, not invented here.
 they are the generated ones — so if the generation in scenario 4 half-worked, this is where it
 shows.
 
-Russian still covers five stones rather than six, deliberately: nobody here writes Russian and an
-invented translation is worse than an English label.
+Russian covers all six stones. Its six vacstone entries (**вакуумит**, the official Odyssey term) were
+written by Claude and have not been reviewed by a Russian speaker.
 
 ## 8. Russian, and this one needs the Steam Deck
 

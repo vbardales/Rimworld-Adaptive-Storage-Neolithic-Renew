@@ -105,8 +105,9 @@ expansion. The three patches generate from *every* `ThingDef` whose `ParentName`
 `ChunkRockBase`, so the mod picks it up on its own and produces `ASNeolithicLargePotChunkVacstone`,
 `ASNeolithicPlinthChunkVacstone` and `ASNeolithicChunkStorageChunkVacstone` — but Elzetia's French
 was written when there were five, so those three came out in English. Six French keys added, using
-the official RimWorld translation of *vacstone*, **vaccolithe**. Russian still covers five: I do
-not write Russian, and inventing it would be worse than leaving the gap visible.
+the official RimWorld translation of *vacstone*, **vaccolithe**. Russian now covers all six as well: the six
+vacstone entries were written by Claude with the official Russian Odyssey term, **вакуумит**, following
+the phrasing of the existing entries, and have not been reviewed by a Russian speaker.
 
 **`packageId`** changed from `adaptive.storage.neolithic` to `nelim.adaptivestorageneolithic`, and
 the original is declared in `<incompatibleWith>`: the two share every `defName`, so running both

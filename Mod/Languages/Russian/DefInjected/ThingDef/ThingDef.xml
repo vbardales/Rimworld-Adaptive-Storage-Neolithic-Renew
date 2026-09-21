@@ -24,6 +24,9 @@
   <ASNeolithicLargePotChunkSlate.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePotChunkSlate.description>
   <ASNeolithicLargePotChunkMarble.label>Большой горшок из мрамора</ASNeolithicLargePotChunkMarble.label>
   <ASNeolithicLargePotChunkMarble.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePotChunkMarble.description>
+  <!-- EN: large pot (vacstone) -->
+  <ASNeolithicLargePotChunkVacstone.label>Большой горшок из вакуумита</ASNeolithicLargePotChunkVacstone.label>
+  <ASNeolithicLargePotChunkVacstone.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePotChunkVacstone.description>
 
   <!-- MealShelf -->
   <ASNeolithicMealShelf.label>Полки для блюд</ASNeolithicMealShelf.label>
@@ -42,6 +45,9 @@
   <ASNeolithicPlinthChunkSlate.description>Подиум из необработанного сланца с красивой гравировкой для отображения предметов.</ASNeolithicPlinthChunkSlate.description>
   <ASNeolithicPlinthChunkMarble.label>Подиум из мрамора</ASNeolithicPlinthChunkMarble.label>
   <ASNeolithicPlinthChunkMarble.description>Подиум из необработанного мрамора с красивой гравировкой для демонстрации предметов.</ASNeolithicPlinthChunkMarble.description>
+  <!-- EN: plinth (vacstone) -->
+  <ASNeolithicPlinthChunkVacstone.label>Подиум из вакуумита</ASNeolithicPlinthChunkVacstone.label>
+  <ASNeolithicPlinthChunkVacstone.description>Подиум из необработанного вакуумита с красивой гравировкой для демонстрации предметов.</ASNeolithicPlinthChunkVacstone.description>
 
   <!-- Textile Bundle -->
   <ASNeolithicTextileBundleFabric.label>Свёрток</ASNeolithicTextileBundleFabric.label>
@@ -64,5 +70,8 @@
   <ASNeolithicChunkStorageChunkSlate.description>Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия.</ASNeolithicChunkStorageChunkSlate.description>
   <ASNeolithicChunkStorageChunkMarble.label>Куча мраморных обломков</ASNeolithicChunkStorageChunkMarble.label>
   <ASNeolithicChunkStorageChunkMarble.description>Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия.</ASNeolithicChunkStorageChunkMarble.description>
+  <!-- EN: stack of vacstone chunks -->
+  <ASNeolithicChunkStorageChunkVacstone.label>Куча обломков вакуумита</ASNeolithicChunkStorageChunkVacstone.label>
+  <ASNeolithicChunkStorageChunkVacstone.description>Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективна в качестве укрытия.</ASNeolithicChunkStorageChunkVacstone.description>
 
 </LanguageData>

@@ -48,7 +48,7 @@ Two faults were fixed on the way through.
 
 The Russian translation lived in a folder spelled "Definjected". RimWorld looks for the exact string "DefInjected", so on Windows it worked by accident and on Linux - the Steam Deck included - the whole Russian translation was silently dropped. The folder is now spelled correctly.
 
-1.6 added a sixth kind of stone chunk, vacstone, with the Odyssey expansion. The mod builds a large pot, a plinth and a chunk stack out of every stone chunk in the game, so it picks vacstone up automatically - but the French translation was written when there were five, and the vacstone pieces came out untranslated. French now covers all six. Russian still covers five; I do not write Russian, and rather than invent it I left it to a Russian speaker.
+1.6 added a sixth kind of stone chunk, vacstone, with the Odyssey expansion. The mod builds a large pot, a plinth and a chunk stack out of every stone chunk in the game, so it picks vacstone up automatically - but the French translation was written when there were five, and the vacstone pieces came out untranslated. French and Russian now cover all six; the Russian entries use Odyssey's own term for vacstone and were written with an AI assistant, without review by a Russian speaker.
 
 Unused files that shipped with the original are not published here: a shelved folder of textures the mod never loads, and a duplicate .dds copy of the Workshop preview image that nothing reads. They are kept in the repository, out of the published folder.
 
