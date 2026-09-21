@@ -1,170 +1,37 @@
 ---
-localization: complete
-translation_en: complete
-translation_fr: complete
+localization: partial
+translation_en: partial
+translation_fr: partial
 mod:          Adaptive Storage Neolithic Renew
 packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-stage:        preTest
+stage:        dansMonoRepo
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 dependencies: declared
-showcase:     complete
+showcase:     partial
 tested_on:
 workshop:
-settings_audit: not_applicable
-build_audit: complete
-audit_revision: ae237ea0103df912b531075d330c6c8089b2fddc
-audit_evidence: tests/workflow-audit-2026-09-21/README.md
+settings_audit: partial
+build_audit: partial
+audit_revision: b0cf4fdff6fd8e569d85c4f631ce92361d8dc675 plus working tree
+audit_evidence: tests/audit-2026-09-13/README.md
 remaining:
-  - blocking (preTest -> done): Pickle (Gherkin) tests are not written and their scope is not justified. No Tests/Pickle, no .feature, no statement that Gherkin does not apply. Several scenarios of TESTING.md can only be shown by a running game. Write the suite, or justify in writing why none applies. Running it is NOT required for done.
-  - unverified (done -> tested): Full English/French game load of the translation hook, blueprints, frames, finished buildings, plinth art and UI, in developer mode.
-  - unverified (done -> tested): Execute the TESTING.md scenarios in game on a new game and an existing save, inspect logs, run the Pickle suite and open its @review captures. Options, persistence and MainButtons shortcut are not applicable (no settings).
-  - publishing (tested -> prepublished): About.xml description lacks the final [url=...]Source code on GitHub[/url] line and the IF I GO QUIET / AI-GENERATED / THANKS sections in the required order; no PUBLICATION.md; no v* tag or GitHub release; PublishedFileId absent as expected.
-  - optional: case-sensitive runtime check of the Russian DefInjected folder (Steam Deck). Russian vacstone coverage was completed on 2026-09-21 (six entries, written by Claude from the official Odyssey term, not reviewed by a Russian speaker; disclosure to repeat in the AI-GENERATED section at prepublished).
+  - defect: No remote in the parent monorepo points to this autonomous GitHub repository; gate 1 is incomplete.
+  - defect: ModIcon contains more than two objects and loses object separation at 32 px.
+  - defect: About.xml lacks the required final Steam-formatted Source code on GitHub link.
+  - unverified: Concurrent CSharp, DLL and translation changes require stable source-to-delivered-binary verification and relevant regression tests.
+  - unverified: Settings usefulness and inherited framework controls need runtime verification; no empty page or shortcut has been verified in game.
+  - unverified: Generated-translation resources and paths pass local checks; verify the Harmony hook, blueprints, frames and completed buildings in a full English/French game load.
+  - unverified: Complete Preview colour-family measurement and comparison with an actual game screenshot.
+  - unverified: Execute functional scenarios, inspect logs and all owned UI in English and French, on new and existing saves.
+  - unverified: Test options, persistence and optional MainButtons integrations if applicable after the settings decision.
+  - unverified: Russian Odyssey coverage remains incomplete and case-sensitive runtime verification remains pending outside the EN/FR gate.
 session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
-updated:      2026-09-21
-preview_audit: complete
-modicon_audit: complete
+updated:      2026-09-13
 ---
-
-# Adaptive Storage Neolithic Renew — status
-
-## Current audit under AUDIT.md — 2026-09-21
-
-**Retained stage: `preTest` (previously `done`).** `stage` uses the workflow's literal states
-(dansMonoRepo, horsMonoRepo, ModIcon générée, Preview générée, preOptions, options, l10n, preTest,
-done, tested, prepublished, published); the old codes `port`/`showcase` of the historical sections
-below are not in use. The retreat is caused by one criterion added to `preTest -> done` by the
-current AUDIT.md: Gherkin/Pickle tests written and their scope justified. Everything else that
-led to `done` on 2026-09-13 is re-established on the current revision.
-
-Audited revision `ae237ea0103df912b531075d330c6c8089b2fddc` = `origin/main` (GitHub PUBLIC/main).
-Local changes at audit start, preserved: this STATUS.md (uncommitted edits of 2026-09-13) and the
-untracked `tests/workflow-reaudit-2026-09-13/`. This audit adds this section and
-[`tests/workflow-audit-2026-09-21/README.md`](tests/workflow-audit-2026-09-21/README.md). RimWorld was not
-launched (no process running on Windows or WSL); no image, feature or publication was produced.
-
-| Transition | Assessment on `ae237ea` |
-| --- | --- |
-| dansMonoRepo -> horsMonoRepo | **Validated.** Standalone repo, origin exists, GitHub public, HEAD = origin/main, STATUS initialised, public/open justified by the authors' MIT notice, names coherent, English README/ATTRIBUTION/LICENSE/CHANGELOG, root and `Mod/` copies of LICENSE and ATTRIBUTION identical. |
-| horsMonoRepo -> ModIcon générée | **Validated.** Development finished, build validated, `Mod/Assemblies/NeolithicRenew.dll` unchanged since the 2026-09-13 binary-equivalence proof (Source and DLL hashes identical). ModIcon 128x128 PNG in `Mod/About/`. The object-count/32 px finding stays an accepted exception (user, 2026-09-13: "moi, j'override, je valide"), same file. |
-| ModIcon générée -> Preview générée | **Validated.** `Mod/About/Preview.png` 896x504 PNG, 608,863 bytes, opened and viewed; no concrete doubt. |
-| Preview générée -> preOptions | **Validated.** English description, name and `Renew` suffix conform, no linking word to scale, warm suffix and blue accent distinct. (The final Source-code link is a `prepublished` criterion in AUDIT.md.) |
-| preOptions -> options | **Validated: `settings_audit: not_applicable`.** Source/Defs/Patches contain no ModSettings, settings window, MainButtonDef or tab; therefore no empty page and no shortcut. |
-| options -> l10n | **Validated.** 1,310 static and 28 installed-assembly assertions pass; six Keyed entries EN and FR; DefInjected 112 keys, 0 errors; French covers all owned fields; the C# hook holds no player-facing literal. English comes from native Def text. |
-| l10n -> preTest | **Validated.** Harmony and the framework are declared in `modDependencies` and `loadAfter` and match real use (Harmony by the C# hook, framework by parents/GraphicsDef); packageIds checked against installed About.xml; Biotech gated by `MayRequire`; Odyssey and third-party stones are generator inputs, not dependencies; no LoadFolders. |
-| preTest -> done | **Not established.** Validated: scenarios with preconditions/actions/expected results (TESTING.md), automated tests and XML tests written, run on this revision and green. **Missing: Pickle (Gherkin) tests neither written nor justified as inapplicable** (no `Tests/Pickle`, no `.feature`, no justification). |
-| done -> tested | Not evaluated beyond the above; nothing was run in game. `tested_on` stays empty. |
-| tested -> prepublished, prepublished -> published | Not reached. Known gaps recorded in `remaining`. |
-
-### Strictly necessary for `done`
-
-Write the Pickle features for what only a running game can show, and state their scope in
-TESTING.md (or state in writing why none applies). Candidates already in TESTING.md: contained
-items drawn inside a basket, chunk stack sprite at 1/2/6 chunks, dropdown group with the six stone
-variants, FR labels on the generated stone buildings, container contents after a save/reload. A
-scenario that a unit test already proves does not belong there. Running the suite is not required
-for `done`; it is a criterion of `done -> tested`, with its `@review` captures actually opened.
-
-### Optional, not blocking
-
-- A case-sensitive filesystem check of the Russian folder. Russian vacstone coverage was completed
-  after the audit (2026-09-21): six DefInjected entries in `Languages/Russian/DefInjected/ThingDef/ThingDef.xml`
-  with Odyssey's own term *вакуумит*; README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About
-  description were updated to say so and to disclose that Claude wrote them. Rerun after the change:
-  Test-Mod 1,310 assertions pass; Check-DefInjected 118 keys, 0 errors. Nothing else in the audit is affected.
-- GitHub reports the licence as "Other" (the LICENSE carries an added sentence crediting the 1.6 work); a cosmetic point.
-- Before a first upload: the description tail, `PUBLICATION.md`, tag and release listed in `remaining`.
-
-## Previous audit under the revised workflow — 2026-09-13 (superseded by the section above)
-
-**Retained stage: done (previously horsMonoRepo), following explicit user acceptance of the icon.** Stage values use the user's literal
-workflow states. No parent-monorepo remote is required after detachment. The earlier classification
-of its absence as a defect, and the demand to restore it, are withdrawn. Likewise, a recorded game
-screenshot comparison and a quantitative palette report are not mandatory Preview evidence when
-direct inspection establishes conformity. The records below remain historical, not instructions.
-
-Repository: C:/Users/nelim/Documents/rimworld/AdaptiveStorageNeolithicRenew, distributed root Mod/.
-Initial HEAD b0cf4fd plus local translation changes became commit
-3406ecefe9f977642516f647a3a43b877388205a during this audit, through independent work.
-GitHub PUBLIC/main and pushed 3406ece were verified live. The audited Mod/Source snapshot matches
-the final files; the test sources match this revision. Only this status and new audit evidence
-are local audit changes. See [commands, results and hashes](tests/workflow-reaudit-2026-09-13/README.md).
-
-| Transition | Current assessment, independent of earlier gates |
-| --- | --- |
-| dansMonoRepo -> horsMonoRepo | **Validated.** Autonomous .git and origin, existing public GitHub repository, pushed commit; packageId/name/repository/folder coherent without literal equality. English documentation initialized. Public/open is justified by the original authors' MIT notice and attribution; LICENSE and ATTRIBUTION root/distributed copies match. STATUS initialized. Physical nesting under the workspace does not make it tracked content of the parent repository. |
-| horsMonoRepo -> ModIcon generated | **Validated by explicit user exception on 2026-09-13.** The user accepted the existing icon after the object-count and 32 px readability findings were explained: "moi, j'override, je valide". Those visual findings are retained as an accepted style exception, not a remaining correction. PNG 128x128, 28,385 bytes; implementation/build and delivered-binary freshness already validated. No image modification was made. |
-| ModIcon generated -> Preview generated | **Validated independently.** Direct inspection at 896x504 and 268 px: coherent overhead camera, tiled worn floor, clear storage subject, warm colour family, no detailed face; no concrete camera/style doubt. PNG 608,863 bytes. No historical generation report, new palette measurement or screenshot-comparison artifact is needed. |
-| Preview generated -> preOptions | **Validated independently.** English description; correct name and Renew suffix; no linking words need separate scaling. Warm secondary ink and blue accent clearly differ. Title, suffix and version readable without clipping. Historical layout/palette/fonts/contrast data remains relevant because those inputs are unchanged. |
-| preOptions -> options | **Validated: not_applicable.** Source and Def inventory establishes no useful module-specific settings, no ModSettings/GetSettings, no settings-category/window override, and no MainButtonDef or shortcut. Balancing values and per-building storage filters do not justify an extra configuration page; framework-wide options belong to the dependency. Applicable automated checks already passed on unchanged files. Per the user clarification of 2026-09-13, interactive checks belong only to done -> tested and do not block this transition. |
-| options -> l10n | **Resource/mechanism checks validated independently.** Native Def English, six paired Keyed resources and French concrete/generated fields covered; placeholders checked. 1,310 static assertions and 28 installed-assembly assertions pass on the shipped DLL, including third-party stone fallback and preservation of successful specific translations. Actual generator output resolves all 112 DefInjected paths with zero errors and zero UNVERIFIED. The former third-party-French and 66-unresolved-target findings are superseded. localization/translation_en/translation_fr record these independent successful checks; the settings prerequisite and user-accepted icon transition now pass. Full hook/UI integration is tracked under final game validation, not misreported as a missing resource. |
-| l10n -> preTest | **Validated independently for the installed 1.6 dependencies.** Direct Harmony code and framework/generator XML use match About.xml dependencies and loadAfter; original module incompatible. Biotech graphics are gated with MayRequire; Odyssey/third-party stones are optional generator inputs. No module LoadFolders/multiversion branches require configuration. Existing reference checks remain valid for unchanged Defs/patches. No unsupported version constraint is invented. |
-| preTest -> done | **Validated independently for current automated checks and scenario preparation.** 1,310 static assertions, 28 installed-assembly assertions, 28 XML files with no unknown fields, 112 resolved injection paths. TESTING.md records preconditions/actions/expected results, generated translations, new/existing-save scenarios and the limits of standalone tests. Test results refer to the delivered binary. All cumulative prerequisites now pass, including the explicit icon exception. Game scenarios have not run. |
-| done -> tested | **Not verified.** No full game scenarios, FR/EN interface/log checks, fresh/existing-save validation, options/persistence or customization integration runs performed. tested_on remains empty. Installed assemblies support the automated tests, but native RimWorld UI control is not available through the enabled computer-control surface. |
-
-The current settings inventory and rationale in the earlier audit remain applicable: the new
-translation code adds neither a settings page nor a MainButton. Under the user's clarification,
-source verification establishes not_applicable; no in-game absence check is required for options.
-A foreign stone mod's untranslated material name is outside this module's translation ownership.
-
-### Strictly necessary for the next transition
-
-To reach **tested**, execute TESTING.md scenarios in RimWorld on a new game and an existing save,
-inspect logs, and verify the interface and generated translations in English and French, including
-the Harmony hook, blueprints, frames, finished buildings and plinth art. Check applicable inherited
-storage/display interactions and save/reload behaviour. Module-specific settings and shortcut tests
-are not applicable because none exists. Record actual results and rerun relevant regressions after
-any fix. No icon correction is required under the explicit user exception. tested_on remains empty.
-### Separate publication note and optional work
-
-About.xml still uses a raw GitHub link instead of the final Steam-formatted Source code on GitHub
-link requested by PUBLISHING.md. Resolve this before publication; it is not an extra blocker for
-the next transition or for the naming/English-description criteria above. Russian Odyssey coverage
-and case-sensitive runtime testing are optional relative to this workflow's required EN/FR scope.
-CS1684 from the installed compiler reference is recorded, with successful compilation and tests;
-it is not presented as an observed runtime defect.
-
-### Settings clarification applied — 2026-09-13
-
-The user's explicit clarification supersedes the interactive prerequisite in parent MOD_SETTINGS.md,
-PUBLISHING.md and earlier audit records for this task. preOptions -> options is established by
-source/Def analysis and applicable automated tests; all interactive verification belongs to done -> tested.
-
-Rechecked revision 3406ecefe9f977642516f647a3a43b877388205a: Source/GeneratedTranslations.cs contains
-only the translation hook and fallback, with no settings or shortcut registration. Source/Build.ps1
-builds that file alone. Searching all owned CSharp/XML for ModSettings, GetSettings, SettingsCategory,
-DoSettingsWindowContents, MainButtonDef and MainTabWindow found no such implementation. No LoadFolders
-adds another configuration path. The settings matches are storage filters and locks, not a mod-options
-page. Existing costs, capacities and research are balancing data; no useful module-specific option
-was identified. Dependency-owned global display settings do not justify a duplicate module page.
-
-All Mod/Source hashes still match the tested manifest and test source files match the audited commit.
-The prior 1,310 static assertions and 28 installed-assembly assertions remain applicable; no new code
-or artificial settings tests were added. settings_audit is therefore not_applicable and options is
-validated independently. Missing runtime checks remain only under done -> tested. The icon was still blocking at that time; the subsequent user exception below lifts that block.
-
-### Explicit icon acceptance — 2026-09-13
-
-After the visual deviation was explained, the user explicitly stated: "moi, j'override, je valide".
-This accepts the current Mod/About/ModIcon.png, SHA-256
-CE64C1B4A4200C52C44239170207C736D530D46D581EEA72CD8C2E17738450CD,
-as an exception to the object-count/readability guidance. The earlier observation is preserved;
-no claim is made that the image changed or that the original style guidance was met literally.
-
-Rechecked HEAD 3406ecefe9f977642516f647a3a43b877388205a and the audited Mod/Source manifest:
-zero file differences; test sources also unchanged. Prior build, XML and automated results remain
-valid. With the sole earlier blocker explicitly waived, stage moves from horsMonoRepo to done.
-This is readiness for final in-game validation, not a claim of tested status. No publication,
-image generation, implementation change or in-game test was performed.
-
-## Earlier audit and validation records — historical
-
-The following earlier remote/Preview requirements and partial translation/build findings are
-superseded by the current audit above. They are preserved to retain history and prior evidence.
 
 # Adaptive Storage Neolithic Renew — status
 

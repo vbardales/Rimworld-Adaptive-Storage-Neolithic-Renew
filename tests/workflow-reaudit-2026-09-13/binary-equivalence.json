@@ -1,0 +1,16 @@
+[
+  {
+    "Path": ".build/workflow-reaudit-20260913/delivered-NeolithicRenew.dll",
+    "TimestampOffset": 136,
+    "MvidOffset": 4324,
+    "Mvid": "9a183efc-3e0e-4a04-84e1-2d2e90fafb47",
+    "NormalizedSHA256": "A3A68DBEB8B274565BCA319F351C302931E8C5C7F4BCB769B1F40900C40CF507"
+  },
+  {
+    "Path": ".build/workflow-reaudit-20260913/Mod/Assemblies/NeolithicRenew.dll",
+    "TimestampOffset": 136,
+    "MvidOffset": 4324,
+    "Mvid": "0dcaaab4-bfd4-4656-a34f-2b80867a89da",
+    "NormalizedSHA256": "A3A68DBEB8B274565BCA319F351C302931E8C5C7F4BCB769B1F40900C40CF507"
+  }
+]
