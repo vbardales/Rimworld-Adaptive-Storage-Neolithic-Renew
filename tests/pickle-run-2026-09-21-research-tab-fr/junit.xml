@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite name="French names on the generated buildings" tests="11" failures="0" skipped="2" flakes="0" time="39.091">
+    <testcase name="the vacstone buildings read as vaccolithe" classname="French names on the generated buildings" time="0.458">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="a Core stone is French too" classname="French names on the generated buildings" time="0.198">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the descriptions are French, on generated buildings and on the wood pile" classname="French names on the generated buildings" time="0.329">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the wood pile is French" classname="French names on the generated buildings" time="0.099">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the blueprint of a generated building carries its French name" classname="French names on the generated buildings" time="12.246">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+Attachment: the blueprint of a granite pot, in French -&gt; /mnt/c/Users/nelim/Documents/rimworld/pickle-reports/screenshots/manual--the-blueprint-of-a-granite-pot--in-French--step0.png
+</system-out>
+    </testcase>
+    <testcase name="the vacstone blueprint too, the stone the mod was never told about" classname="French names on the generated buildings" time="7.605">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the fallback translates the buildings of a stone the mod never met" classname="French names on the generated buildings" time="0.000">
+      <skipped />
+    </testcase>
+    <testcase name="the blueprint of a third-party stone's pot carries the fallback's French name" classname="French names on the generated buildings" time="0.000">
+      <skipped />
+    </testcase>
+    <testcase name="the research projects and their text are French" classname="French names on the generated buildings" time="0.438">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the framework's research tab reads Stockage and lists both projects" classname="French names on the generated buildings" time="8.649">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+Attachment: research tabs the window drew -&gt; Main (label 'Principal'), Anomaly (label 'Anomalie'), ASFAdaptiveStorage (label 'Stockage', selected)
+selected: ASFAdaptiveStorage
+Attachment: projects listed on ASFAdaptiveStorage -&gt; ASNeolithicNeolithicStorage: 'Stockage néolithique', cost 400, at (0, 1), Neolithic
+ASNeolithicNeolithicItemDisplay: 'Présentoir néolithique', cost 400, at (0, 2), Neolithic
+Attachment: projects listed on ASFAdaptiveStorage -&gt; ASNeolithicNeolithicStorage: 'Stockage néolithique', cost 400, at (0, 1), Neolithic
+ASNeolithicNeolithicItemDisplay: 'Présentoir néolithique', cost 400, at (0, 2), Neolithic
+Attachment: the research window on the storage tab, in French -&gt; /mnt/c/Users/nelim/Documents/rimworld/pickle-reports/screenshots/manual--the-research-window-on-the-storage-tab--in-French--step0.png
+</system-out>
+    </testcase>
+    <testcase name="a container on the map names itself in French" classname="French names on the generated buildings" time="9.069">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+Attachment: the inspect pane on a granite chunk stack, in French -&gt; /mnt/c/Users/nelim/Documents/rimworld/pickle-reports/screenshots/manual--the-inspect-pane-on-a-granite-chunk-stack--in-French--step0.png
+</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

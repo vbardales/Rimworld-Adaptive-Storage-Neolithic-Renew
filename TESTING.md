@@ -102,9 +102,12 @@ Where each manual scenario below ended up, decided on 2026-09-21.
   `TabRecord`s, not as buttons). It is now opened by defName with five steps of the suite's own
   ([Source/ResearchTabSteps.cs](tests/Pickle/Source/ResearchTabSteps.cs)), which read what the window lists: the tab selected, both projects
   listed at cost 400, no two on the same spot, and in French the tab labelled `Stockage` (scenarios in `01` and `05`).
-  **Written and compiled on 2026-09-21, not yet played:** two runs (English `01`, French `05`) are queued and unread. Until they are, the
-  two projects inside their tab are still a person's to look at, and what the steps assume is listed in
-  [tests/Pickle/README.md](tests/Pickle/README.md). The layout of the tab stays a person's judgement either way (`@review` captures).
+  **Played the same evening, 2026-09-21:** English `01` 7 of 7 passed and French `05` 9 passed of 11 (the 2 skipped need the stones pass),
+  `exitReason: passed` both ([English](tests/pickle-run-2026-09-21-research-tab-en/README.md),
+  [French](tests/pickle-run-2026-09-21-research-tab-fr/README.md)). The two projects were listed in the framework's tab at 400, and both captures
+  were opened: the tab `Storage` / `Stockage` selected, the two boxes one above the other. The assumptions the steps made are in
+  [tests/Pickle/README.md](tests/Pickle/README.md), all confirmed. Scenario 2 is covered by Pickle; only whether the layout reads well stays a
+  person's judgement (`@review` captures).
 
 ## Manual scenarios
 

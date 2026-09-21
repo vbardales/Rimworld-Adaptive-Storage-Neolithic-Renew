@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite name="the mod loads on top of the Adaptive Storage Framework" tests="7" failures="0" skipped="0" flakes="0" time="28.854">
+    <testcase name="the framework is active and loads before the mod" classname="the mod loads on top of the Adaptive Storage Framework" time="0.631">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the nine hand-written buildings exist" classname="the mod loads on top of the Adaptive Storage Framework" time="1.030">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the framework's GraphicsDefs that draw them exist" classname="the mod loads on top of the Adaptive Storage Framework" time="0.782">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the two research projects exist" classname="the mod loads on top of the Adaptive Storage Framework" time="0.257">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="both projects sit in the framework's tab, at the cost the file asks for" classname="the mod loads on top of the Adaptive Storage Framework" time="0.616">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="loading a game with the mod raises no error" classname="the mod loads on top of the Adaptive Storage Framework" time="16.757">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the framework's research tab, opened by its defName, lists both projects" classname="the mod loads on top of the Adaptive Storage Framework" time="8.781">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+Attachment: research tabs the window drew -&gt; Main (label 'Main'), Anomaly (label 'Anomaly'), ASFAdaptiveStorage (label 'Storage', selected)
+selected: ASFAdaptiveStorage
+Attachment: projects listed on ASFAdaptiveStorage -&gt; ASNeolithicNeolithicStorage: 'Neolithic storage', cost 400, at (0, 1), Neolithic
+ASNeolithicNeolithicItemDisplay: 'Neolithic item display', cost 400, at (0, 2), Neolithic
+Attachment: projects listed on ASFAdaptiveStorage -&gt; ASNeolithicNeolithicStorage: 'Neolithic storage', cost 400, at (0, 1), Neolithic
+ASNeolithicNeolithicItemDisplay: 'Neolithic item display', cost 400, at (0, 2), Neolithic
+Attachment: projects listed on ASFAdaptiveStorage -&gt; ASNeolithicNeolithicStorage: 'Neolithic storage', cost 400, at (0, 1), Neolithic
+ASNeolithicNeolithicItemDisplay: 'Neolithic item display', cost 400, at (0, 2), Neolithic
+Attachment: the research window on the storage tab, with the two neolithic projects -&gt; /mnt/c/Users/nelim/Documents/rimworld/pickle-reports/screenshots/manual--the-research-window-on-the-storage-tab--with-the-two-neolithic-projects--step0.png
+</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

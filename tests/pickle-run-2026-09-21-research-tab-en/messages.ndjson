@@ -1,0 +1,119 @@
+{"meta":{"protocolVersion":"22.0.0","implementation":{"name":"Pickle","version":"1.0.0"}}}
+{"source":{"uri":"the mod loads on top of the Adaptive Storage Framework","data":"","mediaType":"text/x.cucumber.gherkin+plain"}}
+{"gherkinDocument":{"uri":"the mod loads on top of the Adaptive Storage Framework","feature":{"name":"the mod loads on top of the Adaptive Storage Framework"}}}
+{"pickle":{"id":"1","uri":"the mod loads on top of the Adaptive Storage Framework","name":"the mod loads on top of the Adaptive Storage Framework"}}
+{"testRunStarted":{"timestamp":{"seconds":0,"nanos":0}}}
+{"testCase":{"id":"2","pickleId":"1","testSteps":[{"id":"3","pickleStepId":"3"},{"id":"4","pickleStepId":"4"},{"id":"5","pickleStepId":"5"}]}}
+{"testCaseStarted":{"id":"6","testCaseId":"2","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"6","testStepId":"3","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"6","testStepId":"3","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":342000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"6","testStepId":"4","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"6","testStepId":"4","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":132000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"6","testStepId":"5","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"6","testStepId":"5","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":102000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"attachment":{"testCaseStartedId":"6","body":"smoke test attachment content","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"testCaseFinished":{"testCaseStartedId":"6","timestamp":{"seconds":0,"nanos":0}}}
+{"testCase":{"id":"7","pickleId":"1","testSteps":[{"id":"8","pickleStepId":"8"},{"id":"9","pickleStepId":"9"},{"id":"10","pickleStepId":"10"},{"id":"11","pickleStepId":"11"},{"id":"12","pickleStepId":"12"},{"id":"13","pickleStepId":"13"},{"id":"14","pickleStepId":"14"},{"id":"15","pickleStepId":"15"},{"id":"16","pickleStepId":"16"}]}}
+{"testCaseStarted":{"id":"17","testCaseId":"7","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"17","testStepId":"8","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"17","testStepId":"8","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":15000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"17","testStepId":"9","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"17","testStepId":"9","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":123000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"17","testStepId":"10","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"17","testStepId":"10","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":95000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"17","testStepId":"11","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"17","testStepId":"11","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":96000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"17","testStepId":"12","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"17","testStepId":"12","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":95000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"17","testStepId":"13","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"17","testStepId":"13","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":109000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"17","testStepId":"14","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"17","testStepId":"14","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":121000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"17","testStepId":"15","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"17","testStepId":"15","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":114000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"17","testStepId":"16","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"17","testStepId":"16","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":118000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"attachment":{"testCaseStartedId":"17","body":"smoke test attachment content","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"testCaseFinished":{"testCaseStartedId":"17","timestamp":{"seconds":0,"nanos":0}}}
+{"testCase":{"id":"18","pickleId":"1","testSteps":[{"id":"19","pickleStepId":"19"},{"id":"20","pickleStepId":"20"},{"id":"21","pickleStepId":"21"},{"id":"22","pickleStepId":"22"},{"id":"23","pickleStepId":"23"},{"id":"24","pickleStepId":"24"},{"id":"25","pickleStepId":"25"}]}}
+{"testCaseStarted":{"id":"26","testCaseId":"18","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"26","testStepId":"19","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"26","testStepId":"19","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":89000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"26","testStepId":"20","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"26","testStepId":"20","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":100000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"26","testStepId":"21","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"26","testStepId":"21","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":102000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"26","testStepId":"22","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"26","testStepId":"22","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":97000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"26","testStepId":"23","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"26","testStepId":"23","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":121000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"26","testStepId":"24","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"26","testStepId":"24","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":116000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"26","testStepId":"25","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"26","testStepId":"25","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":113000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"attachment":{"testCaseStartedId":"26","body":"smoke test attachment content","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"testCaseFinished":{"testCaseStartedId":"26","timestamp":{"seconds":0,"nanos":0}}}
+{"testCase":{"id":"27","pickleId":"1","testSteps":[{"id":"28","pickleStepId":"28"},{"id":"29","pickleStepId":"29"}]}}
+{"testCaseStarted":{"id":"30","testCaseId":"27","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"30","testStepId":"28","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"30","testStepId":"28","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":87000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"30","testStepId":"29","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"30","testStepId":"29","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":120000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"attachment":{"testCaseStartedId":"30","body":"smoke test attachment content","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"testCaseFinished":{"testCaseStartedId":"30","timestamp":{"seconds":0,"nanos":0}}}
+{"testCase":{"id":"31","pickleId":"1","testSteps":[{"id":"32","pickleStepId":"32"},{"id":"33","pickleStepId":"33"},{"id":"34","pickleStepId":"34"},{"id":"35","pickleStepId":"35"},{"id":"36","pickleStepId":"36"},{"id":"37","pickleStepId":"37"}]}}
+{"testCaseStarted":{"id":"38","testCaseId":"31","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"38","testStepId":"32","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"38","testStepId":"32","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":63000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"38","testStepId":"33","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"38","testStepId":"33","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":86000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"38","testStepId":"34","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"38","testStepId":"34","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":100000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"38","testStepId":"35","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"38","testStepId":"35","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":100000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"38","testStepId":"36","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"38","testStepId":"36","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":106000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"38","testStepId":"37","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"38","testStepId":"37","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":102000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"attachment":{"testCaseStartedId":"38","body":"smoke test attachment content","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"testCaseFinished":{"testCaseStartedId":"38","timestamp":{"seconds":0,"nanos":0}}}
+{"testCase":{"id":"39","pickleId":"1","testSteps":[{"id":"40","pickleStepId":"40"},{"id":"41","pickleStepId":"41"}]}}
+{"testCaseStarted":{"id":"42","testCaseId":"39","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"42","testStepId":"40","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"42","testStepId":"40","testStepResult":{"status":"PASSED","duration":{"seconds":16,"nanos":613000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"42","testStepId":"41","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"42","testStepId":"41","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":110000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"attachment":{"testCaseStartedId":"42","body":"smoke test attachment content","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"testCaseFinished":{"testCaseStartedId":"42","timestamp":{"seconds":0,"nanos":0}}}
+{"testCase":{"id":"43","pickleId":"1","testSteps":[{"id":"44","pickleStepId":"44"},{"id":"45","pickleStepId":"45"},{"id":"46","pickleStepId":"46"},{"id":"47","pickleStepId":"47"},{"id":"48","pickleStepId":"48"},{"id":"49","pickleStepId":"49"},{"id":"50","pickleStepId":"50"},{"id":"51","pickleStepId":"51"},{"id":"52","pickleStepId":"52"},{"id":"53","pickleStepId":"53"},{"id":"54","pickleStepId":"54"}]}}
+{"testCaseStarted":{"id":"55","testCaseId":"43","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"44","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"44","testStepResult":{"status":"PASSED","duration":{"seconds":7,"nanos":305000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"45","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"45","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":408000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"46","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"46","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":164000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"47","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"47","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":97000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"48","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"48","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":90000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"49","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"49","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":91000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"50","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"50","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":130000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"51","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"51","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":50000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"52","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"52","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":315000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"53","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"53","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":14000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"testStepStarted":{"testCaseStartedId":"55","testStepId":"54","timestamp":{"seconds":0,"nanos":0}}}
+{"testStepFinished":{"testCaseStartedId":"55","testStepId":"54","testStepResult":{"status":"PASSED","duration":{"seconds":0,"nanos":91000000}},"timestamp":{"seconds":0,"nanos":0}}}
+{"attachment":{"testCaseStartedId":"55","body":"smoke test attachment content","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"attachment":{"testCaseStartedId":"55","body":"Main (label 'Main'), Anomaly (label 'Anomaly'), ASFAdaptiveStorage (label 'Storage', selected)\nselected: ASFAdaptiveStorage","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"attachment":{"testCaseStartedId":"55","body":"ASNeolithicNeolithicStorage: 'Neolithic storage', cost 400, at (0, 1), Neolithic\nASNeolithicNeolithicItemDisplay: 'Neolithic item display', cost 400, at (0, 2), Neolithic","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"attachment":{"testCaseStartedId":"55","body":"ASNeolithicNeolithicStorage: 'Neolithic storage', cost 400, at (0, 1), Neolithic\nASNeolithicNeolithicItemDisplay: 'Neolithic item display', cost 400, at (0, 2), Neolithic","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"attachment":{"testCaseStartedId":"55","body":"ASNeolithicNeolithicStorage: 'Neolithic storage', cost 400, at (0, 1), Neolithic\nASNeolithicNeolithicItemDisplay: 'Neolithic item display', cost 400, at (0, 2), Neolithic","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"attachment":{"testCaseStartedId":"55","body":"/mnt/c/Users/nelim/Documents/rimworld/pickle-reports/screenshots/manual--the-research-window-on-the-storage-tab--with-the-two-neolithic-projects--step0.png","mediaType":"text/x.plain","contentEncoding":"IDENTITY"}}
+{"testCaseFinished":{"testCaseStartedId":"55","timestamp":{"seconds":0,"nanos":0}}}
+{"testRunFinished":{"success":true,"timestamp":{"seconds":0,"nanos":0}}}
