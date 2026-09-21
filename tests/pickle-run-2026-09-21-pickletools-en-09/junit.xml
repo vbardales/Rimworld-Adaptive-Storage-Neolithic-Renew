@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite name="the PickleTools research steps choose a tab and a project by the label a player reads, in English" tests="1" failures="0" skipped="0" flakes="0" time="21.316">
+    <testcase name="the storage tab and its project by their English labels" classname="the PickleTools research steps choose a tab and a project by the label a player reads, in English" time="21.316">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+Attachment: research tabs the window drew -&gt; Main (label 'Main'), Anomaly (label 'Anomaly'), ASFAdaptiveStorage (label 'Storage', selected)
+selected: ASFAdaptiveStorage
+Attachment: projects listed on ASFAdaptiveStorage -&gt; ASNeolithicNeolithicStorage: 'Neolithic storage', cost 400, at (0, 1), Neolithic
+ASNeolithicNeolithicItemDisplay: 'Neolithic item display', cost 400, at (0, 2), Neolithic
+</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

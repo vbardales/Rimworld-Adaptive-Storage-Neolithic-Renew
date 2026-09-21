@@ -1,0 +1,5 @@
+# The pass that plays the features 08 to 10: the shared research window steps of PickleTools, staged beside the framework.
+# `path:` names a folder of this repository (relative to its root); the folder's own About.xml packageId must match.
+# The framework is repeated because a named map replaces the default one.
+adaptive.storage.framework   3033901359
+nelim.pickletools.research   path:PickleTools/ResearchSteps/Mod

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Test data for the PickleTools step "I open the PickleTools research tab keyed": a Keyed string whose
+       text is the label of the framework's research tab, so the key resolves to a tab in each language. -->
+  <ASNeolithicPickle_StorageTab>Storage</ASNeolithicPickle_StorageTab>
+</LanguageData>

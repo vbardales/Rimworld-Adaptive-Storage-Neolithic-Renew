@@ -107,7 +107,9 @@ Where each manual scenario below ended up, decided on 2026-09-21.
   [French](tests/pickle-run-2026-09-21-research-tab-fr/README.md)). The two projects were listed in the framework's tab at 400, and both captures
   were opened: the tab `Storage` / `Stockage` selected, the two boxes one above the other. The assumptions the steps made are in
   [tests/Pickle/README.md](tests/Pickle/README.md), all confirmed. Scenario 2 is covered by Pickle; only whether the layout reads well stays a
-  person's judgement (`@review` captures).
+  person's judgement (`@review` captures). The shared version of the same steps (`PickleTools/ResearchSteps`), which also chooses a tab by its
+  label or by a translation key, was played in its own pass the same night, English 3 + 1 and French 3 + 2 scenarios, all passed
+  ([English](tests/pickle-run-2026-09-21-pickletools-en-08/README.md), [French](tests/pickle-run-2026-09-21-pickletools-fr-08/README.md)).
 
 ## Manual scenarios
 

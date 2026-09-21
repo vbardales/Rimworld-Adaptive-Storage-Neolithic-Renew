@@ -10,7 +10,7 @@ Third run, French with `-IncludeWip`, 11:46: **20 of 20 played, 20 passed, 0 ski
 Results: [`../pickle-run-2026-09-21/`](../pickle-run-2026-09-21/), [`-second/`](../pickle-run-2026-09-21-second/) and
 [`-french/`](../pickle-run-2026-09-21-french/).
 
-**Widened the same day, after those passes: 42 scenarios in seven features, 23 `@review` captures** (41 and 22 until the research-tab scenario of `05` was added; that one and the rewritten one of `01` passed at 20:08 and 20:10, see "The research tab, opened by defName" below). The three passes showed the
+**Widened the same day, after those passes: 48 scenarios in ten features, 24 `@review` captures** (42 in seven and 23 before the three `@wip @pickletools` features `08` to `10`, six scenarios and one capture, played only in the pass `avec-pickletools`) (41 and 22 until the research-tab scenario of `05` was added; that one and the rewritten one of `01` passed at 20:08 and 20:10, see "The research tab, opened by defName" below). The three passes showed the
 generated buildings named right and left the rest of the mod's text unseen, so scenarios were added: the research
 projects' tab, cost and tech level; the window that holds them, with a capture in each language; blueprints placed for
 the generated and hand-written buildings; and in French their descriptions, their research text, the name a blueprint
@@ -20,7 +20,7 @@ the `@wip` features (`05`, `07`) are skipped by both and each has a pass of its 
 wrapper refuses `-IncludeWip` without a filter (Pickle #26), so a `@wip` feature is aimed by file name:
 
 
-Eleven passes of the widened suite, all on 2026-09-21 (the first five stage the working tree, the next three commit `2be9d4f`, the ninth a tree I did not record, the last two commit `df12a10`):
+Fifteen passes of the widened suite, all on 2026-09-21 (the first five stage the working tree, the next three commit `2be9d4f`, the ninth a tree I did not record, the next two commit `df12a10`, the last four commit `df12a10` plus the uncommitted features 08 to 10, their pass map and Keyed test data):
 
 | Pass | Played | Result | Folder |
 | --- | --- | --- | --- |
@@ -35,6 +35,10 @@ Eleven passes of the widened suite, all on 2026-09-21 (the first five stage the 
 | English, 19:03, "stones" pass, whole | 41 of 41 | **26 passed**, 0 failed, 15 skipped, `passed`: `06`, the third-party stone in English, passed | `../pickle-run-2026-09-21-stones-en2/` |
 | English, 20:06, `01` only, commit `df12a10` | 7 of 7 | **7 passed**, 0 failed, 0 skipped, `passed`: the research tab opened by defName, both projects listed at 400 | `../pickle-run-2026-09-21-research-tab-en/` |
 | French, 20:08, `05` only, `-IncludeWip`, commit `df12a10` | 11 of 11 | **9 passed**, 0 failed, 2 skipped (the third-party stone, no stones pass), `passed`: the tab reads `Stockage` | `../pickle-run-2026-09-21-research-tab-fr/` |
+| English, 22:52, pass `avec-pickletools`, `08` | 3 of 3 | **3 passed**, `passed`: a tab by def name in any case, Main, a tab by a translation key | `../pickle-run-2026-09-21-pickletools-en-08/` |
+| English, 22:53, same pass, `09` | 1 of 1 | **1 passed**, `passed`: `Storage` and `Neolithic storage` by their labels | `../pickle-run-2026-09-21-pickletools-en-09/` |
+| French, 22:56, same pass, `08` | 3 of 3 | **3 passed**, `passed`: the key now reads `Stockage` | `../pickle-run-2026-09-21-pickletools-fr-08/` |
+| French, 22:59, same pass, `10` | 2 of 2 | **2 passed**, `passed`: `Stockage`, `Stockage néolithique`, and `Principal` reaching Main | `../pickle-run-2026-09-21-pickletools-fr-10/` |
 
 Every failure was the suite's own, never the mod's: the first three looked up vanilla's implied blueprint defs
 by name, which Pickle's lookup does not see; the last three, below, are two more ambiguous names and one blueprint label
@@ -102,7 +106,19 @@ game's `MainTabWindow_Research`; that records no button tag, so `I click button 
   `LabelCap` when it opened. Used in `05`, in French.
 
 The step text carries the mod's name: Pickle loads every active suite's steps into one namespace, and two suites declaring the same
-text produce "Ambiguous step" on healthy scenarios. What none of it can say is whether the tab looks right: the two `@review`
+text produce "Ambiguous step" on healthy scenarios.
+
+**Two more versions exist, kept on purpose until [RimWorks/Rimworld-Pickle#33](https://github.com/RimWorks/Rimworld-Pickle/pull/33) is
+merged.** The PR proposes three steps by def name only (`I open the research tab {string}`, ...). `PickleTools/ResearchSteps` (a separate
+repository at the root of the workspace, the shared steps of every suite) carries six texts with "PickleTools" in them, which also choose a
+tab or a project **by the label a player reads** and a tab **by a translation key**. This suite plays it in its own pass, `avec-pickletools`
+(`wsl-deps.avec-pickletools.map`), with the features `08` (def name and key, any language), `09` (English labels) and `10` (French labels),
+all `@wip @pickletools`, and Keyed test strings in the companion (`Mod/Languages/*/Keyed/PickleTests.xml`) so the key resolves to a tab.
+Played on 2026-09-21: 3 + 1 in English, 3 + 2 in French, all passed (rows above). The key reaches only a tab whose label comes from a Keyed
+string; Main, Anomaly and the framework's tab are Def labels, for which the def name is the language-independent way. The five steps
+above stay as they are: three versions to keep in step until the merge, after which the features move to the official texts.
+Playing a pass: `-DepMap wsl-deps.avec-pickletools.map -Filter 08-pickletools-research.feature -Then <09 or 10>... -IncludeWip`, with
+`-Language French` and `10` for French. What none of it can say is whether the tab looks right: the two `@review`
 captures are for that.
 
 ## What the captures are for, and what they are not
