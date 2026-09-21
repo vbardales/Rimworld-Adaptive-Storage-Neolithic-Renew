@@ -110,11 +110,14 @@ text produce "Ambiguous step" on healthy scenarios.
 
 **Two more versions exist, kept on purpose until [RimWorks/Rimworld-Pickle#33](https://github.com/RimWorks/Rimworld-Pickle/pull/33) is
 merged.** The PR proposes three steps by def name only (`I open the research tab {string}`, ...). `PickleTools/ResearchSteps` (a separate
-repository at the root of the workspace, the shared steps of every suite) carries six texts with "PickleTools" in them, which also choose a
+repository at the root of the workspace, the shared steps of every suite) carries six texts under the prefix `Nelim's Pickle Tools: ` (the convention of its other shared steps), which also choose a
 tab or a project **by the label a player reads** and a tab **by a translation key**. This suite plays it in its own pass, `avec-pickletools`
 (`wsl-deps.avec-pickletools.map`), with the features `08` (def name and key, any language), `09` (English labels) and `10` (French labels),
 all `@wip @pickletools`, and Keyed test strings in the companion (`Mod/Languages/*/Keyed/PickleTests.xml`) so the key resolves to a tab.
-Played on 2026-09-21: 3 + 1 in English, 3 + 2 in French, all passed (rows above). The key reaches only a tab whose label comes from a Keyed
+Played on 2026-09-21: 3 + 1 in English, 3 + 2 in French, all passed (rows above), **with the texts as they were before the prefix
+`Nelim's Pickle Tools: ` was put in front of them** (`I open the PickleTools research tab ...`). The prefix changed the same night, the
+features and the assembly with it, and the same two passes are queued again on the new texts: until they are read, the rows above prove
+the logic and not these exact lines. The key reaches only a tab whose label comes from a Keyed
 string; Main, Anomaly and the framework's tab are Def labels, for which the def name is the language-independent way. The five steps
 above stay as they are: three versions to keep in step until the merge, after which the features move to the official texts.
 Playing a pass: `-DepMap wsl-deps.avec-pickletools.map -Filter 08-pickletools-research.feature -Then <09 or 10>... -IncludeWip`, with
