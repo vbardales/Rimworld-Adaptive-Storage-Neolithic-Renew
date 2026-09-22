@@ -26,8 +26,8 @@ remaining:
   - not covered by any scenario, on purpose: the architect menu itself (checked statically), frames of a chantier under construction, and the inspect-pane description card. Nothing else is left to a manual pass once the unplayed features above have run.
   - unverified (done -> tested): Full English/French game load of the translation hook, blueprints, frames, finished buildings, plinth art and UI, in developer mode.
   - unverified (done -> tested): Execute the TESTING.md scenarios in game on a new game and an existing save, inspect logs, run the Pickle suite and open its @review captures. Options, persistence and MainButtons shortcut are not applicable (no settings).
-  - publishing (tested -> prepublished), state 2026-09-22 10:15: DONE: repository pushed, DLL matches the sources; the About.xml description is in the required order (body, IF I GO QUIET with the adoption clause word for word, AI-GENERATED naming DALL-E (OpenAI) by name, THANKS with the redundant Claude Code line removed on Virginie's word, attribution and licence line, "Source code on GitHub" link last); PUBLICATION.md written and corrected (order of the six page pictures, two thanks messages under 1000 characters each in a fan tone, in BBCode — Harmony dropped, comments disabled on his page — dependencies and DLC decided from the sources, adult-content reading with the human-meat pot texture opened, what to do after the upload); `Preview.png` recomposed on Virginie's word, its title/summary block moved bottom-right instead of top-left (`Art/preview.html`, veil gradient origin moved to match), rendered with `node Art/render-preview.cjs` (local `playwright`+`sharp`, gitignored), contrast and size checks still pass (h1 6.01, suffix 5.35, summary 6.90, badge 6.72, 673 KB); the six Workshop pictures produced (feature 11, 6 of 6 passed, `tests/pickle-run-2026-09-22-workshop-captures/`), opened, and hand-cropped into `Art/WorkshopScreenshots/` to remove the fixture colony bleeding into frame — a colour-tint seam from the colony's home-area zone and the map's own scattered rock decoration remain, accepted as-is by owner decision rather than rerun; the raw frames stay under `.build/` for reference. The Workshop item itself was created out of this order this morning (see the section above): `About.xml`'s description had already gone to Steam at 09:11, before the THANKS fix, so any of today's wording corrections apply to the live page only by hand, never by re-running `SetItemDescription`. NOT DONE: tag v1.0.0 and the GitHub release with the changelog (outward action, waits for the owner); the adult-content boxes, now answerable from the real page images; uploading the six images to the Steam page; the thanks messages, posted after the item is public and once she confirms the reading above.
-  - unverified (tested -> prepublished), re-audited 2026-09-22 at `531ff95`: the mandatory tag `v1.0.0` and its GitHub release containing CHANGELOG.md do not exist (`git tag --list` is empty). This is a missing prepublication criterion, not a defect in the mod. The working tree is clean and HEAD equals `origin/main`; static, installed-assembly, DefInjected and XML-field checks were rerun successfully. No RimWorld process or in-game test was launched by this audit.
+  - publishing (tested -> prepublished), state 2026-09-22: repository pushed, DLL matches the sources; the About.xml description is in the required order; PUBLICATION.md is written; Preview and six Workshop pictures are produced and reviewed. GitHub release `1.0.0` was published from the changelog on 2026-09-22, on the owner's requested tag at commit `8fb1177` where the packageId was created. NOT DONE: the adult-content boxes; uploading the six images to the Steam page; the thanks messages after the item is public.
+  - unverified (tested -> prepublished), updated 2026-09-22: tag and GitHub release `1.0.0` now exist, but the tag deliberately points to `8fb1177`, the initial packageId commit, rather than the current release tree (`27609aa`). Therefore the workflow requirement that the tagged/released content reproduce the delivered mod is still not established. This is a release-position mismatch, not a defect in the mod files.
   - unverified (done -> tested), 2026-09-22: the suite now stages `nelim.pickletools.research` in its normal and stone passes and uses its shared research-tab steps for the mod scenarios. The architect-route blueprint scenarios now attach review captures (Core/generated/hand-written and Odyssey/vacstone). Their feature edits and the rebuilt step DLL passed offline checks, but no Pickle pass has played this revision; review the new captures after the next permitted run.
   - optional: case-sensitive runtime check of the Russian DefInjected folder (Steam Deck). Russian vacstone coverage was completed on 2026-09-21 (six entries, written by Claude from the official Odyssey term, not reviewed by a Russian speaker; disclosure to repeat in the AI-GENERATED section at prepublished).
 session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
@@ -42,10 +42,11 @@ modicon_audit: complete
 
 **Stage corrected from `prepublished` to `tested`.** The checkout is clean at
 `531ff954e5fe33502c46e0b8d65a2f65b1a5223d`, identical to `origin/main`; no local work was
-present at audit start. The former stage is not cumulatively established: AUDIT.md requires an
-existing version tag and a published GitHub release for `tested -> prepublished`, while `git tag
---list` returned no tag and PUBLICATION.md records both actions as not done. A private Workshop
-item (`3806101377`) and its committed `PublishedFileId.txt` do not substitute for those criteria.
+present at audit start. The former stage is not cumulatively established: AUDIT.md requires
+an existing version tag and a published GitHub release for `tested -> prepublished`. Tag and release
+`1.0.0` now exist, but point to the initial packageId commit `8fb1177`, not the current release tree.
+A private Workshop item (`3806101377`) and its committed `PublishedFileId.txt` do not substitute
+for a reproducible tag/release pair.
 
 | Control | Result |
 | --- | --- |
@@ -57,9 +58,9 @@ item (`3806101377`) and its committed `PublishedFileId.txt` do not substitute fo
 | Runtime | **Not run by this audit:** AUDIT.md expressly forbids launching RimWorld here. Historical `tested_on` evidence is preserved above and not restated as a new run. |
 
 All independent completed audits remain retained: settings are `not_applicable`, and English,
-French and localization are `complete`. The sole next transition blocker is publication readiness:
-create and push tag `v1.0.0`, then publish the matching GitHub release with CHANGELOG.md. The
-remaining Steam actions are recorded separately in PUBLICATION.md and are not claimed complete.
+French and localization are `complete`. Publication readiness still requires a versioned release
+whose tag contains the delivered tree; `1.0.0` is intentionally attached to the earlier packageId
+commit. The remaining Steam actions are recorded separately in PUBLICATION.md and are not claimed complete.
 
 ## prepublished — 2026-09-22, owner decision, then the item created
 

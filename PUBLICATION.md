@@ -84,8 +84,8 @@ exist yet and must be opened before the boxes are answered for good. The boxes a
 
 - **Commit `Mod/About/PublishedFileId.txt` immediately.** It holds the Workshop item id. Lost, the next upload creates a second item.
 - Steam creates every item **private**: RimWorld never calls `SetItemVisibility`. Subscribe to the item, test it, then make it public by hand.
-- Tag `v1.0.0` and a GitHub release carrying the `CHANGELOG.md`. Nothing was ever tagged or published, so the `[Unreleased]` section becomes
-  `[1.0.0]` with its date on the day of the tag.
+- Tag `1.0.0` and a GitHub release carrying the `CHANGELOG.md`. The owner chose the packageId-creation commit for this tag;
+  the changelog already carries `[1.0.0]` with the release date.
 - Fill `workshop:` in `STATUS.md` with the item id, and post the two messages above (none for Harmony: comments disabled).
 
 ## State on 2026-09-22
@@ -102,7 +102,7 @@ switched public is not established here.
 | Workshop item created | **Done, 2026-09-22, id 3806101377** — out of order, before the screenshots and the tag |
 | `About/PublishedFileId.txt` committed and pushed | Done (`a008025`) |
 | Subscribe to the item, test it, then switch it public by hand | **Not done / not established** |
-| Tag `v1.0.0` and GitHub release with the changelog | **Not done**: waits for the owner's word |
+| Tag `1.0.0` and GitHub release with the changelog | **Done, 2026-09-22:** release published at `https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/releases/tag/1.0.0`; tag points to `8fb1177`, the packageId-creation commit, by owner instruction, not to the current delivered tree. |
 | Description read again, English, sections in order (IF I GO QUIET, AI-GENERATED, THANKS, attribution line, source link) | Written; to be read once more — it was already sent to Steam at item creation, so any further correction is made by hand on the Steam page, not in `About.xml` |
 | This file | Written |
 | Screenshots for the page, order and what each shows | **Done, 2026-09-22.** The 6 files are in `Art/WorkshopScreenshots/`, cropped by hand from a clean Pickle run; not yet uploaded to the Steam page |
