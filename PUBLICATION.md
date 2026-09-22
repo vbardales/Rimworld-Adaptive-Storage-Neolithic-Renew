@@ -39,25 +39,22 @@ redo after each change), and the research window, which shows only the framework
 Post after the item is public: a link to a private item opens for nobody. Under 1000 characters each, the Steam comment limit. BBCode works
 in comments, and a bare Workshop item URL turns into a thumbnail. `THIS_ITEM` stands for this mod's own URL, known only after the upload.
 
-**Adaptive Storage Neolithic Module** (the original, https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895), for Soul, Phaneron and bradson:
+**No message for Harmony/Brrainz**: his Workshop page has comments disabled (checked 2026-09-22; same for Achtung!'s, noted for future
+reference). The AI-GENERATED/THANKS section of the description already credits him; nothing more to post.
 
-> Thank you for this module, and for licensing it under MIT. I brought it forward to 1.6 as **Adaptive Storage Neolithic Renew** and changed
-> almost nothing: the buildings, art and stats are yours. I fixed the Russian folder that Linux and the Steam Deck were dropping, added
-> French and Russian for vacstone, translated the buildings of other mods' stones, and made a stone chunk with no colour, the
-> Biomes! Caverns crash reported here in May, get no buildings instead of crashing (checked against the framework's generator, not yet with that
-> mod). The original stays declared incompatible. Credit is in the description and ATTRIBUTION.md. THIS_ITEM
+**Adaptive Storage Neolithic Module** (the original, https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895), for Soul, Phaneron and bradson. 846 characters:
 
-**Adaptive Storage Framework** (https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359), for bradson:
+```
+Hey! Thank you SO much for this module and for setting it MIT — that's the rare kind of open that made this whole port possible. I brought Adaptive Storage Neolithic forward to 1.6 as [b]Adaptive Storage Neolithic Renew[/b] and honestly changed almost nothing, because it didn't need it: the buildings, the art, the stats, all yours. Along the way I fixed the Russian folder that Linux/Steam Deck players were silently losing, finished French and Russian for vacstone, taught buildings made from other mods' stones to speak French too, and stopped a stone chunk with no colour (hi, Biomes! Caverns crystal chunk!) from crashing the game instead of just... not building anything. The original stays declared incompatible, credit's all yours in the description and in ATTRIBUTION.md. Thanks again for making something worth keeping alive!
+THIS_ITEM
+```
 
-> Thank you for the framework: every container of this module draws what it holds because of it. I ported the Neolithic module to 1.6 as
-> **Adaptive Storage Neolithic Renew** and tested it in a running game on top of your 1.6 build, with Core, Odyssey and a third-party stone
-> mod loaded: no error. It reads your `GraphicsDef` and your stone generators as they are. THIS_ITEM
+**Adaptive Storage Framework** (https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359), for bradson. 477 characters:
 
-**Harmony** (https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077), for Brrainz (Andreas Pardeike):
-
-> Thank you for Harmony. A mod of mine uses one postfix on the language injection so that buildings generated at load time are translated
-> before the game copies their labels onto blueprints and frames: **Adaptive Storage Neolithic Renew**. It ran in a real game, French, English
-> and Russian, and the blueprint reads its French name. THIS_ITEM
+```
+This framework is the actual magic — every single container in my module draws what's inside it because of you. I ported the Neolithic module to 1.6 as [b]Adaptive Storage Neolithic Renew[/b] and ran it in a real game on top of your 1.6 build, Core + Odyssey + a random third-party stone mod thrown in, zero errors. Reads your GraphicsDefs and your stone generators exactly as they are, no hacks needed. Thank you for building something this solid to build on top of!
+THIS_ITEM
+```
 
 ## 3. Dependencies and DLC to declare
 
@@ -89,7 +86,7 @@ exist yet and must be opened before the boxes are answered for good. The boxes a
 - Steam creates every item **private**: RimWorld never calls `SetItemVisibility`. Subscribe to the item, test it, then make it public by hand.
 - Tag `v1.0.0` and a GitHub release carrying the `CHANGELOG.md`. Nothing was ever tagged or published, so the `[Unreleased]` section becomes
   `[1.0.0]` with its date on the day of the tag.
-- Fill `workshop:` in `STATUS.md` with the item id, and post the three messages above.
+- Fill `workshop:` in `STATUS.md` with the item id, and post the two messages above (none for Harmony: comments disabled).
 
 ## State on 2026-09-22
 
