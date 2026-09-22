@@ -10,20 +10,26 @@ Steam page, never from `About.xml`. Read it once more before clicking.
 ## 1. Screenshots for the page, in the order to upload them
 
 Steam shows the first one large: it is the most demonstrative, not the prettiest. The `Preview.png` is the header image and is not one of
-these. **None of the images below exists.** The review captures of the Pickle suite are disqualified for the page: they show the whole
-colony around the container, the game's interface and a wide frame (a container is about 45 px per cell). Each of these is to be produced
-by a dedicated Pickle scenario that builds its own scene, with the game's screenshot mode on, a close camera, daylight and clear weather, no
-other mod altering the rendering, and the interface restored afterwards, from an `[AfterScenario]` too. Every image must be opened and looked
-at: a passing scenario proves the route ran, not that the picture shows anything.
+these.
 
-| # | Shows | Why here |
-| --- | --- | --- |
-| 1 | The whole set at once: wood pile, hay pile, meal shelf, textile bundle, two baskets, a large pot and a plinth, each with something in it, in one row | The mod's one idea, that every container shows its contents, in a single picture |
-| 2 | A wooden basket empty, with one item, full (three frames, one picture) | The idea, isolated: the basket fills up |
-| 3 | A stack of granite chunks at one, two and six chunks, and a marble one beside it | The sprite changes with the load, and takes the colour of what is in it |
-| 4 | Large pots with different food (berries, meat, potatoes, milk, eggs) and one with a lid, mixed | 64 texture variants: contents and material |
-| 5 | Plinths of wood, granite and vacstone, each with an item | The display case, and the stone variants |
-| 6 | The pot and the chunk stack of a stone from another mod, next to granite | The generators build for every stone in the game, not a list |
+**Produced 2026-09-22, cropped by hand, in `Art/WorkshopScreenshots/`.** `tests/Pickle/Mod/Pickle/Features/11-workshop-captures.feature`
+ran clean (6 of 6, `exitReason: passed`, `tests/pickle-run-2026-09-22-workshop-captures/`), each scenario building its own scene with the
+interface hidden. Opened, every one of them: the scenes were built too close to the fixture colony's own buildings, so its bedroom, a stray
+skeleton and the colony's own stockpile bled into every raw frame, and the containers sat inside a straight-edged colour band (the colony's
+home-area floor tint) that cuts each picture in two. The raw frames were cropped by hand to the subject row, which removes the colony but
+not the tint seam or the map's own scattered rock decoration, both outside a screenshot's control. Accepted as-is for this release, by the
+owner's decision (sprinting to v1.0.0); a future capture built entirely on one side of the home-area tint, away from any rock scatter, would
+not need cropping and would not show the seam. The raw, uncropped frames are also kept, under `.build/pickle-run-workshop-captures/`
+(ignored by git, local only).
+
+| # | File | Shows | Why here |
+| --- | --- | --- | --- |
+| 1 | `workshop-1-the-whole-set.png` | The whole set at once: wood pile, hay pile, meal shelf, textile bundle, two baskets, a large pot and a plinth, each with something in it, in one row | The mod's one idea, that every container shows its contents, in a single picture |
+| 2 | `workshop-2-a-basket-fills-up.png` | A wooden basket empty, with one item, full, side by side | The idea, isolated: the basket fills up |
+| 3 | `workshop-3-chunk-stacks.png` | Granite chunk stacks at one, two and six chunks, and a marble one | The sprite changes with the load, and takes the colour of what is in it |
+| 4 | `workshop-4-large-pots.png` | Six large pots with different food | 64 texture variants: contents and material |
+| 5 | `workshop-5-plinths.png` | Three plinths, each showing an item | The display case |
+| 6 | `workshop-6-a-stone-from-another-mod.png` | The pot and the chunk stack of a stone from another mod, beside granite | The generators build for every stone in the game, not a list |
 
 Not shown on purpose: the architect menu and its dropdown groups (no step reads it, and a hand-taken capture would be one more thing to
 redo after each change), and the research window, which shows only the framework's tab.
@@ -102,7 +108,7 @@ switched public is not established here.
 | Tag `v1.0.0` and GitHub release with the changelog | **Not done**: waits for the owner's word |
 | Description read again, English, sections in order (IF I GO QUIET, AI-GENERATED, THANKS, attribution line, source link) | Written; to be read once more — it was already sent to Steam at item creation, so any further correction is made by hand on the Steam page, not in `About.xml` |
 | This file | Written |
-| Screenshots for the page, order and what each shows | Order and content fixed above; **none of the images exists**; can still be added to the Steam page once produced |
+| Screenshots for the page, order and what each shows | **Done, 2026-09-22.** The 6 files are in `Art/WorkshopScreenshots/`, cropped by hand from a clean Pickle run; not yet uploaded to the Steam page |
 | Thanks messages, one per recipient, under 1000 characters | Written; to be posted after the item is public |
 | Dependencies and DLC | Fixed above, from the sources |
 | Adult-content boxes | Reading given; **the images of the page do not exist yet**; the owner answers |

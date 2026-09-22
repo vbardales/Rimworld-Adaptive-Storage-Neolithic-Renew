@@ -48,7 +48,7 @@ below is part of this one release.
 ### Added
 
 - `About/ModIcon.png` (128x128, 28 KB) and `About/Preview.png` (896x504, 630 KB), both generated
-  with an image model rather than cropped out of the mod, and the only files here that are not
+  with DALL-E (OpenAI) rather than cropped out of the mod, and the only files here that are not
   the authors'. The icon is the repository's mascot with the mod's containers around her; the
   preview is a neolithic storeroom where every container shows its contents, which is the one
   thing this mod does.

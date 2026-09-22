@@ -72,7 +72,7 @@ If I do not answer within a reasonable time after being contacted, anyone may fr
 
 AI-GENERATED
 
-The port work was done with Claude Code (Anthropic): the translation code, the automated and in-game tests, the documentation and the six Russian vacstone entries. The mod icon and the preview image were generated with an image model. All of it under human direction and review, except that no Russian speaker has read the Russian entries. The buildings, their artwork and their stats are not AI-generated: they are the original authors' work.
+The port work was done with Claude Code (Anthropic): the translation code, the automated and in-game tests, the documentation and the six Russian vacstone entries. The mod icon and the preview image were generated with DALL-E (OpenAI). All of it under human direction and review, except that no Russian speaker has read the Russian entries. The buildings, their artwork and their stats are not AI-generated: they are the original authors' work.
 
 THANKS
 
@@ -81,8 +81,6 @@ Soul, Phaneron and bradson, for the mod, for the Adaptive Storage Framework, and
 Elzetia, for the French translation this port extends.
 
 Brrainz (Andreas Pardeike), for Harmony.
-
-Claude Code (Anthropic).
 
 Full attribution, including what was carried over and what changed: https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/ATTRIBUTION.md. Released under the MIT licence: https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/LICENSE
 

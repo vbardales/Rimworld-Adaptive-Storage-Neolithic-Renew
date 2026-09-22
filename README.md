@@ -99,7 +99,7 @@ Art/     source material kept out of the upload: the authors' original preview a
 ```
 
 **The icon and the preview are the port's own, and the only things here that are not the
-authors'.** Both were generated with an image model rather than cropped out of the mod, because
+authors'.** Both were generated with DALL-E (OpenAI) rather than cropped out of the mod, because
 a port must not wear the source author's art as its own identity — the icon especially, being
 the single file meant to speak for the port rather than for the mod it carries. The authors'
 originals are kept under `Art/`, unaltered.

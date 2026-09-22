@@ -42,7 +42,7 @@ and Russian translations.
   translator unnamed in the mod.
 ## The two images, which are the only things here that are not the authors'
 
-Both were generated with an image model on 2026-09-11, under direction, and neither borrows a
+Both were generated with DALL-E (OpenAI) on 2026-09-11, under direction, and neither borrows a
 pixel from the mod. They are offered under the same MIT terms as the rest of the port work.
 
 - **`About/ModIcon.png`** (128x128) — the repository's mascot, with the mod's containers around
