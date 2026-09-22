@@ -7,3 +7,4 @@
 # and it ships no French, so its chunk labels stay English: exactly the case the mod's Harmony fallback exists for.
 adaptive.storage.framework   3033901359
 Kura.ExtraStone              852103845
+nelim.pickletools.research   path:PickleTools/ResearchSteps/Mod

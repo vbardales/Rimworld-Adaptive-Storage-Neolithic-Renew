@@ -69,15 +69,16 @@ Feature: the mod loads on top of the Adaptive Storage Framework
   #
   # `Then window ... is open` is a vanilla step and stays, so the window is proved open by the game's own
   # window stack and not only by the step that opened it.
+  @requires:nelim.pickletools.research
   @review
   Scenario: the framework's research tab, opened by its defName, lists both projects
     Given the save "test-colony" is loaded
-    When I open the Adaptive Storage Neolithic Renew research tab "ASFAdaptiveStorage"
+    When Nelim's Pickle Tools: I open the research tab "ASFAdaptiveStorage"
     And I wait 30 ticks
     Then window "MainTabWindow_Research" is open
-    And the Adaptive Storage Neolithic Renew research window is on the tab "ASFAdaptiveStorage"
-    And the Adaptive Storage Neolithic Renew research window lists the project "ASNeolithicNeolithicStorage" costing 400
-    And the Adaptive Storage Neolithic Renew research window lists the project "ASNeolithicNeolithicItemDisplay" costing 400
+    And Nelim's Pickle Tools: the research window is on the tab "ASFAdaptiveStorage"
+    And Nelim's Pickle Tools: the research window lists the project "ASNeolithicNeolithicStorage" costing 400
+    And Nelim's Pickle Tools: the research window lists the project "ASNeolithicNeolithicItemDisplay" costing 400
     And the Adaptive Storage Neolithic Renew research window draws no two of its projects on the same spot
     And I take a screenshot "the research window on the storage tab, with the two neolithic projects"
     When I close all dialogs

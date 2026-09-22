@@ -111,14 +111,16 @@ Where each manual scenario below ended up, decided on 2026-09-21.
   label or by a translation key, was played in its own pass the same night, English 3 + 1 and French 3 + 2 scenarios, all passed
   ([English](tests/pickle-run-2026-09-21-pickletools-en-08/README.md), [French](tests/pickle-run-2026-09-21-pickletools-fr-08/README.md)).
 
-## Manual scenarios
+## Runtime review scenarios
 
 Until the Pickle run of 2026-09-21 nothing in this mod had ever been seen running, and that run
-covers only the scenarios listed above; the rest of this file is still to be watched by a person.
+covers the scenarios listed above; each remaining runtime behavior is exercised by Pickle and reduced to an
+attached capture for a person's visual judgement.
 The XML checkers are clean, every element maps to
 a field that still exists in 1.6, every C# type it names is still present in the framework's 1.6
-assemblies, and none of that draws a single sprite. This file is the list of what has to be
-watched, and what counts as a pass.
+assemblies, and none of that draws a single sprite. A reviewer never repeats an in-game click sequence: they only
+open the capture (or a video where motion matters). Audio would be the sole exception; its Pickle scenario must
+navigate to the sound and pause for review.
 
 It is not shipped: it lives beside `Mod/`, never inside it, so Steam never receives it.
 

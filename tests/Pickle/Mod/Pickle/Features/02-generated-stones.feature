@@ -38,7 +38,8 @@ Feature: the stone variants are generated at load time
   # blueprint on the map is that def in use. The first run of this scenario looked the blueprint defs up
   # by name (`<defName>_Blueprint`) and found none: Pickle's def lookup does not see them, so the
   # blueprint is placed instead, which is also what a player does. Placing one skips the research.
-  Scenario: a blueprint can be placed for a generated building and for a hand-written one
+  @review
+  Scenario: blueprints make the generated and hand-written architect entries visible on the map
     Given the save "test-colony" is loaded
     When I designate a "ASNeolithicLargePotChunkGranite" from (140, 155) to (140, 155)
     And I designate a "ASNeolithicPlinthChunkGranite" from (144, 155) to (144, 155)
@@ -51,15 +52,24 @@ Feature: the stone variants are generated at load time
     And a blueprint for "ASNeolithicLargePot" is at (152, 155)
     And a blueprint for "ASNeolithicWoodPile" is at (156, 155)
     And no errors were logged
+    When I zoom all the way in
+    And I move the camera to (148, 155)
+    And I wait 30 ticks
+    Then I take a screenshot "the architect entries placed as granite and wooden blueprints"
 
   @requires:Odyssey
-  Scenario: and for the vacstone buildings
+  @review
+  Scenario: the vacstone architect entries can be placed as blueprints
     Given the save "test-colony" is loaded
     When I designate a "ASNeolithicLargePotChunkVacstone" from (140, 155) to (140, 155)
     And I designate a "ASNeolithicChunkStorageChunkVacstone" from (148, 155) to (148, 155)
     Then a blueprint for "ASNeolithicLargePotChunkVacstone" is at (140, 155)
     And a blueprint for "ASNeolithicChunkStorageChunkVacstone" is at (148, 155)
     And no errors were logged
+    When I zoom all the way in
+    And I move the camera to (144, 155)
+    And I wait 30 ticks
+    Then I take a screenshot "the vacstone architect entries placed as blueprints"
 
   Scenario: one generated building of each kind can be placed without an error
     Given the save "test-colony" is loaded

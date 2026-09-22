@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-stage:        prepublished
+stage:        tested
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 dependencies: declared
@@ -16,8 +16,8 @@ tested_on:    2026-09-21, WSL Pickle suite: English, French and Russian, with an
 workshop:     3806101377
 settings_audit: not_applicable
 build_audit: complete
-audit_revision: ae237ea0103df912b531075d330c6c8089b2fddc
-audit_evidence: tests/workflow-audit-2026-09-21/README.md
+audit_revision: 531ff954e5fe33502c46e0b8d65a2f65b1a5223d
+audit_evidence: STATUS.md, "Current audit under AUDIT.md — 2026-09-22"
 remaining:
   - resolved 2026-09-22 (done -> tested), owner decision: sprinting to v1.0.0, Virginie accepted the 2026-09-21 testing state as sufficient without a fresh Pickle run, because her own Windows RimWorld was open and Run-PickleWsl.ps1 refuses to launch anything, in the WSL included, while it is. Specifically not reverified live: the colourless-chunk patch fix (ad91e5a, `tests/Test-Mod.ps1` and the framework's own generator both cover it statically; no Pickle run has played on top of it) and the six Workshop-page pictures (feature 11 and `Source/PublicationSteps.cs` are written and compiled, never played). stage moves to tested on that basis; `tested_on` above records exactly what was and was not seen running.
   - resolved 2026-09-21 (preTest -> done): the Pickle suite is written in tests/Pickle (41 scenarios, 7 features, 22 @review captures, no step assembly), scope justified in tests/Pickle/README.md and TESTING.md. It was played eight times in the WSL the same day. At 20 scenarios: 19 played of 19 (16 passed, 1 failed on a defect of the suite, 2 skipped as @wip), then English 20 of 20 (18 passed), then French 20 of 20 (all passed), exitReason passed each time. Widened afterwards, four passes: English 32 of 32 with 3 failed (my wrong assumption that Pickle sees the implied blueprint defs), then English 31 of 31 and French 31 of 31, 22 passed each with the 9 @wip skipped, exitReason passed; then the French feature 05 alone, 9 of 9 with 6 passed and 3 failed (two ambiguous defNames and a guessed blueprint label, all the suite's own). Every failure so far was a defect of the suite, none of the mod. 05 was rewritten (8 scenarios) and replayed in French: 8 of 8 passed, exitReason passed. Results: tests/pickle-run-2026-09-21/ and its -second, -french, -widened-en, -widened-en2, -widened-fr, -widened-fr-wip, -widened-fr-wip2 siblings.
@@ -27,6 +27,8 @@ remaining:
   - unverified (done -> tested): Full English/French game load of the translation hook, blueprints, frames, finished buildings, plinth art and UI, in developer mode.
   - unverified (done -> tested): Execute the TESTING.md scenarios in game on a new game and an existing save, inspect logs, run the Pickle suite and open its @review captures. Options, persistence and MainButtons shortcut are not applicable (no settings).
   - publishing (tested -> prepublished), state 2026-09-22 10:15: DONE: repository pushed, DLL matches the sources; the About.xml description is in the required order (body, IF I GO QUIET with the adoption clause word for word, AI-GENERATED naming DALL-E (OpenAI) by name, THANKS with the redundant Claude Code line removed on Virginie's word, attribution and licence line, "Source code on GitHub" link last); PUBLICATION.md written and corrected (order of the six page pictures, two thanks messages under 1000 characters each in a fan tone, in BBCode — Harmony dropped, comments disabled on his page — dependencies and DLC decided from the sources, adult-content reading with the human-meat pot texture opened, what to do after the upload); `Preview.png` recomposed on Virginie's word, its title/summary block moved bottom-right instead of top-left (`Art/preview.html`, veil gradient origin moved to match), rendered with `node Art/render-preview.cjs` (local `playwright`+`sharp`, gitignored), contrast and size checks still pass (h1 6.01, suffix 5.35, summary 6.90, badge 6.72, 673 KB); the six Workshop pictures produced (feature 11, 6 of 6 passed, `tests/pickle-run-2026-09-22-workshop-captures/`), opened, and hand-cropped into `Art/WorkshopScreenshots/` to remove the fixture colony bleeding into frame — a colour-tint seam from the colony's home-area zone and the map's own scattered rock decoration remain, accepted as-is by owner decision rather than rerun; the raw frames stay under `.build/` for reference. The Workshop item itself was created out of this order this morning (see the section above): `About.xml`'s description had already gone to Steam at 09:11, before the THANKS fix, so any of today's wording corrections apply to the live page only by hand, never by re-running `SetItemDescription`. NOT DONE: tag v1.0.0 and the GitHub release with the changelog (outward action, waits for the owner); the adult-content boxes, now answerable from the real page images; uploading the six images to the Steam page; the thanks messages, posted after the item is public and once she confirms the reading above.
+  - unverified (tested -> prepublished), re-audited 2026-09-22 at `531ff95`: the mandatory tag `v1.0.0` and its GitHub release containing CHANGELOG.md do not exist (`git tag --list` is empty). This is a missing prepublication criterion, not a defect in the mod. The working tree is clean and HEAD equals `origin/main`; static, installed-assembly, DefInjected and XML-field checks were rerun successfully. No RimWorld process or in-game test was launched by this audit.
+  - unverified (done -> tested), 2026-09-22: the suite now stages `nelim.pickletools.research` in its normal and stone passes and uses its shared research-tab steps for the mod scenarios. The architect-route blueprint scenarios now attach review captures (Core/generated/hand-written and Odyssey/vacstone). Their feature edits and the rebuilt step DLL passed offline checks, but no Pickle pass has played this revision; review the new captures after the next permitted run.
   - optional: case-sensitive runtime check of the Russian DefInjected folder (Steam Deck). Russian vacstone coverage was completed on 2026-09-21 (six entries, written by Claude from the official Odyssey term, not reviewed by a Russian speaker; disclosure to repeat in the AI-GENERATED section at prepublished).
 session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
 updated:      2026-09-22
@@ -35,6 +37,29 @@ modicon_audit: complete
 ---
 
 # Adaptive Storage Neolithic Renew — status
+
+## Current audit under AUDIT.md — 2026-09-22
+
+**Stage corrected from `prepublished` to `tested`.** The checkout is clean at
+`531ff954e5fe33502c46e0b8d65a2f65b1a5223d`, identical to `origin/main`; no local work was
+present at audit start. The former stage is not cumulatively established: AUDIT.md requires an
+existing version tag and a published GitHub release for `tested -> prepublished`, while `git tag
+--list` returned no tag and PUBLICATION.md records both actions as not done. A private Workshop
+item (`3806101377`) and its committed `PublishedFileId.txt` do not substitute for those criteria.
+
+| Control | Result |
+| --- | --- |
+| `pwsh -NoProfile -File tests/Test-Mod.ps1` | **PASS:** 1,410 static XML and generator-contract assertions. |
+| `pwsh -NoProfile -File tests/Test-InstalledTranslations.ps1` | **PASS:** 28 installed-assembly assertions; six stones materialized. |
+| `Check-DefInjected.ps1` with the installed framework target and assembly | **PASS:** 118 keys, 0 errors. |
+| `Check-XmlFields.ps1` with all installed framework assemblies | **PASS:** 28 files, no unknown fields. |
+| Direct image inspection | **Validated:** `ModIcon.png` is 128x128 (28,385 bytes); `Preview.png` is 896x504 (673,694 bytes, below 1 MB) and was opened. Existing preview QA records Segoe UI and contrast 5.35:1 or higher for every text element. |
+| Runtime | **Not run by this audit:** AUDIT.md expressly forbids launching RimWorld here. Historical `tested_on` evidence is preserved above and not restated as a new run. |
+
+All independent completed audits remain retained: settings are `not_applicable`, and English,
+French and localization are `complete`. The sole next transition blocker is publication readiness:
+create and push tag `v1.0.0`, then publish the matching GitHub release with CHANGELOG.md. The
+remaining Steam actions are recorded separately in PUBLICATION.md and are not claimed complete.
 
 ## prepublished — 2026-09-22, owner decision, then the item created
 

@@ -105,15 +105,16 @@ Feature: French names on the generated buildings
   # The same tab as in `01`, in French: the label the window drew on the tab record is the translation
   # as the window got it (LabelCap when it opened), where the scenario above reads the def's field.
   # The tab is opened by defName with this suite's own step (see `01` for why no click can do it).
+  @requires:nelim.pickletools.research
   @review
   Scenario: the framework's research tab reads Stockage and lists both projects
     Given the save "test-colony" is loaded
-    When I open the Adaptive Storage Neolithic Renew research tab "ASFAdaptiveStorage"
+    When Nelim's Pickle Tools: I open the research tab "ASFAdaptiveStorage"
     And I wait 30 ticks
-    Then the Adaptive Storage Neolithic Renew research window is on the tab "ASFAdaptiveStorage"
-    And the Adaptive Storage Neolithic Renew research window labels the tab "ASFAdaptiveStorage" as "Stockage"
-    And the Adaptive Storage Neolithic Renew research window lists the project "ASNeolithicNeolithicStorage" costing 400
-    And the Adaptive Storage Neolithic Renew research window lists the project "ASNeolithicNeolithicItemDisplay" costing 400
+    Then Nelim's Pickle Tools: the research window is on the tab "ASFAdaptiveStorage"
+    And Nelim's Pickle Tools: the research window labels the tab "ASFAdaptiveStorage" as "Stockage"
+    And Nelim's Pickle Tools: the research window lists the project "ASNeolithicNeolithicStorage" costing 400
+    And Nelim's Pickle Tools: the research window lists the project "ASNeolithicNeolithicItemDisplay" costing 400
     And I take a screenshot "the research window on the storage tab, in French"
     When I close all dialogs
 

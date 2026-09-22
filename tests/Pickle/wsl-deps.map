@@ -4,3 +4,4 @@
 # The framework is a hard dependency of the mod, but the shared table in the staging script does
 # not know its Workshop id, and a dependency it cannot place stops the run.
 adaptive.storage.framework   3033901359
+nelim.pickletools.research   path:PickleTools/ResearchSteps/Mod

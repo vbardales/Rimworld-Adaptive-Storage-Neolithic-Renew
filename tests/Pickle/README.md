@@ -74,9 +74,10 @@ through the map instead, by the inspect pane, which looks at the thing rather th
 
 Left out, or moved:
 
-- **The architect menu itself.** No vanilla Pickle step reads it. What decides its content is checked statically by
-  `Test-Mod.ps1` (decided 2026-09-21): each hand-written building is unlocked by the right research project, and each
-  generated building joins the dropdown group of its kind, so the stone variants collapse into one entry.
+- **The architect menu's internal list/dropdown widget.** No installed Pickle step reads it. It is not a manual
+  action: `02-generated-stones` places the generated and hand-written entries through the architect route and attaches
+  review captures of the resulting blueprints, including vacstone. `Test-Mod.ps1` separately verifies research
+  prerequisites and dropdown-group contracts. The only human verdict is on the attached image.
 - **A stone from a third-party mod (TESTING.md 4b)**: written the same day, in `06` and the French half of `05`, run in the "stones" pass.
 - **Russian on a case-sensitive filesystem (TESTING.md 8)**: written the same day, as `07`, run in a Russian game: the WSL is ext4.
 - **The original mod refused (TESTING.md 9)**: out of scope. It is an `About.xml` declaration checked by `Test-Mod.ps1`, and
@@ -84,14 +85,15 @@ Left out, or moved:
   the same reasoning: the game reads `About/ModIcon.png` from a fixed path and `Test-Mod.ps1` checks the file.
 - **Settings, MainButtons shortcut**: the mod has none (`settings_audit: not_applicable`).
 
-## One step assembly, for the research tab
+## One local step, plus the shared research tool
 
-Every step is a Pickle vanilla step except five, in `Source/ResearchTabSteps.cs`, built by `Source/Build.ps1` into
+Every step is a Pickle vanilla step except the local no-overlap assertion in `Source/ResearchTabSteps.cs`, built by `Source/Build.ps1` into
 `Mod/Pickle/Assemblies/AdaptiveStorageNeolithicRenew.PickleSteps.dll` (the test companion, never `Mod/`, which Steam receives).
 `ArchitectStudio/Tests/Pickle/Source/` was the model; the build differs, it uses the Windows .NET Framework compiler as
 `Source/Build.ps1` does for the mod, so the source is C# 5.
 
-Why a step was needed. The research window draws its tabs as `TabRecord`s through `TabDrawer.DrawTabsOverflow`, read off the
+The research-window access and assertions now use `PickleTools/ResearchSteps`, staged in every applicable pass map as
+`nelim.pickletools.research`; the consuming scenarios carry its `@requires` tag. The research window draws its tabs as `TabRecord`s through `TabDrawer.DrawTabsOverflow`, read off the
 game's `MainTabWindow_Research`; that records no button tag, so `I click button "Storage"` could never find one (the failure of
 2026-09-21, "no tags recorded this frame"). The guess in the first version of this file was right. The steps do not click:
 
