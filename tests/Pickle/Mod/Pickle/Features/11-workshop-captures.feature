@@ -70,10 +70,10 @@ Feature: the pictures of the Workshop page
     Given the save "test-colony" is loaded
     And I set the hour to 12
     And I set the weather to "Clear"
-    And a "ASNeolithicChunkStorageChunkGranite" is built at (140, 155)
-    And a "ASNeolithicChunkStorageChunkGranite" is built at (143, 155)
-    And a "ASNeolithicChunkStorageChunkGranite" is built at (146, 155)
-    And a "ASNeolithicChunkStorageChunkMarble" is built at (149, 155)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (140, 155)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (143, 155)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (146, 155)
+    And a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (149, 155)
     When I spawn a "ChunkGranite" at (140, 155)
     And I spawn a "ChunkGranite" at (143, 155)
     And I spawn a "ChunkGranite" at (143, 155)
@@ -105,7 +105,7 @@ Feature: the pictures of the Workshop page
     And a "ASNeolithicLargePot" is built at (142, 155)
     And a "ASNeolithicLargePot" is built at (144, 155)
     And a "ASNeolithicLargePot" is built at (146, 155)
-    And a "ASNeolithicLargePotChunkGranite" is built at (148, 155)
+    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (148, 155)
     And a "ASNeolithicLargePot" is built at (150, 155)
     When I spawn a "RawBerries" at (140, 155)
     And I spawn a "Milk" at (142, 155)
@@ -128,8 +128,8 @@ Feature: the pictures of the Workshop page
     And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicPlinthWoody" is built at (144, 155)
-    And a "ASNeolithicPlinthChunkGranite" is built at (146, 155)
-    And a "ASNeolithicPlinthChunkVacstone" is built at (148, 155)
+    And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (146, 155)
+    And a "ASNeolithicPlinthStone" made from "ChunkVacstone" is built at (148, 155)
     When I spawn a "Gold" at (144, 155)
     And I spawn a "Silver" at (146, 155)
     And I spawn a "Jade" at (148, 155)
@@ -146,10 +146,10 @@ Feature: the pictures of the Workshop page
     Given the save "test-colony" is loaded
     And I set the hour to 12
     And I set the weather to "Clear"
-    And a "ASNeolithicLargePotChunkGranite" is built at (142, 155)
-    And a "ASNeolithicChunkStorageChunkGranite" is built at (144, 155)
-    And a "ASNeolithicLargePotChunkKura_Andesite" is built at (148, 155)
-    And a "ASNeolithicChunkStorageChunkKura_Andesite" is built at (150, 155)
+    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (142, 155)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (144, 155)
+    And a "ASNeolithicLargePotStone" made from "Kura_Andesite" is built at (148, 155)
+    And a "ASNeolithicChunkStorage" made from "Kura_Andesite" is built at (150, 155)
     When I spawn a "RawBerries" at (142, 155)
     And I spawn a "ChunkGranite" at (144, 155)
     And I spawn a "ChunkGranite" at (144, 155)

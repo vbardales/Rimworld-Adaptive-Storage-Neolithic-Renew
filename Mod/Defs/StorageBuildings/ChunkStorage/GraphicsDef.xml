@@ -2,7 +2,9 @@
 <Defs>
 	<AdaptiveStorage.GraphicsDef>
 		<defName>ASNeolithicChunkStorageA</defName>
-		<targetDefs />
+		<targetDefs>
+			<li>ASNeolithicChunkStorage</li>
+		</targetDefs>
 		<graphics>
 			<li>
 				<graphicData>
@@ -17,7 +19,7 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,2)</drawSize>
 				</graphicData>
-				<minimumStackCount>2</minimumStackCount>
+				<minimumStackCount>3</minimumStackCount>
 			</li>
 			<li>
 				<graphicData>
@@ -25,7 +27,7 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,2)</drawSize>
 				</graphicData>
-				<minimumStackCount>6</minimumStackCount>
+				<minimumStackCount>8</minimumStackCount>
 			</li>
 		</graphics>
 		<showContainedItems>false</showContainedItems>
@@ -35,7 +37,9 @@
 	<!-- disabled for now -->
 	<!-- AdaptiveStorage.GraphicsDef>
 		<defName>ASNeolithicChunkStorageB</defName>
-		<targetDefs />
+		<targetDefs>
+			<li>ASNeolithicChunkStorage</li>
+		</targetDefs>
 		<graphics>
 			<li>
 				<graphicData>
@@ -50,7 +54,7 @@
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(3,2)</drawSize>
 				</graphicData>
-				<minimumStackCount>2</minimumStackCount>
+				<minimumStackCount>3</minimumStackCount>
 			</li>
 			<li>
 				<graphicData>
@@ -58,7 +62,7 @@
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(3,2)</drawSize>
 				</graphicData>
-				<minimumStackCount>6</minimumStackCount>
+				<minimumStackCount>8</minimumStackCount>
 			</li>
 		</graphics>
 		<showContainedItems>false</showContainedItems>

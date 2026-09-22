@@ -3,11 +3,15 @@
 	<AdaptiveStorage.GraphicsDef Name="ASNeolithicLargePotBase" Abstract="True">
 		<targetDef>ASNeolithicLargePot</targetDef>
 		<showContainedItems>false</showContainedItems>
+		<allowedRequirement>All</allowedRequirement>
 	</AdaptiveStorage.GraphicsDef>
 
 	<AdaptiveStorage.GraphicsDef Name="ASNeolithicLargePotStoneBase" Abstract="True">
-		<targetDefs /><!-- Patched in -->
+		<targetDefs>
+			<li>ASNeolithicLargePotStone</li>
+		</targetDefs>
 		<showContainedItems>false</showContainedItems>
+		<allowedRequirement>All</allowedRequirement>
 	</AdaptiveStorage.GraphicsDef>
 
 	<AdaptiveStorage.GraphicsDef ParentName="ASNeolithicLargePotBase">
@@ -17,7 +21,7 @@
 				<graphicData>
 					<texPath>ASNeolithic/LargePot/LargePotBase</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 			</li>
@@ -25,7 +29,7 @@
 				<graphicData>
 					<texPath>ASNeolithic/LargePot/LargePotMixed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -41,7 +45,7 @@
 				<graphicData>
 					<texPath>ASNeolithic/LargePot/LargePotBaseStone</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 			</li>
@@ -49,7 +53,7 @@
 				<graphicData>
 					<texPath>ASNeolithic/LargePot/LargePotMixedStone</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -66,7 +70,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotAgave_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -76,13 +80,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotAgave_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawAgave</li>
 		</requiredThingDefs>
@@ -96,7 +99,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotBerries_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -106,13 +109,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotBerries_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawBerries</li>
 		</requiredThingDefs>
@@ -126,7 +128,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotCorn_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -136,13 +138,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotCorn_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawCorn</li>
 		</requiredThingDefs>
@@ -156,7 +157,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotEgg_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -166,7 +167,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotEgg_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
@@ -186,7 +187,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotFungus_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -196,13 +197,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotFungus_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawFungus</li>
 		</requiredThingDefs>
@@ -216,7 +216,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotHumanMeat_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -226,13 +226,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotHumanMeat_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Meat_Human</li>
 		</requiredThingDefs>
@@ -246,7 +245,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotInsectMeat_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -256,13 +255,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotInsectMeat_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Meat_Megaspider</li>
 		</requiredThingDefs>
@@ -276,7 +274,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotJelly_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -286,13 +284,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotJelly_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>InsectJelly</li>
 		</requiredThingDefs>
@@ -306,7 +303,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotKibble_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -316,13 +313,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotKibble_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Kibble</li>
 		</requiredThingDefs>
@@ -336,7 +332,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotMeat_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -346,7 +342,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotMeat_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
@@ -369,7 +365,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotMilk_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -379,13 +375,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotMilk_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Milk</li>
 		</requiredThingDefs>
@@ -399,7 +394,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotPemmican_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -409,13 +404,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotPemmican_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Pemmican</li>
 		</requiredThingDefs>
@@ -429,7 +423,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotPotato_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -439,13 +433,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotPotato_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawPotatoes</li>
 		</requiredThingDefs>
@@ -459,7 +452,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotRice_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -469,13 +462,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotRice_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawRice</li>
 		</requiredThingDefs>
@@ -489,7 +481,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotToxiPotato_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -499,13 +491,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotToxiPotato_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawToxipotato</li>
 		</requiredThingDefs>
@@ -519,7 +510,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneAgave_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -529,13 +520,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneAgave_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawAgave</li>
 		</requiredThingDefs>
@@ -549,7 +539,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneBerries_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -559,13 +549,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneBerries_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawBerries</li>
 		</requiredThingDefs>
@@ -579,7 +568,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneCorn_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -589,13 +578,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneCorn_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawCorn</li>
 		</requiredThingDefs>
@@ -609,7 +597,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneEgg_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -619,7 +607,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneEgg_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
@@ -639,7 +627,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneFungus_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -649,13 +637,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneFungus_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawFungus</li>
 		</requiredThingDefs>
@@ -669,7 +656,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneHumanMeat_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -679,13 +666,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneHumanMeat_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Meat_Human</li>
 		</requiredThingDefs>
@@ -699,7 +685,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneInsectMeat_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -709,13 +695,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneInsectMeat_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Meat_Megaspider</li>
 		</requiredThingDefs>
@@ -729,7 +714,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneJelly_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -739,13 +724,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneJelly_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>InsectJelly</li>
 		</requiredThingDefs>
@@ -759,7 +743,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneKibble_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -769,13 +753,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneKibble_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Kibble</li>
 		</requiredThingDefs>
@@ -789,7 +772,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneMeat_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -799,7 +782,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneMeat_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
@@ -822,7 +805,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneMilk_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -832,13 +815,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneMilk_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Milk</li>
 		</requiredThingDefs>
@@ -852,7 +834,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStonePemmican_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -862,13 +844,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStonePemmican_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>Pemmican</li>
 		</requiredThingDefs>
@@ -882,7 +863,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStonePotato_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -892,13 +873,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStonePotato_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawPotatoes</li>
 		</requiredThingDefs>
@@ -912,7 +892,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneRice_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -922,13 +902,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneRice_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawRice</li>
 		</requiredThingDefs>
@@ -942,7 +921,7 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneToxiPotato_HalfFull</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
@@ -952,13 +931,12 @@
 					<texPath>ASNeolithic/LargePot/LargePotStoneToxiPotato_Full</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 					<drawRotated>false</drawRotated>
 				</graphicData>
 				<minimumStackCount>3</minimumStackCount>
 			</li>
 		</graphics>
-		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
 		<requiredThingDefs>
 			<li>RawToxipotato</li>
 		</requiredThingDefs>

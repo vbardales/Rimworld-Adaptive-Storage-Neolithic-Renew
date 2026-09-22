@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="ASNeolithicStorageBase" Name="ASNeolithicChunkStorageBase" Abstract="True">
+	<ThingDef ParentName="ASNeolithicStorageBase" Name="ASNeolithicChunkStorageBase">
+		<defName>ASNeolithicChunkStorage</defName>
 		<graphicData>
 			<texPath>ASNeolithic/ChunkStorage/StoneChunksStage1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,2)</drawSize>
 		</graphicData>
-		<label>stacked chunks</label>
+		<label>stack</label>
 		<description>A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover.</description>
 		<fillPercent>0.50</fillPercent>
 		<uiIconPath>ASNeolithic/ChunkStorage/StoneChunksStage3_south</uiIconPath>
-		<uiIconScale>1.6</uiIconScale>
+		<uiIconScale>1.4</uiIconScale>
 		<size>(2,1)</size>
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToBuild>1200</WorkToBuild>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
 			<Flammability>0</Flammability>
-			<Beauty>-16</Beauty>
+			<Beauty>-8</Beauty>
 			<Cleanliness>-2</Cleanliness>
 			<Mass>40</Mass>
 		</statBases>
+		<costStuffCount>2</costStuffCount>
+		<stuffCategories>
+			<li>ASFStoneChunks</li>
+		</stuffCategories>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<building>
-			<maxItemsInCell>3</maxItemsInCell>
+			<maxItemsInCell>4</maxItemsInCell>
 		</building>
-		<designatorDropdown>ASNeolithicChunkStorage</designatorDropdown>
+		<modExtensions>
+			<li Class="AdaptiveStorage.Extension">
+				<lockStorageSettingsToStuff>true</lockStorageSettingsToStuff>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

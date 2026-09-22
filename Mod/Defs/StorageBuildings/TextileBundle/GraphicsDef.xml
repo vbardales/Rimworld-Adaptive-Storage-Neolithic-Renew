@@ -8,14 +8,14 @@
 				<graphicData>
 					<texPath>ASNeolithic/TextileBundle/TextileBundleFabrica</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 				</graphicData>
 			</li>
 			<li>
 				<graphicData>
 					<texPath>ASNeolithic/TextileBundle/TextileBundleFabricb</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
 			</li>
@@ -23,7 +23,7 @@
 				<graphicData>
 					<texPath>ASNeolithic/TextileBundle/TextileBundleFabricc</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 				</graphicData>
 				<minimumStackCount>4</minimumStackCount>
 			</li>
@@ -39,14 +39,14 @@
 				<graphicData>
 					<texPath>ASNeolithic/TextileBundle/TextileBundleLeathera</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 				</graphicData>
 			</li>
 			<li>
 				<graphicData>
 					<texPath>ASNeolithic/TextileBundle/TextileBundleLeatherb</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
 			</li>
@@ -54,7 +54,7 @@
 				<graphicData>
 					<texPath>ASNeolithic/TextileBundle/TextileBundleLeatherc</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 				</graphicData>
 				<minimumStackCount>4</minimumStackCount>
 			</li>

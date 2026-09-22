@@ -1,66 +1,38 @@
-param(
-    [string]$Managed = 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed',
-    [string]$Framework = 'C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3033901359',
-    [string]$Harmony = 'C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll'
-)
+# Run with: pwsh -NoProfile -File tests/Test-InstalledTranslations.ps1
+# Stone buildings now use ordinary stuff labels, so no runtime translation DLL is required.
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
-[void][Reflection.Assembly]::LoadFrom("$Managed/UnityEngine.CoreModule.dll")
-[void][Reflection.Assembly]::LoadFrom("$Managed/Assembly-CSharp.dll")
-[void][Reflection.Assembly]::LoadFrom($Harmony)
-$generator = [Reflection.Assembly]::LoadFrom("$Framework/1.6/Assemblies/GeneratorOperation.dll")
-[void][Reflection.Assembly]::LoadFrom("$root/Mod/Assemblies/NeolithicRenew.dll")
+$modRoot = Join-Path $root 'Mod'
 $script:checks = 0
-function Check($condition, $message) {
+
+function Assert-True($Condition, [string]$Message) {
     $script:checks++
-    if (-not $condition) { throw $message }
+    if (-not $Condition) { throw "FAIL: $Message" }
 }
-# Isolate field tests from Unity native constructors, using real game types and mod code.
-$compiler = Join-Path $env:WINDIR 'Microsoft.NET/Framework64/v4.0.30319/csc.exe'
-[void](New-Item "$root/.build" -ItemType Directory -Force)
-& $compiler /nologo /target:library "/out:$root/.build/TranslationChecks.dll" `
-    "/reference:$Managed/Assembly-CSharp.dll" "/reference:$Managed/UnityEngine.CoreModule.dll" `
-    "/reference:$root/Mod/Assemblies/NeolithicRenew.dll" (Join-Path $root 'tests/TranslationChecks.cs')
-if ($LASTEXITCODE -ne 0) { throw 'Test compilation failed.' }
-[void][Reflection.Assembly]::LoadFrom("$root/.build/TranslationChecks.dll")
-$script:checks += [TranslationChecks]::Run($root)
-# Materialize the actual installed generator output for the shared injection-path checker.
-$materialized = Join-Path $root '.build/translation-targets'
-[void](New-Item "$materialized/Defs" -ItemType Directory -Force)
-$tree = [xml]'<Defs/>'
-foreach ($file in Get-ChildItem "$root/Mod/Defs" -Recurse -Filter *.xml) {
-    foreach ($node in ([xml](Get-Content $file.FullName -Raw)).SelectNodes('/Defs/*')) {
-        [void]$tree.DocumentElement.AppendChild($tree.ImportNode($node,$true))
+
+$defs = @{}
+Get-ChildItem (Join-Path $modRoot 'Defs') -Recurse -Filter *.xml -File | ForEach-Object {
+    $xml = [xml](Get-Content $_.FullName -Raw)
+    foreach ($node in $xml.SelectNodes('/Defs/*[defName]')) { $defs[$node.defName] = $true }
+}
+
+foreach ($language in @('French', 'Russian')) {
+    $languageRoot = Join-Path $modRoot "Languages/$language/DefInjected"
+    Assert-True (Test-Path $languageRoot) "$language DefInjected folder exists"
+    $files = @(Get-ChildItem $languageRoot -Recurse -Filter *.xml -File)
+    Assert-True ($files.Count -eq 3) "$language has three DefInjected files"
+    foreach ($file in $files) {
+        $xml = [xml](Get-Content $file.FullName -Raw)
+        foreach ($entry in $xml.LanguageData.ChildNodes | Where-Object NodeType -eq Element) {
+            $defName = $entry.Name.Split('.')[0]
+            Assert-True ($defs.ContainsKey($defName)) "$language translation targets existing def $defName"
+            Assert-True (-not [string]::IsNullOrWhiteSpace($entry.InnerText)) "$language translation $($entry.Name) is not empty"
+        }
     }
 }
-$gameData = Join-Path $Managed '../../Data'
-foreach ($file in Get-ChildItem $gameData -Recurse -Filter *.xml | Where-Object FullName -match '[\\/]Defs[\\/]') {
-    foreach ($node in ([xml](Get-Content $file.FullName -Raw)).SelectNodes('/Defs/ThingDef[@ParentName="ChunkRockBase"]')) {
-        [void]$tree.DocumentElement.AppendChild($tree.ImportNode($node,$true))
-    }
-}
-$stoneCount = $tree.SelectNodes('/Defs/ThingDef[@ParentName="ChunkRockBase"]').Count
-Check ($stoneCount -ge 5) 'Installed Core chunks not found'
-# A chunk without a colour, or with an empty one, must not reach the framework's own generator, which would leave a template
-# expression unresolved and take the game down: the crash reported on the original mod's page for the crystal chunk of
-# Biomes! Caverns. Added after the count above, and the count below stays 3 per real stone, so none of them is generated from.
-foreach ($colourless in @(
-    '<ThingDef ParentName="ChunkRockBase"><defName>ChunkNoColour</defName><label>colourless chunk</label></ThingDef>',
-    '<ThingDef ParentName="ChunkRockBase"><defName>ChunkEmptyColour</defName><label>empty-colour chunk</label><graphicData><color/></graphicData></ThingDef>')) {
-    [void]$tree.DocumentElement.AppendChild($tree.ImportNode(([xml]$colourless).DocumentElement, $true))
-}
-$beforeGeneration = $tree.SelectNodes('/Defs/ThingDef').Count
-foreach ($file in Get-ChildItem "$root/Mod/Patches" -Filter *.xml) {
-    $xml = [xml](Get-Content $file.FullName -Raw)
-    $template = $xml.SelectSingleNode('/Patch/Operation[@Class="GeneratorOperation.DefGenerator"]')
-    $operation = [Activator]::CreateInstance($generator.GetType('GeneratorOperation.DefGenerator'))
-    $operation.value = $template.SelectSingleNode('value').InnerText
-    $operation.GetType().BaseType.BaseType.GetField('xpath',[Reflection.BindingFlags]'Instance,NonPublic').SetValue($operation,$template.xpath)
-    $method = $operation.GetType().GetMethod('ApplyWorker',[Reflection.BindingFlags]'Instance,NonPublic')
-    Check ($method.Invoke($operation,@($tree))) "Installed generator failed: $($file.Name)"
-}
-Check (($tree.SelectNodes('/Defs/ThingDef').Count - $beforeGeneration) -eq (3 * $stoneCount)) 'Unexpected generated count'
-# Chunks belong to Core/DLC targets, which the checker already loads separately.
-foreach ($node in @($tree.SelectNodes('/Defs/ThingDef[@ParentName="ChunkRockBase"]'))) { [void]$tree.DocumentElement.RemoveChild($node) }
-$tree.Save("$materialized/Defs/Materialized.xml")
-Write-Output "PASS: $script:checks installed-assembly assertions; $stoneCount stones materialized at $materialized. No game UI was launched."
+
+Assert-True (-not (Test-Path (Join-Path $modRoot 'Assemblies/NeolithicRenew.dll'))) 'Obsolete translation assembly removed'
+Assert-True (-not (Test-Path (Join-Path $modRoot 'Languages/English/Keyed/Generated.xml'))) 'Obsolete generated English keys removed'
+Assert-True (-not (Test-Path (Join-Path $modRoot 'Languages/French/Keyed/Generated.xml'))) 'Obsolete generated French keys removed'
+
+Write-Output "PASS: $script:checks installed-translation assertions"

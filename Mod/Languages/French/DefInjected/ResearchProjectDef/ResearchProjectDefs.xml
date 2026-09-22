@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-    <ASNeolithicNeolithicStorage.label>stockage néolithique</ASNeolithicNeolithicStorage.label>
-    <ASNeolithicNeolithicStorage.description>Construire des conteneurs simples et des moyens de stockage pour les matériaux de base.</ASNeolithicNeolithicStorage.description>
+	<ASNeolithicNeolithicStorage.label>stockage néolithique</ASNeolithicNeolithicStorage.label>
+	<ASNeolithicNeolithicStorage.description>Construire des conteneurs simples et des moyens de stockage pour les matériaux de base.</ASNeolithicNeolithicStorage.description>
 
-    <ASNeolithicNeolithicItemDisplay.label>présentoir néolithique</ASNeolithicNeolithicItemDisplay.label>
-    <ASNeolithicNeolithicItemDisplay.description>Construire des socles simples, mais esthétiques pour exposer des objets.</ASNeolithicNeolithicItemDisplay.description>
+	<ASNeolithicNeolithicItemDisplay.label>présentoir néolithique</ASNeolithicNeolithicItemDisplay.label>
+	<ASNeolithicNeolithicItemDisplay.description>Construire des socles simples, mais esthétiques pour exposer des objets.</ASNeolithicNeolithicItemDisplay.description>
 </LanguageData>

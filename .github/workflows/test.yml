@@ -1,4 +1,4 @@
-name: Mod XML tests
+name: Mod static tests
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate XML and generator contracts
+      - name: Validate XML and upstream architecture contracts
         shell: pwsh
         run: ./tests/Test-Mod.ps1
+      - name: Validate translated def targets
+        shell: pwsh
+        run: ./tests/Test-InstalledTranslations.ps1

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="GeneratorOperationV2.PatchGenerator">
+		<xpath>Defs/ThingDef[@ParentName="ChunkRockBase"]</xpath>
+		<value><![CDATA[
+			<Patch>
+				<Operation Class="DefNameLink.Operation">
+					<defName>ASNeolithicChunkStorage{defName/text()}</defName>
+					<targetDef>ASNeolithicChunkStorage</targetDef>
+				</Operation>
+				<Operation Class="DefNameLink.Operation">
+					<defName>Blueprint_ASNeolithicChunkStorage{defName/text()}</defName>
+					<targetDef>Blueprint_ASNeolithicChunkStorage</targetDef>
+				</Operation>
+				<Operation Class="DefNameLink.Operation">
+					<defName>Frame_ASNeolithicChunkStorage{defName/text()}</defName>
+					<targetDef>Frame_ASNeolithicChunkStorage</targetDef>
+				</Operation>
+				<Operation Class="SaveGameCompatibility.Operation">
+					<previousDefName>ASNeolithicChunkStorage{defName/text()}</previousDefName>
+					<newDefName>ASNeolithicChunkStorage</newDefName>
+					<newStuff>{defName/text()}</newStuff>
+				</Operation>
+				<Operation Class="DefNameLink.Operation">
+					<defName>ASNeolithicLargePot{defName/text()}</defName>
+					<targetDef>ASNeolithicLargePotStone</targetDef>
+				</Operation>
+				<Operation Class="DefNameLink.Operation">
+					<defName>Blueprint_ASNeolithicLargePot{defName/text()}</defName>
+					<targetDef>Blueprint_ASNeolithicLargePotStone</targetDef>
+				</Operation>
+				<Operation Class="DefNameLink.Operation">
+					<defName>Frame_ASNeolithicLargePot{defName/text()}</defName>
+					<targetDef>Frame_ASNeolithicLargePotStone</targetDef>
+				</Operation>
+				<Operation Class="DefNameLink.Operation">
+					<defName>Blueprint_Install_ASNeolithicLargePot{defName/text()}</defName>
+					<targetDef>Blueprint_Install_ASNeolithicLargePotStone</targetDef>
+				</Operation>
+				<Operation Class="SaveGameCompatibility.Operation">
+					<previousDefName>ASNeolithicLargePot{defName/text()}</previousDefName>
+					<newDefName>ASNeolithicLargePotStone</newDefName>
+					<newStuff>{defName/text()}</newStuff>
+				</Operation>
+				<Operation Class="DefNameLink.Operation">
+					<defName>ASNeolithicPlinth{defName/text()}</defName>
+					<targetDef>ASNeolithicPlinthStone</targetDef>
+				</Operation>
+				<Operation Class="DefNameLink.Operation">
+					<defName>Blueprint_ASNeolithicPlinth{defName/text()}</defName>
+					<targetDef>Blueprint_ASNeolithicPlinthStone</targetDef>
+				</Operation>
+				<Operation Class="DefNameLink.Operation">
+					<defName>Frame_ASNeolithicPlinth{defName/text()}</defName>
+					<targetDef>Frame_ASNeolithicPlinthStone</targetDef>
+				</Operation>
+				<Operation Class="SaveGameCompatibility.Operation">
+					<previousDefName>ASNeolithicPlinth{defName/text()}</previousDefName>
+					<newDefName>ASNeolithicPlinthStone</newDefName>
+					<newStuff>{defName/text()}</newStuff>
+				</Operation>
+			</Patch>
+		]]></value>
+	</Operation>
+</Patch>

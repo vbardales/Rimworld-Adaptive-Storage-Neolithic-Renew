@@ -2,6 +2,29 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased]
+
+### Changed
+
+- Rebased the delivered mod content on the original authors' current GitHub `main` (`2bc3fe4`)
+  instead of the older Workshop package.
+- Adopted upstream's stone-as-stuff architecture: the large stone pot, stone plinth and chunk stack
+  now use the framework's `ASFStoneChunks` category rather than generating one def per stone.
+- Adopted upstream's save-compatibility patch, current balance values, graphics definitions, shadows,
+  stack counts and integrated textures.
+- Removed the continuation-only Harmony translation assembly and Harmony dependency; material names
+  now come from RimWorld's ordinary stuff-label system.
+- Reworked the static and Pickle checks for stuffed buildings, including granite, vacstone and a
+  third-party stone. These revised runtime scenarios have not yet been played.
+
+### Fixed
+
+- Kept the Russian folder at the exact `DefInjected` casing required on Linux and Steam Deck.
+- Corrected French adjective agreement in the stone plinth description.
+
+The `1.0.0` section below describes the already-published, Workshop-based first release and is retained
+as release history; its implementation has now been superseded.
+
 ## [1.0.0] — 2026-09-22
 
 First release. Port of Soul, Phaneron and bradson's **Adaptive Storage Neolithic Module** to

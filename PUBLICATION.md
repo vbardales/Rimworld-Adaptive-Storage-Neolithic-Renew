@@ -1,8 +1,11 @@
 # Publishing Adaptive Storage Neolithic Renew
 
 What the Workshop page asks for and the repository does not hold anywhere else. It serves twice: for the first upload, and for whoever
-takes the mod over. Written 2026-09-21. **Nothing here has been done yet**: no screenshot for the page exists, no tag, no release, no
-upload. The state of each item is at the end.
+takes the mod over. Written 2026-09-21 and updated after the upstream-source correction on 2026-09-22.
+
+**Publication is paused.** The live item and its six existing screenshots describe the superseded Workshop-based implementation. The
+current tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff, and has no continuation DLL or direct Harmony
+dependency. Run and review the revised Pickle suite before replacing the live text and captures.
 
 The description is in `Mod/About/About.xml` and is sent **only when the item is created**: a correction afterwards is made by hand on the
 Steam page, never from `About.xml`. Read it once more before clicking.
@@ -29,7 +32,7 @@ not need cropping and would not show the seam. The raw, uncropped frames are als
 | 3 | `workshop-3-chunk-stacks.png` | Granite chunk stacks at one, two and six chunks, and a marble one | The sprite changes with the load, and takes the colour of what is in it |
 | 4 | `workshop-4-large-pots.png` | Six large pots with different food | 64 texture variants: contents and material |
 | 5 | `workshop-5-plinths.png` | Three plinths, each showing an item | The display case |
-| 6 | `workshop-6-a-stone-from-another-mod.png` | The pot and the chunk stack of a stone from another mod, beside granite | The generators build for every stone in the game, not a list |
+| 6 | `workshop-6-a-stone-from-another-mod.png` | The pot and the chunk stack of a stone from another mod, beside granite | Compatible stone chunks work through the shared stuff category, not a generated list |
 
 Not shown on purpose: the architect menu and its dropdown groups (no step reads it, and a hand-taken capture would be one more thing to
 redo after each change), and the research window, which shows only the framework's tab.
@@ -39,20 +42,19 @@ redo after each change), and the research window, which shows only the framework
 Post after the item is public: a link to a private item opens for nobody. Under 1000 characters each, the Steam comment limit. BBCode works
 in comments, and a bare Workshop item URL turns into a thumbnail. `THIS_ITEM` stands for this mod's own URL, known only after the upload.
 
-**No message for Harmony/Brrainz**: his Workshop page has comments disabled (checked 2026-09-22; same for Achtung!'s, noted for future
-reference). The AI-GENERATED/THANKS section of the description already credits him; nothing more to post.
+There is no separate Harmony thank-you message: Harmony is no longer used directly by this module.
 
 **Adaptive Storage Neolithic Module** (the original, https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895), for Soul, Phaneron and bradson. 856 characters:
 
 ```
-Hey! 🙏 Thank you SO much for this module and for setting it MIT — that's the rare kind of open that made this whole port possible. I brought Adaptive Storage Neolithic forward to 1.6 as [b]Adaptive Storage Neolithic Renew[/b] and honestly changed almost nothing, because it didn't need it: the buildings, the art, the stats, all yours 💛. Along the way I fixed the Russian folder that Linux/Steam Deck players were silently losing, finished French and Russian for vacstone, taught buildings made from other mods' stones to speak French too, and stopped a stone chunk with no colour (hi, Biomes! Caverns crystal chunk 👋) from crashing the game instead of just... not building anything. The original stays declared incompatible. Credit's all yours in the description and in ATTRIBUTION.md. Thanks again for making something worth keeping alive! ✨
+Hey! 🙏 Thank you for pointing me back to the GitHub repository. My first 1.6 upload was based on the older Workshop package; Adaptive Storage Neolithic Renew now follows your current `main`, including the stone-as-stuff migration, balance work, graphics and integrated textures. I kept the continuation metadata and 1.6/test work separate, and proposed the small supported-version, Linux casing and French grammar fixes back in PR #4. Credit for the buildings, art and current implementation remains yours in the description and ATTRIBUTION.md. Thanks again for the correction and for licensing the project openly. ✨
 THIS_ITEM
 ```
 
 **Adaptive Storage Framework** (https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359), for bradson. 488 characters:
 
 ```
-This framework is the actual magic ✨ — every single container in my module draws what's inside it because of you 🙌. I ported the Neolithic module to 1.6 as [b]Adaptive Storage Neolithic Renew[/b] and ran it in a real game on top of your 1.6 build, Core + Odyssey + a random third-party stone mod thrown in, zero errors 🎉. Reads your GraphicsDefs and your stone generators exactly as they are, no hacks needed. Thank you for building something this solid to build on top of! 💛
+This framework is the actual magic ✨ — every single container in my module draws what's inside it because of you 🙌. Adaptive Storage Neolithic Renew now follows the original module's current GitHub source and its ASFStoneChunks architecture, rather than the older Workshop package I first copied. The revised 1.6 runtime pass will cover Core, Odyssey and a third-party stone before I repost the result. Thank you for building something this solid to build on top of! 💛
 THIS_ITEM
 ```
 
@@ -60,13 +62,11 @@ THIS_ITEM
 
 Checked in the sources, not from intention.
 
-- **Required, declared in `modDependencies`:** Harmony (`brrainz.harmony`), because `Source/GeneratedTranslations.cs` patches the game with it; and the
-  Adaptive Storage Framework (`adaptive.storage.framework`), whose `AdaptiveStorageBase` every building inherits and whose `GraphicsDef` draws them.
+- **Required, declared in `modDependencies`:** Adaptive Storage Framework (`adaptive.storage.framework`), whose storage parents and graphics types the module uses.
 - **Not dependencies:**
-  - **Odyssey** and every stone mod are inputs of the generators, which build from every child of `ChunkRockBase`, so vacstone or any other stone is
-    picked up when present. Nothing is required, and the mod is played without Odyssey (five stones, fifteen generated buildings).
+  - **Odyssey** and stone mods may contribute things in the framework's `ASFStoneChunks` stuff category; no per-stone building defs are generated.
   - **Biotech**: two `GraphicsDef` entries carry `MayRequire="Ludeon.RimWorld.Biotech"` for the toxipotato pot; no dependency.
-- **`loadAfter`:** Harmony, `Ludeon.RimWorld`, the framework.
+- **`loadAfter`:** `Ludeon.RimWorld`, then the framework.
 - **Versions:** `supportedVersions` is 1.6 alone. There is no `LoadFolders.xml`: no versioned folder and no `IfModActive` branch to check, in this mod or
   in the framework's folder it stages.
 - **Incompatible:** `adaptive.storage.neolithic`, the original: both share every `defName`.
@@ -86,7 +86,7 @@ exist yet and must be opened before the boxes are answered for good. The boxes a
 - Steam creates every item **private**: RimWorld never calls `SetItemVisibility`. Subscribe to the item, test it, then make it public by hand.
 - Tag `1.0.0` and a GitHub release carrying the `CHANGELOG.md`. The owner chose the packageId-creation commit for this tag;
   the changelog already carries `[1.0.0]` with the release date.
-- Fill `workshop:` in `STATUS.md` with the item id, and post the two messages above (none for Harmony: comments disabled).
+- Fill `workshop:` in `STATUS.md` with the item id, and post the two messages above.
 
 ## State on 2026-09-22
 

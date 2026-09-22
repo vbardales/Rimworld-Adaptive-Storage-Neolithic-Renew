@@ -12,7 +12,7 @@ Feature: containers survive a save and a reload
 
   Scenario: a filled basket and a loaded chunk stack come back as they were
     Given a "ASNeolithicBasketWoody" is built at (145, 155)
-    And a "ASNeolithicChunkStorageChunkGranite" is built at (150, 155)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (150, 155)
     And I spawn a "Cloth" at (145, 155)
     And I spawn a "Steel" at (145, 155)
     And I spawn a "ChunkGranite" at (150, 155)
@@ -21,7 +21,7 @@ Feature: containers survive a save and a reload
     Then the save round trips
     When I save and reload
     Then a "ASNeolithicBasketWoody" is at (145, 155)
-    And a "ASNeolithicChunkStorageChunkGranite" is at (150, 155)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is at (150, 155)
     And a "Cloth" is at (145, 155)
     And a "Steel" is at (145, 155)
     And a "ChunkGranite" is at (150, 155)

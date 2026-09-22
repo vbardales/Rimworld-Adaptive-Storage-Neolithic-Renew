@@ -7,35 +7,35 @@
 			<texPath>ASNeolithic/HayPile/HayPileStage1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<description>A pile of hay for easier storage.</description>
 		<fillPercent>0.10</fillPercent>
-		<uiIconPath>ASNeolithic/HayPile/HayPileStage3</uiIconPath>
-		<uiIconScale>1.3</uiIconScale>
+		<uiIconPath>ASNeolithic/HayPile/HayPile_UI_Icon</uiIconPath>
+		<uiIconScale>1</uiIconScale>
 		<size>(2,1)</size>
 		<rotatable>false</rotatable>
 		<statBases>
-			<MaxHitPoints>30</MaxHitPoints>
-			<WorkToBuild>300</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
 			<Flammability>2</Flammability>
 			<Beauty>-2</Beauty>
-			<Mass>3</Mass>
+			<Mass>2</Mass>
+			<Cleanliness>-0.1</Cleanliness>
 		</statBases>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>10</costStuffCount>
+		<costStuffCount>5</costStuffCount>
 		<costList>
-			<Hay>75</Hay>
+			<Hay>15</Hay>
 		</costList>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<building>
-			<maxItemsInCell>3</maxItemsInCell>
+			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
 				<filter>
-					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<thingDefs>
 						<li>Hay</li>
 					</thingDefs>

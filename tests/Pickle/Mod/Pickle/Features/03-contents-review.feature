@@ -64,7 +64,7 @@ Feature: what a container shows of its contents
   # holds three per cell across two cells, so six is its full load. Chunks are spawned onto the
   # building's two cells, three each.
   Scenario: a granite chunk stack at one, two and six chunks
-    Given a "ASNeolithicChunkStorageChunkGranite" is built at (145, 155)
+    Given a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (145, 155)
     And I zoom all the way in
     And I move the camera to (146, 155)
     When I spawn a "ChunkGranite" at (145, 155)
@@ -83,7 +83,7 @@ Feature: what a container shows of its contents
   # The stack takes its colour from what is in it: a granite stack and a marble stack must not be
   # the same grey.
   Scenario: a marble chunk stack at full load, to compare with the granite one
-    Given a "ASNeolithicChunkStorageChunkMarble" is built at (145, 155)
+    Given a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (145, 155)
     And I zoom all the way in
     And I move the camera to (146, 155)
     When I spawn a "ChunkMarble" at (145, 155)
@@ -105,7 +105,7 @@ Feature: what a container shows of its contents
 
   @requires:Odyssey
   Scenario: a vacstone plinth, the one stone that did not exist when the mod was written
-    Given a "ASNeolithicPlinthChunkVacstone" is built at (145, 155)
+    Given a "ASNeolithicPlinthStone" made from "ChunkVacstone" is built at (145, 155)
     And I zoom all the way in
     And I move the camera to (145, 155)
     When I spawn a "Gold" at (145, 155)

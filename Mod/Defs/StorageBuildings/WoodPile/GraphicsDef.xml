@@ -8,14 +8,14 @@
 				<graphicData>
 					<texPath>ASNeolithic/WoodPile/WoodPilea</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 				</graphicData>
 			</li>
 			<li>
 				<graphicData>
 					<texPath>ASNeolithic/WoodPile/WoodPileb</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 				</graphicData>
 				<minimumStackCount>1</minimumStackCount>
 			</li>
@@ -23,9 +23,9 @@
 				<graphicData>
 					<texPath>ASNeolithic/WoodPile/WoodPilec</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.9,1.9)</drawSize>
+					<drawSize>(2,2)</drawSize>
 				</graphicData>
-				<minimumStackCount>3</minimumStackCount>
+				<minimumStackCount>4</minimumStackCount>
 			</li>
 		</graphics>
 		<showContainedItems>false</showContainedItems>

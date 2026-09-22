@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <ASNeolithic.Generated.LargePot.label>large pot ({CHUNK})</ASNeolithic.Generated.LargePot.label>
-  <ASNeolithic.Generated.LargePot.description>A large carved pot meant for the storage of perishable food.</ASNeolithic.Generated.LargePot.description>
-  <ASNeolithic.Generated.Plinth.label>plinth ({CHUNK})</ASNeolithic.Generated.Plinth.label>
-  <ASNeolithic.Generated.Plinth.description>A rough plinth with beautiful engravings for displaying items.</ASNeolithic.Generated.Plinth.description>
-  <ASNeolithic.Generated.ChunkStorage.label>stacked chunks ({CHUNK})</ASNeolithic.Generated.ChunkStorage.label>
-  <ASNeolithic.Generated.ChunkStorage.description>A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover.</ASNeolithic.Generated.ChunkStorage.description>
-</LanguageData>

@@ -1,12 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ResearchProjectDef Name="ASNeolithicResearchBase" Abstract="True">
 		<baseCost>400</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<tab>ASFAdaptiveStorage</tab>
-		<tags>
-			<li>TribalStart</li>
-		</tags>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="ASNeolithicResearchBase">
@@ -15,6 +12,9 @@
 		<description>Build simple containers and means of storage for basic materials.</description>
 		<researchViewX>0</researchViewX>
 		<researchViewY>1</researchViewY>
+		<tags>
+			<li>TribalStart</li>
+		</tags>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="ASNeolithicResearchBase">

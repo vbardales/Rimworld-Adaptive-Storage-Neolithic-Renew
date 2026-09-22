@@ -4,20 +4,20 @@
 		<label>bundle</label>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1.9,1.9)</drawSize>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<description>A couple of textiles stacked upon each other into a neat pile.</description>
 		<fillPercent>0.20</fillPercent>
-		<uiIconScale>1.4</uiIconScale>
+		<uiIconScale>1.1</uiIconScale>
 		<size>(1,1)</size>
 		<statBases>
-			<MaxHitPoints>40</MaxHitPoints>
-			<WorkToBuild>600</WorkToBuild>
+			<MaxHitPoints>65</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
 			<Flammability>1</Flammability>
-			<Beauty>-2</Beauty>
-			<Mass>5</Mass>
+			<Beauty>0.5</Beauty>
+			<Mass>4</Mass>
 		</statBases>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>10</costStuffCount>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
@@ -35,7 +35,10 @@
 		<graphicData>
 			<texPath>ASNeolithic/TextileBundle/TextileBundleFabrica</texPath>
 		</graphicData>
-		<uiIconPath>ASNeolithic/TextileBundle/TextileBundleFabricc_south</uiIconPath>
+		<uiIconPath>ASNeolithic/TextileBundle/TextileBundleFabric_UI_Icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>150</WorkToBuild>
+		</statBases>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
@@ -45,7 +48,10 @@
 		<graphicData>
 			<texPath>ASNeolithic/TextileBundle/TextileBundleLeathera</texPath>
 		</graphicData>
-		<uiIconPath>ASNeolithic/TextileBundle/TextileBundleLeatherc_south</uiIconPath>
+		<uiIconPath>ASNeolithic/TextileBundle/TextileBundleLeather_UI_Icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>350</WorkToBuild>
+		</statBases>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <ASNeolithic.Generated.LargePot.label>grand pot ({CHUNK})</ASNeolithic.Generated.LargePot.label>
-  <ASNeolithic.Generated.LargePot.description>Un grand pot taillé destiné au stockage des aliments périssables.</ASNeolithic.Generated.LargePot.description>
-  <ASNeolithic.Generated.Plinth.label>socle ({CHUNK})</ASNeolithic.Generated.Plinth.label>
-  <ASNeolithic.Generated.Plinth.description>Un socle brut avec de belles gravures pour exposer des objets.</ASNeolithic.Generated.Plinth.description>
-  <ASNeolithic.Generated.ChunkStorage.label>amas de blocs ({CHUNK})</ASNeolithic.Generated.ChunkStorage.label>
-  <ASNeolithic.Generated.ChunkStorage.description>Un empilement de blocs de pierre qui en soutiennent d'autres. Facile à réaliser et assez efficace comme couverture.</ASNeolithic.Generated.ChunkStorage.description>
-</LanguageData>

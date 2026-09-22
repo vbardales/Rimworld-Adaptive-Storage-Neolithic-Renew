@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-    <ASNeolithicNeolithicStorage.label>Примитивные хранилища</ASNeolithicNeolithicStorage.label>
-    <ASNeolithicNeolithicStorage.description>Создавайте примитивные контейнеры и средства хранения основных материалов.</ASNeolithicNeolithicStorage.description>
+	<ASNeolithicNeolithicStorage.label>Примитивные хранилища</ASNeolithicNeolithicStorage.label>
+	<ASNeolithicNeolithicStorage.description>Создавайте примитивные контейнеры и средства хранения основных материалов.</ASNeolithicNeolithicStorage.description>
 
-    <ASNeolithicNeolithicItemDisplay.label>Примитивные подиумы</ASNeolithicNeolithicItemDisplay.label>
-    <ASNeolithicNeolithicItemDisplay.description>Создавайте простые, но эстетичные подиумы для демонстрации предметов.</ASNeolithicNeolithicItemDisplay.description>
+	<ASNeolithicNeolithicItemDisplay.label>Примитивные подиумы</ASNeolithicNeolithicItemDisplay.label>
+	<ASNeolithicNeolithicItemDisplay.description>Создавайте простые, но эстетичные подиумы для демонстрации предметов.</ASNeolithicNeolithicItemDisplay.description>
 </LanguageData>
