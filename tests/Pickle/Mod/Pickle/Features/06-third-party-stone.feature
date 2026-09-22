@@ -12,12 +12,12 @@ Feature: a third-party stone works as building material
   @review
   Scenario: a stone the mod never listed can build all three variants
     Given the save "test-colony" is loaded
-    And a "ASNeolithicLargePotStone" made from "Kura_Andesite" is built at (140, 155)
-    And a "ASNeolithicPlinthStone" made from "Kura_Andesite" is built at (144, 155)
-    And a "ASNeolithicChunkStorage" made from "Kura_Andesite" is built at (148, 155)
-    Then a "ASNeolithicLargePotStone" made from "Kura_Andesite" is at (140, 155)
-    And a "ASNeolithicPlinthStone" made from "Kura_Andesite" is at (144, 155)
-    And a "ASNeolithicChunkStorage" made from "Kura_Andesite" is at (148, 155)
+    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (140, 155)
+    And a "ASNeolithicPlinthStone" made from "ChunkKura_Andesite" is built at (144, 155)
+    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (148, 155)
+    Then a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is at (140, 155)
+    And a "ASNeolithicPlinthStone" made from "ChunkKura_Andesite" is at (144, 155)
+    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is at (148, 155)
     And no errors were logged
     When I zoom all the way in
     And I move the camera to (144, 155)

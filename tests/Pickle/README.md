@@ -25,7 +25,9 @@ and one chunk stack, each made from `ASFStoneChunks`; per-stone generated buildi
 - `06-third-party-stone`: `[K]Extra Stone` accepted through `ASFStoneChunks` without generated defs.
 - `07-russian-names`: exact-case Russian injection and stuffed buildings.
 - `08`–`10`: shared PickleTools research-tab coverage.
-- `11-workshop-captures`: six self-navigating publication captures; rerun after this integration.
+- `11-workshop-captures`: six self-navigating publication captures on Nelim's screenshot studio;
+  the 2026-09-22 English Workshop pass completed 6/6 at maximum zoom. The six raw captures were
+  cropped with `Art/Crop-WorkshopScreenshots.ps1` and still need the owner's visual approval.
 - `12-performance-regression`: bounded tick-cost comparison for issue #3, from no module building to
   twenty-four filled large pots, with a post-warm-up control.
 

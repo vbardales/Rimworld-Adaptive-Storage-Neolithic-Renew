@@ -1,0 +1,6 @@
+# Workshop captures: the production dependency pass plus PickleTools' disposable screenshot fixture.
+adaptive.storage.framework   3033901359
+Kura.ExtraStone              852103845
+nelim.pickletools.research   path:PickleTools/ResearchSteps/Mod
+nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.clearscreen path:PickleTools/ClearScreen/Mod

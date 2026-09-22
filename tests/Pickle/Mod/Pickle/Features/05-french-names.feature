@@ -26,8 +26,8 @@ Feature: French names on the current upstream architecture
   @review
   Scenario: a third-party stone remains visible as the material in French
     Given the save "test-colony" is loaded
-    And a "ASNeolithicLargePotStone" made from "Kura_Andesite" is built at (145, 155)
-    Then a "ASNeolithicLargePotStone" made from "Kura_Andesite" is at (145, 155)
+    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (145, 155)
+    Then a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is at (145, 155)
     And no errors were logged
     When I zoom all the way in
     And I move the camera to (145, 155)

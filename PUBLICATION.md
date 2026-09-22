@@ -75,18 +75,19 @@ Full attribution and change history: [url=https://github.com/vbardales/Rimworld-
 `Mod/About/Preview.png` is the Workshop header image sent with the mod update; it is not an additional gallery image. `Mod/About/ModIcon.png`
 is the in-game mod-list icon and is not uploaded to the gallery.
 
-The six files below are the intended gallery order. Their dimensions and sizes are valid, but they were captured from the superseded
-Workshop-based implementation. Re-run `tests/Pickle/Mod/Pickle/Features/11-workshop-captures.feature`, review the six new captures, and
-replace these files before uploading them. Do not mix old and new captures.
+The six files below are the intended gallery order. They were regenerated from the integrated upstream implementation by Pickle feature
+`11-workshop-captures.feature` on 2026-09-22 (6/6 passed, archived report `pickle-reports-archive/0922-2226`) and cropped pixel-for-pixel with `Art/Crop-WorkshopScreenshots.ps1`.
+For the Nelim screenshot studio, place the subject over the upper-right orange area of the central emblem and centre the camera at (132, 132) at maximum zoom. The crop may cut buildings or contents at its edge. The six crops have been checked for legibility; the final Workshop review remains the owner's.
+Upload these six files in order; do not mix them with the superseded Workshop-based captures.
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
-| 1 | `Art/WorkshopScreenshots/workshop-1-the-whole-set.png` | 760 x 220, 265,468 bytes | The whole set and its visible contents |
-| 2 | `Art/WorkshopScreenshots/workshop-2-a-basket-fills-up.png` | 450 x 180, 105,861 bytes | A basket empty, partly filled and full |
-| 3 | `Art/WorkshopScreenshots/workshop-3-chunk-stacks.png` | 720 x 250, 266,924 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
-| 4 | `Art/WorkshopScreenshots/workshop-4-large-pots.png` | 650 x 180, 175,309 bytes | Large pots showing different stored foods |
-| 5 | `Art/WorkshopScreenshots/workshop-5-plinths.png` | 490 x 180, 118,902 bytes | Three plinths displaying items |
-| 6 | `Art/WorkshopScreenshots/workshop-6-a-stone-from-another-mod.png` | 670 x 210, 210,287 bytes | A compatible third-party stone beside granite |
+| 1 | `Art/WorkshopScreenshots/workshop-1-the-whole-set.png` | 780 x 250, 263,370 bytes | The whole set and its visible contents |
+| 2 | `Art/WorkshopScreenshots/workshop-2-a-basket-fills-up.png` | 350 x 250, 76,286 bytes | A basket empty, partly filled and full |
+| 3 | `Art/WorkshopScreenshots/workshop-3-chunk-stacks.png` | 610 x 250, 161,427 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
+| 4 | `Art/WorkshopScreenshots/workshop-4-large-pots.png` | 610 x 250, 169,584 bytes | Large pots showing different stored foods |
+| 5 | `Art/WorkshopScreenshots/workshop-5-plinths.png` | 350 x 250, 80,242 bytes | Three plinths displaying items |
+| 6 | `Art/WorkshopScreenshots/workshop-6-a-stone-from-another-mod.png` | 580 x 250, 176,570 bytes | A compatible third-party stone beside granite |
 
 Header assets already valid:
 
@@ -166,5 +167,5 @@ Use these as the Steam change notes when uploading the integrated tree. This is 
 - Runtime on the integrated tree: not run; stage remains `done`.
 - Description: ready to paste manually after the runtime pass.
 - Dependency: one, fixed above.
-- Gallery: six paths fixed above, but replacement captures are still required.
+- Gallery: six cropped replacement captures are in the paths above; the owner still needs to approve and upload them.
 - Comments: two drafted, neither recorded as posted; post only after the item is public and only once.

@@ -16,8 +16,19 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
                 "ThingDef '" + defName + "' still exists");
         }
 
-        [Given("a {string} made from {string} is built at ({int}, {int})")]
-        [When("a {string} made from {string} is built at ({int}, {int})")]
+        [Given("I clear the rectangle from \\({int}, {int}\\) to \\({int}, {int}\\)")]
+        public void ClearRectangle(PickleContext ctx, int minX, int minZ, int maxX, int maxZ)
+        {
+            var map = Find.CurrentMap;
+            ctx.Require(map != null, "no map is loaded");
+            for (var x = minX; x <= maxX; x++)
+            for (var z = minZ; z <= maxZ; z++)
+                foreach (var thing in new IntVec3(x, 0, z).GetThingList(map).ToList())
+                    thing.Destroy(DestroyMode.Vanish);
+        }
+
+        [Given("a {string} made from {string} is built at \\({int}, {int}\\)")]
+        [When("a {string} made from {string} is built at \\({int}, {int}\\)")]
         public void Build(PickleContext ctx, string defName, string stuffName, int x, int z)
         {
             var def = RequiredDef(ctx, defName);
@@ -32,14 +43,14 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
             ctx.Attach("spawned stuffed building", thing.LabelCap + " (" + defName + ", stuff " + stuffName + ")");
         }
 
-        [Then("a {string} made from {string} is at ({int}, {int})")]
+        [Then("a {string} made from {string} is at \\({int}, {int}\\)")]
         public void StuffedThingIsAt(PickleContext ctx, string defName, string stuffName, int x, int z)
         {
             var thing = ThingAt(defName, stuffName, x, z);
             ctx.Assert(thing != null, defName + " made from " + stuffName + " is not at (" + x + ", " + z + ")");
         }
 
-        [Then("a {string} made from {string} at ({int}, {int}) is labelled {string}")]
+        [Then("a {string} made from {string} at \\({int}, {int}\\) is labelled {string}")]
         public void StuffedThingLabel(PickleContext ctx, string defName, string stuffName, int x, int z, string label)
         {
             var thing = ThingAt(defName, stuffName, x, z);
@@ -47,7 +58,7 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
             ctx.Assert(thing.LabelCap == label, "label is '" + thing.LabelCap + "', not '" + label + "'");
         }
 
-        [When("I designate a {string} made from {string} at ({int}, {int})")]
+        [When("I designate a {string} made from {string} at \\({int}, {int}\\)")]
         public async Task Designate(PickleContext ctx, string defName, string stuffName, int x, int z)
         {
             var def = RequiredDef(ctx, defName);
@@ -57,7 +68,7 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
             await ctx.WaitFrames(1);
         }
 
-        [Then("a blueprint for {string} made from {string} is at ({int}, {int})")]
+        [Then("a blueprint for {string} made from {string} is at \\({int}, {int}\\)")]
         public void BlueprintIsAt(PickleContext ctx, string defName, string stuffName, int x, int z)
         {
             var cell = new IntVec3(x, 0, z);
