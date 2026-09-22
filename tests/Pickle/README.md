@@ -26,6 +26,8 @@ and one chunk stack, each made from `ASFStoneChunks`; per-stone generated buildi
 - `07-russian-names`: exact-case Russian injection and stuffed buildings.
 - `08`–`10`: shared PickleTools research-tab coverage.
 - `11-workshop-captures`: six self-navigating publication captures; rerun after this integration.
+- `12-performance-regression`: bounded tick-cost comparison for issue #3, from no module building to
+  twenty-four filled large pots, with a post-warm-up control.
 
 All visual checks use `@review`: the scenario loads or creates the required state, moves the camera, pauses
 and emits a capture. A reviewer only accepts or rejects the image. There are no audio scenarios and no
