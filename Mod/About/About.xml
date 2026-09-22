@@ -18,48 +18,58 @@
     <li>adaptive.storage.framework</li>
   </loadAfter>
   <incompatibleWith><li>adaptive.storage.neolithic</li></incompatibleWith>
-  <description>Tribal storage for the Adaptive Storage Framework: baskets of wood, leather and fabric, large pots for raw food, stacked stone chunks, wood and hay piles, a meal shelf, textile and leather bundles, and carved plinths for displaying a single item.
+  <description>Tribal storage for the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359]Adaptive Storage Framework[/url]: baskets of wood, leather and fabric, large pots for raw food, stacked stone chunks, wood and hay piles, a meal shelf, textile and leather bundles, and carved plinths for displaying a single item.
 
 Every container shows what is inside it. Fill a basket and you see the basket fill up.
 
 Two neolithic research projects unlock the set, both available from a tribal start.
 
-REQUIRES the Adaptive Storage Framework. It does nothing on its own.
+[b]REQUIRES[/b] the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359]Adaptive Storage Framework[/url]. It does nothing on its own.
 
 I am not the author of this mod. The buildings, artwork and design are Soul's, Phaneron's and bradson's. This continuation follows their current GitHub source rather than the older Workshop upload. Credit goes to them; mistakes in the 1.6 adaptation are mine.
 
-Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895
-Current upstream source: https://github.com/bbradson/Adaptive-Storage-Neolithic-Module
+[h2]ORIGINAL MOD[/h2]
 
-WHAT CHANGED
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895]Adaptive Storage Neolithic Module[/url]
+Current upstream source: [url=https://github.com/bbradson/Adaptive-Storage-Neolithic-Module]GitHub[/url]
+
+[h2]WHAT CHANGED[/h2]
 
 The continuation is based on the original authors' current main branch. That branch already replaces one generated building per stone type with three buildings made from the Adaptive Storage Framework's ASFStoneChunks stuff category. Its compatibility patch migrates the older generated defNames and their blueprints and frames to the new buildings while preserving the stone chunk as stuff. This also avoids the old crash path for chunks without their own colour.
 
 The current upstream definitions, balance values, graphics definitions and integrated textures are preserved. RimWorld 1.6 is declared, and the Russian DefInjected folder uses the exact casing required on Linux and Steam Deck.
 
-LICENCE
+[h2]COMPATIBILITY[/h2]
+
+The original mod is declared incompatible because both packages define the same content. Run one or the other.
+
+Odyssey, Biotech and stone mods are optional. Compatible stone chunks can use the shared ASFStoneChunks category without one generated building definition per stone type.
+
+Known soft incompatibilities reported on the original page, not revalidated here: Alpha Biomes chunks cannot stuff the stacked chunks, Expanded Woodworking woods cannot stuff the wood pile because it uses Timber, and Combat Extended.
+
+Content mod: removing it mid-save destroys any of these containers already built and drops what was inside them.
+
+[h2]LICENCE[/h2]
 
 This mod is MIT licensed by its authors, and the LICENSE file travels with it here and in the repository.
 
-The original is declared incompatible because both packages define the same content. Run one or the other.
-
-Content mod: removing it mid-save destroys any of these containers already built, and drops what was inside them.
-
-IF I GO QUIET
+[h2]IF I GO QUIET[/h2]
 
 If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
 
-AI-GENERATED
+[h2]AI-GENERATED[/h2]
 
-The adaptation audit, automated and in-game test work, and documentation were prepared with Claude Code (Anthropic) and ChatGPT (OpenAI), under human direction and review. The mod icon and preview image were generated with DALL-E (OpenAI). The buildings, their artwork, textures, stats and current stone-as-stuff implementation are the original authors' work.
+The adaptation audit, automated and in-game test work, and documentation were prepared with Claude Code (Anthropic), Codex and ChatGPT (OpenAI), under human direction and review. The mod icon and preview image were generated with DALL-E (OpenAI). The buildings, their artwork, textures, stats and current stone-as-stuff implementation are the original authors' work.
 
-THANKS
+[h2]THANKS[/h2]
 
-Soul, Phaneron and bradson, for the mod, the Adaptive Storage Framework, the current source work, and the open licence.
+Soul, Phaneron and bradson, for the mod, the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359]Adaptive Storage Framework[/url], the current source work, and the open licence.
 
 Elzetia and MrBlack-JB, for the French and Russian translations included upstream.
 
-Full attribution and change history: https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/ATTRIBUTION.md. Released under the MIT licence: https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/LICENSE
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678]Pickle[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696]RimLogging[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806142401]PickleTools[/url] were used for development and testing only; none is a dependency of the distributed mod.
+
+Full attribution and change history: [url=https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/ATTRIBUTION.md]ATTRIBUTION.md[/url]. Released under the MIT licence: [url=https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/LICENSE]LICENSE[/url]
 
 [url=https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew]Source code on GitHub[/url]</description>
 </ModMetaData>
