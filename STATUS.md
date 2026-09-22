@@ -7,18 +7,19 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-stage:        done
+stage:        prepublished
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 dependencies: declared
 showcase:     complete
-tested_on:
-workshop:
+tested_on:    2026-09-21, WSL Pickle suite: English, French and Russian, with and without a third-party stone mod (see tests/Pickle/README.md and the pickle-run-2026-09-21-* folders for each pass); the research tab opened by defName and read; captures opened. Owner accepted this as sufficient for v1.0.0 on 2026-09-22 without replaying the colourless-chunk fix (ad91e5a) live, since her own RimWorld was running and Run-PickleWsl.ps1 refuses any launch while it does. See remaining.
+workshop:     3806101377
 settings_audit: not_applicable
 build_audit: complete
 audit_revision: ae237ea0103df912b531075d330c6c8089b2fddc
 audit_evidence: tests/workflow-audit-2026-09-21/README.md
 remaining:
+  - resolved 2026-09-22 (done -> tested), owner decision: sprinting to v1.0.0, Virginie accepted the 2026-09-21 testing state as sufficient without a fresh Pickle run, because her own Windows RimWorld was open and Run-PickleWsl.ps1 refuses to launch anything, in the WSL included, while it is. Specifically not reverified live: the colourless-chunk patch fix (ad91e5a, `tests/Test-Mod.ps1` and the framework's own generator both cover it statically; no Pickle run has played on top of it) and the six Workshop-page pictures (feature 11 and `Source/PublicationSteps.cs` are written and compiled, never played). stage moves to tested on that basis; `tested_on` above records exactly what was and was not seen running.
   - resolved 2026-09-21 (preTest -> done): the Pickle suite is written in tests/Pickle (41 scenarios, 7 features, 22 @review captures, no step assembly), scope justified in tests/Pickle/README.md and TESTING.md. It was played eight times in the WSL the same day. At 20 scenarios: 19 played of 19 (16 passed, 1 failed on a defect of the suite, 2 skipped as @wip), then English 20 of 20 (18 passed), then French 20 of 20 (all passed), exitReason passed each time. Widened afterwards, four passes: English 32 of 32 with 3 failed (my wrong assumption that Pickle sees the implied blueprint defs), then English 31 of 31 and French 31 of 31, 22 passed each with the 9 @wip skipped, exitReason passed; then the French feature 05 alone, 9 of 9 with 6 passed and 3 failed (two ambiguous defNames and a guessed blueprint label, all the suite's own). Every failure so far was a defect of the suite, none of the mod. 05 was rewritten (8 scenarios) and replayed in French: 8 of 8 passed, exitReason passed. Results: tests/pickle-run-2026-09-21/ and its -second, -french, -widened-en, -widened-en2, -widened-fr, -widened-fr-wip, -widened-fr-wip2 siblings.
   - unverified (done -> tested): what the suite still lacks. Seen working in a running game on 2026-09-21: TESTING.md 4b beside [K]Extra Stone, in French (the stone Kura_Andesite reads "grand pot (andesite chunk)", "socle (andesite chunk)", "amas de blocs (andesite chunk)" through the Harmony fallback, and the pot's blueprint "Grand pot (andesite chunk) (plan)") and in English (feature 06 passed in the 41 of 41 "stones" pass, tinted andesite pot and chunk stack captured); TESTING.md 8, Russian on the WSL's case-sensitive ext4, 5 of 5 passed. Not seen in a game: the fix of the same day for a chunk with no colour (patch selectors now read [graphicData/color/text()]; covered by Test-Mod.ps1 and by the framework's own generator, which raises an error on the old patches and not on the new; the Pickle passes ran on the old selectors or on a tree I did not record, so the suite has not been replayed against the fix, and a replay would only prove that stones with a colour still get their buildings). The research-tab click was tried and dropped (Pickle records no button tag for the tab: the window draws TabRecords). Steps of the suite's own now open the tab by defName and read what the window lists (tests/Pickle/Source/ResearchTabSteps.cs; scenarios in 01 and 05, 42 scenarios and 23 captures in the suite): SEEN WORKING the same evening: English 01 7 of 7 passed and French 05 9 passed of 11 (2 skipped, the stones pass), exitReason passed both, both projects listed in the tab at 400, both captures opened (tests/pickle-run-2026-09-21-research-tab-en/ and -fr/), so TESTING.md 2 is covered by Pickle. The shared PickleTools version of the steps (choice by def name, label or translation key) was then played in the pass avec-pickletools: English 3 + 1 and French 3 + 2 scenarios, all passed (tests/pickle-run-2026-09-21-pickletools-*), features 08 to 10, 48 scenarios in the suite. What the earlier passes showed in French holds. All earlier @review captures were looked at at least once; the framing is wide and a person still has to judge them. The logs of a real session are not done.
   - decided 2026-09-21 by Virginie: the crash on a stone chunk with no colour, reported on the original mod's page, is fixed in the patches (see CHANGELOG). Scenarios 9 (original mod refused, and any backward compatibility) and 10 (mod-list icon) are out of scope, RimWorld mechanisms checked statically (Test-Mod.ps1 now reads incompatibleWith and the icon and preview files); scenarios 3 and 4 (architect menu, dropdown groups) are checked statically too (research prerequisite of each building, dropdown group of each generated one), since no Pickle step reads the menu. A new game is not relevant: the mod is content added to a game, and the fixture colony, a save made without it, already covers that. Test-Mod.ps1: 1,410 assertions.
@@ -28,12 +29,36 @@ remaining:
   - publishing (tested -> prepublished), state 2026-09-21 23:40: DONE: repository pushed, DLL matches the sources; the About.xml description is in the required order (body, IF I GO QUIET with the adoption clause word for word, AI-GENERATED, THANKS, attribution and licence line, "Source code on GitHub" link last), 4,701 characters, English; PUBLICATION.md written (order of the six page pictures, three thanks messages of 702, 427 and 396 characters, dependencies and DLC decided from the sources, adult-content reading with the human-meat pot texture opened, what to do after the upload). NOT DONE: the six pictures of the page (feature 11 and Source/PublicationSteps.cs are written and compiled, the pass is queued, none has been played, and every image must be opened and looked at); tag v1.0.0 and the GitHub release with the changelog (outward action, waits for the owner); the adult-content boxes, answered by the owner once the page images exist; the thanks messages, posted after the item is public. `workshop:` stays empty and PublishedFileId.txt absent, as expected before the first upload.
   - optional: case-sensitive runtime check of the Russian DefInjected folder (Steam Deck). Russian vacstone coverage was completed on 2026-09-21 (six entries, written by Claude from the official Odyssey term, not reviewed by a Russian speaker; disclosure to repeat in the AI-GENERATED section at prepublished).
 session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
-updated:      2026-09-21
+updated:      2026-09-22
 preview_audit: complete
 modicon_audit: complete
 ---
 
 # Adaptive Storage Neolithic Renew — status
+
+## prepublished — 2026-09-22, owner decision, then the item created
+
+**Stage moves from `done` to `tested` and on to `prepublished` on 2026-09-22, by Virginie's explicit decision,
+sprinting toward a v1.0.0 publication.** The 2026-09-21 Pickle evidence below (English, French and Russian
+passes, the third-party stone, the research tab) stands. Two things it does not cover: the colourless-chunk
+patch fix committed afterwards (`ad91e5a`), which only static checks have exercised since, and the six
+Workshop-page pictures (`tests/Pickle/Mod/Pickle/Features/11-workshop-captures.feature`), written and compiled
+but never played. Both were queued for a Pickle run this morning; every launch refused with "Sa partie Windows
+tourne" — her own game was open, and `Run-PickleWsl.ps1` refuses any launch, the WSL included, while it is.
+Rather than wait, she accepted the 2026-09-21 state as sufficient for this release. Nothing here claims those
+two items were seen running: see `tested_on` in the front matter and the `remaining` entry dated 2026-09-22 for
+exactly what is and is not covered.
+
+**While this was being written, `Mod/About/PublishedFileId.txt` appeared on disk** (09:11:29, id `3806101377`),
+which reads as Virginie uploading the item herself, by hand, in her own running game — the only way that file
+is written. It was committed and pushed on its own immediately (`a008025`), per PUBLISHING.md: lost, the next
+upload creates a second item instead of updating this one. `workshop:` above now carries the id. This happened
+ahead of the normal order (the page screenshots and the git tag were still pending), by her own action, not
+mine; I have not touched RimWorld or Steam. A public fetch of the item page returns a generic access error,
+consistent with Steam's default: RimWorld never calls `SetItemVisibility`, so every new item starts **private**.
+Not established here: whether she has already subscribed to it, tested it, or switched it public — that is
+hers to say. Section 5 of `PUBLICATION.md` and AUDIT.md step 11 cover what is left: subscribe and test, switch
+to public by hand, then post the three thank-you messages, none of which a session can do.
 
 ## Current audit under AUDIT.md — 2026-09-21
 

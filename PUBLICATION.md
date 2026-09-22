@@ -85,15 +85,24 @@ exist yet and must be opened before the boxes are answered for good. The boxes a
   `[1.0.0]` with its date on the day of the tag.
 - Fill `workshop:` in `STATUS.md` with the item id, and post the three messages above.
 
-## State on 2026-09-21
+## State on 2026-09-22
+
+**The item was created on Steam, id `3806101377`, at 09:11 on 2026-09-22 — by Virginie's own hand, in her own
+running game.** `About/PublishedFileId.txt` was committed and pushed immediately (`a008025`). This happened
+ahead of the normal order below: the page screenshots and the tag were still pending when it went up. The item
+is private by default (RimWorld never calls `SetItemVisibility`); whether it has been subscribed to, tested or
+switched public is not established here.
 
 | Item | State |
 | --- | --- |
 | Repository up to date and pushed, DLL matches the sources | Done |
+| Workshop item created | **Done, 2026-09-22, id 3806101377** — out of order, before the screenshots and the tag |
+| `About/PublishedFileId.txt` committed and pushed | Done (`a008025`) |
+| Subscribe to the item, test it, then switch it public by hand | **Not done / not established** |
 | Tag `v1.0.0` and GitHub release with the changelog | **Not done**: waits for the owner's word |
-| Description read again, English, sections in order (IF I GO QUIET, AI-GENERATED, THANKS, attribution line, source link) | Written; to be read once more before the upload |
+| Description read again, English, sections in order (IF I GO QUIET, AI-GENERATED, THANKS, attribution line, source link) | Written; to be read once more — it was already sent to Steam at item creation, so any further correction is made by hand on the Steam page, not in `About.xml` |
 | This file | Written |
-| Screenshots for the page, order and what each shows | Order and content fixed above; **none of the images exists** |
+| Screenshots for the page, order and what each shows | Order and content fixed above; **none of the images exists**; can still be added to the Steam page once produced |
 | Thanks messages, one per recipient, under 1000 characters | Written; to be posted after the item is public |
 | Dependencies and DLC | Fixed above, from the sources |
 | Adult-content boxes | Reading given; **the images of the page do not exist yet**; the owner answers |
