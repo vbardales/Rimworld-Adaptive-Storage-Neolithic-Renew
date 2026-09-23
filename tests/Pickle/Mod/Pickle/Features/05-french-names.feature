@@ -1,12 +1,12 @@
 Feature: French names on the current upstream architecture
 
   Scenario: the shared stone defs and hand-written buildings are translated
-    Then def "ASNeolithicLargePotStone" field "label" is "grand pot"
-    And def "ASNeolithicLargePotStone" field "description" is "Un grand pot taillé destiné au stockage des aliments périssables."
-    And def "ASNeolithicPlinthStone" field "label" is "socle"
-    And def "ASNeolithicPlinthStone" field "description" is "Un socle en granite brut avec de belles gravures pour exposer des objets."
-    And def "ASNeolithicChunkStorage" field "label" is "amas"
-    And def "ASNeolithicWoodPile" field "label" is "fagot"
+    Then Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its label "grand pot"
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its description "Un grand pot taillé destiné au stockage des aliments périssables."
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its label "socle"
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its description "Un socle en pierre brute avec de belles gravures pour exposer des objets."
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its label "amas"
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicWoodPile" has its label "fagot"
 
   @requires:Odyssey
   @review

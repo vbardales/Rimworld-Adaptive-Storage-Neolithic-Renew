@@ -1,10 +1,10 @@
 Feature: Russian translations load from the correctly cased folder
 
   Scenario: the shared stone defs are translated in Russian
-    Then def "ASNeolithicLargePotStone" field "label" is "Большой горшок"
-    And def "ASNeolithicPlinthStone" field "label" is "Подиум"
-    And def "ASNeolithicChunkStorage" field "label" is "Куча"
-    And def "ASNeolithicChunkStorage" field "description" is "Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия."
+    Then Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its label "Большой горшок"
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its label "Подиум"
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its label "Куча"
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its description "Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия."
 
   @requires:Odyssey
   @review

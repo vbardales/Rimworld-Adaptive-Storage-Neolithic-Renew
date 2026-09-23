@@ -18,6 +18,22 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
                 "ThingDef '" + defName + "' still exists");
         }
 
+        // Pickle's own "def {string} field ..." refuses a name shared by a ThingDef and a GraphicsDef (ASNeolithicPlinthStone).
+        [Then("Adaptive Storage Neolithic Renew: the ThingDef {string} has its label {string}")]
+        public void ThingDefLabel(PickleContext ctx, string defName, string expected)
+        {
+            var def = RequiredDef(ctx, defName);
+            ctx.Assert(def.label == expected, "label of " + defName + " is '" + def.label + "', not '" + expected + "'");
+        }
+
+        [Then("Adaptive Storage Neolithic Renew: the ThingDef {string} has its description {string}")]
+        public void ThingDefDescription(PickleContext ctx, string defName, string expected)
+        {
+            var def = RequiredDef(ctx, defName);
+            ctx.Assert(def.description == expected,
+                "description of " + defName + " is '" + def.description + "', not '" + expected + "'");
+        }
+
         [Given("I clear the rectangle from \\({int}, {int}\\) to \\({int}, {int}\\)")]
         public void ClearRectangle(PickleContext ctx, int minX, int minZ, int maxX, int maxZ)
         {
