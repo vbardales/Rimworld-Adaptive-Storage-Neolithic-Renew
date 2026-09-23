@@ -76,7 +76,7 @@ Full attribution and change history: [url=https://github.com/vbardales/Rimworld-
 is the in-game mod-list icon and is not uploaded to the gallery.
 
 The six files below are the intended gallery order. They were regenerated from the integrated upstream implementation by Pickle feature
-`11-workshop-captures.feature` on 2026-09-22 (6/6 passed, archived report `pickle-reports-archive/0922-2226`) and cropped pixel-for-pixel with `Art/Crop-WorkshopScreenshots.ps1`.
+`11-workshop-captures.feature` on 2026-09-22 (6/6 passed; summary in `docs/runs/2026-09-22-workshop-captures.md`) and cropped pixel-for-pixel with `Art/Crop-WorkshopScreenshots.ps1`.
 For the Nelim screenshot studio, place the subject over the upper-right orange area of the central emblem and centre the camera at (132, 132) at maximum zoom. The crop may cut buildings or contents at its edge. The six crops have been checked for legibility; the final Workshop review remains the owner's.
 Upload these six files in order; do not mix them with the superseded Workshop-based captures.
 
