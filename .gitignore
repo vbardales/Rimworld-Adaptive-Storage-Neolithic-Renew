@@ -37,3 +37,9 @@ node_modules/
 package-lock.json
 package.json
 .worktrees/
+
+# DDS textures: not tracked
+*.dds
+
+# Scratch stdout/stderr of the Pickle wrapper launches; the durable record is tests/Pickle/Evidence/
+tests/Pickle/core-en-*.log

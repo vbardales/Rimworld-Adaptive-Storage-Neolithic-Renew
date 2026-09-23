@@ -6,6 +6,9 @@ All notable changes to this mod are documented here.
 
 ### Changed
 
+- Stopped tracking the 171 `.dds` textures in Git and ignore `*.dds`. Every one has a `.png` twin in the same folder, which
+  is tracked and which RimWorld loads (`tests/Test-Mod.ps1` accepts either extension). The `.dds` files stay on disk locally.
+
 - Rebased the delivered mod content on the original authors' current GitHub `main` (`2bc3fe4`)
   instead of the older Workshop package.
 - Adopted upstream's stone-as-stuff architecture: the large stone pot, stone plinth and chunk stack

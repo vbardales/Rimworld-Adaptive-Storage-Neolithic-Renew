@@ -57,6 +57,15 @@ Run Core English with `Run-CoreEnglish.ps1`. It selects the exact feature filena
 08; `-Filter Neolithic` is invalid because Pickle does not match that word in the scenario text.
 The wrapper preserves each launch's report before the shared report directory can be overwritten.
 
+## Evidence and untracked files
+
+- `tests/Pickle/Evidence/<run>/` is the durable handoff of `Run-PickleWsl.ps1 -EvidenceDir` and **is tracked**. Keep only what
+  a verdict needs: `summary.json`, `junit.xml`, `Player.log` and the reviewed captures as JPEGs. Do not commit the raw
+  multi-hundred-MB screenshot folders; the launcher's rolling archive keeps five runs and is not evidence.
+- `tests/Pickle/core-en-*.log` are scratch output of the wrapper launches and are ignored.
+- `*.dds` is ignored repository-wide: every texture has a tracked `.png` twin, and RimWorld loads either. Local `.dds` files
+  left on disk are harmless and are never staged.
+
 ## Criteria for `done -> tested` (AUDIT.md, 2026-09-23)
 
 - **No `@wip`.** None remains in the suite (08 and 11 now carry `@requires`, 09 and 10 were removed above). A run needs no
