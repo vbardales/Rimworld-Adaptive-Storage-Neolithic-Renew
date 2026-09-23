@@ -16,6 +16,9 @@ Feature: Russian translations load from the correctly cased folder
     And a "ASNeolithicChunkStorage" made from "ChunkVacstone" is at (148, 155)
     And no errors were logged
     When I zoom all the way in
-    And I move the camera to (145, 155)
+    And I move the camera to (142, 155)
     And I wait 30 ticks
-    Then I take a screenshot "the granite pot and vacstone chunk stack in Russian"
+    Then I take a screenshot "the granite pot in Russian, named by the hover label"
+    When I move the camera to (148, 155)
+    And I wait 30 ticks
+    Then I take a screenshot "the vacstone chunk stack in Russian, named by the hover label"
