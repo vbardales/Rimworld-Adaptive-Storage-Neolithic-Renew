@@ -12,7 +12,9 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
         [Then("def {string} does not exist")]
         public void DefDoesNotExist(PickleContext ctx, string defName)
         {
-            ctx.Assert(DefDatabase<ThingDef>.GetNamedSilentFail(defName) == null,
+            // GetNamedSilentFail also resolves the back-compat aliases the save-migration patch registers for the old
+            // per-stone defNames, so scan the database itself: only a real def counts as existing.
+            ctx.Assert(!DefDatabase<ThingDef>.AllDefsListForReading.Any(def => def.defName == defName),
                 "ThingDef '" + defName + "' still exists");
         }
 
@@ -72,11 +74,14 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
         public void BlueprintIsAt(PickleContext ctx, string defName, string stuffName, int x, int z)
         {
             var cell = new IntVec3(x, 0, z);
-            var blueprint = cell.GetThingList(Find.CurrentMap).OfType<Blueprint_Build>().FirstOrDefault(candidate =>
+            var blueprints = cell.GetThingList(Find.CurrentMap).OfType<Blueprint_Build>().ToList();
+            var blueprint = blueprints.FirstOrDefault(candidate =>
                 candidate.def.entityDefToBuild != null && candidate.def.entityDefToBuild.defName == defName &&
-                candidate.Stuff != null && candidate.Stuff.defName == stuffName);
+                candidate.EntityToBuildStuff() != null && candidate.EntityToBuildStuff().defName == stuffName);
             ctx.Assert(blueprint != null, "blueprint for " + defName + " made from " + stuffName +
-                " is not at (" + x + ", " + z + ")");
+                " is not at (" + x + ", " + z + "); blueprints there: " + string.Join(", ", blueprints.Select(candidate =>
+                    (candidate.def.entityDefToBuild != null ? candidate.def.entityDefToBuild.defName : candidate.def.defName) +
+                    "/" + (candidate.EntityToBuildStuff() != null ? candidate.EntityToBuildStuff().defName : "no stuff")).ToArray()));
         }
 
         private static ThingDef RequiredDef(PickleContext ctx, string name)
