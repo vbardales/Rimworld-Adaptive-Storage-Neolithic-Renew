@@ -43,3 +43,6 @@ package.json
 
 # Scratch stdout/stderr of the Pickle wrapper launches; the durable record is tests/Pickle/Evidence/
 tests/Pickle/core-en-*.log
+
+# Raw Pickle reports stay on disk; one text summary per run goes in docs/runs/
+tests/Pickle/Evidence/

@@ -59,9 +59,11 @@ The wrapper preserves each launch's report before the shared report directory ca
 
 ## Evidence and untracked files
 
-- `tests/Pickle/Evidence/<run>/` is the durable handoff of `Run-PickleWsl.ps1 -EvidenceDir` and **is tracked**. Keep only what
-  a verdict needs: `summary.json`, `junit.xml`, `Player.log` and the reviewed captures as JPEGs. Do not commit the raw
-  multi-hundred-MB screenshot folders; the launcher's rolling archive keeps five runs and is not evidence.
+- `tests/Pickle/Evidence/<run>/` is where `Run-PickleWsl.ps1 -EvidenceDir` copies a run's raw report before the lock is released.
+  It stays **on disk and is ignored by git** (a report is tens of thousands of log lines plus screenshots). What is committed is
+  one short text summary per run in `docs/runs/<date>-<pass>.md`: pass, filter, `exitReason`, scenario counts, cause of any
+  failure and the path of the local raw report. Read `exitReason` before the counts. The launcher's rolling archive keeps only
+  five runs and is not evidence, so do not delete `Evidence/` folders that a summary still points to.
 - `tests/Pickle/core-en-*.log` are scratch output of the wrapper launches and are ignored.
 - `*.dds` is ignored repository-wide: every texture has a tracked `.png` twin, and RimWorld loads either. Local `.dds` files
   left on disk are harmless and are never staged.
