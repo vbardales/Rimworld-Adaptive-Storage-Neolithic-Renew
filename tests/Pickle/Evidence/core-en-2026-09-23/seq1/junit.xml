@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite name="the mod loads on top of the Adaptive Storage Framework" tests="5" failures="0" skipped="0" flakes="0" time="3.369">
+    <testcase name="the framework is active and loads before the mod" classname="the mod loads on top of the Adaptive Storage Framework" time="0.547">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the nine hand-written buildings exist" classname="the mod loads on top of the Adaptive Storage Framework" time="1.068">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the framework's GraphicsDefs that draw them exist" classname="the mod loads on top of the Adaptive Storage Framework" time="0.734">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="the two research projects exist" classname="the mod loads on top of the Adaptive Storage Framework" time="0.227">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+    <testcase name="both projects sit in the framework's tab, at the cost the file asks for" classname="the mod loads on top of the Adaptive Storage Framework" time="0.793">
+      <system-out>Attachment: smoke-attachment -&gt; smoke test attachment content
+</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
