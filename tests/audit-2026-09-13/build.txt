@@ -1,2 +1,0 @@
-error CS1504: Le fichier source 'c:\Users\nelim\documents\rimworld\AdaptiveStorageNeolithicRenew\GeneratedTranslations.cs' n'a pu �tre ouvert ('Le fichier sp�cifi� est introuvable. ')
-Compiler exit code: 1

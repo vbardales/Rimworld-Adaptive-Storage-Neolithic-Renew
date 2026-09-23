@@ -1,8 +1,8 @@
 # Adaptive Storage Neolithic Renew Pickle suite
 
-The suite targets the current upstream stone-as-stuff architecture. Historical result folders under
-`tests/pickle-run-2026-09-21-*` document the superseded Workshop-based version and do not validate the
-current `Mod/` tree.
+The suite targets the current upstream stone-as-stuff architecture. The runs of 2026-09-21 played the superseded
+Workshop-based version; their raw reports were deleted and one line per run remains in `docs/runs/2026-09-21.md`. They do
+not validate the current `Mod/` tree.
 
 ## Companion mod
 
@@ -49,13 +49,11 @@ Use the shared WSL launcher and its dependency maps; do not start Windows RimWor
 Odyssey English/French/Russian, and `[K]Extra Stone` English/French. Open every `@review` capture and record
 the result directory, scenario totals, exit reason and log assessment in `STATUS.md`.
 
-`wsl-deps.core.map` disables all five DLCs for the Core-only pass while retaining the framework and
-shared research steps. Use `wsl-deps.map` for the full-DLC pass and `wsl-deps.stones.map` for the
-third-party-stone pass.
-
-Run Core English with `Run-CoreEnglish.ps1`. It selects the exact feature filenames for 01–04 and
-08; `-Filter Neolithic` is invalid because Pickle does not match that word in the scenario text.
-The wrapper preserves each launch's report before the shared report directory can be overwritten.
+`wsl-deps.core.map` (all five DLCs off) is **not playable**: the `test-colony` fixture references Royalty, Biotech and Odyssey
+defs and its load hangs until the watchdog kills the game (`docs/runs/2026-09-23-core-en.md`). Use `wsl-deps.map` (all DLCs)
+for the English, French and Russian passes and `wsl-deps.stones.map` for the third-party-stone pass. Select features by their
+exact filenames: `-Filter Neolithic` is invalid because Pickle does not match that word in the scenario text. English plays
+01-04, 06, 08 and 12; French plays 05; Russian plays 07.
 
 ## Evidence and untracked files
 
@@ -64,6 +62,14 @@ The wrapper preserves each launch's report before the shared report directory ca
   one short text summary per run in `docs/runs/<date>-<pass>.md`: pass, filter, `exitReason`, scenario counts, cause of any
   failure and the path of the local raw report. Read `exitReason` before the counts. The launcher's rolling archive keeps only
   five runs and is not evidence, so do not delete `Evidence/` folders that a summary still points to.
+- **What to keep** (`AGENTS.md`, "Test evidence"): per scenario, only the latest report for the revision now in the repository,
+  plus an older one only if it is the sole proof of a check the latest run did not repeat. Delete a report as soon as a newer
+  one replaces it. Before deleting, list what goes and what stays. `STATUS.md` never points at a raw folder: it points at
+  `docs/runs/`. Minify what stays: keep `summary.json`, `summary.md`, `junit.xml` and `evidence-complete.txt`; reduce
+  `Player.log` to its first 100 lines plus every WARN and ERROR line; delete `messages.ndjson`, `report.html` and every
+  screenshot except the `@review` captures a person opened, saved as JPEG (about 1280 px wide, quality 70).
+- Old-style `tests/pickle-run-*`, `tests/audit-*`, `tests/workflow-*audit*` and `tests/translation-validation-*` folders are
+  ignored too, and must not come back.
 - `tests/Pickle/core-en-*.log` are scratch output of the wrapper launches and are ignored.
 - `*.dds` is ignored repository-wide: every texture has a tracked `.png` twin, and RimWorld loads either. Local `.dds` files
   left on disk are harmless and are never staged.

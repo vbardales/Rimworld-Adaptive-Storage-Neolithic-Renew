@@ -1,6 +1,0 @@
-Conditional patches skipped, so 1 def(s) were not created: pass the mod their gate names as a target to check them
-Patch operations not implemented here: Patch - a def one of them creates is invisible to this script
-Patch operations applied: 33
-Defs indexed: 11661
-
-Keys checked: 112 - errors: 0

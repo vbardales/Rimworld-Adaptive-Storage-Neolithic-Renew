@@ -1,1 +1,0 @@
-{"total":2,"passed":2,"failed":0,"skipped":0,"flaky":0,"exitReason":"passed","setName":"avec-pickletools","scenarios":[{"name":"the storage tab and its project by their French labels","outcome":"Passed","durationMs":22894,"attempts":1},{"name":"the Main tab by its French label","outcome":"Passed","durationMs":8077,"attempts":1}]}

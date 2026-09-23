@@ -1,1 +1,0 @@
-PASS: 1310 assertions (static XML and generator contract tests).

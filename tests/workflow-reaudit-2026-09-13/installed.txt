@@ -1,1 +1,0 @@
-PASS: 28 installed-assembly assertions; 6 stones materialized at C:\Users\nelim\Documents\rimworld\AdaptiveStorageNeolithicRenew\.build\workflow-reaudit-20260913\.build\translation-targets. No game UI was launched.

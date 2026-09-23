@@ -46,3 +46,9 @@ tests/Pickle/core-en-*.log
 
 # Raw Pickle reports stay on disk; one text summary per run goes in docs/runs/
 tests/Pickle/Evidence/
+
+# Old-style report folders: raw evidence stays under tests/Pickle/Evidence/ (ignored); history is docs/runs/
+tests/pickle-run-*/
+tests/audit-*/
+tests/workflow-*audit*/
+tests/translation-validation-*/
