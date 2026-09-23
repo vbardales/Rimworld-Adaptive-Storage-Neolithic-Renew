@@ -22,7 +22,7 @@ Feature: French names on the current upstream architecture
     And I wait 30 ticks
     Then I take a screenshot "the granite pot and vacstone chunk stack in French"
 
-  @requires:KExtraStone
+  @requires:Kura.ExtraStone
   @review
   Scenario: a third-party stone remains visible as the material in French
     Given the save "test-colony" is loaded

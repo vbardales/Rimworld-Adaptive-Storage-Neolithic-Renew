@@ -1,6 +1,6 @@
 # The building defs consume ASFStoneChunks, so a third-party chunk joins the system through
 # its stuff category rather than through a generated def or a translation hook.
-@requires:KExtraStone
+@requires:Kura.ExtraStone
 Feature: a third-party stone works as building material
 
   Scenario: the shared stone buildings remain the only building defs
