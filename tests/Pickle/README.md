@@ -45,7 +45,7 @@ pwsh -NoProfile -File tests/Pickle/Source/Build.ps1
 
 ## Required passes
 
-Use the shared WSL launcher and its dependency maps; do not start Windows RimWorld. Run Core English,
+Use the shared WSL launcher and its dependency maps; do not start Windows RimWorld. Run the English pass with every DLC,
 Odyssey English/French/Russian, and `[K]Extra Stone` English/French. Open every `@review` capture and record
 the result directory, scenario totals, exit reason and log assessment in `STATUS.md`.
 
@@ -88,7 +88,7 @@ exact filenames: `-Filter Neolithic` is invalid because Pickle does not match th
   | `Kura.ExtraStone` | 05, all of 06; 11 third-party stone | `wsl-deps.stones.map` in English and French; `wsl-deps.workshop.map` for 11 |
   | `nelim.pickletools.screenshotstudio` | all of 11 | `wsl-deps.workshop.map`, English |
 
-  A skipped scenario is not a passed one: the Core-only pass legitimately skips the Odyssey ones, which is why it is not enough.
+  A skipped scenario is not a passed one: a pass without Odyssey or without the stone mod skips their scenarios, so it is never enough alone.
 - **No manual test left to validate.** Every behavior above is an automated scenario; the architect menu, blueprint frames
   and inspect-pane card are checked statically (`tests/Test-Mod.ps1`) and listed as not covered by a scenario in `STATUS.md`.
   The `@review` captures are still to be looked at, which is reading an image a scenario has already put in the intended state.
