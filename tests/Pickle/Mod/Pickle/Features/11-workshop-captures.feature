@@ -9,12 +9,13 @@
 # interface back, from an [AfterScenario]. Nothing asserts about the image: a person opens each one, and a passing scenario says only
 # that the route ran.
 #
-# `@wip`, so a default pass skips it. Aim at this file: `-Filter '11-workshop-captures.feature' -IncludeWip`. The last scenario needs the
-# stone mod of the "stones" pass (`-DepMap wsl-deps.stones.map`) and is skipped without it.
+# `@requires:nelim.pickletools.screenshotstudio`: only the pass of `-DepMap wsl-deps.workshop.map` stages the screenshot studio and
+# plays this feature; every other pass skips it. Aim at this file with `-Filter '11-workshop-captures.feature'`. The plinth scenario
+# also needs Odyssey and the last one the stone mod, both present in that map.
 #
 # The camera stays centred at (132, 132) on the upper-right orange area at maximum zoom. A Workshop crop may cut
 # a building or its contents at an edge; the icon composition takes priority, as documented in PUBLICATION.md.
-@wip
+@requires:nelim.pickletools.screenshotstudio
 @workshop
 @review
 Feature: the pictures of the Workshop page

@@ -1,0 +1,8 @@
+# Core-only pass for the integrated stone-as-stuff suite.
+!ludeon.rimworld.royalty
+!ludeon.rimworld.ideology
+!ludeon.rimworld.biotech
+!ludeon.rimworld.anomaly
+!ludeon.rimworld.odyssey
+adaptive.storage.framework   3033901359
+nelim.pickletools.research   path:PickleTools/ResearchSteps/Mod
