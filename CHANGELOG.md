@@ -30,7 +30,7 @@ as release history; its implementation has now been superseded.
 ## [1.0.0] — 2026-09-22
 
 First release. Port of Soul, Phaneron and bradson's **Adaptive Storage Neolithic Module** to
-RimWorld 1.6. No earlier version of this repository was ever tagged or uploaded, so everything
+RimWorld 1.6. The only earlier upload is the private `0.1.0` prepublication below, which created the item; everything
 below is part of this one release.
 
 ### Fixed
@@ -128,3 +128,9 @@ below is part of this one release.
 - `About/Preview.png`, the authors' own showcase.
 - `LICENSE` — the MIT notice, `Copyright (c) 2023 Soul, Phaneron, bradson`, verbatim, at the
   repository root and inside `Mod/`.
+
+## [0.1.0] — 2026-09-22
+
+Création d'un publishIdFile. Prepublication: a first upload whose only purpose was to create the Workshop item (private, as Steam
+creates every item) and obtain `About/PublishedFileId.txt` (id `3806101377`). The upload contained `Mod/` as it stood at commit
+`2ab4b90`, unchanged; the commit that adds the id file is `a008025`. This entry does not say the mod is public or tested.
