@@ -39,6 +39,26 @@ modicon_audit: complete
 
 # Adaptive Storage Neolithic Renew — status
 
+## Note from the CI/CD session — 2026-09-24 (read before the next publish)
+
+Left for the next Adaptive Storage session; no stage change, the mod stays `published`. Done on `main` while this repository had
+no open session, from a temporary worktree (nothing in your working tree was touched):
+
+- **`--gallery-dir Art/WorkshopScreenshots`**: `.github/` regenerated with `--replace` and the same values plus that option, pushed
+  as `8eeb267` (template stamp `eba6b3fdf670`, Rimworld-Release-Admin `31fe605`), `Mod static tests` and `workflow script tests`
+  green. `.github/publish.config.json` gains `galleryDir`; your description heading regex is unchanged. The dry-run and the publish
+  log now list the six `workshop-*.png` (by file name, with sizes) as a reminder of the manual gallery upload; nothing is sent,
+  because SteamCMD has a single image field (`previewfile`) and no library of the chain sends the gallery.
+  The upload order remains the table of `PUBLICATION.md` section 2.
+- **`docs/RELEASE_TEMPLATE.md`**, `8bf0011`: the regeneration command now contains `--gallery-dir Art/WorkshopScreenshots` (a `--replace`
+  without it drops `galleryDir`), the heading regex is escaped like in the configuration, and the stamp is the current one.
+- **Checked read-only on the public page, 2026-09-24 (local dry-run of 1.1.1, all four options on)**: image, description (4297 bytes),
+  title `Adaptive Storage Neolithic Renew` and tags `Mod`, `1.6` are identical to what the repository would send.
+- **No GitHub dry-run of the regenerated workflow yet**: `v1.1.1` exists on another commit, so the first real dry-run is that of the
+  next version, with its `## [x.y.z]` and `### x.y.z` sections.
+- Your local checkout is behind `origin/main` if it was not updated since: `git pull` first.
+
+
 ## Current upstream integration — 2026-09-22
 
 **Stage rolled back from `tested` to `done`.** User feedback correctly identified that the first
