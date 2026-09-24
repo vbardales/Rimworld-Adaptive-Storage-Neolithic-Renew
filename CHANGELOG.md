@@ -4,6 +4,11 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-09-24
+
+The first release of the current implementation, which follows the original authors' current GitHub source.
+The Workshop item so far holds only the private `0.1.0` prepublication, which created it.
+
 ### Changed
 
 - Stopped tracking the 171 `.dds` textures in Git and ignore `*.dds`. Every one has a `.png` twin in the same folder, which
@@ -17,15 +22,16 @@ All notable changes to this mod are documented here.
 - Removed the continuation-only Harmony translation assembly and Harmony dependency; material names
   now come from RimWorld's ordinary stuff-label system.
 - Reworked the static and Pickle checks for stuffed buildings, including granite, vacstone and a
-  third-party stone. These revised runtime scenarios have not yet been played.
+  third-party stone. The revised in-game scenarios were played on 2026-09-23 in English, French and
+  Russian, with Odyssey and with a third-party stone mod, and all passed.
 
 ### Fixed
 
 - Kept the Russian folder at the exact `DefInjected` casing required on Linux and Steam Deck.
 - Corrected French adjective agreement in the stone plinth description.
 
-The `1.0.0` section below describes the already-published, Workshop-based first release and is retained
-as release history; its implementation has now been superseded.
+The `1.0.0` section below describes the GitHub release of the earlier, Workshop-based implementation.
+It was never uploaded to Steam and is retained as release history; its implementation has been superseded.
 
 ## [1.0.0] — 2026-09-22
 

@@ -138,12 +138,15 @@ fixture; do not post a compatibility claim before the revised runtime pass succe
 - Adult-content questionnaire: **No**. The mod contains storage furniture and cartoon item graphics; no mature content is depicted.
 - Tags: no manual action required for the standard tags; RimWorld resends `Mod` and `1.6` on update.
 - Incompatible item: Adaptive Storage Neolithic Module, Workshop id `3033901895`.
-- Visibility: leave private until the integrated tree has passed the revised runtime scenarios and the replacement captures have been
-  reviewed; then make it public manually.
+- Visibility: leave private. The integrated tree passed the revised in-game scenarios on 2026-09-23; make the item public manually
+  once the content upload is verified, the description is pasted and the six gallery images are approved and uploaded.
 
 ## 6. Update notes
 
-Use these as the Steam change notes when uploading the integrated tree. This is an update to the existing item, not a new `1.0.0` item.
+Steam change note for the integrated tree. It is an update to the existing item `3806101377`, uploaded by the manual workflow
+`.github/workflows/publish-tag.yml`, which reads the fenced block under the `### <version>` heading below.
+
+### 1.1.0
 
 ```text
 [h3]Upstream source integration[/h3]
@@ -155,13 +158,18 @@ Use these as the Steam change notes when uploading the integrated tree. This is 
 [*]Added the upstream save-migration patch for the former generated stone buildings, blueprints and frames.
 [*]Removed the obsolete continuation DLL and direct Harmony dependency.
 [*]Kept RimWorld 1.6 support and corrected case-sensitive Russian localization paths.
+[*]Corrected the French plinth description and made the French and Russian plinth descriptions independent of the material.
 [/list]
 ```
 
 ## Current state
 
 - Workshop item: `3806101377`; `Mod/About/PublishedFileId.txt` is committed.
-- GitHub tag and release `1.0.0` exist on the earlier packageId commit by owner instruction; they do not identify this later integration.
+- GitHub tag and release `1.0.0` exist on the earlier packageId commit by owner instruction; they do not identify this later integration
+  and are kept as history. The tree is released as `1.1.0`: the CI creates tag `v1.1.0` and its release only after a successful upload,
+  so neither is created by hand. Publication path: the manual workflow `publish-tag.yml` (no assembly, so no build), a dry-run of the exact
+  commit first (evidence below), then `Rimworld-Release-Admin/scripts/dispatch-publish.sh` with that commit's full SHA, approved by Virginie.
+  That workflow sends the `Mod/` content and the change note above, never the description, title, preview or visibility.
 - Static checks: GitHub Actions on HEAD, `Test-Mod.ps1` 173 assertions (29 XML files, 171 textures) and `Test-InstalledTranslations.ps1` 123 assertions passed.
 - Runtime on the integrated tree: played 2026-09-23, all green; stage is `tested`.
 - Description: ready to paste manually.
