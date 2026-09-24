@@ -15,12 +15,15 @@ only when an opt-in option is set (section 3); visibility and everything else on
 - [ ] The static suites are green on the commit (GitHub Actions `Mod static tests` and `workflow script tests`).
 - [ ] Nothing else is queued for this tree: a change to `Mod/` after the dry-run needs a new dry-run and a new SHA.
 - [ ] The generated `.github/` is up to date with the shared template. It was regenerated on 2026-09-24 from `Rimworld-Release-Admin` commit
-      `d5c5b0f` (stamp `261e5b0c90b3`). Ask the generator whether a newer template exists, and regenerate with the same arguments if so:
+      `31fe605` (stamp `eba6b3fdf670`, with `--gallery-dir`). Ask the generator whether a newer template exists, and regenerate with the same arguments if so:
 
       ```bash
       bash /c/Users/nelim/Documents/rimworld/Rimworld-Release-Admin/scripts/generate-publish-workflow.sh "$PWD" --check
-      bash /c/Users/nelim/Documents/rimworld/Rimworld-Release-Admin/scripts/generate-publish-workflow.sh "$PWD" --workshop-id 3806101377 --package-id nelim.adaptivestorageneolithic --release-title "Adaptive Storage Neolithic Renew {version}" --require Defs --forbid Assemblies --description-file PUBLICATION.md --description-heading '^## 1. Steam description' --replace
+      bash /c/Users/nelim/Documents/rimworld/Rimworld-Release-Admin/scripts/generate-publish-workflow.sh "$PWD" --workshop-id 3806101377 --package-id nelim.adaptivestorageneolithic --release-title "Adaptive Storage Neolithic Renew {version}" --require Defs --forbid Assemblies --description-file PUBLICATION.md --description-heading '^## 1\. Steam description' --gallery-dir Art/WorkshopScreenshots --replace
       ```
+
+      Keep `--gallery-dir` in that command: a `--replace` without it drops `galleryDir` from `.github/publish.config.json`. It only makes the
+      dry-run list the gallery images of that folder (a reminder of the manual upload; the workflow never sends the gallery).
 
       Generate from a clean checkout of the template, not from a working tree with uncommitted changes. A regeneration is only proven by the
       CI dry-run of the next release: a dry-run of a version whose tag already exists fails at the tag check.
