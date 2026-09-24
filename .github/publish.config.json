@@ -1,5 +1,5 @@
 {
-  "templateStamp": "261e5b0c90b3",
+  "templateStamp": "eba6b3fdf670",
   "workshopId": "3806101377",
   "packageId": "nelim.adaptivestorageneolithic",
   "releaseTitle": "Adaptive Storage Neolithic Renew {version}",
@@ -10,6 +10,7 @@
     "Assemblies"
   ],
   "previewFile": "About/Preview.png",
+  "galleryDir": "Art/WorkshopScreenshots",
   "description": {
     "file": "PUBLICATION.md",
     "heading": "^## 1\\. Steam description"
