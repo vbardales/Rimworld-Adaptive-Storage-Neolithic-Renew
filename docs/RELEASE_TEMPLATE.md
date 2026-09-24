@@ -41,14 +41,15 @@ The workflow reads these from the pinned commit, so they must be final before th
    the staged file count and size are the expected ones (this mod has no assembly: no `Assemblies/`, no README), the item id
    and package id match `Mod/About`, the change note printed is the intended one, and the last lines say
    `DRY RUN: nothing was sent to Steam`. Record the run id and the SHA.
-4. Publish, launched with the script that refuses without a dry-run of the same SHA and prints the run to approve:
+4. Publish. **The session launches it** with the script below, which refuses without a green dry-run of the same SHA and options
+   and prints the link of the run that waits for approval. The session gives that link to Virginie and stops there:
 
    ```bash
    Rimworld-Release-Admin/scripts/dispatch-publish.sh vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew publish-tag.yml [SHA] [X.Y.Z] [--preview] [--description] [--title] [--tags]
    ```
 
-5. Virginie approves the `steam-production` environment on the run page (*Review deployments*, *Approve and deploy*).
-   No session approves it.
+5. **Virginie validates the release workflow**: she approves the `steam-production` environment on the run page (*Review deployments*,
+   *Approve and deploy*). No session approves it, and nothing is uploaded before she does.
 6. If the upload succeeded and only the `tag-and-release` job failed: *Re-run failed jobs*. Never *Re-run all jobs*: it uploads again.
 
 Docs-only commits after the dry-run (`STATUS.md`, `docs/`) do not change what is published: the workflow reads the pinned commit.
