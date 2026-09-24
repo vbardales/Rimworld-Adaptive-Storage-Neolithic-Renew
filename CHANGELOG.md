@@ -4,6 +4,13 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased]
 
+## [1.1.1] — 2026-09-24
+
+### Changed
+
+- Updated the Workshop header image to the current `Mod/About/Preview.png`. The page still showed the image of the earlier `0.1.0`
+  prepublication, whose composition changed afterwards. The mod files are unchanged: `Mod/` is identical to `1.1.0`.
+
 ## [1.1.0] — 2026-09-24
 
 The first release of the current implementation, which follows the original authors' current GitHub source.

@@ -146,6 +146,16 @@ fixture; do not post a compatibility claim before the revised runtime pass succe
 Steam change note for the integrated tree. It is an update to the existing item `3806101377`, uploaded by the manual workflow
 `.github/workflows/publish-tag.yml`, which reads the fenced block under the `### <version>` heading below.
 
+### 1.1.1
+
+```text
+[h3]Header image[/h3]
+
+[list]
+[*]Updated the Workshop header image. No change to the mod files.
+[/list]
+```
+
 ### 1.1.0
 
 ```text
