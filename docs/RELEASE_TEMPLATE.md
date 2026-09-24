@@ -53,7 +53,7 @@ The workflow reads these from the pinned commit, so they must be final before th
 
 Docs-only commits after the dry-run (`STATUS.md`, `docs/`) do not change what is published: the workflow reads the pinned commit.
 
-## 4. What the workflow never touches (manual on the Steam page)
+## 4. What the workflow sends only on request, and what stays manual
 
 Decide for each line whether it changed in this release. "CI option" is the opt-in that lets the workflow send it; the dry-run prints the value on the page next to the one that would be sent. Without the option the field is left as it is.
 
@@ -65,7 +65,7 @@ Decide for each line whether it changed in this release. "CI option" is the opt-
 | Tags | `update_tags` | [yes / no] | `Mod` plus one tag per `<supportedVersions>` entry; replaces the whole set | [ ] |
 | Gallery images, in order | none, manual | [yes / no] | `Art/WorkshopScreenshots/`, order in section 2 of `PUBLICATION.md` | [ ] |
 | Visibility | none, manual, never sent | [yes / no] | the owner | [ ] |
-| Steam comments and thanks | [yes / no] | section 4 of `PUBLICATION.md`, once, only after the item is public | [ ] |
+| Steam comments and thanks | none, manual | [yes / no] | section 4 of `PUBLICATION.md`, once, only after the item is public | [ ] |
 
 Pitfall seen on `1.1.0`: after a manual paste the description of the page had the `[h2]WHAT CHANGED[/h2]` heading twice, while
 `About.xml` and `PUBLICATION.md` had it once. Paste from the fenced block only, then check the count with the command below.
@@ -85,6 +85,8 @@ curl -s -X POST "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFi
 - [ ] The change notes page lists the new update and its text:
       `https://steamcommunity.com/sharedfiles/filedetails/changelog/3806101377`.
 - [ ] The gallery shows the images in the order of section 2 of `PUBLICATION.md`, and the header image is the current `Preview.png`.
+- [ ] For each option that was on, the page shows what the dry-run announced: the served header image (`preview_url` of the API) has the
+      size and SHA-256 printed by the dry-run; the title and the tag list equal the printed values; the description equals the source block.
 - [ ] GitHub: tag `v[X.Y.Z]` points to `[SHA]` and release `[X.Y.Z]` exists with the `CHANGELOG.md` section as notes.
 
 ## 6. Record it
