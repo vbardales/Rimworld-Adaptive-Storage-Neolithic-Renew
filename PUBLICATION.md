@@ -5,7 +5,7 @@ The item already exists, so RimWorld will update its files and tags but **will n
 description below into the Workshop page by hand.
 
 **The mod is at `tested`** (in-game Pickle pass of 2026-09-23, `STATUS.md` and `docs/runs/`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
-and has no continuation DLL or direct Harmony dependency. The steps that remain before `prepublished` are the repository-position and tag/release question below, the adult-content boxes, the owner's approval of the six gallery images and pasting the description by hand; the item stays private until then.
+and has no continuation DLL or direct Harmony dependency. Version `1.1.0` was uploaded on 2026-09-24 (tag `v1.1.0`, evidence in `STATUS.md`). What remains manual, and the owner's: the adult-content boxes, pasting the description, the six gallery images, the header image and the visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
 
 ## 1. Steam description
 
@@ -138,7 +138,7 @@ fixture; do not post a compatibility claim before the revised runtime pass succe
 - Adult-content questionnaire: **No**. The mod contains storage furniture and cartoon item graphics; no mature content is depicted.
 - Tags: no manual action required for the standard tags; RimWorld resends `Mod` and `1.6` on update.
 - Incompatible item: Adaptive Storage Neolithic Module, Workshop id `3033901895`.
-- Visibility: leave private. The integrated tree passed the revised in-game scenarios on 2026-09-23; make the item public manually
+- Visibility: observed 2026-09-24, the item is readable without login and the API returns visibility 0 (public). The intended visibility is the owner's decision. The integrated tree passed the revised in-game scenarios on 2026-09-23; make the item public manually
   once the content upload is verified, the description is pasted and the six gallery images are approved and uploaded.
 
 ## 6. Update notes
