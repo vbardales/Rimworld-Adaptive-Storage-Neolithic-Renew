@@ -105,3 +105,11 @@ curl -s -X POST "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFi
 | Publish | run 35967550073, same commit, approved by Virginie |
 | Tag and release | `v1.1.0` on `0ab6a58`; release `1.1.0` is "Latest"; `1.0.0` kept as history |
 | Steam | updated 2026-09-24 07:05 UTC, 2,622,395 bytes |
+
+## Reference: `1.1.1` (header image only, first use of `update_preview`)
+
+| | |
+| --- | --- |
+| Dry-run | run 35971407130, commit `037da4ba3946b89a3556fbfec74bb2ad4f97bee4`, `update_preview=true` |
+| Publish | run 35971816069, same commit, launched with `--preview`, approved by Virginie |
+| Result | served header image identical to `Preview.png` (673,694 bytes); tag and release `v1.1.1`; no "1.1.1" entry on the change notes page right after the upload (cache, or no update recorded for identical content: not established) |

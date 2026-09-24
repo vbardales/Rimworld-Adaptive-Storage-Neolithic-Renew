@@ -4,8 +4,8 @@ Publication sheet for Workshop item `3806101377`, updated after integrating the 
 The item already exists, so RimWorld will update its files and tags but **will not resend the description**. Paste the Steam-formatted
 description below into the Workshop page by hand.
 
-**The mod is at `tested`** (in-game Pickle pass of 2026-09-23, `STATUS.md` and `docs/runs/`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
-and has no continuation DLL or direct Harmony dependency. Version `1.1.0` was uploaded on 2026-09-24 (tag `v1.1.0`, evidence in `STATUS.md`). What remains manual, and the owner's: the adult-content boxes, pasting the description, the six gallery images, the header image and the visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
+In-game Pickle pass of 2026-09-23 (`STATUS.md`, `docs/runs/`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
+and has no continuation DLL or direct Harmony dependency. **The mod is at `published`** (2026-09-24): `1.1.0` uploaded the content and `1.1.1` the header image (tags `v1.1.0`, `v1.1.1`; evidence in `STATUS.md`). The page was checked against this file on the same day. What remains manual, and the owner's: the Steam comments and thanks, and any change of visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
 
 ## 1. Steam description
 
