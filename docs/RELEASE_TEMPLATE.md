@@ -14,6 +14,17 @@ only when an opt-in option is set (section 3); visibility and everything else on
       (the runs of a superseded build prove nothing about this one).
 - [ ] The static suites are green on the commit (GitHub Actions `Mod static tests` and `workflow script tests`).
 - [ ] Nothing else is queued for this tree: a change to `Mod/` after the dry-run needs a new dry-run and a new SHA.
+- [ ] The generated `.github/` is up to date with the shared template. It was generated from `Rimworld-Release-Admin` commit `81b6432`
+      (see `STATUS.md`). The CI/CD session made review fixes after that commit (configuration checked before any write, limits in
+      bytes, a 15 s timeout on the reads of the Steam page, XML comments of `About.xml` ignored, forced LF line endings, a template
+      fingerprint in `.github/publish.config.json`, `dispatch-publish.sh` no longer mistaking another run for the publish). Once they
+      are pushed, regenerate with the same arguments and `--replace`, then read a dry-run, before the next publish:
+
+      ```bash
+      bash /c/Users/nelim/Documents/rimworld/Rimworld-Release-Admin/scripts/generate-publish-workflow.sh "$PWD" --workshop-id 3806101377 --package-id nelim.adaptivestorageneolithic --release-title "Adaptive Storage Neolithic Renew {version}" --require Defs --forbid Assemblies --description-file PUBLICATION.md --description-heading '^## 1\. Steam description' --replace
+      ```
+
+      After that regeneration, `generate-publish-workflow.sh "$PWD" --check` tells whether the repository is behind the template.
 
 ## 2. Files to edit, in one commit, before the dry-run
 
