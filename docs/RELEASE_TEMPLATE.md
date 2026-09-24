@@ -1,8 +1,8 @@
 # Release template: updating the Workshop item
 
 Copy this checklist for each release and fill in the brackets. It was written after `1.1.0` (2026-09-24) and records what
-that release showed: the workflow uploads content and a change note, and nothing else. Everything else on the Steam page
-stays manual.
+that release showed: the workflow uploads content and a change note. The header image, description, title and tags are sent
+only when an opt-in option is set (section 3); visibility and everything else on the Steam page stay manual.
 
 - Repository: `vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew`, stable branch `main`
 - Workshop item: `3806101377`, package `nelim.adaptivestorageneolithic`
@@ -25,7 +25,6 @@ The workflow reads these from the pinned commit, so they must be final before th
       change note (BBCode: `[h3]`, `[list]`, `[*]`). The workflow finds it by the heading; older notes stay below.
 - [ ] `Mod/About/About.xml`: the description is not uploaded, but keep it equal to the description in `PUBLICATION.md`
       when the text changed, so the in-game upload path stays coherent.
-- [ ] The version `X.Y.Z` in `.github/workflows/publish-tag.yml` (`default:` of the `version` input), if you rely on the default.
 
 ## 3. Dry-run, then publish
 
@@ -33,8 +32,10 @@ The workflow reads these from the pinned commit, so they must be final before th
 2. Dry-run (no Steam contact, environment `release-dry-run`):
 
    ```bash
-   gh workflow run publish-tag.yml --repo vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew --ref main -f ref=[SHA] -f version=[X.Y.Z] -f mode=dry-run
+   gh workflow run publish-tag.yml --repo vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew --ref main -f ref=[SHA] -f version=[X.Y.Z] -f mode=dry-run [-f update_preview=true] [-f update_description=true] [-f update_title=true] [-f update_tags=true]
    ```
+
+   The four options are off by default. Use the same options for the dry-run and the publish: the script of step 4 refuses otherwise.
 
 3. Read the log, not the green tick. Check: the commit is on `main`, tag `v[X.Y.Z]` does not exist, the `## [X.Y.Z]` section is found,
    the staged file count and size are the expected ones (this mod has no assembly: no `Assemblies/`, no README), the item id
@@ -43,7 +44,7 @@ The workflow reads these from the pinned commit, so they must be final before th
 4. Publish, launched with the script that refuses without a dry-run of the same SHA and prints the run to approve:
 
    ```bash
-   Rimworld-Release-Admin/scripts/dispatch-publish.sh vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew publish-tag.yml [SHA] [X.Y.Z]
+   Rimworld-Release-Admin/scripts/dispatch-publish.sh vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew publish-tag.yml [SHA] [X.Y.Z] [--preview] [--description] [--title] [--tags]
    ```
 
 5. Virginie approves the `steam-production` environment on the run page (*Review deployments*, *Approve and deploy*).
@@ -54,14 +55,16 @@ Docs-only commits after the dry-run (`STATUS.md`, `docs/`) do not change what is
 
 ## 4. What the workflow never touches (manual on the Steam page)
 
-Decide for each line whether it changed in this release. The workflow leaves all of them as they are.
+Decide for each line whether it changed in this release. "CI option" is the opt-in that lets the workflow send it; the dry-run prints the value on the page next to the one that would be sent. Without the option the field is left as it is.
 
-| Field | Changed in this release? | Source | Done |
-| --- | --- | --- | --- |
-| Description (BBCode) | [yes / no] | the fenced block of section 1 of `PUBLICATION.md` | [ ] |
-| Gallery images, in order | [yes / no] | `Art/WorkshopScreenshots/`, order in section 2 of `PUBLICATION.md` | [ ] |
-| Header image | [yes / no] | `Mod/About/Preview.png` (changed after the upload of `0.1.0`, so the page can still show the older one) | [ ] |
-| Title, tags, visibility | [yes / no] | section 5 of `PUBLICATION.md` | [ ] |
+| Field | CI option | Changed in this release? | Source | Done |
+| --- | --- | --- | --- | --- |
+| Description (BBCode) | `update_description` | [yes / no] | the fenced block of section 1 of `PUBLICATION.md` (8000 characters at most) | [ ] |
+| Header image | `update_preview` | [yes / no] | `Mod/About/Preview.png`, a PNG under 1 MiB | [ ] |
+| Title | `update_title` | [yes / no] | the `<name>` of `About.xml` | [ ] |
+| Tags | `update_tags` | [yes / no] | `Mod` plus one tag per `<supportedVersions>` entry; replaces the whole set | [ ] |
+| Gallery images, in order | none, manual | [yes / no] | `Art/WorkshopScreenshots/`, order in section 2 of `PUBLICATION.md` | [ ] |
+| Visibility | none, manual, never sent | [yes / no] | the owner | [ ] |
 | Steam comments and thanks | [yes / no] | section 4 of `PUBLICATION.md`, once, only after the item is public | [ ] |
 
 Pitfall seen on `1.1.0`: after a manual paste the description of the page had the `[h2]WHAT CHANGED[/h2]` heading twice, while
