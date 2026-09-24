@@ -95,5 +95,5 @@ skipped on `wsl-deps.map`.
   and inspect-pane card are checked statically (`tests/Test-Mod.ps1`) and listed as not covered by a scenario in `STATUS.md`.
   The `@review` captures are still to be looked at, which is reading an image a scenario has already put in the intended state.
 
-The current rewritten suite compiles but has not yet been played. Until it has, the project remains at
-`stage: done`, not `tested`.
+The rewritten suite was played on 2026-09-23 (see `docs/runs/` and `STATUS.md`): every `@requires` condition ran, all green, and the project
+is at `stage: tested`.

@@ -4,9 +4,8 @@ Publication sheet for Workshop item `3806101377`, updated after integrating the 
 The item already exists, so RimWorld will update its files and tags but **will not resend the description**. Paste the Steam-formatted
 description below into the Workshop page by hand.
 
-**Publication remains paused at `done`.** The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
-and has no continuation DLL or direct Harmony dependency. The static suites pass, but this tree has not completed its new in-game Pickle
-pass. Do not present the update as tested or upload replacement screenshots until that pass and its `@review` captures have been reviewed.
+**The mod is at `tested`** (in-game Pickle pass of 2026-09-23, `STATUS.md` and `docs/runs/`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
+and has no continuation DLL or direct Harmony dependency. The steps that remain before `prepublished` are the repository-position and tag/release question below, the adult-content boxes, the owner's approval of the six gallery images and pasting the description by hand; the item stays private until then.
 
 ## 1. Steam description
 
@@ -163,9 +162,9 @@ Use these as the Steam change notes when uploading the integrated tree. This is 
 
 - Workshop item: `3806101377`; `Mod/About/PublishedFileId.txt` is committed.
 - GitHub tag and release `1.0.0` exist on the earlier packageId commit by owner instruction; they do not identify this later integration.
-- Static checks: `Test-Mod.ps1` 175 assertions passed; `Test-InstalledTranslations.ps1` 123 assertions passed.
-- Runtime on the integrated tree: not run; stage remains `done`.
-- Description: ready to paste manually after the runtime pass.
+- Static checks: GitHub Actions on HEAD, `Test-Mod.ps1` 173 assertions (29 XML files, 171 textures) and `Test-InstalledTranslations.ps1` 123 assertions passed.
+- Runtime on the integrated tree: played 2026-09-23, all green; stage is `tested`.
+- Description: ready to paste manually.
 - Dependency: one, fixed above.
 - Gallery: six cropped replacement captures are in the paths above; the owner still needs to approve and upload them.
 - Comments: two drafted, neither recorded as posted; post only after the item is public and only once.
