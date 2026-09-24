@@ -13,6 +13,16 @@ test('reads the title, description, tags and preview address of a public item', 
   assert.match(request.body, /publishedfileids%5B0%5D=123/);
 });
 
+test('every request carries a timeout, so a stalled connection cannot hang the dry-run', async () => {
+  const signals = [];
+  const item = { result: 1, title: 'T' };
+  const fake = async (url, init) => { signals.push(init?.signal); return { ok: true, json: async () => ({ response: { publishedfiledetails: [item] } }), arrayBuffer: async () => Buffer.from('x') }; };
+  await fetchPage('1', fake);
+  await fetchImageDigest('https://img', fake);
+  assert.equal(signals.length, 2);
+  for (const signal of signals) assert.ok(signal instanceof AbortSignal);
+});
+
 test('an item without tags has an empty list', async () => {
   const fake = answer({ response: { publishedfiledetails: [{ result: 1, title: 'T' }] } });
   assert.deepEqual((await fetchPage('1', fake)).tags, []);

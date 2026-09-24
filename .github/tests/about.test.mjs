@@ -21,6 +21,13 @@ test('one version tag per supported version, without the patch number and withou
   assert.deepEqual(aboutVersions(xml(['1.6', '1.7', '1.6.4633'])), ['1.6', '1.7']);
 });
 
+test('commented-out entries are ignored', () => {
+  const commented = '<!-- <name>Old</name> <supportedVersions><li>1.4</li></supportedVersions> -->\n' + xml(['1.6'], 'Real');
+  assert.equal(aboutName(commented), 'Real');
+  assert.deepEqual(aboutVersions(commented), ['1.6']);
+  assert.throws(() => aboutName('<!-- <name>Old</name> -->'), /no <name>/);
+});
+
 test('the full tag list starts with Mod', () => {
   assert.deepEqual(tagsFor(xml(['1.6'])), ['Mod', '1.6']);
   assert.deepEqual(tagsFor(xml(['1.6', '1.7'])), ['Mod', '1.6', '1.7']);

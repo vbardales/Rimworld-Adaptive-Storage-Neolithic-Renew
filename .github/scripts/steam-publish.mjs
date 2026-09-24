@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { aboutName, tagsFor } from './about.mjs';
 import { changenoteFor, fencedBlockUnder } from './changenote.mjs';
 import { checkMod, loadConfig } from './config.mjs';
+import { LIMITS, checkBytes } from './limits.mjs';
 import { digest, checkPreview } from './preview.mjs';
 import { formatDiff, isIdentical, lineDiff } from './line-diff.mjs';
 import { relocatingExec } from './relocate-vdf.mjs';
@@ -11,7 +12,6 @@ import { formatSummary, topLevelSummary } from './stage-summary.mjs';
 import { fetchImageDigest, fetchPage } from './steam-page.mjs';
 
 const APP_ID = '294100';
-const MAX_DESCRIPTION_CHARS = 8000;
 
 function required(name) {
   const value = process.env[name];
@@ -49,6 +49,7 @@ const modPath = join(commitDir, 'Mod');
 const config = await loadConfig(commitDir);
 const changenote = changenoteFor(await readFile(join(commitDir, 'PUBLICATION.md'), 'utf8'), version);
 await checkMod(modPath, config);
+checkBytes('the change note', changenote, LIMITS.changenote);
 
 const { stageModContent } = await import('semantic-release-steam/lib/stage-content.mjs');
 const { uploadWorkshopItem } = await import('semantic-release-steam/lib/steamcmd.mjs');
@@ -61,6 +62,7 @@ const { files, bytes } = await totalSize(stagePath);
 console.log(`staged ${files} files, ${(bytes / 1e6).toFixed(2)} MB, from ${modPath}`);
 console.log(`content by top-level entry:\n${formatSummary(await topLevelSummary(stagePath))}`);
 console.log(`target: Workshop item ${config.workshopId} (app ${APP_ID}); visibility is never sent`);
+console.log(`publish template: ${config.templateStamp ?? 'unknown'}`);
 console.log(`options: update_preview=${updatePreview} update_description=${updateDescription} update_title=${updateTitle} update_tags=${updateTags}`);
 console.log(`change note (from PUBLICATION.md, section ${version}):\n${changenote}`);
 
@@ -78,14 +80,12 @@ if (updatePreview) {
 } else {
   console.log('preview: not sent (update_preview is false)');
 }
-if (page?.previewUrl && (updatePreview || dryRun)) {
+if (page?.previewUrl && updatePreview) {
   try {
     const current = await fetchImageDigest(page.previewUrl);
     console.log(`preview on the page now: ${current.bytes} bytes, sha256 ${current.sha256}`);
-    if (updatePreview) {
-      const local = digest(await readFile(stagedPreview));
-      console.log(local.sha256 === current.sha256 ? 'the page already serves this image: nothing would change' : 'the page serves a different image: it would be replaced');
-    }
+    const local = digest(await readFile(stagedPreview));
+    console.log(local.sha256 === current.sha256 ? 'the page already serves this image: nothing would change' : 'the page serves a different image: it would be replaced');
   } catch (error) {
     console.log(`preview on the page not readable (${error.message})`);
   }
@@ -98,9 +98,9 @@ if (updateDescription) {
   description = config.description.heading
     ? fencedBlockUnder(source, new RegExp(config.description.heading), { label: `"${config.description.heading}"`, what: 'description' })
     : source.trim();
-  if (description.length > MAX_DESCRIPTION_CHARS) throw new Error(`update_description: the description is ${description.length} characters, over the ${MAX_DESCRIPTION_CHARS} Steam accepts`);
+  const descriptionBytes = checkBytes('update_description: the description', description, LIMITS.description);
   const local = digest(Buffer.from(description));
-  console.log(`description to send: ${description.length} characters, sha256 ${local.sha256}, from ${config.description.file}`);
+  console.log(`description to send: ${description.length} characters (${descriptionBytes} bytes), sha256 ${local.sha256}, from ${config.description.file}`);
   if (page) {
     const diff = lineDiff(page.description, description);
     console.log(isIdentical(diff) ? 'the page already has this description: nothing would change' : `changes against the description on the page ('-' is on the page now, '+' would be sent):\n${formatDiff(diff)}`);
@@ -113,6 +113,7 @@ const about = await readFile(join(modPath, 'About', 'About.xml'), 'utf8');
 let title;
 if (updateTitle) {
   title = aboutName(about);
+  checkBytes('update_title: the title', title, LIMITS.title);
   console.log(`title to send: "${title}" (the <name> of Mod/About/About.xml)`);
   if (page) console.log(page.title === title ? 'the page already has this title: nothing would change' : `title on the page now: "${page.title}"`);
 } else {

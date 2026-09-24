@@ -1,5 +1,6 @@
 import { digest } from './preview.mjs';
 
+const TIMEOUT_MS = 15000;
 const DETAILS = 'https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/';
 
 // What the public page serves today, read without any login, so the dry-run can compare it with
@@ -9,6 +10,7 @@ export async function fetchPage(workshopId, fetchImpl = fetch) {
     method: 'POST',
     headers: { 'content-type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ itemcount: '1', 'publishedfileids[0]': workshopId }),
+    signal: AbortSignal.timeout(TIMEOUT_MS),
   });
   if (!response.ok) throw new Error(`Steam answered ${response.status}`);
   const item = (await response.json()).response?.publishedfiledetails?.[0];
@@ -17,7 +19,7 @@ export async function fetchPage(workshopId, fetchImpl = fetch) {
 }
 
 export async function fetchImageDigest(url, fetchImpl = fetch) {
-  const response = await fetchImpl(url);
+  const response = await fetchImpl(url, { signal: AbortSignal.timeout(TIMEOUT_MS) });
   if (!response.ok) throw new Error(`the preview image answered ${response.status}`);
   return digest(Buffer.from(await response.arrayBuffer()));
 }

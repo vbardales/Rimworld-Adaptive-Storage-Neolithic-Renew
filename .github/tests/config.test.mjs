@@ -8,7 +8,7 @@ import { checkMod, parseConfig } from '../scripts/config.mjs';
 const valid = { workshopId: '123', packageId: 'nelim.test', releaseTitle: 'Test {version}' };
 
 test('accepts a minimal configuration and fills the defaults', () => {
-  assert.deepEqual(parseConfig(JSON.stringify(valid)), { ...valid, requirePaths: [], forbidPaths: [], previewFile: 'About/Preview.png', description: null });
+  assert.deepEqual(parseConfig(JSON.stringify(valid)), { ...valid, templateStamp: null, requirePaths: [], forbidPaths: [], previewFile: 'About/Preview.png', description: null });
 });
 
 test('keeps required and forbidden paths, the preview file and the description source', () => {
@@ -24,6 +24,11 @@ test('rejects what would send the wrong thing or escape the repository', () => {
   ];
   for (const config of bad) assert.throws(() => parseConfig(JSON.stringify(config)), /publish\.config\.json/, JSON.stringify(config));
   assert.throws(() => parseConfig('{not json'), /not valid JSON/);
+  for (const text of ['null', '[]', '"text"', '3']) assert.throws(() => parseConfig(text), /must contain a JSON object/, text);
+});
+
+test('the template stamp is kept when it is a string', () => {
+  assert.equal(parseConfig(JSON.stringify({ ...valid, templateStamp: 'abc123' })).templateStamp, 'abc123');
 });
 
 async function mod({ id = '123', pkg = 'nelim.test', files = [] } = {}) {
@@ -43,6 +48,9 @@ test('checkMod passes when the identity matches and the paths are as configured'
 test('checkMod stops on another item, another package, a missing or a forbidden path', async () => {
   await assert.rejects(checkMod(await mod({ id: '999' }), config()), /says "999" but this run targets 123/);
   await assert.rejects(checkMod(await mod({ pkg: 'someone.else' }), config()), /packageId nelim\.test/);
+  const commented = await mod({ pkg: 'someone.else' });
+  await writeFile(join(commented, 'About', 'About.xml'), '<ModMetaData><!-- <packageId>nelim.test</packageId> --><packageId>someone.else</packageId></ModMetaData>');
+  await assert.rejects(checkMod(commented, config()), /packageId nelim\.test/);
   await assert.rejects(checkMod(await mod(), config({ requirePaths: ['Defs'] })), /Mod\/Defs is required and missing/);
   await assert.rejects(checkMod(await mod({ files: ['Assemblies'] }), config({ forbidPaths: ['Assemblies'] })), /Mod\/Assemblies must not exist/);
 });
