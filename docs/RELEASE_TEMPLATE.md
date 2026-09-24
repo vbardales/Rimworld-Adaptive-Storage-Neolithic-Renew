@@ -70,7 +70,7 @@ Decide for each line whether it changed in this release. "CI option" is the opt-
 
 | Field | CI option | Changed in this release? | Source | Done |
 | --- | --- | --- | --- | --- |
-| Description (BBCode) | `update_description` | [yes / no] | the fenced block of section 1 of `PUBLICATION.md` (8000 characters at most) | [ ] |
+| Description (BBCode) | `update_description` | [yes / no] | the fenced block of section 1 of `PUBLICATION.md` (8000 bytes at most; limits are in bytes: description 8000, change note 8000, title 128) | [ ] |
 | Header image | `update_preview` | [yes / no] | `Mod/About/Preview.png`, a PNG under 1 MiB | [ ] |
 | Title | `update_title` | [yes / no] | the `<name>` of `About.xml` | [ ] |
 | Tags | `update_tags` | [yes / no] | `Mod` plus one tag per `<supportedVersions>` entry; replaces the whole set | [ ] |
