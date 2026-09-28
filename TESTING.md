@@ -62,6 +62,27 @@ Then verify the Steam-downloaded copy, not only the source checkout: required fr
 research, construction, migration, localization, logs and save/reload. Record the exact run and reviewed
 captures in `STATUS.md` before restoring `stage: tested`.
 
+### The downloaded copy, automated
+
+```powershell
+pwsh -NoProfile -File tests/Test-SteamCopy.ps1
+```
+
+Reads the copy Steam gave the subscriber (`steamapps/workshop/content/294100/<id>`, found through the Steam
+registry key and `libraryfolders.vdf`, or given with `-Path`) and compares it file by file with the `Mod/` tree
+of the newest `v*` tag, by git blob hash (`-Ref` picks another). It fails on a missing file, an extra file, a
+different content, a `.dds`/`.pdb`/`.user` file, a wrong `packageId` or `PublishedFileId.txt`, and a download
+whose size differs from the one Steam recorded. A difference in line endings alone is a warning.
+
+Exit code 0 passed, 1 failed, **2 skipped because no copy was found, which is not a pass**. It is not in the CI
+job: a runner has no Steam copy and steamcmd cannot fetch a Workshop item without a login.
+
+**What it does not prove is how the game loads the copy.** Load order, research, construction, localization,
+logs and save/reload from the Steam copy remain a run in game. Two limits stand in the way of automating that:
+the Pickle launcher mounts the working tree in the WSL, which does not see the Windows Steam library, and a
+development junction in `RimWorld/Mods` carrying the same `packageId` puts two mods under one identifier. The
+script warns when it finds one; take it out of `Mods/` before a subscription test in game.
+
 ## Evidence to keep
 
 Raw reports are large and live only on disk: `tests/Pickle/Evidence/` and `.build/` are gitignored, and

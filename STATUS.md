@@ -68,8 +68,15 @@ been fixed on 2026-09-05, before the suffix existed, and it is frozen since the 
 - `TESTING.md` still listed configuration 6 (an existing save with buildings of the former per-stone architecture) as a runtime pass, while
   the entry of 2026-09-21 above decides backward compatibility is checked statically. TESTING.md now says so.
 - `TESTING.md`, "Publication regression", asks to verify the Steam-downloaded copy (framework item, load order, research, construction,
-  localization, logs, save/reload). **No record of that verification exists in this file: not verified.** AUDIT.md step 11 asks for the
-  item to be tested by subscription before going public. Only the owner can run it, since no session launches the Windows game.
+  localization, logs, save/reload). AUDIT.md step 11 asks for the item to be tested by subscription before going public.
+  **Verified 2026-09-28, the file half:** the owner's Steam library already holds the copy (`steamapps/workshop/content/294100/3806101377`,
+  downloaded 2026-09-24 09:40, 205 files, 2,622,395 bytes, the size Steam recorded). `tests/Test-SteamCopy.ps1` (new, PowerShell 5.1 and 7)
+  finds it byte-identical, file by file, to the `Mod/` tree of tag `v1.1.1` (`037da4b`): 7 checks, 205 files, no extra file, no `.dds`, the
+  right `packageId` and `PublishedFileId.txt`. The test itself was tried against a tampered copy (one file changed, one missing, one extra
+  `.dds`: 4 failures reported), against a copy differing only by line endings (warning, pass) and against a missing path (skipped, exit 2).
+  **Not verified, the game half:** how the game loads that copy. `Mods/AdaptiveStorageNeolithicRenew` in the RimWorld folder is a junction to
+  the development tree and carries the same `packageId`, so a game started as is sees two mods under one identifier, and which one it loads is
+  unchecked. Only the owner can run that test, since no session launches the Windows game; the junction must be out of the way first.
 - The six gallery images on the live page were cut from the run of 2026-09-22; the run of 2026-09-23 (`docs/runs/2026-09-23-workshop.md`,
   6 of 6) captured new frames of the same six scenes. Whether the gallery must be regenerated from it is undecided, not a defect: the
   page and `Art/WorkshopScreenshots/` still agree byte for byte.
@@ -79,8 +86,9 @@ on the owner's request. `Art/Preview.ico` appeared during the session and is not
 section on local Windows folder icons (`desktop.ini`) that neither creates nor requires anything here. `docs/PROTOCOLS-READ.md` logs
 which protocol documents were read, at which version, and which were not.
 
-**Remaining verifications, all `unverified`, none a defect:** subscription test of the published item; adult-content boxes (owner
-declared, not verifiable without login); the protocol documents listed unread in `docs/PROTOCOLS-READ.md`.
+**Remaining verifications, all `unverified`, none a defect:** loading the Steam copy in game, with the development junction out of
+`Mods/` (the file half is done and automated, see above); adult-content boxes (owner declared, not verifiable without login); the
+protocol documents listed unread in `docs/PROTOCOLS-READ.md`.
 
 ## Note from the CI/CD session — 2026-09-24 (read before the next publish)
 
