@@ -14,9 +14,9 @@ Read on 2026-09-28. `unread` means not opened yet, not judged useless.
 | `AGENTS.md` | 3a1d2cb | in full | yes, gate order (settings, translations, `preTest`), evidence retention, CI publish rules |
 | `MOD_SETTINGS.md` | b83933b | in full | yes, but only for the `not_applicable` case: no settings page, no shortcut, and the absence must be justified from the sources |
 | `TRANSLATIONS.md` | f5c2d9d | in full | yes, defines `localization`, `translation_en`, `translation_fr` and the DefInjected checks |
-| `PUBLISHING.md` | 95c6dfd | lines 65-210 only (description block, `packageId`, translations gate, licence suffixes) | partly: the rest is unread |
+| `PUBLISHING.md` | 95c6dfd | lines 65-100 (end of the description block, `packageId`, start of the sources section) and 150-210 (translations gate, licence suffixes) only; **101-149 and everything from 211 on are unread** | partly |
 | `STYLE_RIMWORLD.md` | 7311308 | not opened, only searched for `Renew` | unread |
-| `WORKSHOP_COMMENTS.md` | 785c5a5 | in full | yes, the register and the method for the two drafted comments of this mod |
+| `WORKSHOP_COMMENTS.md` | read at 785c5a5; now dea856b, which is this session's own correction of the two rows of this mod (drafted to posted) and nothing else of what was read | in full at 785c5a5 | yes, the register and the method for comments; the two comments of this mod turned out to be already posted, so the method was not needed here |
 | `scripts/SEARCHING.md` | 372c447 | unread | unread |
 
 ## Other repositories
@@ -32,12 +32,19 @@ Read on 2026-09-28. `unread` means not opened yet, not judged useless.
 
 ## This mod's own documents
 
-`BACKLOG.md`, `NOTES.md` and `BUGS.md` do not exist in this repository. `README.md`,
-`CHANGELOG.md`, `ATTRIBUTION.md`, `LICENSE`, `PUBLICATION.md`, `TESTING.md`,
-`Tests/Pickle/README.md` and `Mod/About/About.xml` were opened earlier in the session or
-checked by search, not reread in full for this log. `STATUS.md` was read only at its top
-(the front matter and the first entries): most of its body is truncated in what a session
-sees, and it is 58 KB.
+`BACKLOG.md`, `NOTES.md` and `BUGS.md` do not exist in this repository. What was actually
+opened on 2026-09-28, and how far:
+
+| Document | How far |
+| --- | --- |
+| `TESTING.md` | in full |
+| `STATUS.md` | lines 1-125 in full; the other 360 lines only by heading list and search. It is 58 KB and most of its body is truncated in what a session sees |
+| `CHANGELOG.md` | the first 15 lines and a search for `0.1.0` |
+| `PUBLICATION.md` | searched for the visibility and comments passages, not read |
+| `Tests/Pickle/README.md` | one search for `@wip` |
+| `Mod/About/About.xml` | searched for the `packageId`, the name and the links |
+| `Tests/Pickle/Mod/About/About.xml` | the description line only |
+| `README.md`, `ATTRIBUTION.md`, `LICENSE` | **not opened**; only their size was read. They were rewritten by the 2026-09-22 upstream integration, so nothing seen in earlier sessions applies |
 
 `docs/runs/` holds ten one-line-per-run summaries from 2026-09-23.
 
