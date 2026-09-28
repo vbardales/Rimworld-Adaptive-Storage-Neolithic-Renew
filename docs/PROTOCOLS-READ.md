@@ -38,7 +38,7 @@ opened on 2026-09-28, and how far:
 | Document | How far |
 | --- | --- |
 | `TESTING.md` | in full |
-| `STATUS.md` | lines 1-125 in full; the other 360 lines only by heading list and search. It is 58 KB and most of its body is truncated in what a session sees |
+| `STATUS.md` | read in full on 2026-09-28, then rewritten the same day: sections from before 2026-09-22, which described the superseded implementation, were removed (58 KB down to 14 KB) |
 | `CHANGELOG.md` | the first 15 lines and a search for `0.1.0` |
 | `PUBLICATION.md` | searched for the visibility and comments passages, not read |
 | `Tests/Pickle/README.md` | one search for `@wip` |
@@ -46,7 +46,7 @@ opened on 2026-09-28, and how far:
 | `Tests/Pickle/Mod/About/About.xml` | the description line only |
 | `README.md`, `ATTRIBUTION.md`, `LICENSE` | **not opened**; only their size was read. They were rewritten by the 2026-09-22 upstream integration, so nothing seen in earlier sessions applies |
 
-`docs/runs/` holds ten one-line-per-run summaries from 2026-09-23.
+`docs/runs/` holds 14 run summaries: ten of 2026-09-23, two of 2026-09-22, one of 2026-09-21 and one of 2026-09-13. Left as they are on purpose: they are the run history, and `STATUS.md` cites most of them.
 
 ## What would make a document worth rereading
 
