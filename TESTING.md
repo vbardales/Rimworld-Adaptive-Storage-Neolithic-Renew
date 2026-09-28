@@ -35,6 +35,9 @@ Run the revised suite in these configurations:
 4. Russian, Odyssey enabled on the case-sensitive WSL filesystem.
 5. English and French with `[K]Extra Stone`.
 6. Existing save containing buildings from the former per-stone architecture, to exercise the migration.
+   **Not played in game, by decision of 2026-09-21** (recorded in `STATUS.md`): backward compatibility is
+   checked statically by `tests/Test-Mod.ps1`, which reads `ChunkBackCompatibility.xml`. The Pickle suite has
+   no scenario for it and this item is not a blocker for `tested`.
 
 The suite must verify automatically:
 
@@ -58,3 +61,26 @@ made from the superseded implementation and must not be treated as evidence for 
 Then verify the Steam-downloaded copy, not only the source checkout: required framework item, load order,
 research, construction, migration, localization, logs and save/reload. Record the exact run and reviewed
 captures in `STATUS.md` before restoring `stage: tested`.
+
+## Evidence to keep
+
+Raw reports are large and live only on disk: `tests/Pickle/Evidence/` and `.build/` are gitignored, and
+what belongs in git is one text line per run in `docs/runs/`. The rules that apply here, from `AGENTS.md`:
+
+- **Keep, per pass and per scenario, the latest report for the revision now in the repository.** Older
+  ones go as soon as a newer one replaces them, unless one is the only proof of a check the latest run
+  did not repeat. A report about a superseded build proves nothing about the current one: the runs of
+  2026-09-21 played the Workshop-based implementation and were deleted for that reason.
+- **Two sets are kept, not one.** `wsl-deps.map` (without optional mods) and `wsl-deps.stones.map` (with
+  `[K]Extra Stone`) each prove something the other cannot, so a report from each stays.
+  The 2026-09-23 layout: English `map` split over two launches (feature 01, then 02, 03, 04, 08, 12), French
+  and Russian `map` once each, `stones` in English and French, and the Workshop captures. Every one of those
+  is the sole proof of its scenarios, so none is redundant.
+- **Read `exitReason` before the counts, and open every `@review` capture** before citing a run. A green
+  scenario says the path ran, not that the picture shows anything.
+- **Keep the sources of the gallery.** `.build/pickle-run-workshop-captures` holds the raw frames the six
+  images in `Art/WorkshopScreenshots/` were cut from; delete it only after the gallery is regenerated from a
+  newer run.
+- **Never delete a report that a `STATUS.md` field still points to**: repoint the field first.
+- A run's raw folder in `.build/` is scratch once its report has been copied to `tests/Pickle/Evidence/`
+  and summarised in `docs/runs/`. Clean it after the summary is written, not before.

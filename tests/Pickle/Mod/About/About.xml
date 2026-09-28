@@ -10,7 +10,7 @@
 
 The scenarios build the mod's containers on the Pickle test colony and spawn items into them. Scenarios tagged @review assert nothing about the image: they attach screenshots for a person to judge, because whether a basket visibly fills up, or a stack of chunks swaps its sprite at one, two and six chunks, is a judgement about a picture.
 
-One feature is tagged @wip and only makes sense in a French game: run the suite a second time with the language set to French.</description>
+No scenario is tagged @wip. The French and Russian features assert against the language of the pass, which is chosen at launch and never during a run: play the suite once per language.</description>
   <modDependencies>
     <li>
       <packageId>nelim.adaptivestorageneolithic</packageId>
