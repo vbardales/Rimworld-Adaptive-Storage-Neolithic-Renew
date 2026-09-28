@@ -103,43 +103,29 @@ Exactly one required Workshop item:
 Do not declare Harmony, Odyssey, Biotech, `[K]Extra Stone`, Pickle, RimLogging or PickleTools as dependencies. The last three are
 development-only tools. The original module is an incompatibility, not a dependency.
 
-## 4. Steam comments still to post
+## 4. Steam comments
 
-Only recipients for which no post is recorded are listed. Do not post a second message if Steam or another publication record shows that
-one of these was already sent. The current repository contains no `posted` record for either recipient, and neither page's newest public
-comments showed this continuation on 2026-09-22. Each message is below 1,000 characters and uses the real item URL.
+Both are posted. Read live on their recipient pages under account `nelim17` on 2026-09-22, confirmed again 2026-09-28
+(`WORKSHOP_COMMENTS.md`, rows `3033901895` and `3033901359`). Kept here for the record, not as a to-do:
 
-### Adaptive Storage Neolithic Module — drafted, not posted
+- **Adaptive Storage Neolithic Module** (https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895), 5:39am: thanks the
+  author for pointing back to the GitHub repository and says the port now follows its `main`.
+- **Adaptive Storage Framework** (https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359), 5:44am: thanks the framework
+  author for what every container draws.
 
-Post on https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895 only after item `3806101377` is public.
+Whether the item was already public at posting time is not established: it was private on 2026-09-22 and public when read on
+2026-09-24, and Steam shows comment times in the viewer's own zone.
 
-```text
-Hey! 🙏 Thank you for pointing me back to the GitHub repository. My first 1.6 upload was based on the older Workshop package; Adaptive Storage Neolithic Renew now follows your current main branch, including the stone-as-stuff migration, balance work, graphics and integrated textures. I kept the continuation metadata and 1.6/test work separate, and proposed the supported-version, Linux casing and French grammar fixes back in PR #4. Credit for the buildings, art and current implementation remains yours in the description and ATTRIBUTION.md. If this causes any concern, I will take it down immediately. Thanks again for the correction and for licensing the project openly. ✨
-
-https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377
-```
-
-### Adaptive Storage Framework — drafted, not posted
-
-Post on https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359 only after item `3806101377` is public.
-
-```text
-This framework is the actual magic ✨ — every container in my module draws what is inside it because of you. Adaptive Storage Neolithic Renew now follows the original module's current GitHub source and its ASFStoneChunks architecture, rather than the older Workshop package I first copied. The new runtime pass will cover Core, Odyssey and a third-party stone before publication. Thank you for building something this solid to build on top of! 💛
-
-https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377
-```
-
-No separate comments are prepared for Pickle, RimLogging or PickleTools: they are credited in the description as development-only tools,
-and PickleTools is the publisher's own private project. Harmony is not used directly by this module. `[K]Extra Stone` is only a test
-fixture; do not post a compatibility claim before the revised runtime pass succeeds.
+No comment is prepared for Pickle, RimLogging or PickleTools: they are credited in the description as development-only tools, and
+PickleTools is the publisher's own private project. Harmony is not used directly by this module. `[K]Extra Stone` is only a test
+fixture.
 
 ## 5. Other Steam fields
 
 - Adult-content questionnaire: **No**. The mod contains storage furniture and cartoon item graphics; no mature content is depicted.
 - Tags: no manual action required for the standard tags; RimWorld resends `Mod` and `1.6` on update.
 - Incompatible item: Adaptive Storage Neolithic Module, Workshop id `3033901895`.
-- Visibility: observed 2026-09-24, the item is readable without login and the API returns visibility 0 (public). The intended visibility is the owner's decision. The integrated tree passed the revised in-game scenarios on 2026-09-23; make the item public manually
-  once the content upload is verified, the description is pasted and the six gallery images are approved and uploaded.
+- Visibility: public. Read from the page and API on 2026-09-24 and again on 2026-09-28 (`visibility 0`).
 
 ## 6. Update notes
 
@@ -174,15 +160,20 @@ Steam change note for the integrated tree. It is an update to the existing item 
 
 ## Current state
 
-- Workshop item: `3806101377`; `Mod/About/PublishedFileId.txt` is committed.
-- GitHub tag and release `1.0.0` exist on the earlier packageId commit by owner instruction; they do not identify this later integration
-  and are kept as history. The tree is released as `1.1.0`: the CI creates tag `v1.1.0` and its release only after a successful upload,
-  so neither is created by hand. Publication path: the manual workflow `publish-tag.yml` (no assembly, so no build), a dry-run of the exact
-  commit first (evidence below), then `Rimworld-Release-Admin/scripts/dispatch-publish.sh` with that commit's full SHA, approved by Virginie.
-  That workflow sends the `Mod/` content and the change note above, never the description, title, preview or visibility.
-- Static checks: GitHub Actions on HEAD, `Test-Mod.ps1` 173 assertions (29 XML files, 171 textures) and `Test-InstalledTranslations.ps1` 123 assertions passed.
-- Runtime on the integrated tree: played 2026-09-23, all green; stage is `tested`.
-- Description: ready to paste manually.
+**`published`, since 2026-09-24.** Kept for the record; `STATUS.md` is authoritative on what is still open.
+
+- Workshop item: `3806101377`, public; `Mod/About/PublishedFileId.txt` committed.
+- Released as `1.1.0` (content) then `1.1.1` (header image only), tags `v1.1.0` and `v1.1.1` created by the CI after each upload. Tag
+  and release `1.0.0` stay on the earlier packageId commit as history of the pre-integration mod and were never uploaded to Steam.
+  Publication path: `publish-tag.yml` (no assembly, so no build), a dry-run of the exact commit first, then
+  `Rimworld-Release-Admin/scripts/dispatch-publish.sh` with the full SHA, approved by Virginie.
+- Static checks: `Test-Mod.ps1` 173 assertions and `Test-InstalledTranslations.ps1` 123 assertions, re-run 2026-09-28, both passing.
+- Runtime: played 2026-09-23 in the WSL, all green (`STATUS.md`, "Stage history").
+- Description: pasted on the page, read back identical on 2026-09-24.
 - Dependency: one, fixed above.
-- Gallery: six cropped replacement captures are in the paths above; the owner still needs to approve and upload them.
-- Comments: two drafted, neither recorded as posted; post only after the item is public and only once.
+- Gallery: the six files above are live on the page, byte-identical, read back 2026-09-24. A newer run of the same six scenes exists
+  (`docs/runs/2026-09-23-workshop.md`); whether to regenerate from it is undecided, tracked in `STATUS.md`.
+- Comments: both posted (section 4).
+- Still open, not blocking: the file half of a Steam-copy subscription test is automated and passes
+  (`tests/Test-SteamCopy.ps1`); the game half needs the owner, since `RimWorld/Mods` holds a development junction with the same
+  `packageId`. GitHub issue #3 (performance) remains open pending the reporter's own evidence.

@@ -1,8 +1,8 @@
 # Rebuilding the Preview
 
-`Preview.png` is the unmodified text-free illustration. `Preview-source.png` preserves the
-same original. `preview.html` composes the source directly at 896 x 504; its only palette
-source is `preview-palette.json`. The version is read from `../Mod/About/About.xml`.
+`Preview-source.png` is the unmodified text-free illustration. `preview.html` composes it
+directly at 896 x 504; its only palette source is `preview-palette.json`. The version is
+read from `../Mod/About/About.xml`.
 The Renew suffix is a direct title span at 65% size in secondary ink. The renderer checks
 its font and contrast separately from the primary title and summary.
 

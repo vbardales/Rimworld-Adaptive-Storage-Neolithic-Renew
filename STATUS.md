@@ -10,6 +10,9 @@ detached:     yes
 stage:        published
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
+upstream_mod_remotes:
+  - https://github.com/bbradson/Adaptive-Storage-Neolithic-Module
+  - https://github.com/bbradson/Adaptive-Storage-Framework
 dependencies: declared
 showcase:     complete
 tested_on:    2026-09-23 in the WSL, see "Stage history" and docs/runs/
