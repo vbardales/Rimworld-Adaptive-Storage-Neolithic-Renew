@@ -132,6 +132,17 @@ fixture.
 Steam change note for the integrated tree. It is an update to the existing item `3806101377`, uploaded by the manual workflow
 `.github/workflows/publish-tag.yml`, which reads the fenced block under the `### <version>` heading below.
 
+### 1.1.2
+
+```text
+[h3]Save-compatibility fix[/h3]
+
+[list]
+[*]Fixed a save-compatibility gap: a legacy stone plinth or stacked chunks that had been minified and reinstalled now migrate correctly (large pots already did).
+[*]Removed an inert MayRequire attribute and a leftover comment. No effect on gameplay.
+[/list]
+```
+
 ### 1.1.1
 
 ```text

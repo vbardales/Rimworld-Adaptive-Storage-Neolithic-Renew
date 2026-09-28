@@ -4,6 +4,20 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased]
 
+## [1.1.2] — 2026-09-28
+
+### Fixed
+
+- `ChunkBackCompatibility.xml`: a legacy save with a minified and reinstalled stone plinth or stacked
+  chunks had no back-compat link for its install-blueprint defName. Large pots already had one; the
+  same `DefNameLink`/`SaveGameCompatibility` pair is now added for plinths and stacked chunks. Filed
+  upstream too, `bbradson/Adaptive-Storage-Neolithic-Module` PR #4.
+- `Basket/ThingDef.xml`: the Biotech-gated `disallowedThingDefs` entry carried `MayRequire` on both the
+  wrapping element and its `li`. RimWorld reads `MayRequire` on a `li` or a whole def/patch node, never
+  on an arbitrary wrapping element, so the outer one did nothing. Removed; the `li` still gates it.
+- `LargePot/ThingDef.xml`: dropped a commented-out `designatorDropdown` line left over from the
+  designator-dropdown mechanism removed elsewhere in the same upstream integration.
+
 ## [1.1.1] — 2026-09-24
 
 ### Changed

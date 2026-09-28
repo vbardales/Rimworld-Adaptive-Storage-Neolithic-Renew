@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-stage:        published
+stage:        done
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -15,17 +15,18 @@ upstream_mod_remotes:
   - https://github.com/bbradson/Adaptive-Storage-Framework
 dependencies: declared
 showcase:     complete
-tested_on:    2026-09-23 in the WSL, see "Stage history" and docs/runs/
+tested_on:    2026-09-23 in the WSL; does not cover the 1.1.2 fix below, see "Stage history" and docs/runs/
 workshop:     3806101377
 settings_audit: not_applicable
 build_audit:  not_applicable (current upstream architecture has no assembly)
-audit_revision: 165acb9d0f3f5353fde5338bee7ab9b1b85d54de (2026-09-28)
-audit_evidence: STATUS.md, "Audit under AUDIT.md — 2026-09-28"
+audit_revision: 50b6c29 (2026-09-28)
+audit_evidence: STATUS.md, "Stage history", 1.1.2 row
 remaining:
-  - unverified: the Steam copy loaded in game. The file half is automated and passes (tests/Test-SteamCopy.ps1, 2026-09-28). The game half is the owner's: RimWorld/Mods holds a development junction with the same packageId, so which copy loads is unchecked.
+  - unverified: the 1.1.2 fix in game. Static checks pass (173 assertions, 2026-09-28), but no Pickle or manual run has exercised the corrected ChunkBackCompatibility.xml links or the basket filter since. Needed before `tested`.
+  - unverified: the Steam copy loaded in game. The file half is automated and passes (tests/Test-SteamCopy.ps1, 2026-09-28) but is now stale against 1.1.2, not yet published. The game half is the owner's: RimWorld/Mods holds a development junction with the same packageId, so which copy loads is unchecked.
   - unverified: the adult-content boxes of the Workshop item. Owner declared, not checkable without a login.
   - open: GitHub issue #3 (performance). A Pickle benchmark passed 5/5 and did not reproduce the reported cost: 24 filled pots +0.061 ms/tick against about +0.347 reported. Not an ASF-only A/B, so it does not disprove the report. Open pending the reporter's versions, save and logs.
-  - open: no CI dry-run exists for the regenerated publish workflow. A dry-run of 1.1.1 stops at the existing tag; the first real one is the next version's.
+  - open: no CI dry-run exists for 1.1.2 yet. Required before dispatch-publish.sh, per the fail-fast pre-publish checklist in AUDIT.md.
   - open, optional: the six gallery images on the page were cut from the run of 2026-09-22; the run of 2026-09-23 captured new frames of the same scenes. Page and Art/WorkshopScreenshots still agree byte for byte.
   - scope, decided 2026-09-21 by the owner: backward compatibility with the former per-stone buildings, the original mod's refusal and the mod-list icon are checked statically, as are the architect menu, the dropdown groups, frames under construction and the inspect-pane card. A new game is not relevant: the mod adds content to an existing game. None of this is a blocker.
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. It is disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
@@ -44,7 +45,9 @@ Sections from before 2026-09-22 described the superseded Workshop-based implemen
 
 ## Audit under AUDIT.md — 2026-09-28
 
-**Stage stays `published`.** Audited at `165acb9d0f3f5353fde5338bee7ab9b1b85d54de` (`main`, identical to `origin/main`). Nothing was launched: no RimWorld, no Pickle run, no CI dispatch. The session's edits are committed as `0b1b9af`, `5009c51` and `3f4c7aa`.
+**Stage stayed `published`** through this section's checks, audited at `165acb9d0f3f5353fde5338bee7ab9b1b85d54de` (`main`, identical to `origin/main`). Nothing was launched: no RimWorld, no Pickle run, no CI dispatch. The session's edits are committed as `0b1b9af`, `5009c51` and `3f4c7aa`.
+
+**Rolled back to `done` after this audit, by a code review of the diff since `a008025` (0.1.0).** Three real findings in `Mod/`, fixed in `50b6c29` and filed upstream at PR #4 (`731e20e`): a save-migration gap for minified-and-reinstalled plinths and stacked chunks, missing the `Blueprint_Install_` link large pots already had; an inert `MayRequire` on the basket's `disallowedThingDefs` wrapper instead of its `li`; a leftover `designatorDropdown` comment. None of this was exercised by the 2026-09-23 runs, which predate the fix. Per AUDIT.md, "a relevant modification invalidates the concerned checks, not automatically every independent validation": only `stage` regresses here, not `settings_audit`, `localization` or the translation fields, which the fix does not touch. See "Stage history" for the `1.1.2` row.
 
 Session title, per AUDIT.md: `adaptivestorageneolithic / published`, the `packageId` without its `nelim.` prefix, then the stage. Naming rule settled 2026-09-27: a `packageId` never carries `renew` (protocols repository, `PUBLISHING.md`, `95c6dfd`). This mod is the one recent port that follows it by accident: its `packageId` was fixed on 2026-09-05, before the suffix existed, and it is frozen since publication.
 
@@ -90,6 +93,7 @@ Read before the next publish. No stage change.
 | 2026-09-23 | **`done` to `tested`.** Suite rewritten (43 scenarios), played in the WSL, all `exitReason: passed` (below). |
 | 2026-09-24 | **`tested` to `prepublished`, then `published`.** `1.1.0` uploaded by the CI: dry-run 35966977983 and publish 35967550073 at `0ab6a586cf7c0182821ad3da2f23aa71f6d8d2ab`, tag `v1.1.0`. |
 | 2026-09-24 | `1.1.1`, header image only (`Mod/` identical to `1.1.0`): dry-run 35971407130 at `037da4ba3946b89a3556fbfec74bb2ad4f97bee4`, publish 35971816069, tag `v1.1.1`. The page was then read from the public page and API: item public, title, tags `Mod` and `1.6`, 2,622,395 bytes, description and header image identical to the repository, six gallery images byte-identical to `Art/WorkshopScreenshots/` in order. |
+| 2026-09-28 | **Rolled back to `done`.** A code review of the diff since `0.1.0` found three real findings in `Mod/`, fixed in `50b6c29`: a save-migration gap (plinths and stacked chunks lacked the `Blueprint_Install_` compat link large pots had), an inert `MayRequire` on the basket's `disallowedThingDefs` wrapper, a leftover `designatorDropdown` comment. Also filed upstream, `bbradson/Adaptive-Storage-Neolithic-Module` PR #4 at `731e20e`. `CHANGELOG.md` and the `### 1.1.2` change note in `PUBLICATION.md` are ready; not tested in game, not built, not dry-run, not published. |
 
 **The runs of 2026-09-23** (`docs/runs/`, `exitReason: passed` each):
 
