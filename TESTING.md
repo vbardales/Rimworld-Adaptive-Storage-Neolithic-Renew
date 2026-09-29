@@ -105,3 +105,7 @@ what belongs in git is one text line per run in `docs/runs/`. The rules that app
 - **Never delete a report that a `STATUS.md` field still points to**: repoint the field first.
 - A run's raw folder in `.build/` is scratch once its report has been copied to `tests/Pickle/Evidence/`
   and summarised in `docs/runs/`. Clean it after the summary is written, not before.
+- **Once published, trim `docs/runs/` to what still proves the current `Mod/`** (`AGENTS.md`): drop
+  development-era and pre-integration runs, keep the tested milestone and any post-publication regression.
+  Done 2026-09-29: 14 files (2026-09-13 to 2026-09-23) consolidated into one, `docs/runs/2026-09-23-tested-milestone.md`;
+  nothing is lost, `git log -p -- docs/runs/` has every original. The next in-game run starts a clean file.

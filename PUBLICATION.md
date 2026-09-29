@@ -4,7 +4,7 @@ Publication sheet for Workshop item `3806101377`, updated after integrating the 
 The item already exists, so RimWorld will update its files and tags but **will not resend the description**. Paste the Steam-formatted
 description below into the Workshop page by hand.
 
-In-game Pickle pass of 2026-09-23 (`STATUS.md`, `docs/runs/`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
+In-game Pickle pass of 2026-09-23 (`STATUS.md`, `docs/runs/2026-09-23-tested-milestone.md`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
 and has no continuation DLL or direct Harmony dependency. **The mod is at `published`** (2026-09-24): `1.1.0` uploaded the content and `1.1.1` the header image (tags `v1.1.0`, `v1.1.1`; evidence in `STATUS.md`). The page was checked against this file on the same day. What remains manual, and the owner's: the Steam comments and thanks, and any change of visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
 
 ## 1. Steam description
@@ -75,7 +75,7 @@ Full attribution and change history: [url=https://github.com/vbardales/Rimworld-
 is the in-game mod-list icon and is not uploaded to the gallery.
 
 The six files below are the intended gallery order. They were regenerated from the integrated upstream implementation by Pickle feature
-`11-workshop-captures.feature` on 2026-09-22 (6/6 passed; summary in `docs/runs/2026-09-22-workshop-captures.md`) and cropped pixel-for-pixel with `Art/Crop-WorkshopScreenshots.ps1`.
+`11-workshop-captures.feature` on 2026-09-22 (6/6 passed; the 2026-09-23 repeat is in `docs/runs/2026-09-23-tested-milestone.md`) and cropped pixel-for-pixel with `Art/Crop-WorkshopScreenshots.ps1`.
 For the Nelim screenshot studio, place the subject over the upper-right orange area of the central emblem and centre the camera at (132, 132) at maximum zoom. The crop may cut buildings or contents at its edge. The six crops have been checked for legibility; the final Workshop review remains the owner's.
 Upload these six files in order; do not mix them with the superseded Workshop-based captures.
 
@@ -183,7 +183,7 @@ Steam change note for the integrated tree. It is an update to the existing item 
 - Description: pasted on the page, read back identical on 2026-09-24.
 - Dependency: one, fixed above.
 - Gallery: the six files above are live on the page, byte-identical, read back 2026-09-24. A newer run of the same six scenes exists
-  (`docs/runs/2026-09-23-workshop.md`); whether to regenerate from it is undecided, tracked in `STATUS.md`.
+  (`docs/runs/2026-09-23-tested-milestone.md`); whether to regenerate from it is undecided, tracked in `STATUS.md`.
 - Comments: both posted (section 4).
 - Still open, not blocking: the file half of a Steam-copy subscription test is automated and passes
   (`tests/Test-SteamCopy.ps1`); the game half needs the owner, since `RimWorld/Mods` holds a development junction with the same

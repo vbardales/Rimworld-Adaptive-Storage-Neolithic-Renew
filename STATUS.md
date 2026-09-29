@@ -15,7 +15,7 @@ upstream_mod_remotes:
   - https://github.com/bbradson/Adaptive-Storage-Framework
 dependencies: declared
 showcase:     complete
-tested_on:    2026-09-23 in the WSL; does not cover the 1.1.2 fix below, see "Stage history" and docs/runs/
+tested_on:    2026-09-23 in the WSL; does not cover the 1.1.2 fix below, see "Stage history" and docs/runs/2026-09-23-tested-milestone.md
 workshop:     3806101377
 settings_audit: not_applicable
 build_audit:  not_applicable (current upstream architecture has no assembly)
@@ -32,7 +32,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. It is disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
 session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
-updated:      2026-09-28
+updated:      2026-09-29
 preview_audit: complete (recomposed 2026-09-22: text block moved bottom-right on owner's word; contrast and size re-checked by Art/render-preview.cjs, still passes)
 modicon_audit: complete
 ---
@@ -54,7 +54,7 @@ Session title, per AUDIT.md: `adaptivestorageneolithic / published`, the `packag
 | Check | Result |
 | --- | --- |
 | `@wip` in the suite | **None.** No `.feature` file carries it. One stale sentence in the test companion's `About.xml` still said a feature did; corrected. |
-| Conditional scenarios | **All ran.** 43 scenarios in 10 features, every `@requires` one played. Feature 08 and 11 in the English and Workshop passes, 05 and 06 in the `stones` pass. The `[K]Extra Stone` scenario is skipped by requirement on `wsl-deps.map` and played in `docs/runs/2026-09-23-stones-fr.md`. |
+| Conditional scenarios | **All ran.** 43 scenarios in 10 features, every `@requires` one played. Feature 08 and 11 in the English and Workshop passes, 05 and 06 in the `stones` pass. The `[K]Extra Stone` scenario is skipped by requirement on `wsl-deps.map` and played in the `stones` pass, `docs/runs/2026-09-23-tested-milestone.md`. |
 | Manual tests left | **None.** No audio, no purely manual runtime scenario. The architect menu, frames under construction and the inspect-pane card are checked statically. |
 | Russian case-sensitivity | **Closed.** The WSL is ext4, so the Russian pass of 2026-09-23 already proves the `DefInjected` folder is found on a case-sensitive filesystem. The Steam Deck is not needed. |
 | `.dds` in git | **None tracked**, and `*.dds` is in `.gitignore`. The CI stages 205 files; a local staging counts 376 because the ignored `.dds` are on this disk. |
@@ -87,25 +87,26 @@ Read before the next publish. No stage change.
 | --- | --- |
 | 2026-09-05 | First port of the Workshop package (Harmony hook, compiled DLL). |
 | 2026-09-13 | Stage `done` after the owner accepted the icon as an exception to the object-count and 32 px guidance ("moi, j'override, je valide"). |
-| 2026-09-21 | Pickle suite written (41 scenarios) and played eight times in the WSL on that implementation. Every failure was a defect of the suite. Raw reports deleted 2026-09-23; summary in `docs/runs/2026-09-21.md`. |
+| 2026-09-21 | Pickle suite written (41 scenarios) and played eight times in the WSL on that implementation. Every failure was a defect of the suite. Raw reports deleted 2026-09-23; summary folded into the trim note of 2026-09-29 below (recoverable via `git log -p -- docs/runs/`). |
 | 2026-09-22 | **Rolled back to `done`.** The delivered tree was replaced by the authors' current GitHub source (`bbradson/Adaptive-Storage-Neolithic-Module` `main` at `2bc3fe4`, stone-as-stuff, no assembly). The Harmony DLL and per-stone generator patches were removed, and no earlier gameplay evidence applies. |
 | 2026-09-22 | Owner's decision to sprint to 1.0.0 without a retest, later superseded by the runs below. The owner created the private Workshop item by hand (`PublishedFileId.txt`, `a008025`, the `0.1.0` prepublication). Tag and release `1.0.0` stay on `8fb1177` as history of the earlier implementation and were never uploaded to Steam. |
 | 2026-09-23 | **`done` to `tested`.** Suite rewritten (43 scenarios), played in the WSL, all `exitReason: passed` (below). |
 | 2026-09-24 | **`tested` to `prepublished`, then `published`.** `1.1.0` uploaded by the CI: dry-run 35966977983 and publish 35967550073 at `0ab6a586cf7c0182821ad3da2f23aa71f6d8d2ab`, tag `v1.1.0`. |
 | 2026-09-24 | `1.1.1`, header image only (`Mod/` identical to `1.1.0`): dry-run 35971407130 at `037da4ba3946b89a3556fbfec74bb2ad4f97bee4`, publish 35971816069, tag `v1.1.1`. The page was then read from the public page and API: item public, title, tags `Mod` and `1.6`, 2,622,395 bytes, description and header image identical to the repository, six gallery images byte-identical to `Art/WorkshopScreenshots/` in order. |
 | 2026-09-28 | **Rolled back to `done`.** A code review of the diff since `0.1.0` found three real findings in `Mod/`, fixed in `50b6c29`: a save-migration gap (plinths and stacked chunks lacked the `Blueprint_Install_` compat link large pots had), an inert `MayRequire` on the basket's `disallowedThingDefs` wrapper, a leftover `designatorDropdown` comment. Also filed upstream, `bbradson/Adaptive-Storage-Neolithic-Module` PR #4 at `731e20e`. `CHANGELOG.md` and the `### 1.1.2` change note in `PUBLICATION.md` are ready; not tested in game, not built, not dry-run, not published. |
+| 2026-09-29 | `docs/runs/` trimmed from 14 files to one, `2026-09-23-tested-milestone.md`: everything that still proves the published `1.1.0`/`1.1.1` tree, consolidated; superseded dev-era and pre-integration runs dropped (recoverable in `git log -p -- docs/runs/`). None of it covers the `1.1.2` fix. |
 
-**The runs of 2026-09-23** (`docs/runs/`, `exitReason: passed` each):
+**The runs of 2026-09-23**, consolidated in `docs/runs/2026-09-23-tested-milestone.md` (`exitReason: passed` each):
 
 | Pass | Scenarios | Summary |
 | --- | --- | --- |
-| English, `wsl-deps.map` | 01 7/7, 02 4/4, 03 8/8, 04 1/1, 08 3/3, 12 5/5 | `2026-09-23-en-full.md`, `-en-full2.md` |
-| French, `wsl-deps.map` | 05: 4 passed, 1 skipped by requirement | `-fr-full3.md` |
-| Russian, `wsl-deps.map` | 07 2/2 | `-ru-full3.md` |
-| Stones, English and French, Odyssey and `[K]Extra Stone` | 06 2/2; 05 and 06 7/7 | `-stones-en.md`, `-stones-fr.md` |
-| Workshop captures | 11 6/6 | `-workshop.md` |
+| English, `wsl-deps.map` | 01 7/7, 02 4/4, 03 8/8, 04 1/1, 08 3/3, 12 5/5 | features 01 then 02–04/08/12 |
+| French, `wsl-deps.map` | 05: 4 passed, 1 skipped by requirement | third attempt, suite-side fix |
+| Russian, `wsl-deps.map` | 07 2/2 | third attempt, same fix |
+| Stones, English and French, Odyssey and `[K]Extra Stone` | 06 2/2; 05 and 06 7/7 | third-party andesite stone |
+| Workshop captures | 11 6/6 | same six scenes as `Art/WorkshopScreenshots/` |
 
-Every `@review` capture was opened and accepted: the two research-window captures, the pot and chunk-stack hover labels in French, English and Russian, the third-party andesite scenes and the six Workshop frames. The two defects found on the way belonged to the suite, not the mod: an ambiguous ThingDef/GraphicsDef name (`ASNeolithicPlinthStone`) and a back-compat alias in the "does not exist" check; both replayed green. The Core-only pass is not playable, since the fixture save needs the DLCs (`2026-09-23-core-en.md`). No mod error in any kept `Player.log`.
+Every `@review` capture was opened and accepted: the two research-window captures, the pot and chunk-stack hover labels in French, English and Russian, the third-party andesite scenes and the six Workshop frames. The two defects found on the way belonged to the suite, not the mod: an ambiguous ThingDef/GraphicsDef name (`ASNeolithicPlinthStone`) and a back-compat alias in the "does not exist" check; both replayed green. The Core-only pass is not playable, since the fixture save needs the DLCs. No mod error in any kept `Player.log`.
 
 The delivered `Mod/` tree was last changed on 2026-09-23 at 18:41, before the first run at 22:53, so these runs cover the content that was published.
 

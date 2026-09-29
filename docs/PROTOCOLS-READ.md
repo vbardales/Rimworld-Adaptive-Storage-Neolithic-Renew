@@ -46,7 +46,7 @@ opened on 2026-09-28, and how far:
 | `Tests/Pickle/Mod/About/About.xml` | the description line only |
 | `README.md`, `ATTRIBUTION.md`, `LICENSE` | **not opened**; only their size was read. They were rewritten by the 2026-09-22 upstream integration, so nothing seen in earlier sessions applies |
 
-`docs/runs/` holds 14 run summaries: ten of 2026-09-23, two of 2026-09-22, one of 2026-09-21 and one of 2026-09-13. Left as they are on purpose: they are the run history, and `STATUS.md` cites most of them.
+`docs/runs/` holds one file, `2026-09-23-tested-milestone.md`, consolidating the 14 run summaries that stood there through 2026-09-13 to 2026-09-23 (trimmed 2026-09-29, `AGENTS.md`: once published, keep only what proves the current `Mod/`; originals in `git log -p -- docs/runs/`). `STATUS.md` cites it.
 
 ## What would make a document worth rereading
 

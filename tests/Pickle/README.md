@@ -1,8 +1,9 @@
 # Adaptive Storage Neolithic Renew Pickle suite
 
 The suite targets the current upstream stone-as-stuff architecture. The runs of 2026-09-21 played the superseded
-Workshop-based version; their raw reports were deleted and one line per run remains in `docs/runs/2026-09-21.md`. They do
-not validate the current `Mod/` tree.
+Workshop-based version and do not validate the current `Mod/` tree; their raw reports are gone and their summary
+was folded into the 2026-09-29 trim note of `docs/runs/2026-09-23-tested-milestone.md` (originals in
+`git log -p -- docs/runs/`).
 
 ## Companion mod
 
@@ -50,7 +51,7 @@ Odyssey English/French/Russian, and `[K]Extra Stone` English/French. Open every 
 the result directory, scenario totals, exit reason and log assessment in `STATUS.md`.
 
 A Core-only pass (all five DLCs off; its map and wrapper were deleted) is **not playable**: the `test-colony` fixture references Royalty, Biotech and Odyssey
-defs and its load hangs until the watchdog kills the game (`docs/runs/2026-09-23-core-en.md`). Use `wsl-deps.map` (all DLCs)
+defs and its load hangs until the watchdog kills the game. Use `wsl-deps.map` (all DLCs)
 for the English, French and Russian passes, `wsl-deps.stones.map` for the third-party-stone pass and `wsl-deps.workshop.map` for the
 Workshop captures. Select features by their
 exact filenames: `-Filter Neolithic` is invalid because Pickle does not match that word in the scenario text. On `wsl-deps.map`,
@@ -95,5 +96,5 @@ skipped on `wsl-deps.map`.
   and inspect-pane card are checked statically (`tests/Test-Mod.ps1`) and listed as not covered by a scenario in `STATUS.md`.
   The `@review` captures are still to be looked at, which is reading an image a scenario has already put in the intended state.
 
-The rewritten suite was played on 2026-09-23 (see `docs/runs/` and `STATUS.md`): every `@requires` condition ran, all green, and the project
-is at `stage: tested`.
+The rewritten suite was played on 2026-09-23 (see `docs/runs/2026-09-23-tested-milestone.md` and `STATUS.md`): every `@requires` condition ran, all green.
+`docs/runs/` was trimmed to that one file on 2026-09-29; it covers the published `1.1.0`/`1.1.1` tree, not the `1.1.2` fix.
