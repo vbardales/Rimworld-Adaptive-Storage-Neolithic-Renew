@@ -6,6 +6,18 @@ read from `../Mod/About/About.xml`.
 The Renew suffix is a direct title span at 65% size in secondary ink. The renderer checks
 its font and contrast separately from the primary title and summary.
 
+**The Preview also carries the ModIcon, detoured, bottom-left, tilted `+15deg`** (owner's rule,
+2026-09-29): `ModIcon-cutout.png` (`cutout-icon.cjs`, flood-filled from the border on the
+1254 px source so only the near-black background goes transparent, the mascot's own outline
+untouched) is composed by `preview.html`'s `.icon` rule. Left, not right, because the text
+block sits bottom-right (`.text`): the two never overlap. Re-run `cutout-icon.cjs` by hand
+only if the icon source changes; its output is committed. Reference implementation:
+`ManyHappyReturns/Art/README.md`.
+
+The gallery's first image is a byte-for-byte copy of the Preview, `Art/WorkshopScreenshots/00-preview.png`
+(owner's rule, 2026-09-29, `PUBLISHING.md`). Recopy it whenever the Preview is regenerated, or the two
+drift apart silently.
+
 Use Node.js with `playwright` and `sharp` available, Chrome/Chromium, and the Segoe UI fonts.
 Set `NODE_PATH` if the packages are outside normal resolution paths, and `CHROME_PATH` if
 using an existing browser instead of Playwright's bundled Chromium. From the repository:

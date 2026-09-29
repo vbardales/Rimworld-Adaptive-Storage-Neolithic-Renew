@@ -7,7 +7,7 @@
   html, body { margin: 0; padding: 0; width: 896px; height: 504px; overflow: hidden; }
   body { font-family: "Segoe UI", system-ui, sans-serif; }
   .frame { position: relative; width: 896px; height: 504px;
-    background: url("Preview.png") 0 -43.5px / 896px auto no-repeat; }
+    background: url("Preview-source.png") 0 -43.5px / 896px auto no-repeat; }
   .veil { position: absolute; inset: 0;
     background: radial-gradient(ellipse 900px 680px at bottom right,
       rgb(var(--veil-rgb) / .96) 0%, rgb(var(--veil-rgb) / .90) 50%,
@@ -26,6 +26,8 @@
   .version { position: absolute; left: 869px; top: 27px;
     transform: translate(-50%, -50%) rotate(45deg); color: var(--badgeInk);
     font-size: 26px; font-weight: 700; line-height: 1; text-shadow: none; }
+  .icon { position: absolute; left: -30px; bottom: -30px; width: 240px; height: 240px;
+    transform: rotate(15deg); filter: drop-shadow(0 6px 16px rgb(0 0 0 / .6)); }
   .background-only .text, .background-only .version { visibility: hidden; }
 </style>
 <div class="frame">
@@ -36,6 +38,7 @@
     <p>Neolithic storage for the Adaptive Storage Framework: every container shows what is inside it.</p>
   </div>
   <div class="badge"></div><div class="version"></div>
+  <img class="icon" src="ModIcon-cutout.png" alt="">
 </div>
 <script>
 window.previewReady = (async () => {
@@ -59,7 +62,7 @@ window.previewReady = (async () => {
   document.querySelector('.version').textContent = versions[0];
   await document.fonts.ready;
   await Promise.all([...document.images].map(img => img.decode()));
-  const source = new Image(); source.src = 'Preview.png'; await source.decode();
+  const source = new Image(); source.src = 'Preview-source.png'; await source.decode();
 })();
 </script>
 </html>
