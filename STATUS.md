@@ -1,14 +1,14 @@
 ---
 localization: complete
 translation_en: complete
-translation_fr: partial
+translation_fr: complete
 mod:          Adaptive Storage Neolithic Renew
 packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-stage:        showcase
-workflow_stage: l10n
+stage:        done
+workflow_stage: done
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -33,11 +33,7 @@ remaining:
   - scope, decided 2026-09-21 by the owner: backward compatibility with the former per-stone buildings, the original mod's refusal and the mod-list icon are checked statically, as are the architect menu, the dropdown groups, frames under construction and the inspect-pane card. A new game is not relevant: the mod adds content to an existing game. None of this is a blocker.
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. It is disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
-  - unverified: French review by Virginie. TRANSLATIONS.md's gender-agreement rule (2026-09-30) reset
-    `translation_fr` to `unchecked`; this session read all 3 French DefInjected files in full (no pattern
-    search), found no pawn-agreeing text and so no `{PAWN_gender ? ...}` switch needed anywhere, and
-    generated `FRENCH_REVIEW.md` at the mod root by script (`_tools/Generate-FrenchReview.ps1`). Set
-    `translation_fr` to `partial`: only Virginie's own reading of `FRENCH_REVIEW.md` can set it `complete`.
+  - resolved 2026-09-30: French review by Virginie, validated at `ef449a6` (see "Translation audit"). No pawn-agreeing French text, so no `{PAWN_gender ? ...}` switch is needed.
 session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
 updated:      2026-09-30
 preview_audit: complete for text (recomposed 2026-09-29 with the detoured ModIcon overlay, bottom-left; contrast, fonts and size re-checked by Art/render-preview.cjs, still passes); not yet uploaded to Steam
@@ -119,7 +115,7 @@ Read before the next publish. No stage change.
 | 2026-09-28 | **Rolled back to `done`.** A code review of the diff since `0.1.0` found three real findings in `Mod/`, fixed in `50b6c29`: a save-migration gap (plinths and stacked chunks lacked the `Blueprint_Install_` compat link large pots had), an inert `MayRequire` on the basket's `disallowedThingDefs` wrapper, a leftover `designatorDropdown` comment. Also filed upstream, `bbradson/Adaptive-Storage-Neolithic-Module` PR #4 at `731e20e`. `CHANGELOG.md` and the `### 1.1.2` change note in `PUBLICATION.md` are ready; not tested in game, not built, not dry-run, not published. |
 | 2026-09-29 | `docs/runs/` trimmed from 14 files to one, `2026-09-23-tested-milestone.md`: everything that still proves the published `1.1.0`/`1.1.1` tree, consolidated; superseded dev-era and pre-integration runs dropped (recoverable in `git log -p -- docs/runs/`). None of it covers the `1.1.2` fix. |
 | 2026-09-29 | `Preview.png` recomposed with the detoured ModIcon bottom-left (owner's rule, `PUBLISHING.md`); `Art/WorkshopScreenshots/0-preview.png` added as its gallery copy (same rule). Fixed a break from the 2026-09-28 cleanup: `Art/preview.html` still referenced the deleted `Art/Preview.png`. Neither the new header image nor `00-` is uploaded yet; no stage change. |
-| 2026-09-30 | **Rolled back to `showcase` (`l10n`)** by AUDIT.md re-run: `translation_fr` is `partial`, pending Virginie's review. `workflow_stage` added, gallery files renamed to the `0-`…`6-` scheme. |
+| 2026-09-30 | Virginie validated the French (`ef449a6`): `translation_fr: complete`, back to `done` (`workflow_stage: done`). Earlier the same day: **rolled back to `showcase` (`l10n`)** by AUDIT.md re-run: `translation_fr` is `partial`, pending Virginie's review. `workflow_stage` added, gallery files renamed to the `0-`…`6-` scheme. |
 | 2026-09-30 | French gender-agreement rule added to TRANSLATIONS.md reset `translation_fr` to `unchecked`. Read the 3 French `DefInjected` files in full; no pawn-agreeing text, no switch needed. Generated `FRENCH_REVIEW.md` by script (`_tools/Generate-FrenchReview.ps1`). `translation_fr` set to `partial`; `complete` needs Virginie's own review. No stage change. |
 
 **The runs of 2026-09-23**, consolidated in `docs/runs/2026-09-23-tested-milestone.md` (`exitReason: passed` each):
@@ -156,7 +152,7 @@ never marks its own French reviewed.
   (`ResearchProjectDefs.xml`, `ResearchTabDef.xml`, `ThingDef.xml`) in full, no pattern search. None of
   the 21 texts refers to a pawn (all describe furniture); no `{PAWN_gender ? ...}` switch applies anywhere
   in this mod, and none is missing one. Confirmed by reading, not by grep, per the rule.
-- **Review 2026-09-30, Virginie, revision `bc4f940`, before the fixes below:** corrections requested (not yet accepted as reviewed). Applied the same day: `HayPile` "tas de foin", `WoodPile` "tas de bûches", both plinth descriptions gain the second sentence on colonists' attention and beauty, `MealShelf` "servant à entreposer des repas", `ChunkStorage` "Un tas de rochers, constitué de rochers et soutenant d'autres rochers. Facile à réaliser et assez efficace comme abri." (her final wording) Coverage defect also fixed: `FRENCH_REVIEW.md` showed `not found` for the 5 research rows because the generator only looked in `ThingDef`; it now resolves `ResearchProjectDef` and `ResearchTabDef` (0 `not found` left). The changed French needs her re-review before `translation_fr: complete`.
+- **French review, Virginie, 2026-09-30, revision `ef449a6`: validated as it ships** (`FRENCH_REVIEW.md` regenerated at that revision). Corrections she asked for earlier that day, now applied: Applied the same day: `HayPile` "tas de foin", `WoodPile` "tas de bûches", both plinth descriptions gain the second sentence on colonists' attention and beauty, `MealShelf` "servant à entreposer des repas", `ChunkStorage` "Un tas de rochers, constitué de rochers et soutenant d'autres rochers. Facile à réaliser et assez efficace comme abri." (her final wording) Coverage defect also fixed: `FRENCH_REVIEW.md` showed `not found` for the 5 research rows because the generator only looked in `ThingDef`; it now resolves `ResearchProjectDef` and `ResearchTabDef` (0 `not found` left). Her validation is recorded above; any later change to a French file resets `translation_fr` to `unchecked`.
 - **Review file:** `FRENCH_REVIEW.md` generated at the mod root by `_tools/Generate-FrenchReview.ps1`
   (reads the shipped XML; not hand-written). Covers all 21 French texts across the 3 DefInjected files,
   Original/English columns equal throughout (mod authored in English, no separate source language).
