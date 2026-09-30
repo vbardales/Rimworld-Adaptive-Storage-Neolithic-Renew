@@ -34,7 +34,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. It is disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - resolved 2026-09-30: French review by Virginie, validated at `ef449a6` (see "Translation audit"). No pawn-agreeing French text, so no `{PAWN_gender ? ...}` switch is needed.
-session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
+session:      local_fead2880-4a41-454c-943a-a9463059cbfb
 updated:      2026-09-30
 preview_audit: complete for text (recomposed 2026-09-29 with the detoured ModIcon overlay, bottom-left; contrast, fonts and size re-checked by Art/render-preview.cjs, still passes); not yet uploaded to Steam
 modicon_audit: complete
