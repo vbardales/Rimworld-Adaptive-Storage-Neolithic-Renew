@@ -1,0 +1,21 @@
+{
+  "title": "Adaptive Storage Neolithic Renew",
+  "titleParts": [
+    { "text": "Adaptive ", "scale": 0.62 },
+    { "text": "Storage", "scale": 0.62 },
+    { "break": true },
+    { "text": "Neolithic ", "scale": 0.58 },
+    { "text": "Renew", "scale": 0.42, "font": "ui", "color": "secondary" }
+  ],
+  "suffix": "",
+  "tag": "",
+  "copyLines": ["Neolithic storage where every container shows what is inside."],
+  "layout": "panel",
+  "panelAnchor": "bottom-right",
+  "panelHeight": 65,
+  "backgroundFile": "Preview-source.png",
+  "backgroundPosition": "0 -43.5px",
+  "backgroundSize": "896px auto",
+  "echo": { "file": "echo.png", "mode": "alpha", "preSized": true, "color": "var(--accent)", "width": 260, "height": 260, "opacity": 1, "veil": false, "fadeLeft": true, "fadeEnd": 62 },
+  "iconBadge": { "file": "ModIcon-cutout.png", "corner": "bottom-left", "width": 220, "outline": false, "veil": "radial", "veilSize": 275, "veilLeft": -55, "veilBottom": -61 }
+}
