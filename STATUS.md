@@ -7,8 +7,8 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-stage:        done
-workflow_stage: done
+stage:        showcase
+workflow_stage: l10n
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -52,7 +52,7 @@ Sections from before 2026-09-22 described the superseded Workshop-based implemen
 
 ## Audit under AUDIT.md — 2026-09-30
 
-`stage` stays `done` (`workflow_stage: done`, added: the field was missing). Audited at `c19ce6f` (`main` = `origin/main`); the gallery rename below is uncommitted at time of writing. Nothing launched: no RimWorld, no Pickle run, no CI dispatch.
+**Corrected the same day: `stage` is `showcase`, `workflow_stage` is `l10n`, not `done`.** `translation_fr` is `partial` (French review by Virginie pending), and TRANSLATIONS.md lets only `complete` translation fields enter `preTest`, so `options → l10n` fails; AUDIT.md step 12 sends the mod back to `showcase`. The first draft of this audit kept `done` by mistake. `workflow_stage` was missing and is added. Audited at `c19ce6f` (`main` = `origin/main`); the gallery rename below is uncommitted at time of writing. Nothing launched: no RimWorld, no Pickle run, no CI dispatch.
 
 | Check | Result |
 | --- | --- |
@@ -64,7 +64,7 @@ Sections from before 2026-09-22 described the superseded Workshop-based implemen
 | Gallery naming (PUBLISHING.md: `0-`, `1-`, `2-`… one digit) | **Defect, fixed:** `00-preview.png` and `workshop-N-*.png` renamed `0-preview.png`, `1-…` to `6-…` (content unchanged, `0-` still byte-identical to `Preview.png`). `PUBLICATION.md`, `Art/PREVIEW.md` and `Art/Crop-WorkshopScreenshots.ps1` follow. The live page keeps its images; the next manual upload uses the new names. |
 | Translations | Unchanged since 2026-09-30 (`FRENCH_REVIEW.md`); `translation_fr` stays `partial` until Virginie reads it. |
 
-**For `done` to `tested` (all still open):** replay in the WSL the scenarios the 1.1.2 fix touches (migration links, basket filter); no `@wip` (none today); every `@requires` scenario played on the 1.1.2 tree (all ran on 2026-09-23, on the pre-fix tree only); no manual test left (none today); `@review` captures reopened.
+**To return to `done`:** Virginie reviews `FRENCH_REVIEW.md` (`translation_fr: complete`). **For `done` to `tested` (all still open):** replay in the WSL the scenarios the 1.1.2 fix touches (migration links, basket filter); no `@wip` (none today); every `@requires` scenario played on the 1.1.2 tree (all ran on 2026-09-23, on the pre-fix tree only); no manual test left (none today); `@review` captures reopened.
 
 ## Audit under AUDIT.md — 2026-09-28
 
@@ -119,7 +119,7 @@ Read before the next publish. No stage change.
 | 2026-09-28 | **Rolled back to `done`.** A code review of the diff since `0.1.0` found three real findings in `Mod/`, fixed in `50b6c29`: a save-migration gap (plinths and stacked chunks lacked the `Blueprint_Install_` compat link large pots had), an inert `MayRequire` on the basket's `disallowedThingDefs` wrapper, a leftover `designatorDropdown` comment. Also filed upstream, `bbradson/Adaptive-Storage-Neolithic-Module` PR #4 at `731e20e`. `CHANGELOG.md` and the `### 1.1.2` change note in `PUBLICATION.md` are ready; not tested in game, not built, not dry-run, not published. |
 | 2026-09-29 | `docs/runs/` trimmed from 14 files to one, `2026-09-23-tested-milestone.md`: everything that still proves the published `1.1.0`/`1.1.1` tree, consolidated; superseded dev-era and pre-integration runs dropped (recoverable in `git log -p -- docs/runs/`). None of it covers the `1.1.2` fix. |
 | 2026-09-29 | `Preview.png` recomposed with the detoured ModIcon bottom-left (owner's rule, `PUBLISHING.md`); `Art/WorkshopScreenshots/0-preview.png` added as its gallery copy (same rule). Fixed a break from the 2026-09-28 cleanup: `Art/preview.html` still referenced the deleted `Art/Preview.png`. Neither the new header image nor `00-` is uploaded yet; no stage change. |
-| 2026-09-30 | AUDIT.md re-run: stage `done` kept, `workflow_stage` added, gallery files renamed to the `0-`…`6-` scheme. |
+| 2026-09-30 | **Rolled back to `showcase` (`l10n`)** by AUDIT.md re-run: `translation_fr` is `partial`, pending Virginie's review. `workflow_stage` added, gallery files renamed to the `0-`…`6-` scheme. |
 | 2026-09-30 | French gender-agreement rule added to TRANSLATIONS.md reset `translation_fr` to `unchecked`. Read the 3 French `DefInjected` files in full; no pawn-agreeing text, no switch needed. Generated `FRENCH_REVIEW.md` by script (`_tools/Generate-FrenchReview.ps1`). `translation_fr` set to `partial`; `complete` needs Virginie's own review. No stage change. |
 
 **The runs of 2026-09-23**, consolidated in `docs/runs/2026-09-23-tested-milestone.md` (`exitReason: passed` each):
