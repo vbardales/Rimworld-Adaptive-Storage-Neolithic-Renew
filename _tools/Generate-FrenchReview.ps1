@@ -32,9 +32,9 @@ function Find-DefNode($nameOrDefName) {
         $found = $null
         foreach ($f in $script:defFiles) {
             $x = [xml](Get-Content $f -Raw -Encoding UTF8)
-            # Scoped to <ThingDef>: GraphicsDef and ThingDef nodes can share the same defName
+            # Scoped to the def types the French files inject (ThingDef, ResearchProjectDef, ResearchTabDef): GraphicsDef and ThingDef nodes can share the same defName
             # (e.g. ASNeolithicHayPile), and only the ThingDef carries label/description.
-            $node = $x.SelectSingleNode("//ThingDef[defName='$nameOrDefName' or @Name='$nameOrDefName']")
+            $node = $x.SelectSingleNode("//ThingDef[defName='$nameOrDefName' or @Name='$nameOrDefName'] | //ResearchProjectDef[defName='$nameOrDefName' or @Name='$nameOrDefName'] | //ResearchTabDef[defName='$nameOrDefName']")
             if ($node) { $found = $node; break }
         }
         $script:defCache[$nameOrDefName] = $found

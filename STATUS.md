@@ -156,6 +156,7 @@ never marks its own French reviewed.
   (`ResearchProjectDefs.xml`, `ResearchTabDef.xml`, `ThingDef.xml`) in full, no pattern search. None of
   the 21 texts refers to a pawn (all describe furniture); no `{PAWN_gender ? ...}` switch applies anywhere
   in this mod, and none is missing one. Confirmed by reading, not by grep, per the rule.
+- **Review 2026-09-30, Virginie, revision `bc4f940`, before the fixes below:** corrections requested (not yet accepted as reviewed). Applied the same day: `HayPile` "tas de foin", `WoodPile` "tas de bûches", both plinth descriptions gain the second sentence on colonists' attention and beauty, `MealShelf` "servant à entreposer des repas", `ChunkStorage` "Un amas de blocs rocheux, constitué de blocs et soutenant d'autres blocs. Facile à réaliser et assez efficace comme abri." Coverage defect also fixed: `FRENCH_REVIEW.md` showed `not found` for the 5 research rows because the generator only looked in `ThingDef`; it now resolves `ResearchProjectDef` and `ResearchTabDef` (0 `not found` left). The changed French needs her re-review before `translation_fr: complete`.
 - **Review file:** `FRENCH_REVIEW.md` generated at the mod root by `_tools/Generate-FrenchReview.ps1`
   (reads the shipped XML; not hand-written). Covers all 21 French texts across the 3 DefInjected files,
   Original/English columns equal throughout (mod authored in English, no separate source language).

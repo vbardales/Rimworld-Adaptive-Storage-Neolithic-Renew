@@ -12,16 +12,16 @@ Generated 2026-09-30, revision: working tree after the gender-agreement rule of 
 
 | Key or path | Original | English | French |
 |---|---|---|---|
-| ASNeolithicNeolithicStorage.label | *(not found — check by hand)* | *(not found — check by hand)* | stockage néolithique |
-| ASNeolithicNeolithicStorage.description | *(not found — check by hand)* | *(not found — check by hand)* | Construire des conteneurs simples et des moyens de stockage pour les matériaux de base. |
-| ASNeolithicNeolithicItemDisplay.label | *(not found — check by hand)* | *(not found — check by hand)* | présentoir néolithique |
-| ASNeolithicNeolithicItemDisplay.description | *(not found — check by hand)* | *(not found — check by hand)* | Construire des socles simples, mais esthétiques pour exposer des objets. |
+| ASNeolithicNeolithicStorage.label | neolithic storage | neolithic storage | stockage néolithique |
+| ASNeolithicNeolithicStorage.description | Build simple containers and means of storage for basic materials. | Build simple containers and means of storage for basic materials. | Construire des conteneurs simples et des moyens de stockage pour les matériaux de base. |
+| ASNeolithicNeolithicItemDisplay.label | neolithic item display | neolithic item display | présentoir néolithique |
+| ASNeolithicNeolithicItemDisplay.description | Build simple, yet beautiful plinths for displaying items. | Build simple, yet beautiful plinths for displaying items. | Construire des socles simples, mais esthétiques pour exposer des objets. |
 
 ## DefInjected/ResearchTabDef/ResearchTabDef.xml
 
 | Key or path | Original | English | French |
 |---|---|---|---|
-| ASFAdaptiveStorage.label | *(not found — check by hand)* | *(not found — check by hand)* | Stockage |
+| ASFAdaptiveStorage.label | Storage | Storage | Stockage |
 
 ## DefInjected/ThingDef/ThingDef.xml
 
@@ -31,24 +31,24 @@ Generated 2026-09-30, revision: working tree after the gender-agreement rule of 
 | ASNeolithicBasketWoody.description | A large basket made from wood, fabrics or dried leather for storing all kinds of different items. | A large basket made from wood, fabrics or dried leather for storing all kinds of different items. | Un grand panier fait de bois, de tissus ou de cuir séché pour stocker toutes sortes d'objets différents. |
 | ASNeolithicBasketFabric.label | basket | basket | panier |
 | ASNeolithicBasketFabric.description | A large basket made from wood, fabrics or dried leather for storing all kinds of different items. | A large basket made from wood, fabrics or dried leather for storing all kinds of different items. | Un grand panier fait de bois, de tissus ou de cuir séché pour stocker toutes sortes d'objets différents. |
-| ASNeolithicHayPile.label | hay pile | hay pile | botte de foin |
+| ASNeolithicHayPile.label | hay pile | hay pile | tas de foin |
 | ASNeolithicHayPile.description | A pile of hay for easier storage. | A pile of hay for easier storage. | Un tas de foin pour un stockage plus facile. |
 | ASNeolithicLargePot.label | large pot | large pot | grand pot |
 | ASNeolithicLargePot.description | A large carved pot meant for the storage of perishable food. | A large carved pot meant for the storage of perishable food. | Un grand pot taillé destiné au stockage des aliments périssables. |
 | ASNeolithicLargePotStone.label | large pot | large pot | grand pot |
 | ASNeolithicLargePotStone.description | A large carved pot meant for the storage of perishable food. | A large carved pot meant for the storage of perishable food. | Un grand pot taillé destiné au stockage des aliments périssables. |
 | ASNeolithicMealShelf.label | meal shelf | meal shelf | étagère à repas |
-| ASNeolithicMealShelf.description | A makeshift shelf for the purposes of meal storage. | A makeshift shelf for the purposes of meal storage. | Une étagère de fortune à des fins de stockage de repas. |
+| ASNeolithicMealShelf.description | A makeshift shelf for the purposes of meal storage. | A makeshift shelf for the purposes of meal storage. | Une étagère de fortune servant à entreposer des repas. |
 | ASNeolithicPlinthWoody.label | plinth | plinth | socle |
-| ASNeolithicPlinthWoody.description | A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored. | A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored. | Un socle en bois avec de belles gravures pour exposer des objets. |
+| ASNeolithicPlinthWoody.description | A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored. | A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored. | Un socle en bois avec de belles gravures pour exposer des objets. Les objets qui y sont exposés attirent l’attention des colons, et leur beauté ne passe pas inaperçue. |
 | ASNeolithicPlinthStone.label | plinth | plinth | socle |
-| ASNeolithicPlinthStone.description | A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored. | A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored. | Un socle en pierre brute avec de belles gravures pour exposer des objets. |
+| ASNeolithicPlinthStone.description | A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored. | A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored. | Un socle en pierre brute avec de belles gravures pour exposer des objets. Les objets qui y sont exposés attirent l’attention des colons, et leur beauté ne passe pas inaperçue. |
 | ASNeolithicTextileBundleFabric.label | bundle | bundle | ballot |
 | ASNeolithicTextileBundleFabric.description | A couple of textiles stacked upon each other into a neat pile. | A couple of textiles stacked upon each other into a neat pile. | Plusieurs textiles empilés les uns sur les autres en une pile soignée. |
 | ASNeolithicTextileBundleLeather.label | bundle | bundle | ballot |
 | ASNeolithicTextileBundleLeather.description | A couple of textiles stacked upon each other into a neat pile. | A couple of textiles stacked upon each other into a neat pile. | Plusieurs textiles empilés les uns sur les autres en une pile soignée. |
-| ASNeolithicWoodPile.label | pile | pile | fagot |
+| ASNeolithicWoodPile.label | pile | pile | tas de bûches |
 | ASNeolithicWoodPile.description | A couple of rough looking logs thrown upon each other into a pile. | A couple of rough looking logs thrown upon each other into a pile. | Quelques bûches à l'aspect brut jetées les unes sur les autres en un tas. |
 | ASNeolithicChunkStorage.label | stack | stack | amas |
-| ASNeolithicChunkStorage.description | A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover. | A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover. | Un tas de débris, constitué de morceaux et soutenant d'autres morceaux. Facile à réaliser et assez efficace comme couverture. |
+| ASNeolithicChunkStorage.description | A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover. | A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover. | Un amas de blocs rocheux, constitué de blocs et soutenant d’autres blocs. Facile à réaliser et assez efficace comme abri. |
 

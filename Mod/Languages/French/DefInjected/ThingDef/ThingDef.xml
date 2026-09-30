@@ -8,7 +8,7 @@
 	<ASNeolithicBasketFabric.description>Un grand panier fait de bois, de tissus ou de cuir séché pour stocker toutes sortes d'objets différents.</ASNeolithicBasketFabric.description>
 
 	<!-- Haypile -->
-	<ASNeolithicHayPile.label>botte de foin</ASNeolithicHayPile.label>
+	<ASNeolithicHayPile.label>tas de foin</ASNeolithicHayPile.label>
 	<ASNeolithicHayPile.description>Un tas de foin pour un stockage plus facile.</ASNeolithicHayPile.description>
 
 	<!-- Large Pot -->
@@ -19,13 +19,13 @@
 
 	<!-- MealShelf -->
 	<ASNeolithicMealShelf.label>étagère à repas</ASNeolithicMealShelf.label>
-	<ASNeolithicMealShelf.description>Une étagère de fortune à des fins de stockage de repas.</ASNeolithicMealShelf.description>
+	<ASNeolithicMealShelf.description>Une étagère de fortune servant à entreposer des repas.</ASNeolithicMealShelf.description>
 
 	<!-- Plinth -->
 	<ASNeolithicPlinthWoody.label>socle</ASNeolithicPlinthWoody.label>
-	<ASNeolithicPlinthWoody.description>Un socle en bois avec de belles gravures pour exposer des objets.</ASNeolithicPlinthWoody.description>
+	<ASNeolithicPlinthWoody.description>Un socle en bois avec de belles gravures pour exposer des objets. Les objets qui y sont exposés attirent l’attention des colons, et leur beauté ne passe pas inaperçue.</ASNeolithicPlinthWoody.description>
 	<ASNeolithicPlinthStone.label>socle</ASNeolithicPlinthStone.label>
-	<ASNeolithicPlinthStone.description>Un socle en pierre brute avec de belles gravures pour exposer des objets.</ASNeolithicPlinthStone.description>
+	<ASNeolithicPlinthStone.description>Un socle en pierre brute avec de belles gravures pour exposer des objets. Les objets qui y sont exposés attirent l’attention des colons, et leur beauté ne passe pas inaperçue.</ASNeolithicPlinthStone.description>
 
 	<!-- Textile Bundle -->
 	<ASNeolithicTextileBundleFabric.label>ballot</ASNeolithicTextileBundleFabric.label>
@@ -34,11 +34,11 @@
 	<ASNeolithicTextileBundleLeather.description>Plusieurs textiles empilés les uns sur les autres en une pile soignée.</ASNeolithicTextileBundleLeather.description>
 
 	<!-- WoodPile -->
-	<ASNeolithicWoodPile.label>fagot</ASNeolithicWoodPile.label>
+	<ASNeolithicWoodPile.label>tas de bûches</ASNeolithicWoodPile.label>
 	<ASNeolithicWoodPile.description>Quelques bûches à l'aspect brut jetées les unes sur les autres en un tas.</ASNeolithicWoodPile.description>
 
 	<!-- ChunkStorage -->
 	<ASNeolithicChunkStorage.label>amas</ASNeolithicChunkStorage.label>
-	<ASNeolithicChunkStorage.description>Un tas de débris, constitué de morceaux et soutenant d'autres morceaux. Facile à réaliser et assez efficace comme couverture.</ASNeolithicChunkStorage.description>
+	<ASNeolithicChunkStorage.description>Un amas de blocs rocheux, constitué de blocs et soutenant d’autres blocs. Facile à réaliser et assez efficace comme abri.</ASNeolithicChunkStorage.description>
 
 </LanguageData>
