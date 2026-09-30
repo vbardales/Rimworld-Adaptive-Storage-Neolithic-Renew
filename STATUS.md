@@ -1,7 +1,7 @@
 ---
 localization: complete
 translation_en: complete
-translation_fr: complete
+translation_fr: partial
 mod:          Adaptive Storage Neolithic Renew
 packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
@@ -32,8 +32,13 @@ remaining:
   - scope, decided 2026-09-21 by the owner: backward compatibility with the former per-stone buildings, the original mod's refusal and the mod-list icon are checked statically, as are the architect menu, the dropdown groups, frames under construction and the inspect-pane card. A new game is not relevant: the mod adds content to an existing game. None of this is a blocker.
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. It is disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
+  - unverified: French review by Virginie. TRANSLATIONS.md's gender-agreement rule (2026-09-30) reset
+    `translation_fr` to `unchecked`; this session read all 3 French DefInjected files in full (no pattern
+    search), found no pawn-agreeing text and so no `{PAWN_gender ? ...}` switch needed anywhere, and
+    generated `FRENCH_REVIEW.md` at the mod root by script (`_tools/Generate-FrenchReview.ps1`). Set
+    `translation_fr` to `partial`: only Virginie's own reading of `FRENCH_REVIEW.md` can set it `complete`.
 session:      local_db1227c9-d5d1-40e9-991f-1efee093b86b
-updated:      2026-09-29
+updated:      2026-09-30
 preview_audit: complete for text (recomposed 2026-09-29 with the detoured ModIcon overlay, bottom-left; contrast, fonts and size re-checked by Art/render-preview.cjs, still passes); not yet uploaded to Steam
 modicon_audit: complete
 ---
@@ -97,6 +102,7 @@ Read before the next publish. No stage change.
 | 2026-09-28 | **Rolled back to `done`.** A code review of the diff since `0.1.0` found three real findings in `Mod/`, fixed in `50b6c29`: a save-migration gap (plinths and stacked chunks lacked the `Blueprint_Install_` compat link large pots had), an inert `MayRequire` on the basket's `disallowedThingDefs` wrapper, a leftover `designatorDropdown` comment. Also filed upstream, `bbradson/Adaptive-Storage-Neolithic-Module` PR #4 at `731e20e`. `CHANGELOG.md` and the `### 1.1.2` change note in `PUBLICATION.md` are ready; not tested in game, not built, not dry-run, not published. |
 | 2026-09-29 | `docs/runs/` trimmed from 14 files to one, `2026-09-23-tested-milestone.md`: everything that still proves the published `1.1.0`/`1.1.1` tree, consolidated; superseded dev-era and pre-integration runs dropped (recoverable in `git log -p -- docs/runs/`). None of it covers the `1.1.2` fix. |
 | 2026-09-29 | `Preview.png` recomposed with the detoured ModIcon bottom-left (owner's rule, `PUBLISHING.md`); `Art/WorkshopScreenshots/00-preview.png` added as its gallery copy (same rule). Fixed a break from the 2026-09-28 cleanup: `Art/preview.html` still referenced the deleted `Art/Preview.png`. Neither the new header image nor `00-` is uploaded yet; no stage change. |
+| 2026-09-30 | French gender-agreement rule added to TRANSLATIONS.md reset `translation_fr` to `unchecked`. Read the 3 French `DefInjected` files in full; no pawn-agreeing text, no switch needed. Generated `FRENCH_REVIEW.md` by script (`_tools/Generate-FrenchReview.ps1`). `translation_fr` set to `partial`; `complete` needs Virginie's own review. No stage change. |
 
 **The runs of 2026-09-23**, consolidated in `docs/runs/2026-09-23-tested-milestone.md` (`exitReason: passed` each):
 
@@ -116,15 +122,25 @@ The delivered `Mod/` tree was last changed on 2026-09-23 at 18:41, before the fi
 
 `not_applicable`. `Mod/` holds no assembly and no C#, and no `ModSettings`, `GetSettings`, `MainButtonDef` or `MainTabWindow` (search of `Mod/` finds none). Costs, capacities and research are authored balance data inherited from the upstream source, not options a player needs. The framework owns the display options, and a duplicate page would add nothing. There is therefore no empty options page and no shortcut. Revalidate if `Mod/` ever gains code or a settings class.
 
-## Translation audit — 2026-09-28
+## Translation audit — 2026-09-28, French re-read 2026-09-30
 
-`localization`, `translation_en` and `translation_fr` are `complete` for the current tree.
+`localization` and `translation_en` are `complete` for the current tree. `translation_fr` is `partial`: the
+session's own checks below pass, but per TRANSLATIONS.md's "Systematic French review by Virginie"
+(2026-09-30), `translation_fr` cannot be `complete` until Virginie has read the French herself. A session
+never marks its own French reviewed.
 
 - **Inventory:** labels and descriptions of `ThingDef`, `ResearchProjectDef` and `ResearchTabDef`. There is no Keyed folder and no C#, so no code-owned text.
 - **English** comes from the Defs themselves, so no English language folder duplicates it.
 - **French and Russian** are `DefInjected` folders under `Mod/Languages/`, spelled `DefInjected` on disk and in git. French is the gate; Russian is outside the English/French gate and its vacstone entries are unreviewed by a Russian speaker (note in `remaining`).
 - **Checks:** `tests/Test-Mod.ps1` 173 assertions and `tests/Test-InstalledTranslations.ps1` 123 assertions, both re-run 2026-09-28 and passing. `Check-DefInjected.ps1` gave 118 keys and 0 errors on 2026-09-22 and was not re-run today. The French pass (feature 05) and Russian pass (feature 07) passed in game on 2026-09-23.
 - **Not covered:** a third-party stone's own untranslated material name belongs to that mod.
+- **French gender agreement (2026-09-30 rule):** read all 3 shipped French `DefInjected` files
+  (`ResearchProjectDefs.xml`, `ResearchTabDef.xml`, `ThingDef.xml`) in full, no pattern search. None of
+  the 21 texts refers to a pawn (all describe furniture); no `{PAWN_gender ? ...}` switch applies anywhere
+  in this mod, and none is missing one. Confirmed by reading, not by grep, per the rule.
+- **Review file:** `FRENCH_REVIEW.md` generated at the mod root by `_tools/Generate-FrenchReview.ps1`
+  (reads the shipped XML; not hand-written). Covers all 21 French texts across the 3 DefInjected files,
+  Original/English columns equal throughout (mod authored in English, no separate source language).
 
 Re-audit after any change to Defs, patches or language resources.
 
