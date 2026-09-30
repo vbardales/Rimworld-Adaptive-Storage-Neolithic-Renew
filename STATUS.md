@@ -8,6 +8,7 @@ repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
 stage:        done
+workflow_stage: done
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -19,8 +20,8 @@ tested_on:    2026-09-23 in the WSL; does not cover the 1.1.2 fix below, see "St
 workshop:     3806101377
 settings_audit: not_applicable
 build_audit:  not_applicable (current upstream architecture has no assembly)
-audit_revision: 50b6c29 (2026-09-28)
-audit_evidence: STATUS.md, "Stage history", 1.1.2 row
+audit_revision: c19ce6f (2026-09-30), plus the gallery rename and docs of this audit; `Art/*.ico` untracked (owner's local folder icons)
+audit_evidence: STATUS.md, "Audit under AUDIT.md — 2026-09-30"
 remaining:
   - unverified: the 1.1.2 fix in game. Static checks pass (173 assertions, 2026-09-28), but no Pickle or manual run has exercised the corrected ChunkBackCompatibility.xml links or the basket filter since. Needed before `tested`.
   - unverified: the Steam copy loaded in game. The file half is automated and passes (tests/Test-SteamCopy.ps1, 2026-09-28) but is now stale against 1.1.2, not yet published. The game half is the owner's: RimWorld/Mods holds a development junction with the same packageId, so which copy loads is unchecked.
@@ -28,7 +29,7 @@ remaining:
   - open: GitHub issue #3 (performance). A Pickle benchmark passed 5/5 and did not reproduce the reported cost: 24 filled pots +0.061 ms/tick against about +0.347 reported. Not an ASF-only A/B, so it does not disprove the report. Open pending the reporter's versions, save and logs.
   - resolved 2026-09-28: dry-run of 1.1.2, run 36480335062 at 5692a96dc63bf966a3db6c29d8facda6df2a6b23. Green. Staged 205 files, 2.62 MB; change note read correctly from PUBLICATION.md section 1.1.2; no option on, nothing sent. Ready for dispatch-publish.sh with this SHA, once the game half below is done.
   - open, optional: the six gallery images on the page were cut from the run of 2026-09-22; the run of 2026-09-23 captured new frames of the same scenes. Page and Art/WorkshopScreenshots still agree byte for byte.
-  - unverified, not yet uploaded: Preview.png recomposed 2026-09-29 to carry the detoured ModIcon bottom-left, `+15deg` (owner's rule, PUBLISHING.md), and Art/WorkshopScreenshots/00-preview.png added as its gallery copy (same rule). Art/render-preview.cjs passed (contrast, fonts, 686,368 bytes). Neither is live: update_preview is off by default and the gallery upload is manual. Fixed in the same pass: Art/preview.html referenced the Art/Preview.png deleted in the 2026-09-28 cleanup (STATUS.md, "Findings") and would no longer render; it now points at Preview-source.png, the file that was always the real scene.
+  - unverified, not yet uploaded: Preview.png recomposed 2026-09-29 to carry the detoured ModIcon bottom-left, `+15deg` (owner's rule, PUBLISHING.md), and Art/WorkshopScreenshots/0-preview.png added as its gallery copy (same rule). Art/render-preview.cjs passed (contrast, fonts, 686,368 bytes). Neither is live: update_preview is off by default and the gallery upload is manual. Fixed in the same pass: Art/preview.html referenced the Art/Preview.png deleted in the 2026-09-28 cleanup (STATUS.md, "Findings") and would no longer render; it now points at Preview-source.png, the file that was always the real scene.
   - scope, decided 2026-09-21 by the owner: backward compatibility with the former per-stone buildings, the original mod's refusal and the mod-list icon are checked statically, as are the architect menu, the dropdown groups, frames under construction and the inspect-pane card. A new game is not relevant: the mod adds content to an existing game. None of this is a blocker.
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. It is disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
@@ -48,6 +49,22 @@ modicon_audit: complete
 Read by a sweep across every mod. It lives at the root, never inside `Mod/`, so Steam never receives it, and the mod's own repository tracks it.
 
 Sections from before 2026-09-22 described the superseded Workshop-based implementation (Harmony hook, compiled DLL, per-stone generators). They were removed on 2026-09-28. Recover them with `git log -p -- STATUS.md`; the last commit that holds them is `3f4c7aa`.
+
+## Audit under AUDIT.md — 2026-09-30
+
+`stage` stays `done` (`workflow_stage: done`, added: the field was missing). Audited at `c19ce6f` (`main` = `origin/main`); the gallery rename below is uncommitted at time of writing. Nothing launched: no RimWorld, no Pickle run, no CI dispatch.
+
+| Check | Result |
+| --- | --- |
+| `tests/Test-Mod.ps1`, `tests/Test-InstalledTranslations.ps1` | Re-run: 173 and 123 assertions pass. |
+| `PublishedFileId.txt` / `0.1.0` | File present (`3806101377`), `## [0.1.0]` in CHANGELOG. Nothing to initialise. |
+| `.dds` | 0 tracked, `*.dds` ignored. |
+| Evidence | None tracked; `tests/Pickle/Evidence/` ignored, 3.5 MB, 8 folders, each the latest of its pass. Rule: `TESTING.md`, "Evidence to keep". |
+| Upstream git | `bbradson/Adaptive-Storage-Neolithic-Module`, PR #4 already filed (`731e20e`). No `BACKLOG.md`: nothing pending to add. |
+| Gallery naming (PUBLISHING.md: `0-`, `1-`, `2-`… one digit) | **Defect, fixed:** `00-preview.png` and `workshop-N-*.png` renamed `0-preview.png`, `1-…` to `6-…` (content unchanged, `0-` still byte-identical to `Preview.png`). `PUBLICATION.md`, `Art/PREVIEW.md` and `Art/Crop-WorkshopScreenshots.ps1` follow. The live page keeps its images; the next manual upload uses the new names. |
+| Translations | Unchanged since 2026-09-30 (`FRENCH_REVIEW.md`); `translation_fr` stays `partial` until Virginie reads it. |
+
+**For `done` to `tested` (all still open):** replay in the WSL the scenarios the 1.1.2 fix touches (migration links, basket filter); no `@wip` (none today); every `@requires` scenario played on the 1.1.2 tree (all ran on 2026-09-23, on the pre-fix tree only); no manual test left (none today); `@review` captures reopened.
 
 ## Audit under AUDIT.md — 2026-09-28
 
@@ -101,7 +118,8 @@ Read before the next publish. No stage change.
 | 2026-09-24 | `1.1.1`, header image only (`Mod/` identical to `1.1.0`): dry-run 35971407130 at `037da4ba3946b89a3556fbfec74bb2ad4f97bee4`, publish 35971816069, tag `v1.1.1`. The page was then read from the public page and API: item public, title, tags `Mod` and `1.6`, 2,622,395 bytes, description and header image identical to the repository, six gallery images byte-identical to `Art/WorkshopScreenshots/` in order. |
 | 2026-09-28 | **Rolled back to `done`.** A code review of the diff since `0.1.0` found three real findings in `Mod/`, fixed in `50b6c29`: a save-migration gap (plinths and stacked chunks lacked the `Blueprint_Install_` compat link large pots had), an inert `MayRequire` on the basket's `disallowedThingDefs` wrapper, a leftover `designatorDropdown` comment. Also filed upstream, `bbradson/Adaptive-Storage-Neolithic-Module` PR #4 at `731e20e`. `CHANGELOG.md` and the `### 1.1.2` change note in `PUBLICATION.md` are ready; not tested in game, not built, not dry-run, not published. |
 | 2026-09-29 | `docs/runs/` trimmed from 14 files to one, `2026-09-23-tested-milestone.md`: everything that still proves the published `1.1.0`/`1.1.1` tree, consolidated; superseded dev-era and pre-integration runs dropped (recoverable in `git log -p -- docs/runs/`). None of it covers the `1.1.2` fix. |
-| 2026-09-29 | `Preview.png` recomposed with the detoured ModIcon bottom-left (owner's rule, `PUBLISHING.md`); `Art/WorkshopScreenshots/00-preview.png` added as its gallery copy (same rule). Fixed a break from the 2026-09-28 cleanup: `Art/preview.html` still referenced the deleted `Art/Preview.png`. Neither the new header image nor `00-` is uploaded yet; no stage change. |
+| 2026-09-29 | `Preview.png` recomposed with the detoured ModIcon bottom-left (owner's rule, `PUBLISHING.md`); `Art/WorkshopScreenshots/0-preview.png` added as its gallery copy (same rule). Fixed a break from the 2026-09-28 cleanup: `Art/preview.html` still referenced the deleted `Art/Preview.png`. Neither the new header image nor `00-` is uploaded yet; no stage change. |
+| 2026-09-30 | AUDIT.md re-run: stage `done` kept, `workflow_stage` added, gallery files renamed to the `0-`…`6-` scheme. |
 | 2026-09-30 | French gender-agreement rule added to TRANSLATIONS.md reset `translation_fr` to `unchecked`. Read the 3 French `DefInjected` files in full; no pawn-agreeing text, no switch needed. Generated `FRENCH_REVIEW.md` by script (`_tools/Generate-FrenchReview.ps1`). `translation_fr` set to `partial`; `complete` needs Virginie's own review. No stage change. |
 
 **The runs of 2026-09-23**, consolidated in `docs/runs/2026-09-23-tested-milestone.md` (`exitReason: passed` each):

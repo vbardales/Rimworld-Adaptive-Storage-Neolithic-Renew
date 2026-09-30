@@ -74,7 +74,7 @@ Full attribution and change history: [url=https://github.com/vbardales/Rimworld-
 `Mod/About/Preview.png` is the Workshop header image sent with the mod update; it is not an additional gallery image. `Mod/About/ModIcon.png`
 is the in-game mod-list icon and is not uploaded to the gallery.
 
-**Every gallery starts with a byte-for-byte copy of the Preview** (owner's rule, 2026-09-29): `00-preview.png`
+**Every gallery starts with a byte-for-byte copy of the Preview** (owner's rule, 2026-09-29): `0-preview.png`
 is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The six capture files
 below follow it in the intended gallery order. They were regenerated from the integrated upstream implementation by Pickle feature
 `11-workshop-captures.feature` on 2026-09-22 (6/6 passed; the 2026-09-23 repeat is in `docs/runs/2026-09-23-tested-milestone.md`) and cropped pixel-for-pixel with `Art/Crop-WorkshopScreenshots.ps1`.
@@ -85,13 +85,13 @@ of today's scope.
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
-| 0 | `Art/WorkshopScreenshots/00-preview.png` | 896 x 504, 670,300 bytes | Copy of the Workshop header image (now carries the detoured ModIcon, bottom-left) |
-| 1 | `Art/WorkshopScreenshots/workshop-1-the-whole-set.png` | 780 x 250, 263,370 bytes | The whole set and its visible contents |
-| 2 | `Art/WorkshopScreenshots/workshop-2-a-basket-fills-up.png` | 350 x 250, 76,286 bytes | A basket empty, partly filled and full |
-| 3 | `Art/WorkshopScreenshots/workshop-3-chunk-stacks.png` | 610 x 250, 161,427 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
-| 4 | `Art/WorkshopScreenshots/workshop-4-large-pots.png` | 610 x 250, 169,584 bytes | Large pots showing different stored foods |
-| 5 | `Art/WorkshopScreenshots/workshop-5-plinths.png` | 350 x 250, 80,242 bytes | Three plinths displaying items |
-| 6 | `Art/WorkshopScreenshots/workshop-6-a-stone-from-another-mod.png` | 580 x 250, 176,570 bytes | A compatible third-party stone beside granite |
+| 0 | `Art/WorkshopScreenshots/0-preview.png` | 896 x 504, 670,300 bytes | Copy of the Workshop header image (now carries the detoured ModIcon, bottom-left) |
+| 1 | `Art/WorkshopScreenshots/1-the-whole-set.png` | 780 x 250, 263,370 bytes | The whole set and its visible contents |
+| 2 | `Art/WorkshopScreenshots/2-a-basket-fills-up.png` | 350 x 250, 76,286 bytes | A basket empty, partly filled and full |
+| 3 | `Art/WorkshopScreenshots/3-chunk-stacks.png` | 610 x 250, 161,427 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
+| 4 | `Art/WorkshopScreenshots/4-large-pots.png` | 610 x 250, 169,584 bytes | Large pots showing different stored foods |
+| 5 | `Art/WorkshopScreenshots/5-plinths.png` | 350 x 250, 80,242 bytes | Three plinths displaying items |
+| 6 | `Art/WorkshopScreenshots/6-a-stone-from-another-mod.png` | 580 x 250, 176,570 bytes | A compatible third-party stone beside granite |
 
 Header assets already valid:
 
@@ -189,7 +189,7 @@ Steam change note for the integrated tree. It is an update to the existing item 
 - Description: pasted on the page, read back identical on 2026-09-24.
 - Dependency: one, fixed above.
 - Gallery: the six capture files above are live on the page, byte-identical, read back 2026-09-24. A newer run of the same six scenes exists
-  (`docs/runs/2026-09-23-tested-milestone.md`); whether to regenerate from it is undecided, tracked in `STATUS.md`. `00-preview.png` is new
+  (`docs/runs/2026-09-23-tested-milestone.md`); whether to regenerate from it is undecided, tracked in `STATUS.md`. `0-preview.png` is new
   2026-09-29 and not yet uploaded; the live header image also still predates the ModIcon overlay, since `update_preview` is off by default.
 - Comments: both posted (section 4).
 - Still open, not blocking: the file half of a Steam-copy subscription test is automated and passes

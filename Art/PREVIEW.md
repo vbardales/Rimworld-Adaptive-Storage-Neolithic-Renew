@@ -14,7 +14,7 @@ block sits bottom-right (`.text`): the two never overlap. Re-run `cutout-icon.cj
 only if the icon source changes; its output is committed. Reference implementation:
 `ManyHappyReturns/Art/README.md`.
 
-The gallery's first image is a byte-for-byte copy of the Preview, `Art/WorkshopScreenshots/00-preview.png`
+The gallery's first image is a byte-for-byte copy of the Preview, `Art/WorkshopScreenshots/0-preview.png`
 (owner's rule, 2026-09-29, `PUBLISHING.md`). Recopy it whenever the Preview is regenerated, or the two
 drift apart silently.
 

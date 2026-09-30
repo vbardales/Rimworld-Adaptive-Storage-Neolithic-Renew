@@ -8,12 +8,12 @@ Add-Type -AssemblyName System.Drawing
 
 $destinationDirectory = Join-Path $PSScriptRoot 'WorkshopScreenshots'
 $shots = @(
-    @{ Source = 'manual--workshop-1---the-whole-set--step0.png'; Target = 'workshop-1-the-whole-set.png'; X = 620; Y = 420; Width = 780; Height = 250 },
-    @{ Source = 'manual--workshop-2---a-basket-fills-up--step0.png'; Target = 'workshop-2-a-basket-fills-up.png'; X = 790; Y = 415; Width = 350; Height = 250 },
-    @{ Source = 'manual--workshop-3---chunk-stacks--step0.png'; Target = 'workshop-3-chunk-stacks.png'; X = 620; Y = 415; Width = 610; Height = 250 },
-    @{ Source = 'manual--workshop-4---large-pots--step0.png'; Target = 'workshop-4-large-pots.png'; X = 620; Y = 415; Width = 610; Height = 250 },
-    @{ Source = 'manual--workshop-5---plinths--step0.png'; Target = 'workshop-5-plinths.png'; X = 790; Y = 415; Width = 350; Height = 250 },
-    @{ Source = 'manual--workshop-6---a-stone-from-another-mod--step0.png'; Target = 'workshop-6-a-stone-from-another-mod.png'; X = 700; Y = 415; Width = 580; Height = 250 }
+    @{ Source = 'manual--workshop-1---the-whole-set--step0.png'; Target = '1-the-whole-set.png'; X = 620; Y = 420; Width = 780; Height = 250 },
+    @{ Source = 'manual--workshop-2---a-basket-fills-up--step0.png'; Target = '2-a-basket-fills-up.png'; X = 790; Y = 415; Width = 350; Height = 250 },
+    @{ Source = 'manual--workshop-3---chunk-stacks--step0.png'; Target = '3-chunk-stacks.png'; X = 620; Y = 415; Width = 610; Height = 250 },
+    @{ Source = 'manual--workshop-4---large-pots--step0.png'; Target = '4-large-pots.png'; X = 620; Y = 415; Width = 610; Height = 250 },
+    @{ Source = 'manual--workshop-5---plinths--step0.png'; Target = '5-plinths.png'; X = 790; Y = 415; Width = 350; Height = 250 },
+    @{ Source = 'manual--workshop-6---a-stone-from-another-mod--step0.png'; Target = '6-a-stone-from-another-mod.png'; X = 700; Y = 415; Width = 580; Height = 250 }
 )
 
 foreach ($shot in $shots) {
