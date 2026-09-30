@@ -34,3 +34,8 @@ any change. A contrast below 4.5:1, fallback font, or PNG over 900,000 bytes fai
 
 The current mod has no status tag. Adding one requires adding its actual text, checking its
 platform font and rendered contrast, and updating the renderer's QA coverage accordingly.
+
+## Files that must stay (owner, 2026-09-30)
+
+- `Art/echo.png` is the "echo" layer of the Preview (`preview-copy.json`, key `echo`, alpha mode, pre-sized). Without it the Preview cannot be re-rendered. Do not delete it in a cleanup.
+- `Art/ModIcon.png` (1254 px) is the source of `Art/ModIcon.ico`, the local folder icon (`Art/ModIcon.ico` is ignored by git; regenerate it from this PNG). It is not `Mod/About/ModIcon.png`, the 128 px icon shipped to players.
