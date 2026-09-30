@@ -100,7 +100,7 @@ what belongs in git is one text line per run in `docs/runs/`. The rules that app
 - **Read `exitReason` before the counts, and open every `@review` capture** before citing a run. A green
   scenario says the path ran, not that the picture shows anything.
 - **Keep the sources of the gallery.** `.build/pickle-run-workshop-captures` holds the raw frames the six
-  images in `Art/WorkshopScreenshots/` were cut from; delete it only after the gallery is regenerated from a
+  images in `Art/Gallery/` were cut from; delete it only after the gallery is regenerated from a
   newer run.
 - **Never delete a report that a `STATUS.md` field still points to**: repoint the field first.
 - A run's raw folder in `.build/` is scratch once its report has been copied to `tests/Pickle/Evidence/`

@@ -6,7 +6,7 @@ param(
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 
-$destinationDirectory = Join-Path $PSScriptRoot 'WorkshopScreenshots'
+$destinationDirectory = Join-Path $PSScriptRoot 'Gallery'
 $shots = @(
     @{ Source = 'manual--workshop-1---the-whole-set--step0.png'; Target = '1-the-whole-set.png'; X = 620; Y = 420; Width = 780; Height = 250 },
     @{ Source = 'manual--workshop-2---a-basket-fills-up--step0.png'; Target = '2-a-basket-fills-up.png'; X = 790; Y = 415; Width = 350; Height = 250 },

@@ -19,7 +19,7 @@ only when an opt-in option is set (section 3); visibility and everything else on
 
       ```bash
       bash /c/Users/nelim/Documents/rimworld/Rimworld-Release-Admin/scripts/generate-publish-workflow.sh "$PWD" --check
-      bash /c/Users/nelim/Documents/rimworld/Rimworld-Release-Admin/scripts/generate-publish-workflow.sh "$PWD" --workshop-id 3806101377 --package-id nelim.adaptivestorageneolithic --release-title "Adaptive Storage Neolithic Renew {version}" --require Defs --forbid Assemblies --description-file PUBLICATION.md --description-heading '^## 1\. Steam description' --gallery-dir Art/WorkshopScreenshots --replace
+      bash /c/Users/nelim/Documents/rimworld/Rimworld-Release-Admin/scripts/generate-publish-workflow.sh "$PWD" --workshop-id 3806101377 --package-id nelim.adaptivestorageneolithic --release-title "Adaptive Storage Neolithic Renew {version}" --require Defs --forbid Assemblies --description-file PUBLICATION.md --description-heading '^## 1\. Steam description' --gallery-dir Art/Gallery --replace
       ```
 
       Keep `--gallery-dir` in that command: a `--replace` without it drops `galleryDir` from `.github/publish.config.json`. It only makes the
@@ -77,7 +77,7 @@ Decide for each line whether it changed in this release. "CI option" is the opt-
 | Header image | `update_preview` | [yes / no] | `Mod/About/Preview.png`, a PNG under 1 MiB | [ ] |
 | Title | `update_title` | [yes / no] | the `<name>` of `About.xml` | [ ] |
 | Tags | `update_tags` | [yes / no] | `Mod` plus one tag per `<supportedVersions>` entry; replaces the whole set | [ ] |
-| Gallery images, in order | none, manual | [yes / no] | `Art/WorkshopScreenshots/`, order in section 2 of `PUBLICATION.md` | [ ] |
+| Gallery images, in order | none, manual | [yes / no] | `Art/Gallery/`, order in section 2 of `PUBLICATION.md` | [ ] |
 | Visibility | none, manual, never sent | [yes / no] | the owner | [ ] |
 | Steam comments and thanks | none, manual | [yes / no] | section 4 of `PUBLICATION.md`, once, only after the item is public | [ ] |
 
