@@ -17,7 +17,8 @@ All notable changes to this mod are documented here.
   on an arbitrary wrapping element, so the outer one did nothing. Removed; the `li` still gates it.
 - `LargePot/ThingDef.xml`: dropped a commented-out `designatorDropdown` line left over from the
   designator-dropdown mechanism removed elsewhere in the same upstream integration.
-n### Changed
+
+### Changed
 
 - Workshop header image refreshed (`Mod/About/Preview.png`, now with the mod icon).
 - French: reviewed by the owner. Hay pile "tas de foin", wood pile "tas de bûches", plinth descriptions gain the sentence on colonists' attention and beauty, meal shelf "servant à entreposer des repas", stone stack "Un tas de rochers, constitué de rochers et soutenant d'autres rochers. Facile à réaliser et assez efficace comme couvert."
