@@ -8,8 +8,8 @@
       "bounds": {
         "x": 425.328125,
         "y": 233.40625,
-        "width": 328.15625,
-        "height": 82.78125
+        "width": 430,
+        "height": 151.78125
       },
       "fonts": [
         {
@@ -22,7 +22,7 @@
           "familyName": "RimWordFont",
           "postScriptName": "RimWordFont",
           "isCustomFont": true,
-          "glyphCount": 26
+          "glyphCount": 25
         }
       ]
     },
@@ -37,7 +37,7 @@
     "p": {
       "bounds": {
         "x": 425.328125,
-        "y": 352.78125,
+        "y": 421.78125,
         "width": 362.25,
         "height": 60.875
       },

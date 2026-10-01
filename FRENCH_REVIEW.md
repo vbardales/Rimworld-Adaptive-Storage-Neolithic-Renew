@@ -6,7 +6,7 @@ ported from another source language; there is no separate original-language fiel
 in this repository. No Keyed folder and no separate Mod/Languages/English folder exist:
 English is the game's native fallback, read directly from the shipped Defs.
 
-Generated 2026-09-30, revision: working tree after the gender-agreement rule of 2026-09-30.
+Generated 2026-10-01, revision: working tree after the gender-agreement rule of 2026-09-30.
 
 ## DefInjected/ResearchProjectDef/ResearchProjectDefs.xml
 
@@ -50,5 +50,5 @@ Generated 2026-09-30, revision: working tree after the gender-agreement rule of 
 | ASNeolithicWoodPile.label | pile | pile | tas de bûches |
 | ASNeolithicWoodPile.description | A couple of rough looking logs thrown upon each other into a pile. | A couple of rough looking logs thrown upon each other into a pile. | Quelques bûches à l'aspect brut jetées les unes sur les autres en un tas. |
 | ASNeolithicChunkStorage.label | stack | stack | amas |
-| ASNeolithicChunkStorage.description | A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover. | A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover. | Un tas de rochers, constitué de rochers et soutenant d’autres rochers. Facile à réaliser et assez efficace comme abri. |
+| ASNeolithicChunkStorage.description | A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover. | A stack of stone chunks, made from chunks, supporting chunks. Easy to make and quite effective as cover. | Un tas de rochers, constitué de rochers et soutenant d’autres rochers. Facile à réaliser et assez efficace comme couvert. |
 
