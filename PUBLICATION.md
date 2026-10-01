@@ -141,7 +141,7 @@ Steam change note for the integrated tree. It is an update to the existing item 
 ### 1.1.2
 
 ```text
-[h3]Save-compatibility fix[/h3]
+[h3]1.1.2 - Save-compatibility fix[/h3]
 
 [list]
 [*]Fixed a save-compatibility gap: a legacy stone plinth or stacked chunks that had been minified and reinstalled now migrate correctly (large pots already did).
