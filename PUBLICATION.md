@@ -146,6 +146,8 @@ Steam change note for the integrated tree. It is an update to the existing item 
 [list]
 [*]Fixed a save-compatibility gap: a legacy stone plinth or stacked chunks that had been minified and reinstalled now migrate correctly (large pots already did).
 [*]Removed an inert MayRequire attribute and a leftover comment. No effect on gameplay.
+[*]Refreshed the Workshop header image, now carrying the mod icon.
+[*]French: reworded several building names and descriptions (haystack, log pile, plinths, meal shelf, stone stack).
 [/list]
 ```
 
