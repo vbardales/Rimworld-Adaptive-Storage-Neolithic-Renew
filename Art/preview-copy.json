@@ -12,7 +12,6 @@
   "copyLines": ["Neolithic storage where every container shows what is inside."],
   "layout": "panel",
   "panelAnchor": "bottom-right",
-  "panelHeight": 65,
   "backgroundFile": "Preview-source.png",
   "backgroundPosition": "0 -43.5px",
   "backgroundSize": "896px auto",
