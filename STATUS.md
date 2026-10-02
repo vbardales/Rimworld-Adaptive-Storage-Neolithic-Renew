@@ -29,14 +29,14 @@ remaining:
   - open: GitHub issue #3 (performance). A Pickle benchmark passed 5/5 and did not reproduce the reported cost: 24 filled pots +0.061 ms/tick against about +0.347 reported. Not an ASF-only A/B, so it does not disprove the report. Open pending the reporter's versions, save and logs.
   - resolved 2026-09-28: dry-run of 1.1.2, run 36480335062 at 5692a96dc63bf966a3db6c29d8facda6df2a6b23. Green. Staged 205 files, 2.62 MB; change note read correctly from PUBLICATION.md section 1.1.2; no option on, nothing sent. Ready for dispatch-publish.sh with this SHA, once the game half below is done.
   - open, optional: the six gallery images on the page were cut from the run of 2026-09-22; the run of 2026-09-23 captured new frames of the same scenes. Page and Art/Gallery still agree byte for byte.
-  - unverified, not yet uploaded: Preview.png recomposed 2026-09-29 to carry the detoured ModIcon bottom-left, `+15deg` (owner's rule, PUBLISHING.md), and Art/Gallery/0-preview.png added as its gallery copy (same rule). Art/render-preview.cjs passed (contrast, fonts, 686,368 bytes). Neither is live: update_preview is off by default and the gallery upload is manual. Fixed in the same pass: Art/preview.html referenced the Art/Preview.png deleted in the 2026-09-28 cleanup (STATUS.md, "Findings") and would no longer render; it now points at Preview-source.png, the file that was always the real scene.
+  - resolved 2026-10-01: Preview recomposed with the detoured ModIcon and published with 1.1.2 (header image byte-identical to `Mod/About/Preview.png`, 660,690 bytes, read on the public page); gallery uploaded by the owner. `Art/` was cleaned by the owner on 2026-10-02: the Preview now renders from `Art/Preview.config.json` with the shared `scripts/Render-Preview.cjs`, see `Art/PREVIEW.md`.
   - scope, decided 2026-09-21 by the owner: backward compatibility with the former per-stone buildings, the original mod's refusal and the mod-list icon are checked statically, as are the architect menu, the dropdown groups, frames under construction and the inspect-pane card. A new game is not relevant: the mod adds content to an existing game. None of this is a blocker.
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. It is disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - resolved 2026-09-30: French review by Virginie, validated at `ef449a6` (see "Translation audit"). No pawn-agreeing French text, so no `{PAWN_gender ? ...}` switch is needed.
 session:      local_fead2880-4a41-454c-943a-a9463059cbfb
 updated:      2026-09-30
-preview_audit: complete for text (recomposed 2026-09-29 with the detoured ModIcon overlay, bottom-left; contrast, fonts and size re-checked by Art/render-preview.cjs, still passes); not yet uploaded to Steam
+preview_audit: complete (1.1.2 header image published 2026-10-01, byte-identical to `Mod/About/Preview.png`; text, contrast and size checked by the renderer of the day, whose files the owner has since removed; rendering is now `Art/PREVIEW.md`)
 modicon_audit: complete
 ---
 
