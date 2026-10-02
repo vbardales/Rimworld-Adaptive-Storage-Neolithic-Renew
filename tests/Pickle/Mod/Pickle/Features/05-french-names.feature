@@ -4,9 +4,9 @@ Feature: French names on the current upstream architecture
     Then Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its label "grand pot"
     And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its description "Un grand pot taillé destiné au stockage des aliments périssables."
     And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its label "socle"
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its description "Un socle en pierre brute avec de belles gravures pour exposer des objets."
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its description "Un socle en pierre brute avec de belles gravures pour exposer des objets. Les objets qui y sont exposés attirent l’attention des colons, et leur beauté ne passe pas inaperçue."
     And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its label "amas"
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicWoodPile" has its label "fagot"
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicWoodPile" has its label "tas de bûches"
 
   @requires:Odyssey
   @review
