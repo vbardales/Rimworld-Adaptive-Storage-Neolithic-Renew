@@ -52,4 +52,4 @@ tests/pickle-run-*/
 tests/audit-*/
 tests/workflow-*audit*/
 tests/translation-validation-*/
-*.ico
+Mod/**/*.ico
