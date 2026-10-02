@@ -109,3 +109,10 @@ what belongs in git is one text line per run in `docs/runs/`. The rules that app
   development-era and pre-integration runs, keep the tested milestone and any post-publication regression.
   Done 2026-09-29: 14 files (2026-09-13 to 2026-09-23) consolidated into one, `docs/runs/2026-09-23-tested-milestone.md`;
   nothing is lost, `git log -p -- docs/runs/` has every original. The next in-game run starts a clean file.
+
+### What to keep per run (owner's request, 2026-10-02)
+
+- Keep only `summary.json`, `summary.md`, `junit.xml` and `Player.log` of each regression pass. Delete `report.html`, `messages.ndjson` (tens of MB, stale after a rebuild) and, for a regression pass whose `@review` captures nobody opens, the `screenshots/` folder (about 80 MB per full pass).
+- Keep `screenshots/` only where a capture is the proof: the Workshop gallery run (`workshop-2026-09-23`) and any run whose `@review` captures were opened and accepted.
+- Never keep two folders for the same pass on the same revision; the newer replaces the older.
+- Features 05 (French) and 07 (Russian) assert one language each: play them only under `-Language French` or `-Language Russian`. In an English pass they fail by design (2026-10-02, `042e` and `96b2`).
