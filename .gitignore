@@ -53,3 +53,4 @@ tests/audit-*/
 tests/workflow-*audit*/
 tests/translation-validation-*/
 Mod/**/*.ico
+Art/.render/
