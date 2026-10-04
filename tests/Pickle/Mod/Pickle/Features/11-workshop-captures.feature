@@ -4,7 +4,7 @@
 # Gallery series (owner's rule of 2026-10-02: a gallery capture is a staged photograph, not a default screenshot).
 # The story: the storehouse of a neolithic camp by the river, from the pantry shelf to the display plinth. One common set links the six
 # pictures: the hut of Nelim's tribe (wood walls, parquet floor, the river a few cells to the west), emptied before each picture, then
-# furnished by the scenario with the mod's buildings and their contents. The hour is noon and the weather clear.
+# furnished by the scenario with the mod's buildings and their contents. Roof and animals of the hut are removed first (sun-lit room, no sleeping animal). The hour is noon and the weather clear.
 # The map is the sanctuary save "Nelims-tribe" of PickleTools' ScreenshotStudio (Git LFS fixture, 250 x 250, one colonist, vanilla only),
 # frames by name (`I am at the sanctuary "hut"`: position (140, 73), the game's closest zoom 12) and emptied by name
 # (`the sanctuary "hut" is emptied`); see PickleTools/docs/SANCTUAIRE-LIEUX.md.
@@ -24,6 +24,8 @@ Feature: the pictures of the Workshop page
   # 1. The whole set at once, each container with something in it: the mod's one idea in a single picture.
   Scenario: the whole set, each container holding something
     Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: the roof is removed from the sanctuary "hut"
+    And Nelim's Pickle Tools: the animals are removed from the sanctuary "hut"
     And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
@@ -54,6 +56,8 @@ Feature: the pictures of the Workshop page
   # 2. The idea, isolated: a basket empty, with one item, full.
   Scenario: a wooden basket, empty, with one item and full, side by side
     Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: the roof is removed from the sanctuary "hut"
+    And Nelim's Pickle Tools: the animals are removed from the sanctuary "hut"
     And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
@@ -72,6 +76,8 @@ Feature: the pictures of the Workshop page
   # 3. A stack of chunks at one, two and six chunks, and a marble one: the sprite follows the load and the colour follows the stone.
   Scenario: granite chunk stacks at one, two and six chunks, and a marble one
     Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: the roof is removed from the sanctuary "hut"
+    And Nelim's Pickle Tools: the animals are removed from the sanctuary "hut"
     And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
@@ -103,6 +109,8 @@ Feature: the pictures of the Workshop page
   # 4. Large pots with different food, and one with a lid: contents and material.
   Scenario: large pots with different food, and a lidded one holding two kinds
     Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: the roof is removed from the sanctuary "hut"
+    And Nelim's Pickle Tools: the animals are removed from the sanctuary "hut"
     And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
@@ -129,6 +137,8 @@ Feature: the pictures of the Workshop page
   @requires:Odyssey
   Scenario: plinths of wood, granite and vacstone, each showing an item
     Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: the roof is removed from the sanctuary "hut"
+    And Nelim's Pickle Tools: the animals are removed from the sanctuary "hut"
     And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
@@ -148,6 +158,8 @@ Feature: the pictures of the Workshop page
   @requires:Kura.ExtraStone
   Scenario: the pot and the chunk stack of a stone from another mod, beside granite
     Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: the roof is removed from the sanctuary "hut"
+    And Nelim's Pickle Tools: the animals are removed from the sanctuary "hut"
     And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
