@@ -78,7 +78,7 @@ is the in-game mod-list icon and is not uploaded to the gallery.
 is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The six capture files
 below follow it in the intended gallery order. They were regenerated from the integrated upstream implementation by Pickle feature
 `11-workshop-captures.feature` on 2026-09-22 (6/6 passed; the 2026-09-23 repeat is in `docs/runs/2026-09-23-tested-milestone.md`) and cropped pixel-for-pixel with `Art/Crop-WorkshopScreenshots.ps1`.
-For the Nelim screenshot studio, place the subject over the upper-right orange area of the central emblem and centre the camera at (132, 132) at maximum zoom. The crop may cut buildings or contents at its edge. The six crops have been checked for legibility; the final Workshop review remains the owner's.
+The pictures are staged in the storehouse hut of the sanctuary save `Nelims-tribe` (frame `hut`, emptied, closest zoom; see `TESTING.md`, "Gallery regeneration phase"). The crop may cut buildings or contents at its edge. The six crops have been checked for legibility; the final Workshop review remains the owner's.
 Upload these seven files in order; do not mix them with the superseded Workshop-based captures. The six capture filenames
 still use the pre-2026-09-25 `workshop-N-` naming rather than the current `01-`, `02-`… convention; unchanged here, out
 of today's scope.
@@ -86,12 +86,12 @@ of today's scope.
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
 | 0 | `Art/Gallery/0-preview.png` | 896 x 504, 670,300 bytes | Copy of the Workshop header image (now carries the detoured ModIcon, bottom-left) |
-| 1 | `Art/Gallery/1-the-whole-set.png` | 780 x 250, 263,370 bytes | The whole set and its visible contents |
-| 2 | `Art/Gallery/2-a-basket-fills-up.png` | 350 x 250, 76,286 bytes | A basket empty, partly filled and full |
-| 3 | `Art/Gallery/3-chunk-stacks.png` | 610 x 250, 161,427 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
-| 4 | `Art/Gallery/4-large-pots.png` | 610 x 250, 169,584 bytes | Large pots showing different stored foods |
-| 5 | `Art/Gallery/5-plinths.png` | 350 x 250, 80,242 bytes | Three plinths displaying items |
-| 6 | `Art/Gallery/6-a-stone-from-another-mod.png` | 580 x 250, 176,570 bytes | A compatible third-party stone beside granite |
+| 1 | `Art/Gallery/1-the-whole-set.png` | 480 x 274, 94 719 bytes | The whole set and its visible contents |
+| 2 | `Art/Gallery/2-a-basket-fills-up.png` | 350 x 250, 50 289 bytes | A basket empty, partly filled and full |
+| 3 | `Art/Gallery/3-chunk-stacks.png` | 560 x 200, 68 227 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
+| 4 | `Art/Gallery/4-large-pots.png` | 540 x 200, 67 724 bytes | Large pots showing different stored foods |
+| 5 | `Art/Gallery/5-plinths.png` | 350 x 250, 54 017 bytes | Three plinths displaying items |
+| 6 | `Art/Gallery/6-a-stone-from-another-mod.png` | 500 x 200, 68 086 bytes | A compatible third-party stone beside granite |
 
 Header assets already valid:
 
