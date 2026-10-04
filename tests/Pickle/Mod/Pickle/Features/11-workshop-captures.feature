@@ -1,22 +1,21 @@
 # The pictures of the Workshop page, PUBLICATION.md section 1, in the order to upload them. They are not the review captures of `03`: those
 # show the whole colony around the container, the game's interface and a wide frame, and a Workshop page sells nothing with that.
 #
-# Gallery series (owner's rule of 2026-10-02: a gallery capture is a staged photograph, not a default screenshot). The story: the storehouse
-# of a neolithic camp, from the pantry to the display shelf. One common set links the six pictures: the empty south pavilion of PickleTools'
-# disposable nelim-zen-meadow-studio fixture (wood posts, straw matting, shelves, meadow beyond the walls), two torch lamps at its back corners,
-# the hour at noon, the weather clear, the camera at the game's closest zoom. Each scenario sets the set, photographs, and the next one starts from
-# a fresh preparation of the studio.
-# then hides the interface for the length of the picture with this suite's own step (the game's
-# screenshot mode, Pickle's runner panel taken out of it) and brings it back. A scenario that dies between the two still gets the
-# interface back, from an [AfterScenario]. Nothing asserts about the image: a person opens each one, and a passing scenario says only
-# that the route ran.
+# Gallery series (owner's rule of 2026-10-02: a gallery capture is a staged photograph, not a default screenshot).
+# The story: the storehouse of a neolithic camp by the river, from the pantry shelf to the display plinth. One common set links the six
+# pictures: the hut of Nelim's tribe (wood walls, parquet floor, the river a few cells to the west), emptied before each picture, then
+# furnished by the scenario with the mod's buildings and their contents. The hour is noon and the weather clear.
+# The map is the sanctuary save "Nelims-tribe" of PickleTools' ScreenshotStudio (Git LFS fixture, 250 x 250, one colonist, vanilla only),
+# frames by name (`I am at the sanctuary "hut"`: position (140, 73), the game's closest zoom 12) and emptied by name
+# (`the sanctuary "hut" is emptied`); see PickleTools/docs/SANCTUAIRE-LIEUX.md.
+# Each scenario hides the interface for the length of the picture with this suite's own step (the game's screenshot mode, Pickle's runner
+# panel taken out of it) and brings it back. A scenario that dies between the two still gets the interface back, from an [AfterScenario].
+# Nothing asserts about the image: a person opens each one, and a passing scenario says only that the route ran.
 #
-# `@requires:nelim.pickletools.screenshotstudio`: only the pass of `-DepMap wsl-deps.workshop.map` stages the screenshot studio and
-# plays this feature; every other pass skips it. Aim at this file with `-Filter '11-workshop-captures.feature'`. The plinth scenario
-# also needs Odyssey and the last one the stone mod, both present in that map.
-#
-# The camera stays centred at (125, 96), the middle of the pavilion floor, at maximum zoom. A Workshop crop may cut
-# a building or its contents at an edge; the icon composition takes priority, as documented in PUBLICATION.md.
+# `@requires:nelim.pickletools.screenshotstudio`: only the pass of `-DepMap wsl-deps.sanctuary.map` stages the studio and the fixture and plays
+# this feature; every other pass skips it. Aim at this file with `-Filter '11-workshop-captures.feature'`. The plinth scenario also needs
+# Odyssey and the last one the stone mod, both present in that map. Interior of the hut: x 135 to 145, z 69 to 77.
+# A Workshop crop may cut a building or its contents at an edge; the icon composition takes priority, as documented in PUBLICATION.md.
 @requires:nelim.pickletools.screenshotstudio
 @workshop
 @review
@@ -24,120 +23,104 @@ Feature: the pictures of the Workshop page
 
   # 1. The whole set at once, each container with something in it: the mod's one idea in a single picture.
   Scenario: the whole set, each container holding something
-    Given the save "nelim-zen-meadow-studio" is loaded
-    And Nelim's Pickle Tools: the flower meadow studio is prepared
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And I clear the rectangle from (118, 94) to (132, 98)
-    And a "TorchLamp" is built at (118, 98)
-    And a "TorchLamp" is built at (132, 98)
-    And a "ASNeolithicWoodPile" is built at (118, 96)
-    And a "ASNeolithicHayPile" is built at (120, 96)
-    And a "ASNeolithicMealShelf" is built at (122, 96)
-    And a "ASNeolithicTextileBundleFabric" is built at (124, 96)
-    And a "ASNeolithicBasketWoody" is built at (126, 96)
-    And a "ASNeolithicBasketFabric" is built at (128, 96)
-    And a "ASNeolithicLargePot" is built at (130, 96)
-    And a "ASNeolithicPlinthWoody" is built at (132, 96)
-    When I spawn a "WoodLog" at (118, 96)
-    And I spawn a "Hay" at (120, 96)
-    And I spawn a "MealSimple" at (122, 96)
-    And I spawn a "Cloth" at (124, 96)
-    And I spawn a "Cloth" at (126, 96)
-    And I spawn a "Steel" at (126, 96)
-    And I spawn a "Cloth" at (128, 96)
-    And I spawn a "Steel" at (128, 96)
-    And I spawn a "RawBerries" at (130, 96)
-    And I spawn a "Gold" at (132, 96)
-    And I zoom all the way in
-    And I move the camera to (125, 96)
-    And I wait 60 ticks
+    And Nelim's Pickle Tools: the sanctuary "hut" is emptied
+    And a "ASNeolithicWoodPile" is built at (136, 75)
+    And a "ASNeolithicHayPile" is built at (138, 75)
+    And a "ASNeolithicMealShelf" is built at (140, 75)
+    And a "ASNeolithicTextileBundleFabric" is built at (142, 75)
+    And a "ASNeolithicBasketWoody" is built at (144, 75)
+    And a "ASNeolithicBasketFabric" is built at (138, 71)
+    And a "ASNeolithicLargePot" is built at (140, 71)
+    And a "ASNeolithicPlinthWoody" is built at (142, 71)
+    And I spawn a "WoodLog" at (136, 75)
+    And I spawn a "Hay" at (138, 75)
+    And I spawn a "MealSimple" at (140, 75)
+    And I spawn a "Cloth" at (142, 75)
+    And I spawn a "Cloth" at (144, 75)
+    And I spawn a "Steel" at (144, 75)
+    And I spawn a "Cloth" at (138, 71)
+    And I spawn a "Steel" at (138, 71)
+    And I spawn a "RawBerries" at (140, 71)
+    And I spawn a "Gold" at (142, 71)
+    When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     Then I take a screenshot "workshop 1 - the whole set"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
 
   # 2. The idea, isolated: a basket empty, with one item, full.
   Scenario: a wooden basket, empty, with one item and full, side by side
-    Given the save "nelim-zen-meadow-studio" is loaded
-    And Nelim's Pickle Tools: the flower meadow studio is prepared
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And I clear the rectangle from (118, 94) to (132, 98)
-    And a "TorchLamp" is built at (118, 98)
-    And a "TorchLamp" is built at (132, 98)
-    And a "ASNeolithicBasketWoody" is built at (122, 96)
-    And a "ASNeolithicBasketWoody" is built at (124, 96)
-    And a "ASNeolithicBasketWoody" is built at (126, 96)
-    When I spawn a "Cloth" at (124, 96)
-    And I spawn a "Cloth" at (126, 96)
-    And I spawn a "Steel" at (126, 96)
-    And I zoom all the way in
-    And I move the camera to (125, 96)
-    And I wait 60 ticks
+    And Nelim's Pickle Tools: the sanctuary "hut" is emptied
+    And a "ASNeolithicBasketWoody" is built at (138, 73)
+    And a "ASNeolithicBasketWoody" is built at (140, 73)
+    And a "ASNeolithicBasketWoody" is built at (142, 73)
+    And I spawn a "Cloth" at (140, 73)
+    And I spawn a "Cloth" at (142, 73)
+    And I spawn a "Steel" at (142, 73)
+    When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     Then I take a screenshot "workshop 2 - a basket fills up"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
 
   # 3. A stack of chunks at one, two and six chunks, and a marble one: the sprite follows the load and the colour follows the stone.
   Scenario: granite chunk stacks at one, two and six chunks, and a marble one
-    Given the save "nelim-zen-meadow-studio" is loaded
-    And Nelim's Pickle Tools: the flower meadow studio is prepared
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And I clear the rectangle from (118, 94) to (132, 98)
-    And a "TorchLamp" is built at (118, 98)
-    And a "TorchLamp" is built at (132, 98)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (118, 96)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (121, 96)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (124, 96)
-    And a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (127, 96)
-    When I spawn a "ChunkGranite" at (118, 96)
-    And I spawn a "ChunkGranite" at (121, 96)
-    And I spawn a "ChunkGranite" at (121, 96)
-    And I spawn a "ChunkGranite" at (124, 96)
-    And I spawn a "ChunkGranite" at (124, 96)
-    And I spawn a "ChunkGranite" at (124, 96)
-    And I spawn a "ChunkGranite" at (125, 96)
-    And I spawn a "ChunkGranite" at (125, 96)
-    And I spawn a "ChunkGranite" at (125, 96)
-    And I spawn a "ChunkMarble" at (127, 96)
-    And I spawn a "ChunkMarble" at (127, 96)
-    And I spawn a "ChunkMarble" at (127, 96)
-    And I spawn a "ChunkMarble" at (128, 96)
-    And I spawn a "ChunkMarble" at (128, 96)
-    And I spawn a "ChunkMarble" at (128, 96)
-    And I zoom all the way in
-    And I move the camera to (125, 96)
-    And I wait 60 ticks
+    And Nelim's Pickle Tools: the sanctuary "hut" is emptied
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (135, 73)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (138, 73)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (141, 73)
+    And a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (144, 73)
+    And I spawn a "ChunkGranite" at (135, 73)
+    And I spawn a "ChunkGranite" at (138, 73)
+    And I spawn a "ChunkGranite" at (138, 73)
+    And I spawn a "ChunkGranite" at (141, 73)
+    And I spawn a "ChunkGranite" at (142, 73)
+    And I spawn a "ChunkMarble" at (144, 73)
+    And I spawn a "ChunkMarble" at (145, 73)
+    And I spawn a "ChunkGranite" at (141, 73)
+    And I spawn a "ChunkGranite" at (142, 73)
+    And I spawn a "ChunkMarble" at (144, 73)
+    And I spawn a "ChunkMarble" at (145, 73)
+    And I spawn a "ChunkGranite" at (141, 73)
+    And I spawn a "ChunkGranite" at (142, 73)
+    And I spawn a "ChunkMarble" at (144, 73)
+    And I spawn a "ChunkMarble" at (145, 73)
+    When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     Then I take a screenshot "workshop 3 - chunk stacks"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
 
   # 4. Large pots with different food, and one with a lid: contents and material.
   Scenario: large pots with different food, and a lidded one holding two kinds
-    Given the save "nelim-zen-meadow-studio" is loaded
-    And Nelim's Pickle Tools: the flower meadow studio is prepared
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And I clear the rectangle from (118, 94) to (132, 98)
-    And a "TorchLamp" is built at (118, 98)
-    And a "TorchLamp" is built at (132, 98)
-    And a "ASNeolithicLargePot" is built at (118, 96)
-    And a "ASNeolithicLargePot" is built at (120, 96)
-    And a "ASNeolithicLargePot" is built at (122, 96)
-    And a "ASNeolithicLargePot" is built at (124, 96)
-    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (126, 96)
-    And a "ASNeolithicLargePot" is built at (128, 96)
-    When I spawn a "RawBerries" at (118, 96)
-    And I spawn a "Milk" at (120, 96)
-    And I spawn a "EggChickenUnfertilized" at (122, 96)
-    And I spawn a "Kibble" at (124, 96)
-    And I spawn a "Pemmican" at (126, 96)
-    And I spawn a "RawBerries" at (128, 96)
-    And I spawn a "Milk" at (128, 96)
-    And I zoom all the way in
-    And I move the camera to (125, 96)
-    And I wait 60 ticks
+    And Nelim's Pickle Tools: the sanctuary "hut" is emptied
+    And a "ASNeolithicLargePot" is built at (135, 73)
+    And a "ASNeolithicLargePot" is built at (137, 73)
+    And a "ASNeolithicLargePot" is built at (139, 73)
+    And a "ASNeolithicLargePot" is built at (141, 73)
+    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (143, 73)
+    And a "ASNeolithicLargePot" is built at (145, 73)
+    And I spawn a "RawBerries" at (135, 73)
+    And I spawn a "Milk" at (137, 73)
+    And I spawn a "EggChickenUnfertilized" at (139, 73)
+    And I spawn a "Kibble" at (141, 73)
+    And I spawn a "Pemmican" at (143, 73)
+    And I spawn a "RawBerries" at (145, 73)
+    And I spawn a "Milk" at (145, 73)
+    When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     Then I take a screenshot "workshop 4 - large pots"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
@@ -145,22 +128,18 @@ Feature: the pictures of the Workshop page
   # 5. Plinths of wood, granite and vacstone, each showing an item. Vacstone needs Odyssey and is skipped without it.
   @requires:Odyssey
   Scenario: plinths of wood, granite and vacstone, each showing an item
-    Given the save "nelim-zen-meadow-studio" is loaded
-    And Nelim's Pickle Tools: the flower meadow studio is prepared
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And I clear the rectangle from (118, 94) to (132, 98)
-    And a "TorchLamp" is built at (118, 98)
-    And a "TorchLamp" is built at (132, 98)
-    And a "ASNeolithicPlinthWoody" is built at (122, 96)
-    And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (124, 96)
-    And a "ASNeolithicPlinthStone" made from "ChunkVacstone" is built at (126, 96)
-    When I spawn a "Gold" at (122, 96)
-    And I spawn a "Silver" at (124, 96)
-    And I spawn a "Jade" at (126, 96)
-    And I zoom all the way in
-    And I move the camera to (125, 96)
-    And I wait 60 ticks
+    And Nelim's Pickle Tools: the sanctuary "hut" is emptied
+    And a "ASNeolithicPlinthWoody" is built at (138, 73)
+    And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (140, 73)
+    And a "ASNeolithicPlinthStone" made from "ChunkVacstone" is built at (142, 73)
+    And I spawn a "Gold" at (138, 73)
+    And I spawn a "Silver" at (140, 73)
+    And I spawn a "Jade" at (142, 73)
+    When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     Then I take a screenshot "workshop 5 - plinths"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
@@ -168,28 +147,24 @@ Feature: the pictures of the Workshop page
   # 6. A stone from another mod beside granite: the generators build for every stone in the game, not for a list.
   @requires:Kura.ExtraStone
   Scenario: the pot and the chunk stack of a stone from another mod, beside granite
-    Given the save "nelim-zen-meadow-studio" is loaded
-    And Nelim's Pickle Tools: the flower meadow studio is prepared
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: I am at the sanctuary "hut"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And I clear the rectangle from (118, 94) to (132, 98)
-    And a "TorchLamp" is built at (118, 98)
-    And a "TorchLamp" is built at (132, 98)
-    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (120, 96)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (122, 96)
-    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (126, 96)
-    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (128, 96)
-    When I spawn a "RawBerries" at (120, 96)
-    And I spawn a "ChunkGranite" at (122, 96)
-    And I spawn a "ChunkGranite" at (122, 96)
-    And I spawn a "ChunkGranite" at (122, 96)
-    And I spawn a "RawBerries" at (126, 96)
-    And I spawn a "ChunkKura_Andesite" at (128, 96)
-    And I spawn a "ChunkKura_Andesite" at (128, 96)
-    And I spawn a "ChunkKura_Andesite" at (128, 96)
-    And I zoom all the way in
-    And I move the camera to (125, 96)
-    And I wait 60 ticks
+    And Nelim's Pickle Tools: the sanctuary "hut" is emptied
+    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (137, 73)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (139, 73)
+    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (143, 73)
+    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (145, 73)
+    And I spawn a "RawBerries" at (137, 73)
+    And I spawn a "ChunkGranite" at (139, 73)
+    And I spawn a "ChunkKura_Andesite" at (145, 73)
+    And I spawn a "ChunkGranite" at (139, 73)
+    And I spawn a "ChunkKura_Andesite" at (145, 73)
+    And I spawn a "ChunkGranite" at (139, 73)
+    And I spawn a "ChunkKura_Andesite" at (145, 73)
+    And I spawn a "RawBerries" at (143, 73)
+    When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     Then I take a screenshot "workshop 6 - a stone from another mod"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures

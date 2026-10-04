@@ -89,7 +89,7 @@ skipped on `wsl-deps.map`.
   | `nelim.pickletools.research` | 01 research tab, 05 tab, all of 08 | every pass (all maps stage it) |
   | `Odyssey` | 02, 03, 05, 07 vacstone; 11 plinths | `wsl-deps.map` in English, French, Russian; `wsl-deps.workshop.map` for 11 |
   | `Kura.ExtraStone` | 05, all of 06; 11 third-party stone | `wsl-deps.stones.map` in English and French; `wsl-deps.workshop.map` for 11 |
-  | `nelim.pickletools.screenshotstudio` | all of 11 | `wsl-deps.workshop.map`, English |
+  | `nelim.pickletools.screenshotstudio` | all of 11 | `wsl-deps.sanctuary.map`, English |
 
   A skipped scenario is not a passed one: a pass without Odyssey or without the stone mod skips their scenarios, so it is never enough alone.
 - **No manual test left to validate.** Every behavior above is an automated scenario; the architect menu, blueprint frames
