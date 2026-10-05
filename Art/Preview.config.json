@@ -16,7 +16,8 @@
   "backgroundPosition": "0 -43.5px",
   "backgroundSize": "896px auto",
   "echo": { "file": "echo.png", "mode": "alpha", "preSized": true, "color": "var(--accent)", "width": 260, "height": 260, "opacity": 1, "veil": false, "flipX": true },
-  "iconBadge": { "file": "ModIcon-source.png", "corner": "bottom-left", "width": 220, "outline": false, "veil": "radial", "veilSize": 275, "veilLeft": -55, "veilBottom": -61 },
+  "modIconSource": "ModIcon-source.png",
+  "iconBadge": { "file": ".render/ModIcon-badge.png", "corner": "bottom-left", "width": 220, "outline": false, "veil": "radial", "veilSize": 275, "veilLeft": -55, "veilBottom": -61 },
   "palette": {
     "veil": "#514A40",
     "inkPrimary": "#F2ECE1",

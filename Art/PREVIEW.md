@@ -9,15 +9,18 @@ from `Art/Preview.config.json`.
 - `Preview.config.json`: title, summary, layout (panel bottom-right), background framing, the echo layer.
 - `echo.png`: transparent line-art layer, the final asset, used unchanged (`preSized`). Without it the
   Preview cannot be re-rendered. Do not delete it in a cleanup.
-- `ModIcon-source.png` (1254 px): source of the icon. The shipped 128 px icon is `Mod/About/ModIcon.png`,
-  made by the owner. `Art/ModIcon.ico` (local folder icon, ignored by git) is regenerated from the source PNG.
+- `ModIcon-source.png` (1254 px, the owner's, never edited by a session): source of the icon. The renderer reads `modIconSource` in
+  `Preview.config.json` and writes the 128 px `Mod/About/ModIcon.png` from it, then regenerates `Art/ModIcon.ico`.
+  The Preview badge uses `Art/.render/ModIcon-badge.png`, the source with its transparent margin trimmed (the renderer refuses
+  a padded badge). Recreate it before rendering if `.render/` was emptied:
+  `node -e "require('sharp')('Art/ModIcon-source.png').trim({threshold:1}).toFile('Art/.render/ModIcon-badge.png')"`.
 - `Gallery/`: images to upload by hand, `0-preview.png` first (see "Always in sync" below). `0-` is a byte-for-byte copy of
   `Mod/About/Preview.png` (owner's rule, `PUBLISHING.md`): recopy it whenever the Preview changes.
 
 Render from the repository root with the shared script (Node.js, Playwright or Chromium, Segoe UI fonts):
 
 ```powershell
-node ../scripts/Render-Preview.cjs bottom-right
+node ../scripts/Render-Preview.cjs bottom-left
 ```
 
 Review the final image visually after any change. The current mod has no status tag.
@@ -30,5 +33,5 @@ These pairs never drift apart. Whenever one changes, update and commit the other
 - `Art/ModIcon-source.png` and `Art/ModIcon.ico`: regenerate the `.ico` (7 sizes, 16 to 256 px) from the source PNG after each change.
 - `Mod/About/Preview.png` and `Art/Preview.ico`: the folder icon follows the Preview.
 
-`Mod/About/ModIcon.png` (the 128 px icon shipped to players) is made by the owner alone; a session never generates it.
+`Mod/About/ModIcon.png` (the 128 px icon shipped to players) is only ever derived from the owner's `ModIcon-source.png` by the renderer; a session never draws or generates an icon.
 `Art/.render/` is scratch space of the renderer and is ignored by git.
