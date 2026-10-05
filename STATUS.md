@@ -199,3 +199,4 @@ Re-audit after any change to Defs, patches or language resources.
 - **A Workshop upload:** add the run IDs and SHA to "Stage history".
 - **A change to `Mod/`:** the runs above no longer cover the delivered content. Say which scenarios to replay.
 - **A change to Defs, patches or language files:** reset `localization`, `translation_en` and `translation_fr` to `unchecked` until revalidated.
+| 2026-10-05 | Code review (low effort) of `1.0.0..HEAD` on commit `134aecd20ff772d21fd640456e915bd9ae6904ea` (no `0.1.0` tag exists, `1.0.0` is the oldest). One minor finding: `Mod/Defs/StorageBuildings/Basket/ThingDef.xml` line 8 has `<drawSize>(2)</drawSize>`, one component where the rest of the mod uses `(x,y)`; no game error seen in the passes. Not fixed yet. |
