@@ -4,11 +4,11 @@
 # Gallery series (owner's rule of 2026-10-02: a gallery capture is a staged photograph, not a default screenshot).
 # The story: the storehouse of a neolithic camp by the river, from the pantry shelf to the display plinth. One common set links the six
 # pictures: the podium of Nelim's tribe (a free 14 x 14 square in the open air, bare earth, no roof and so natural daylight and no wall shadow),
-# emptied before each picture, then furnished by the scenario with the mod's buildings and their contents. Animals of the podium are removed first.
+# a free square that every scenario reloads fresh from the save, then furnished by the scenario with the mod's buildings and their contents. Animals of the podium are removed first.
 # The hour is noon and the weather clear. (The first series stood in the roofed hut; with its roof removed it still sat in wall shadow.)
 # The map is the sanctuary save "Nelims-tribe" of PickleTools' ScreenshotStudio (Git LFS fixture, 250 x 250, one colonist, vanilla only),
-# frames by name (`I am at the sanctuary "podium"`: position (197, 152), the game's closest zoom 12) and emptied by name
-# (`the sanctuary "podium" is emptied`); see PickleTools/docs/SANCTUAIRE-LIEUX.md.
+# frames by name (`I am at the sanctuary "podium"`: position (197, 152), the game's closest zoom 12);
+# see PickleTools/docs/SANCTUAIRE-LIEUX.md.
 # Each scenario hides the interface for the length of the picture with this suite's own step (the game's screenshot mode, Pickle's runner
 # panel taken out of it) and brings it back. A scenario that dies between the two still gets the interface back, from an [AfterScenario].
 # Nothing asserts about the image: a person opens each one, and a passing scenario says only that the route ran.
@@ -29,7 +29,6 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I am at the sanctuary "podium"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And Nelim's Pickle Tools: the sanctuary "podium" is emptied
     And a "ASNeolithicWoodPile" is built at (193, 153)
     And a "ASNeolithicHayPile" is built at (195, 153)
     And a "ASNeolithicMealShelf" is built at (197, 153)
@@ -60,7 +59,6 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I am at the sanctuary "podium"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And Nelim's Pickle Tools: the sanctuary "podium" is emptied
     And a "ASNeolithicBasketWoody" is built at (195, 152)
     And a "ASNeolithicBasketWoody" is built at (197, 152)
     And a "ASNeolithicBasketWoody" is built at (199, 152)
@@ -79,7 +77,6 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I am at the sanctuary "podium"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And Nelim's Pickle Tools: the sanctuary "podium" is emptied
     And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (192, 152)
     And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (195, 152)
     And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 152)
@@ -111,7 +108,6 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I am at the sanctuary "podium"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And Nelim's Pickle Tools: the sanctuary "podium" is emptied
     And a "ASNeolithicLargePot" is built at (192, 152)
     And a "ASNeolithicLargePot" is built at (194, 152)
     And a "ASNeolithicLargePot" is built at (196, 152)
@@ -138,7 +134,6 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I am at the sanctuary "podium"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And Nelim's Pickle Tools: the sanctuary "podium" is emptied
     And a "ASNeolithicPlinthWoody" is built at (195, 152)
     And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (197, 152)
     And a "ASNeolithicPlinthStone" made from "ChunkVacstone" is built at (199, 152)
@@ -158,7 +153,6 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I am at the sanctuary "podium"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And Nelim's Pickle Tools: the sanctuary "podium" is emptied
     And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (194, 152)
     And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (196, 152)
     And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (199, 152)
