@@ -8,7 +8,7 @@ Add-Type -AssemblyName System.Drawing
 
 $destinationDirectory = Join-Path $PSScriptRoot 'Gallery'
 $shots = @(
-    @{ Source = 'manual--workshop-1---the-whole-set--step0.png'; Target = '1-the-whole-set.png'; X = 730; Y = 436; Width = 480; Height = 274 },
+    @{ Source = 'manual--workshop-1---the-whole-set--step0.png'; Target = '1-the-whole-set.png'; X = 730; Y = 415; Width = 480; Height = 295 },
     @{ Source = 'manual--workshop-2---a-basket-fills-up--step0.png'; Target = '2-a-basket-fills-up.png'; X = 785; Y = 440; Width = 350; Height = 250 },
     @{ Source = 'manual--workshop-3---chunk-stacks--step0.png'; Target = '3-chunk-stacks.png'; X = 690; Y = 440; Width = 560; Height = 200 },
     @{ Source = 'manual--workshop-4---large-pots--step0.png'; Target = '4-large-pots.png'; X = 700; Y = 440; Width = 540; Height = 200 },
