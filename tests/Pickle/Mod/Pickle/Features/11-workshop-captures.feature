@@ -163,16 +163,16 @@ Feature: the pictures of the Workshop page
     And I set the weather to "Clear"
     And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (196, 185)
     And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 185)
-    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (200, 185)
-    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (202, 185)
+    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (201, 185)
+    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (203, 185)
     And I spawn a "RawBerries" at (196, 185)
     And I spawn a "ChunkGranite" at (198, 185)
-    And I spawn a "ChunkKura_Andesite" at (202, 185)
+    And I spawn a "ChunkKura_Andesite" at (203, 185)
     And I spawn a "ChunkGranite" at (198, 185)
-    And I spawn a "ChunkKura_Andesite" at (202, 185)
+    And I spawn a "ChunkKura_Andesite" at (203, 185)
     And I spawn a "ChunkGranite" at (198, 185)
-    And I spawn a "ChunkKura_Andesite" at (202, 185)
-    And I spawn a "RawBerries" at (200, 185)
+    And I spawn a "ChunkKura_Andesite" at (203, 185)
+    And I spawn a "RawBerries" at (201, 185)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
