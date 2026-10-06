@@ -1,8 +1,14 @@
 # The "camp" pass: the staged gallery series of feature 12, a neolithic camp on the sanctuary save "Nelims-tribe" (PickleTools' ScreenshotStudio).
-# Used with -DepMap wsl-deps.camp.map. Draft of 2026-10-06, not played yet.
+# Used with -DepMap wsl-deps.camp.map. Draft of 2026-10-06, not played yet. Mods other than this one are chosen for the pictures only and
+# are thanked in the description; none is a dependency of the distributed mod.
 # Kura.ExtraStone is for the last picture (a stone from another mod); Odyssey comes with the base game set.
 adaptive.storage.framework   3033901359
 Kura.ExtraStone              852103845
+# Tribal clothes (Mud's Tribal Apparel; ETRT: Tribal Apparel, continued) and camp props (VFE Core, then VFE Props and Decor).
+Mud.TribalApparel            2796703834
+ETRT.TribalApparel           3545351721
+OskarPotocki.VanillaFactionsExpanded.Core 2023507013
+VanillaExpanded.VFEPropsandDecor 2102143149
 nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
 nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
 nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod

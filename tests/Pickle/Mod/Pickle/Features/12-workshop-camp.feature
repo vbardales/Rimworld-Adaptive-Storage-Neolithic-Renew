@@ -7,7 +7,7 @@
 # mod's storage laid out as a camp would have it, wood and hay by the fire, baskets and pots on the shady side, the plinths of the tribe's
 # treasures in front of the chief's place. People and animals come and go. Time unfolds in the game: every picture starts at noon and waits 5
 # more game minutes than the one before (12:00 to 12:25; 2 500 ticks make an hour, so about 208 ticks per 5 minutes, plus 60 ticks to settle).
-# Daytime animals and people only. The Steam gallery holds 7 images in all: the Preview copy `0-` plus these six pictures (`1-` to `6-`).
+# Daytime animals and people only. The gallery has no count limit, only 8 MB for the folder and 2 MB per image (PUBLISHING.md): six pictures plus the Preview copy `0-` is the plan.
 #
 # Shot plan (place; frame; time; subject; living things; what the picture says):
 #   1. 12:00 wide: the whole camp (cells (188, 146) to (202, 158) fill 85 % of the screen). Fire lit, storage on three sides. Ayla stands
@@ -23,8 +23,13 @@
 #      "Every stone, in its place."
 # Review rule: after the run, open every picture and compare it with the line above; redo the one that does not say what it should.
 #
-# TO VERIFY ON A PROBE RUN (written from memory of the game, not played): the colonist kind "Colonist", the apparel defNames
-# "Apparel_TribalA" and "Apparel_TribalHeaddress", the decor defNames "Campfire", "TorchLamp", "Stool", the extent of bare-clearing
+# Mods used besides this one and the sanctuary studio (owner, 2026-10-06: any mod may be chosen, not only hers). defNames read in each mod's own
+# folder on 2026-10-06: Mud's Tribal Apparel (2796703834, Mud.TribalApparel): Apparel_TribalCape, Apparel_TribalCloak, Apparel_TribalFurCloak;
+# ETRT: Tribal Apparel (continued) (3545351721, ETRT.TribalApparel): Apparel_FSFurCoat, Apparel_FSFurHat, ET_Apparel_WolfHood, ET_Apparel_DeerHood;
+# Vanilla Furniture Expanded - Props and Decor (2102143149, VanillaExpanded.VFEPropsandDecor, needs Harmony and VFE Core 2023507013):
+# VFE_Prop_Furniture_Tent, VFE_Prop_Kitchen_MeatDryingRack, VFE_Prop_Kitchen_StewPot, VFE_Prop_Furniture_Pot, VFE_Prop_Filth_FilthBones.
+# TO VERIFY ON A PROBE RUN (written from memory of the game, not played): the colonist kind "Colonist", the vanilla apparel "Apparel_TribalA"
+# and "Apparel_TribalHeaddress", the decor defNames "Campfire", "TorchLamp", "Stool", the footprint of the tent, the extent of bare-clearing
 # (x 188 to 201, z 145 to 158), that the step texts below exist as written in PickleTools/docs/STAGING.md (parentheses without backslash),
 # and how the colonist steps behave with the studio's single colonist (`the other colonists are out of frame`).
 #
@@ -51,6 +56,9 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: the decor "TorchLamp" at (199, 150) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" at (193, 154)
     And Nelim's Pickle Tools: I place the decor "Stool" at (197, 154)
+    And Nelim's Pickle Tools: I place the decor "VFE_Prop_Furniture_Tent" at (189, 152)
+    And Nelim's Pickle Tools: I place the decor "VFE_Prop_Kitchen_MeatDryingRack" at (201, 151)
+    And Nelim's Pickle Tools: I place the decor "VFE_Prop_Kitchen_StewPot" at (196, 153)
     And a "ASNeolithicWoodPile" is built at (192, 148)
     And a "ASNeolithicHayPile" is built at (194, 148)
     And a "ASNeolithicMealShelf" is built at (197, 148)
@@ -71,9 +79,12 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Gold" at (195, 146)
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
+    And "Ayla" wears "Apparel_TribalFurCloak"
     And "Ayla" stands at (196, 151) facing West
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
+    And "Doka" wears "Apparel_TribalCloak"
+    And "Doka" wears "ET_Apparel_WolfHood"
     And "Doka" stands at (193, 156) facing North
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (188, 146) to (202, 158) filling 85 percent of the screen
@@ -102,6 +113,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Steel" at (194, 155)
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And "Ayla" wears "Apparel_TribalA" dyed rgb (230, 170, 40)
+    And "Ayla" wears "Apparel_TribalCape" dyed rgb (120, 80, 30)
     And "Ayla" stands at (194, 157) facing North
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (189, 153) to (196, 158) filling 85 percent of the screen
@@ -122,6 +134,7 @@ Feature: the camp pictures of the Workshop page
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "VFE_Prop_Kitchen_MeatDryingRack" at (201, 147)
     And a "ASNeolithicWoodPile" is built at (190, 148)
     And a "ASNeolithicHayPile" is built at (192, 148)
     And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (194, 149)
@@ -142,6 +155,8 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "ChunkMarble" at (200, 149)
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
+    And "Doka" wears "Apparel_TribalCloak"
+    And "Doka" wears "ET_Apparel_WolfHood"
     And "Doka" stands at (197, 151) facing North
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (189, 146) to (202, 152) filling 85 percent of the screen
@@ -162,6 +177,7 @@ Feature: the camp pictures of the Workshop page
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "VFE_Prop_Kitchen_StewPot" at (196, 153)
     And a "ASNeolithicLargePot" is built at (191, 156)
     And a "ASNeolithicLargePot" is built at (193, 156)
     And a "ASNeolithicLargePot" is built at (195, 156)
@@ -177,9 +193,12 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Milk" at (201, 156)
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
+    And "Doka" wears "Apparel_TribalCloak"
+    And "Doka" wears "ET_Apparel_WolfHood"
     And "Doka" stands at (196, 154) facing South
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
+    And "Ayla" wears "Apparel_TribalFurCloak"
     And "Ayla" stands at (199, 154) facing West
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (190, 153) to (202, 158) filling 85 percent of the screen
@@ -210,7 +229,8 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Jade" at (197, 149)
     And Nelim's Pickle Tools: a colonist "Tahu" of kind "Colonist" exists
     And "Tahu" wears "Apparel_TribalA" dyed rgb (120, 40, 110)
-    And "Tahu" wears "Apparel_TribalHeaddress" dyed rgb (230, 190, 60)
+    And "Tahu" wears "Apparel_TribalFurCloak" dyed rgb (230, 190, 60)
+    And "Tahu" wears "ET_Apparel_DeerHood"
     And "Tahu" stands at (195, 147) facing South
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (191, 146) to (201, 151) filling 85 percent of the screen
