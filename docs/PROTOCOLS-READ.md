@@ -13,7 +13,7 @@ cited hashes the monorepo cannot resolve. **The protocol documents live in `vbar
 | `TRANSLATIONS.md` | ebadb99 (2026-09-30), working copy modified, not committed | in full (213 lines) | yes: gender switch, `FRENCH_REVIEW.md`, French review by Virginie |
 | `MOD_SETTINGS.md` | b83933b (2026-09-23) | in full (107 lines) | only for the `not_applicable` case |
 | `Rimworld-Release-Admin/docs/OPERATIONS.md` | 3c03f51 (2026-09-26) | in full (112 lines) | yes: dry-run of exact SHA, gallery is manual |
-| `PUBLISHING.md` | e0411cc (2026-09-29) | lines 1-260 of 782 | partly: gallery naming `0-`, `1-`… (applied), Preview icon rule, licence, thanks. Rest (publication policy, comments, CI sections) unread this time |
+| `PUBLISHING.md` | 915d119 (2026-10-06), working copy modified, not committed | in full (793 lines), re-read 2026-10-06 | yes: gallery rules of 2026-10-06 (one story, own corner of the shared place and own hour/weather per image, one `Scenario:` per image, read every capture, report scene anomalies to NPT through Ticket Manager and redeposit only after its answer), gallery naming, Preview rules, fail-fast, CI. Earlier read (e0411cc) covered lines 1-260 only |
 | `STYLE_RIMWORLD.md` | ef7e7a9 (2026-09-29), modified not committed | unread | not needed: no image generation in an audit |
 | `WORKSHOP_COMMENTS.md` | 7fd7475 (2026-09-29) | unread | comments already posted 2026-09-22, see STATUS.md |
 | `scripts/SEARCHING.md` | 50de695 (2026-09-28) | unread | unread |
