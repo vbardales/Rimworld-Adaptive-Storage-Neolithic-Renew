@@ -151,7 +151,7 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And Nelim's Pickle Tools: I frame the cell (201, 185) at zoom 2.6
+    And Nelim's Pickle Tools: I frame the cell (200, 185) at zoom 2.6
     And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicPlinthWoody" is built at (198, 185)

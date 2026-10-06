@@ -3,7 +3,7 @@
   Cuts the six Workshop pictures from the Pickle captures of feature 11 into Art/Gallery/1- to 6-.
 .DESCRIPTION
   The captures are 1920x1080 frames of the `calm-zone-close` scene (about 10 x 5.6 cells, one cell about 190 px).
-  Each picture keeps the full width and a band of rows around its subjects, then is resized to 1280 px wide.
+  Each picture keeps the whole frame (the animals walk about, so no band is cut away), then is resized to 1280 px wide.
   -SourceDirectory takes one or more screenshot folders, searched in order, because a scene replayed alone lives in its own run folder.
 #>
 param(
@@ -21,11 +21,11 @@ $outputWidth = 1280
 # Y and Height are in source pixels; the width is always the full 1920.
 $shots = @(
     @{ Source = 'manual--workshop-1---the-whole-set--step0.png'; Target = '1-the-whole-set.png'; Y = 0; Height = 1080 },
-    @{ Source = 'manual--workshop-2---a-basket-fills-up--step0.png'; Target = '2-a-basket-fills-up.png'; Y = 200; Height = 680 },
+    @{ Source = 'manual--workshop-2---a-basket-fills-up--step0.png'; Target = '2-a-basket-fills-up.png'; Y = 0; Height = 1080 },
     @{ Source = 'manual--workshop-3---chunk-stacks--step0.png'; Target = '3-chunk-stacks.png'; Y = 0; Height = 1080 },
     @{ Source = 'manual--workshop-4---large-pots--step0.png'; Target = '4-large-pots.png'; Y = 0; Height = 1080 },
-    @{ Source = 'manual--workshop-5---plinths--step0.png'; Target = '5-plinths.png'; Y = 180; Height = 720 },
-    @{ Source = 'manual--workshop-6---a-stone-from-another-mod--step0.png'; Target = '6-a-stone-from-another-mod.png'; Y = 200; Height = 680 }
+    @{ Source = 'manual--workshop-5---plinths--step0.png'; Target = '5-plinths.png'; Y = 0; Height = 1080 },
+    @{ Source = 'manual--workshop-6---a-stone-from-another-mod--step0.png'; Target = '6-a-stone-from-another-mod.png'; Y = 0; Height = 1080 }
 )
 
 function Find-Capture([string]$name) {
