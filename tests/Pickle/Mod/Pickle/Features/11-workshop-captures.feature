@@ -2,15 +2,20 @@
 # show the whole colony around the container, the game's interface and a wide frame, and a Workshop page sells nothing with that.
 #
 # Gallery series (owner's rule of 2026-10-02: a gallery capture is a staged photograph, not a default screenshot).
-# The story: a quiet morning of tidying at the storehouse of a neolithic camp, seen through the animals that come by, from the pantry shelf
-# to the display plinth: a hen pecks near the hay (1), a squirrel sniffs the basket that fills (2), a guinea pig wanders between the stone
-# stacks (3), a dog noses the pots of food (4), a peacock spreads its tail by the plinths (5) and a cat lies between the two granites (6).
-# Time barely moves, to keep the series coherent: 11 o'clock for the first two pictures, noon for the next two, 13 for the last two, clear sky.
-# The common set is the calm zone of Nelim's tribe, a smooth cream stone square of about 11 x 11 cells in the open air (x 195 to 205, z 181
-# to 191, soft edge, so about 9 x 9 usable): no roof, so natural daylight and no wall shadow, and the one neutral light ground among the
-# outdoor places (see TESTING.md, "Choosing the gallery place"). Every scenario reloads the save, so the square is fresh and is never emptied
-# or cleared. The subjects are built in rows on it and furnished with their contents. Every animal of the map is removed first (the place step
-# clears only x +-1.78 zoom, and one animal stayed in frame) and the animal of the picture is spawned after the wait, so it has not wandered off.
+# The story: a quiet noon of tidying at the storehouse of a neolithic camp, seen through the animals that come by, from the pantry shelf to
+# the display plinth. Time unfolds in the game: every picture starts at noon and waits 5 more game minutes than the one before (12:00, 12:05,
+# 12:10, 12:15, 12:20, 12:25; 2 500 ticks make an hour, so about 208 ticks per 5 minutes, plus 60 ticks to settle), clear sky. Daytime animals only.
+# Shot plan (place: the calm zone of Nelim's tribe, named scene calm-zone-close, a cream stone square in the open air with no roof and no wall shadow):
+#   1. 12:00, wide frame. The whole set, each container holding something; a hen pecks by the hay, the day begins.
+#   2. 12:05, close frame on the three baskets (zoom 2.2): empty, one item, full; a squirrel has climbed up to the full one.
+#   3. 12:10, wide frame. Granite stacks at one, two and six chunks and a marble one; a hare nibbles between the stacks.
+#   4. 12:15, wide frame. Pots of food and a lidded one; a dog noses the milk pot.
+#   5. 12:20, medium frame (zoom 2.6). Plinths of wood, granite and vacstone, each showing an item; a peacock spreads its tail beside them.
+#   6. 12:25, wide frame. The pot and stack of a stone from another mod beside granite; a cat has settled between the two.
+# The common set is a smooth cream stone square of about 11 x 11 cells (x 195 to 205, z 181 to 191, soft edge, so about 9 x 9 usable) and the
+# one neutral light ground among the outdoor places (see TESTING.md, Choosing the gallery place). Every scenario reloads the save, so the
+# square is fresh and is never emptied or cleared. Every animal of the map is removed first (the place step clears only x +-1.78 zoom, and one
+# animal stayed in frame) and the animal of the picture is spawned after the wait, so it has not wandered off.
 # The map is the sanctuary save "Nelims-tribe" of PickleTools' ScreenshotStudio (Git LFS fixture, 250 x 250, one colonist, vanilla only),
 # frames by name (`I am at the sanctuary "calm-zone-close"`: centre (200, 185), a close frame of about 10 x 5.6 cells entirely inside the
 # cream square, defined with PickleTools); see PickleTools/docs/SANCTUAIRE-LIEUX.md.
@@ -32,7 +37,7 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And I set the hour to 11
+    And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicWoodPile" is built at (196, 186)
     And a "ASNeolithicHayPile" is built at (198, 186)
@@ -64,7 +69,8 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And I set the hour to 11
+    And Nelim's Pickle Tools: I frame the cell (200, 185) at zoom 2.2
+    And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicBasketWoody" is built at (198, 185)
     And a "ASNeolithicBasketWoody" is built at (200, 185)
@@ -72,8 +78,8 @@ Feature: the pictures of the Workshop page
     And I spawn a "Cloth" at (200, 185)
     And I spawn a "Cloth" at (202, 185)
     And I spawn a "Steel" at (202, 185)
-    When I wait 60 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Squirrel" named "Noisette" is spawned at (204, 185)
+    When I wait 268 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Squirrel" named "Noisette" is spawned at (203, 184)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 2 - a basket fills up"
@@ -105,8 +111,8 @@ Feature: the pictures of the Workshop page
     And I spawn a "ChunkGranite" at (203, 186)
     And I spawn a "ChunkMarble" at (199, 183)
     And I spawn a "ChunkMarble" at (200, 183)
-    When I wait 60 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Guineapig" named "Pomme" is spawned at (201, 184)
+    When I wait 477 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Pomme" is spawned at (201, 184)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 3 - chunk stacks"
@@ -132,7 +138,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "Pemmican" at (200, 183)
     And I spawn a "RawBerries" at (203, 183)
     And I spawn a "Milk" at (203, 183)
-    When I wait 60 ticks
+    When I wait 685 ticks
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (201, 185)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -145,7 +151,8 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And I set the hour to 13
+    And Nelim's Pickle Tools: I frame the cell (201, 185) at zoom 2.6
+    And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicPlinthWoody" is built at (198, 185)
     And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (200, 185)
@@ -153,7 +160,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "Gold" at (198, 185)
     And I spawn a "Silver" at (200, 185)
     And I spawn a "Jade" at (202, 185)
-    When I wait 60 ticks
+    When I wait 893 ticks
     And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (204, 185)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -166,7 +173,7 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And I set the hour to 13
+    And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (196, 185)
     And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 185)
@@ -180,7 +187,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "ChunkGranite" at (198, 185)
     And I spawn a "ChunkKura_Andesite" at (203, 185)
     And I spawn a "RawBerries" at (201, 185)
-    When I wait 60 ticks
+    When I wait 1102 ticks
     And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mie" is spawned at (200, 184)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled

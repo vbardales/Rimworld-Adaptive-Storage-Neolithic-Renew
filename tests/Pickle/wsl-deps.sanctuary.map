@@ -1,7 +1,9 @@
 # The "sanctuary" pass: the Workshop captures, taken on the sanctuary save "Nelims-tribe" of PickleTools' ScreenshotStudio.
 # Used with -DepMap wsl-deps.sanctuary.map. Replaces wsl-deps.workshop.map for feature 11 (owner, 2026-10-04).
 # Kura.ExtraStone is for the last picture (a stone from another mod); Odyssey comes with the base game set.
+# camerazoom gives the close-frame step `I frame the cell` used by pictures 2 and 5.
 adaptive.storage.framework   3033901359
 Kura.ExtraStone              852103845
 nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
 nelim.pickletools.clearscreen path:PickleTools/ClearScreen/Mod
