@@ -1,40 +1,38 @@
 # Publishing Adaptive Storage Neolithic Renew
 
 Publication sheet for Workshop item `3806101377`, updated after integrating the current upstream source on 2026-09-22; gallery section revised on 2026-10-06.
-The item already exists, so RimWorld will update its files and tags but **will not resend the description**. Paste the Steam-formatted
-description below into the Workshop page by hand.
+The item already exists, so a game upload updates its files and tags but does not resend the description. The description is sent by the CI (`update_description`) from the Markdown block below, converted to BBCode (checked identical to the previous BBCode block on 2026-10-06).
 
 In-game Pickle pass of 2026-09-23 (`STATUS.md`, `docs/runs/2026-09-23-tested-milestone.md`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
 and has no continuation DLL or direct Harmony dependency. **The mod is at `published`** (2026-09-24): `1.1.0` uploaded the content and `1.1.1` the header image (tags `v1.1.0`, `v1.1.1`; evidence in `STATUS.md`). The page was checked against this file on the same day. What remains manual, and the owner's: the Steam comments and thanks, and any change of visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
 
-## 1. Steam description
+## Steam description
 
-Paste this directly into the existing Workshop item's description. The same source text is kept in `Mod/About/About.xml`; later uploads
-will not synchronize it automatically.
+Single source (PUBLISHING.md, 2026-09-25): the CI converts this Markdown to the Steam BBCode and to the plain text of the `<description>` in `Mod/About/About.xml` (`node .github/scripts/sync-about-description.mjs --write`). Edit it here only.
 
-```text
-Tribal storage for the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359]Adaptive Storage Framework[/url]: baskets of wood, leather and fabric, large pots for raw food, stacked stone chunks, wood and hay piles, a meal shelf, textile and leather bundles, and carved plinths for displaying a single item.
+```markdown
+Tribal storage for the [Adaptive Storage Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359): baskets of wood, leather and fabric, large pots for raw food, stacked stone chunks, wood and hay piles, a meal shelf, textile and leather bundles, and carved plinths for displaying a single item.
 
 Every container shows what is inside it. Fill a basket and you see the basket fill up.
 
 Two neolithic research projects unlock the set, both available from a tribal start.
 
-[b]REQUIRES[/b] the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359]Adaptive Storage Framework[/url]. It does nothing on its own.
+**REQUIRES** the [Adaptive Storage Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359). It does nothing on its own.
 
 I am not the author of this mod. The buildings, artwork and design are Soul's, Phaneron's and bradson's. This continuation follows their current GitHub source rather than the older Workshop upload. Credit goes to them; mistakes in the 1.6 adaptation are mine.
 
-[h2]ORIGINAL MOD[/h2]
+## ORIGINAL MOD
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895]Adaptive Storage Neolithic Module[/url]
-Current upstream source: [url=https://github.com/bbradson/Adaptive-Storage-Neolithic-Module]GitHub[/url]
+[Adaptive Storage Neolithic Module](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895)
+Current upstream source: [GitHub](https://github.com/bbradson/Adaptive-Storage-Neolithic-Module)
 
-[h2]WHAT CHANGED[/h2]
+## WHAT CHANGED
 
 The continuation is based on the original authors' current main branch. That branch replaces one generated building per stone type with three buildings made from the framework's ASFStoneChunks stuff category. Its compatibility patch migrates the older generated defNames and their blueprints and frames to the new buildings while preserving the stone chunk as stuff. This also avoids the old crash path for chunks without their own colour.
 
 The current upstream definitions, balance values, graphics definitions and integrated textures are preserved. RimWorld 1.6 is declared, and the Russian DefInjected folder uses the exact casing required on Linux and Steam Deck.
 
-[h2]COMPATIBILITY[/h2]
+## COMPATIBILITY
 
 The original mod is declared incompatible because both packages define the same content. Run one or the other.
 
@@ -44,29 +42,29 @@ Known soft incompatibilities reported on the original page, not revalidated here
 
 Content mod: removing it mid-save destroys any of these containers already built and drops what was inside them.
 
-[h2]LICENCE[/h2]
+## LICENCE
 
 This mod is MIT licensed by its authors, and the LICENSE file travels with it here and in the repository.
 
-[h2]IF I GO QUIET[/h2]
+## IF I GO QUIET
 
 If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
 
-[h2]AI-GENERATED[/h2]
+## AI-GENERATED
 
 The adaptation audit, automated and in-game test work, and documentation were prepared with Claude Code (Anthropic), Codex and ChatGPT (OpenAI), under human direction and review. The mod icon and preview image were generated with DALL-E (OpenAI). The buildings, their artwork, textures, stats and current stone-as-stuff implementation are the original authors' work.
 
-[h2]THANKS[/h2]
+## THANKS
 
-Soul, Phaneron and bradson, for the mod, the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359]Adaptive Storage Framework[/url], the current source work, and the open licence.
+Soul, Phaneron and bradson, for the mod, the [Adaptive Storage Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359), the current source work, and the open licence.
 
 Elzetia and MrBlack-JB, for the French and Russian translations included upstream.
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678]Pickle[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696]RimLogging[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806142401]PickleTools[/url] were used for development and testing only; none is a dependency of the distributed mod.
+[Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), [RimLogging](https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and [PickleTools](https://steamcommunity.com/sharedfiles/filedetails/?id=3806142401) were used for development and testing only; none is a dependency of the distributed mod.
 
-Full attribution and change history: [url=https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/ATTRIBUTION.md]ATTRIBUTION.md[/url]. Released under the MIT licence: [url=https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/LICENSE]LICENSE[/url]
+Full attribution and change history: [ATTRIBUTION.md](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/ATTRIBUTION.md). Released under the MIT licence: [LICENSE](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/LICENSE)
 
-[url=https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew]Source code on GitHub[/url]
+[Source code on GitHub](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew)
 ```
 
 ## 2. Images to upload

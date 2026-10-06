@@ -13,6 +13,8 @@
   "galleryDir": "Art/Gallery",
   "description": {
     "file": "PUBLICATION.md",
-    "heading": "^## 1\\. Steam description"
-  }
+    "heading": "^## Steam description$",
+    "format": "markdown"
+  },
+  "aboutFromDescription": true
 }
