@@ -99,9 +99,9 @@ what belongs in git is one text line per run in `docs/runs/`. The rules that app
   is the sole proof of its scenarios, so none is redundant.
 - **Read `exitReason` before the counts, and open every `@review` capture** before citing a run. A green
   scenario says the path ran, not that the picture shows anything.
-- **Keep the sources of the gallery.** The raw frames the six images in `Art/Gallery/` were cut from live in
-  `tests/Pickle/Evidence/gallery-sanctuary-lit-c544d92`; delete them only after the gallery is regenerated
-  from a newer run.
+- **Keep the raw frames of the gallery until the owner has validated and uploaded it**, then delete them: the six images in
+  `Art/Gallery/` (1280 px wide, whole frames) are the record, and a replay of `11-workshop-captures.feature` regenerates the frames.
+  The summary, `junit.xml` and `Player.log` of the run stay.
 - **Never delete a report that a `STATUS.md` field still points to**: repoint the field first.
 - A run's raw folder in `.build/` is scratch once its report has been copied to `tests/Pickle/Evidence/`
   and summarised in `docs/runs/`. Clean it after the summary is written, not before.
