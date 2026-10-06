@@ -86,12 +86,12 @@ of today's scope.
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
 | 0 | `Art/Gallery/0-preview.png` | 896 x 504, 659,724 bytes | Copy of the Workshop header image (now carries the detoured ModIcon, bottom-left) |
-| 1 | `Art/Gallery/1-the-whole-set.png` | 1280 x 720, 1516057 bytes | The whole set and its visible contents |
-| 2 | `Art/Gallery/2-a-basket-fills-up.png` | 1280 x 453, 937777 bytes | A basket empty, partly filled and full |
-| 3 | `Art/Gallery/3-chunk-stacks.png` | 1280 x 720, 1346742 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
-| 4 | `Art/Gallery/4-large-pots.png` | 1280 x 720, 1489443 bytes | Large pots showing different stored foods |
-| 5 | `Art/Gallery/5-plinths.png` | 1280 x 480, 979556 bytes | Three plinths displaying items |
-| 6 | `Art/Gallery/6-a-stone-from-another-mod.png` | 1280 x 453, 887578 bytes | A compatible third-party stone beside granite |
+| 1 | `Art/Gallery/1-the-whole-set.png` | 1280 x 720, 1513008 bytes | The whole set and its visible contents |
+| 2 | `Art/Gallery/2-a-basket-fills-up.png` | 1280 x 720, 1401724 bytes | A basket empty, partly filled and full |
+| 3 | `Art/Gallery/3-chunk-stacks.png` | 1280 x 720, 1356916 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
+| 4 | `Art/Gallery/4-large-pots.png` | 1280 x 720, 1500418 bytes | Large pots showing different stored foods |
+| 5 | `Art/Gallery/5-plinths.png` | 1280 x 720, 1442811 bytes | Three plinths displaying items |
+| 6 | `Art/Gallery/6-a-stone-from-another-mod.png` | 1280 x 720, 1395477 bytes | A compatible third-party stone beside granite |
 
 Header assets already valid:
 
