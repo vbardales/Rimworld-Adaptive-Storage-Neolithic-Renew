@@ -129,7 +129,7 @@ and before a publication that updates the images. Rules:
 - **Pass:** one request, `-Filter '11-workshop-captures.feature'`, `-Language English`, `-DepMap wsl-deps.sanctuary.map`,
   a fresh `-EvidenceDir`, the SHA in the label. Plinth and third-party scenes skip without Odyssey or `[K]Extra Stone`.
 - **Then, by hand:** open every capture, crop with `scripts/Crop-WorkshopScreenshots.ps1 -SourceDirectory <evidence>/screenshots[,<other evidence>/screenshots]`
-  (it keeps whole frames and resizes them to 1280 px), write the result into `Art/Gallery/1-` to `6-`, keep `0-preview.png` identical to the
+  (it keeps whole frames and resizes them to 1280 px), write the result into `Art/Gallery/1-` to `6-`, run `node scripts/Compress-Gallery.cjs` (256-colour PNGs, each image under 2 MB and the folder under 8 MB, PUBLISHING.md), keep `0-preview.png` identical to the
   Preview, delete the raw captures, then upload the gallery on the Steam page in order.
 - The fixture is a Git LFS file kept by PickleTools; its first commit waits for the owner. Until then the pass only runs on this machine.
 
