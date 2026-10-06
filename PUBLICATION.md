@@ -77,7 +77,7 @@ is the in-game mod-list icon and is not uploaded to the gallery.
 **Every gallery starts with a byte-for-byte copy of the Preview** (owner's rule, 2026-09-29): `0-preview.png`
 is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The six capture files
 below follow it in the intended gallery order. They were regenerated from the integrated upstream implementation by Pickle feature
-`11-workshop-captures.feature` on 2026-09-22 (6/6 passed; the 2026-09-23 repeat is in `docs/runs/2026-09-23-tested-milestone.md`) and cropped pixel-for-pixel with `Art/Crop-WorkshopScreenshots.ps1`.
+`11-workshop-captures.feature` on 2026-09-22 (6/6 passed; the 2026-09-23 repeat is in `docs/runs/2026-09-23-tested-milestone.md`) and cropped pixel-for-pixel with `scripts/Crop-WorkshopScreenshots.ps1`.
 The pictures are staged in the storehouse hut of the sanctuary save `Nelims-tribe` (frame `hut`, emptied, closest zoom; see `TESTING.md`, "Gallery regeneration phase"). The crop may cut buildings or contents at its edge. The six crops have been checked for legibility; the final Workshop review remains the owner's.
 Upload these seven files in order; do not mix them with the superseded Workshop-based captures. The six capture filenames
 still use the pre-2026-09-25 `workshop-N-` naming rather than the current `01-`, `02-`… convention; unchanged here, out

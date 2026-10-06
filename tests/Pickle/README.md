@@ -30,7 +30,7 @@ and one chunk stack, each made from `ASFStoneChunks`; per-stone generated buildi
   failed in the other language's pass. The translated labels are asserted by `05` and `07`.
 - `11-workshop-captures`: six self-navigating publication captures on Nelim's screenshot studio;
   the 2026-09-22 English Workshop pass completed 6/6 at maximum zoom. The six raw captures were
-  cropped with `Art/Crop-WorkshopScreenshots.ps1` and still need the owner's visual approval.
+  cropped with `scripts/Crop-WorkshopScreenshots.ps1` and still need the owner's visual approval.
 - `12-performance-regression`: bounded tick-cost comparison for issue #3, from no module building to
   twenty-four filled large pots, with a post-warm-up control.
 

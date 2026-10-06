@@ -16,7 +16,7 @@ $ErrorActionPreference = 'Stop'
 $SourceDirectory = @($SourceDirectory | ForEach-Object { $_ -split ',' })
 Add-Type -AssemblyName System.Drawing
 
-$destinationDirectory = Join-Path $PSScriptRoot 'Gallery'
+$destinationDirectory = Join-Path (Split-Path $PSScriptRoot -Parent) 'Art/Gallery'
 $outputWidth = 1280
 # Y and Height are in source pixels; the width is always the full 1920.
 $shots = @(
