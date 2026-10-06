@@ -2,13 +2,15 @@
 # show the whole colony around the container, the game's interface and a wide frame, and a Workshop page sells nothing with that.
 #
 # Gallery series (owner's rule of 2026-10-02: a gallery capture is a staged photograph, not a default screenshot).
-# The story: one day at the storehouse of a neolithic camp, from the morning stock-taking to the evening, one picture per hour of the day
-# (8, 10, 12, 14, 16 and 17 o'clock, clear sky), from the pantry shelf to the display plinth. The common set is the calm zone of Nelim's tribe,
-# a smooth cream stone square of about 11 x 11 cells in the open air (x 195 to 205, z 181 to 191, soft edge, so about 9 x 9 usable): no roof,
-# so natural daylight and no wall shadow, and the one neutral light ground among the outdoor places (see TESTING.md, "Choosing the gallery
-# place"). Every scenario reloads the save, so the square is fresh and is never emptied or cleared. The subjects are built in rows on it
-# and furnished with their contents. Every animal of the map is removed first (the place step clears only x +-1.78 zoom, and one animal stayed
-# in frame). The owner's rule of 2026-10-06 asks one story with its own corner and hour per image; here the corner stays and the hour moves.
+# The story: a quiet morning of tidying at the storehouse of a neolithic camp, seen through the animals that come by, from the pantry shelf
+# to the display plinth: a hen pecks near the hay (1), a squirrel sniffs the basket that fills (2), a guinea pig wanders between the stone
+# stacks (3), a dog noses the pots of food (4), a peacock spreads its tail by the plinths (5) and a cat lies between the two granites (6).
+# Time barely moves, to keep the series coherent: 11 o'clock for the first two pictures, noon for the next two, 13 for the last two, clear sky.
+# The common set is the calm zone of Nelim's tribe, a smooth cream stone square of about 11 x 11 cells in the open air (x 195 to 205, z 181
+# to 191, soft edge, so about 9 x 9 usable): no roof, so natural daylight and no wall shadow, and the one neutral light ground among the
+# outdoor places (see TESTING.md, "Choosing the gallery place"). Every scenario reloads the save, so the square is fresh and is never emptied
+# or cleared. The subjects are built in rows on it and furnished with their contents. Every animal of the map is removed first (the place step
+# clears only x +-1.78 zoom, and one animal stayed in frame) and the animal of the picture is spawned after the wait, so it has not wandered off.
 # The map is the sanctuary save "Nelims-tribe" of PickleTools' ScreenshotStudio (Git LFS fixture, 250 x 250, one colonist, vanilla only),
 # frames by name (`I am at the sanctuary "calm-zone-close"`: centre (200, 185), a close frame of about 10 x 5.6 cells entirely inside the
 # cream square, defined with PickleTools); see PickleTools/docs/SANCTUAIRE-LIEUX.md.
@@ -30,7 +32,7 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And I set the hour to 8
+    And I set the hour to 11
     And I set the weather to "Clear"
     And a "ASNeolithicWoodPile" is built at (196, 186)
     And a "ASNeolithicHayPile" is built at (198, 186)
@@ -51,6 +53,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "RawBerries" at (200, 183)
     And I spawn a "Gold" at (202, 183)
     When I wait 60 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Poulette" is spawned at (197, 184)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 1 - the whole set"
@@ -61,7 +64,7 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And I set the hour to 10
+    And I set the hour to 11
     And I set the weather to "Clear"
     And a "ASNeolithicBasketWoody" is built at (198, 185)
     And a "ASNeolithicBasketWoody" is built at (200, 185)
@@ -70,6 +73,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "Cloth" at (202, 185)
     And I spawn a "Steel" at (202, 185)
     When I wait 60 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Squirrel" named "Noisette" is spawned at (204, 185)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 2 - a basket fills up"
@@ -102,6 +106,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "ChunkMarble" at (199, 183)
     And I spawn a "ChunkMarble" at (200, 183)
     When I wait 60 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Guineapig" named "Pomme" is spawned at (201, 184)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 3 - chunk stacks"
@@ -112,7 +117,7 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And I set the hour to 14
+    And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicLargePot" is built at (197, 186)
     And a "ASNeolithicLargePot" is built at (200, 186)
@@ -128,6 +133,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "RawBerries" at (203, 183)
     And I spawn a "Milk" at (203, 183)
     When I wait 60 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (201, 185)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 4 - large pots"
@@ -139,7 +145,7 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And I set the hour to 16
+    And I set the hour to 13
     And I set the weather to "Clear"
     And a "ASNeolithicPlinthWoody" is built at (198, 185)
     And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (200, 185)
@@ -148,6 +154,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "Silver" at (200, 185)
     And I spawn a "Jade" at (202, 185)
     When I wait 60 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (204, 185)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 5 - plinths"
@@ -159,7 +166,7 @@ Feature: the pictures of the Workshop page
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
-    And I set the hour to 17
+    And I set the hour to 13
     And I set the weather to "Clear"
     And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (196, 185)
     And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 185)
@@ -174,6 +181,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "ChunkKura_Andesite" at (203, 185)
     And I spawn a "RawBerries" at (201, 185)
     When I wait 60 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mie" is spawned at (200, 184)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 6 - a stone from another mod"
