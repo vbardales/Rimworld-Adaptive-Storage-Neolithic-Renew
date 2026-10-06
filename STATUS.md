@@ -198,7 +198,7 @@ never marks its own French reviewed.
   the 21 texts refers to a pawn (all describe furniture); no `{PAWN_gender ? ...}` switch applies anywhere
   in this mod, and none is missing one. Confirmed by reading, not by grep, per the rule.
 - **French review, Virginie, 2026-09-30, revision `ef449a6`: validated as it ships** (`FRENCH_REVIEW.md` regenerated at that revision). Corrections she asked for earlier that day, now applied: Applied the same day: `HayPile` "tas de foin", `WoodPile` "tas de bûches", both plinth descriptions gain the second sentence on colonists' attention and beauty, `MealShelf` "servant à entreposer des repas", `ChunkStorage` "Un tas de rochers, constitué de rochers et soutenant d'autres rochers. Facile à réaliser et assez efficace comme couvert." (her correction of 2026-10-01: "couvert" is the RimWorld tactical term, "abri" was a regression; she validated the rest) Coverage defect also fixed: `FRENCH_REVIEW.md` showed `not found` for the 5 research rows because the generator only looked in `ThingDef`; it now resolves `ResearchProjectDef` and `ResearchTabDef` (0 `not found` left). Her validation is recorded above; any later change to a French file resets `translation_fr` to `unchecked`.
-- **Review file:** `FRENCH_REVIEW.md` generated at the mod root by `_tools/Generate-FrenchReview.ps1`
+- **Review file:** `FRENCH_REVIEW.md` generated at the mod root by `scripts/Generate-FrenchReview.ps1`
   (reads the shipped XML; not hand-written). Covers all 21 French texts across the 3 DefInjected files,
   Original/English columns equal throughout (mod authored in English, no separate source language).
 
