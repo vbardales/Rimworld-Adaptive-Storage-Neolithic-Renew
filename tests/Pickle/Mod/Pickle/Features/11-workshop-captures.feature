@@ -12,7 +12,7 @@
 # The map is the sanctuary save "Nelims-tribe" of PickleTools' ScreenshotStudio (Git LFS fixture, 250 x 250, one colonist, vanilla only),
 # frames by name (`I am at the sanctuary "calm-zone-close"`: centre (200, 185), a close frame of about 10 x 5.6 cells entirely inside the
 # cream square, defined with PickleTools); see PickleTools/docs/SANCTUAIRE-LIEUX.md.
-# Each scenario hides the interface for the length of the picture with this suite's own step (the game's screenshot mode, Pickle's runner
+# Each scenario turns on PickleTools' studio presentation mode (it also hides the item-count labels of the Adaptive Storage containers) and hides the interface for the length of the picture with this suite's own step (the game's screenshot mode, Pickle's runner
 # panel taken out of it) and brings it back. A scenario that dies between the two still gets the interface back, from an [AfterScenario].
 # Nothing asserts about the image: a person opens each one, and a passing scenario says only that the route ran.
 #
@@ -52,6 +52,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "Gold" at (202, 183)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 1 - the whole set"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
 
@@ -70,6 +71,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "Steel" at (202, 185)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 2 - a basket fills up"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
 
@@ -101,6 +103,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "ChunkMarble" at (200, 183)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 3 - chunk stacks"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
 
@@ -126,6 +129,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "Milk" at (203, 183)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 4 - large pots"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
 
@@ -145,6 +149,7 @@ Feature: the pictures of the Workshop page
     And I spawn a "Jade" at (202, 185)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 5 - plinths"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
 
@@ -170,5 +175,6 @@ Feature: the pictures of the Workshop page
     And I spawn a "RawBerries" at (200, 185)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 6 - a stone from another mod"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
