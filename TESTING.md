@@ -132,3 +132,28 @@ and before a publication that updates the images. Rules:
   (adjust the boxes to the new framing), write the result into `Art/Gallery/1-` to `6-`, keep `0-preview.png` identical to the
   Preview, delete the raw captures, then upload the gallery on the Steam page in order.
 - The fixture is a Git LFS file kept by PickleTools; its first commit waits for the owner. Until then the pass only runs on this machine.
+
+### Choosing the gallery place (owner's request, 2026-10-06)
+
+Choose the place after reading the name and description of every named place (`ScreenshotStudio/Source/StudioSteps.cs`,
+`SanctuarySites`, or `PickleTools/docs/SANCTUAIRE-LIEUX.md`), not the first one that works. PickleTools' gallery rules
+(`docs/GALERIE.md`) apply:
+
+- Never clear, empty or raze a place so that it suits the mod (for example the bamboo forest for a neutral background):
+  places keep their meaning and the smileys must stay checkable. If no place fits, describe the need (size, ground,
+  background, light, animals) to the Pickle Tools session. Questions for it go through the Ticket Manager session.
+- Never remove a roof for a gallery capture: the roof belongs to the building and removing it leaves wall shadows. A dark
+  place is lit with torches, otherwise choose an outdoor place with natural light.
+- Do not submit before PickleTools announces that the final `Nelims-tribe` fixture is ready.
+
+Places considered for this mod, outdoors with natural noon light:
+
+| Place | Ground | Verdict |
+|---|---|---|
+| `calm-zone` | cream/white rectangle | Preferred on paper: neutral, bright. Two monuments stand to the right; check the frame. |
+| `emerald-clearing` (aliases `podium`, `clearing-a`) | bare earth, free 14 x 14 square, power cell at x 205 | Fallback: free and already scripted, but its ground may lack contrast with wood. |
+| `exhibition-zone` | saturated orange carpet, one object per cell | Rejected for storage: the colour would swallow wooden and leather objects. |
+| `gravel-yard` | gravel, furniture and lamps | Rejected: would need clearing. |
+| `hut` (alias `tea-room`) | roofed wood interior | Rejected: dark inside, and its roof must not be removed. |
+
+The choice is confirmed from NPT's empty photographs of the candidates; record the final choice and the reason here.
