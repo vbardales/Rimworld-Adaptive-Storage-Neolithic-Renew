@@ -1,0 +1,10 @@
+# The "camp" pass: the staged gallery series of feature 12, a neolithic camp on the sanctuary save "Nelims-tribe" (PickleTools' ScreenshotStudio).
+# Used with -DepMap wsl-deps.camp.map. Draft of 2026-10-06, not played yet.
+# Kura.ExtraStone is for the last picture (a stone from another mod); Odyssey comes with the base game set.
+adaptive.storage.framework   3033901359
+Kura.ExtraStone              852103845
+nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
+nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools.clearscreen path:PickleTools/ClearScreen/Mod
