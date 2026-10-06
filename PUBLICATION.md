@@ -1,6 +1,6 @@
 # Publishing Adaptive Storage Neolithic Renew
 
-Publication sheet for Workshop item `3806101377`, updated after integrating the current upstream source on 2026-09-22.
+Publication sheet for Workshop item `3806101377`, updated after integrating the current upstream source on 2026-09-22; gallery section revised on 2026-10-06.
 The item already exists, so RimWorld will update its files and tags but **will not resend the description**. Paste the Steam-formatted
 description below into the Workshop page by hand.
 
@@ -75,13 +75,18 @@ Full attribution and change history: [url=https://github.com/vbardales/Rimworld-
 is the in-game mod-list icon and is not uploaded to the gallery.
 
 **Every gallery starts with a byte-for-byte copy of the Preview** (owner's rule, 2026-09-29): `0-preview.png`
-is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The six capture files
-below follow it in the intended gallery order. They were regenerated from the integrated upstream implementation by Pickle feature
-`11-workshop-captures.feature` on 2026-09-22 (6/6 passed; the 2026-09-23 repeat is in `docs/runs/2026-09-23-tested-milestone.md`) and cropped pixel-for-pixel with `scripts/Crop-WorkshopScreenshots.ps1`.
-The pictures are staged in the storehouse hut of the sanctuary save `Nelims-tribe` (frame `hut`, emptied, closest zoom; see `TESTING.md`, "Gallery regeneration phase"). The crop may cut buildings or contents at its edge. The six crops have been checked for legibility; the final Workshop review remains the owner's.
-Upload these seven files in order; do not mix them with the superseded Workshop-based captures. The six capture filenames
-still use the pre-2026-09-25 `workshop-N-` naming rather than the current `01-`, `02-`… convention; unchanged here, out
-of today's scope.
+is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The six picture files below follow it
+in the intended order. **Limits** (PUBLISHING.md, owner, 2026-10-06): any number of images, the whole folder under 8 MB and each image
+under 2 MB; the folder is 3.43 MB, the largest image 0.52 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
+
+The six pictures are one story, "noon at the storehouse, seen through the animals that come by", played by Pickle feature
+`11-workshop-captures.feature` on the sanctuary save `Nelims-tribe` (named scene `calm-zone-close`, a cream stone square in the open air,
+no roof and no wall shadow): the hour is set to noon once and each picture waits five more game minutes than the one before (12:00 to
+12:25), with a daytime animal that comes by in each (hen, squirrel, hare, dog, peacock, cat). Pictures 2 and 5 use a closer frame. Evidence
+and reasoning in `STATUS.md` (2026-10-06) and `TESTING.md` ("Choosing the gallery place"). The pictures are whole frames cut by
+`scripts/Crop-WorkshopScreenshots.ps1` (1280 px wide) and recompressed; the owner validated them and uploaded them by her own word on
+2026-10-06, before the recompression (see "Current state").
+Upload these seven files in order; do not mix them with the superseded earlier series (the storehouse hut, 2026-09-23 and 2026-10-05).
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
@@ -97,7 +102,7 @@ Header assets already valid:
 
 - `Mod/About/Preview.png`: 896 x 504, 659,724 bytes, below Steam's 1 MiB limit. Recomposed 2026-09-29 to carry
   the detoured ModIcon bottom-left, tilted `+15deg` (owner's rule; `Art/PREVIEW.md`).
-- `Mod/About/ModIcon.png`: 128 x 128, 28,385 bytes.
+- `Mod/About/ModIcon.png`: 128 x 128, 36,714 bytes, derived from the owner's `Art/ModIcon-source.png` by the renderer (2026-10-05).
 
 ## 3. Dependency to declare on Steam
 
@@ -190,9 +195,10 @@ Steam change note for the integrated tree. It is an update to the existing item 
 - Runtime: played 2026-09-23 in the WSL, all green (`STATUS.md`, "Stage history").
 - Description: pasted on the page, read back identical on 2026-09-24.
 - Dependency: one, fixed above.
-- Gallery: the six capture files above are live on the page, byte-identical, read back 2026-09-24. A newer run of the same six scenes exists
-  (`docs/runs/2026-09-23-tested-milestone.md`); whether to regenerate from it is undecided, tracked in `STATUS.md`. `0-preview.png` is new
-  2026-09-29 and not yet uploaded; the live header image also still predates the ModIcon overlay, since `update_preview` is off by default.
+- Gallery: the owner uploaded the noon series on 2026-10-06 by her own word (not checkable without a login), with `0-preview.png`. That upload
+  was 9.27 MB for the folder, over the 8 MB limit; the files in `Art/Gallery/` are now recompressed (3.43 MB, same pictures). Whether to
+  re-upload them is the owner's call. The live header image still predates the ModIcon overlay and the 2026-10-05 icon, since
+  `update_preview` is off by default; the next publication can send `Mod/About/Preview.png`.
 - Comments: both posted (section 4).
 - Still open, not blocking: the file half of a Steam-copy subscription test is automated and passes
   (`tests/Test-SteamCopy.ps1`); the game half needs the owner, since `RimWorld/Mods` holds a development junction with the same
