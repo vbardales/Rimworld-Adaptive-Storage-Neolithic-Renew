@@ -85,17 +85,17 @@ of today's scope.
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
-| 0 | `Art/Gallery/0-preview.png` | 896 x 504, 670,300 bytes | Copy of the Workshop header image (now carries the detoured ModIcon, bottom-left) |
-| 1 | `Art/Gallery/1-the-whole-set.png` | 480 x 295, 123416 bytes | The whole set and its visible contents |
-| 2 | `Art/Gallery/2-a-basket-fills-up.png` | 350 x 250, 62506 bytes | A basket empty, partly filled and full |
-| 3 | `Art/Gallery/3-chunk-stacks.png` | 560 x 200, 78864 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
-| 4 | `Art/Gallery/4-large-pots.png` | 540 x 200, 83109 bytes | Large pots showing different stored foods |
-| 5 | `Art/Gallery/5-plinths.png` | 350 x 250, 67059 bytes | Three plinths displaying items |
-| 6 | `Art/Gallery/6-a-stone-from-another-mod.png` | 500 x 200, 78609 bytes | A compatible third-party stone beside granite |
+| 0 | `Art/Gallery/0-preview.png` | 896 x 504, 659,724 bytes | Copy of the Workshop header image (now carries the detoured ModIcon, bottom-left) |
+| 1 | `Art/Gallery/1-the-whole-set.png` | 1280 x 720, 1516057 bytes | The whole set and its visible contents |
+| 2 | `Art/Gallery/2-a-basket-fills-up.png` | 1280 x 453, 937777 bytes | A basket empty, partly filled and full |
+| 3 | `Art/Gallery/3-chunk-stacks.png` | 1280 x 720, 1346742 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
+| 4 | `Art/Gallery/4-large-pots.png` | 1280 x 720, 1489443 bytes | Large pots showing different stored foods |
+| 5 | `Art/Gallery/5-plinths.png` | 1280 x 480, 979556 bytes | Three plinths displaying items |
+| 6 | `Art/Gallery/6-a-stone-from-another-mod.png` | 1280 x 453, 887578 bytes | A compatible third-party stone beside granite |
 
 Header assets already valid:
 
-- `Mod/About/Preview.png`: 896 x 504, 686,368 bytes, below Steam's 1 MiB limit. Recomposed 2026-09-29 to carry
+- `Mod/About/Preview.png`: 896 x 504, 659,724 bytes, below Steam's 1 MiB limit. Recomposed 2026-09-29 to carry
   the detoured ModIcon bottom-left, tilted `+15deg` (owner's rule; `Art/PREVIEW.md`).
 - `Mod/About/ModIcon.png`: 128 x 128, 28,385 bytes.
 
