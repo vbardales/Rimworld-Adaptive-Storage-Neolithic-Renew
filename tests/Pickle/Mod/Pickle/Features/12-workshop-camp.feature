@@ -80,12 +80,12 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
-    And "Ayla" stands at (196, 151) facing West
+    And Nelim's Pickle Tools: "Ayla" stands at (196, 151) facing West
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
-    And "Doka" stands at (193, 156) facing North
+    And Nelim's Pickle Tools: "Doka" stands at (193, 156) facing North
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (188, 146) to (202, 158) filling 85 percent of the screen
     When I wait 60 ticks
@@ -114,7 +114,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (230, 170, 40)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalCape" dyed rgb (120, 80, 30)
-    And "Ayla" stands at (194, 157) facing North
+    And Nelim's Pickle Tools: "Ayla" stands at (194, 157) facing North
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (189, 153) to (196, 158) filling 85 percent of the screen
     When I wait 268 ticks
@@ -157,7 +157,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
-    And "Doka" stands at (197, 151) facing North
+    And Nelim's Pickle Tools: "Doka" stands at (197, 151) facing North
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (189, 146) to (202, 152) filling 85 percent of the screen
     When I wait 477 ticks
@@ -195,11 +195,11 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
-    And "Doka" stands at (196, 154) facing South
+    And Nelim's Pickle Tools: "Doka" stands at (196, 154) facing South
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
-    And "Ayla" stands at (199, 154) facing West
+    And Nelim's Pickle Tools: "Ayla" stands at (199, 154) facing West
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (190, 153) to (202, 158) filling 85 percent of the screen
     When I wait 685 ticks
@@ -231,7 +231,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalA" dyed rgb (120, 40, 110)
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalFurCloak" dyed rgb (230, 190, 60)
     And Nelim's Pickle Tools: "Tahu" wears "ET_Apparel_DeerHood"
-    And "Tahu" stands at (195, 147) facing South
+    And Nelim's Pickle Tools: "Tahu" stands at (195, 147) facing South
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: I frame the cells (191, 146) to (201, 151) filling 85 percent of the screen
     When I wait 893 ticks
