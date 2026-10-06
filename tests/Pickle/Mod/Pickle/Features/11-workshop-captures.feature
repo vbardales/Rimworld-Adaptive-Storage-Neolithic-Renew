@@ -79,25 +79,25 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (195, 186)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 186)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (201, 186)
-    And a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (204, 186)
-    And I spawn a "ChunkGranite" at (195, 186)
-    And I spawn a "ChunkGranite" at (198, 186)
-    And I spawn a "ChunkGranite" at (198, 186)
-    And I spawn a "ChunkGranite" at (201, 186)
-    And I spawn a "ChunkGranite" at (202, 186)
-    And I spawn a "ChunkMarble" at (204, 186)
-    And I spawn a "ChunkMarble" at (205, 186)
-    And I spawn a "ChunkGranite" at (201, 186)
-    And I spawn a "ChunkGranite" at (202, 186)
-    And I spawn a "ChunkMarble" at (204, 186)
-    And I spawn a "ChunkMarble" at (205, 186)
-    And I spawn a "ChunkGranite" at (201, 186)
-    And I spawn a "ChunkGranite" at (202, 186)
-    And I spawn a "ChunkMarble" at (204, 186)
-    And I spawn a "ChunkMarble" at (205, 186)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (196, 187)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (199, 187)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (202, 187)
+    And a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (199, 183)
+    And I spawn a "ChunkGranite" at (196, 187)
+    And I spawn a "ChunkGranite" at (199, 187)
+    And I spawn a "ChunkGranite" at (199, 187)
+    And I spawn a "ChunkGranite" at (202, 187)
+    And I spawn a "ChunkGranite" at (203, 187)
+    And I spawn a "ChunkMarble" at (199, 183)
+    And I spawn a "ChunkMarble" at (200, 183)
+    And I spawn a "ChunkGranite" at (202, 187)
+    And I spawn a "ChunkGranite" at (203, 187)
+    And I spawn a "ChunkMarble" at (199, 183)
+    And I spawn a "ChunkMarble" at (200, 183)
+    And I spawn a "ChunkGranite" at (202, 187)
+    And I spawn a "ChunkGranite" at (203, 187)
+    And I spawn a "ChunkMarble" at (199, 183)
+    And I spawn a "ChunkMarble" at (200, 183)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     Then I take a screenshot "workshop 3 - chunk stacks"
@@ -110,19 +110,19 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And a "ASNeolithicLargePot" is built at (195, 186)
-    And a "ASNeolithicLargePot" is built at (197, 186)
-    And a "ASNeolithicLargePot" is built at (199, 186)
-    And a "ASNeolithicLargePot" is built at (201, 186)
-    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (203, 186)
-    And a "ASNeolithicLargePot" is built at (205, 186)
-    And I spawn a "RawBerries" at (195, 186)
-    And I spawn a "Milk" at (197, 186)
-    And I spawn a "EggChickenUnfertilized" at (199, 186)
-    And I spawn a "Kibble" at (201, 186)
-    And I spawn a "Pemmican" at (203, 186)
-    And I spawn a "RawBerries" at (205, 186)
-    And I spawn a "Milk" at (205, 186)
+    And a "ASNeolithicLargePot" is built at (197, 187)
+    And a "ASNeolithicLargePot" is built at (200, 187)
+    And a "ASNeolithicLargePot" is built at (203, 187)
+    And a "ASNeolithicLargePot" is built at (197, 183)
+    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (200, 183)
+    And a "ASNeolithicLargePot" is built at (203, 183)
+    And I spawn a "RawBerries" at (197, 187)
+    And I spawn a "Milk" at (200, 187)
+    And I spawn a "EggChickenUnfertilized" at (203, 187)
+    And I spawn a "Kibble" at (197, 183)
+    And I spawn a "Pemmican" at (200, 183)
+    And I spawn a "RawBerries" at (203, 183)
+    And I spawn a "Milk" at (203, 183)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     Then I take a screenshot "workshop 4 - large pots"
@@ -155,18 +155,18 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I am at the sanctuary "calm-zone"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (197, 186)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (199, 186)
-    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (202, 186)
-    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (204, 186)
-    And I spawn a "RawBerries" at (197, 186)
-    And I spawn a "ChunkGranite" at (199, 186)
-    And I spawn a "ChunkKura_Andesite" at (204, 186)
-    And I spawn a "ChunkGranite" at (199, 186)
-    And I spawn a "ChunkKura_Andesite" at (204, 186)
-    And I spawn a "ChunkGranite" at (199, 186)
-    And I spawn a "ChunkKura_Andesite" at (204, 186)
-    And I spawn a "RawBerries" at (202, 186)
+    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (196, 186)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 186)
+    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (201, 186)
+    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (203, 186)
+    And I spawn a "RawBerries" at (196, 186)
+    And I spawn a "ChunkGranite" at (198, 186)
+    And I spawn a "ChunkKura_Andesite" at (203, 186)
+    And I spawn a "ChunkGranite" at (198, 186)
+    And I spawn a "ChunkKura_Andesite" at (203, 186)
+    And I spawn a "ChunkGranite" at (198, 186)
+    And I spawn a "ChunkKura_Andesite" at (203, 186)
+    And I spawn a "RawBerries" at (201, 186)
     When I wait 60 ticks
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     Then I take a screenshot "workshop 6 - a stone from another mod"
