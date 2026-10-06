@@ -150,10 +150,10 @@ Places considered for this mod, outdoors with natural noon light:
 
 | Place | Ground | Verdict |
 |---|---|---|
-| `calm-zone` | cream/white rectangle | Preferred on paper: neutral, bright. Two monuments stand to the right; check the frame. |
-| `emerald-clearing` (aliases `podium`, `clearing-a`) | bare earth, free 14 x 14 square, power cell at x 205 | Fallback: free and already scripted, but its ground may lack contrast with wood. |
+| `calm-zone` | cream/white rectangle | Chosen: neutral, bright, smooth cream stone. |
+| `emerald-clearing` (aliases `podium`, `clearing-a`) | vivid green square on bare earth, power cell at x 205 | Rejected: the green square is a strong colour cast, not a neutral ground. |
 | `exhibition-zone` | saturated orange carpet, one object per cell | Rejected for storage: the colour would swallow wooden and leather objects. |
 | `gravel-yard` | gravel, furniture and lamps | Rejected: would need clearing. |
 | `hut` (alias `tea-room`) | roofed wood interior | Rejected: dark inside, and its roof must not be removed. |
 
-The choice is confirmed from NPT's empty photographs of the candidates; record the final choice and the reason here.
+Choice (2026-10-06, from PickleTools' noon photographs of the candidates): **`calm-zone`**. Its square is cream smooth stone, about 11 x 11 cells (about 9 x 9 usable, the edge is soft), ringed with flowers, with no wall shadow and the two monuments outside a zoom-11 frame. `emerald-clearing` is a vivid green square, `exhibition-zone` an orange smiley, `gravel-yard` and `statue-garden` are cluttered. The camera of `calm-zone` leaves the square right of the frame centre, so the crop boxes follow it.
