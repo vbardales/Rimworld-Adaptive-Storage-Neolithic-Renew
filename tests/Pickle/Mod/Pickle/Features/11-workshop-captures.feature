@@ -154,14 +154,14 @@ Feature: the pictures of the Workshop page
     And Nelim's Pickle Tools: I frame the cell (200, 185) at zoom 2.6
     And I set the hour to 12
     And I set the weather to "Clear"
-    And a "ASNeolithicPlinthWoody" is built at (198, 185)
-    And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (200, 185)
-    And a "ASNeolithicPlinthStone" made from "ChunkVacstone" is built at (202, 185)
-    And I spawn a "Gold" at (198, 185)
-    And I spawn a "Silver" at (200, 185)
-    And I spawn a "Jade" at (202, 185)
+    And a "ASNeolithicPlinthWoody" is built at (197, 185)
+    And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (199, 185)
+    And a "ASNeolithicPlinthStone" made from "ChunkVacstone" is built at (201, 185)
+    And I spawn a "Gold" at (197, 185)
+    And I spawn a "Silver" at (199, 185)
+    And I spawn a "Jade" at (201, 185)
     When I wait 893 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (204, 185)
+    And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (203, 185)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "workshop 5 - plinths"
