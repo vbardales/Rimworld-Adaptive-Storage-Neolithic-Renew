@@ -7,7 +7,7 @@
 # mod's storage laid out as a camp would have it, wood and hay by the fire, baskets and pots on the shady side, the plinths of the tribe's
 # treasures in front of the chief's place. People and animals come and go. Time unfolds in the game: every picture starts at noon and waits 5
 # more game minutes than the one before (12:00 to 12:25; 2 500 ticks make an hour, so about 208 ticks per 5 minutes, plus 60 ticks to settle).
-# Daytime animals and people only.
+# Daytime animals and people only. The Steam gallery holds 7 images in all: the Preview copy `0-` plus these six pictures (`1-` to `6-`).
 #
 # Shot plan (place; frame; time; subject; living things; what the picture says):
 #   1. 12:00 wide: the whole camp (cells (188, 146) to (202, 158) fill 85 % of the screen). Fire lit, storage on three sides. Ayla stands
