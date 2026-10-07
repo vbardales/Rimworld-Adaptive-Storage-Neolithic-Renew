@@ -66,7 +66,6 @@ Feature: the camp pictures of the Workshop page
     And a "ASNeolithicBasketFabric" is built at (190, 156)
     And a "ASNeolithicLargePot" is built at (200, 154)
     And a "ASNeolithicLargePot" is built at (200, 156)
-    And a "ASNeolithicPlinthWoody" is built at (195, 146)
     And I spawn a "WoodLog" at (192, 148)
     And I spawn a "Hay" at (194, 148)
     And I spawn a "MealSimple" at (197, 148)
@@ -75,8 +74,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Steel" at (190, 156)
     And I spawn a "RawBerries" at (200, 154)
     And I spawn a "Milk" at (200, 156)
-    And I spawn a "Gold" at (195, 146)
-    And Nelim's Pickle Tools: I frame the cells (189, 147) to (202, 157) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 157) filling 85 percent of the screen
     When I wait 60 ticks
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 153)
     And game speed is paused
@@ -115,7 +113,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Steel" at (194, 155)
     And Nelim's Pickle Tools: I frame the cells (189, 152) to (196, 156) filling 85 percent of the screen
     When I wait 268 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Squirrel" named "Noisette" is spawned at (196, 155)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Plume" is spawned at (196, 155)
     And game speed is paused
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" body type is Female
@@ -157,7 +155,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "ChunkGranite" at (198, 149)
     And I spawn a "ChunkGranite" at (199, 149)
     And I spawn a "ChunkMarble" at (200, 149)
-    And Nelim's Pickle Tools: I frame the cells (189, 147) to (202, 153) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 154) filling 85 percent of the screen
     When I wait 477 ticks
     And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Pomme" is spawned at (193, 150)
     And game speed is paused
@@ -166,7 +164,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
-    And Nelim's Pickle Tools: "Doka" stands at (197, 151) facing North
+    And Nelim's Pickle Tools: "Doka" stands at (197, 151) facing South
     And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -236,7 +234,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Gold" at (193, 150)
     And I spawn a "Silver" at (195, 150)
     And I spawn a "Jade" at (197, 150)
-    And Nelim's Pickle Tools: I frame the cells (191, 147) to (201, 153) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (191, 148) to (201, 154) filling 85 percent of the screen
     When I wait 893 ticks
     And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (199, 150)
     And game speed is paused
@@ -246,6 +244,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalFurCloak" dyed rgb (230, 190, 60)
     And Nelim's Pickle Tools: "Tahu" wears "ET_Apparel_DeerHood"
     And Nelim's Pickle Tools: "Tahu" stands at (195, 148) facing South
+    And Nelim's Pickle Tools: the animal "Eclat" stands at (199, 150) facing West
     And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
