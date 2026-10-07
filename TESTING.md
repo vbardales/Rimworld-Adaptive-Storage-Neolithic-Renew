@@ -124,7 +124,7 @@ and before a publication that updates the images. Rules:
 
 - **Scenario:** `11-workshop-captures.feature`, the six pictures in upload order. A gallery capture is a staged photograph
   (owner's rule of 2026-10-02): common set, subject and contents chosen, interface hidden. Menus are the only captures not staged.
-- **Map:** the sanctuary save `Nelims-tribe` of PickleTools' ScreenshotStudio, frames by name (`I am at the sanctuary "hut"`),
+- **Map:** the sanctuary save `Nelims-tribe` of the Sanctuary Backlot repository (since 2026-10-08; place steps `Nelim's Sanctuary:` = SB, the rest `Nelim's Pickle Tools:` = NPT), frames by name (`I am at the sanctuary "hut"`),
   emptied by name (`the sanctuary "hut" is emptied`). Its reference is `PickleTools/docs/SANCTUAIRE-LIEUX.md`.
 - **Pass:** one request, `-Filter '11-workshop-captures.feature'`, `-Language English`, `-DepMap wsl-deps.sanctuary.map`,
   a fresh `-EvidenceDir`, the SHA in the label. Plinth and third-party scenes skip without Odyssey or `[K]Extra Stone`.
