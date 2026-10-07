@@ -4,6 +4,9 @@
 # camerazoom gives the close-frame step `I frame the cell` used by pictures 2 and 5.
 adaptive.storage.framework   3033901359
 Kura.ExtraStone              852103845
+# Sanctuary Backlot (its own repository since 2026-10-08): carries the fixture Nelims-tribe and the steps of the named places (prefix "Nelim's Sanctuary:", SB).
+# The other steps of these features keep the prefix "Nelim's Pickle Tools:" (NPT: studio, camera, decor, colonists, animals). The fixture must come from the Backlot only: two fixtures of that name fail Pickle.
+nelim.sanctuarybacklot path:SanctuaryBacklot/Mod
 nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
 nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
 nelim.pickletools.clearscreen path:PickleTools/ClearScreen/Mod

@@ -35,6 +35,7 @@
 #
 # `@requires:nelim.pickletools.screenshotstudio`: only the pass of `-DepMap wsl-deps.camp.map` stages the studio and the fixture. Odyssey for
 # picture 5 (vacstone), the stone mod for picture 6.
+# Two families of steps, told apart by their prefix (2026-10-08): `Nelim's Sanctuary: ` (SB, repository SanctuaryBacklot: the named places and the fixture Nelims-tribe) and `Nelim's Pickle Tools: ` (NPT, repository PickleTools: studio, presentation mode, camera, decor, colonists, animals). Steps without a prefix are this mod's or Pickle's own.
 @requires:nelim.pickletools.screenshotstudio
 @wip
 @workshop
@@ -45,7 +46,7 @@ Feature: the camp pictures of the Workshop page
   Scenario: the whole camp at noon
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "bare-clearing"
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
@@ -100,7 +101,7 @@ Feature: the camp pictures of the Workshop page
   Scenario: three baskets, empty, with one item and full, and Ayla behind them
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "bare-clearing"
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
@@ -131,7 +132,7 @@ Feature: the camp pictures of the Workshop page
   Scenario: wood and hay piles and granite stacks at one, two and six chunks, and a marble one
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "bare-clearing"
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
@@ -176,7 +177,7 @@ Feature: the camp pictures of the Workshop page
   Scenario: large pots with different food, and a lidded one holding two kinds
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "bare-clearing"
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
@@ -222,7 +223,7 @@ Feature: the camp pictures of the Workshop page
   Scenario: plinths of wood, granite and vacstone, each showing an item, and the chief behind them
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "bare-clearing"
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
@@ -257,7 +258,7 @@ Feature: the camp pictures of the Workshop page
   Scenario: the pot and the chunk stack of a stone from another mod, beside granite
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "bare-clearing"
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)

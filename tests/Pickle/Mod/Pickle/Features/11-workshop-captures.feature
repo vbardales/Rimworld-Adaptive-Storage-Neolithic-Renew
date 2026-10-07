@@ -27,6 +27,7 @@
 # this feature; every other pass skips it. Aim at this file with `-Filter '11-workshop-captures.feature'`. The plinth scenario also needs
 # Odyssey and the last one the stone mod, both present in that map. The objects stand at x 196 to 204, rows z 183, 185 and 186.
 # A Workshop crop may cut a building or its contents at an edge; the icon composition takes priority, as documented in PUBLICATION.md.
+# Two families of steps, told apart by their prefix (2026-10-08): `Nelim's Sanctuary: ` (SB, repository SanctuaryBacklot: the named places and the fixture Nelims-tribe) and `Nelim's Pickle Tools: ` (NPT, repository PickleTools: studio, presentation mode, camera, decor, colonists, animals). Steps without a prefix are this mod's or Pickle's own.
 @requires:nelim.pickletools.screenshotstudio
 @workshop
 @review
@@ -36,7 +37,7 @@ Feature: the pictures of the Workshop page
   Scenario: the whole set, each container holding something
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
+    And Nelim's Sanctuary: I am at the sanctuary "calm-zone-close"
     And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicWoodPile" is built at (196, 186)
@@ -68,7 +69,7 @@ Feature: the pictures of the Workshop page
   Scenario: a wooden basket, empty, with one item and full, side by side
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
+    And Nelim's Sanctuary: I am at the sanctuary "calm-zone-close"
     And Nelim's Pickle Tools: I frame the cell (200, 185) at zoom 2.2
     And I set the hour to 12
     And I set the weather to "Clear"
@@ -89,7 +90,7 @@ Feature: the pictures of the Workshop page
   Scenario: granite chunk stacks at one, two and six chunks, and a marble one
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
+    And Nelim's Sanctuary: I am at the sanctuary "calm-zone-close"
     And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (196, 186)
@@ -122,7 +123,7 @@ Feature: the pictures of the Workshop page
   Scenario: large pots with different food, and a lidded one holding two kinds
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
+    And Nelim's Sanctuary: I am at the sanctuary "calm-zone-close"
     And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicLargePot" is built at (197, 186)
@@ -150,7 +151,7 @@ Feature: the pictures of the Workshop page
   Scenario: plinths of wood, granite and vacstone, each showing an item
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
+    And Nelim's Sanctuary: I am at the sanctuary "calm-zone-close"
     And Nelim's Pickle Tools: I frame the cell (200, 185) at zoom 2.6
     And I set the hour to 12
     And I set the weather to "Clear"
@@ -172,7 +173,7 @@ Feature: the pictures of the Workshop page
   Scenario: the pot and the chunk stack of a stone from another mod, beside granite
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I am at the sanctuary "calm-zone-close"
+    And Nelim's Sanctuary: I am at the sanctuary "calm-zone-close"
     And I set the hour to 12
     And I set the weather to "Clear"
     And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (196, 185)

@@ -16,6 +16,9 @@ Mud.TribalApparel            2796703834
 ETRT.TribalApparel           3545351721
 OskarPotocki.VanillaFactionsExpanded.Core 2023507013
 VanillaExpanded.VFEPropsandDecor 2102143149
+# Sanctuary Backlot (its own repository since 2026-10-08): carries the fixture Nelims-tribe and the steps of the named places (prefix "Nelim's Sanctuary:", SB).
+# The other steps of these features keep the prefix "Nelim's Pickle Tools:" (NPT: studio, camera, decor, colonists, animals). The fixture must come from the Backlot only: two fixtures of that name fail Pickle.
+nelim.sanctuarybacklot path:SanctuaryBacklot/Mod
 nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
 nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
 nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod
