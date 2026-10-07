@@ -236,7 +236,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Jade" at (197, 150)
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: a colonist "Tahu" of kind "Colonist" exists
-    And Nelim's Pickle Tools: "Tahu" body type is Male
+    And Nelim's Pickle Tools: "Tahu" body type is Female
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalA" dyed rgb (120, 40, 110)
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalFurCloak" dyed rgb (230, 190, 60)
     And Nelim's Pickle Tools: "Tahu" wears "ET_Apparel_DeerHood"
