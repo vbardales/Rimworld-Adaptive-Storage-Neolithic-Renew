@@ -157,3 +157,13 @@ Places considered for this mod, outdoors with natural noon light:
 | `hut` (alias `tea-room`) | roofed wood interior | Rejected: dark inside, and its roof must not be removed. |
 
 Choice (2026-10-06, from PickleTools' noon photographs of the candidates): **`calm-zone`**. Its square is cream smooth stone, about 11 x 11 cells (about 9 x 9 usable, the edge is soft), ringed with flowers, with no wall shadow and the two monuments outside a zoom-11 frame. `emerald-clearing` is a vivid green square, `exhibition-zone` an orange smiley, `gravel-yard` and `statue-garden` are cluttered. The camera of `calm-zone` leaves the square right of the frame centre, so the crop boxes follow it.
+
+### Camp candidates (owner's request, 2026-10-07)
+
+`12-workshop-camp.feature` (`@wip`, pass `wsl-deps.camp.map`, `-IncludeWip`) plays a second series, "Noon at the camp", with three pawns
+(Venus Touch Waistlines, Female Body Variants and WDI bodies loaded). Its six pictures are cut by `node scripts/Cut-Candidates.cjs <evidence>/screenshots`
+into `Art/Gallery/candidates/` (`c1-` to `c6-`, 1280 px, 256 colours), **candidates only**: the uploaded set `1-` to `6-` is untouched, and the owner
+decides whether they replace it or join it (8 MB for the folder, 2 MB each: the whole of `Art/Gallery/` is 6.47 MB with the candidates).
+Pawn order that works (Pickle Tools, 2026-10-07): waits first, `game speed is paused`, create colonists and dress them, `stands at` last, then
+`the other colonists are out of frame`, presentation mode, capture; no wait after the pawns. Raw frames: `tests/Pickle/Evidence/camp-final-7438e80`,
+kept until the owner has validated and uploaded. Remaining flaw: a thin strip of the place's green border at the top edge of 1, 4 and 6.
