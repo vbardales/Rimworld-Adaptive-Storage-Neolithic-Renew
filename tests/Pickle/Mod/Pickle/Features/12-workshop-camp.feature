@@ -21,7 +21,6 @@
 #      tunic stands behind the plinths; a peacock spreads its tail. "The tribe's treasures."
 #   6. 12:25 medium: the stone pots and stacks of the other mod beside granite (cells (189, 153) to (200, 158)). A cat sleeps between them.
 #      "Every stone, in its place."
-# Probe of 2026-10-07 (7ff7): the colonists were not in frame because `the other colonists are out of frame` ran after they were placed; it now comes first. The green band is the border of
 # bare-clearing (z 145 to 158 hold it at both ends): every frame now stays inside z 147 to 157. COLONIST CAPTURES ARE ON HOLD (owner, 2026-10-07) until TMW: do not replay scenarios 1 to 5 for a cut.
 # Review rule: after the run, open every picture and compare it with the line above; redo the one that does not say what it should.
 #
@@ -33,7 +32,6 @@
 # TO VERIFY ON A PROBE RUN (written from memory of the game, not played): the colonist kind "Colonist", the vanilla apparel "Apparel_TribalA"
 # and "Apparel_TribalHeaddress", the decor defNames "Campfire", "TorchLamp", "Stool", the footprint of the tent, the extent of bare-clearing
 # (x 188 to 201, z 145 to 158), that the step texts below exist as written in PickleTools/docs/STAGING.md (parentheses without backslash),
-# and how the colonist steps behave with the studio's single colonist (`the other colonists are out of frame`).
 #
 # `@requires:nelim.pickletools.screenshotstudio`: only the pass of `-DepMap wsl-deps.camp.map` stages the studio and the fixture. Odyssey for
 # picture 5 (vacstone), the stone mod for picture 6.
@@ -78,21 +76,22 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "RawBerries" at (200, 154)
     And I spawn a "Milk" at (200, 156)
     And I spawn a "Gold" at (195, 146)
-    And Nelim's Pickle Tools: the other colonists are out of frame
+    And Nelim's Pickle Tools: I frame the cells (189, 147) to (202, 157) filling 85 percent of the screen
+    When I wait 60 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 153)
+    And game speed is paused
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" body type is Female
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
-    And Nelim's Pickle Tools: "Ayla" stands at (196, 151) facing West
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Doka" body type is Male
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
+    And Nelim's Pickle Tools: "Ayla" stands at (196, 151) facing West
     And Nelim's Pickle Tools: "Doka" stands at (193, 156) facing North
-    And Nelim's Pickle Tools: I frame the cells (189, 147) to (202, 157) filling 85 percent of the screen
-    When I wait 60 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 153)
+    And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 1 - the whole camp at noon"
@@ -114,15 +113,16 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Cloth" at (192, 155)
     And I spawn a "Cloth" at (194, 155)
     And I spawn a "Steel" at (194, 155)
-    And Nelim's Pickle Tools: the other colonists are out of frame
+    And Nelim's Pickle Tools: I frame the cells (189, 152) to (196, 156) filling 85 percent of the screen
+    When I wait 268 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Squirrel" named "Noisette" is spawned at (196, 155)
+    And game speed is paused
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" body type is Female
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (230, 170, 40)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalCape" dyed rgb (120, 80, 30)
     And Nelim's Pickle Tools: "Ayla" stands at (194, 153) facing South
-    And Nelim's Pickle Tools: I frame the cells (189, 152) to (196, 156) filling 85 percent of the screen
-    When I wait 268 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Squirrel" named "Noisette" is spawned at (196, 155)
+    And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 2 - three baskets"
@@ -157,16 +157,17 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "ChunkGranite" at (198, 149)
     And I spawn a "ChunkGranite" at (199, 149)
     And I spawn a "ChunkMarble" at (200, 149)
-    And Nelim's Pickle Tools: the other colonists are out of frame
+    And Nelim's Pickle Tools: I frame the cells (189, 147) to (202, 153) filling 85 percent of the screen
+    When I wait 477 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Pomme" is spawned at (193, 150)
+    And game speed is paused
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Doka" body type is Male
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
     And Nelim's Pickle Tools: "Doka" stands at (197, 151) facing North
-    And Nelim's Pickle Tools: I frame the cells (189, 147) to (202, 153) filling 85 percent of the screen
-    When I wait 477 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Pomme" is spawned at (193, 150)
+    And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 3 - fuel and stone"
@@ -196,21 +197,22 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Pemmican" at (199, 155)
     And I spawn a "RawBerries" at (201, 155)
     And I spawn a "Milk" at (201, 155)
-    And Nelim's Pickle Tools: the other colonists are out of frame
+    And Nelim's Pickle Tools: I frame the cells (190, 152) to (202, 157) filling 85 percent of the screen
+    When I wait 685 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (200, 154)
+    And game speed is paused
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Doka" body type is Male
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
-    And Nelim's Pickle Tools: "Doka" stands at (196, 154) facing South
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" body type is Female
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
+    And Nelim's Pickle Tools: "Doka" stands at (196, 154) facing South
     And Nelim's Pickle Tools: "Ayla" stands at (199, 154) facing West
-    And Nelim's Pickle Tools: I frame the cells (190, 152) to (202, 157) filling 85 percent of the screen
-    When I wait 685 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (200, 154)
+    And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 4 - food for noon"
@@ -234,16 +236,17 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Gold" at (193, 150)
     And I spawn a "Silver" at (195, 150)
     And I spawn a "Jade" at (197, 150)
-    And Nelim's Pickle Tools: the other colonists are out of frame
+    And Nelim's Pickle Tools: I frame the cells (191, 147) to (201, 153) filling 85 percent of the screen
+    When I wait 893 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (199, 150)
+    And game speed is paused
     And Nelim's Pickle Tools: a colonist "Tahu" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Tahu" body type is Female
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalA" dyed rgb (120, 40, 110)
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalFurCloak" dyed rgb (230, 190, 60)
     And Nelim's Pickle Tools: "Tahu" wears "ET_Apparel_DeerHood"
     And Nelim's Pickle Tools: "Tahu" stands at (195, 148) facing South
-    And Nelim's Pickle Tools: I frame the cells (191, 147) to (201, 153) filling 85 percent of the screen
-    When I wait 893 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (199, 150)
+    And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 5 - the tribe's treasures"
