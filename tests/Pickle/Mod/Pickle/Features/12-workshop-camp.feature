@@ -195,7 +195,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Pemmican" at (199, 155)
     And I spawn a "RawBerries" at (201, 155)
     And I spawn a "Milk" at (201, 155)
-    And Nelim's Pickle Tools: I frame the cells (190, 152) to (202, 157) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (190, 151) to (202, 156) filling 85 percent of the screen
     When I wait 685 ticks
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (200, 154)
     And game speed is paused
@@ -275,7 +275,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "ChunkKura_Andesite" at (198, 155)
     And I spawn a "RawBerries" at (196, 155)
     And Nelim's Pickle Tools: the other colonists are out of frame
-    And Nelim's Pickle Tools: I frame the cells (189, 152) to (200, 157) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (189, 151) to (200, 156) filling 85 percent of the screen
     When I wait 1102 ticks
     And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mie" is spawned at (194, 155)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
