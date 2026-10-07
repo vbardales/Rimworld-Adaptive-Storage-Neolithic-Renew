@@ -80,10 +80,12 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Gold" at (195, 146)
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Ayla" body type is Female
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
     And Nelim's Pickle Tools: "Ayla" stands at (196, 151) facing West
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Doka" body type is Male
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
@@ -114,6 +116,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Steel" at (194, 155)
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Ayla" body type is Female
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (230, 170, 40)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalCape" dyed rgb (120, 80, 30)
     And Nelim's Pickle Tools: "Ayla" stands at (194, 153) facing South
@@ -156,6 +159,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "ChunkMarble" at (200, 149)
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Doka" body type is Male
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
@@ -194,11 +198,13 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Milk" at (201, 155)
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Doka" body type is Male
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
     And Nelim's Pickle Tools: "Doka" stands at (196, 154) facing South
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Ayla" body type is Female
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
     And Nelim's Pickle Tools: "Ayla" stands at (199, 154) facing West
@@ -230,6 +236,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Jade" at (197, 150)
     And Nelim's Pickle Tools: the other colonists are out of frame
     And Nelim's Pickle Tools: a colonist "Tahu" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Tahu" body type is Male
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalA" dyed rgb (120, 40, 110)
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalFurCloak" dyed rgb (230, 190, 60)
     And Nelim's Pickle Tools: "Tahu" wears "ET_Apparel_DeerHood"

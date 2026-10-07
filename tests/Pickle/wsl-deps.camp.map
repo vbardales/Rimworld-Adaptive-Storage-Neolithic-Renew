@@ -4,6 +4,10 @@
 # Kura.ExtraStone is for the last picture (a stone from another mod); Odyssey comes with the base game set.
 adaptive.storage.framework   3033901359
 Kura.ExtraStone              852103845
+# Pawn bodies, on TMW's advice (2026-10-07): the female variants BEFORE WDI, else Thin, Fat and Hulk women get the wrong body.
+tiagocc0.FemaleBodyVariants   3798082132
+tiagocc0.FemaleApparelVariants 3799726535
+wdi.realistic.bodies          3527486510
 # Tribal clothes (Mud's Tribal Apparel; ETRT: Tribal Apparel, continued) and camp props (VFE Core, then VFE Props and Decor).
 Mud.TribalApparel            2796703834
 ETRT.TribalApparel           3545351721
