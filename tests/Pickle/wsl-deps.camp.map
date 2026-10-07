@@ -8,6 +8,9 @@ Kura.ExtraStone              852103845
 tiagocc0.FemaleBodyVariants   3798082132
 tiagocc0.FemaleApparelVariants 3799726535
 wdi.realistic.bodies          3527486510
+# Venus Touch Waistlines (TMW's new name, 2026-10-07): cuts the tops and draws the trousers on WDI bodies. Hard dependency astryl.tailormade; staged by path from the neighbouring repository, default settings (no AB: its settings seed cannot be staged for a pass of another mod).
+astryl.tailormade             3756915448
+nelim.venustouch.waistlines   path:TailorMadeWaistlines/Mod
 # Tribal clothes (Mud's Tribal Apparel; ETRT: Tribal Apparel, continued) and camp props (VFE Core, then VFE Props and Decor).
 Mud.TribalApparel            2796703834
 ETRT.TribalApparel           3545351721
