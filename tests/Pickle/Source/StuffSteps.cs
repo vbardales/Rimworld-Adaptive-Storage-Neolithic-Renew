@@ -34,6 +34,59 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
                 "description of " + defName + " is '" + def.description + "', not '" + expected + "'");
         }
 
+        // Language-aware assertions (owner's request, 2026-10-08): a scenario that checks French or Russian text is red by design
+        // in a pass of another language and hid a real red among the expected ones. These steps check the text only when the
+        // active language is the one named; in any other language they pass at once and say so in the report (an attachment),
+        // so a pass of the wrong language shows "not applicable" instead of a failure. The text check is the same as above.
+        [Then("Adaptive Storage Neolithic Renew: the ThingDef {string} has its label {string} when the language is {word}")]
+        public void ThingDefLabelIn(PickleContext ctx, string defName, string expected, string language)
+        {
+            if (NotApplicable(ctx, language)) return;
+            ThingDefLabel(ctx, defName, expected);
+        }
+
+        [Then("Adaptive Storage Neolithic Renew: the ThingDef {string} has its description {string} when the language is {word}")]
+        public void ThingDefDescriptionIn(PickleContext ctx, string defName, string expected, string language)
+        {
+            if (NotApplicable(ctx, language)) return;
+            ThingDefDescription(ctx, defName, expected);
+        }
+
+        [Then("Adaptive Storage Neolithic Renew: the research def {string} has its label {string} when the language is {word}")]
+        public void ResearchDefLabelIn(PickleContext ctx, string defName, string expected, string language)
+        {
+            if (NotApplicable(ctx, language)) return;
+            var label = ResearchDefText(ctx, defName, false);
+            ctx.Assert(label == expected, "label of " + defName + " is '" + label + "', not '" + expected + "'");
+        }
+
+        [Then("Adaptive Storage Neolithic Renew: the research def {string} has its description {string} when the language is {word}")]
+        public void ResearchDefDescriptionIn(PickleContext ctx, string defName, string expected, string language)
+        {
+            if (NotApplicable(ctx, language)) return;
+            var description = ResearchDefText(ctx, defName, true);
+            ctx.Assert(description == expected, "description of " + defName + " is '" + description + "', not '" + expected + "'");
+        }
+
+        /// <summary>True, and noted in the report, when the active language is not the one the assertion is written for.</summary>
+        internal static bool NotApplicable(PickleContext ctx, string language)
+        {
+            var active = LanguageDatabase.activeLanguage != null ? LanguageDatabase.activeLanguage.folderName : "(none)";
+            if (string.Equals(active, language, System.StringComparison.OrdinalIgnoreCase)) return false;
+            ctx.Attach("language guard", "not applicable: written for " + language + ", the active language is " + active);
+            return true;
+        }
+
+        // A project (ResearchProjectDef) or a tab (ResearchTabDef) by defName: the framework's tab is the one the French text names.
+        private static string ResearchDefText(PickleContext ctx, string defName, bool description)
+        {
+            var project = DefDatabase<ResearchProjectDef>.GetNamedSilentFail(defName);
+            if (project != null) return description ? project.description : project.label;
+            var tab = DefDatabase<ResearchTabDef>.GetNamedSilentFail(defName);
+            ctx.Require(tab != null, "no research project or tab is named '" + defName + "'");
+            return description ? null : tab.label;
+        }
+
         [Given("I clear the rectangle from \\({int}, {int}\\) to \\({int}, {int}\\)")]
         public void ClearRectangle(PickleContext ctx, int minX, int minZ, int maxX, int maxZ)
         {

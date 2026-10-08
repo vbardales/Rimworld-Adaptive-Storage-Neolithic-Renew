@@ -1,10 +1,11 @@
+# The text assertions carry "when the language is Russian" (see 05-french-names.feature).
 Feature: Russian translations load from the correctly cased folder
 
   Scenario: the shared stone defs are translated in Russian
-    Then Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its label "Большой горшок"
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its label "Подиум"
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its label "Куча"
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its description "Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия."
+    Then Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its label "Большой горшок" when the language is Russian
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its label "Подиум" when the language is Russian
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its label "Куча" when the language is Russian
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its description "Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия." when the language is Russian
 
   @requires:Odyssey
   @review

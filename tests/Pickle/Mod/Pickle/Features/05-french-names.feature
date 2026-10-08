@@ -1,12 +1,14 @@
+# The text assertions carry "when the language is French": they check only in a French pass and report "not applicable" in any other language
+# (owner, 2026-10-08), so a pass of another language is no longer red by design.
 Feature: French names on the current upstream architecture
 
   Scenario: the shared stone defs and hand-written buildings are translated
-    Then Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its label "grand pot"
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its description "Un grand pot taillé destiné au stockage des aliments périssables."
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its label "socle"
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its description "Un socle de pierre brute, orné de belles gravures, pour exposer des objets. Les objets exposés attirent l’attention, et leur beauté ne passe pas inaperçue."
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its label "amas"
-    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicWoodPile" has its label "tas de bûches"
+    Then Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its label "grand pot" when the language is French
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicLargePotStone" has its description "Un grand pot taillé destiné au stockage des aliments périssables." when the language is French
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its label "socle" when the language is French
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicPlinthStone" has its description "Un socle de pierre brute, orné de belles gravures, pour exposer des objets. Les objets exposés attirent l’attention, et leur beauté ne passe pas inaperçue." when the language is French
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicChunkStorage" has its label "amas" when the language is French
+    And Adaptive Storage Neolithic Renew: the ThingDef "ASNeolithicWoodPile" has its label "tas de bûches" when the language is French
 
   @requires:Odyssey
   @review
@@ -38,11 +40,11 @@ Feature: French names on the current upstream architecture
     Then I take a screenshot "the third-party andesite pot in French"
 
   Scenario: the research projects and their text are French
-    Then def "ASFAdaptiveStorage" field "label" is "Stockage"
-    And def "ASNeolithicNeolithicStorage" field "label" is "stockage néolithique"
-    And def "ASNeolithicNeolithicStorage" field "description" is "Construire des conteneurs simples et des moyens de stockage pour les matériaux de base."
-    And def "ASNeolithicNeolithicItemDisplay" field "label" is "présentoir néolithique"
-    And def "ASNeolithicNeolithicItemDisplay" field "description" is "Construire des socles simples, mais esthétiques pour exposer des objets."
+    Then Adaptive Storage Neolithic Renew: the research def "ASFAdaptiveStorage" has its label "Stockage" when the language is French
+    And Adaptive Storage Neolithic Renew: the research def "ASNeolithicNeolithicStorage" has its label "stockage néolithique" when the language is French
+    And Adaptive Storage Neolithic Renew: the research def "ASNeolithicNeolithicStorage" has its description "Construire des conteneurs simples et des moyens de stockage pour les matériaux de base." when the language is French
+    And Adaptive Storage Neolithic Renew: the research def "ASNeolithicNeolithicItemDisplay" has its label "présentoir néolithique" when the language is French
+    And Adaptive Storage Neolithic Renew: the research def "ASNeolithicNeolithicItemDisplay" has its description "Construire des socles simples, mais esthétiques pour exposer des objets." when the language is French
 
   @requires:nelim.pickletools.research
   @review
@@ -51,7 +53,7 @@ Feature: French names on the current upstream architecture
     When Nelim's Pickle Tools: I open the research tab "ASFAdaptiveStorage"
     And I wait 30 ticks
     Then Nelim's Pickle Tools: the research window is on the tab "ASFAdaptiveStorage"
-    And Nelim's Pickle Tools: the research window labels the tab "ASFAdaptiveStorage" as "Stockage"
+    And the Adaptive Storage Neolithic Renew research window labels the tab "ASFAdaptiveStorage" as "Stockage" when the language is French
     And Nelim's Pickle Tools: the research window lists the project "ASNeolithicNeolithicStorage" costing 400
     And Nelim's Pickle Tools: the research window lists the project "ASNeolithicNeolithicItemDisplay" costing 400
     And I take a screenshot "the research window on the storage tab, in French"

@@ -3,7 +3,7 @@
 # never under Mod/: Mod/ is what Steam receives. Pickle finds it there and loads its steps.
 param(
     [string]$Managed = 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed',
-    [string]$Pickle = 'C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3791648678\Assemblies'
+    [string]$Pickle = 'C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3791648678\1.6\Assemblies'
 )
 $ErrorActionPreference = 'Stop'
 $output = Join-Path $PSScriptRoot '../Mod/Pickle/Assemblies'

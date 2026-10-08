@@ -115,7 +115,7 @@ what belongs in git is one text line per run in `docs/runs/`. The rules that app
 - Keep only `summary.json`, `summary.md`, `junit.xml` and `Player.log` of each regression pass. Delete `report.html`, `messages.ndjson` (tens of MB, stale after a rebuild) and, for a regression pass whose `@review` captures nobody opens, the `screenshots/` folder (about 80 MB per full pass).
 - Keep `screenshots/` only where a capture is the proof: the Workshop gallery run (`workshop-2026-09-23`) and any run whose `@review` captures were opened and accepted.
 - Never keep two folders for the same pass on the same revision; the newer replaces the older.
-- Features 05 (French) and 07 (Russian) assert one language each: play them only under `-Language French` or `-Language Russian`. In an English pass they fail by design (2026-10-02, `042e` and `96b2`).
+- Features 05 (French) and 07 (Russian) assert one language each, with steps that end in `when the language is French` / `Russian` (2026-10-08): they check only in a pass of that language and report `not applicable` (an attachment, a green scenario) in any other, so an English, French or Russian pass has no red by design any more. A red now means a defect or a stale expectation. The scenarios of 05 that take screenshots still run in every language.
 
 ## Gallery regeneration phase (owner's request, 2026-10-04)
 

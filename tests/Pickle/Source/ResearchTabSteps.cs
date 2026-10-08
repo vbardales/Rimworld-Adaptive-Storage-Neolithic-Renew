@@ -97,6 +97,14 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
                 tabDefName, record.label, label));
         }
 
+        /// <summary>The same check, only when the active language is the one named (see StuffSteps.NotApplicable).</summary>
+        [Then("the Adaptive Storage Neolithic Renew research window labels the tab {string} as {string} when the language is {word}")]
+        public void LabelsTabIn(PickleContext ctx, string tabDefName, string label, string language)
+        {
+            if (StuffSteps.NotApplicable(ctx, language)) return;
+            LabelsTab(ctx, tabDefName, label);
+        }
+
         /// <summary>
         /// The project is one the window lists on its current tab: in the visible projects, whose tab
         /// is the selected one, not hidden, at the cost the mod's file asks for. Read off the same
