@@ -57,25 +57,25 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: the decor "TorchLamp" at (199, 150) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" at (193, 154)
     And Nelim's Pickle Tools: I place the decor "Stool" at (197, 154)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (201, 151)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (200, 151)
     And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 153)
     And a "ASNeolithicWoodPile" is built at (192, 148)
     And a "ASNeolithicHayPile" is built at (194, 148)
     And a "ASNeolithicMealShelf" is built at (197, 148)
     And a "ASNeolithicTextileBundleFabric" is built at (199, 148)
     And a "ASNeolithicBasketWoody" is built at (190, 154)
-    And a "ASNeolithicBasketFabric" is built at (190, 156)
+    And a "ASNeolithicBasketFabric" is built at (190, 155)
     And a "ASNeolithicLargePot" is built at (200, 154)
-    And a "ASNeolithicLargePot" is built at (200, 156)
+    And a "ASNeolithicLargePot" is built at (200, 155)
     And I spawn a "WoodLog" at (192, 148)
     And I spawn a "Hay" at (194, 148)
     And I spawn a "MealSimple" at (197, 148)
     And I spawn a "Cloth" at (199, 148)
     And I spawn a "Cloth" at (190, 154)
-    And I spawn a "Steel" at (190, 156)
+    And I spawn a "Steel" at (190, 155)
     And I spawn a "RawBerries" at (200, 154)
-    And I spawn a "Milk" at (200, 156)
-    And Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 157) filling 85 percent of the screen
+    And I spawn a "Milk" at (200, 155)
+    And Nelim's Pickle Tools: I frame the cells (188, 148) to (201, 155) filling 85 percent of the screen
     When I wait 60 ticks
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 153)
     And game speed is paused
@@ -91,7 +91,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
     And Nelim's Pickle Tools: "Ayla" stands at (196, 151) facing West
-    And Nelim's Pickle Tools: "Doka" stands at (193, 156) facing North
+    And Nelim's Pickle Tools: "Doka" stands at (193, 155) facing North
     And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -187,20 +187,20 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
     And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 153)
-    And a "ASNeolithicLargePot" is built at (191, 155)
-    And a "ASNeolithicLargePot" is built at (193, 155)
-    And a "ASNeolithicLargePot" is built at (195, 155)
-    And a "ASNeolithicLargePot" is built at (197, 155)
-    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (199, 155)
-    And a "ASNeolithicLargePot" is built at (201, 155)
-    And I spawn a "RawBerries" at (191, 155)
-    And I spawn a "Milk" at (193, 155)
-    And I spawn a "EggChickenUnfertilized" at (195, 155)
-    And I spawn a "Kibble" at (197, 155)
-    And I spawn a "Pemmican" at (199, 155)
-    And I spawn a "RawBerries" at (201, 155)
-    And I spawn a "Milk" at (201, 155)
-    And Nelim's Pickle Tools: I frame the cells (190, 151) to (202, 156) filling 85 percent of the screen
+    And a "ASNeolithicLargePot" is built at (191, 154)
+    And a "ASNeolithicLargePot" is built at (193, 154)
+    And a "ASNeolithicLargePot" is built at (195, 154)
+    And a "ASNeolithicLargePot" is built at (197, 154)
+    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (199, 154)
+    And a "ASNeolithicLargePot" is built at (201, 154)
+    And I spawn a "RawBerries" at (191, 154)
+    And I spawn a "Milk" at (193, 154)
+    And I spawn a "EggChickenUnfertilized" at (195, 154)
+    And I spawn a "Kibble" at (197, 154)
+    And I spawn a "Pemmican" at (199, 154)
+    And I spawn a "RawBerries" at (201, 154)
+    And I spawn a "Milk" at (201, 154)
+    And Nelim's Pickle Tools: I frame the cells (190, 150) to (202, 155) filling 85 percent of the screen
     When I wait 685 ticks
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (200, 154)
     And game speed is paused
@@ -215,8 +215,8 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Sanctuary: "Ayla" has the gene "Eyes_Green"
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
-    And Nelim's Pickle Tools: "Doka" stands at (196, 154) facing South
-    And Nelim's Pickle Tools: "Ayla" stands at (199, 154) facing West
+    And Nelim's Pickle Tools: "Doka" stands at (196, 152) facing South
+    And Nelim's Pickle Tools: "Ayla" stands at (199, 152) facing West
     And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -274,22 +274,22 @@ Feature: the camp pictures of the Workshop page
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (190, 155)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (192, 155)
-    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (196, 155)
-    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (198, 155)
-    And I spawn a "RawBerries" at (190, 155)
-    And I spawn a "ChunkGranite" at (192, 155)
-    And I spawn a "ChunkKura_Andesite" at (198, 155)
-    And I spawn a "ChunkGranite" at (192, 155)
-    And I spawn a "ChunkKura_Andesite" at (198, 155)
-    And I spawn a "ChunkGranite" at (192, 155)
-    And I spawn a "ChunkKura_Andesite" at (198, 155)
-    And I spawn a "RawBerries" at (196, 155)
+    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (190, 154)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (192, 154)
+    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (196, 154)
+    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (198, 154)
+    And I spawn a "RawBerries" at (190, 154)
+    And I spawn a "ChunkGranite" at (192, 154)
+    And I spawn a "ChunkKura_Andesite" at (198, 154)
+    And I spawn a "ChunkGranite" at (192, 154)
+    And I spawn a "ChunkKura_Andesite" at (198, 154)
+    And I spawn a "ChunkGranite" at (192, 154)
+    And I spawn a "ChunkKura_Andesite" at (198, 154)
+    And I spawn a "RawBerries" at (196, 154)
     And Nelim's Pickle Tools: the other colonists are out of frame
-    And Nelim's Pickle Tools: I frame the cells (189, 151) to (200, 156) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (189, 150) to (200, 155) filling 85 percent of the screen
     When I wait 1102 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mie" is spawned at (194, 155)
+    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mie" is spawned at (194, 154)
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 6 - every stone in its place"
