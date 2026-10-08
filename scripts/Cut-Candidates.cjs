@@ -10,10 +10,10 @@ const out = path.join('Art', 'Gallery');
 fs.mkdirSync(out, { recursive: true });
 const shots = [
   ['manual--camp-1---the-whole-camp-at-noon--step0.png', '7-candidate-the-whole-camp-at-noon.png'],
-  ['manual--camp-2---three-baskets--step0.png', '8-candidate-three-baskets.png'],
-  ['manual--camp-3---fuel-and-stone--step0.png', '9-candidate-fuel-and-stone.png'],
+  ['manual--camp-2---three-baskets--step0.png', '8-three-baskets.png'],
+  ['manual--camp-3---fuel-and-stone--step0.png', '9-fuel-and-stone.png'],
   ['manual--camp-4---food-for-noon--step0.png', '10-candidate-food-for-noon.png'],
-  ['manual--camp-5---the-tribe-s-treasures--step0.png', '11-candidate-the-tribes-treasures.png'],
+  ['manual--camp-5---the-tribe-s-treasures--step0.png', '11-the-tribes-treasures.png'],
   ['manual--camp-6---every-stone-in-its-place--step0.png', '12-candidate-every-stone-in-its-place.png'],
 ];
 (async () => {
