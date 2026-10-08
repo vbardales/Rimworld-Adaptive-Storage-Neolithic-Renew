@@ -95,12 +95,11 @@ Upload files 0 to 6 in order (the noon series); files 7 to 12 are the camp serie
 | 4 | `Art/Gallery/4-large-pots.png` | 1280 x 720, 503219 bytes | Large pots showing different stored foods |
 | 5 | `Art/Gallery/5-plinths.png` | 1280 x 720, 506776 bytes | Three plinths displaying items |
 | 6 | `Art/Gallery/6-a-stone-from-another-mod.png` | 1280 x 720, 435833 bytes | A compatible third-party stone beside granite |
-| 7 | `Art/Gallery/7-the-whole-camp-at-noon.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): The whole camp at noon: fire, torches, storage on three sides, Ayla, Doka and a dog |
-| 8 | `Art/Gallery/8-three-baskets.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Three baskets (empty, one item, full), Ayla behind them, a chicken |
-| 9 | `Art/Gallery/9-fuel-and-stone.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Wood and hay piles, granite and marble stacks, Doka and a hare |
-| 10 | `Art/Gallery/10-food-for-noon.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Large pots with different food and a lidded one, Doka, Ayla and the dog |
-| 11 | `Art/Gallery/11-the-tribes-treasures.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Three plinths (wood, granite, vacstone) each showing an item, the chief Tahu and a peacock |
-| 12 | `Art/Gallery/12-every-stone-in-its-place.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Pot and chunk stack of a stone from another mod beside granite, a cat |
+| 8 | `Art/Gallery/8-candidate-three-baskets.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Three baskets (empty, one item, full), Ayla behind them, a chicken |
+| 9 | `Art/Gallery/9-candidate-fuel-and-stone.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Wood and hay piles, granite and marble stacks, Doka and a hare |
+| 10 | `Art/Gallery/10-candidate-food-for-noon.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Large pots with different food and a lidded one, Doka, Ayla and the dog |
+| 11 | `Art/Gallery/11-candidate-the-tribes-treasures.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Three plinths (wood, granite, vacstone) each showing an item, the chief Tahu and a peacock |
+| 12 | `Art/Gallery/12-candidate-every-stone-in-its-place.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Pot and chunk stack of a stone from another mod beside granite, a cat |
 
 Header assets already valid:
 
