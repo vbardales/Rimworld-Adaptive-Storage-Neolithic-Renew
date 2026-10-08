@@ -1,4 +1,4 @@
-// Recompresses Art/Gallery/1-* to 9-* in place as 256-colour PNGs and checks the Steam gallery limits of PUBLISHING.md:
+// Recompresses Art/Gallery/1-* and up (not 0-preview.png) in place as 256-colour PNGs and checks the Steam gallery limits of PUBLISHING.md:
 // each image under 2 MB, the whole folder (0-preview.png included) under 8 MB.
 // Run from the mod root: node scripts/Compress-Gallery.cjs   (needs `sharp`, installed in the mod's node_modules)
 const fs = require('fs');
@@ -10,9 +10,10 @@ const EACH = 2 * 1024 * 1024;
 const TOTAL = 8 * 1024 * 1024;
 
 (async () => {
-  for (const name of fs.readdirSync(dir).filter((n) => /^[1-9]-.*\.png$/.test(n))) {
+  for (const name of fs.readdirSync(dir).filter((n) => /^[0-9]*[1-9]-.*\.png$/.test(n))) {
     const file = path.join(dir, name);
     const input = fs.readFileSync(file);
+    if (input.length < 1024 * 1024) continue; // already recompressed (a palette PNG of this script is under 1 MB): a second pass only loses quality
     const output = await sharp(input).png({ palette: true, quality: 90, effort: 10, colours: 256 }).toBuffer();
     if (output.length < input.length) fs.writeFileSync(file, output);
   }

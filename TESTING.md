@@ -162,7 +162,7 @@ Choice (2026-10-06, from PickleTools' noon photographs of the candidates): **`ca
 
 `12-workshop-camp.feature` (`@wip`, pass `wsl-deps.camp.map`, `-IncludeWip`) plays a second series, "Noon at the camp", with three pawns
 (Venus Touch Waistlines, Female Body Variants and WDI bodies loaded). Its six pictures are cut by `node scripts/Cut-Candidates.cjs <evidence>/screenshots`
-into `Art/Gallery/candidates/` (`c1-` to `c6-`, 1280 px, 256 colours), **candidates only**: the uploaded set `1-` to `6-` is untouched, and the owner
+into `Art/Gallery/` as `7-` to `12-` (1280 px, 256 colours), the **candidates** after the noon set (owner, 2026-10-08: candidates go in the gallery with their index and name); the uploaded set `1-` to `6-` is untouched, and the owner
 decides whether they replace it or join it (8 MB for the folder, 2 MB each: the whole of `Art/Gallery/` is 6.47 MB with the candidates).
 Pawn order that works (Pickle Tools, 2026-10-07): waits first, `game speed is paused`, create colonists and dress them, `stands at` last, then
 `the other colonists are out of frame`, presentation mode, capture; no wait after the pawns. Raw frames: `tests/Pickle/Evidence/camp-final-7438e80`,
