@@ -4,6 +4,16 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased]
 
+### Fixed
+
+- `Basket/ThingDef.xml`: `drawSize` was the malformed `(2)` (a vector needs two values); it is now `(2,2)`.
+- French: descriptions of the baskets, hay pile, both plinths (no "colons"), textile bundles, wood pile and stone stack corrected (owner's review, 2026-10-08).
+
+### Changed
+
+- `About.xml` `<description>` is generated from the single Markdown source of `PUBLICATION.md` (`sync-about-description.mjs`); the Workshop text is unchanged.
+- Refreshed `ModIcon.png` and `Preview.png`.
+
 ## [1.1.2] — 2026-09-28
 
 ### Fixed

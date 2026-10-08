@@ -144,6 +144,18 @@ fixture.
 Steam change note for the integrated tree. It is an update to the existing item `3806101377`, uploaded by the manual workflow
 `.github/workflows/publish-tag.yml`, which reads the fenced block under the `### <version>` heading below.
 
+### 1.1.3
+
+```text
+[h3]1.1.3 - Basket graphic and French wording[/h3]
+
+[list]
+[*]Fixed the basket graphic size: its size was declared with one value instead of two. It now reads 2 x 2 as intended.
+[*]French: corrected the descriptions of the baskets, the hay pile, both plinths, the textile bundles, the wood pile and the stone stack (clearer wording, and no mention of colonists, which the plinths could not gender).
+[*]Refreshed the mod icon and the Workshop header image.
+[/list]
+```
+
 ### 1.1.2
 
 ```text
