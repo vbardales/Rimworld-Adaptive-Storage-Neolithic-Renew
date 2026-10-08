@@ -84,7 +84,7 @@ no roof and no wall shadow): the hour is set to noon once and each picture waits
 and reasoning in `STATUS.md` (2026-10-06) and `TESTING.md` ("Choosing the gallery place"). The pictures are whole frames cut by
 `scripts/Crop-WorkshopScreenshots.ps1` (1280 px wide) and recompressed; the owner validated them and uploaded them by her own word on
 2026-10-06, before the recompression (see "Current state").
-Upload files 0 to 6 in order (the noon series); files 7 to 12 are the camp series, **candidates** (pawns from Mud's and ETRT tribal clothes, VFE Props and Decor, Venus Touch Waistlines, EyeGenes3: thank their authors if they are published), played by `12-workshop-camp.feature` on the Sanctuary Backlot place `bare-clearing`, evidence `tests/Pickle/Evidence/camp-final-7438e80`; the owner chooses what to upload. Do not mix with the superseded series; do not mix them with the superseded earlier series (the storehouse hut, 2026-09-23 and 2026-10-05).
+Upload files 0 to 6 in order (the noon series); files 8, 9 and 11 are the accepted pictures of the camp series (7, 10 and 12 were refused and deleted) (pawns from Mud's and ETRT tribal clothes, VFE Props and Decor, Venus Touch Waistlines, EyeGenes3: thank their authors if they are published), played by `12-workshop-camp.feature` on the Sanctuary Backlot place `bare-clearing`, evidence `tests/Pickle/Evidence/camp-final-7438e80`; the owner chooses what to upload. Do not mix with the superseded series; do not mix them with the superseded earlier series (the storehouse hut, 2026-09-23 and 2026-10-05).
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
@@ -95,11 +95,9 @@ Upload files 0 to 6 in order (the noon series); files 7 to 12 are the camp serie
 | 4 | `Art/Gallery/4-large-pots.png` | 1280 x 720, 503219 bytes | Large pots showing different stored foods |
 | 5 | `Art/Gallery/5-plinths.png` | 1280 x 720, 506776 bytes | Three plinths displaying items |
 | 6 | `Art/Gallery/6-a-stone-from-another-mod.png` | 1280 x 720, 435833 bytes | A compatible third-party stone beside granite |
-| 8 | `Art/Gallery/8-candidate-three-baskets.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Three baskets (empty, one item, full), Ayla behind them, a chicken |
-| 9 | `Art/Gallery/9-candidate-fuel-and-stone.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Wood and hay piles, granite and marble stacks, Doka and a hare |
-| 10 | `Art/Gallery/10-candidate-food-for-noon.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Large pots with different food and a lidded one, Doka, Ayla and the dog |
-| 11 | `Art/Gallery/11-candidate-the-tribes-treasures.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Three plinths (wood, granite, vacstone) each showing an item, the chief Tahu and a peacock |
-| 12 | `Art/Gallery/12-candidate-every-stone-in-its-place.png` | 1280 x 720 | CANDIDATE (camp series, owner 2026-10-08): Pot and chunk stack of a stone from another mod beside granite, a cat |
+| 8 | `Art/Gallery/8-three-baskets.png` | 1280 x 720 | ACCEPTED by the owner 2026-10-08 (camp series): Three baskets (empty, one item, full), Ayla behind them, a chicken |
+| 9 | `Art/Gallery/9-fuel-and-stone.png` | 1280 x 720 | ACCEPTED by the owner 2026-10-08 (camp series): Wood and hay piles, granite and marble stacks, Doka and a hare |
+| 11 | `Art/Gallery/11-the-tribes-treasures.png` | 1280 x 720 | ACCEPTED by the owner 2026-10-08 (camp series): Three plinths (wood, granite, vacstone) each showing an item, the chief Tahu and a peacock |
 
 Header assets already valid:
 
