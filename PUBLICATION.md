@@ -62,6 +62,10 @@ Elzetia and MrBlack-JB, for the French and Russian translations included upstrea
 
 [Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), [RimLogging](https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and [PickleTools](https://steamcommunity.com/sharedfiles/filedetails/?id=3806142401) were used for development and testing only; none is a dependency of the distributed mod.
 
+[Extra Stone](https://steamcommunity.com/sharedfiles/filedetails/?id=852103845) by Kuratheris, the third-party stone mod that the stone buildings are tested against. It is not a dependency either.
+
+The camp pictures of the gallery were staged with other mods, none of them a dependency: [Female Body Variants Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3798082132) and [Female Apparel Variants Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3799726535) (DanZinagri and tiagocc0), [WDI's Realistic Bodies](https://steamcommunity.com/sharedfiles/filedetails/?id=3527486510) (Windonsi and Starkz), [TailorMade: Unified Apparel & Body Refitting](https://steamcommunity.com/sharedfiles/filedetails/?id=3756915448) and [Facial Animation Performance Patch](https://steamcommunity.com/sharedfiles/filedetails/?id=3790129900) (astryl), [Facial Animation - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197) and [Facial Animation - Experimentals](https://steamcommunity.com/sharedfiles/filedetails/?id=2581693737) (Nals), [Vanilla Textures Expanded - Facial Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=2816938779) (Oracle of Thessia), [Akeron Extras - Facial Animations](https://steamcommunity.com/sharedfiles/filedetails/?id=2889716301) (Newton Zephyr), [Vanilla Experimentals for Facial Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=3753978140) (SunshineyDays), [EyeGenes3](https://steamcommunity.com/sharedfiles/filedetails/?id=3745223213) (Lucius), [Mud's Tribal Apparel](https://steamcommunity.com/sharedfiles/filedetails/?id=2796703834) (Mud), [ETRT: Tribal Apparel (continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3545351721) (qux, after Evil Tactician, with Ogam's retextures), and [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) with [Vanilla Furniture Expanded - Props and Decor](https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149) (Oskar Potocki, Sarg Bjornson and the Vanilla Expanded team).
+
 Full attribution and change history: [ATTRIBUTION.md](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/ATTRIBUTION.md). Released under the MIT licence: [LICENSE](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/LICENSE)
 
 [Source code on GitHub](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew)
@@ -109,7 +113,7 @@ Header assets already valid:
 
 Exactly one required Workshop item:
 
-- [Adaptive Storage Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359) — Workshop id `3033901359`, packageId
+- [Adaptive Storage Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359): Workshop id `3033901359`, packageId
   `adaptive.storage.framework`.
 
 Do not declare Harmony, Odyssey, Biotech, `[K]Extra Stone`, Pickle, RimLogging or PickleTools as dependencies. The last three are
@@ -129,8 +133,101 @@ Whether the item was already public at posting time is not established: it was p
 2026-09-24, and Steam shows comment times in the viewer's own zone.
 
 No comment is prepared for Pickle, RimLogging or PickleTools: they are credited in the description as development-only tools, and
-PickleTools is the publisher's own private project. Harmony is not used directly by this module. `[K]Extra Stone` is only a test
-fixture.
+PickleTools is the publisher's own private project. Harmony is not used directly by this module.
+
+### Drafts for the test and camp integrations (2026-10-10)
+
+Every mod below is named in `THANKS` because a test pass stages it (PUBLISHING.md, "Remerciements"; none is a dependency). Register rows are `drafted` in `WORKSHOP_COMMENTS.md`, Vanilla Expanded Framework (2023507013) is already `posted` and only gains this mod in `Covers`. Authors come from each installed About.xml; only ETRT (3545351721) had its page read. Read the last comments of each page before posting, at most three a day, and post only once pictures 7 to 9 are on the Steam page. One comment per page.
+
+**[K]Extra Stone (Kuratheris)** (852103845)
+
+```text
+Your stones were the test subjects for my storage mod: pots, plinths and chunk stacks built from your andesite with no patch at all, and the mod never even met them before. Thanks for being such good guinea stones :) [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]
+```
+
+**Female Body Variants Continued (DanZinagri and tiagocc0)** (3798082132)
+
+```text
+Thin, fat or hulk, the women of my gallery camp get the right body thanks to this. Thank you DanZinagri for the original and tiagocc0 for carrying it on, the tribe in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] would be a bit lopsided without it xD
+```
+
+**Female Apparel Variants Continued (DanZinagri and tiagocc0)** (3799726535)
+
+```text
+The clothes for those bodies: with your female apparel variants the tunics of my camp sit on the women instead of next to them. Thanks to DanZinagri and tiagocc0, I used it staging the gallery of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] :)
+```
+
+**WDI's Realistic Bodies (Windonsi, Starkz)** (3527486510)
+
+```text
+Realistic bodies are what turns my little tribe from paper dolls into people. I staged the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] with your mod, thank you Windonsi and Starkz :)
+```
+
+**TailorMade: Unified Apparel & Body Refitting (astryl)** (3756915448)
+
+```text
+TailorMade sits under the clothing setup I used for the tribe in my gallery pictures, and the pawns came out wearing their clothes instead of being wrapped by them. Thank you astryl, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] owes you a few tunics.
+```
+
+**Facial Animation Performance Patch (astryl)** (3790129900)
+
+```text
+I load this next to Facial Animation whenever I stage pawns with faces, for the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Quiet little mod, very welcome. Thanks astryl :)
+```
+
+**[NL] Facial Animation - WIP (Nals)** (1635901197)
+
+```text
+The chief of my gallery camp has a face because of you. Facial Animation is part of how I stage the tribe in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url], thank you Nals, it still makes a drafted pawn glare properly lol
+```
+
+**[NL] Facial Animation - Experimentals (Nals)** (2581693737)
+
+```text
+I run the Experimentals build when I stage faces for the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thank you Nals for both builds, and for taking the time to keep experimenting :)
+```
+
+**Vanilla Textures Expanded - Facial Animation (Oracle of Thessia)** (2816938779)
+
+```text
+Part of the Facial Animation set I load to give the tribe in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] a face that matches the vanilla look. Thanks Oracle of Thessia for making that match :)
+```
+
+**Akeron Extras - Facial Animations (Newton Zephyr)** (2889716301)
+
+```text
+Akeron faces were on the guest list for the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url], so your Extras made it into the staging. Thank you Newton Zephyr :)
+```
+
+**Vanilla Experimentals for Facial Animation (SunshineyDays)** (3753978140)
+
+```text
+Moving vanilla eyes, small detail, big difference when you zoom on a pawn: I loaded yours for the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thanks SunshineyDays, very nice touch :)
+```
+
+**EyeGenes3 (Lucius)** (3745223213)
+
+```text
+Green, dark brown, golden: I picked the eyes of the three people in my camp pictures from your genes. Thank you Lucius, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] had a very particular casting call xD
+```
+
+**Mud's Tribal Apparel (Mud)** (2796703834)
+
+```text
+When I needed a neolithic wardrobe for the tribe in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url], your tribal capes and cloaks were the first place I looked. Thanks Mud :)
+```
+
+**ETRT: Tribal Apparel (continued) (qux, after Evil Tactician; retextures by Ogam)** (3545351721)
+
+```text
+The wolf and deer hoods in my gallery are yours. Thank you qux for keeping ETRT: Tribal Apparel going, and Evil Tactician and Ogam for what's underneath: a neolithic storage mod needed a neolithic crowd. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]
+```
+
+**Vanilla Furniture Expanded - Props and Decor (Oskar Potocki, Sarg Bjornson)** (2102143149)
+
+```text
+The tanning rack in the corner of my camp pictures is yours, and a camp without props is just a field. Thank you Oskar Potocki and Sarg Bjornson for the decor behind [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] :)
+```
 
 ## 5. Other Steam fields
 
