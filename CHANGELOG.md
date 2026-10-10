@@ -47,7 +47,7 @@ The Workshop item so far holds only the private `0.1.0` prepublication, which cr
 
 ### Changed
 
-- Stopped tracking the 171 `.dds` textures in Git and ignore `*.dds`. Every one has a `.png` twin in the same folder, which
+- Stopped tracking the 171 `.dds` textures in Git and added `*.dds` to `.gitignore`. Every one has a `.png` twin in the same folder, which
   is tracked and which RimWorld loads (`tests/Test-Mod.ps1` accepts either extension). The `.dds` files stay on disk locally.
 - Rebased the delivered mod content on the original authors' current GitHub `main` (`2bc3fe4`)
   instead of the older Workshop package.
@@ -167,12 +167,11 @@ below is part of this one release.
   fix above. They carry no `PatchOperationFindMod` guard and need none: they target
   `ChunkRockBase`, a Core def.
 - All 352 texture files, in both `.png` and `.dds`.
-- `About/Preview.png`, the authors' own showcase.
 - `LICENSE` — the MIT notice, `Copyright (c) 2023 Soul, Phaneron, bradson`, verbatim, at the
   repository root and inside `Mod/`.
 
 ## [0.1.0] — 2026-09-22
 
-Création d'un publishIdFile. Prepublication: a first upload whose only purpose was to create the Workshop item (private, as Steam
-creates every item) and obtain `About/PublishedFileId.txt` (id `3806101377`). The upload contained `Mod/` as it stood at commit
+Created the Workshop item and obtained `About/PublishedFileId.txt` (id `3806101377`). Prepublication: a first upload whose only purpose was
+this; the item was private, as Steam creates every item. The upload contained `Mod/` as it stood at commit
 `2ab4b90`, unchanged; the commit that adds the id file is `a008025`. This entry does not say the mod is public or tested.
