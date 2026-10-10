@@ -307,7 +307,7 @@ Steam change note for the integrated tree. It is an update to the existing item 
 - Description: pasted on the page, read back identical on 2026-09-24.
 - Dependency: one, fixed above.
 - Gallery: the owner uploaded the noon series on 2026-10-06 by her own word (not checkable without a login), with `0-preview.png`. That upload
-  was 9.27 MB for the folder, over the 8 MB limit; the files in `Art/Gallery/` are now recompressed (3.43 MB, same pictures). Whether to
+  was 9.27 MB for the folder, over the 8 MB limit; the files in `Art/Gallery/` are now recompressed (3.43 MB for those six pictures; with the three camp pictures 7 to 9 the whole folder is 6.47 MB). Whether to
   re-upload them is the owner's call. The live header image still predates the ModIcon overlay and the 2026-10-05 icon, since
   `update_preview` is off by default; the next publication can send `Mod/About/Preview.png`.
 - Comments: both posted (section 4).
