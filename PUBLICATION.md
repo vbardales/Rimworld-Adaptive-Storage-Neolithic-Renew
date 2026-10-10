@@ -250,6 +250,7 @@ Steam change note for the integrated tree. It is an update to the existing item 
 [*]Fixed the basket graphic size: its size was declared with one value instead of two. It now reads 2 x 2 as intended.
 [*]French: corrected the descriptions of the baskets, the hay pile, both plinths, the textile bundles, the wood pile and the stone stack (clearer wording, and no mention of colonists, which the plinths could not gender).
 [*]Refreshed the mod icon and the Workshop header image.
+[*]Thanks, in the description, to the authors of the stone mod the tests use and of the mods behind the new gallery pictures.
 [/list]
 ```
 

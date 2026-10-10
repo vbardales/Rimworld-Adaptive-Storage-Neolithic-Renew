@@ -11,7 +11,7 @@ All notable changes to this mod are documented here.
 
 ### Changed
 
-- `About.xml` `<description>` is generated from the single Markdown source of `PUBLICATION.md` (`sync-about-description.mjs`); the Workshop text is unchanged.
+- `About.xml` `<description>` is generated from the single Markdown source of `PUBLICATION.md` (`sync-about-description.mjs`). It now thanks Kuratheris (`[K]Extra Stone`, the third-party stone the tests use) and the authors of the mods staged for the gallery pictures; none is a dependency.
 - Refreshed `ModIcon.png` and `Preview.png`.
 
 ## [1.1.2] — 2026-09-28
