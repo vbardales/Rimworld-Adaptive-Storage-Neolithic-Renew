@@ -229,6 +229,19 @@ The wolf and deer hoods in my gallery are yours. Thank you qux for keeping ETRT:
 The tanning rack in the corner of my camp pictures is yours, and a camp without props is just a field. Thank you Oskar Potocki and Sarg Bjornson for the decor behind [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] :)
 ```
 
+### Use This Instead comment (2026-10-11)
+
+Posted by the owner on the [Use This Instead](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787) page (Mlie), after the 1.1.3 publication. Row in `USE_THIS_INSTEAD.md`.
+
+```
+Hello Mlie, and thank you for Use This Instead. A replacement for a mod that Steam no longer lets people subscribe to:
+
+[b]Old:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895]Adaptive Storage Neolithic Module[/url] by Soul, Phaneron and bradson, packageId adaptive.storage.neolithic, RimWorld 1.4 and 1.5.
+[b]New:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] by Nelim (the same authors' MIT-licensed work, adapted to 1.6), packageId nelim.adaptivestorageneolithic, RimWorld 1.6.
+
+The new mod declares the old one as incompatible. Thanks!
+```
+
 ## 5. Other Steam fields
 
 - Adult-content questionnaire: **No**. The mod contains storage furniture and cartoon item graphics; no mature content is depicted.
@@ -295,7 +308,7 @@ Steam change note for the integrated tree. It is an update to the existing item 
 
 ## Current state
 
-**Published at `1.1.2` (2026-10-01); `1.1.3` in preparation.** Kept for the record; `STATUS.md` is authoritative on what is still open.
+**Published at `1.1.3` (2026-10-11, tag `v1.1.3` at `e47cceb`).** Kept for the record; `STATUS.md` is authoritative on what is still open.
 
 - Workshop item: `3806101377`, public; `Mod/About/PublishedFileId.txt` committed.
 - Released as `1.1.0` (content), `1.1.1` (header image only) and `1.1.2` (back-compat links and basket filter), tags `v1.1.0`, `v1.1.1` and `v1.1.2` created by the CI after each upload. Tag
