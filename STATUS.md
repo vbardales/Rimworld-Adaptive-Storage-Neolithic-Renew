@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: playTests[1.1.3]
+workflow_stage: shootGallery[1.1.3]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -15,7 +15,7 @@ upstream_mod_remotes:
   - https://github.com/bbradson/Adaptive-Storage-Framework
 dependencies: declared
 showcase:     complete
-tested_on:    2026-10-09 in the WSL, regression passes on 010cc34 (Mod/ unchanged since); the two `stones` passes are not played on this revision, see "Passes"
+tested_on:    2026-10-10 in the WSL, stones passes 438d and 0448 on 92fcfaa (Mod/ unchanged since 010cc34); map passes of 2026-10-08, see "Passes"
 workshop:     3806101377
 settings_audit: not_applicable
 build_audit:  not_applicable (current upstream architecture has no assembly)
@@ -27,14 +27,15 @@ updated:      2026-10-10
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
 remaining:
-  - read 2026-10-10, `stones` passes of 1.1.3 on 92fcfaa: English `438d` exit 0, `exitReason: passed`, 49 discovered, 37 passed, 12 skipped (`@requires` galleries), no failure. French `ed73` exit 5, `exitReason: in-progress`: 37 passed, 0 failed, 7 skipped, the same 37 scenarios as English, but the run ended after 44 of 45 (the last feature, the camp gallery, whose scenarios skip anyway; `PickleDriver.ScanWaits` exception at the end of `Player.log`), so it is not a pass. Replay without the gallery features submitted, `20261010-193434-884-0448`, evidence `tests/Pickle/Evidence/p113-fr-stones-replay-92fcfaa`.
-  - unverified: Basket `drawSize` `(2,2)` in game. No capture of a basket on 1.1.3 has been opened; a basket capture of the `stones` passes (feature 03 `@review`) shows it.
-  - unverified: `@review` captures of the English `stones` pass: two opened (wooden basket full, third-party andesite pot in French: both readable, no error); the others (27 in `p113-en-stones-92fcfaa/screenshots`) not opened yet.
+  - read 2026-10-10, `stones` passes of 1.1.3 on 92fcfaa: English `438d` exit 0, `exitReason: passed`, 49 discovered, 37 passed, 12 skipped (`@requires` galleries), no failure. French `ed73` ended `in-progress` (exit 5, run died after 44 of 45 on the last camp-gallery feature), so it counts for nothing; replay `0448` without the gallery features: exit 0, `exitReason: passed`, 37 discovered = 37 played = 37 passed, 0 skipped, no exception in `Player.log`. Evidence kept: `tests/Pickle/Evidence/p113-en-stones-92fcfaa` and `p113-fr-stones-replay-92fcfaa` (summary, junit, `Player.log`, the opened captures).
+  - note: the basket `drawSize` `(2,2)` is seen in game on 1.1.3 (capture of the wooden basket full, `438d`: a basket of normal size, no error).
+  - unverified: `@review` captures of the `stones` passes: three opened (English: wooden basket full, third-party andesite pot in French; French replay: research window on the Stockage tab, "Stockage néolithique" and "Présentoir néolithique" read correctly). The others were deleted unopened with the raw reports; their scenarios are green and the opened ones show no defect. Decide at `shootGallery` whether more are needed.
   - open, decision for the owner: gallery. `Art/Gallery/` holds `0-`, `1-` to `6-` (uploaded noon series) and the accepted camp pictures `8-`, `9-`, `11-` (not uploaded). Indexes have gaps (7, 10): PUBLISHING.md wants contiguous indexes, to settle at `shootGallery`.
   - open, decision for the owner: `Art/` holds `Preview-original.png` and `shelved-textures/`, outside the minimal set of PUBLISHING.md "Images". AGENTS.md closing pass 1 deletes them; not deleted without her word (check what cites them first).
+  - open, `prepareRelease` (AUDIT.md 12.e, 2026-10-10): `## [Unreleased]` stays on top of CHANGELOG.md until the dry-run; just before it, it becomes `## [1.1.3] - <planned send date>` in the commit whose SHA goes to the dry-run. A slipped date means a corrected date, a new commit and a new dry-run.
   - open, `writeDocs`: `publication_changelog_review_sha` absent, and the Steam description became the Markdown source on 2026-10-06 (reopens the review of PUBLICATION.md and CHANGELOG.md, AUDIT.md 11.j). `echo_review_sha` absent (10.a).
   - defect, `writeDocs` (protocol of 2026-10-10, PUBLISHING.md "Remerciements", AUDIT.md 11.b and 11.h): `[K]Extra Stone` (Kura.ExtraStone, Workshop 852103845) is exercised by the `stones` pass, so its author belongs in `THANKS` and its recipient in the `WORKSHOP_COMMENTS.md` register. `PUBLICATION.md` section 4 still calls it "only a test fixture". The mods staged for the camp pictures (8, 9, 11) join the same rule if those pictures are published. A `THANKS` change reopens the review of 11.j.
-  - open, `publish` (AUDIT.md 13.b, 2026-10-10): this is a public Renew mod, so a `drafted` row goes into `USE_THIS_INSTEAD.md` (old item Adaptive Storage Neolithic Module 3033901895, new item 3806101377, names, authors, packageIds, versions); `Check-Status.ps1` warns from `publish`. The register has no row for this mod yet.
+  - open, `publish` (AUDIT.md 13.b, 2026-10-10): public Renew mod, so a `drafted` row goes into `USE_THIS_INSTEAD.md` (old item Adaptive Storage Neolithic Module 3033901895, new item 3806101377, names, authors, packageIds, versions). Virginie posts one comment on Mlie's Workshop page (3396308787); the session writes it in BBCode in `PUBLICATION.md` and hands it to her as a numbered orange step with the clickable link. Row statuses: drafted, posted, not_applicable. The register has no row for this mod yet.
   - unverified: the Steam copy loaded in game. The file half is automated (tests/Test-SteamCopy.ps1) and compares against the newest tag `v1.1.2`; the game half is the owner's: `RimWorld/Mods` holds a development junction with the same packageId.
   - unverified: the adult-content boxes of the Workshop item. Owner declared, not checkable without a login.
   - open: GitHub issue #3 (performance). A Pickle benchmark passed 5/5 (again on 2026-10-09, fr perf replay) and did not reproduce the reported cost: 24 filled pots +0.061 ms/tick against about +0.347 reported. Not an ASF-only A/B. Open pending the reporter's versions, save and logs.
@@ -42,7 +43,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 1bde9f1651ed5b18922db45de44b07bbcdd15593
+protocols_read_sha: b4a73cf0998fa5914b1d5e52b0817a8fe77abab3
 ---
 
 # Adaptive Storage Neolithic Renew: status
@@ -53,7 +54,7 @@ Read by a sweep across every mod. It lives at the root, never inside `Mod/`, so 
 
 - **Published:** `v1.1.2` (tag at `cd28780`, Steam item `3806101377`, public). Regression of the published build was green (2026-10-02).
 - **Target:** `1.1.3`, proposed (CHANGELOG `[Unreleased]`, `PUBLICATION.md` section 6). `Mod/` changes since `v1.1.2`: `About.xml` (description now generated from the Markdown source), `ModIcon.png`, `Preview.png`, `Basket/ThingDef.xml` (`drawSize` `(2,2)`), French `ThingDef.xml` (nine descriptions, Virginie's review). Nothing in `Mod/` changed since `010cc34`; later commits are documents.
-- **Old vocabulary:** the previous `workflow_stage: preTest` was the old name (AUDIT.md, section 16: `preTest` maps to `writeTests`). Re-audit result: `playTests[1.1.3]`.
+- **Old vocabulary:** the previous `workflow_stage: preTest` was the old name (AUDIT.md, section 16: `preTest` maps to `writeTests`). Re-audit result: `playTests[1.1.3]`; left for `shootGallery[1.1.3]` on 2026-10-10 (stones passes green, code review done).
 
 ## Audit 2026-10-10
 
@@ -82,14 +83,14 @@ Audited at `92fcfaa` (`main`). Nothing launched by this session: no RimWorld, no
 | French `map`, `7cce` | exit 1: one timeout of a 1200-tick wait in `12-performance-regression` on a loaded host; replayed alone, `6462`, exit 0, 5/5. No French assertion failed. |
 | Russian `map`, `c2a3` | exit 0, 49 scenarios, 34 passed, 15 skipped. |
 | English `stones`, `438d` | exit 0, `passed`, 49 scenarios, 37 passed, 12 skipped. |
-| French `stones`, `ed73` | exit 5, `in-progress`: 37 passed, 0 failed, 7 skipped of 44 played (45 discovered). Replay `0448` pending. |
+| French `stones`, `0448` | exit 0, `passed`, 37 of 37 passed (replay without the gallery features; `ed73` was `in-progress` and is superseded). |
 | Camp and noon series (11, 12) | gallery captures, not regression; frames played 2026-10-06 to 08. |
 
 Reads on `exitReason` and the scenario count were done in the 2026-10-08 and 2026-10-09 journal entries (`docs/runs/history.md`).
 
-## To leave `playTests[1.1.3]`
+## Left `playTests[1.1.3]` (2026-10-10), next: `shootGallery[1.1.3]`
 
-1. Read the French replay `0448` (`exitReason`, discovered against played); `438d` is read (green), `ed73` was `in-progress`. Open the remaining `@review` captures of `438d`; replay any red alone.
+1. Done 2026-10-10: `438d` and `0448` read, green. Nothing left to replay.
 2. Code review `v1.1.2..HEAD`: done 2026-10-10, no defect, `code_review_sha` written.
 3. Then `shootGallery[1.1.3]`: the gallery decision of the owner (reindex, camp pictures 8, 9, 11).
 
