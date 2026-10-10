@@ -1,0 +1,18 @@
+{
+ "ASNeolithicBasketWoody.label": "basket",
+ "ASNeolithicBasketWoody.description": "A large basket made from wood, fabrics or dried leather for storing all kinds of different items.",
+ "ASNeolithicBasketFabric.label": "basket",
+ "ASNeolithicBasketFabric.description": "A large basket made from wood, fabrics or dried leather for storing all kinds of different items.",
+ "ASNeolithicLargePot.label": "large pot",
+ "ASNeolithicLargePot.description": "A large carved pot meant for the storage of perishable food.",
+ "ASNeolithicLargePotStone.label": "large pot",
+ "ASNeolithicLargePotStone.description": "A large carved pot meant for the storage of perishable food.",
+ "ASNeolithicPlinthWoody.label": "plinth",
+ "ASNeolithicPlinthWoody.description": "A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored.",
+ "ASNeolithicPlinthStone.label": "plinth",
+ "ASNeolithicPlinthStone.description": "A rough plinth with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won't be ignored.",
+ "ASNeolithicTextileBundleFabric.label": "bundle",
+ "ASNeolithicTextileBundleFabric.description": "A couple of textiles stacked upon each other into a neat pile.",
+ "ASNeolithicTextileBundleLeather.label": "bundle",
+ "ASNeolithicTextileBundleLeather.description": "A couple of textiles stacked upon each other into a neat pile."
+}

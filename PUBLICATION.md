@@ -1,10 +1,10 @@
 # Publishing Adaptive Storage Neolithic Renew
 
-Publication sheet for Workshop item `3806101377`, updated after integrating the current upstream source on 2026-09-22; gallery section revised on 2026-10-06.
+Publication sheet for Workshop item `3806101377`, updated for 1.1.3 on 2026-10-10 (integration of the upstream source on 2026-09-22, gallery section revised on 2026-10-06 and 2026-10-10).
 The item already exists, so a game upload updates its files and tags but does not resend the description. The description is sent by the CI (`update_description`) from the Markdown block below, converted to BBCode (checked identical to the previous BBCode block on 2026-10-06).
 
 In-game Pickle pass of 2026-09-23 (`STATUS.md`, `docs/runs/2026-09-23-tested-milestone.md`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
-and has no continuation DLL or direct Harmony dependency. **The mod is at `published`** (2026-09-24): `1.1.0` uploaded the content and `1.1.1` the header image (tags `v1.1.0`, `v1.1.1`; evidence in `STATUS.md`). The page was checked against this file on the same day. What remains manual, and the owner's: the Steam comments and thanks, and any change of visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
+and has no continuation DLL or direct Harmony dependency. **The published version is `1.1.2`** (tag `v1.1.2`, 2026-10-01; `1.1.0` uploaded the content, `1.1.1` the header image); **`1.1.3` is in preparation** (`STATUS.md`, `workflow_stage`; section 6 holds its change note). What remains manual, and the owner's: the Steam comments and thanks, the gallery upload, and any change of visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
 
 ## Steam description
 
@@ -38,7 +38,7 @@ The original mod is declared incompatible because both packages define the same 
 
 Odyssey, Biotech and stone mods are optional. Compatible stone chunks can use the shared ASFStoneChunks category without one generated building definition per stone type.
 
-Known soft incompatibilities reported on the original page, not revalidated here: Alpha Biomes chunks cannot stuff the stacked chunks, Expanded Woodworking woods cannot stuff the wood pile because it uses Timber, and Combat Extended.
+Known compatibility limitations reported on the original page, not rechecked here: Alpha Biomes chunks cannot be used as material for chunk stacks, and Expanded Woodworking woods cannot be used for the wood pile, which requires Timber. Compatibility issues with Combat Extended have also been reported.
 
 Content mod: removing it mid-save destroys any of these containers already built and drops what was inside them.
 
@@ -64,7 +64,7 @@ Elzetia and MrBlack-JB, for the French and Russian translations included upstrea
 
 [Extra Stone](https://steamcommunity.com/sharedfiles/filedetails/?id=852103845) by Kuratheris, the third-party stone mod that the stone buildings are tested against. It is not a dependency either.
 
-The camp pictures of the gallery were staged with other mods, none of them a dependency: [Female Body Variants Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3798082132) and [Female Apparel Variants Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3799726535) (DanZinagri and tiagocc0), [WDI's Realistic Bodies](https://steamcommunity.com/sharedfiles/filedetails/?id=3527486510) (Windonsi and Starkz), [TailorMade: Unified Apparel & Body Refitting](https://steamcommunity.com/sharedfiles/filedetails/?id=3756915448) and [Facial Animation Performance Patch](https://steamcommunity.com/sharedfiles/filedetails/?id=3790129900) (astryl), [Facial Animation - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197) and [Facial Animation - Experimentals](https://steamcommunity.com/sharedfiles/filedetails/?id=2581693737) (Nals), [Vanilla Textures Expanded - Facial Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=2816938779) (Oracle of Thessia), [Akeron Extras - Facial Animations](https://steamcommunity.com/sharedfiles/filedetails/?id=2889716301) (Newton Zephyr), [Vanilla Experimentals for Facial Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=3753978140) (SunshineyDays), [EyeGenes3](https://steamcommunity.com/sharedfiles/filedetails/?id=3745223213) (Lucius), [Mud's Tribal Apparel](https://steamcommunity.com/sharedfiles/filedetails/?id=2796703834) (Mud), [ETRT: Tribal Apparel (continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3545351721) (qux, after Evil Tactician, with Ogam's retextures), and [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) with [Vanilla Furniture Expanded - Props and Decor](https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149) (Oskar Potocki, Sarg Bjornson and the Vanilla Expanded team).
+The camp pictures of the gallery were staged with other mods, none of them a dependency: [Female Body Variants Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3798082132) and [Female Apparel Variants Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3799726535) (DanZinagri and tiagocc0), [WDI's Realistic Bodies](https://steamcommunity.com/sharedfiles/filedetails/?id=3527486510) (Windonsi and Starkz), [TailorMade: Unified Apparel & Body Refitting](https://steamcommunity.com/sharedfiles/filedetails/?id=3756915448) and [Facial Animation Performance Patch](https://steamcommunity.com/sharedfiles/filedetails/?id=3790129900) (astryl), [Facial Animation - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197) and [Facial Animation - Experimentals](https://steamcommunity.com/sharedfiles/filedetails/?id=2581693737) (Nals), [Vanilla Textures Expanded - Facial Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=2816938779) (Oracle of Thessia), [Akeron Extras - Facial Animations](https://steamcommunity.com/sharedfiles/filedetails/?id=2889716301) (Newton Zephyr), [Vanilla Experimentals for Facial Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=3753978140) (SunshineyDays), [EyeGenes3](https://steamcommunity.com/sharedfiles/filedetails/?id=3745223213) (Lucius), [Mud's Tribal Apparel](https://steamcommunity.com/sharedfiles/filedetails/?id=2796703834) (Mud), [ETRT: Tribal Apparel (continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3545351721) (qux, after Evil Tactician, with Ogam's retextures), [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) with [Vanilla Furniture Expanded - Props and Decor](https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149) (Oskar Potocki, Sarg Bjornson and the Vanilla Expanded team), and my own [Venus Touch Waistlines](https://github.com/vbardales/Rimworld-Venus-Touch-Waistlines), which fits the clothes to those bodies.
 
 Full attribution and change history: [ATTRIBUTION.md](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/ATTRIBUTION.md). Released under the MIT licence: [LICENSE](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/LICENSE)
 
@@ -77,11 +77,11 @@ Full attribution and change history: [ATTRIBUTION.md](https://github.com/vbardal
 is the in-game mod-list icon and is not uploaded to the gallery.
 
 **Every gallery starts with a byte-for-byte copy of the Preview** (owner's rule, 2026-09-29): `0-preview.png`
-is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The six picture files below follow it
+is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The nine gallery pictures below follow it
 in the intended order. **Limits** (PUBLISHING.md, owner, 2026-10-06): any number of images, the whole folder under 8 MB and each image
 under 2 MB; the folder is 6.47 MB, the largest image 0.66 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
 
-The six pictures are one story, "noon at the storehouse, seen through the animals that come by", played by Pickle feature
+Pictures 1 to 6 are one story, "noon at the storehouse, seen through the animals that come by", played by Pickle feature
 `11-workshop-captures.feature` on the sanctuary save `Nelims-tribe` (named scene `calm-zone-close`, a cream stone square in the open air,
 no roof and no wall shadow): the hour is set to noon once and each picture waits five more game minutes than the one before (12:00 to
 12:25), with a daytime animal that comes by in each (hen, squirrel, hare, dog, peacock, cat). Pictures 2 and 5 use a closer frame. Evidence
@@ -295,10 +295,10 @@ Steam change note for the integrated tree. It is an update to the existing item 
 
 ## Current state
 
-**`published`, since 2026-09-24.** Kept for the record; `STATUS.md` is authoritative on what is still open.
+**Published at `1.1.2` (2026-10-01); `1.1.3` in preparation.** Kept for the record; `STATUS.md` is authoritative on what is still open.
 
 - Workshop item: `3806101377`, public; `Mod/About/PublishedFileId.txt` committed.
-- Released as `1.1.0` (content) then `1.1.1` (header image only), tags `v1.1.0` and `v1.1.1` created by the CI after each upload. Tag
+- Released as `1.1.0` (content), `1.1.1` (header image only) and `1.1.2` (back-compat links and basket filter), tags `v1.1.0`, `v1.1.1` and `v1.1.2` created by the CI after each upload. Tag
   and release `1.0.0` stay on the earlier packageId commit as history of the pre-integration mod and were never uploaded to Steam.
   Publication path: `publish-tag.yml` (no assembly, so no build), a dry-run of the exact commit first, then
   `Rimworld-Release-Admin/scripts/dispatch-publish.sh` with the full SHA, approved by Virginie.
