@@ -21,7 +21,7 @@ settings_audit: not_applicable
 build_audit:  not_applicable (current upstream architecture has no assembly)
 audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfaa (see "Audit 2026-10-10")
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in docs/runs/history.md
-code_review_sha: 949973b00882b03a1f02e60cef075aa58f144e1a
+code_review_sha: 0309c0ddf353bc779411aa57a63e0b8038ef133f
 session:      local_ebf57a84-2e1f-4dfc-ad22-8a17d8cbac9f
 updated:      2026-10-10
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
@@ -133,6 +133,8 @@ Range `v1.1.2..HEAD` (`949973b`): whole diff of `Mod/`; no `Source/` (the mod ha
 - `ModIcon.png`, `Preview.png`: binary outputs of the owner's sources, not code.
 
 No defect. A commit of `Mod/` after this sha reopens the review and `playTests`.
+
+Addendum 2026-10-10, `0309c0d`: the only `Mod/` change since is `About.xml`, whose description was regenerated from `PUBLICATION.md` with the new `THANKS` paragraphs (4 added lines, plain text). Read: the `&` of "TailorMade: Unified Apparel & Body Refitting" is escaped (`&amp;`), the XML parses, `Test-Mod.ps1` 173 pass, description 6,193 characters (Steam limit 8,000). No defect; `code_review_sha` moved to that commit.
 
 ## Settings audit, 2026-09-28
 
