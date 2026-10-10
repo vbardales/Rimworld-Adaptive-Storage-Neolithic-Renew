@@ -33,5 +33,5 @@ The hash above changed. Protocol documents: the `--git-dir=../rimworld-protocols
 
 ## 2026-10-10 (new session)
 
-Read in full at protocols HEAD `0a26b474`: `AUDIT.md`, `AGENTS.md`, `PICKLE.md`, `PUBLISHING.md`, `TRANSLATIONS.md`, `Rimworld-Ticket-Dispatcher/docs/WELCOME.md`; `MOD_SETTINGS.md` first 40 lines (settings are `not_applicable`).
+Read in full at protocols HEAD `0a26b474` (then the diff to 9737688 of `AGENTS.md`, `AUDIT.md`, `PUBLISHING.md`, `WORKSHOP_COMMENTS.md` and `USE_THIS_INSTEAD.md` in full): `AUDIT.md`, `AGENTS.md`, `PICKLE.md`, `PUBLISHING.md`, `TRANSLATIONS.md`, `Rimworld-Ticket-Dispatcher/docs/WELCOME.md`; `MOD_SETTINGS.md` first 40 lines (settings are `not_applicable`).
 Not read, not needed at `playTests` (trigger in brackets): `STYLE_RIMWORLD.md` [Preview or ModIcon work, `mountPreview`], `WORKSHOP_COMMENTS.md` [writing thanks, `writeDocs`], `GALLERY.md` and `GALLERY-PROPS.md` [gallery captures, `shootGallery`], `PUBLISHING-CI.md` and `Rimworld-Release-Admin/docs/OPERATIONS.md` [before publishing], `ANIMALS.md` [mod adds an animal: no], `TOOLING-PITFALLS.md` [several sessions in one repository], `scripts/SEARCHING.md`, `Rimworld-Ticket-Dispatcher/docs/SUBMIT.md` (options list read for the deposit).
