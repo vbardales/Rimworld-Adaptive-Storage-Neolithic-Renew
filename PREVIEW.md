@@ -5,7 +5,6 @@ Cleaned up by the owner on 2026-10-02: the per-mod renderer (`render-preview.cjs
 from `Art/Preview.config.json`.
 
 - `Preview-source.png`: the unmodified text-free illustration (background).
-- `Preview-original.png`: the first generated version, kept as a visual trace.
 - `Preview.config.json`: title, summary, layout (panel bottom-right), background framing, the echo layer.
 - `echo.png`: transparent line-art layer, the final asset, used unchanged (`preSized`). Without it the
   Preview cannot be re-rendered. Do not delete it in a cleanup.

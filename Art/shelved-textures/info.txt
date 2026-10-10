@@ -1,1 +1,0 @@
-Unused, shelved textures. These don't get loaded from this folder
