@@ -106,7 +106,7 @@ Reads on `exitReason` and the scenario count were done in the 2026-10-08 and 202
 
 ## Gallery (AUDIT.md 9.e), 2026-10-10
 
-Folder 6.47 MB of 8, largest image 0.66 MB of 2. Every image opened: `1-` to `6-` in the 2026-10-06 and 2026-10-08 reads, `7-` to `9-` re-opened on 2026-10-10 (known flaw, accepted by the owner: a thin strip of flowers along the left edge, the border of the place `bare-clearing`).
+Folder 4.98 MB (4,975,714 bytes, ten files) of 8, largest image 0.66 MB of 2. Every image opened: `1-` to `6-` in the 2026-10-06 and 2026-10-08 reads, `7-` to `9-` re-opened on 2026-10-10 (known flaw, accepted by the owner: a thin strip of flowers along the left edge, the border of the place `bare-clearing`).
 
 | # | File | Story and place | Why here |
 | --- | --- | --- | --- |

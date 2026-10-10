@@ -79,7 +79,7 @@ is the in-game mod-list icon and is not uploaded to the gallery.
 **Every gallery starts with a byte-for-byte copy of the Preview** (owner's rule, 2026-09-29): `0-preview.png`
 is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The nine gallery pictures below follow it
 in the intended order. **Limits** (PUBLISHING.md, owner, 2026-10-06): any number of images, the whole folder under 8 MB and each image
-under 2 MB; the folder is 6.47 MB, the largest image 0.66 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
+under 2 MB; the folder is 4.98 MB (4,975,714 bytes, ten files), the largest image 0.66 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
 
 Pictures 1 to 6 are one story, "noon at the storehouse, seen through the animals that come by", played by Pickle feature
 `11-workshop-captures.feature` on the sanctuary save `Nelims-tribe` (named scene `calm-zone-close`, a cream stone square in the open air,
@@ -202,7 +202,7 @@ Akeron faces were on the guest list for the camp pictures of [url=https://steamc
 **Vanilla Experimentals for Facial Animation (SunshineyDays)** (3753978140)
 
 ```text
-Moving vanilla eyes, small detail, big difference when you zoom on a pawn: I loaded yours for the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thanks SunshineyDays, very nice touch :)
+Moving vanilla eyes, small detail, big difference when you zoom in on a pawn: I loaded yours for the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thanks SunshineyDays, very nice touch :)
 ```
 
 **EyeGenes3 (Lucius)** (3745223213)
@@ -248,9 +248,9 @@ Steam change note for the integrated tree. It is an update to the existing item 
 
 [list]
 [*]Fixed the basket graphic size: its size was declared with one value instead of two. It now reads 2 x 2 as intended.
-[*]French: corrected the descriptions of the baskets, the hay pile, both plinths, the textile bundles, the wood pile and the stone stack (clearer wording, and no mention of colonists, which the plinths could not gender).
+[*]French: corrected the descriptions of the baskets, the hay pile, both plinths, the textile bundles, the wood pile and the stone stack (clearer wording and gender-neutral phrasing in the plinth descriptions).
 [*]Refreshed the mod icon and the Workshop header image.
-[*]Thanks, in the description, to the authors of the stone mod the tests use and of the mods behind the new gallery pictures.
+[*]Added credits to the description for the stone mod used in testing and the mods used to stage the new gallery pictures.
 [/list]
 ```
 
@@ -307,8 +307,8 @@ Steam change note for the integrated tree. It is an update to the existing item 
 - Description: pasted on the page, read back identical on 2026-09-24.
 - Dependency: one, fixed above.
 - Gallery: the owner uploaded the noon series on 2026-10-06 by her own word (not checkable without a login), with `0-preview.png`. That upload
-  was 9.27 MB for the folder, over the 8 MB limit; the files in `Art/Gallery/` are now recompressed (3.43 MB for those six pictures; with the three camp pictures 7 to 9 the whole folder is 6.47 MB). Whether to
-  re-upload them is the owner's call. The live header image still predates the ModIcon overlay and the 2026-10-05 icon, since
+  was 9.27 MB for the folder, over the 8 MB limit; the files in `Art/Gallery/` are now recompressed (3.43 MB for `0-preview.png` and the six noon pictures; with the three camp pictures 7 to 9 the whole folder is 4.98 MB). Whether to
+  re-upload them is the owner's call. The live header image is the one published with 1.1.2 (it carries the earlier ModIcon); the Preview regenerated on 2026-10-05 from the new icon source is not on the page yet, since
   `update_preview` is off by default; the next publication can send `Mod/About/Preview.png`.
 - Comments: both posted (section 4).
 - Still open, not blocking: the file half of a Steam-copy subscription test is automated and passes
