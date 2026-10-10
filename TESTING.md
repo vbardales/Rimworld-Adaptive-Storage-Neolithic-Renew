@@ -162,8 +162,8 @@ Choice (2026-10-06, from PickleTools' noon photographs of the candidates): **`ca
 
 `12-workshop-camp.feature` (`@wip`, pass `wsl-deps.camp.map`, `-IncludeWip`) plays a second series, "Noon at the camp", with three pawns
 (Venus Touch Waistlines, Female Body Variants and WDI bodies loaded). Its six pictures are cut by `node scripts/Cut-Candidates.cjs <evidence>/screenshots`
-into `Art/Gallery/` as `8-`, `9-` and `11-` (accepted; 7, 10 and 12 refused and deleted) (1280 px, 256 colours), the **candidates** after the noon set (owner, 2026-10-08: candidates go in the gallery with their index and name); the uploaded set `1-` to `6-` is untouched, and the owner
-decides whether they replace it or join it (8 MB for the folder, 2 MB each: the whole of `Art/Gallery/` is 6.47 MB with the candidates).
+into `Art/Gallery/` as `7-`, `8-` and `9-` (accepted by the owner 2026-10-08, three others refused and deleted, reindexed without gaps 2026-10-10) (1280 px, 256 colours), after the noon set; the uploaded set `1-` to `6-` is untouched, and the owner
+join it, decided by the session 2026-10-10 as the director of the gallery (8 MB for the folder, 2 MB each: the whole of `Art/Gallery/` is 6.47 MB with the camp pictures).
 Pawn order that works (Pickle Tools, 2026-10-07): waits first, `game speed is paused`, create colonists and dress them, `stands at` last, then
 `the other colonists are out of frame`, presentation mode, capture; no wait after the pawns. Raw frames: `tests/Pickle/Evidence/camp-final-7438e80`,
 kept until the owner has validated and uploaded. Remaining flaw: a thin strip of the place's green border at the top edge of 1, 4 and 6.

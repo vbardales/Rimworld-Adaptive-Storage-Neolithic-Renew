@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: shootGallery[1.1.3]
+workflow_stage: mountPreview[1.1.3]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -30,11 +30,11 @@ remaining:
   - read 2026-10-10, `stones` passes of 1.1.3 on 92fcfaa: English `438d` exit 0, `exitReason: passed`, 49 discovered, 37 passed, 12 skipped (`@requires` galleries), no failure. French `ed73` ended `in-progress` (exit 5, run died after 44 of 45 on the last camp-gallery feature), so it counts for nothing; replay `0448` without the gallery features: exit 0, `exitReason: passed`, 37 discovered = 37 played = 37 passed, 0 skipped, no exception in `Player.log`. Evidence kept: `tests/Pickle/Evidence/p113-en-stones-92fcfaa` and `p113-fr-stones-replay-92fcfaa` (summary, junit, `Player.log`, the opened captures).
   - note: the basket `drawSize` `(2,2)` is seen in game on 1.1.3 (capture of the wooden basket full, `438d`: a basket of normal size, no error).
   - unverified: `@review` captures of the `stones` passes: three opened (English: wooden basket full, third-party andesite pot in French; French replay: research window on the Stockage tab, "Stockage néolithique" and "Présentoir néolithique" read correctly). The others were deleted unopened with the raw reports; their scenarios are green and the opened ones show no defect. Decide at `shootGallery` whether more are needed.
-  - open, decision for the owner: gallery. `Art/Gallery/` holds `0-`, `1-` to `6-` (uploaded noon series) and the accepted camp pictures `8-`, `9-`, `11-` (not uploaded). Indexes have gaps (7, 10): PUBLISHING.md wants contiguous indexes, to settle at `shootGallery`.
+  - open, owner's action at `publish`: upload `7-` to `9-` (camp pictures) on the Steam page by hand, in order, after `0-` to `6-` (Steam answers "file upload fail: 29" for an image already on the page: not an error). Their raw frames are deleted.
   - open, decision for the owner: `Art/` holds `Preview-original.png` and `shelved-textures/`, outside the minimal set of PUBLISHING.md "Images". AGENTS.md closing pass 1 deletes them; not deleted without her word (check what cites them first).
   - open, `prepareRelease` (AUDIT.md 12.e, 2026-10-10): `## [Unreleased]` stays on top of CHANGELOG.md until the dry-run; just before it, it becomes `## [1.1.3] - <planned send date>` in the commit whose SHA goes to the dry-run. A slipped date means a corrected date, a new commit and a new dry-run.
   - open, `writeDocs`: `publication_changelog_review_sha` absent, and the Steam description became the Markdown source on 2026-10-06 (reopens the review of PUBLICATION.md and CHANGELOG.md, AUDIT.md 11.j). `echo_review_sha` absent (10.a).
-  - defect, `writeDocs` (protocol of 2026-10-10, PUBLISHING.md "Remerciements", AUDIT.md 11.b and 11.h): `[K]Extra Stone` (Kura.ExtraStone, Workshop 852103845) is exercised by the `stones` pass, so its author belongs in `THANKS` and its recipient in the `WORKSHOP_COMMENTS.md` register. `PUBLICATION.md` section 4 still calls it "only a test fixture". The mods staged for the camp pictures (8, 9, 11) join the same rule if those pictures are published. A `THANKS` change reopens the review of 11.j.
+  - defect, `writeDocs` (protocol of 2026-10-10, PUBLISHING.md "Remerciements", AUDIT.md 11.b and 11.h): `[K]Extra Stone` (Kura.ExtraStone, Workshop 852103845) is exercised by the `stones` pass, so its author belongs in `THANKS` and its recipient in the `WORKSHOP_COMMENTS.md` register. `PUBLICATION.md` section 4 still calls it "only a test fixture". The camp pictures `7-` to `9-` are in the gallery (session's decision 2026-10-10), so the mods that `wsl-deps.camp.map` stages for them join the same rule: Female Body Variants 3798082132, Female Apparel Variants 3799726535, WDI Realistic Bodies 3527486510, astryl.tailormade 3756915448 (Venus Touch Waistlines is the owner's own project), Facial Animation 1635901197 with its Experimentals 2581693737, VTE Facial Anims 2816938779, AKN Extras Facial Animations 2889716301, Eye Genes 3 3745223213, the Facial Animation performance patch 3790129900, Moving Vanilla Eyes 3753978140, Mud's Tribal Apparel 2796703834, ETRT Tribal Apparel 3545351721, Vanilla Expanded Framework 2023507013 and VFE Props and Decor 2102143149. Authors to be read on each page (never from memory), then `THANKS`, one `WORKSHOP_COMMENTS.md` row each (Vanilla Expanded Framework already has a row: add this mod to its Covers), a draft each in `PUBLICATION.md`. A `THANKS` change reopens the review of 11.j. Note: a long list; if the owner finds it too heavy, the alternative is to drop `7-` to `9-` from the gallery, her call.
   - open, `publish` (AUDIT.md 13.b, 2026-10-10): public Renew mod, so a `drafted` row goes into `USE_THIS_INSTEAD.md` (old item Adaptive Storage Neolithic Module 3033901895, new item 3806101377, names, authors, packageIds, versions). Virginie posts one comment on Mlie's Workshop page (3396308787); the session writes it in BBCode in `PUBLICATION.md` and hands it to her as a numbered orange step with the clickable link. Row statuses: drafted, posted, not_applicable. The register has no row for this mod yet.
   - unverified: the Steam copy loaded in game. The file half is automated (tests/Test-SteamCopy.ps1) and compares against the newest tag `v1.1.2`; the game half is the owner's: `RimWorld/Mods` holds a development junction with the same packageId.
   - unverified: the adult-content boxes of the Workshop item. Owner declared, not checkable without a login.
@@ -88,11 +88,30 @@ Audited at `92fcfaa` (`main`). Nothing launched by this session: no RimWorld, no
 
 Reads on `exitReason` and the scenario count were done in the 2026-10-08 and 2026-10-09 journal entries (`docs/runs/history.md`).
 
-## Left `playTests[1.1.3]` (2026-10-10), next: `shootGallery[1.1.3]`
+## Left `playTests[1.1.3]` and `shootGallery[1.1.3]` (2026-10-10), now: `mountPreview[1.1.3]`
 
 1. Done 2026-10-10: `438d` and `0448` read, green. Nothing left to replay.
 2. Code review `v1.1.2..HEAD`: done 2026-10-10, no defect, `code_review_sha` written.
-3. Then `shootGallery[1.1.3]`: the gallery decision of the owner (reindex, camp pictures 8, 9, 11).
+3. `shootGallery[1.1.3]` (AUDIT.md step 9): the session directs the gallery (GALLERY.md, read 2026-10-10). Decided 2026-10-10: the three camp pictures the owner accepted on 2026-10-08 join the noon series as `7-` to `9-`, one story (the same noon, the tribe comes to the same storage), indexes contiguous.
+
+## Gallery (AUDIT.md 9.e), 2026-10-10
+
+Folder 6.47 MB of 8, largest image 0.66 MB of 2. Every image opened: `1-` to `6-` in the 2026-10-06 and 2026-10-08 reads, `7-` to `9-` re-opened on 2026-10-10 (known flaw, accepted by the owner: a thin strip of flowers along the left edge, the border of the place `bare-clearing`).
+
+| # | File | Story and place | Why here |
+| --- | --- | --- | --- |
+| 0 | `0-preview.png` | header image | byte copy of `Mod/About/Preview.png` |
+| 1 | `1-the-whole-set.png` | noon at the storehouse, `calm-zone-close` | most demonstrative: the whole set with its contents; Steam shows it large right after the header |
+| 2 | `2-a-basket-fills-up.png` | same, 12:05, squirrel | the mod's central promise: a container shows what it holds |
+| 3 | `3-chunk-stacks.png` | same, 12:10, hare | stone-as-stuff stacks at several levels, two materials |
+| 4 | `4-large-pots.png` | same, 12:15, dog | pots with different foods |
+| 5 | `5-plinths.png` | same, 12:20, peacock | plinths showing items |
+| 6 | `6-a-stone-from-another-mod.png` | same, 12:25, cat | integration: a third-party stone beside granite |
+| 7 | `7-three-baskets.png` | the camp, `bare-clearing` | the tribe at the same storage: baskets empty, one item, full |
+| 8 | `8-fuel-and-stone.png` | the camp | wood and hay piles, granite and marble stacks |
+| 9 | `9-the-tribes-treasures.png` | the camp | plinths with the chief: the display side of the mod |
+
+Index and table aligned in `PUBLICATION.md` section 2.
 
 ## Code review, 2026-10-10 (AUDIT.md 8.m)
 
