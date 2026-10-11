@@ -1,8 +1,21 @@
-# Run with: pwsh -NoProfile -File tests/Test-Mod.ps1
-# Static contracts for the current upstream stone-as-stuff architecture.
+# Run with: powershell -NoProfile -File tests/Test-Mod.ps1 (Windows PowerShell 5.1 or pwsh)
+# What only this mod knows: the stone-as-stuff architecture, the framework dependency, the save migrations, the Russian path
+# case and the texture paths. The generic checks (XML well formed, unique defNames, About.xml shape, notices, images,
+# translation coverage) live in the shared scripts/Check-ModBasics.ps1 and scripts/Check-Translations.ps1, called first.
+# Not -Unofficial: the licence is open (MIT), the name carries no suffix.
 $ErrorActionPreference = 'Stop'
-$modRoot = Join-Path $PSScriptRoot '../Mod'
+$modRoot = (Resolve-Path (Join-Path $PSScriptRoot '../Mod')).Path
 $script:checks = 0
+$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
+$shared = Join-Path $PSScriptRoot '../../scripts'
+if (Test-Path (Join-Path $shared 'Check-ModBasics.ps1')) {
+    & (Join-Path $shared 'Check-ModBasics.ps1') -ModRoot $repoRoot
+    if ($LASTEXITCODE -ne 0) { throw 'FAIL: Check-ModBasics.ps1 reported findings' }
+    & (Join-Path $shared 'Check-Translations.ps1') -ModRoot $repoRoot -NoKeyed
+    if ($LASTEXITCODE -ne 0) { throw 'FAIL: Check-Translations.ps1 reported findings' }
+} else {
+    Write-Warning 'scripts/Check-ModBasics.ps1 not found beside this repository (standalone checkout, CI): the generic checks did NOT run.'
+}
 
 function Assert-True($Condition, [string]$Message) {
     $script:checks++
@@ -27,11 +40,6 @@ foreach ($doc in $documents.Values) {
     }
 }
 
-$identities = @($defs.SelectNodes('/Defs/*[defName]') | ForEach-Object {
-    $_.Name + ':' + $_.SelectSingleNode('defName').InnerText
-})
-Assert-True (@($identities | Group-Object | Where-Object Count -gt 1).Count -eq 0) 'Unique defNames within each Def type'
-
 $meta = [xml](Get-Content (Join-Path $modRoot 'About/About.xml') -Raw)
 Assert-True ($meta.ModMetaData.packageId -ceq 'nelim.adaptivestorageneolithic') 'Continuation packageId'
 Assert-True ($meta.ModMetaData.name -ceq 'Adaptive Storage Neolithic Renew') 'Continuation name'
@@ -45,8 +53,6 @@ Assert-True (-not (Select-String -Path (Join-Path $modRoot 'About/About.xml') -P
 
 $publishedId = (Get-Content (Join-Path $modRoot 'About/PublishedFileId.txt') -Raw).Trim()
 Assert-True ($publishedId -ceq '3806101377') 'Workshop PublishedFileId preserved'
-Assert-True (Test-Path (Join-Path $modRoot 'About/ModIcon.png')) 'Continuation icon preserved'
-Assert-True (Test-Path (Join-Path $modRoot 'About/Preview.png')) 'Continuation preview preserved'
 
 $thingDefs = @{}
 foreach ($node in $defs.SelectNodes('/Defs/ThingDef[defName]')) {
@@ -78,7 +84,7 @@ $textureRoot = Join-Path $modRoot 'Textures'
 $textureFiles = @(Get-ChildItem $textureRoot -Recurse -File)
 $textureKeys = @{}
 foreach ($file in $textureFiles) {
-    $relative = [IO.Path]::GetRelativePath($textureRoot, $file.FullName).Replace('\', '/')
+    $relative = $file.FullName.Substring($textureRoot.Length + 1).Replace('\', '/')
     $textureKeys[$relative] = $true
 }
 foreach ($doc in $documents.Values) {
