@@ -2,6 +2,12 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased]
+
+### Added
+
+- RimWorld 1.7 support: `<li>1.7</li>` in `supportedVersions` (About.xml). XML-only mod, no assembly, no `1.7/` folder. Draft for 1.2.0: this entry stays unreleased until the Pickle run on 1.7 is green (AUDIT.md, "Passe 1.7").
+
 ## [1.1.3] - 2026-10-11
 
 ### Fixed

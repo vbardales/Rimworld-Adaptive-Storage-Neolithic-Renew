@@ -15,6 +15,7 @@ upstream_mod_remotes:
   - https://github.com/bbradson/Adaptive-Storage-Framework
 dependencies: declared
 showcase:     complete
+tested_1_7:   no
 tested_on:    2026-10-10 in the WSL, stones passes 438d and 0448 on 92fcfaa (Mod/ unchanged since 010cc34); map passes of 2026-10-08, see "Passes"
 workshop:     3806101377
 settings_audit: not_applicable
@@ -30,6 +31,7 @@ echo_review_sha: eb6abc006743bd96796837740b5dc567ba375959
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: ff352f822e42fe1f829c06dfd06cfc01f345c9be32ef8e7d5886e9ef4460e065
 remaining:
+  - open, 1.7 migration, target `v1.2.0` (owner's choice 2026-10-12; AUDIT.md "Passe 1.7", 881278f, provisional): (a) green 1.6 `playTests` 8.n first; (b) green Pickle run on 1.7 (`Run-PickleWsl.ps1 -Mod <dir> -Game <absolute WSL path of rimworld17> -PickleSrc <Rimworld-Pickle#63 build>`, with `XDG_CONFIG_HOME`/`CONFIG` isolated, else staging refuses); not before the pilot RetroJoyRenew is green; (c) only after that green run: `<li>1.7</li>` in `supportedVersions` (About.xml and the Pickle companion), then the `[Unreleased]` CHANGELOG entry becomes `## [1.2.0] - <dry-run day>` in the date commit; (d) set `tested_1_7: yes` and add a `docs/runs/` line. `<li>1.7</li>` without a green run is forbidden. No DLL: no `1.7/` folder, no LoadFolders. Tag `v1.2.0` is created by the CI after the dry-run and the owner's approval; the session does not tag. `About.xml` is still 1.6 only; the CHANGELOG draft sits in `[Unreleased]`.
   - read 2026-10-10, `stones` passes of 1.1.3 on 92fcfaa: English `438d` exit 0, `exitReason: passed`, 49 discovered, 37 passed, 12 skipped (`@requires` galleries), no failure. French `ed73` ended `in-progress` (exit 5, run died after 44 of 45 on the last camp-gallery feature), so it counts for nothing; replay `0448` without the gallery features: exit 0, `exitReason: passed`, 37 discovered = 37 played = 37 passed, 0 skipped, no exception in `Player.log`. Evidence kept: `tests/Pickle/Evidence/p113-en-stones-92fcfaa` and `p113-fr-stones-replay-92fcfaa` (summary, junit, `Player.log`, the opened captures).
   - note: the basket `drawSize` `(2,2)` is seen in game on 1.1.3 (capture of the wooden basket full, `438d`: a basket of normal size, no error).
   - unverified: `@review` captures of the `stones` passes: three opened (English: wooden basket full, third-party andesite pot in French; French replay: research window on the Stockage tab, "Stockage néolithique" and "Présentoir néolithique" read correctly). The others were deleted unopened with the raw reports; their scenarios are green and the opened ones show no defect. Decide at `shootGallery` whether more are needed.
