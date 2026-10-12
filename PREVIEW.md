@@ -6,7 +6,7 @@ from `Art/Preview.config.json`.
 
 - `Preview-source.png`: the unmodified text-free illustration (background).
 - `Preview.config.json`: title, summary, layout (panel bottom-right), background framing, the echo layer.
-- `echo.png`: transparent line-art layer, the final asset, used unchanged (`preSized`). Without it the
+- `echo-preview.png` (formerly `echo.png`, renamed 2026-10-12; a line-art drawing derived from `Preview-source.png`): transparent line-art layer, the final asset, used unchanged (`preSized`). Without it the
   Preview cannot be re-rendered. Do not delete it in a cleanup.
 - `ModIcon-source.png` (1254 px, the owner's, never edited by a session): source of the icon. The renderer reads `modIconSource` in
   `Preview.config.json` and writes the 128 px `Mod/About/ModIcon.png` from it, then regenerates `Art/ModIcon.ico`.
