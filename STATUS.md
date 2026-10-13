@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: followUp[1.1.3]
+workflow_stage: playTests[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -24,7 +24,7 @@ audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfa
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in docs/runs/history.md
 code_review_sha: 28968101cfc28dc3b8eac7561250a4108747f6c9
 session:      local_ebf57a84-2e1f-4dfc-ad22-8a17d8cbac9f
-updated:      2026-10-11
+updated:      2026-10-13
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
 echo_review_sha: eb6abc006743bd96796837740b5dc567ba375959
@@ -32,6 +32,9 @@ publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: ff352f822e42fe1f829c06dfd06cfc01f345c9be32ef8e7d5886e9ef4460e065
 remaining:
   - open, 1.7 migration, target `v1.2.0` (owner's choice 2026-10-12; AUDIT.md "Passe 1.7", 881278f, provisional): (a) green 1.6 `playTests` 8.n first; (b) green Pickle run on 1.7 (`Run-PickleWsl.ps1 -Mod <dir> -Game <absolute WSL path of rimworld17> -PickleSrc <Rimworld-Pickle#63 build>`, with `XDG_CONFIG_HOME`/`CONFIG` isolated, else staging refuses); not before the pilot RetroJoyRenew is green; (c) only after that green run: `<li>1.7</li>` in `supportedVersions` (About.xml and the Pickle companion), then the `[Unreleased]` CHANGELOG entry becomes `## [1.2.0] - <dry-run day>` in the date commit; (d) set `tested_1_7: yes` and add a `docs/runs/` line. `<li>1.7</li>` without a green run is forbidden. No DLL: no `1.7/` folder, no LoadFolders. Tag `v1.2.0` is created by the CI after the dry-run and the owner's approval; the session does not tag. `About.xml` is still 1.6 only; the CHANGELOG draft sits in `[Unreleased]`.
+  - waiting 2026-10-13, 1.7 run (session marker blue): the Ticket Manager (Rôle TM) refuses to file the ticket because `Submit-PickleRun.ps1` has no `-Game` and no isolated config (`SUBMIT.md`, "Ce que la demande ne transmet pas"); the owner assigned the worker/launcher change to the "RimWorld 1.7 Waylith Engine update" session. When it reports ready, send the Ticket Manager the request: `map` without `-Filter` (English, French, Russian) and `stones` (English, French) without the gallery features, one request per language, `-EvidenceDir tests/Pickle/Evidence/p17-<pass>-<lang>-<sha>`, `-Label` with the mod SHA. Priority is the Ticket Manager's. Pilot RetroJoyRenew not green yet at the last report.
+  - done 2026-10-13, `1.2.0` is a minor version (owner's choice): 1.6 is kept, 1.7 added, nothing breaking. Drafts committed: CHANGELOG `[Unreleased]` (`5848f18`), `PUBLICATION.md` section 6 `### 1.2.0` change note (`d493825`). Not done on purpose, because 1.7 is not proven: `<li>1.7</li>`, the `[1.2.0] - <date>` heading, the description line "RimWorld 1.6 is declared" (a description change reopens the owner's `PUBLICATION.md` + `CHANGELOG.md` review).
+  - planned, after a green 1.7 run: a pull request to upstream `bbradson/Adaptive-Storage-Neolithic-Module` with the 1.7 declaration and the run result (owner's yes, 2026-10-13); not opened before.
   - read 2026-10-10, `stones` passes of 1.1.3 on 92fcfaa: English `438d` exit 0, `exitReason: passed`, 49 discovered, 37 passed, 12 skipped (`@requires` galleries), no failure. French `ed73` ended `in-progress` (exit 5, run died after 44 of 45 on the last camp-gallery feature), so it counts for nothing; replay `0448` without the gallery features: exit 0, `exitReason: passed`, 37 discovered = 37 played = 37 passed, 0 skipped, no exception in `Player.log`. Evidence kept: `tests/Pickle/Evidence/p113-en-stones-92fcfaa` and `p113-fr-stones-replay-92fcfaa` (summary, junit, `Player.log`, the opened captures).
   - note: the basket `drawSize` `(2,2)` is seen in game on 1.1.3 (capture of the wooden basket full, `438d`: a basket of normal size, no error).
   - unverified: `@review` captures of the `stones` passes: three opened (English: wooden basket full, third-party andesite pot in French; French replay: research window on the Stockage tab, "Stockage néolithique" and "Présentoir néolithique" read correctly). The others were deleted unopened with the raw reports; their scenarios are green and the opened ones show no defect. Decide at `shootGallery` whether more are needed.
@@ -54,7 +57,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 7883c8630b52fe60e0cd94c19262d9dbfbaf1890
+protocols_read_sha: b1a713a1f6ec6d967734d6a92488778787bb40d5
 ---
 
 # Adaptive Storage Neolithic Renew: status
