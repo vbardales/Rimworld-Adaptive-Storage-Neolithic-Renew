@@ -1,10 +1,10 @@
 # Publishing Adaptive Storage Neolithic Renew
 
-Publication sheet for Workshop item `3806101377`, updated for 1.1.3 on 2026-10-10 (integration of the upstream source on 2026-09-22, gallery section revised on 2026-10-06 and 2026-10-10).
+Publication sheet for Workshop item `3806101377`, updated for 1.2.0 on 2026-10-14 (integration of the upstream source on 2026-09-22, gallery section revised on 2026-10-06 and 2026-10-10).
 The item already exists, so a game upload updates its files and tags but does not resend the description. The description is sent by the CI (`update_description`) from the Markdown block below, converted to BBCode (checked identical to the previous BBCode block on 2026-10-06).
 
 In-game Pickle pass of 2026-09-23 (`STATUS.md`, `docs/runs/2026-09-23-tested-milestone.md`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
-and has no continuation DLL or direct Harmony dependency. **The published version is `1.1.2`** (tag `v1.1.2`, 2026-10-01; `1.1.0` uploaded the content, `1.1.1` the header image); **`1.1.3` is in preparation** (`STATUS.md`, `workflow_stage`; section 6 holds its change note). What remains manual, and the owner's: the Steam comments and thanks, the gallery upload, and any change of visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
+and has no continuation DLL or direct Harmony dependency. **The published version is `1.1.3`** (tag `v1.1.3` at `e47cceb`, 2026-10-11; `1.1.0` uploaded the content, `1.1.1` and `1.1.2` the header image and the fixes); **`1.2.0` (RimWorld 1.7 support) is in preparation** (`STATUS.md`, `workflow_stage`; section 6 holds its change note). What remains manual, and the owner's: the Steam comments and thanks, the gallery upload, and any change of visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
 
 ## Steam description
 
@@ -19,7 +19,7 @@ Two neolithic research projects unlock the set, both available from a tribal sta
 
 **REQUIRES** the [Adaptive Storage Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359). It does nothing on its own.
 
-I am not the author of this mod. The buildings, artwork and design are Soul's, Phaneron's and bradson's. This continuation follows their current GitHub source rather than the older Workshop upload. Credit goes to them; mistakes in the 1.6 adaptation are mine.
+I am not the author of this mod. The buildings, artwork and design are Soul's, Phaneron's and bradson's. This continuation follows their current GitHub source rather than the older Workshop upload. Credit goes to them; mistakes in the adaptation are mine.
 
 ## ORIGINAL MOD
 
@@ -30,7 +30,7 @@ Current upstream source: [GitHub](https://github.com/bbradson/Adaptive-Storage-N
 
 The continuation is based on the original authors' current main branch. That branch replaces one generated building per stone type with three buildings made from the framework's ASFStoneChunks stuff category. Its compatibility patch migrates the older generated defNames and their blueprints and frames to the new buildings while preserving the stone chunk as stuff. This also avoids the old crash path for chunks without their own colour.
 
-The current upstream definitions, balance values, graphics definitions and integrated textures are preserved. RimWorld 1.6 is declared, and the Russian DefInjected folder uses the exact casing required on Linux and Steam Deck.
+The current upstream definitions, balance values, graphics definitions and integrated textures are preserved. The latest RimWorld version is declared, and the Russian DefInjected folder uses the exact casing required on Linux and Steam Deck.
 
 ## COMPATIBILITY
 

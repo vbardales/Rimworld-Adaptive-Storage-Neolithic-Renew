@@ -26,7 +26,7 @@ Two neolithic research projects unlock the set, both available from a tribal sta
 
 REQUIRES the Adaptive Storage Framework (https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359). It does nothing on its own.
 
-I am not the author of this mod. The buildings, artwork and design are Soul's, Phaneron's and bradson's. This continuation follows their current GitHub source rather than the older Workshop upload. Credit goes to them; mistakes in the 1.6 adaptation are mine.
+I am not the author of this mod. The buildings, artwork and design are Soul's, Phaneron's and bradson's. This continuation follows their current GitHub source rather than the older Workshop upload. Credit goes to them; mistakes in the adaptation are mine.
 
 ORIGINAL MOD
 
@@ -37,7 +37,7 @@ WHAT CHANGED
 
 The continuation is based on the original authors' current main branch. That branch replaces one generated building per stone type with three buildings made from the framework's ASFStoneChunks stuff category. Its compatibility patch migrates the older generated defNames and their blueprints and frames to the new buildings while preserving the stone chunk as stuff. This also avoids the old crash path for chunks without their own colour.
 
-The current upstream definitions, balance values, graphics definitions and integrated textures are preserved. RimWorld 1.6 is declared, and the Russian DefInjected folder uses the exact casing required on Linux and Steam Deck.
+The current upstream definitions, balance values, graphics definitions and integrated textures are preserved. The latest RimWorld version is declared, and the Russian DefInjected folder uses the exact casing required on Linux and Steam Deck.
 
 COMPATIBILITY
 
