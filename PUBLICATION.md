@@ -164,6 +164,18 @@ The new mod declares the old one as incompatible. Thanks!
 Steam change note for the integrated tree. It is an update to the existing item `3806101377`, uploaded by the manual workflow
 `.github/workflows/publish-tag.yml`, which reads the fenced block under the `### <version>` heading below.
 
+### 1.2.0
+
+Draft: it goes out only after a green Pickle run on RimWorld 1.7 (STATUS.md, `tested_1_7`), together with `<li>1.7</li>` in `supportedVersions`.
+
+```text
+[h3]1.2.0 - RimWorld 1.7 support[/h3]
+
+[list]
+[*]The mod now declares RimWorld 1.7 next to 1.6. Content is unchanged: no defs, textures or translations were touched.
+[/list]
+```
+
 ### 1.1.3
 
 ```text
