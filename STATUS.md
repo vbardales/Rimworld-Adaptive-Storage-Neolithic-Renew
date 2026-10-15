@@ -27,10 +27,11 @@ session:      local_ebf57a84-2e1f-4dfc-ad22-8a17d8cbac9f
 updated:      2026-10-13
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
-echo_review_sha: eb6abc006743bd96796837740b5dc567ba375959
+echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
-social_preview_sha256: ff352f822e42fe1f829c06dfd06cfc01f345c9be32ef8e7d5886e9ef4460e065
+social_preview_sha256: f87bd2abb2c32c1f0c50fe3fab0589405e8010883f3701de4729b9163459e00f
 remaining:
+  - open 2026-10-15, echo `echo-source.png` (owner's, from the accepted gallery) replaces `echo-preview.png`; Preview rendered again (`Render-Preview.cjs`, badge still `1.6`: the badge becomes `1.7` in the same commit as `<li>1.7</li>`), `echo_review_sha` and `social_preview_sha256` updated. Not done: upload of the new `About/Preview.png` as the GitHub social preview (web settings, owner login); `Art/echo-preview.png` still on disk, unused.
   - open, 1.7 migration, target `v1.2.0` (owner's choice 2026-10-12; AUDIT.md "Passe 1.7", 881278f, provisional): (a) green 1.6 `playTests` 8.n first; (b) green Pickle run on 1.7 (`Run-PickleWsl.ps1 -Mod <dir> -Game <absolute WSL path of rimworld17> -PickleSrc <Rimworld-Pickle#63 build>`, with `XDG_CONFIG_HOME`/`CONFIG` isolated, else staging refuses); not before the pilot RetroJoyRenew is green; (c) only after that green run: `<li>1.7</li>` in `supportedVersions` (About.xml and the Pickle companion), then the `[Unreleased]` CHANGELOG entry becomes `## [1.2.0] - <dry-run day>` in the date commit; (d) set `tested_1_7: yes` and add a `docs/runs/` line. `<li>1.7</li>` without a green run is forbidden. No DLL: no `1.7/` folder, no LoadFolders. Tag `v1.2.0` is created by the CI after the dry-run and the owner's approval; the session does not tag. `About.xml` is still 1.6 only; the CHANGELOG draft sits in `[Unreleased]`.
   - waiting 2026-10-13, 1.7 run (session marker blue): the Ticket Manager (Rôle TM) refuses to file the ticket because `Submit-PickleRun.ps1` has no `-Game` and no isolated config (`SUBMIT.md`, "Ce que la demande ne transmet pas"); the owner assigned the worker/launcher change to the "RimWorld 1.7 Waylith Engine update" session. When it reports ready, send the Ticket Manager the request: `map` without `-Filter` (English, French, Russian) and `stones` (English, French) without the gallery features, one request per language, `-EvidenceDir tests/Pickle/Evidence/p17-<pass>-<lang>-<sha>`, `-Label` with the mod SHA. Priority is the Ticket Manager's. Pilot RetroJoyRenew not green yet at the last report.
   - done 2026-10-13, `1.2.0` is a minor version (owner's choice): 1.6 is kept, 1.7 added, nothing breaking. Drafts committed: CHANGELOG `[Unreleased]` (`5848f18`), `PUBLICATION.md` section 6 `### 1.2.0` change note (`d493825`). Not done on purpose, because 1.7 is not proven: `<li>1.7</li>`, the `[1.2.0] - <date>` heading, the description line "RimWorld 1.6 is declared" (a description change reopens the owner's `PUBLICATION.md` + `CHANGELOG.md` review).
@@ -57,7 +58,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: b1a713a1f6ec6d967734d6a92488778787bb40d5
+protocols_read_sha: e733386f133716f60efbad53c37602935eda7050
 ---
 
 # Adaptive Storage Neolithic Renew: status
