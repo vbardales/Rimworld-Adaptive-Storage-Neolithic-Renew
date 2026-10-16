@@ -1,37 +1,32 @@
 # Protocol documents read for this mod
 
-A log of what was read, at which version, and whether it was of use, so that a later
-session rereads a document only when it has moved. "Version" is the last commit touching
-the file in its repository (monorepo `C:\Users\nelim\Documents\rimworld`, short hash), as of
-2026-09-30. `unread` means not opened yet, not judged useless. The earlier log (2026-09-28)
-cited hashes the monorepo cannot resolve. **The protocol documents live in `vbardales/Rimworld-protocols`** (`git --git-dir=../rimworld-protocols.git --work-tree=. log -1 -- <file>` from the monorepo root); a plain `git log` in the monorepo returns the commit that deleted them (`90d51374`), which this log had wrongly recorded an hour earlier, now corrected.
+Log: what was read, at which version, useful or not. A later session rereads only when the version moved.
+Version = last commit touching the file in its repo (monorepo `C:\Users\nelim\Documents\rimworld`, short hash). `unread` = not opened yet, not useless.
+Protocol docs live in `vbardales/Rimworld-protocols`: `git --git-dir=../rimworld-protocols.git --work-tree=. log -1 -- <file>` from the monorepo root. Plain `git log` in the monorepo returns the deleting commit `90d51374`.
 
-| Document | Version | Read 2026-09-30 | Useful for this mod |
+| Document | Version | Read | Useful for this mod |
 | --- | --- | --- | --- |
-| `AUDIT.md` | 7fd7475 (2026-09-29) | in full (275 lines) | yes: chain, `done -> tested` criteria, title rule, Pickle rules (no run from a session) |
-| `AGENTS.md` | 7fd7475 (2026-09-29) | in full (loaded as project instructions) | yes: gate order, evidence retention, CI rules |
-| `TRANSLATIONS.md` | ebadb99 (2026-09-30), working copy modified, not committed | in full (213 lines) | yes: gender switch, `FRENCH_REVIEW.md`, French review by Virginie |
-| `MOD_SETTINGS.md` | b83933b (2026-09-23) | in full (107 lines) | only for the `not_applicable` case |
-| `Rimworld-Release-Admin/docs/OPERATIONS.md` | 3c03f51 (2026-09-26) | in full (112 lines) | yes: dry-run of exact SHA, gallery is manual |
-| `PUBLISHING.md` | 915d119 (2026-10-06), working copy modified, not committed | in full (793 lines), re-read 2026-10-06 | yes: gallery rules of 2026-10-06 (one story, own corner of the shared place and own hour/weather per image, one `Scenario:` per image, read every capture, report scene anomalies to NPT through Ticket Manager and redeposit only after its answer), gallery naming, Preview rules, fail-fast, CI. Earlier read (e0411cc) covered lines 1-260 only |
-| `STYLE_RIMWORLD.md` | ef7e7a9 (2026-09-29), modified not committed | unread | not needed: no image generation in an audit |
-| `WORKSHOP_COMMENTS.md` | 7fd7475 (2026-09-29) | unread | comments already posted 2026-09-22, see STATUS.md |
+| `AUDIT.md` | 7fd7475 (2026-09-29) | 2026-10-10 full | yes: chain, `done -> tested`, title rule, Pickle rules (no run from a session) |
+| `AGENTS.md` | 7fd7475 (2026-09-29) | loaded as project instructions | yes: gate order, evidence retention, CI rules |
+| `PICKLE.md` | diff to 9737688 | 2026-10-10 full | yes: Pickle |
+| `TRANSLATIONS.md` | ebadb99 (2026-09-30), working copy modified | 2026-10-10 full | yes: gender switch, `FRENCH_REVIEW.md`, French review by Virginie |
+| `MOD_SETTINGS.md` | b83933b (2026-09-23) | 2026-10-10 first 40 lines | only for `not_applicable` |
+| `Rimworld-Release-Admin/docs/OPERATIONS.md` | 3c03f51 (2026-09-26) | 2026-09-30 full | yes: dry-run of exact SHA, gallery is manual |
+| `PUBLISHING.md` | 915d119 (2026-10-06), working copy modified | 2026-10-10 full (793 lines) | yes: gallery rules of 2026-10-06 (one story, own corner and hour/weather per image, one `Scenario:` per image, read every capture, scene anomalies to NPT via Ticket Manager, redeposit only after its answer), naming, Preview, fail-fast, CI |
+| `STYLE_RIMWORLD.md` | ef7e7a9 (2026-09-29), modified | unread | no: no image generation in an audit |
+| `WORKSHOP_COMMENTS.md` | 7fd7475 (2026-09-29) | unread | comments posted 2026-09-22, see STATUS.md |
+| `GALLERY.md`, `GALLERY-PROPS.md` | — | unread | gallery captures (`shootGallery`) |
+| `PUBLISHING-CI.md` | — | unread | before publishing |
+| `ANIMALS.md`, `TOOLING-PITFALLS.md` | — | unread | no (mod adds no animal) / several sessions in one repo |
 | `scripts/SEARCHING.md` | 50de695 (2026-09-28) | unread | unread |
-| `PickleTools/README.md`, `Headless/README.md`, `docs/steps.md` | ff20d89 / ed4e73a / da7c3b0 (2026-09-29) | unread | needed only to write or debug a suite |
-| `Rimworld-Ticket-Dispatcher/docs/WELCOME.md`, `SUBMIT.md` | 77ca9d7 (2026-09-27) / d07b2b8 (2026-09-26) | WELCOME.md in full; SUBMIT.md unread | WELCOME: yes (submit rules, evidence dir, no `.ico` in `Mod/`); SUBMIT: only for the options list |
+| `PickleTools/README.md`, `Headless/README.md`, `docs/steps.md` | ff20d89 / ed4e73a / da7c3b0 (2026-09-29) | unread | only to write or debug a suite |
+| `Rimworld-Ticket-Dispatcher/docs/WELCOME.md` | 77ca9d7 (2026-09-27) | 2026-10-10 full | yes: submit rules, evidence dir, no `.ico` in `Mod/` |
+| `Rimworld-Ticket-Dispatcher/docs/SUBMIT.md` | d07b2b8 (2026-09-26) | unread (options list read for deposit) | options list only |
 
 ## This mod's own documents
 
-`BACKLOG.md`, `NOTES.md`, `BUGS.md` do not exist. Read in full 2026-09-30: `STATUS.md`, this file. `TESTING.md`: first 40 lines.
-`CHANGELOG.md`: first 20 lines. `PUBLICATION.md`: the gallery table and rule. `README.md`, `ATTRIBUTION.md`, `LICENSE`,
-`Mod/About/About.xml`: not opened (no change since the 2026-09-28 audit). `docs/runs/` holds one file,
-`2026-09-23-tested-milestone.md`, cited by STATUS.md.
+`BACKLOG.md`, `NOTES.md`, `BUGS.md` do not exist. Read 2026-09-30: `STATUS.md`. `TESTING.md` first 40 lines. `CHANGELOG.md` first 20 lines. `PUBLICATION.md` gallery table and rule. Not opened: `README.md`, `ATTRIBUTION.md`, `LICENSE`, `Mod/About/About.xml` (no change since 2026-09-28). `docs/runs/` holds `2026-09-23-tested-milestone.md`, cited by STATUS.md.
 
-## What would make a document worth rereading
+## Rereads
 
-The hash above changed. Protocol documents: the `--git-dir=../rimworld-protocols.git` form above. Others: `git log -1 -- <file>` in their own repository.
-
-## 2026-10-10 (new session)
-
-Read in full at protocols HEAD `0a26b474` (then the diff to 9737688 of `AGENTS.md`, `AUDIT.md`, `PUBLISHING.md`, `WORKSHOP_COMMENTS.md` and `USE_THIS_INSTEAD.md` in full): `AUDIT.md`, `AGENTS.md`, `PICKLE.md`, `PUBLISHING.md`, `TRANSLATIONS.md`, `Rimworld-Ticket-Dispatcher/docs/WELCOME.md`; `MOD_SETTINGS.md` first 40 lines (settings are `not_applicable`).
-Not read, not needed at `playTests` (trigger in brackets): `STYLE_RIMWORLD.md` [Preview or ModIcon work, `mountPreview`], `WORKSHOP_COMMENTS.md` [writing thanks, `writeDocs`], `GALLERY.md` and `GALLERY-PROPS.md` [gallery captures, `shootGallery`], `PUBLISHING-CI.md` and `Rimworld-Release-Admin/docs/OPERATIONS.md` [before publishing], `ANIMALS.md` [mod adds an animal: no], `TOOLING-PITFALLS.md` [several sessions in one repository], `scripts/SEARCHING.md`, `Rimworld-Ticket-Dispatcher/docs/SUBMIT.md` (options list read for the deposit).
+Reread when the version in the table moved. Protocol docs: the `--git-dir` form above. Others: `git log -1 -- <file>` in their own repo.
