@@ -58,112 +58,111 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: e733386f133716f60efbad53c37602935eda7050
+protocols_read_sha: 7db1e37ab197dac63501eb0554896a23a4ac9fed
 ---
-
 # Adaptive Storage Neolithic Renew: status
 
-Read by a sweep across every mod. It lives at the root, never inside `Mod/`, so Steam never receives it. The journal of earlier work (audits, stage history, every run) moved verbatim to `docs/runs/history.md` on 2026-10-10; recover older text with `git log -p -- STATUS.md`.
+Read by sweep across every mod. Lives at root, never inside `Mod/`, so Steam never gets it. Journal of earlier work (audits, stage history, every run) moved verbatim to `docs/runs/history.md` on 2026-10-10; recover older text with `git log -p -- STATUS.md`.
 
 ## Where the mod stands
 
-- **Published:** `v1.1.3` (2026-10-11, tag at `e47cceb`, run `38092165205`, Steam item `3806101377`, public). Previous `v1.1.2` (`cd28780`) is the rollback target; its regression was green (2026-10-02).
-- **Target:** `1.1.3`, published 2026-10-11 (CHANGELOG `[1.1.3] - 2026-10-11`, `PUBLICATION.md` section 6). `Mod/` changes since `v1.1.2`: `About.xml` (description now generated from the Markdown source), `ModIcon.png`, `Preview.png`, `Basket/ThingDef.xml` (`drawSize` `(2,2)`), French `ThingDef.xml` (nine descriptions, Virginie's review). Nothing in `Mod/` changed since `010cc34`; later commits are documents.
-- **Old vocabulary:** the previous `workflow_stage: preTest` was the old name (AUDIT.md, section 16: `preTest` maps to `writeTests`). Re-audit result: `playTests[1.1.3]`; left for `shootGallery[1.1.3]` on 2026-10-10 (stones passes green, code review done).
+- **Published:** `v1.1.3` (2026-10-11, tag at `e47cceb`, run `38092165205`, Steam item `3806101377`, public). Previous `v1.1.2` (`cd28780`) = rollback target; regression green (2026-10-02).
+- **Target:** `1.1.3`, published 2026-10-11 (CHANGELOG `[1.1.3] - 2026-10-11`, `PUBLICATION.md` section 6). `Mod/` changes since `v1.1.2`: `About.xml` (description now generated from Markdown source), `ModIcon.png`, `Preview.png`, `Basket/ThingDef.xml` (`drawSize` `(2,2)`), French `ThingDef.xml` (nine descriptions, Virginie's review). Nothing in `Mod/` changed since `010cc34`; later commits = documents.
+- **Old vocabulary:** previous `workflow_stage: preTest` = old name (AUDIT.md, section 16: `preTest` maps to `writeTests`). Re-audit result: `playTests[1.1.3]`; left for `shootGallery[1.1.3]` on 2026-10-10 (stones passes green, code review done).
 
 ## Audit 2026-10-10
 
-Audited at `92fcfaa` (`main`). Nothing launched by this session: no RimWorld, no CI dispatch; two Pickle tickets deposited through the Ticket Manager.
+Audited at `92fcfaa` (`main`). Nothing launched by this session: no RimWorld, no CI dispatch; two Pickle tickets deposited through Ticket Manager.
 
 | Check | Result |
 | --- | --- |
-| `tests/Test-Mod.ps1` | Re-run under `pwsh`: 173 assertions pass (under Windows PowerShell 5.1 the script cannot run: `GetRelativePath`). |
+| `tests/Test-Mod.ps1` | Re-run under `pwsh`: 173 assertions pass (under Windows PowerShell 5.1 script cannot run: `GetRelativePath`). |
 | `tests/Test-InstalledTranslations.ps1` | Re-run: 123 pass. |
-| `tests/Pickle/Source/Build.ps1` | Builds (CS1684 `Span` warnings only). The rebuilt DLL differs in bytes from the tracked one and was restored with `git checkout`; no source change. |
-| Scenarios written (7.a, 7.d) | 11 feature files in `tests/Pickle/Mod/Pickle/Features/`, plan in `TESTING.md`; no `TEST_SCENARIOS.md` (the Gherkin features and `TESTING.md` play that role). `@requires` scenarios have their maps (`wsl-deps.stones.map`, `wsl-deps.sanctuary.map`, `wsl-deps.camp.map`). |
+| `tests/Pickle/Source/Build.ps1` | Builds (CS1684 `Span` warnings only). Rebuilt DLL differs in bytes from tracked one, restored with `git checkout`; no source change. |
+| Scenarios written (7.a, 7.d) | 11 feature files in `tests/Pickle/Mod/Pickle/Features/`, plan in `TESTING.md`; no `TEST_SCENARIOS.md` (Gherkin features and `TESTING.md` play that role). `@requires` scenarios have maps (`wsl-deps.stones.map`, `wsl-deps.sanctuary.map`, `wsl-deps.camp.map`). |
 | Translations (7.g) | `complete` x3; French validated 2026-10-08 (`translation_fr`). `FRENCH_REVIEW.md` regenerated that day. |
-| Settings | `not_applicable`: no C#, no `ModSettings`, no `MainButtonDef` in `Mod/` (revalidated 2026-09-28; `Mod/` has had no code since). |
+| Settings | `not_applicable`: no C#, no `ModSettings`, no `MainButtonDef` in `Mod/` (revalidated 2026-09-28; `Mod/` no code since). |
 | `About.xml` | `packageId`, framework dependency with Workshop id, `loadAfter`, `incompatibleWith`, author `Soul, Phaneron, bradson - 1.6 adapted by Nelim`: consistent. No em dash. |
-| Steam description (11.a, 11.b) | Single Markdown source in `PUBLICATION.md`; sections in the required order; ends with `[Source code on GitHub]`. Not rechecked against the live page this session. |
-| Lint | `Check-Status.ps1`: 0 error; the warnings (retired `stage`, `preTest` vocabulary, `protocols_read_sha`, 74 KB size) are cleared by this rewrite and `Mark-ProtocolsRead.ps1`. |
-| Mod root | `.git`, `.github`, `.gitignore`, `.gitattributes`, plus the ignored `.claude/`, `node_modules/`, `package*.json`, `desktop.ini`. `PREVIEW.md` is a tracked document. |
+| Steam description (11.a, 11.b) | Single Markdown source in `PUBLICATION.md`; sections in required order; ends with `[Source code on GitHub]`. Not rechecked against live page this session. |
+| Lint | `Check-Status.ps1`: 0 error; warnings (retired `stage`, `preTest` vocabulary, `protocols_read_sha`, 74 KB size) cleared by this rewrite and `Mark-ProtocolsRead.ps1`. |
+| Mod root | `.git`, `.github`, `.gitignore`, `.gitattributes`, plus ignored `.claude/`, `node_modules/`, `package*.json`, `desktop.ini`. `PREVIEW.md` = tracked document. |
 
-**Retained state: `playTests[1.1.3]`.** Cumulative criteria through `writeTests` hold. `playTests` stays open on the points under `remaining`: the `stones` passes, the `@review` captures, the code review (8.m).
+**Retained state: `playTests[1.1.3]`.** Cumulative criteria through `writeTests` hold. `playTests` stays open on points under `remaining`: `stones` passes, `@review` captures, code review (8.m).
 
 ## Passes (1.1.3, Mod/ tree of `010cc34`)
 
 | Pass | Result |
 | --- | --- |
 | English `map`, `751e` | exit 0, 49 scenarios, 34 passed, 15 skipped (`@requires`). |
-| French `map`, `7cce` | exit 1: one timeout of a 1200-tick wait in `12-performance-regression` on a loaded host; replayed alone, `6462`, exit 0, 5/5. No French assertion failed. |
+| French `map`, `7cce` | exit 1: one timeout of 1200-tick wait in `12-performance-regression` on loaded host; replayed alone, `6462`, exit 0, 5/5. No French assertion failed. |
 | Russian `map`, `c2a3` | exit 0, 49 scenarios, 34 passed, 15 skipped. |
 | English `stones`, `438d` | exit 0, `passed`, 49 scenarios, 37 passed, 12 skipped. |
-| French `stones`, `0448` | exit 0, `passed`, 37 of 37 passed (replay without the gallery features; `ed73` was `in-progress` and is superseded). |
+| French `stones`, `0448` | exit 0, `passed`, 37 of 37 passed (replay without gallery features; `ed73` was `in-progress`, superseded). |
 | Camp and noon series (11, 12) | gallery captures, not regression; frames played 2026-10-06 to 08. |
 
-Reads on `exitReason` and the scenario count were done in the 2026-10-08 and 2026-10-09 journal entries (`docs/runs/history.md`).
+Reads on `exitReason` and scenario count done in 2026-10-08 and 2026-10-09 journal entries (`docs/runs/history.md`).
 
 ## Left `playTests[1.1.3]` and `shootGallery[1.1.3]` (2026-10-10), `mountPreview[1.1.3]` (2026-10-10), now: `writeDocs[1.1.3]`
 
 1. Done 2026-10-10: `438d` and `0448` read, green. Nothing left to replay.
 2. Code review `v1.1.2..HEAD`: done 2026-10-10, no defect, `code_review_sha` written.
-3. `shootGallery[1.1.3]` (AUDIT.md step 9): the session directs the gallery (GALLERY.md, read 2026-10-10). Decided 2026-10-10: the three camp pictures the owner accepted on 2026-10-08 join the noon series as `7-` to `9-`, one story (the same noon, the tribe comes to the same storage), indexes contiguous.
+3. `shootGallery[1.1.3]` (AUDIT.md step 9): session directs gallery (GALLERY.md, read 2026-10-10). Decided 2026-10-10: three camp pictures owner accepted on 2026-10-08 join noon series as `7-` to `9-`, one story (same noon, tribe comes to same storage), indexes contiguous.
 
 ## Preview (AUDIT.md step 10), 2026-10-10
 
-- **Echo (10.a): kept.** `Art/echo-preview.png` (renamed from `echo.png` on 2026-10-12, same bytes) is a line-art basket full of wheat (drawn blue on the Preview). The gallery shows baskets that fill up, pots, stacks and plinths: the basket full of grain says the mod's promise (a container shows what is inside) and still matches. No real mismatch, and an accepted Preview is not reopened for taste. `echo_review_sha` = `eb6abc0` (the commit that fixed the accepted gallery).
-- **Render (10.b to 10.d), read from the file, not from a renderer log:** `Mod/About/Preview.png` 896 x 504, 659,724 bytes (under 1 MiB); `Art/Gallery/0-preview.png` byte-identical (`cmp`). Contrast measured on the final PNG, ink `#F2ECE1` on the panel: title 6.25:1, summary 5.18:1 (floor 4.5). The suffix "Renew" (secondary ink, partly over the echo strokes) could not be measured cleanly by this crude sampling; it reads clearly at 896 px and at 268 px (thumbnail opened: title, rule and summary legible, nothing cut or overlapping, version badge `1.6` top right, icon bottom-left). Same Preview as published with 1.1.2 text and layout; only the icon and image were refreshed 2026-10-05.
-- **Clean (10.e):** deleted `Art/Preview-original.png` (first generated version, a visual trace) and `Art/shelved-textures/` (nine upstream textures the mod never loaded); both recoverable in git (`eb6abc0`). `Art/` now holds the minimal set: `ModIcon-source.png`, `Preview-source.png`, `echo-preview.png`, `Preview.config.json`, `ModIcon.ico`, `Preview.ico`, `Gallery/`, `.render/` (ignored). Mod root: only ignored extras.
-- **Social preview (10.f): done 2026-10-10.** Uploaded by the session through Chrome on the owner's word ("fais le"); `og:image` re-read and downloaded: 659,724 bytes, sha256 equal to `Mod/About/Preview.png`, recorded in `social_preview_sha256`.
+- **Echo (10.a): kept.** `Art/echo-preview.png` (renamed from `echo.png` 2026-10-12, same bytes) = line-art basket full of wheat (drawn blue on Preview). Gallery shows baskets that fill up, pots, stacks, plinths: basket full of grain says mod's promise (container shows what is inside), still matches. No real mismatch; accepted Preview not reopened for taste. `echo_review_sha` = `eb6abc0` (commit that fixed accepted gallery).
+- **Render (10.b to 10.d), read from file, not renderer log:** `Mod/About/Preview.png` 896 x 504, 659,724 bytes (under 1 MiB); `Art/Gallery/0-preview.png` byte-identical (`cmp`). Contrast measured on final PNG, ink `#F2ECE1` on panel: title 6.25:1, summary 5.18:1 (floor 4.5). Suffix "Renew" (secondary ink, partly over echo strokes) could not be measured cleanly by crude sampling; reads clearly at 896 px and 268 px (thumbnail opened: title, rule, summary legible, nothing cut or overlapping, version badge `1.6` top right, icon bottom-left). Same Preview as published with 1.1.2 text and layout; only icon and image refreshed 2026-10-05.
+- **Clean (10.e):** deleted `Art/Preview-original.png` (first generated version, visual trace) and `Art/shelved-textures/` (nine upstream textures mod never loaded); both recoverable in git (`eb6abc0`). `Art/` now holds minimal set: `ModIcon-source.png`, `Preview-source.png`, `echo-preview.png`, `Preview.config.json`, `ModIcon.ico`, `Preview.ico`, `Gallery/`, `.render/` (ignored). Mod root: only ignored extras.
+- **Social preview (10.f): done 2026-10-10.** Uploaded by session through Chrome on owner's word ("fais le"); `og:image` re-read and downloaded: 659,724 bytes, sha256 equal to `Mod/About/Preview.png`, recorded in `social_preview_sha256`.
 
 ## Gallery (AUDIT.md 9.e), 2026-10-10
 
-Folder 4.98 MB (4,975,714 bytes, ten files) of 8, largest image 0.66 MB of 2. Every image opened: `1-` to `6-` in the 2026-10-06 and 2026-10-08 reads, `7-` to `9-` re-opened on 2026-10-10 (known flaw, accepted by the owner: a thin strip of flowers along the left edge, the border of the place `bare-clearing`).
+Folder 2.31 MB (2,312,323 bytes, ten files; subtitled `.jpg` since 2026-10-16, clean `.png` originals in `Art/Gallery-clean/`) of 8, largest image 0.66 MB of 2. Every image opened: `1-` to `6-` in 2026-10-06 and 2026-10-08 reads, `7-` to `9-` re-opened 2026-10-10 (known flaw, owner accepted: thin strip of flowers along left edge, border of place `bare-clearing`).
 
 | # | File | Story and place | Why here |
 | --- | --- | --- | --- |
 | 0 | `0-preview.png` | header image | byte copy of `Mod/About/Preview.png` |
-| 1 | `1-the-whole-set.png` | noon at the storehouse, `calm-zone-close` | most demonstrative: the whole set with its contents; Steam shows it large right after the header |
-| 2 | `2-a-basket-fills-up.png` | same, 12:05, squirrel | the mod's central promise: a container shows what it holds |
-| 3 | `3-chunk-stacks.png` | same, 12:10, hare | stone-as-stuff stacks at several levels, two materials |
-| 4 | `4-large-pots.png` | same, 12:15, dog | pots with different foods |
-| 5 | `5-plinths.png` | same, 12:20, peacock | plinths showing items |
-| 6 | `6-a-stone-from-another-mod.png` | same, 12:25, cat | integration: a third-party stone beside granite |
-| 7 | `7-three-baskets.png` | the camp, `bare-clearing` | the tribe at the same storage: baskets empty, one item, full |
-| 8 | `8-fuel-and-stone.png` | the camp | wood and hay piles, granite and marble stacks |
-| 9 | `9-the-tribes-treasures.png` | the camp | plinths with the chief: the display side of the mod |
+| 1 | `1-the-whole-set.jpg` | noon at storehouse, `calm-zone-close` | most demonstrative: whole set with contents; Steam shows it large right after header |
+| 2 | `2-a-basket-fills-up.jpg` | same, 12:05, squirrel | mod's central promise: container shows what it holds |
+| 3 | `3-chunk-stacks.jpg` | same, 12:10, hare | stone-as-stuff stacks at several levels, two materials |
+| 4 | `4-large-pots.jpg` | same, 12:15, dog | pots with different foods |
+| 5 | `5-plinths.jpg` | same, 12:20, peacock | plinths showing items |
+| 6 | `6-a-stone-from-another-mod.jpg` | same, 12:25, cat | integration: third-party stone beside granite |
+| 7 | `7-three-baskets.jpg` | camp, `bare-clearing` | tribe at same storage: baskets empty, one item, full |
+| 8 | `8-fuel-and-stone.jpg` | camp | wood and hay piles, granite and marble stacks |
+| 9 | `9-the-tribes-treasures.jpg` | camp | plinths with chief: display side of mod |
 
 Index and table aligned in `PUBLICATION.md` section 2.
 
 ## Code review, 2026-10-10 (AUDIT.md 8.m)
 
-Range `v1.1.2..HEAD` (`949973b`): whole diff of `Mod/`; no `Source/` (the mod has no assembly). Earlier ranges: 2026-09-28 (`0.1.0..`, three findings fixed in 1.1.2) and 2026-10-05 (`1.0.0..134aecd`, the `drawSize` finding).
+Range `v1.1.2..HEAD` (`949973b`): whole diff of `Mod/`; no `Source/` (mod has no assembly). Earlier ranges: 2026-09-28 (`0.1.0..`, three findings fixed in 1.1.2) and 2026-10-05 (`1.0.0..134aecd`, `drawSize` finding).
 
-- `Basket/ThingDef.xml` `drawSize` `(2)` to `(2,2)`: correct. About 90 other `drawSize` in `Mod/Defs` and the basket's own `GraphicsDef.xml` use two components. The basket capture of `438d` shows a basket of normal size; no mod error in the `Player.log` of the pass.
+- `Basket/ThingDef.xml` `drawSize` `(2)` to `(2,2)`: correct. About 90 other `drawSize` in `Mod/Defs` and basket's own `GraphicsDef.xml` use two components. Basket capture of `438d` shows normal-size basket; no mod error in `Player.log` of pass.
 - French `ThingDef.xml`, nine descriptions: validated by Virginie 2026-10-08; XML valid, keys unchanged, no pawn text; `Test-InstalledTranslations.ps1` 123 pass.
-- `About.xml`: description is the plain-text form of the Markdown block (`sync-about-description.mjs --check`: already in sync); packageId, dependency and `incompatibleWith` unchanged.
-- `ModIcon.png`, `Preview.png`: binary outputs of the owner's sources, not code.
+- `About.xml`: description = plain-text form of Markdown block (`sync-about-description.mjs --check`: already in sync); packageId, dependency, `incompatibleWith` unchanged.
+- `ModIcon.png`, `Preview.png`: binary outputs of owner's sources, not code.
 
-No defect. A commit of `Mod/` after this sha reopens the review and `playTests`.
+No defect. A commit of `Mod/` after this sha reopens review and `playTests`.
 
-Addendum 2026-10-10, `0309c0d`: the only `Mod/` change since is `About.xml`, whose description was regenerated from `PUBLICATION.md` with the new `THANKS` paragraphs (4 added lines, plain text). Read: the `&` of "TailorMade: Unified Apparel & Body Refitting" is escaped (`&amp;`), the XML parses, `Test-Mod.ps1` 173 pass, description 6,193 characters (Steam limit 8,000). No defect; `code_review_sha` moved to that commit. Second addendum, `2896810`: `About.xml` again, description only (the compatibility sentence reworded as the owner asked, Venus Touch Waistlines added to the camp credits); XML parses, `Test-Mod.ps1` 173 pass. No defect; `code_review_sha` moved there.
+Addendum 2026-10-10, `0309c0d`: only `Mod/` change since is `About.xml`, description regenerated from `PUBLICATION.md` with new `THANKS` paragraphs (4 added lines, plain text). Read: `&` of "TailorMade: Unified Apparel & Body Refitting" escaped (`&amp;`), XML parses, `Test-Mod.ps1` 173 pass, description 6,193 characters (Steam limit 8,000). No defect; `code_review_sha` moved to that commit. Second addendum, `2896810`: `About.xml` again, description only (compatibility sentence reworded as owner asked, Venus Touch Waistlines added to camp credits); XML parses, `Test-Mod.ps1` 173 pass. No defect; `code_review_sha` moved there.
 
 ## Settings audit, 2026-09-28
 
-`not_applicable`. `Mod/` holds no assembly and no C#, and no `ModSettings`, `GetSettings`, `MainButtonDef` or `MainTabWindow`. Costs, capacities and research are authored balance data inherited from upstream, not options a player needs. The framework owns the display options. There is no empty options page and no shortcut. Revalidate if `Mod/` gains code or a settings class.
+`not_applicable`. `Mod/` holds no assembly, no C#, no `ModSettings`, `GetSettings`, `MainButtonDef` or `MainTabWindow`. Costs, capacities, research = authored balance data inherited from upstream, not options player needs. Framework owns display options. No empty options page, no shortcut. Revalidate if `Mod/` gains code or settings class.
 
 ## Translation audit, 2026-09-28, French review 2026-10-08
 
-- **Inventory:** labels and descriptions of `ThingDef`, `ResearchProjectDef`, `ResearchTabDef`. No Keyed folder, no C#, so no code-owned text. English comes from the Defs.
-- **French and Russian** live in `Mod/Languages/<Language>/DefInjected/` (`ThingDef/ThingDef.xml`, `ResearchProjectDefs.xml`, `ResearchTabDef.xml` for French). Russian is outside the English and French gate; its vacstone entries are unreviewed by a Russian speaker.
+- **Inventory:** labels and descriptions of `ThingDef`, `ResearchProjectDef`, `ResearchTabDef`. No Keyed folder, no C#, so no code-owned text. English comes from Defs.
+- **French and Russian** live in `Mod/Languages/<Language>/DefInjected/` (`ThingDef/ThingDef.xml`, `ResearchProjectDefs.xml`, `ResearchTabDef.xml` for French). Russian outside English and French gate; vacstone entries unreviewed by Russian speaker.
 - **Checks:** 173 and 123 assertions pass (2026-10-10); French pass (feature 05) and Russian pass (feature 07), language-aware, green in `7cce` and `c2a3` (2026-10-08).
-- **Gender agreement:** all 21 French texts describe furniture; none refers to a pawn; no `{PAWN_gender ? ...}` switch applies (read in full, 2026-09-30, and again for the 2026-10-08 corrections).
-- **French review, Virginie, 2026-10-08:** corrections applied (nine descriptions of `ThingDef.xml`), validated; `FRENCH_REVIEW.md` regenerated by `scripts/Make-FrenchReview.ps1` (protocols repository). A later change to a French file resets `translation_fr` to `unchecked`.
-- **Not covered:** a third-party stone's own untranslated material name belongs to that mod.
+- **Gender agreement:** all 21 French texts describe furniture; none refers to pawn; no `{PAWN_gender ? ...}` switch applies (read in full 2026-09-30, again for 2026-10-08 corrections).
+- **French review, Virginie, 2026-10-08:** corrections applied (nine descriptions of `ThingDef.xml`), validated; `FRENCH_REVIEW.md` regenerated by `scripts/Make-FrenchReview.ps1` (protocols repository). Later change to French file resets `translation_fr` to `unchecked`.
+- **Not covered:** third-party stone's own untranslated material name belongs to that mod.
 
 ## What makes this sheet stale
 
-- A run in game: fill `tested_on`, strike from `remaining` what the run covered.
-- A Workshop upload: add the run ids and SHA to `docs/runs/history.md`.
-- A change to `Mod/`: the passes above no longer cover the delivered content; say which scenarios to replay.
-- A change to Defs, patches or language files: reset `localization`, `translation_en` and `translation_fr` to `unchecked` until revalidated.
+- Run in game: fill `tested_on`, strike from `remaining` what run covered.
+- Workshop upload: add run ids and SHA to `docs/runs/history.md`.
+- Change to `Mod/`: passes above no longer cover delivered content; say which scenarios to replay.
+- Change to Defs, patches or language files: reset `localization`, `translation_en`, `translation_fr` to `unchecked` until revalidated.

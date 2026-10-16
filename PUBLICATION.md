@@ -19,7 +19,7 @@ Two neolithic research projects unlock the set, both available from a tribal sta
 
 **REQUIRES** the [Adaptive Storage Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359). It does nothing on its own.
 
-I am not the author of this mod. The buildings, artwork and design are Soul's, Phaneron's and bradson's. This continuation follows their current GitHub source rather than the older Workshop upload. Credit goes to them; mistakes in the adaptation are mine.
+I am not the author of this mod. The buildings, artwork and design are the work of Soul, Phaneron and bradson. This continuation follows their current GitHub source rather than the older Workshop upload. Credit goes to them; mistakes in the adaptation are mine.
 
 ## ORIGINAL MOD
 
@@ -79,7 +79,7 @@ is the in-game mod-list icon and is not uploaded to the gallery.
 **Every gallery starts with a byte-for-byte copy of the Preview** (owner's rule, 2026-09-29): `0-preview.png`
 is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The nine gallery pictures below follow it
 in the intended order. **Limits** (PUBLISHING.md, owner, 2026-10-06): any number of images, the whole folder under 8 MB and each image
-under 2 MB; the folder is 4.98 MB (4,975,714 bytes, ten files), the largest image 0.66 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
+under 2 MB; the folder is 2.31 MB (2,312,323 bytes, ten files), the largest image 0.66 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
 
 Pictures 1 to 6 are one story, "noon at the storehouse, seen through the animals that come by", played by Pickle feature
 `11-workshop-captures.feature` on the sanctuary save `Nelims-tribe` (named scene `calm-zone-close`, a cream stone square in the open air,
@@ -93,15 +93,31 @@ Upload files 0 to 9 in order. Pictures 1 to 6 are the noon series (uploaded 2026
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
 | 0 | `Art/Gallery/0-preview.png` | 896 x 504, 659,724 bytes | Copy of the Workshop header image (now carries the detoured ModIcon, bottom-left) |
-| 1 | `Art/Gallery/1-the-whole-set.png` | 1280 x 720, 519948 bytes | The whole set and its visible contents |
-| 2 | `Art/Gallery/2-a-basket-fills-up.png` | 1280 x 720, 390468 bytes | A basket empty, partly filled and full |
-| 3 | `Art/Gallery/3-chunk-stacks.png` | 1280 x 720, 412183 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
-| 4 | `Art/Gallery/4-large-pots.png` | 1280 x 720, 503219 bytes | Large pots showing different stored foods |
-| 5 | `Art/Gallery/5-plinths.png` | 1280 x 720, 506776 bytes | Three plinths displaying items |
-| 6 | `Art/Gallery/6-a-stone-from-another-mod.png` | 1280 x 720, 435833 bytes | A compatible third-party stone beside granite |
-| 7 | `Art/Gallery/7-three-baskets.png` | 1280 x 720, 439470 bytes | Camp, accepted 2026-10-08: three baskets (empty, one item, full), Ayla by the fire, a chicken |
-| 8 | `Art/Gallery/8-fuel-and-stone.png` | 1280 x 720, 556245 bytes | Camp, accepted 2026-10-08: wood and hay piles, granite and marble stacks, Doka in the wolf hood, a hare |
-| 9 | `Art/Gallery/9-the-tribes-treasures.png` | 1280 x 720, 551848 bytes | Camp, accepted 2026-10-08: three plinths (wood, granite, vacstone) each showing an item, the chief Tahu on his stool, a peacock |
+| 1 | `Art/Gallery/1-the-whole-set.jpg` | 1280 x 720, 174116 bytes | The whole set and its visible contents |
+| 2 | `Art/Gallery/2-a-basket-fills-up.jpg` | 1280 x 720, 139420 bytes | A basket empty, partly filled and full |
+| 3 | `Art/Gallery/3-chunk-stacks.jpg` | 1280 x 720, 137416 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
+| 4 | `Art/Gallery/4-large-pots.jpg` | 1280 x 720, 154347 bytes | Large pots showing different stored foods |
+| 5 | `Art/Gallery/5-plinths.jpg` | 1280 x 720, 146210 bytes | Three plinths displaying items |
+| 6 | `Art/Gallery/6-a-stone-from-another-mod.jpg` | 1280 x 720, 141582 bytes | A compatible third-party stone beside granite |
+| 7 | `Art/Gallery/7-three-baskets.jpg` | 1280 x 720, 238322 bytes | Camp, accepted 2026-10-08: three baskets (empty, one item, full), Ayla by the fire, a chicken |
+| 8 | `Art/Gallery/8-fuel-and-stone.jpg` | 1280 x 720, 273457 bytes | Camp, accepted 2026-10-08: wood and hay piles, granite and marble stacks, Doka in the wolf hood, a hare |
+| 9 | `Art/Gallery/9-the-tribes-treasures.jpg` | 1280 x 720, 267159 bytes | Camp, accepted 2026-10-08: three plinths (wood, granite, vacstone) each showing an item, the chief Tahu on his stool, a peacock |
+
+### Gallery subtitles
+
+Pictures 1 to 9 have no interface window, so each carries one English line burned in at the bottom (`../scripts/Add-Subtitle.ps1`, owner rule 2026-10-15). The clean captures are in `Art/Gallery-clean/` (same index, `.png`); `Art/Gallery/` holds the subtitled `.jpg` files to upload. `0-` has none.
+
+| # | File | Line |
+| --- | --- | --- |
+| 1 | `1-the-whole-set.jpg` | Noon at the storehouse: everything in its place, in plain sight. |
+| 2 | `2-a-basket-fills-up.jpg` | A basket fills up, stone by stone, and shows it. |
+| 3 | `3-chunk-stacks.jpg` | Stone piles up in stacks, in two materials. |
+| 4 | `4-large-pots.jpg` | Large pots show what they hold. |
+| 5 | `5-plinths.jpg` | A plinth shows off the one treasure it carries. |
+| 6 | `6-a-stone-from-another-mod.jpg` | A stone from another mod sits right beside granite. |
+| 7 | `7-three-baskets.jpg` | At the camp, three baskets: empty, one stone, full. |
+| 8 | `8-fuel-and-stone.jpg` | Wood, hay and stone, stacked by the fire. |
+| 9 | `9-the-tribes-treasures.jpg` | The chief watches over the tribe's treasures on their plinths. |
 
 Header assets already valid:
 

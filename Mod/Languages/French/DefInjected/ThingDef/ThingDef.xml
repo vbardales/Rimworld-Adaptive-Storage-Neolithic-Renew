@@ -9,7 +9,7 @@
 
 	<!-- Haypile -->
 	<ASNeolithicHayPile.label>tas de foin</ASNeolithicHayPile.label>
-	<ASNeolithicHayPile.description>Un tas de foin facile à entreposer.</ASNeolithicHayPile.description>
+	<ASNeolithicHayPile.description>Un tas de foin pour faciliter le stockage.</ASNeolithicHayPile.description>
 
 	<!-- Large Pot -->
 	<ASNeolithicLargePot.label>grand pot</ASNeolithicLargePot.label>
@@ -31,7 +31,7 @@
 	<ASNeolithicTextileBundleFabric.label>ballot</ASNeolithicTextileBundleFabric.label>
 	<ASNeolithicTextileBundleFabric.description>Un petit tas de textiles soigneusement empilés.</ASNeolithicTextileBundleFabric.description>
 	<ASNeolithicTextileBundleLeather.label>ballot</ASNeolithicTextileBundleLeather.label>
-	<ASNeolithicTextileBundleLeather.description>Un petit tas de textiles soigneusement empilés.</ASNeolithicTextileBundleLeather.description>
+	<ASNeolithicTextileBundleLeather.description>Un petit tas de cuir soigneusement empilé.</ASNeolithicTextileBundleLeather.description>
 
 	<!-- WoodPile -->
 	<ASNeolithicWoodPile.label>tas de bûches</ASNeolithicWoodPile.label>
