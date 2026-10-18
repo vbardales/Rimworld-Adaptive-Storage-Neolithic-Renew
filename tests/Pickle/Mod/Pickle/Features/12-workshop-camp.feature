@@ -82,11 +82,17 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" body type is Female
     And Nelim's Pickle Tools: "Ayla" has the gene "Eyes_Green"
+    And Nelim's Pickle Tools: "Ayla" hairstyle is "Primal"
+    And Nelim's Pickle Tools: "Ayla" hair colour is rgb (90, 58, 32)
+    And Nelim's Pickle Tools: "Ayla" face tattoo is "Face_Tiger"
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Doka" body type is Male
     And Nelim's Pickle Tools: "Doka" has the gene "Eyes_DarkBrown"
+    And Nelim's Pickle Tools: "Doka" hairstyle is "Savage"
+    And Nelim's Pickle Tools: "Doka" hair colour is rgb (26, 26, 26)
+    And Nelim's Pickle Tools: "Doka" face tattoo is "Face_Warpaint"
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
@@ -121,6 +127,9 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" body type is Female
     And Nelim's Pickle Tools: "Ayla" has the gene "Eyes_Green"
+    And Nelim's Pickle Tools: "Ayla" hairstyle is "Primal"
+    And Nelim's Pickle Tools: "Ayla" hair colour is rgb (90, 58, 32)
+    And Nelim's Pickle Tools: "Ayla" face tattoo is "Face_Tiger"
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (230, 170, 40)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalCape" dyed rgb (120, 80, 30)
     And Nelim's Pickle Tools: "Ayla" stands at (194, 153) facing South
@@ -166,6 +175,9 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Doka" body type is Male
     And Nelim's Pickle Tools: "Doka" has the gene "Eyes_DarkBrown"
+    And Nelim's Pickle Tools: "Doka" hairstyle is "Savage"
+    And Nelim's Pickle Tools: "Doka" hair colour is rgb (26, 26, 26)
+    And Nelim's Pickle Tools: "Doka" face tattoo is "Face_Warpaint"
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
@@ -207,12 +219,18 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Doka" body type is Male
     And Nelim's Pickle Tools: "Doka" has the gene "Eyes_DarkBrown"
+    And Nelim's Pickle Tools: "Doka" hairstyle is "Savage"
+    And Nelim's Pickle Tools: "Doka" hair colour is rgb (26, 26, 26)
+    And Nelim's Pickle Tools: "Doka" face tattoo is "Face_Warpaint"
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
     And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
     And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
     And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Ayla" body type is Female
     And Nelim's Pickle Tools: "Ayla" has the gene "Eyes_Green"
+    And Nelim's Pickle Tools: "Ayla" hairstyle is "Primal"
+    And Nelim's Pickle Tools: "Ayla" hair colour is rgb (90, 58, 32)
+    And Nelim's Pickle Tools: "Ayla" face tattoo is "Face_Tiger"
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
     And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
     And Nelim's Pickle Tools: "Doka" stands at (196, 152) facing South
@@ -248,6 +266,9 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Tahu" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Tahu" body type is Female
     And Nelim's Pickle Tools: "Tahu" has the gene "Eyes_Golden"
+    And Nelim's Pickle Tools: "Tahu" hairstyle is "Keeper"
+    And Nelim's Pickle Tools: "Tahu" hair colour is rgb (205, 205, 205)
+    And Nelim's Pickle Tools: "Tahu" face tattoo is "Face_Oracle"
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalA" dyed rgb (120, 40, 110)
     And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalFurCloak" dyed rgb (230, 190, 60)
     And Nelim's Pickle Tools: "Tahu" wears "ET_Apparel_DeerHood"
