@@ -54,3 +54,7 @@ tests/workflow-*audit*/
 tests/translation-validation-*/
 Mod/**/*.ico
 Art/.render/
+
+# Pickle reception and parking, on disk only (AGENTS.md, "Test evidence")
+tests/Pickle/Inbox/
+tests/Pickle/Parked/
