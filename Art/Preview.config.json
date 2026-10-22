@@ -14,7 +14,7 @@
   "backgroundFile": "Preview-source.png",
   "echo": { "file": "echo-source.png", "color": "var(--accent)" },
   "modIconSource": "ModIcon-source.png",
-  "iconBadge": { "file": "ModIcon-badge.png" },
+  "iconBadge": { "file": "ModIcon-badge.png", "corner": "bottom-right" },
   "palette": {
     "veil": "#514A40",
     "inkPrimary": "#F2ECE1",
