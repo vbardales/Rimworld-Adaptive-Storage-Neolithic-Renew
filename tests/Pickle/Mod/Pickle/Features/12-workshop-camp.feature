@@ -1,4 +1,4 @@
-# DRAFT of 2026-10-06 (probes of 2026-10-07 read, see STATUS.md), tagged @wip so that no normal pass picks it up (play it with -IncludeWip, -DepMap wsl-deps.camp.map).
+# Played 2026-10-08 (pictures 7 to 9 of the gallery accepted by the owner; the other three were refused). @wip removed 2026-10-23 (owner): the `@requires` below keeps it out of every pass except -DepMap wsl-deps.camp.map. Colonist captures stay on hold until a rework (STATUS.md).
 # A second Workshop series for this mod, in the spirit of PUBLISHING.md's gallery rules of 2026-10-06: magazine photographs of one story,
 # with living things in them, a place that tells something, and the author (this suite) choosing place, time, composition and manner.
 #
@@ -37,7 +37,6 @@
 # picture 5 (vacstone), the stone mod for picture 6.
 # Two families of steps, told apart by their prefix (2026-10-08): `Nelim's Sanctuary: ` (SB, repository SanctuaryBacklot: the named places and the fixture Nelims-tribe) and `Nelim's Pickle Tools: ` (NPT, repository PickleTools: studio, presentation mode, camera, decor, colonists, animals). Steps without a prefix are this mod's or Pickle's own.
 @requires:nelim.pickletools.screenshotstudio
-@wip
 @workshop
 @review
 Feature: the camp pictures of the Workshop page
