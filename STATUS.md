@@ -79,7 +79,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 738c318605b34260852f00ccf01ac5064364ed4a
+protocols_read_sha: 0a40a584e83bd432e59375dbe1be39822f7b10c3
 ---
 # Adaptive Storage Neolithic Renew: status
 
