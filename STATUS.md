@@ -23,7 +23,7 @@ build_audit:  not_applicable (current upstream architecture has no assembly)
 audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfaa (see "Audit 2026-10-10")
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in docs/runs/history.md
 code_review_sha: 28968101cfc28dc3b8eac7561250a4108747f6c9
-session:      local_ebf57a84-2e1f-4dfc-ad22-8a17d8cbac9f
+session:      local_7b0c112c-8e8f-4ca0-a293-fa0aeee4cefe
 updated:      2026-10-13
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
@@ -79,7 +79,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 0a40a584e83bd432e59375dbe1be39822f7b10c3
+protocols_read_sha: 709f94c1383b5e32138ef80caf13ef1057a42d1f
 ---
 # Adaptive Storage Neolithic Renew: status
 
