@@ -99,7 +99,6 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
         }
 
         [Given("a {string} made from {string} is built at \\({int}, {int}\\)")]
-        [When("a {string} made from {string} is built at \\({int}, {int}\\)")]
         public void Build(PickleContext ctx, string defName, string stuffName, int x, int z)
         {
             var def = RequiredDef(ctx, defName);

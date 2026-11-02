@@ -37,6 +37,9 @@
 # picture 5 (vacstone), the stone mod for picture 6.
 # Two families of steps, told apart by their prefix (2026-10-08): `Nelim's Sanctuary: ` (SB, repository SanctuaryBacklot: the named places and the fixture Nelims-tribe) and `Nelim's Pickle Tools: ` (NPT, repository PickleTools: studio, presentation mode, camera, decor, colonists, animals). Steps without a prefix are this mod's or Pickle's own.
 @requires:nelim.pickletools.screenshotstudio
+@requires:nelim.pickletools.camerazoom
+@requires:nelim.pickletools.colonistrace
+@requires:nelim.pickletools.stagedecor
 @workshop
 @review
 Feature: the camp pictures of the Workshop page

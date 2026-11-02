@@ -29,6 +29,7 @@
 # A Workshop crop may cut a building or its contents at an edge; the icon composition takes priority, as documented in PUBLICATION.md.
 # Two families of steps, told apart by their prefix (2026-10-08): `Nelim's Sanctuary: ` (SB, repository SanctuaryBacklot: the named places and the fixture Nelims-tribe) and `Nelim's Pickle Tools: ` (NPT, repository PickleTools: studio, presentation mode, camera, decor, colonists, animals). Steps without a prefix are this mod's or Pickle's own.
 @requires:nelim.pickletools.screenshotstudio
+@requires:nelim.pickletools.camerazoom
 @workshop
 @review
 Feature: the pictures of the Workshop page
