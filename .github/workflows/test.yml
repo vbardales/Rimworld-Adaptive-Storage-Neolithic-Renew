@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate XML and upstream architecture contracts
         shell: pwsh
-        run: ./tests/Test-Mod.ps1
+        run: ./Tests/Test-Mod.ps1
       - name: Validate translated def targets
         shell: pwsh
-        run: ./tests/Test-InstalledTranslations.ps1
+        run: ./Tests/Test-InstalledTranslations.ps1

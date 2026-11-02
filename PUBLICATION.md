@@ -3,8 +3,8 @@
 Publication sheet for Workshop item `3806101377`, updated for 1.2.0 on 2026-10-14 (integration of the upstream source on 2026-09-22, gallery section revised on 2026-10-06 and 2026-10-10).
 The item already exists, so a game upload updates its files and tags but does not resend the description. The description is sent by the CI (`update_description`) from the Markdown block below, converted to BBCode (checked identical to the previous BBCode block on 2026-10-06).
 
-In-game Pickle pass of 2026-09-23 (`STATUS.md`, `docs/runs/2026-09-23-tested-milestone.md`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
-and has no continuation DLL or direct Harmony dependency. **The published version is `1.1.3`** (tag `v1.1.3` at `e47cceb`, 2026-10-11; `1.1.0` uploaded the content, `1.1.1` and `1.1.2` the header image and the fixes); **`1.2.0` (RimWorld 1.7 support) is in preparation** (`STATUS.md`, `workflow_stage`; section 6 holds its change note). What remains manual, and the owner's: the Steam comments and thanks, the gallery upload, and any change of visibility. The checklist for the next release is `docs/RELEASE_TEMPLATE.md`.
+In-game Pickle pass of 2026-09-23 (`STATUS.md`, `Docs/runs/2026-09-23-tested-milestone.md`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
+and has no continuation DLL or direct Harmony dependency. **The published version is `1.1.3`** (tag `v1.1.3` at `e47cceb`, 2026-10-11; `1.1.0` uploaded the content, `1.1.1` and `1.1.2` the header image and the fixes); **`1.2.0` (RimWorld 1.7 support) is in preparation** (`STATUS.md`, `workflow_stage`; section 6 holds its change note). What remains manual, and the owner's: the Steam comments and thanks, the gallery upload, and any change of visibility. The checklist for the next release is `Docs/RELEASE_TEMPLATE.md`.
 
 ## Steam description
 
@@ -263,5 +263,5 @@ Draft: it goes out only after a green Pickle run on RimWorld 1.7 (STATUS.md, `te
   `update_preview` is off by default; the next publication can send `Mod/About/Preview.png`.
 - Comments: both posted (section 4).
 - Still open, not blocking: the file half of a Steam-copy subscription test is automated and passes
-  (`tests/Test-SteamCopy.ps1`); the game half needs the owner, since `RimWorld/Mods` holds a development junction with the same
+  (`Tests/Test-SteamCopy.ps1`); the game half needs the owner, since `RimWorld/Mods` holds a development junction with the same
   `packageId`. GitHub issue #3 (performance) remains open pending the reporter's own evidence.

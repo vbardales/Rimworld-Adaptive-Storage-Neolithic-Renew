@@ -41,20 +41,20 @@ package.json
 # DDS textures: not tracked
 *.dds
 
-# Scratch stdout/stderr of the Pickle wrapper launches; the durable record is tests/Pickle/Evidence/
-tests/Pickle/core-en-*.log
+# Scratch stdout/stderr of the Pickle wrapper launches; the durable record is Tests/Pickle/Evidence/
+Tests/Pickle/core-en-*.log
 
-# Raw Pickle reports stay on disk; one text summary per run goes in docs/runs/
-tests/Pickle/Evidence/
+# Raw Pickle reports stay on disk; one text summary per run goes in Docs/runs/
+Tests/Pickle/Evidence/
 
-# Old-style report folders: raw evidence stays under tests/Pickle/Evidence/ (ignored); history is docs/runs/
-tests/pickle-run-*/
-tests/audit-*/
-tests/workflow-*audit*/
-tests/translation-validation-*/
+# Old-style report folders: raw evidence stays under Tests/Pickle/Evidence/ (ignored); history is Docs/runs/
+Tests/pickle-run-*/
+Tests/audit-*/
+Tests/workflow-*audit*/
+Tests/translation-validation-*/
 Mod/**/*.ico
 Art/.render/
 
 # Pickle reception and parking, on disk only (AGENTS.md, "Test evidence")
-tests/Pickle/Inbox/
-tests/Pickle/Parked/
+Tests/Pickle/Inbox/
+Tests/Pickle/Parked/

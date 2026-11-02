@@ -54,7 +54,7 @@ The Workshop item so far holds only the private `0.1.0` prepublication, which cr
 ### Changed
 
 - Stopped tracking the 171 `.dds` textures in Git and added `*.dds` to `.gitignore`. Every one has a `.png` twin in the same folder, which
-  is tracked and which RimWorld loads (`tests/Test-Mod.ps1` accepts either extension). The `.dds` files stay on disk locally.
+  is tracked and which RimWorld loads (`Tests/Test-Mod.ps1` accepts either extension). The `.dds` files stay on disk locally.
 - Rebased the delivered mod content on the original authors' current GitHub `main` (`2bc3fe4`)
   instead of the older Workshop package.
 - Adopted upstream's stone-as-stuff architecture: the large stone pot, stone plinth and chunk stack
@@ -134,12 +134,12 @@ below is part of this one release.
 - `Source/GeneratedTranslations.cs`, compiled to `Mod/Assemblies/NeolithicRenew.dll`: the Harmony
   postfix that lets a building generated at load time carry its translated label before vanilla
   copies it onto blueprints and frames.
-- `tests/Test-Mod.ps1` (1,410 assertions) and `tests/Test-InstalledTranslations.ps1`: static and
+- `Tests/Test-Mod.ps1` (1,410 assertions) and `Tests/Test-InstalledTranslations.ps1`: static and
   installed-assembly checks covering XML validity, generated identities, translation coverage,
   the icon and preview files, and the fix above.
-- `tests/Pickle/`: an in-game Pickle (Gherkin) suite, 41 scenarios across seven features plus
+- `Tests/Pickle/`: an in-game Pickle (Gherkin) suite, 41 scenarios across seven features plus
   Workshop-capture and third-party-stone/Russian scenarios, run in the WSL in English, French and
-  Russian, with and without a stone mod from another author. See `tests/Pickle/README.md` for
+  Russian, with and without a stone mod from another author. See `Tests/Pickle/README.md` for
   what ran and what did not.
 - `PUBLICATION.md`: the order and content of the Workshop page's screenshots, the thank-you
   messages, the dependency/DLC review and the adult-content reading.
