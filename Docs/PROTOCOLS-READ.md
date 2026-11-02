@@ -19,13 +19,13 @@ Protocol docs live in `vbardales/Rimworld-protocols`: `git --git-dir=../rimworld
 | `PUBLISHING-CI.md` | — | unread | before publishing |
 | `ANIMALS.md`, `TOOLING-PITFALLS.md` | — | unread | no (mod adds no animal) / several sessions in one repo |
 | `scripts/SEARCHING.md` | 50de695 (2026-09-28) | unread | unread |
-| `PickleTools/README.md`, `Headless/README.md`, `docs/steps.md` | ff20d89 / ed4e73a / da7c3b0 (2026-09-29) | unread | only to write or debug a suite |
+| `PickleTools/README.md`, `Headless/README.md`, `Docs/steps.md` | ff20d89 / ed4e73a / da7c3b0 (2026-09-29) | unread | only to write or debug a suite |
 | `Rimworld-Ticket-Dispatcher/docs/WELCOME.md` | 77ca9d7 (2026-09-27) | 2026-10-10 full | yes: submit rules, evidence dir, no `.ico` in `Mod/` |
 | `Rimworld-Ticket-Dispatcher/docs/SUBMIT.md` | d07b2b8 (2026-09-26) | unread (options list read for deposit) | options list only |
 
 ## This mod's own documents
 
-`BACKLOG.md`, `NOTES.md`, `BUGS.md` do not exist. Read 2026-09-30: `STATUS.md`. `TESTING.md` first 40 lines. `CHANGELOG.md` first 20 lines. `PUBLICATION.md` gallery table and rule. Not opened: `README.md`, `ATTRIBUTION.md`, `LICENSE`, `Mod/About/About.xml` (no change since 2026-09-28). `docs/runs/` holds `2026-09-23-tested-milestone.md`, cited by STATUS.md.
+`BACKLOG.md`, `NOTES.md`, `BUGS.md` do not exist. Read 2026-09-30: `STATUS.md`. `TESTING.md` first 40 lines. `CHANGELOG.md` first 20 lines. `PUBLICATION.md` gallery table and rule. Not opened: `README.md`, `ATTRIBUTION.md`, `LICENSE`, `Mod/About/About.xml` (no change since 2026-09-28). `Docs/runs/` holds `2026-09-23-tested-milestone.md`, cited by STATUS.md.
 
 ## Rereads
 

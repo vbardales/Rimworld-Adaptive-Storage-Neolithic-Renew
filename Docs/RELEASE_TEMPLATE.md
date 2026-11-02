@@ -10,7 +10,7 @@ only when an opt-in option is set (section 3); visibility and everything else on
 
 ## 1. Before touching anything
 
-- [ ] `STATUS.md` says `stage: tested` for the tree being released, and `docs/runs/` holds the in-game runs of that tree
+- [ ] `STATUS.md` says `stage: tested` for the tree being released, and `Docs/runs/` holds the in-game runs of that tree
       (the runs of a superseded build prove nothing about this one).
 - [ ] The static suites are green on the commit (GitHub Actions `Mod static tests` and `workflow script tests`).
 - [ ] Nothing else is queued for this tree: a change to `Mod/` after the dry-run needs a new dry-run and a new SHA.
@@ -65,7 +65,7 @@ The workflow reads these from the pinned commit, so they must be final before th
    *Approve and deploy*). No session approves it, and nothing is uploaded before she does.
 6. If the upload succeeded and only the `tag-and-release` job failed: *Re-run failed jobs*. Never *Re-run all jobs*: it uploads again.
 
-Docs-only commits after the dry-run (`STATUS.md`, `docs/`) do not change what is published: the workflow reads the pinned commit.
+Docs-only commits after the dry-run (`STATUS.md`, `Docs/`) do not change what is published: the workflow reads the pinned commit.
 
 ## 4. What the workflow sends only on request, and what stays manual
 
@@ -107,7 +107,7 @@ curl -s -X POST "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFi
 
 - [ ] `STATUS.md`: the run id of the dry-run and of the publish, the SHA, the date, what the page showed, and what is still manual.
       State what was checked and what was not (the API does not return the gallery or the change note text).
-- [ ] `docs/runs/`: only if in-game runs were played for this release; raw reports stay on disk and follow the keep-or-delete rule of
+- [ ] `Docs/runs/`: only if in-game runs were played for this release; raw reports stay on disk and follow the keep-or-delete rule of
       `tests/Pickle/README.md`.
 
 ## Reference: `1.1.0`
