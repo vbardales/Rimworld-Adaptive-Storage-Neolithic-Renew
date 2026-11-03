@@ -13,7 +13,7 @@
     "panelAnchor": "bottom-left"
   },
   "backgroundFile": "Preview-source.png",
-  "echo": { "file": "echo-source.png", "color": "var(--accent)" },
+  "echo": { "file": "echo-source.png" },
   "icon": { "file": "ModIcon-source.png", "corner": "bottom-right" },
   "palette": {
     "veil": "#514A40",
