@@ -1,20 +1,18 @@
 {
   "panel": {
     "title": "Adaptive Storage Neolithic Renew",
-    "titleSize": 46,
+    "panelAnchor": "bottom-right",
+    "titleSize": 40,
     "titleParts": [
-      { "text": "Adaptive Storage", "scale": 1 },
-      { "break": true },
-      { "text": "Neolithic", "scale": 1 },
-      { "break": true },
-      { "text": "Renew", "scale": 0.65, "font": "ui", "color": "secondary" }
+      { "text": "Adaptive Storage" },
+      { "text": "Neolithic" },
+      { "text": "Renew", "breakBefore": true, "scale": 0.65, "font": "ui", "color": "secondary" }
     ],
-    "copyLines": ["Neolithic storage where every container shows what is inside."],
-    "panelAnchor": "bottom-left"
+    "copyLines": ["Neolithic storage where every container shows what is inside."]
   },
-  "backgroundFile": "Preview-source.png",
+  "background": { "file": "Preview-source.png" },
   "echo": { "file": "echo-source.png" },
-  "icon": { "file": "ModIcon-source.png", "corner": "bottom-right" },
+  "icon": { "file": "ModIcon-source.png", "corner": "bottom-left" },
   "palette": {
     "veil": "#514A40",
     "inkPrimary": "#F2ECE1",
