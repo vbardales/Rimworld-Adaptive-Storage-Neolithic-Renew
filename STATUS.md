@@ -29,7 +29,7 @@ preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer P
 modicon_audit: complete
 echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
-social_preview_sha256: 787f25dcc0b44cf41a33f5658099f3bf05b95592c793a595137286ad326445cb
+social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
   - done 2026-11-04, resume: Preview redone without `echo.width`/`echo.height` (`Render-Preview.cjs`; echo size and position checked, no clipping, no overlap with title); `Art/Gallery/0-preview.png`, `Art/Preview.ico`, `Mod/About/Preview.png` committed. Only `Preview.png` changed in `Mod/` (not game content); ticket `0790` still owed its `RUN_DONE`.
   - read 2026-11-04, 1.7 ticket `0790` (`RUN_DONE`, exit 5, blocked 79+ min): `summary.json` is a stale `in-progress` snapshot, final `summary.md`/`junit.xml` = 116 scenarios, 103 passed, 9 failed, 4 skipped. ZERO of this mod's scenarios ran (no basket, plinth, pot, framework or chunk name in `junit.xml`): the negation-only filter swept in Pickle's own suites (`bill steps`, `surgery steps`, `ui steps`, `vanilla smoke`, `watch mode`, `world camera steps`), all 9 reds are theirs (5 s step timeouts, same family as `8c02`). No verdict on the mod. Refile 1.7 `map` en and `stones` en with a positive `file::name` filter of this mod's own features (01 to 04, 06, 08, 12-performance-regression). Evidence `Tests/Pickle/Inbox/p17h-map-en-4472021` kept until then.
