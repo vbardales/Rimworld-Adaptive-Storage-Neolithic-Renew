@@ -6,7 +6,7 @@ Plan cover current upstream-based stone-as-stuff implementation. Results recorde
 
 ```powershell
 pwsh -NoProfile -File Tests/Test-Mod.ps1
-pwsh -NoProfile -File Tests/Pickle/Source/Build.ps1
+pwsh -NoProfile -File ../scripts/Build-PickleSteps.ps1 -ModRoot .
 ```
 
 Checks must establish:
@@ -54,7 +54,7 @@ Then verify Steam-downloaded copy, not only source checkout: required framework 
 ### The downloaded copy, automated
 
 ```powershell
-pwsh -NoProfile -File Tests/Test-SteamCopy.ps1
+pwsh -NoProfile -File ../scripts/Test-SteamCopy.ps1 -ModRoot .
 ```
 
 Reads copy Steam gave subscriber (`steamapps/workshop/content/294100/<id>`, found via Steam registry key and `libraryfolders.vdf`, or given with `-Path`), compares file by file with `Mod/` tree of newest `v*` tag, by git blob hash (`-Ref` picks another). Fails on: missing file, extra file, different content, `.dds`/`.pdb`/`.user` file, wrong `packageId` or `PublishedFileId.txt`, download size differing from Steam-recorded one. Line-ending difference alone = warning.

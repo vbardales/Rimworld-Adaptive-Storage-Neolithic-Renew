@@ -39,7 +39,7 @@ The definitions, balance values, graphics definitions and integrated textures ot
 
 ```powershell
 pwsh -NoProfile -File Tests/Test-Mod.ps1
-pwsh -NoProfile -File Tests/Pickle/Source/Build.ps1
+pwsh -NoProfile -File ../scripts/Build-PickleSteps.ps1 -ModRoot .
 ```
 
 The static checks cover XML, metadata, the stone-as-stuff contract, save migration, translations and

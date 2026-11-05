@@ -7,7 +7,7 @@ was folded into the 2026-09-29 trim note of `docs/runs/2026-09-23-tested-milesto
 
 ## Companion mod
 
-`Mod/` is a Pickle companion mod. `Source/Build.ps1` compiles three focused step providers:
+`Mod/` is a Pickle companion mod. the shared `scripts/Build-PickleSteps.ps1 -ModRoot` compiles three focused step providers:
 
 - research-tab navigation and assertions;
 - publication screenshot setup;
@@ -41,7 +41,7 @@ purely manual checks.
 ## Build
 
 ```powershell
-pwsh -NoProfile -File tests/Pickle/Source/Build.ps1
+pwsh -NoProfile -File ../scripts/Build-PickleSteps.ps1 -ModRoot .
 ```
 
 ## Required passes

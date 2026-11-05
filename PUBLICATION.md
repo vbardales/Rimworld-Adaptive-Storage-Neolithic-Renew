@@ -263,5 +263,5 @@ Draft: it goes out only after a green Pickle run on RimWorld 1.7 (STATUS.md, `te
   `update_preview` is off by default; the next publication can send `Mod/About/Preview.png`.
 - Comments: both posted (section 4).
 - Still open, not blocking: the file half of a Steam-copy subscription test is automated and passes
-  (`Tests/Test-SteamCopy.ps1`); the game half needs the owner, since `RimWorld/Mods` holds a development junction with the same
+  (shared `scripts/Test-SteamCopy.ps1 -ModRoot`); the game half needs the owner, since `RimWorld/Mods` holds a development junction with the same
   `packageId`. GitHub issue #3 (performance) remains open pending the reporter's own evidence.
