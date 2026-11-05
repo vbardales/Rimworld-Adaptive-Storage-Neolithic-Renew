@@ -4,9 +4,9 @@ permissions:
   contents: read
 jobs:
   xml:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
       - name: Validate XML and upstream architecture contracts
-        shell: pwsh
+        shell: powershell
         run: ./Tests/Test-Mod.ps1
