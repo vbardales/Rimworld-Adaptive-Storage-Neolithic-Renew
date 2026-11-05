@@ -2,8 +2,7 @@
   "panel": {
     "title": "Adaptive Storage Neolithic Renew",
     "titleParts": [
-      { "text": "Adaptive Storage" },
-      { "text": "Neolithic" },
+      { "text": "Adaptive Storage Neolithic" },
       { "text": "Renew", "scale": 0.65, "font": "ui", "color": "secondary" }
     ],
     "description": "Neolithic storage where every container shows what is inside.",
