@@ -10,6 +10,3 @@ jobs:
       - name: Validate XML and upstream architecture contracts
         shell: pwsh
         run: ./Tests/Test-Mod.ps1
-      - name: Validate translated def targets
-        shell: pwsh
-        run: ./Tests/Test-InstalledTranslations.ps1

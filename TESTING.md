@@ -6,7 +6,6 @@ Plan cover current upstream-based stone-as-stuff implementation. Results recorde
 
 ```powershell
 pwsh -NoProfile -File Tests/Test-Mod.ps1
-pwsh -NoProfile -File Tests/Test-InstalledTranslations.ps1
 pwsh -NoProfile -File Tests/Pickle/Source/Build.ps1
 ```
 

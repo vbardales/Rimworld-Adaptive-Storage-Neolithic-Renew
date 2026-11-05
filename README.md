@@ -39,7 +39,6 @@ The definitions, balance values, graphics definitions and integrated textures ot
 
 ```powershell
 pwsh -NoProfile -File Tests/Test-Mod.ps1
-pwsh -NoProfile -File Tests/Test-InstalledTranslations.ps1
 pwsh -NoProfile -File Tests/Pickle/Source/Build.ps1
 ```
 
