@@ -24,13 +24,14 @@ audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfa
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in Docs/runs/history.md
 code_review_sha: 28968101cfc28dc3b8eac7561250a4108747f6c9
 session:      local_7b0c112c-8e8f-4ca0-a293-fa0aeee4cefe
-updated:      2026-11-02
+updated:      2026-11-06
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
 echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-06, resume (2): protocols read (f19f498, LOCAL-SCRIPTS-CUT not this mod), Preview already committed 2026-11-06 (9017188), TM registered. 1.7 ticket `851d` still awaits `RUN_DONE`; keep `Mod/` unchanged.
   - done 2026-11-06, resume: protocols read (252ae5af), Preview re-rendered after `Art/Preview.config.json` change (`Renew` suffix inline), echo and title checked, committed (`9017188`), validated by the owner 2026-11-06. 1.7 ticket `851d` still awaits `RUN_DONE`; keep `Mod/` unchanged.
   - done 2026-11-05, resume: protocols read (1cee56b), Preview re-rendered unchanged, `Art/Preview.config.json` simplified (f17c0c7). 1.7 ticket `20261104-191648-718-851d` (stones en) still awaits `RUN_DONE`; keep `Mod/` unchanged. Owed: trim this STATUS.md (39 KB, target 20).
   - done 2026-11-05: Preview panel bottom-right, badge bottom-left, rendered (config uses `description`, auto title fit), GitHub social preview uploaded (`social_preview_sha256` updated). Local scripts review (Audit 2026-11-04) applied and validated: only `Tests/Rule-OwnValues.ps1` and the generated `Tests/Test-Mod.ps1` remain (shared `Build-PickleSteps.ps1` and `Test-SteamCopy.ps1` replace the old two); `.github` regenerated (stamp 8dce1888dd29), `test.yml` on windows-latest, green (3 SKIP). Open: Russian DefInjected path case stays in `Rule-OwnValues.ps1` until Audit moves it to `Check-ModBasics` (group 1). Then, after `851d` is read: 1.7 refile of `map` en only if needed, `tested_1_7` decision.
@@ -87,7 +88,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 252ae5af56eb5d58e4f55763e3d288fdef8c02f2
+protocols_read_sha: f19f4980859a25c39295dfc37761de0f552b36da
 ---
 # Adaptive Storage Neolithic Renew: status
 
