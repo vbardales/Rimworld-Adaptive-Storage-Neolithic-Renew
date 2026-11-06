@@ -31,6 +31,7 @@ echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-06, resume: protocols read (252ae5af), Preview re-rendered after `Art/Preview.config.json` change (`Renew` suffix inline), echo and title checked, committed. 1.7 ticket `851d` still awaits `RUN_DONE`; keep `Mod/` unchanged.
   - done 2026-11-05, resume: protocols read (1cee56b), Preview re-rendered unchanged, `Art/Preview.config.json` simplified (f17c0c7). 1.7 ticket `20261104-191648-718-851d` (stones en) still awaits `RUN_DONE`; keep `Mod/` unchanged. Owed: trim this STATUS.md (39 KB, target 20).
   - done 2026-11-05: Preview panel bottom-right, badge bottom-left, rendered (config uses `description`, auto title fit), GitHub social preview uploaded (`social_preview_sha256` updated). Local scripts review (Audit 2026-11-04) applied and validated: only `Tests/Rule-OwnValues.ps1` and the generated `Tests/Test-Mod.ps1` remain (shared `Build-PickleSteps.ps1` and `Test-SteamCopy.ps1` replace the old two); `.github` regenerated (stamp 8dce1888dd29), `test.yml` on windows-latest, green (3 SKIP). Open: Russian DefInjected path case stays in `Rule-OwnValues.ps1` until Audit moves it to `Check-ModBasics` (group 1). Then, after `851d` is read: 1.7 refile of `map` en only if needed, `tested_1_7` decision.
   - done 2026-11-04, resume: Preview redone without `echo.width`/`echo.height` (`Render-Preview.cjs`; echo size and position checked, no clipping, no overlap with title); `Art/Gallery/0-preview.png`, `Art/Preview.ico`, `Mod/About/Preview.png` committed. Only `Preview.png` changed in `Mod/` (not game content); ticket `0790` still owed its `RUN_DONE`.
@@ -86,7 +87,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 5574d91d2dd934385abae1b2efc380d693bc9bcd
+protocols_read_sha: 252ae5af56eb5d58e4f55763e3d288fdef8c02f2
 ---
 # Adaptive Storage Neolithic Renew: status
 
