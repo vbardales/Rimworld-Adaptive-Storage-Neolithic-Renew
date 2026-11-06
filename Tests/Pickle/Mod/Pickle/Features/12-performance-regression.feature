@@ -11,17 +11,20 @@ Feature: bounded tick cost of the Neolithic storage module
     And I move the camera to (146, 154)
     And I zoom all the way in
 
+  @timeout:60
   Scenario: module loaded with no Neolithic storage building
     When I wait 1200 ticks
     And I wait 1200 ticks
     And I wait 1200 ticks
 
+  @timeout:60
   Scenario: one empty large pot is visible
     Given a "ASNeolithicLargePot" is built at (146, 154)
     When I wait 1200 ticks
     And I wait 1200 ticks
     And I wait 1200 ticks
 
+  @timeout:60
   Scenario: one filled large pot is visible
     Given a "ASNeolithicLargePot" is built at (146, 154)
     And I spawn a "RawBerries" at (146, 154)
@@ -29,6 +32,7 @@ Feature: bounded tick cost of the Neolithic storage module
     And I wait 1200 ticks
     And I wait 1200 ticks
 
+  @timeout:60
   Scenario: twenty-four filled large pots are visible
     Given a "ASNeolithicLargePot" is built at (140, 152)
     And I spawn a "RawBerries" at (140, 152)
@@ -84,6 +88,7 @@ Feature: bounded tick cost of the Neolithic storage module
 
   # Repeat the empty scene after caches and JIT have warmed up. The first scenario alone is not a
   # fair comparator because it is necessarily the first gameplay workload in the process.
+  @timeout:60
   Scenario: module loaded with no Neolithic storage building after warmup
     When I wait 1200 ticks
     And I wait 1200 ticks
