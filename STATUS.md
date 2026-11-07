@@ -15,7 +15,7 @@ upstream_mod_remotes:
   - https://github.com/bbradson/Adaptive-Storage-Framework
 dependencies: declared
 showcase:     complete
-tested_1_7:   no
+tested_1_7:   yes
 tested_on:    2026-10-10 in the WSL, stones passes 438d and 0448 on 92fcfaa (Mod/ unchanged since 010cc34); map passes of 2026-10-08, see "Passes"
 workshop:     3806101377
 settings_audit: not_applicable
@@ -31,7 +31,8 @@ echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
-  - filed 2026-11-07, 1.7 ticket `20261107-165431-576-cd58` (`map` en, positive filter features 01 to 04, 06, 08, `wsl-deps.map`, `-Game /home/nelim/rimworld17`, tree `3280d85`, `Mod/` unchanged), evidence `Tests/Pickle/Inbox/p17k-map-en-3280d85`. Owner said "refile" 2026-11-07 (08 and 01 to 04, 06 already green via `8c02`, `851d`). Wait for `RUN_DONE`; if green, set `tested_1_7: yes`. Keep `Mod/` unchanged.
+  - read 2026-11-07, resume, 1.7 ticket `cd58` (`map` en, tree `3280d85`, `RUN_DONE` exit 0, `exitReason: passed`, 25 scenarios, 23 passed, 0 failed, 2 skipped, peak 8973 MiB): the 2 skips are the `@requires` third-party stone scenarios (green in `851d`). With `851d` and `998f` the English 1.7 pass of `map` and `stones` is green; French and Russian cannot run on 1.7 (no languages). `tested_1_7: yes` set (the filed entry below said so); `<li>1.7</li>` stays undeclared until the publication gesture. Evidence minified to `Tests/Pickle/Evidence/p17k-map-en-3280d85` (summary, junit, peak-ram), Inbox empty. Protocols read (a0f60444). `Art/Preview.config.json` has an uncommitted key-order change (not this session's, left alone). Gallery skills (score/rate/sync-nsb) not run: stage is `playTests`, owner keeps it there until `shootGallery`.
+  - filed 2026-11-07 (read above), 1.7 ticket `20261107-165431-576-cd58` (`map` en, positive filter features 01 to 04, 06, 08, `wsl-deps.map`, `-Game /home/nelim/rimworld17`, tree `3280d85`, `Mod/` unchanged), evidence `Tests/Pickle/Inbox/p17k-map-en-3280d85`. Owner said "refile" 2026-11-07 (08 and 01 to 04, 06 already green via `8c02`, `851d`). Wait for `RUN_DONE`; if green, set `tested_1_7: yes`. Keep `Mod/` unchanged.
   - read 2026-11-07, resume, 1.7 ticket `998f` (`RUN_DONE` exit 0, `exitReason: passed`, 5 scenarios, 5 passed, mean tick 0.18 to 0.64 ms, peak 4237 MiB): all five `12-performance-regression` scenarios PASS on 1.7 with `@timeout:60`. With `851d` (features 01 to 04, 06, 08 green) the English `stones` 1.7 pass is complete; French and Russian cannot run on 1.7 (no languages). Open for the owner: `tested_1_7` decision, and whether `map` en is still needed. Evidence `Tests/Pickle/Inbox/p17j-perf-en-12eb7b3` (and `p17i`, `p17h`) kept until that decision. `Mod/` unchanged. Protocols read (611c3458).
   - filed 2026-11-06, 1.7 ticket `20261106-151711-605-998f` (feature 12 alone, filter `12-performance-regression::module loaded,12-performance-regression::large pot`, `wsl-deps.stones.map`, `-Game /home/nelim/rimworld17`, tree `12eb7b3`, `Mod/` unchanged, `-SkipDefCheck`: pre-check errors are only in gallery features 11 and 12-camp, outside the filter). `@timeout:60` added above the five scenarios (NPT: step budget, 5 s default; launcher scenario watchdog 300 s). Evidence `Tests/Pickle/Inbox/p17j-perf-en-12eb7b3`. Wait for `RUN_DONE`; if green, `tested_1_7` decision (features 01 to 04, 06, 08 green in `851d`, 12 here; `map` not needed for 1.7 per the earlier refile plan only if owner agrees).
   - read 2026-11-06, 1.7 ticket `851d` (`stones` en, tree `61f2a80`, `RUN_DONE` exit 1, `exitReason: failed`, 27 scenarios, 22 passed, 5 failed, 15.7 min, peak 8126 MiB): all 22 scenarios of features 01 to 04, 06, 08 PASS on 1.7. The 5 reds are all `12-performance-regression` (`module loaded with no Neolithic storage building`, `one empty large pot is visible`, `one filled large pot is visible`, `twenty-four filled large pots are visible`, `...after warmup`), same step `When I wait 1200 ticks` timed out after 5 s (tickCost sampled fine, 0.17 to 0.24 ms mean); same family as 1.6 reds of 2026-10-13, host-load step budget, not a mod defect. Next: ask NPT (via TM) the step budget or timeout tag for `I wait 1200 ticks`, then refile feature 12 alone on 1.7; `tested_1_7` stays `no` until it is green. Evidence `Tests/Pickle/Inbox/p17i-stones-en-61f2a80` kept until then; `Mod/` unchanged.
@@ -92,7 +93,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 611c34587974a0b8f04c37a33eba91aa6911f252
+protocols_read_sha: a0f6044495ba4f1c59f199258a8881a56818b9d5
 ---
 # Adaptive Storage Neolithic Renew: status
 
