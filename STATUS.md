@@ -24,13 +24,14 @@ audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfa
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in Docs/runs/history.md
 code_review_sha: 28968101cfc28dc3b8eac7561250a4108747f6c9
 session:      local_7b0c112c-8e8f-4ca0-a293-fa0aeee4cefe
-updated:      2026-11-06
+updated:      2026-11-08
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
 echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-08, resume: protocols read (8d5d60d6, diffs skimmed: wording, docs/1.7.md owner moved to Audit, AUDIT 9.e bis subtitles, nothing for `playTests`), TM registered, no archived session of this mod, Inbox and Parked empty. Preview NOT re-rendered: uncommitted `Art/Preview.config.json` (not this session's) dropped `icon.corner: bottom-left` and moved `panelAnchor`; render put the badge bottom-right over the description (cut at "every con") with fit-title WARN (348 touches badge); outputs reverted, config left as found. Owner call: restore `"corner": "bottom-left"` or accept.
   - read 2026-11-07, resume, 1.7 ticket `cd58` (`map` en, tree `3280d85`, `RUN_DONE` exit 0, `exitReason: passed`, 25 scenarios, 23 passed, 0 failed, 2 skipped, peak 8973 MiB): the 2 skips are the `@requires` third-party stone scenarios (green in `851d`). With `851d` and `998f` the English 1.7 pass of `map` and `stones` is green; French and Russian cannot run on 1.7 (no languages). `tested_1_7: yes` set (the filed entry below said so); `<li>1.7</li>` stays undeclared until the publication gesture. Evidence minified to `Tests/Pickle/Evidence/p17k-map-en-3280d85` (summary, junit, peak-ram), Inbox empty. Protocols read (a0f60444). `Art/Preview.config.json` has an uncommitted key-order change (not this session's, left alone). Gallery skills (score/rate/sync-nsb) not run: stage is `playTests`, owner keeps it there until `shootGallery`.
   - filed 2026-11-07 (read above), 1.7 ticket `20261107-165431-576-cd58` (`map` en, positive filter features 01 to 04, 06, 08, `wsl-deps.map`, `-Game /home/nelim/rimworld17`, tree `3280d85`, `Mod/` unchanged), evidence `Tests/Pickle/Inbox/p17k-map-en-3280d85`. Owner said "refile" 2026-11-07 (08 and 01 to 04, 06 already green via `8c02`, `851d`). Wait for `RUN_DONE`; if green, set `tested_1_7: yes`. Keep `Mod/` unchanged.
   - read 2026-11-07, resume, 1.7 ticket `998f` (`RUN_DONE` exit 0, `exitReason: passed`, 5 scenarios, 5 passed, mean tick 0.18 to 0.64 ms, peak 4237 MiB): all five `12-performance-regression` scenarios PASS on 1.7 with `@timeout:60`. With `851d` (features 01 to 04, 06, 08 green) the English `stones` 1.7 pass is complete; French and Russian cannot run on 1.7 (no languages). Open for the owner: `tested_1_7` decision, and whether `map` en is still needed. Evidence `Tests/Pickle/Inbox/p17j-perf-en-12eb7b3` (and `p17i`, `p17h`) kept until that decision. `Mod/` unchanged. Protocols read (611c3458).
@@ -93,7 +94,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: a0f6044495ba4f1c59f199258a8881a56818b9d5
+protocols_read_sha: 8d5d60d67cea5579087f5f14664e3317b40526a9
 ---
 # Adaptive Storage Neolithic Renew: status
 
