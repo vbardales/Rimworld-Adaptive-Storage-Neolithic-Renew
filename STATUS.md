@@ -16,13 +16,13 @@ upstream_mod_remotes:
 dependencies: declared
 showcase:     complete
 tested_1_7:   yes
-tested_on:    2026-10-10 in the WSL, stones passes 438d and 0448 on 92fcfaa (Mod/ unchanged since 010cc34); map passes of 2026-10-08, see "Passes"
+tested_on:    2026-11-07 pickle 3280d85 (1.7 en map cd58 green, 23 passed 2 skipped); 1.6 stones passes of 2026-10-10 on 92fcfaa, see "Passes"
 workshop:     3806101377
 settings_audit: not_applicable
 build_audit:  not_applicable (current upstream architecture has no assembly)
 audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfaa (see "Audit 2026-10-10")
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in Docs/runs/history.md
-code_review_sha: 28968101cfc28dc3b8eac7561250a4108747f6c9
+code_review_sha: 699e6ce06bdff98a18718bbf0a0847b925e5197b
 session:      local_7b0c112c-8e8f-4ca0-a293-fa0aeee4cefe
 updated:      2026-11-08
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
@@ -31,6 +31,7 @@ echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-08, 8.m code review `2896810..HEAD`: diff read (`About.xml` description text, French `ThingDef.xml` hay pile and leather bundle wording validated by the owner 2026-10-16, two images), no code, no defect; `code_review_sha` moved to HEAD, revue du diff : images et texte seuls. 8.l `tested_on` updated. Still open: 8.b `FRENCH_REVIEW.md` to `TRANSLATION_REVIEW.md` rename (ask Audit, regeneration would empty cells), 8.c no 1.6 French replay after the French text change, 8.d/8.i owner reads.
   - done 2026-11-08, resume: protocols read (8d5d60d6, diffs skimmed: wording, docs/1.7.md owner moved to Audit, AUDIT 9.e bis subtitles, nothing for `playTests`), TM registered, no archived session of this mod, Inbox and Parked empty. Preview NOT re-rendered: uncommitted `Art/Preview.config.json` (not this session's) dropped `icon.corner: bottom-left` and moved `panelAnchor`; render put the badge bottom-right over the description (cut at "every con") with fit-title WARN (348 touches badge); outputs reverted, config left as found. Owner call: restore `"corner": "bottom-left"` or accept.
   - read 2026-11-07, resume, 1.7 ticket `cd58` (`map` en, tree `3280d85`, `RUN_DONE` exit 0, `exitReason: passed`, 25 scenarios, 23 passed, 0 failed, 2 skipped, peak 8973 MiB): the 2 skips are the `@requires` third-party stone scenarios (green in `851d`). With `851d` and `998f` the English 1.7 pass of `map` and `stones` is green; French and Russian cannot run on 1.7 (no languages). `tested_1_7: yes` set (the filed entry below said so); `<li>1.7</li>` stays undeclared until the publication gesture. Evidence minified to `Tests/Pickle/Evidence/p17k-map-en-3280d85` (summary, junit, peak-ram), Inbox empty. Protocols read (a0f60444). `Art/Preview.config.json` has an uncommitted key-order change (not this session's, left alone). Gallery skills (score/rate/sync-nsb) not run: stage is `playTests`, owner keeps it there until `shootGallery`.
   - filed 2026-11-07 (read above), 1.7 ticket `20261107-165431-576-cd58` (`map` en, positive filter features 01 to 04, 06, 08, `wsl-deps.map`, `-Game /home/nelim/rimworld17`, tree `3280d85`, `Mod/` unchanged), evidence `Tests/Pickle/Inbox/p17k-map-en-3280d85`. Owner said "refile" 2026-11-07 (08 and 01 to 04, 06 already green via `8c02`, `851d`). Wait for `RUN_DONE`; if green, set `tested_1_7: yes`. Keep `Mod/` unchanged.
