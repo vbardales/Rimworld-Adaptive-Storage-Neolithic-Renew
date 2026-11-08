@@ -31,6 +31,7 @@ echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-08, resume (3, after sleep): protocols read (a3bf1451, diffs skimmed: AUDIT 8.m wording, scripts docs, nothing for `playTests`), TM registered, no archived session of this mod, Preview committed 2026-11-06 so not re-rendered. 1.6 ticket `ab3e` still awaits `RUN_DONE`; keep `Mod/` unchanged.
   - done 2026-11-08, owner validated the Preview render of `699e6ce` (icon bottom-left, panel bottom-right): icon corner question closed, nothing to restore.
   - refiled 2026-11-08, 1.6 ticket `20261108-160904-728-ab3e` (same as `0c29`: `stones` fr, filter `!11-workshop-captures,!12-workshop-camp`, `wsl-deps.stones.map`, tree `c2be717`, `Mod/` unchanged), evidence `Tests/Pickle/Inbox/p16-stones-fr-0ccdfbc`. Azure lane fixed (Cloud b8b419f). Wait for `RUN_DONE`; read `summary.json` then `junit.xml`; if green closes 8.c French.
   - read 2026-11-08, TM: `0c29` RUN_DONE exit 9 "disk full", game never started, only `no-report.txt` (azure VM cannot create `/repo/pickle-reports-wsl`, infrastructure, no verdict on the mod). Cloud checks; TM warns when lane fixed, then refile same ticket (same filter, same evidence dir `p16-stones-fr-0ccdfbc`). Do not refile now. Filed entry follows:
@@ -100,7 +101,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 3270e26763463501aede72815264075fbcbfb8ba
+protocols_read_sha: a3bf14518c33bbb966a4ce59bf1296b5250724e3
 ---
 # Adaptive Storage Neolithic Renew: status
 
