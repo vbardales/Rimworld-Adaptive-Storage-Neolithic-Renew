@@ -1,12 +1,12 @@
 {
   "panel": {
+    "panelAnchor": "bottom-right",
     "title": "Adaptive Storage Neolithic Renew",
     "titleParts": [
       { "text": "Adaptive Storage Neolithic" },
       { "text": "Renew", "suffix": true }
     ],
-    "description": "Neolithic storage where every container shows what is inside.",
-    "panelAnchor": "bottom-right"
+    "description": "Neolithic storage where every container shows what is inside."
   },
   "background": { "file": "Preview-source.png" },
   "echo": { "file": "echo-source.png" },
