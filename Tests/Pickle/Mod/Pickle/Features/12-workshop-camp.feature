@@ -182,8 +182,8 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (203, 156) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (197, 153) fully grown
     And Nelim's Pickle Tools: I place the decor "Stool" at (201, 156)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (203, 153)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (203, 153) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (204, 153)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (204, 153) is lit
     And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (203, 157)
     And I spawn a "WoodLog" at (201, 155)
     And a "ASNeolithicLargePot" is built at (198, 154)
