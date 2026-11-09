@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: playTests[1.2.0]
+workflow_stage: shootGallery[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -24,13 +24,14 @@ audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfa
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in Docs/runs/history.md
 code_review_sha: 699e6ce06bdff98a18718bbf0a0847b925e5197b
 session:      local_7b0c112c-8e8f-4ca0-a293-fa0aeee4cefe
-updated:      2026-11-08
+updated:      2026-11-09
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
 echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-09, 8.n: owner said "oui" to leave `playTests[1.2.0]` for `shootGallery[1.2.0]` (8.i closed on the read captures and `Player.log` checks, English and French; Russian on 1.7 cannot run, no languages). Protocols read (b1463127). Next: `sync-nsb-npt` then `write-shotlist` (`shootGallery` start), no capture before the shotlist. Gallery weak points of 2026-10-23 `rate-gallery` stay the input.
   - read 2026-11-09, resume (4, after sleep): 1.6 ticket `5adc` finished (`stones` en, `exitReason: passed`, 8 scenarios, 8 passed, 0 failed, 0 skipped, peak 2888 MiB). All 14 `@review` captures opened and judged by the session: wooden basket empty, one item (cloth, [1]), full (steel and cloth, [2]); cloth basket empty and full; wooden large pot empty and with berries ([1]); granite chunk stack at one, two and six ([1], [2], [6], growing visibly); marble stack at six (lighter stone, right colour); wooden plinth and vacstone plinth showing gold (name, count 1); wood pile, hay pile, meal shelf, textile bundle each with one item. Names, counts and sprites correct, no clipping, no overlap, no error. 8.d closes on what was read. Evidence minified to `Tests/Pickle/Evidence/p16-review-en-1f9c47e` (summary, junit, peak-ram), Inbox empty. Protocols read (493400ba, only `docs/PICKLE.md` skimmed: `-List` PAUSE line meaning), TM registered, no archived session of this mod, Preview committed 2026-11-06 so not re-rendered. Still open: 8.b `FRENCH_REVIEW.md` rename (ask Audit), 8.i owner read, `social_preview_sha256` stale (Check-Status WARN), STATUS.md 48 KB (owed trim to `Docs/runs/`).
   - filed 2026-11-08 (read above), 1.6 ticket `20261108-170558-619-5adc` (`@review` captures of `03-contents-review`: basket, pot, stack, plinth, piles; English, `wsl-deps.stones.map`, tree `1f9c47e`, `Mod/` unchanged), evidence `Tests/Pickle/Inbox/p16-review-en-1f9c47e`. Why: the captures of `ab3e` were deleted unopened when the evidence was minified (session error, owner 2026-11-08: the session opens and judges `@review` captures itself, the owner only validates what the session cannot see). Wait for `RUN_DONE`; open every capture before minifying; 8.d closes on what was read.
   - read 2026-11-08, 1.6 ticket `ab3e` (`stones` fr, tree `0ccdfbc`, `RUN_DONE` exit 1, `exitReason: failed`, 153 scenarios, 145 passed, 4 failed, 4 skipped, peak 4333 MiB): every scenario of this mod's features passes in French (French names, research tab Stockage, containers, save and reload, third-party stone, perf). The 4 reds belong to Pickle's own upstream suite "entry flow" (NPT correction via TM; not PickleTools features) (`the main menu is clickable`, `a button is clickable at another interface scale`, `a page's bottom buttons drive the stack`, `select, gizmo, inspect, dialog, and evidence steps all work`): tag `btn:New colony` not found, they click the English label while the run is French. They played only because the filter had no suite name (153 scenarios, negations sweep every suite): any refile puts the suite name before `::` (`<suite>::<scenario>`) or excludes "entry flow" in French runs. No refile owed: our scenarios are green. 8.c French replay after the wording change: closed for this mod (no red of ours). Evidence minified to `Tests/Pickle/Evidence/p16-stones-fr-0ccdfbc` (summary, junit, peak-ram), Inbox empty.
@@ -58,7 +59,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 3b24946ec1e0f1a4f2c4fbf36be712799adf4d3c
+protocols_read_sha: b1463127f5a02e208ce0dc75d3b7bbc5957ef0e9
 ---
 # Adaptive Storage Neolithic Renew: status
 
