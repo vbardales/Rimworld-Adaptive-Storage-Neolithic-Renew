@@ -1,41 +1,24 @@
-# Played 2026-10-08 (pictures 7 to 9 of the gallery accepted by the owner; the other three were refused). @wip removed 2026-10-23 (owner): the `@requires` below keeps it out of every pass except -DepMap wsl-deps.camp.map. Colonist captures stay on hold until a rework (STATUS.md).
-# A second Workshop series for this mod, in the spirit of PUBLISHING.md's gallery rules of 2026-10-06: magazine photographs of one story,
-# with living things in them, a place that tells something, and the author (this suite) choosing place, time, composition and manner.
+# The camp series of the Workshop page, rewritten 2026-11-09 at shootGallery[1.2.0] (shotlist of STATUS.md, plan 5.0 on every scene). Replaces the 2026-10-08 camp series (Ayla, Doka, Tahu, outside NSB) and the calm-zone-close series: one story, one place.
 #
-# The story: "Noon at the camp". A small neolithic camp on the bare earth clearing of Nelim's tribe (named place bare-clearing, centre
-# (195, 152), a 14 x 14 square of plain brown earth with no roof, so natural daylight): a campfire in the middle, two torches, stools, and the
-# mod's storage laid out as a camp would have it, wood and hay by the fire, baskets and pots on the shady side, the plinths of the tribe's
-# treasures in front of the chief's place. People and animals come and go. Time unfolds in the game: every picture starts at noon and waits 5
-# more game minutes than the one before (12:00 to 12:25; 2 500 ticks make an hour, so about 208 ticks per 5 minutes, plus 60 ticks to settle).
-# Daytime animals and people only. The gallery has no count limit, only 8 MB for the folder and 2 MB per image (PUBLISHING.md): six pictures plus the Preview copy `0-` is the plan.
+# The story: "Noon at the camp". Nelim (protagonist, the owner's colonist) and Soren (NSB male alter ego, created by the scenario) tidy the neolithic camp of Nelim's tribe on bare-clearing (centre (195, 152), plain earth, no roof), clear sky, 20 degrees. Start 12:00, each picture waits 5 more game minutes than the one before (about 208 ticks per 5 minutes, 60 ticks to settle; 2 500 ticks per hour). Opening picture 1: the camp is untidy, loose chunks, logs and berries on the ground, the storage waits. Closing picture 8: everything stored, the camp eats at noon. Same outfit all day. Nelim: fixture pants and corset plus "Apparel_TribalA" dyed rgb (184, 116, 42), hairstyle "Roo_Royal_LongHD" (long, loose, no hat), face kit "smile". Soren: "Apparel_TribalA" dyed rgb (59, 58, 54), face kit "smile". Temperature held at 20 degrees (no sweat). Anonymous NSB fauna only, daytime. The gesture is obtained by the item the pawn holds in hand (carry tracker, drawn in the hand) and the facing, game paused: no forced job.
+# Common decor, around the fire: "Campfire" (195, 152) lit, "TorchLamp" (191, 150) and (199, 150) lit, "Stool" (193, 154) and (197, 154), "VFEPD_TanningRack" (200, 151), "VFEPD_BrewingBarrel" (196, 153), "VFEPD_HayBaleLarge" (189, 151), "Plant_Daylily" (188, 149) and (202, 156). Each tight picture dresses its own corner (torch, daylily, stool, bale, barrel). Decor belongs to one picture: placed, photographed, removed.
 #
-# Shot plan (place; frame; time; subject; living things; what the picture says):
-#   1. 12:00 wide: the whole camp (cells (188, 146) to (202, 158) fill 85 % of the screen). Fire lit, storage on three sides. Ayla stands
-#      by the fire in a dyed tribal tunic, Doka stands further off; a dog lies near the fire. "The camp is awake."
-#   2. 12:05 close: the baskets (cells (189, 153) to (196, 158)). Empty, one item, full. Ayla, in a bright dyed tunic that answers the wood,
-#      stands behind the baskets; a squirrel waits at the edge. "What goes in, shows."
-#   3. 12:10 medium: wood pile, hay pile and the chunk stacks by the fire (cells (189, 146) to (202, 152)). Doka stands at the stacks in
-#      a dark tunic against the pale stone; a hare nibbles at the hay. "Fuel and stone, stacked as they come."
-#   4. 12:15 medium: the large pots near the fire (cells (190, 153) to (202, 158)). Doka tends them, the dog sits by Ayla. "Food for noon."
-#   5. 12:20 medium: the plinths in front of the chief's stool (cells (191, 146) to (201, 151)). The chief (Tahu) in a dyed headdress and
-#      tunic stands behind the plinths; a peacock spreads its tail. "The tribe's treasures."
-#   6. 12:25 medium: the stone pots and stacks of the other mod beside granite (cells (189, 153) to (200, 158)). A cat sleeps between them.
-#      "Every stone, in its place."
-# bare-clearing (z 145 to 158 hold it at both ends): every frame now stays inside z 147 to 157. COLONIST CAPTURES ARE ON HOLD (owner, 2026-10-07) until TMW: do not replay scenarios 1 to 5 for a cut.
-# Review rule: after the run, open every picture and compare it with the line above; redo the one that does not say what it should.
+# Shot plan (frames are cell rectangles filling 85 percent of the screen; place bare-clearing; hour 12 plus the wait):
+#   1. camp-1-noon, 12:00, wide, cells (186, 146) to (204, 158), wait 60. Untidy camp; Nelim at (193, 151) facing West, "WoodLog" in hand, about to lay it on the wood pile; Soren at (196, 157) facing East, "ChunkGranite" in hand; labrador "Biscuit" at (197, 155) facing the camera. Storage built: "ASNeolithicWoodPile" (192, 148), "ASNeolithicHayPile" (194, 148), "ASNeolithicMealShelf" (197, 148), "ASNeolithicTextileBundleFabric" (199, 148), baskets (190, 154) and (190, 155), "ASNeolithicLargePot" (200, 154) and (200, 155); loose "ChunkGranite" at (187, 152) and (198, 157), "WoodLog" (189, 157), "RawBerries" (201, 157), "Hay" (193, 146). Says: the camp is untidy at noon, the storage waits to be filled.
+#   2. camp-2-baskets, 12:05, tight, cells (189, 153) to (196, 157), wait 268. Three "ASNeolithicBasketWoody" at (190, 155), (192, 155), (194, 155): empty, one "Cloth", full ("Cloth" and "Steel"); Nelim at (192, 154) facing South with "ChunkGranite" in hand, one step from the middle basket, smiling; squirrel "Noisette" at (195, 156). Torch (191, 152), daylily (188, 154), stool (196, 156). Says: what goes in, shows.
+#   3. camp-3-piles, 12:10, medium, cells (189, 147) to (197, 152), wait 477. "ASNeolithicWoodPile" (190, 148) with "WoodLog" and "ASNeolithicHayPile" (192, 148) with "Hay"; Nelim at (193, 149) facing West with "Hay" in hand; hen "Plume" at (194, 150); tanning rack (201, 147) edge, bale (196, 152), torch (191, 151). Says: fuel stacked as it comes.
+#   4. camp-4-pots, 12:15, tight, cells (197, 152) to (203, 157), wait 685. "ASNeolithicLargePot" at (198, 154), (200, 154), (202, 154) holding "RawBerries", "Milk", "Pemmican"; Soren at (199, 156) facing North with "Milk" in hand; labrador "Biscuit" at (199, 155) facing the camera; torch (199, 153), bale (202, 152), barrel (197, 156). Says: food for noon, pots show what they hold.
+#   5. camp-5-stacks, 12:20, tight, cells (193, 147) to (201, 151), wait 893. "ASNeolithicChunkStorage" made from "ChunkGranite" at (194, 149) with 1 chunk, (196, 149) with 2, (198, 149) with 6, and made from "ChunkMarble" at (200, 149) with 6; Soren at (196, 151) facing East with "ChunkGranite" in hand; hare "Pomme" at (197, 150); torch (191, 149), stool (197, 151). Says: stone piles up, in two materials.
+#   6. camp-6-plinths, 12:25, tight, cells (193, 148) to (199, 152), wait 1102. "ASNeolithicPlinthWoody" (194, 150) with "Gold", "ASNeolithicPlinthStone" made from "ChunkGranite" (196, 150) empty, made from "ChunkVacstone" (198, 150) with "Jade"; Nelim at (196, 151) facing North with "Silver" in hand, about to set it on the empty plinth; peacock "Eclat" at (196, 152) facing the camera. Torch (192, 152), stool (199, 152). Says: the tribe's treasures.
+#   7. camp-7-another-mod, 12:30, medium, cells (191, 151) to (202, 156), wait 1310. "ASNeolithicLargePotStone" and "ASNeolithicChunkStorage" made from "ChunkGranite" at (193, 153) and (195, 153), the same two made from "ChunkKura_Andesite" (Extra Stone) at (198, 153) and (200, 153); Soren at (199, 155) facing West with "ChunkKura_Andesite" in hand; cat "Mie" at (197, 154). Says: a stone from another mod gets its own buildings. Risk: granite and andesite may be close in colour at 268 px.
+#   8. camp-8-tidied, 12:40, wide, cells (186, 146) to (204, 158), wait 1727. Same storage as picture 1, now filled ("WoodLog", "Hay", "MealSimple" on the shelf, "Cloth" bundle, baskets, pots); Nelim at (193, 153) facing East and Soren at (197, 153) facing West, each with "MealSimple" in hand; labrador "Biscuit" at (197, 152). Says: the camp is tidy, the camp eats at noon (mirrors picture 1).
+#   9. window-research-storage: interface window (research window, Storage tab), taken on `window-backdrop-for-height`, cropped, no subtitle, not scored; played by feature 08 (research tab), no scenario here.
+# Subtitles are written in PUBLICATION.md ("Gallery subtitles") once the gallery is finished.
+# Series (criterion k): wide 1 and 8, medium 3 and 7, tight 2, 4, 5, 6; opening 1, closing 8.
+# Review rule: after the run, open every picture and compare it with the line above; shrink it to 268 px wide and check the subject; redo the one that does not say what it should.
 #
-# Mods used besides this one and the sanctuary studio (owner, 2026-10-06: any mod may be chosen, not only hers). defNames read in each mod's own
-# folder on 2026-10-06: Mud's Tribal Apparel (2796703834, Mud.TribalApparel): Apparel_TribalCape, Apparel_TribalCloak, Apparel_TribalFurCloak;
-# ETRT: Tribal Apparel (continued) (3545351721, ETRT.TribalApparel): Apparel_FSFurCoat, Apparel_FSFurHat, ET_Apparel_WolfHood, ET_Apparel_DeerHood;
-# Vanilla Furniture Expanded - Props and Decor (2102143149, VanillaExpanded.VFEPropsandDecor, needs Harmony and VFE Core 2023507013):
-# VFEPD_HayBaleLarge, VFEPD_TanningRack, VFEPD_BrewingBarrel (VFE Props and Decor base folder; the tent, drying rack and stew pot belong to its Classical and Cooking modules, not loaded here).
-# TO VERIFY ON A PROBE RUN (written from memory of the game, not played): the colonist kind "Colonist", the vanilla apparel "Apparel_TribalA"
-# and "Apparel_TribalHeaddress", the decor defNames "Campfire", "TorchLamp", "Stool", the footprint of the tent, the extent of bare-clearing
-# (x 188 to 201, z 145 to 158), that the step texts below exist as written in PickleTools/docs/STAGING.md (parentheses without backslash),
-#
-# `@requires:nelim.pickletools.screenshotstudio`: only the pass of `-DepMap wsl-deps.camp.map` stages the studio and the fixture. Odyssey for
-# picture 5 (vacstone), the stone mod for picture 6.
-# Two families of steps, told apart by their prefix (2026-10-08): `Nelim's Sanctuary: ` (SB, repository SanctuaryBacklot: the named places and the fixture Nelims-tribe) and `Nelim's Pickle Tools: ` (NPT, repository PickleTools: studio, presentation mode, camera, decor, colonists, animals). Steps without a prefix are this mod's or Pickle's own.
+# `@requires:nelim.pickletools.screenshotstudio`: only the pass of `-DepMap wsl-deps.camp.map` stages the studio and the fixture. Odyssey for the vacstone plinth, Extra Stone (`ChunkKura_Andesite`) for picture 7, VFE Props and Decor (needs VFE Core and Harmony) for the decor.
+# Two families of steps, told apart by their prefix: `Nelim's Sanctuary: ` (SanctuaryBacklot: named places, the fixture Nelims-tribe) and `Nelim's Pickle Tools: ` (NPT: studio, presentation mode, camera, decor, colonists, animals). Steps without a prefix are this mod's or Pickle's own.
 @requires:nelim.pickletools.screenshotstudio
 @requires:nelim.pickletools.camerazoom
 @requires:nelim.pickletools.colonistrace
@@ -44,13 +27,14 @@
 @review
 Feature: the camp pictures of the Workshop page
 
-  # 1. Noon at the camp, wide: the whole set around the fire.
-  Scenario: the whole camp at noon
+  # 1. Noon, wide: the camp is untidy, the storage waits to be filled.
+  Scenario: untidy camp at noon, storage waiting
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And I set the hour to 12
     And I set the weather to "Clear"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 150)
@@ -61,6 +45,300 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: I place the decor "Stool" at (197, 154)
     And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (200, 151)
     And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 153)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (189, 151)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (188, 149) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (202, 156) fully grown
+    And a "ASNeolithicWoodPile" is built at (192, 148)
+    And a "ASNeolithicHayPile" is built at (194, 148)
+    And a "ASNeolithicMealShelf" is built at (197, 148)
+    And a "ASNeolithicTextileBundleFabric" is built at (199, 148)
+    And a "ASNeolithicBasketWoody" is built at (190, 154)
+    And a "ASNeolithicBasketFabric" is built at (190, 155)
+    And a "ASNeolithicLargePot" is built at (200, 154)
+    And a "ASNeolithicLargePot" is built at (200, 155)
+    And I spawn a "ChunkGranite" at (187, 152)
+    And I spawn a "ChunkGranite" at (198, 157)
+    And I spawn a "WoodLog" at (189, 157)
+    And I spawn a "RawBerries" at (201, 157)
+    And I spawn a "Hay" at (193, 146)
+    And Nelim's Pickle Tools: I frame the cells (186, 146) to (204, 158) filling 85 percent of the screen
+    When I wait 60 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 155)
+    And game speed is paused
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" stands at (193, 151) facing West
+    And Nelim's Pickle Tools: the colonist "Nelim" holds "WoodLog" in hand
+    And Nelim's Pickle Tools: a colonist "Soren" exists
+    And Nelim's Pickle Tools: "Soren" gender is male
+    And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
+    And Nelim's Pickle Tools: "Soren" stands at (196, 157) facing East
+    And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkGranite" in hand
+    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    Then I take a screenshot "camp 1 - untidy camp at noon"
+    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: the decor is removed
+
+  # 2. 12:05, tight: what goes in shows.
+  Scenario: three baskets, empty, one item and full, Nelim about to add a stone
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
+    And I set the hour to 12
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 152)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (188, 154) fully grown
+    And Nelim's Pickle Tools: I place the decor "Stool" at (196, 156)
+    And a "ASNeolithicBasketWoody" is built at (190, 155)
+    And a "ASNeolithicBasketWoody" is built at (192, 155)
+    And a "ASNeolithicBasketWoody" is built at (194, 155)
+    And I spawn a "Cloth" at (192, 155)
+    And I spawn a "Cloth" at (194, 155)
+    And I spawn a "Steel" at (194, 155)
+    And Nelim's Pickle Tools: I frame the cells (189, 153) to (196, 157) filling 85 percent of the screen
+    When I wait 268 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Squirrel" named "Noisette" is spawned at (195, 156)
+    And game speed is paused
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" stands at (192, 154) facing South
+    And Nelim's Pickle Tools: the colonist "Nelim" holds "ChunkGranite" in hand
+    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    Then I take a screenshot "camp 2 - three baskets"
+    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: the decor is removed
+
+  # 3. 12:10, medium: fuel stacked as it comes.
+  Scenario: wood pile and hay pile
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
+    And I set the hour to 12
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (201, 147)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (196, 152)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 151)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 151) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (189, 152) fully grown
+    And a "ASNeolithicWoodPile" is built at (190, 148)
+    And a "ASNeolithicHayPile" is built at (192, 148)
+    And I spawn a "WoodLog" at (190, 148)
+    And I spawn a "Hay" at (192, 148)
+    And Nelim's Pickle Tools: I frame the cells (189, 147) to (197, 152) filling 85 percent of the screen
+    When I wait 477 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Plume" is spawned at (194, 150)
+    And game speed is paused
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" stands at (193, 149) facing West
+    And Nelim's Pickle Tools: the colonist "Nelim" holds "Hay" in hand
+    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    Then I take a screenshot "camp 3 - wood and hay"
+    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: the decor is removed
+
+  # 4. 12:15, tight: food for noon.
+  Scenario: large pots with berries, milk and pemmican
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
+    And I set the hour to 12
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (199, 153)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (199, 153) is lit
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (202, 152)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (197, 156)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (203, 156) fully grown
+    And a "ASNeolithicLargePot" is built at (198, 154)
+    And a "ASNeolithicLargePot" is built at (200, 154)
+    And a "ASNeolithicLargePot" is built at (202, 154)
+    And I spawn a "RawBerries" at (198, 154)
+    And I spawn a "Milk" at (200, 154)
+    And I spawn a "Pemmican" at (202, 154)
+    And Nelim's Pickle Tools: I frame the cells (197, 152) to (203, 157) filling 85 percent of the screen
+    When I wait 685 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (199, 155)
+    And game speed is paused
+    And Nelim's Pickle Tools: a colonist "Soren" exists
+    And Nelim's Pickle Tools: "Soren" gender is male
+    And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
+    And Nelim's Pickle Tools: "Soren" stands at (199, 156) facing North
+    And Nelim's Pickle Tools: the colonist "Soren" holds "Milk" in hand
+    And Nelim's Pickle Tools: the other colonists are out of frame
+    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    Then I take a screenshot "camp 4 - large pots"
+    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: the decor is removed
+
+  # 5. 12:20, tight: stone piles up in two materials.
+  Scenario: granite stacks at one, two and six chunks and a marble one
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
+    And I set the hour to 12
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 149)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 149) is lit
+    And Nelim's Pickle Tools: I place the decor "Stool" at (197, 151)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (193, 150) fully grown
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (194, 149)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (196, 149)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 149)
+    And a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (200, 149)
+    And I spawn a "ChunkGranite" at (194, 149)
+    And I spawn a "ChunkGranite" at (196, 149)
+    And I spawn a "ChunkGranite" at (196, 149)
+    And I spawn a "ChunkGranite" at (198, 149)
+    And I spawn a "ChunkGranite" at (198, 149)
+    And I spawn a "ChunkGranite" at (198, 149)
+    And I spawn a "ChunkGranite" at (198, 149)
+    And I spawn a "ChunkGranite" at (198, 149)
+    And I spawn a "ChunkGranite" at (198, 149)
+    And I spawn a "ChunkMarble" at (200, 149)
+    And I spawn a "ChunkMarble" at (200, 149)
+    And I spawn a "ChunkMarble" at (200, 149)
+    And I spawn a "ChunkMarble" at (200, 149)
+    And I spawn a "ChunkMarble" at (200, 149)
+    And I spawn a "ChunkMarble" at (200, 149)
+    And Nelim's Pickle Tools: I frame the cells (193, 147) to (201, 151) filling 85 percent of the screen
+    When I wait 893 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Pomme" is spawned at (197, 150)
+    And game speed is paused
+    And Nelim's Pickle Tools: a colonist "Soren" exists
+    And Nelim's Pickle Tools: "Soren" gender is male
+    And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
+    And Nelim's Pickle Tools: "Soren" stands at (196, 151) facing East
+    And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkGranite" in hand
+    And Nelim's Pickle Tools: the other colonists are out of frame
+    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    Then I take a screenshot "camp 5 - stacks"
+    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: the decor is removed
+
+  # 6. 12:25, tight: the tribe's treasures.
+  Scenario: plinths of wood, granite and vacstone, Nelim about to set silver on the empty one
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
+    And I set the hour to 12
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (192, 152)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (192, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 152)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (193, 148) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 148) fully grown
+    And a "ASNeolithicPlinthWoody" is built at (194, 150)
+    And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (196, 150)
+    And a "ASNeolithicPlinthStone" made from "ChunkVacstone" is built at (198, 150)
+    And I spawn a "Gold" at (194, 150)
+    And I spawn a "Jade" at (198, 150)
+    And Nelim's Pickle Tools: I frame the cells (193, 148) to (199, 152) filling 85 percent of the screen
+    When I wait 1102 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (196, 152)
+    And game speed is paused
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" stands at (196, 151) facing North
+    And Nelim's Pickle Tools: the colonist "Nelim" holds "Silver" in hand
+    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    Then I take a screenshot "camp 6 - plinths"
+    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: the decor is removed
+
+  # 7. 12:30, medium: a stone from another mod gets its own buildings.
+  Scenario: a pot and a stack of a stone from another mod, beside granite
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
+    And I set the hour to 12
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 153)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 153) is lit
+    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (197, 155)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (202, 152)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (191, 156) fully grown
+    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (193, 153)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (195, 153)
+    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (198, 153)
+    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (200, 153)
+    And I spawn a "RawBerries" at (193, 153)
+    And I spawn a "ChunkGranite" at (195, 153)
+    And I spawn a "ChunkGranite" at (195, 153)
+    And I spawn a "ChunkGranite" at (195, 153)
+    And I spawn a "RawBerries" at (198, 153)
+    And I spawn a "ChunkKura_Andesite" at (200, 153)
+    And I spawn a "ChunkKura_Andesite" at (200, 153)
+    And I spawn a "ChunkKura_Andesite" at (200, 153)
+    And Nelim's Pickle Tools: I frame the cells (191, 151) to (202, 156) filling 85 percent of the screen
+    When I wait 1310 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mie" is spawned at (197, 154)
+    And game speed is paused
+    And Nelim's Pickle Tools: a colonist "Soren" exists
+    And Nelim's Pickle Tools: "Soren" gender is male
+    And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
+    And Nelim's Pickle Tools: "Soren" stands at (199, 155) facing West
+    And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkKura_Andesite" in hand
+    And Nelim's Pickle Tools: the other colonists are out of frame
+    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    Then I take a screenshot "camp 7 - a stone from another mod"
+    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
+    And Nelim's Pickle Tools: the decor is removed
+
+  # 8. 12:40, wide: the camp is tidy, the storage is filled, the camp eats at noon.
+  Scenario: the tidy camp, Nelim and Soren eating by the fire
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
+    And I set the hour to 12
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 150)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 150) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (199, 150)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (199, 150) is lit
+    And Nelim's Pickle Tools: I place the decor "Stool" at (193, 154)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (197, 154)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (200, 151)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 153)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (189, 151)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (188, 149) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (202, 156) fully grown
     And a "ASNeolithicWoodPile" is built at (192, 148)
     And a "ASNeolithicHayPile" is built at (194, 148)
     And a "ASNeolithicMealShelf" is built at (197, 148)
@@ -77,244 +355,23 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Steel" at (190, 155)
     And I spawn a "RawBerries" at (200, 154)
     And I spawn a "Milk" at (200, 155)
-    And Nelim's Pickle Tools: I frame the cells (188, 148) to (201, 155) filling 85 percent of the screen
-    When I wait 60 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 153)
+    And Nelim's Pickle Tools: I frame the cells (186, 146) to (204, 158) filling 85 percent of the screen
+    When I wait 1727 ticks
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 152)
     And game speed is paused
-    And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
-    And Nelim's Pickle Tools: "Ayla" body type is Female
-    And Nelim's Pickle Tools: "Ayla" has the gene "Eyes_Green"
-    And Nelim's Pickle Tools: "Ayla" hairstyle is "Primal"
-    And Nelim's Pickle Tools: "Ayla" hair colour is rgb (90, 58, 32)
-    And Nelim's Pickle Tools: "Ayla" face tattoo is "Face_Tiger"
-    And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
-    And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
-    And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
-    And Nelim's Pickle Tools: "Doka" body type is Male
-    And Nelim's Pickle Tools: "Doka" has the gene "Eyes_DarkBrown"
-    And Nelim's Pickle Tools: "Doka" hairstyle is "Savage"
-    And Nelim's Pickle Tools: "Doka" hair colour is rgb (26, 26, 26)
-    And Nelim's Pickle Tools: "Doka" face tattoo is "Face_Warpaint"
-    And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
-    And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
-    And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
-    And Nelim's Pickle Tools: "Ayla" stands at (196, 151) facing West
-    And Nelim's Pickle Tools: "Doka" stands at (193, 155) facing North
-    And Nelim's Pickle Tools: the other colonists are out of frame
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" stands at (193, 153) facing East
+    And Nelim's Pickle Tools: the colonist "Nelim" holds "MealSimple" in hand
+    And Nelim's Pickle Tools: a colonist "Soren" exists
+    And Nelim's Pickle Tools: "Soren" gender is male
+    And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
+    And Nelim's Pickle Tools: "Soren" stands at (197, 153) facing West
+    And Nelim's Pickle Tools: the colonist "Soren" holds "MealSimple" in hand
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    Then I take a screenshot "camp 1 - the whole camp at noon"
-    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: the decor is removed
-
-  # 2. The baskets, close: empty, one item, full, with Ayla behind them.
-  Scenario: three baskets, empty, with one item and full, and Ayla behind them
-    Given the save "Nelims-tribe" is loaded
-    And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
-    And I set the hour to 12
-    And I set the weather to "Clear"
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And a "ASNeolithicBasketWoody" is built at (190, 155)
-    And a "ASNeolithicBasketWoody" is built at (192, 155)
-    And a "ASNeolithicBasketWoody" is built at (194, 155)
-    And I spawn a "Cloth" at (192, 155)
-    And I spawn a "Cloth" at (194, 155)
-    And I spawn a "Steel" at (194, 155)
-    And Nelim's Pickle Tools: I frame the cells (189, 152) to (196, 156) filling 85 percent of the screen
-    When I wait 268 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Plume" is spawned at (196, 155)
-    And game speed is paused
-    And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
-    And Nelim's Pickle Tools: "Ayla" body type is Female
-    And Nelim's Pickle Tools: "Ayla" has the gene "Eyes_Green"
-    And Nelim's Pickle Tools: "Ayla" hairstyle is "Primal"
-    And Nelim's Pickle Tools: "Ayla" hair colour is rgb (90, 58, 32)
-    And Nelim's Pickle Tools: "Ayla" face tattoo is "Face_Tiger"
-    And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (230, 170, 40)
-    And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalCape" dyed rgb (120, 80, 30)
-    And Nelim's Pickle Tools: "Ayla" stands at (194, 153) facing South
-    And Nelim's Pickle Tools: the other colonists are out of frame
-    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: studio presentation mode is enabled
-    Then I take a screenshot "camp 2 - three baskets"
-    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: the decor is removed
-
-  # 3. Fuel and stone by the fire, Doka at the stacks, a hare at the hay.
-  Scenario: wood and hay piles and granite stacks at one, two and six chunks, and a marble one
-    Given the save "Nelims-tribe" is loaded
-    And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
-    And I set the hour to 12
-    And I set the weather to "Clear"
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (201, 147)
-    And a "ASNeolithicWoodPile" is built at (190, 148)
-    And a "ASNeolithicHayPile" is built at (192, 148)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (194, 149)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (196, 149)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 149)
-    And a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (200, 149)
-    And I spawn a "WoodLog" at (190, 148)
-    And I spawn a "Hay" at (192, 148)
-    And I spawn a "ChunkGranite" at (194, 149)
-    And I spawn a "ChunkGranite" at (196, 149)
-    And I spawn a "ChunkGranite" at (196, 149)
-    And I spawn a "ChunkGranite" at (198, 149)
-    And I spawn a "ChunkGranite" at (199, 149)
-    And I spawn a "ChunkGranite" at (198, 149)
-    And I spawn a "ChunkGranite" at (199, 149)
-    And I spawn a "ChunkGranite" at (198, 149)
-    And I spawn a "ChunkGranite" at (199, 149)
-    And I spawn a "ChunkMarble" at (200, 149)
-    And Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 154) filling 85 percent of the screen
-    When I wait 477 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Pomme" is spawned at (193, 150)
-    And game speed is paused
-    And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
-    And Nelim's Pickle Tools: "Doka" body type is Male
-    And Nelim's Pickle Tools: "Doka" has the gene "Eyes_DarkBrown"
-    And Nelim's Pickle Tools: "Doka" hairstyle is "Savage"
-    And Nelim's Pickle Tools: "Doka" hair colour is rgb (26, 26, 26)
-    And Nelim's Pickle Tools: "Doka" face tattoo is "Face_Warpaint"
-    And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
-    And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
-    And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
-    And Nelim's Pickle Tools: "Doka" stands at (197, 151) facing South
-    And Nelim's Pickle Tools: the other colonists are out of frame
-    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: studio presentation mode is enabled
-    Then I take a screenshot "camp 3 - fuel and stone"
-    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: the decor is removed
-
-  # 4. Food for noon: the pots near the fire, Doka tending them, the dog beside Ayla.
-  Scenario: large pots with different food, and a lidded one holding two kinds
-    Given the save "Nelims-tribe" is loaded
-    And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
-    And I set the hour to 12
-    And I set the weather to "Clear"
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 153)
-    And a "ASNeolithicLargePot" is built at (191, 154)
-    And a "ASNeolithicLargePot" is built at (193, 154)
-    And a "ASNeolithicLargePot" is built at (195, 154)
-    And a "ASNeolithicLargePot" is built at (197, 154)
-    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (199, 154)
-    And a "ASNeolithicLargePot" is built at (201, 154)
-    And I spawn a "RawBerries" at (191, 154)
-    And I spawn a "Milk" at (193, 154)
-    And I spawn a "EggChickenUnfertilized" at (195, 154)
-    And I spawn a "Kibble" at (197, 154)
-    And I spawn a "Pemmican" at (199, 154)
-    And I spawn a "RawBerries" at (201, 154)
-    And I spawn a "Milk" at (201, 154)
-    And Nelim's Pickle Tools: I frame the cells (190, 150) to (202, 155) filling 85 percent of the screen
-    When I wait 685 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (200, 154)
-    And game speed is paused
-    And Nelim's Pickle Tools: a colonist "Doka" of kind "Colonist" exists
-    And Nelim's Pickle Tools: "Doka" body type is Male
-    And Nelim's Pickle Tools: "Doka" has the gene "Eyes_DarkBrown"
-    And Nelim's Pickle Tools: "Doka" hairstyle is "Savage"
-    And Nelim's Pickle Tools: "Doka" hair colour is rgb (26, 26, 26)
-    And Nelim's Pickle Tools: "Doka" face tattoo is "Face_Warpaint"
-    And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalA" dyed rgb (45, 62, 80)
-    And Nelim's Pickle Tools: "Doka" wears "Apparel_TribalCloak"
-    And Nelim's Pickle Tools: "Doka" wears "ET_Apparel_WolfHood"
-    And Nelim's Pickle Tools: a colonist "Ayla" of kind "Colonist" exists
-    And Nelim's Pickle Tools: "Ayla" body type is Female
-    And Nelim's Pickle Tools: "Ayla" has the gene "Eyes_Green"
-    And Nelim's Pickle Tools: "Ayla" hairstyle is "Primal"
-    And Nelim's Pickle Tools: "Ayla" hair colour is rgb (90, 58, 32)
-    And Nelim's Pickle Tools: "Ayla" face tattoo is "Face_Tiger"
-    And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalA" dyed rgb (196, 78, 52)
-    And Nelim's Pickle Tools: "Ayla" wears "Apparel_TribalFurCloak"
-    And Nelim's Pickle Tools: "Doka" stands at (196, 152) facing South
-    And Nelim's Pickle Tools: "Ayla" stands at (199, 152) facing West
-    And Nelim's Pickle Tools: the other colonists are out of frame
-    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: studio presentation mode is enabled
-    Then I take a screenshot "camp 4 - food for noon"
-    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: the decor is removed
-
-  # 5. The tribe's treasures: three plinths in front of the chief, a peacock spreading its tail. Vacstone needs Odyssey.
-  @requires:Odyssey
-  Scenario: plinths of wood, granite and vacstone, each showing an item, and the chief behind them
-    Given the save "Nelims-tribe" is loaded
-    And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
-    And I set the hour to 12
-    And I set the weather to "Clear"
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "Stool" at (195, 148)
-    And a "ASNeolithicPlinthWoody" is built at (193, 150)
-    And a "ASNeolithicPlinthStone" made from "ChunkGranite" is built at (195, 150)
-    And a "ASNeolithicPlinthStone" made from "ChunkVacstone" is built at (197, 150)
-    And I spawn a "Gold" at (193, 150)
-    And I spawn a "Silver" at (195, 150)
-    And I spawn a "Jade" at (197, 150)
-    And Nelim's Pickle Tools: I frame the cells (191, 148) to (201, 154) filling 85 percent of the screen
-    When I wait 893 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (199, 150)
-    And game speed is paused
-    And Nelim's Pickle Tools: a colonist "Tahu" of kind "Colonist" exists
-    And Nelim's Pickle Tools: "Tahu" body type is Female
-    And Nelim's Pickle Tools: "Tahu" has the gene "Eyes_Golden"
-    And Nelim's Pickle Tools: "Tahu" hairstyle is "Keeper"
-    And Nelim's Pickle Tools: "Tahu" hair colour is rgb (205, 205, 205)
-    And Nelim's Pickle Tools: "Tahu" face tattoo is "Face_Oracle"
-    And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalA" dyed rgb (120, 40, 110)
-    And Nelim's Pickle Tools: "Tahu" wears "Apparel_TribalFurCloak" dyed rgb (230, 190, 60)
-    And Nelim's Pickle Tools: "Tahu" wears "ET_Apparel_DeerHood"
-    And Nelim's Pickle Tools: "Tahu" stands at (195, 148) facing South
-    And I draft "Tahu"
-    And I wait for "Tahu" to have job "Wait_Combat"
-    And I wait 60 ticks
-    And Nelim's Pickle Tools: "Tahu" stands at (195, 148) facing South
-    And Nelim's Pickle Tools: the animal "Eclat" stands at (199, 150) facing West
-    And Nelim's Pickle Tools: the other colonists are out of frame
-    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: studio presentation mode is enabled
-    Then I take a screenshot "camp 5 - the tribe's treasures"
-    When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: the decor is removed
-
-  # 6. Every stone, in its place: the pots and stacks of another mod's stone beside granite, a cat asleep between them.
-  @requires:Kura.ExtraStone
-  Scenario: the pot and the chunk stack of a stone from another mod, beside granite
-    Given the save "Nelims-tribe" is loaded
-    And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
-    And I set the hour to 12
-    And I set the weather to "Clear"
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And a "ASNeolithicLargePotStone" made from "ChunkGranite" is built at (190, 154)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (192, 154)
-    And a "ASNeolithicLargePotStone" made from "ChunkKura_Andesite" is built at (196, 154)
-    And a "ASNeolithicChunkStorage" made from "ChunkKura_Andesite" is built at (198, 154)
-    And I spawn a "RawBerries" at (190, 154)
-    And I spawn a "ChunkGranite" at (192, 154)
-    And I spawn a "ChunkKura_Andesite" at (198, 154)
-    And I spawn a "ChunkGranite" at (192, 154)
-    And I spawn a "ChunkKura_Andesite" at (198, 154)
-    And I spawn a "ChunkGranite" at (192, 154)
-    And I spawn a "ChunkKura_Andesite" at (198, 154)
-    And I spawn a "RawBerries" at (196, 154)
-    And Nelim's Pickle Tools: the other colonists are out of frame
-    And Nelim's Pickle Tools: I frame the cells (189, 150) to (200, 155) filling 85 percent of the screen
-    When I wait 1102 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mie" is spawned at (194, 154)
-    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
-    And Nelim's Pickle Tools: studio presentation mode is enabled
-    Then I take a screenshot "camp 6 - every stone in its place"
+    Then I take a screenshot "camp 8 - the tidy camp"
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: the decor is removed
