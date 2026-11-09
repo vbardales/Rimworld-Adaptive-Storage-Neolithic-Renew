@@ -67,15 +67,15 @@ Feature: the camp pictures of the Workshop page
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" stands at (193, 151) facing West
     And Nelim's Pickle Tools: the colonist "Nelim" holds "WoodLog" in hand
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: "Soren" stands at (196, 157) facing East
     And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkGranite" in hand
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 1 - untidy camp at noon"
@@ -108,9 +108,9 @@ Feature: the camp pictures of the Workshop page
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" stands at (192, 154) facing South
     And Nelim's Pickle Tools: the colonist "Nelim" holds "ChunkGranite" in hand
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 2 - three baskets"
@@ -142,9 +142,9 @@ Feature: the camp pictures of the Workshop page
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" stands at (193, 149) facing West
     And Nelim's Pickle Tools: the colonist "Nelim" holds "Hay" in hand
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 3 - wood and hay"
@@ -179,9 +179,9 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: "Soren" stands at (199, 156) facing North
     And Nelim's Pickle Tools: the colonist "Soren" holds "Milk" in hand
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -229,9 +229,9 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: "Soren" stands at (196, 151) facing East
     And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkGranite" in hand
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -265,9 +265,9 @@ Feature: the camp pictures of the Workshop page
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" stands at (196, 151) facing North
     And Nelim's Pickle Tools: the colonist "Nelim" holds "Silver" in hand
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 6 - plinths"
@@ -308,9 +308,9 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: "Soren" stands at (199, 155) facing West
     And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkKura_Andesite" in hand
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -361,15 +361,15 @@ Feature: the camp pictures of the Workshop page
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" stands at (193, 153) facing East
     And Nelim's Pickle Tools: the colonist "Nelim" holds "MealSimple" in hand
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: "Soren" stands at (197, 153) facing West
     And Nelim's Pickle Tools: the colonist "Soren" holds "MealSimple" in hand
+    And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
     Then I take a screenshot "camp 8 - the tidy camp"
