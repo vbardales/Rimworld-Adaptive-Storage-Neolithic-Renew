@@ -64,6 +64,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: I frame the cells (188, 146) to (202, 157) filling 85 percent of the screen
     When I wait 60 ticks
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 155)
+    And Nelim's Pickle Tools: the animal "Biscuit" stands at (197, 155) facing South
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
@@ -194,6 +195,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: I frame the cells (197, 152) to (203, 157) filling 85 percent of the screen
     When I wait 685 ticks
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (199, 155)
+    And Nelim's Pickle Tools: the animal "Biscuit" stands at (199, 155) facing South
     And game speed is paused
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
@@ -293,6 +295,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: I frame the cells (193, 148) to (199, 152) filling 85 percent of the screen
     When I wait 1102 ticks
     And Nelim's Pickle Tools: an adult animal of kind "Peacock" named "Eclat" is spawned at (195, 149)
+    And Nelim's Pickle Tools: the animal "Eclat" stands at (195, 149) facing South
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
@@ -342,6 +345,11 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: I frame the cells (191, 151) to (202, 156) filling 85 percent of the screen
     When I wait 1310 ticks
     And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mie" is spawned at (197, 154)
+    And Nelim's Pickle Tools: "Mie" lies down
+    And Nelim's Pickle Tools: the flecks of def "SleepZ" are not thrown
+    And Nelim's Pickle Tools: the flecks of def "SleepZ_Small" are not thrown
+    And Nelim's Pickle Tools: the flecks of def "SleepZ_Tiny" are not thrown
+    And I wait 60 ticks
     And game speed is paused
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
@@ -396,6 +404,11 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: I frame the cells (188, 146) to (202, 157) filling 85 percent of the screen
     When I wait 1727 ticks
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 152)
+    And Nelim's Pickle Tools: "Biscuit" lies down
+    And Nelim's Pickle Tools: the flecks of def "SleepZ" are not thrown
+    And Nelim's Pickle Tools: the flecks of def "SleepZ_Small" are not thrown
+    And Nelim's Pickle Tools: the flecks of def "SleepZ_Tiny" are not thrown
+    And I wait 60 ticks
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
