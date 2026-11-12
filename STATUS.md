@@ -24,13 +24,14 @@ audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfa
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in Docs/runs/history.md
 code_review_sha: 699e6ce06bdff98a18718bbf0a0847b925e5197b
 session:      local_73e7e49e-129a-4737-8603-ae05c7dafecf
-updated:      2026-11-09
+updated:      2026-11-12
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
 echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-12, resume (7, after sleep; protocols read 7640e2ab, TM registered, no archived session, Inbox checked): ticket `cb90` result was already in the Inbox without a `RUN_DONE` (1 passed, 0 failed, `exitReason: passed`, shot 4 only, tree `38c8c99`). Shot 4 opened full size: three pots readable (berries, milk, pemmican), Soren carries the milk bowl, labrador faces the camera, torches, bale, barrel, stool in frame, no overlap: candidate (about 4.5, `score-gallery` 268 px check not run). Capture moved to `Tests/Pickle/Parked/gallery-candidates-camp` (4, 5, 6, 7 kept), Inbox emptied. Open: REDO 1, 2, 3, 8 (rework scenarios, tighter frames, faces to camera, no chunk over the face, then refile); `sync-nsb-npt` owed first (NSB and NPT changed 2026-11-12, WARN of Check-Status); AUDIT.md 10.a bis (Preview illustration now made from the accepted gallery at `mountPreview`) noted, nothing to do before the gallery is accepted.
   - done 2026-11-09, resume (6, after sleep; protocols already at 87ba2352, TM re-registered, no archived session): protocols read (87ba2352, AGENTS.md markers/Preview-config rule, TOOLING-PITFALLS, nothing for `shootGallery`), TM registered, no archived session. Preview check (TM order): render of `Art/Preview.config.json` byte-identical to committed `Mod/About/Preview.png`; config reformat (icon key on several lines, values unchanged) committed `da30bca` on owner order. Tickets `fdfa`, `46d3`, `54b2` still queued: wait for `RUN_DONE`.
   - rated 2026-11-09 (`score-gallery`, 7 of 8 captures opened at full size; the 268 px shrink was NOT run, j judged by pixel size, so borderline calls are unverified): REDO 1 (storage tiny at 268, dark map corner top right, Soren back view), REDO 2 (chunk hides the face, smile contradicted), REDO 3 (wood pile small at the edge, tanning rack absent, j weak), REDO 8 (wide, storage tiny, faces hidden); candidate 5, 6, 7 (about 4 to 4.5 each; 7: cat pose ambiguous, Soren back view; 6: matches the plan, gold on wood plinth, empty granite, jade on vacstone, Nelim holds silver). Candidates kept in `Tests/Pickle/Parked/gallery-candidates-camp` (RELEASE.md), Inbox emptied, REDO captures deleted. 46d3: shot 4 failed, `the cell (203, 153) already holds VFEPD_HayBaleLarge` (2x2 bale at (202,152)); torch moved to (204, 153), commit `38c8c99`, shot 4 refiled alone as `20261109-225620-725-cb90` (evidence `Tests/Pickle/Inbox/gal-camp-f-38c8c99`). Next after RUN_DONE: rework scenarios 1, 2, 3, 8 (tighter frames, faces to camera, no chunk over the face) and refile.
   - read 2026-11-09, TM RUN_DONE fdfa (3 passed, 0 failed, 0 skipped, `exitReason: passed`, evidence `Tests/Pickle/Inbox/gal-camp-c-6e60bc4-1`, the folder `gal-camp-c-6e60bc4` is the older 7ccc-era one, delete both once the gallery is scored). Opened shots 2, 3, 5 (full size, not yet `score-gallery`, wait for 46d3 and 54b2 then rate all 8 together): 2 three baskets readable (empty, one stone, two stones), Nelim chunk in hand but the chunk hides most of the face (smile weak), squirrel in, denser decor, torch low in frame; 3 hay pile and three-log wood pile (small, left edge), Nelim hay in hand, hen, bale, torches, tanning rack not obvious; 5 granite 1/2/6 and marble 6 clearly readable, Soren with chunk at top, hare, decor good.
@@ -70,7 +71,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 87ba23529d46e79e0cab82fbb7e48efc09b1caf7
+protocols_read_sha: 7640e2ab38b86705789fcc01578eafd826f2dc0e
 ---
 # Adaptive Storage Neolithic Renew: status
 
