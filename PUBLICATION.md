@@ -188,7 +188,7 @@ Draft: it goes out only after a green Pickle run on RimWorld 1.7 (STATUS.md, `te
 [h3]1.2.0 - RimWorld 1.7 support[/h3]
 
 [list]
-[*]The mod now declares RimWorld 1.7 next to 1.6. Content is unchanged: no defs, textures or translations were touched.
+[*]The mod now declares RimWorld 1.7 next to 1.6. No defs or textures were touched. Russian wording corrected: the two research names, the meal shelf, the plinth descriptions and the stone pile description.
 [/list]
 ```
 

@@ -8,3 +8,4 @@ key or text | proposal | reason | date
 `ASNeolithicChunkStorage.description` (English) | rephrase "made from chunks, supporting chunks" | refused: English is upstream's text, untouched here (style only) | 2026-11-12
 `ASNeolithicPlinthWoody/Stone.description` (Russian) | "привлекают колонистов ... не остаётся" | refused: wording kept ("привлекут поселенцев"), same meaning, taste | 2026-11-12
 `PUBLICATION.md` gallery sizes (2.31, 3.43, 4.98 MB) | recompute and keep one dated figure | refused for now: gallery is being reshot, recomputed when accepted | 2026-11-12
+`ASNeolithicChunkStorage.description` (Russian) | "каменных обломков" | refused: the English says "chunks", wording kept, taste | 2026-11-12
