@@ -18,14 +18,14 @@
 	<ASNeolithicLargePotStone.description>Большой резной горшок, предназначенный для хранения скоропортящихся продуктов.</ASNeolithicLargePotStone.description>
 
 	<!-- MealShelf -->
-	<ASNeolithicMealShelf.label>Полки для блюд</ASNeolithicMealShelf.label>
-	<ASNeolithicMealShelf.description>Импровизированные полки для хранения блюд.</ASNeolithicMealShelf.description>
+	<ASNeolithicMealShelf.label>Полка для блюд</ASNeolithicMealShelf.label>
+	<ASNeolithicMealShelf.description>Импровизированная полка для хранения блюд.</ASNeolithicMealShelf.description>
 
 	<!-- Plinth -->
 	<ASNeolithicPlinthWoody.label>Подиум</ASNeolithicPlinthWoody.label>
-	<ASNeolithicPlinthWoody.description>Деревянный подиум с красивой гравировкой для демонстрации предметов.</ASNeolithicPlinthWoody.description>
+	<ASNeolithicPlinthWoody.description>Деревянный подиум с красивой гравировкой для демонстрации предметов. Выставленные здесь предметы привлекут внимание поселенцев, и их красота не останется незамеченной.</ASNeolithicPlinthWoody.description>
 	<ASNeolithicPlinthStone.label>Подиум</ASNeolithicPlinthStone.label>
-	<ASNeolithicPlinthStone.description>Подиум из необработанного камня с красивой гравировкой для демонстрации предметов.</ASNeolithicPlinthStone.description>
+	<ASNeolithicPlinthStone.description>Подиум из необработанного камня с красивой гравировкой для демонстрации предметов. Выставленные здесь предметы привлекут внимание поселенцев, и их красота не останется незамеченной.</ASNeolithicPlinthStone.description>
 
 	<!-- Textile Bundle -->
 	<ASNeolithicTextileBundleFabric.label>Свёрток</ASNeolithicTextileBundleFabric.label>
@@ -39,6 +39,6 @@
 
 	<!-- ChunkStorage -->
 	<ASNeolithicChunkStorage.label>Куча</ASNeolithicChunkStorage.label>
-	<ASNeolithicChunkStorage.description>Куча, состоящая из обломков и поддерживающая другие обломки. Легко сделать и довольно эффективена в качестве укрытия.</ASNeolithicChunkStorage.description>
+	<ASNeolithicChunkStorage.description>Куча, состоящая из обломков и поддерживающая другие обломки. Её легко сделать, и она довольно эффективна в качестве укрытия.</ASNeolithicChunkStorage.description>
 
 </LanguageData>
