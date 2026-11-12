@@ -4,14 +4,14 @@
 # Common decor, around the fire: "Campfire" (195, 152) lit, "TorchLamp" (191, 150) and (199, 150) lit, "Stool" (193, 154) and (197, 154), "VFEPD_TanningRack" (200, 151), "VFEPD_BrewingBarrel" (196, 153), "VFEPD_HayBaleLarge" (189, 151), "Plant_Daylily" (188, 149) and (202, 156). Each tight picture dresses its own corner (torch, daylily, stool, bale, barrel). Decor belongs to one picture: placed, photographed, removed.
 #
 # Shot plan (frames are cell rectangles filling 85 percent of the screen; place bare-clearing; hour 12 plus the wait):
-#   1. camp-1-noon, 12:00, wide, cells (188, 146) to (202, 157), wait 60. Untidy camp; Nelim at (193, 151) facing West, "WoodLog" in hand, about to lay it on the wood pile; Soren at (196, 157) facing East, "ChunkGranite" in hand; labrador "Biscuit" at (197, 155) facing the camera. Storage built: "ASNeolithicWoodPile" (192, 148), "ASNeolithicHayPile" (194, 148), "ASNeolithicMealShelf" (197, 148), "ASNeolithicTextileBundleFabric" (199, 148), baskets (190, 154) and (190, 155), "ASNeolithicLargePot" (200, 154) and (200, 155); loose "ChunkGranite" at (189, 153) and (198, 157), "WoodLog" (189, 157), "RawBerries" (201, 157), "Hay" (193, 146). Says: the camp is untidy at noon, the storage waits to be filled.
-#   2. camp-2-baskets, 12:05, tight, cells (189, 153) to (196, 157), wait 268. Three "ASNeolithicBasketWoody" at (190, 155), (192, 155), (194, 155): empty, one "Cloth", full ("Cloth" and "Steel"); Nelim at (192, 154) facing South with "ChunkGranite" in hand, one step from the middle basket, smiling; squirrel "Noisette" at (195, 156). Torch (191, 152), daylily (188, 154), stool (196, 156). Says: what goes in, shows.
-#   3. camp-3-piles, 12:10, medium, cells (189, 147) to (197, 152), wait 477. "ASNeolithicWoodPile" (190, 148) with "WoodLog" and "ASNeolithicHayPile" (192, 148) with "Hay"; Nelim at (193, 149) facing West with "Hay" in hand; hen "Plume" at (194, 150); tanning rack (201, 147) edge, bale (196, 152), torch (191, 151). Says: fuel stacked as it comes.
+#   1. camp-1-noon, 12:00, wide, cells (187, 147) to (199, 156), wait 60. Untidy camp; Nelim at (193, 151) facing West, "WoodLog" in hand, about to lay it on the wood pile; Soren at (195, 156) facing West, "ChunkGranite" in hand; labrador "Biscuit" at (197, 156) facing the camera. Storage built: "ASNeolithicWoodPile" (192, 148), "ASNeolithicHayPile" (194, 148), "ASNeolithicMealShelf" (197, 148), "ASNeolithicTextileBundleFabric" (199, 148), baskets (190, 154) and (190, 155), "ASNeolithicLargePot" (198, 154) and (198, 155); loose "ChunkGranite" at (189, 153) and (198, 157), "WoodLog" (189, 157), "RawBerries" (199, 155), "Hay" (193, 147). Says: the camp is untidy at noon, the storage waits to be filled.
+#   2. camp-2-baskets, 12:05, tight, cells (189, 153) to (196, 157), wait 268. Three "ASNeolithicBasketWoody" at (190, 155), (192, 155), (194, 155): empty, one "Cloth", full ("Cloth" and "Steel"); Nelim at (193, 155) facing East (profile, the chunk no longer hides the face) with "ChunkGranite" in hand, one step from the middle basket, smiling; squirrel "Noisette" at (195, 156). Torch (191, 152), daylily (188, 154), stool (196, 156). Says: what goes in, shows.
+#   3. camp-3-piles, 12:10, medium, cells (189, 147) to (199, 152), wait 477. "ASNeolithicWoodPile" (192, 149) with "WoodLog" and "ASNeolithicHayPile" (194, 149) with "Hay"; Nelim at (196, 150) facing West with "Hay" in hand; hen "Plume" at (193, 151); tanning rack (198, 150) in the foreground, bale (196, 152), torch (191, 151). Says: fuel stacked as it comes.
 #   4. camp-4-pots, 12:15, tight, cells (197, 152) to (203, 157), wait 685. "ASNeolithicLargePot" at (198, 154), (200, 154), (202, 154) holding "RawBerries", "Milk", "Pemmican"; Soren at (199, 156) facing North with "Milk" in hand; labrador "Biscuit" at (199, 155) facing the camera; torch (199, 153), bale (202, 152), barrel (197, 156). Says: food for noon, pots show what they hold.
 #   5. camp-5-stacks, 12:20, tight, cells (193, 147) to (201, 151), wait 893. "ASNeolithicChunkStorage" made from "ChunkGranite" at (194, 149) with 1 chunk, (196, 149) with 2, (198, 149) with 6, and made from "ChunkMarble" at (200, 149) with 6; Soren at (196, 151) facing East with "ChunkGranite" in hand; hare "Pomme" at (197, 150); torch (191, 149), stool (197, 151). Says: stone piles up, in two materials.
 #   6. camp-6-plinths, 12:25, tight, cells (193, 148) to (199, 152), wait 1102. "ASNeolithicPlinthWoody" (194, 150) with "Gold", "ASNeolithicPlinthStone" made from "ChunkGranite" (196, 150) empty, made from "ChunkVacstone" (198, 150) with "Jade"; Nelim at (196, 152) facing South with "Silver" in hand, about to set it on the empty plinth (one tile further north than the first run, so she no longer hides it); peacock "Eclat" at (195, 149) in the foreground. Torch (192, 152) and (196, 148), stool (199, 152), barrels and bales around. Says: the tribe's treasures.
 #   7. camp-7-another-mod, 12:30, medium, cells (191, 151) to (202, 156), wait 1310. "ASNeolithicLargePotStone" and "ASNeolithicChunkStorage" made from "ChunkGranite" at (193, 153) and (195, 153), the same two made from "ChunkKura_Andesite" (Extra Stone) at (198, 153) and (200, 153); Soren at (199, 155) facing West with "ChunkKura_Andesite" in hand; cat "Mie" at (197, 154). Says: a stone from another mod gets its own buildings. Risk: granite and andesite may be close in colour at 268 px.
-#   8. camp-8-tidied, 12:40, wide, cells (188, 146) to (202, 157), wait 1727. Same storage as picture 1, now filled ("WoodLog", "Hay", "MealSimple" on the shelf, "Cloth" bundle, baskets, pots); Nelim at (193, 153) facing East and Soren at (197, 153) facing West, each with "MealSimple" in hand; labrador "Biscuit" at (197, 152). Says: the camp is tidy, the camp eats at noon (mirrors picture 1).
+#   8. camp-8-tidied, 12:40, wide, cells (187, 147) to (199, 156), wait 1727. Same storage as picture 1, now filled ("WoodLog", "Hay", "MealSimple" on the shelf, "Cloth" bundle, baskets, pots); Nelim at (193, 153) facing East and Soren at (197, 153) facing West, each with "MealSimple" in hand; labrador "Biscuit" at (197, 152). Says: the camp is tidy, the camp eats at noon (mirrors picture 1).
 #   9. window-research-storage: interface window (research window, Storage tab), taken on `window-backdrop-for-height`, cropped, no subtitle, not scored; played by feature 08 (research tab), no scenario here.
 # Subtitles are written in PUBLICATION.md ("Gallery subtitles") once the gallery is finished.
 # Series (criterion k): wide 1 and 8, medium 3 and 7, tight 2, 4, 5, 6; opening 1, closing 8.
@@ -43,7 +43,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: the decor "TorchLamp" at (199, 150) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" at (193, 154)
     And Nelim's Pickle Tools: I place the decor "Stool" at (197, 154)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (200, 151)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (198, 151)
     And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 153)
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (189, 151)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (188, 149) fully grown
@@ -54,17 +54,17 @@ Feature: the camp pictures of the Workshop page
     And a "ASNeolithicTextileBundleFabric" is built at (199, 148)
     And a "ASNeolithicBasketWoody" is built at (190, 154)
     And a "ASNeolithicBasketFabric" is built at (190, 155)
-    And a "ASNeolithicLargePot" is built at (200, 154)
-    And a "ASNeolithicLargePot" is built at (200, 155)
+    And a "ASNeolithicLargePot" is built at (198, 154)
+    And a "ASNeolithicLargePot" is built at (198, 155)
     And I spawn a "ChunkGranite" at (189, 153)
     And I spawn a "ChunkGranite" at (198, 157)
     And I spawn a "WoodLog" at (189, 157)
-    And I spawn a "RawBerries" at (201, 157)
-    And I spawn a "Hay" at (193, 146)
-    And Nelim's Pickle Tools: I frame the cells (188, 146) to (202, 157) filling 85 percent of the screen
+    And I spawn a "RawBerries" at (199, 155)
+    And I spawn a "Hay" at (193, 147)
+    And Nelim's Pickle Tools: I frame the cells (187, 147) to (199, 156) filling 85 percent of the screen
     When I wait 60 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 155)
-    And Nelim's Pickle Tools: the animal "Biscuit" stands at (197, 155) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 156)
+    And Nelim's Pickle Tools: the animal "Biscuit" stands at (197, 156) facing South
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
@@ -74,7 +74,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" stands at (196, 157) facing East
+    And Nelim's Pickle Tools: "Soren" stands at (195, 156) facing West
     And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkGranite" in hand
     And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
@@ -116,7 +116,7 @@ Feature: the camp pictures of the Workshop page
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" stands at (192, 154) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (193, 155) facing East
     And Nelim's Pickle Tools: the colonist "Nelim" holds "ChunkGranite" in hand
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
@@ -135,7 +135,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (201, 147)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (198, 150)
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (196, 152)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 151)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 151) is lit
@@ -146,17 +146,17 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (190, 151)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (197, 151)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (197, 151) is lit
-    And a "ASNeolithicWoodPile" is built at (190, 148)
-    And a "ASNeolithicHayPile" is built at (192, 148)
-    And I spawn a "WoodLog" at (190, 148)
-    And I spawn a "Hay" at (192, 148)
-    And Nelim's Pickle Tools: I frame the cells (189, 147) to (197, 152) filling 85 percent of the screen
+    And a "ASNeolithicWoodPile" is built at (192, 149)
+    And a "ASNeolithicHayPile" is built at (194, 149)
+    And I spawn a "WoodLog" at (192, 149)
+    And I spawn a "Hay" at (194, 149)
+    And Nelim's Pickle Tools: I frame the cells (189, 147) to (199, 152) filling 85 percent of the screen
     When I wait 477 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Plume" is spawned at (194, 150)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Plume" is spawned at (193, 151)
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" stands at (193, 149) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (196, 150) facing West
     And Nelim's Pickle Tools: the colonist "Nelim" holds "Hay" in hand
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
@@ -380,7 +380,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: the decor "TorchLamp" at (199, 150) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" at (193, 154)
     And Nelim's Pickle Tools: I place the decor "Stool" at (197, 154)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (200, 151)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (198, 151)
     And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 153)
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (189, 151)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (188, 149) fully grown
@@ -391,17 +391,17 @@ Feature: the camp pictures of the Workshop page
     And a "ASNeolithicTextileBundleFabric" is built at (199, 148)
     And a "ASNeolithicBasketWoody" is built at (190, 154)
     And a "ASNeolithicBasketFabric" is built at (190, 155)
-    And a "ASNeolithicLargePot" is built at (200, 154)
-    And a "ASNeolithicLargePot" is built at (200, 155)
+    And a "ASNeolithicLargePot" is built at (198, 154)
+    And a "ASNeolithicLargePot" is built at (198, 155)
     And I spawn a "WoodLog" at (192, 148)
     And I spawn a "Hay" at (194, 148)
     And I spawn a "MealSimple" at (197, 148)
     And I spawn a "Cloth" at (199, 148)
     And I spawn a "Cloth" at (190, 154)
     And I spawn a "Steel" at (190, 155)
-    And I spawn a "RawBerries" at (200, 154)
-    And I spawn a "Milk" at (200, 155)
-    And Nelim's Pickle Tools: I frame the cells (188, 146) to (202, 157) filling 85 percent of the screen
+    And I spawn a "RawBerries" at (198, 154)
+    And I spawn a "Milk" at (198, 155)
+    And Nelim's Pickle Tools: I frame the cells (187, 147) to (199, 156) filling 85 percent of the screen
     When I wait 1727 ticks
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 152)
     And Nelim's Pickle Tools: "Biscuit" lies down
