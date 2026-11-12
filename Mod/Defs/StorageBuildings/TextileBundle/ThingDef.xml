@@ -45,6 +45,7 @@
 	</ThingDef>
 	<ThingDef ParentName="ASNeolithicTextileBundleBase">
 		<defName>ASNeolithicTextileBundleLeather</defName>
+		<description>A couple of pieces of leather stacked into a neat pile.</description>
 		<graphicData>
 			<texPath>ASNeolithic/TextileBundle/TextileBundleLeathera</texPath>
 		</graphicData>

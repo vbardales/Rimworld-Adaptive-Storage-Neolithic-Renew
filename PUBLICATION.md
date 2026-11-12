@@ -86,9 +86,9 @@ Pictures 1 to 6 are one story, "noon at the storehouse, seen through the animals
 no roof and no wall shadow): the hour is set to noon once and each picture waits five more game minutes than the one before (12:00 to
 12:25), with a daytime animal that comes by in each (hen, squirrel, hare, dog, peacock, cat). Pictures 2 and 5 use a closer frame. Evidence
 and reasoning in `STATUS.md` (2026-10-06) and `TESTING.md` ("Choosing the gallery place"). The pictures are whole frames cut by
-`scripts/Crop-WorkshopScreenshots.ps1` (1280 px wide) and recompressed; the owner validated them and uploaded them by her own word on
+`scripts/Crop-WorkshopScreenshots.ps1` (1280 px wide) and recompressed; the owner validated them and, as she reports, uploaded them on
 2026-10-06, before the recompression (see "Current state").
-Upload files 0 to 9 in order. Pictures 1 to 6 are the noon series (uploaded 2026-10-06, before the recompression); pictures 7 to 9 are the accepted pictures of the camp (the owner accepted them 2026-10-08, refused three others, deleted; the folder was reindexed without gaps on 2026-10-10 by the session, which directs the gallery, so the files were `8-`, `9-`, `11-` before). The camp continues the same noon, one step further from the storehouse: the tribe comes to the same storage, played by `12-workshop-camp.feature` on the Sanctuary Backlot place `bare-clearing` (pawns from Mud's and ETRT tribal clothes, VFE Props and Decor, Venus Touch Waistlines, EyeGenes3: their authors are to be thanked before these pictures are published, see `STATUS.md`). Raw frames are deleted; nothing re-cuts them. Do not mix with the superseded earlier series (the storehouse hut, 2026-09-23 and 2026-10-05).
+Upload files 0 to 9 in order. Pictures 1 to 6 are the noon series (uploaded 2026-10-06, before the recompression); pictures 7 to 9 are the accepted pictures of the camp (the owner accepted them 2026-10-08, refused three others, deleted; the folder was reindexed without gaps on 2026-10-10 by the session, which directs the gallery, so the files were `8-`, `9-`, `11-` before). The camp scenes continue the story at the same noon, one step further from the storehouse: the tribe comes to the same storage, played by `12-workshop-camp.feature` on the Sanctuary Backlot place `bare-clearing` (pawns from Mud's and ETRT tribal clothes, VFE Props and Decor, Venus Touch Waistlines, EyeGenes3: their authors are to be thanked before these pictures are published, see `STATUS.md`). Raw frames are deleted; nothing re-cuts them. Do not mix with the superseded earlier series (the storehouse hut, 2026-09-23 and 2026-10-05).
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
@@ -257,7 +257,7 @@ Draft: it goes out only after a green Pickle run on RimWorld 1.7 (STATUS.md, `te
 - Runtime: played 2026-09-23 in the WSL, all green (`STATUS.md`, "Stage history").
 - Description: pasted on the page, read back identical on 2026-09-24.
 - Dependency: one, fixed above.
-- Gallery: the owner uploaded the noon series on 2026-10-06 by her own word (not checkable without a login), with `0-preview.png`. That upload
+- Gallery: the owner reports having uploaded the noon series on 2026-10-06 (not checkable without a login), with `0-preview.png`. That upload
   was 9.27 MB for the folder, over the 8 MB limit; the files in `Art/Gallery/` are now recompressed (3.43 MB for `0-preview.png` and the six noon pictures; with the three camp pictures 7 to 9 the whole folder is 4.98 MB). Whether to
   re-upload them is the owner's call. The live header image is the one published with 1.1.2 (it carries the earlier ModIcon); the Preview regenerated on 2026-10-05 from the new icon source is not on the page yet, since
   `update_preview` is off by default; the next publication can send `Mod/About/Preview.png`.
