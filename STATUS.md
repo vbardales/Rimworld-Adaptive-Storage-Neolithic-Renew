@@ -214,7 +214,7 @@ Verdict after the run: to fill (gap between plan and image is what the next shot
 
 ## NSB (sync 2026-11-09, `shootGallery[1.2.0]`)
 
-Places read: 2026-11-09 Tribe read: 2026-11-09 (animals catalogue, "Qui une galerie peut utiliser", gallery colonists; roster and profiles not opened: no NSB colonist is used) Steps read: 2026-11-09 (`steps.md` ScreenshotStudio and StageDecor, first read, no earlier date)
+Places read: 2026-11-12 Tribe read: 2026-11-12 (git log only: the one NSB commit since 2026-11-09, `18abf53`, renames `docs/` to `Docs/` with 0 changed line, so no place, colonist, look or animal moved; no profile opened, Nelim and Soren as of 2026-11-09) Steps read: 2026-11-12 (NPT commits since 2026-11-09: filth removal, tab-bar and speed-controls hiding, pot with a grown plant near a cell, decor burns, floors, tick a thing; none renames or removes a step this suite calls, `Check-Steps.ps1` resolves every line; the pot-with-plant step could replace the hand-set daylily pot in shots 1 to 3, to try at the rework)
 
 Owner rules of 2026-11-05 (and 2026-11-06, 2026-11-07) held: all of NSB is free; a colonist or domestic animal outside NSB needs the owner's express validation before the shotlist counts on it; no change to a colonist's properties without it; every outfit free; every animal the mod includes must be in the gallery.
 
