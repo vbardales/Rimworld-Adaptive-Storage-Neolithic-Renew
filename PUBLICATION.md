@@ -32,6 +32,14 @@ The continuation is based on the original authors' current main branch. That bra
 
 The current upstream definitions, balance values, graphics definitions and integrated textures are preserved. The latest RimWorld version is declared, and the Russian DefInjected folder uses the exact casing required on Linux and Steam Deck.
 
+## LANGUAGES
+
+English, French and Russian.
+
+French: upstream's translation (Elzetia), revised and validated by me.
+
+Russian: upstream's translation (MrBlack-JB); what we corrected (the two research names, the meal shelf, the plinth and stone pile descriptions) was done with Claude (Anthropic) and reviewed by ChatGPT (OpenAI), and has not been checked by a Russian speaker.
+
 ## COMPATIBILITY
 
 The original mod is declared incompatible because both packages define the same content. Run one or the other.
