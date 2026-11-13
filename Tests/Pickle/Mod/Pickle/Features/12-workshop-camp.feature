@@ -10,7 +10,7 @@
 #   4. camp-4-pots, 12:15, tight, cells (197, 152) to (203, 157), wait 685. "ASNeolithicLargePot" at (198, 154), (200, 154), (202, 154) holding "RawBerries", "Milk", "Pemmican"; Soren at (199, 156) facing North with "Milk" in hand; labrador "Biscuit" at (199, 155) facing the camera; torch (199, 153), bale (202, 152), barrel (197, 156). Says: food for noon, pots show what they hold.
 #   5. camp-5-stacks, 12:20, tight, cells (193, 147) to (201, 151), wait 893. "ASNeolithicChunkStorage" made from "ChunkGranite" at (194, 149) with 1 chunk, (196, 149) with 2, (198, 149) with 6, and made from "ChunkMarble" at (200, 149) with 6; Soren at (196, 151) facing East with "ChunkGranite" in hand; hare "Pomme" at (197, 150); torch (191, 149), stool (197, 151). Says: stone piles up, in two materials.
 #   6. camp-6-plinths, 12:25, tight, cells (193, 148) to (199, 152), wait 1102. "ASNeolithicPlinthWoody" (194, 150) with "Gold", "ASNeolithicPlinthStone" made from "ChunkGranite" (196, 150) empty, made from "ChunkVacstone" (198, 150) with "Jade"; Nelim at (196, 152) facing South with "Silver" in hand, about to set it on the empty plinth (one tile further north than the first run, so she no longer hides it); peacock "Eclat" at (195, 149) in the foreground. Torch (192, 152) and (196, 148), stool (199, 152), barrels and bales around. Says: the tribe's treasures.
-#   7. camp-7-another-mod, 12:30, medium, cells (191, 151) to (202, 156), wait 1310. "ASNeolithicLargePotStone" and "ASNeolithicChunkStorage" made from "ChunkGranite" at (193, 153) and (195, 153), the same two made from "ChunkKura_Andesite" (Extra Stone) at (198, 153) and (200, 153); Soren at (199, 155) facing West with "ChunkKura_Andesite" in hand; cat "Mie" at (197, 154). Says: a stone from another mod gets its own buildings. Risk: granite and andesite may be close in colour at 268 px.
+#   7. camp-7-another-mod, 12:30, medium, cells (191, 151) to (202, 156), wait 1310. "ASNeolithicLargePotStone" and "ASNeolithicChunkStorage" made from "ChunkGranite" at (193, 153) and (195, 153), the same two made from "ChunkKura_Andesite" (Extra Stone) at (198, 153) and (200, 153), granite stack of 2 against andesite stack of 6 so the two stacks read as different at 268 px; frame cut to cells (192, 152) to (201, 156) (reworked 2026-11-13 after the 268 px REDO); Soren at (199, 155) facing South with "ChunkKura_Andesite" in hand; cat "Mie" at (197, 154). Says: a stone from another mod gets its own buildings. Risk: granite and andesite may be close in colour at 268 px.
 #   8. camp-8-tidied, 12:40, medium-tight (reworked 2026-11-13: meal sprite hid both faces, storage tiny), cells (190, 147) to (198, 151), wait 1727. Same storage and decor as picture 1, now filled ("Cloth", "WoodLog", "Hay", "MealSimple" on the shelf, "Cloth" and "Steel" in the basket); Nelim at (193, 150) and Soren at (197, 150), both facing South, nothing in hand (the meal sprite hid the mouths, 03dd); labrador "Biscuit" standing at (196, 150) facing South (lying dog read as a pelt, 249e; NPT: no head-raised pose); stools (192, 151) and (198, 151) stay empty (a seated pawn faces the stool, not the camera). Says: the camp is tidy, the tribe rests at noon (mirrors picture 1).
 #   9. window-research-storage: interface window (research window, Storage tab), taken on `window-backdrop-for-height`, cropped, no subtitle, not scored; played by feature 08 (research tab), no scenario here.
 # Subtitles are written in PUBLICATION.md ("Gallery subtitles") once the gallery is finished.
@@ -331,12 +331,14 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "RawBerries" at (193, 153)
     And I spawn a "ChunkGranite" at (195, 153)
     And I spawn a "ChunkGranite" at (195, 153)
-    And I spawn a "ChunkGranite" at (195, 153)
     And I spawn a "RawBerries" at (198, 153)
     And I spawn a "ChunkKura_Andesite" at (200, 153)
     And I spawn a "ChunkKura_Andesite" at (200, 153)
     And I spawn a "ChunkKura_Andesite" at (200, 153)
-    And Nelim's Pickle Tools: I frame the cells (191, 151) to (202, 156) filling 85 percent of the screen
+    And I spawn a "ChunkKura_Andesite" at (200, 153)
+    And I spawn a "ChunkKura_Andesite" at (200, 153)
+    And I spawn a "ChunkKura_Andesite" at (200, 153)
+    And Nelim's Pickle Tools: I frame the cells (192, 152) to (201, 156) filling 85 percent of the screen
     When I wait 1310 ticks
     And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mie" is spawned at (197, 154)
     And Nelim's Pickle Tools: "Mie" lies down
@@ -348,7 +350,7 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" stands at (199, 155) facing West
+    And Nelim's Pickle Tools: "Soren" stands at (199, 155) facing South
     And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkKura_Andesite" in hand
     And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: the other colonists are out of frame
