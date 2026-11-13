@@ -5,13 +5,13 @@
 #
 # Shot plan (frames are cell rectangles filling 85 percent of the screen; place bare-clearing; hour 12 plus the wait):
 #   1. camp-1-noon, 12:00, medium-tight (reworked 2026-11-13: storage was about 12 px at 268), cells (190, 147) to (198, 151), wait 60. Untidy camp; storage row at z 148: "ASNeolithicTextileBundleFabric" (190, 148), "ASNeolithicWoodPile" (192, 148), "ASNeolithicHayPile" (194, 148), "ASNeolithicMealShelf" (196, 148), "ASNeolithicBasketWoody" (198, 148); "Campfire" (195, 150) lit; Nelim at (193, 150) and Soren at (197, 150), both facing South (the held item no longer hides the face), "WoodLog" and "ChunkGranite" in hand; labrador "Biscuit" at (195, 151) facing South; loose "ChunkGranite" (191, 150) and (198, 150), "WoodLog" (190, 150), "RawBerries" (190, 151), "Hay" (193, 147). Says: the camp is untidy at noon, the storage waits to be filled.
-#   2. camp-2-baskets, 12:05, tight, cells (189, 153) to (196, 157), wait 268. Three "ASNeolithicBasketWoody" at (190, 155), (192, 155), (194, 155): empty, one "Cloth", full ("Cloth" and "Steel"); Nelim at (193, 154) behind the middle basket facing South (reworked 2026-11-13: facing East the chunk hid the face), "ChunkGranite" in hand, smiling; squirrel "Noisette" at (195, 156). Torch (191, 152), daylily (188, 154), stool (196, 156). Says: what goes in, shows.
+#   2. camp-2-baskets, 12:05, tight, cells (189, 153) to (196, 157), wait 268. Three "ASNeolithicBasketWoody" at (190, 155), (192, 155), (194, 155): empty, one "Cloth", full ("Cloth" and "Steel"); Nelim at (193, 154) behind the middle basket facing South (reworked 2026-11-13: facing East the chunk hid the face), nothing in hand (reworked again 2026-11-13: the chunk covered the mouth), smiling; squirrel "Noisette" at (195, 156). Torch (191, 152), daylily (188, 154), stool (196, 156). Says: what goes in, shows.
 #   3. camp-3-piles, 12:10, medium, cells (189, 147) to (199, 152), wait 477. "ASNeolithicWoodPile" (192, 149) with "WoodLog" and "ASNeolithicHayPile" (194, 149) with "Hay"; Nelim at (196, 150) facing West with "Hay" in hand; hen "Plume" at (193, 151); tanning rack (198, 150) in the foreground, bale (196, 152), torch (191, 151). Says: fuel stacked as it comes.
 #   4. camp-4-pots, 12:15, tight, cells (197, 152) to (203, 157), wait 685. "ASNeolithicLargePot" at (198, 154), (200, 154), (202, 154) holding "RawBerries", "Milk", "Pemmican"; Soren at (199, 156) facing North with "Milk" in hand; labrador "Biscuit" at (199, 155) facing the camera; torch (199, 153), bale (202, 152), barrel (197, 156). Says: food for noon, pots show what they hold.
 #   5. camp-5-stacks, 12:20, tight, cells (193, 147) to (201, 151), wait 893. "ASNeolithicChunkStorage" made from "ChunkGranite" at (194, 149) with 1 chunk, (196, 149) with 2, (198, 149) with 6, and made from "ChunkMarble" at (200, 149) with 6; Soren at (196, 151) facing East with "ChunkGranite" in hand; hare "Pomme" at (197, 150); torch (191, 149), stool (197, 151). Says: stone piles up, in two materials.
 #   6. camp-6-plinths, 12:25, tight, cells (193, 148) to (199, 152), wait 1102. "ASNeolithicPlinthWoody" (194, 150) with "Gold", "ASNeolithicPlinthStone" made from "ChunkGranite" (196, 150) empty, made from "ChunkVacstone" (198, 150) with "Jade"; Nelim at (196, 152) facing South with "Silver" in hand, about to set it on the empty plinth (one tile further north than the first run, so she no longer hides it); peacock "Eclat" at (195, 149) in the foreground. Torch (192, 152) and (196, 148), stool (199, 152), barrels and bales around. Says: the tribe's treasures.
 #   7. camp-7-another-mod, 12:30, medium, cells (191, 151) to (202, 156), wait 1310. "ASNeolithicLargePotStone" and "ASNeolithicChunkStorage" made from "ChunkGranite" at (193, 153) and (195, 153), the same two made from "ChunkKura_Andesite" (Extra Stone) at (198, 153) and (200, 153); Soren at (199, 155) facing West with "ChunkKura_Andesite" in hand; cat "Mie" at (197, 154). Says: a stone from another mod gets its own buildings. Risk: granite and andesite may be close in colour at 268 px.
-#   8. camp-8-tidied, 12:40, medium-tight (reworked 2026-11-13: meal sprite hid both faces, storage tiny), cells (190, 147) to (198, 151), wait 1727. Same storage and decor as picture 1, now filled ("Cloth", "WoodLog", "Hay", "MealSimple" on the shelf, "Cloth" in the basket); Nelim at (193, 150) and Soren at (197, 150), both facing South with "MealSimple" in hand; labrador "Biscuit" at (195, 151) lying down; stools (192, 151) and (198, 151). Says: the camp is tidy, the camp eats at noon (mirrors picture 1).
+#   8. camp-8-tidied, 12:40, medium-tight (reworked 2026-11-13: meal sprite hid both faces, storage tiny), cells (190, 147) to (198, 151), wait 1727. Same storage and decor as picture 1, now filled ("Cloth", "WoodLog", "Hay", "MealSimple" on the shelf, "Cloth" in the basket); Nelim at (193, 150) and Soren at (197, 150), both facing South, nothing in hand (the meal sprite hid the mouths, 03dd); labrador "Biscuit" at (196, 150) lying down; stools (192, 151) and (198, 151). Says: the camp is tidy, the camp eats at noon (mirrors picture 1).
 #   9. window-research-storage: interface window (research window, Storage tab), taken on `window-backdrop-for-height`, cropped, no subtitle, not scored; played by feature 08 (research tab), no scenario here.
 # Subtitles are written in PUBLICATION.md ("Gallery subtitles") once the gallery is finished.
 # Series (criterion k): medium-tight 1 and 8 (opening mess, closing tidy, same frame), medium 3 and 7, tight 2, 4, 5, 6; opening 1, closing 8.
@@ -112,7 +112,6 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
     And Nelim's Pickle Tools: "Nelim" stands at (193, 154) facing South
-    And Nelim's Pickle Tools: the colonist "Nelim" holds "ChunkGranite" in hand
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -390,7 +389,7 @@ Feature: the camp pictures of the Workshop page
     And I spawn a "Cloth" at (198, 148)
     And Nelim's Pickle Tools: I frame the cells (190, 147) to (198, 151) filling 85 percent of the screen
     When I wait 1727 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (195, 151)
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (196, 150)
     And Nelim's Pickle Tools: "Biscuit" lies down
     And Nelim's Pickle Tools: the flecks of def "SleepZ" are not thrown
     And Nelim's Pickle Tools: the flecks of def "SleepZ_Small" are not thrown
@@ -400,13 +399,11 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
     And Nelim's Pickle Tools: "Nelim" stands at (193, 150) facing South
-    And Nelim's Pickle Tools: the colonist "Nelim" holds "MealSimple" in hand
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
     And Nelim's Pickle Tools: "Soren" stands at (197, 150) facing South
-    And Nelim's Pickle Tools: the colonist "Soren" holds "MealSimple" in hand
     And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
