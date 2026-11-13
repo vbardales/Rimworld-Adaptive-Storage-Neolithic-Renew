@@ -249,6 +249,15 @@ Pictures 7 to 9 with Ayla and Doka were accepted by the owner on 2026-10-08, but
 | peacock "Eclat" | noon 5, camp | none | 2026-11-09 | same (3 peacocks) |
 | squirrel "Noisette" | noon 2 | none | 2026-11-09 | same (11 squirrels) |
 
+## Ecosystem (PiI, 2026-11-13)
+
+Source: PiI `docs/inventory/ecosystem-steam/AdaptiveStorageNeolithicRenew.md` (pushed `ee12d50`).
+
+- Only the original 3033901895 holds our 25 defNames (fork-or-rewrite, expected; held, needs_npt).
+- 10 weak hits, none shares defNames. No other fork.
+- Closest function: Adaptive Primitive Storage 3400037215 (owner keep). Owner judges what ours adds.
+- Item 24 rows (Better Architect Menu, Cyanobot's Leather Overhaul): not checked against PiI's file yet.
+
 ## What makes this sheet stale
 
 - Run in game: fill `tested_on`, strike from `remaining` what run covered.
