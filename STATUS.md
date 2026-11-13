@@ -256,7 +256,7 @@ Source: PiI `docs/inventory/ecosystem-steam/AdaptiveStorageNeolithicRenew.md` (p
 - Only the original 3033901895 holds our 25 defNames (fork-or-rewrite, expected; held, needs_npt).
 - 10 weak hits, none shares defNames. No other fork.
 - Closest function: Adaptive Primitive Storage 3400037215 (owner keep). Owner judges what ours adds.
-- Item 24 rows (Better Architect Menu, Cyanobot's Leather Overhaul): not checked against PiI's file yet.
+- Item 24 (PiI addendum, checked on content sheets): Better Architect Menu 3563882422: no shared defNames; patches our `ASNeolithicHayPile` only (menu category patch among 5255 targets); no conflict; action none (optional compat note). Cyanobot's Leather Overhaul 3419552924: no shared defNames; patches none of our defs (170 targets, animal leather drops); no conflict; action none.
 
 ## What makes this sheet stale
 
