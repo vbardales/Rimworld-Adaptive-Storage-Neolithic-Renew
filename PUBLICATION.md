@@ -87,45 +87,38 @@ is the in-game mod-list icon and is not uploaded to the gallery.
 **Every gallery starts with a byte-for-byte copy of the Preview** (owner's rule, 2026-09-29): `0-preview.png`
 is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The nine gallery pictures below follow it
 in the intended order. **Limits** (PUBLISHING.md, owner, 2026-10-06): any number of images, the whole folder under 8 MB and each image
-under 2 MB; the folder is 2.31 MB (2,312,323 bytes, ten files), the largest image 0.66 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
+under 2 MB; the folder is 3.33 MB (3,327,285 bytes, ten files), the largest image 0.64 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
 
-Pictures 1 to 6 are one story, "noon at the storehouse, seen through the animals that come by", played by Pickle feature
-`11-workshop-captures.feature` on the sanctuary save `Nelims-tribe` (named scene `calm-zone-close`, a cream stone square in the open air,
-no roof and no wall shadow): the hour is set to noon once and each picture waits five more game minutes than the one before (12:00 to
-12:25), with a daytime animal that comes by in each (hen, squirrel, hare, dog, peacock, cat). Pictures 2 and 5 use a closer frame. Evidence
-and reasoning in `STATUS.md` (2026-10-06) and `TESTING.md` ("Choosing the gallery place"). The pictures are whole frames cut by
-`scripts/Crop-WorkshopScreenshots.ps1` (1280 px wide) and recompressed; the owner validated them and, as she reports, uploaded them on
-2026-10-06, before the recompression (see "Current state").
-Upload files 0 to 9 in order. Pictures 1 to 6 are the noon series (uploaded 2026-10-06, before the recompression); pictures 7 to 9 are the accepted pictures of the camp (the owner accepted them 2026-10-08, refused three others, deleted; the folder was reindexed without gaps on 2026-10-10 by the session, which directs the gallery, so the files were `8-`, `9-`, `11-` before). The camp scenes continue the story at the same noon, one step further from the storehouse: the tribe comes to the same storage, played by `12-workshop-camp.feature` on the Sanctuary Backlot place `bare-clearing` (pawns from Mud's and ETRT tribal clothes, VFE Props and Decor, Venus Touch Waistlines, EyeGenes3: their authors are to be thanked before these pictures are published, see `STATUS.md`). Raw frames are deleted; nothing re-cuts them. Do not mix with the superseded earlier series (the storehouse hut, 2026-09-23 and 2026-10-05).
+Pictures 1 to 8 are one story, "noon at the camp": Nelim and Soren tidy the neolithic camp of Nelim's tribe on the Sanctuary Backlot place `bare-clearing`, one picture every five game minutes from 12:00 to 12:40, played by Pickle feature `12-workshop-camp.feature` on the save `Nelims-tribe` (shotlist in `STATUS.md`). Picture 9 is the research window on the Storage tab, cropped, with no subtitle. The old storehouse and camp series (2026-09 to 2026-10) were removed on 2026-11-09 (`git rm`); the Steam page keeps them until the new gallery is uploaded. The camp is staged with other mods, none a dependency (see THANKS above).
+Upload files 0 to 9 in order.
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
-| 0 | `Art/Gallery/0-preview.png` | 896 x 504, 659,724 bytes | Copy of the Workshop header image (now carries the detoured ModIcon, bottom-left) |
-| 1 | `Art/Gallery/1-the-whole-set.jpg` | 1280 x 720, 174116 bytes | The whole set and its visible contents |
-| 2 | `Art/Gallery/2-a-basket-fills-up.jpg` | 1280 x 720, 139420 bytes | A basket empty, partly filled and full |
-| 3 | `Art/Gallery/3-chunk-stacks.jpg` | 1280 x 720, 137416 bytes | Stone-as-stuff stacks at several fill levels and in two materials |
-| 4 | `Art/Gallery/4-large-pots.jpg` | 1280 x 720, 154347 bytes | Large pots showing different stored foods |
-| 5 | `Art/Gallery/5-plinths.jpg` | 1280 x 720, 146210 bytes | Three plinths displaying items |
-| 6 | `Art/Gallery/6-a-stone-from-another-mod.jpg` | 1280 x 720, 141582 bytes | A compatible third-party stone beside granite |
-| 7 | `Art/Gallery/7-three-baskets.jpg` | 1280 x 720, 238322 bytes | Camp, accepted 2026-10-08: three baskets (empty, one item, full), Ayla by the fire, a chicken |
-| 8 | `Art/Gallery/8-fuel-and-stone.jpg` | 1280 x 720, 273457 bytes | Camp, accepted 2026-10-08: wood and hay piles, granite and marble stacks, Doka in the wolf hood, a hare |
-| 9 | `Art/Gallery/9-the-tribes-treasures.jpg` | 1280 x 720, 267159 bytes | Camp, accepted 2026-10-08: three plinths (wood, granite, vacstone) each showing an item, the chief Tahu on his stool, a peacock |
+| 0 | `Art/Gallery/0-preview.png` | 896 x 504, 635,784 bytes | Copy of the Workshop header image |
+| 1 | `Art/Gallery/1-camp-noon.jpg` | 1920 x 1080, 330,570 bytes | Untidy camp at noon: five storage types waiting, loose chunks and logs |
+| 2 | `Art/Gallery/2-baskets.jpg` | 1920 x 1080, 319,832 bytes | Three baskets: empty, one stone, full |
+| 3 | `Art/Gallery/3-piles.jpg` | 1920 x 1080, 343,695 bytes | Wood pile and hay pile |
+| 4 | `Art/Gallery/4-pots.jpg` | 1920 x 1080, 332,501 bytes | Large pots showing berries, milk and grain |
+| 5 | `Art/Gallery/5-stacks.jpg` | 1920 x 1080, 275,997 bytes | Granite stacks at 1, 2 and 6 chunks, and a marble stack |
+| 6 | `Art/Gallery/6-plinths.jpg` | 1920 x 1080, 291,925 bytes | Wood and vacstone plinths showing gold and an item |
+| 7 | `Art/Gallery/7-another-mod.jpg` | 1920 x 1080, 315,130 bytes | A stone from another mod (Extra Stone) with its own pot and stack beside granite |
+| 8 | `Art/Gallery/8-tidied.jpg` | 1920 x 1080, 328,102 bytes | The same camp tidy, storage filled |
+| 9 | `Art/Gallery/9-research-window.jpg` | 1920 x 1080, 153,749 bytes | Research window, Storage tab, both projects (no subtitle) |
 
 ### Gallery subtitles
 
-Pictures 1 to 9 have no interface window, so each carries one English line burned in at the bottom (`../scripts/Add-Subtitle.ps1`, owner rule 2026-10-15). The clean captures are in `Art/Gallery-clean/` (same index, `.png`); `Art/Gallery/` holds the subtitled `.jpg` files to upload. `0-` has none.
+Pictures 1 to 8 have no interface window, so each carries one English line burned in at the bottom (`../scripts/Add-Subtitle.ps1`, owner rule 2026-10-15). The clean captures are in `Art/Gallery-clean/` (same index, `.jpg`); `Art/Gallery/` holds the subtitled `.jpg` files to upload. `0-` and `9-` have none.
 
 | # | File | Line |
 | --- | --- | --- |
-| 1 | `1-the-whole-set.jpg` | Noon at the storehouse: everything in its place, in plain sight. |
-| 2 | `2-a-basket-fills-up.jpg` | A basket fills up, stone by stone, and shows it. |
-| 3 | `3-chunk-stacks.jpg` | Stone piles up in stacks, in two materials. |
-| 4 | `4-large-pots.jpg` | Large pots show what they hold. |
-| 5 | `5-plinths.jpg` | A plinth shows off the one treasure it carries. |
-| 6 | `6-a-stone-from-another-mod.jpg` | A stone from another mod sits right beside granite. |
-| 7 | `7-three-baskets.jpg` | At the camp, three baskets: empty, one stone, full. |
-| 8 | `8-fuel-and-stone.jpg` | Wood, hay and stone, stacked by the fire. |
-| 9 | `9-the-tribes-treasures.jpg` | The chief watches over the tribe's treasures on their plinths. |
+| 1 | `1-camp-noon.jpg` | Noon at the camp, and everything still to put away. |
+| 2 | `2-baskets.jpg` | What goes in, shows. |
+| 3 | `3-piles.jpg` | Wood and hay, stacked as they come. |
+| 4 | `4-pots.jpg` | Large pots show what they hold. |
+| 5 | `5-stacks.jpg` | Stone piles up, in two materials. |
+| 6 | `6-plinths.jpg` | The tribe's treasures, on their plinths. |
+| 7 | `7-another-mod.jpg` | A stone from another mod joins the camp. |
+| 8 | `8-tidied.jpg` | Everything in its place: the camp rests at noon. |
 
 Header assets already valid:
 
