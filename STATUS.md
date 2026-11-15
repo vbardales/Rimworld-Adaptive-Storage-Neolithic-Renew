@@ -202,7 +202,7 @@ Story: "Noon at the camp". Nelim (protagonist, the owner's colonist) and Soren (
 | 4 | camp-4-pots | 12:15 | tight, zoom 3 | Food for noon. Large pots (berries, milk, grain) lit by a torch; Soren carries a bowl of `Milk` toward the milk pot; labrador noses the pot, seen from the front; hay bale and barrel foreground. |
 | 5 | camp-5-stacks | 12:20 | tight, zoom 2.5 | Stone piles up, in two materials. Granite stacks at 1, 2, 6 chunks and a marble stack of 6; Soren, `ChunkGranite` in hand, at the 2-stack; hare between the stacks. |
 | 6 | camp-6-plinths | 12:25 | tight, zoom 2.5 | The tribe's treasures. Wood and vacstone plinths each showing gold and an item; Nelim sets `Gold` on the vacstone plinth (in hand, forced job); peacock walks toward the camera, front view. |
-| 7 | camp-7-another-mod | 12:30 | medium, zoom 4 | A stone from another mod gets its own buildings. Identical pots and stacks of granite and kuratheris's stone side by side; Soren carries a chunk of that stone to its stack; cat sleeps between. |
+| 7 | camp-7-another-mod | 12:30 | medium, zoom 4 | A stone from another mod gets its own buildings. Identical pots and stacks of granite and kuratheris's stone side by side; Soren stands smiling beside the andesite stack, empty-handed (the chunk in hand hid his face, 2026-11-15); cat sleeps between. |
 | 8 | camp-8-tidied | 12:40 | medium-tight, same frame as 1 (reworked 2026-11-13) | The camp is tidy: same row of storage now filled, meal shelf with meals; Nelim and Soren facing South, a meal in hand, smiling, by the fire; labrador asleep. Mirrors 1. |
 | 9 | window-research-storage | noon | interface window | Research window on the Storage tab, both projects; `window-backdrop-for-height`, cropped, no subtitle; not scored. |
 
