@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Optional compatibility with Better Architect Menu (ferny.BetterArchitect, Workshop 3563882422).
+	     Its own patch for Adaptive Storage Neolithic is gated on the packageId of the original mod,
+	     so it never fires with this mod. Same seven operations, gated on Better Architect Menu itself. -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Better Architect Menu</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@ParentName="ASNeolithicBasketThingBase"]</xpath>
+					<value>
+						<designationCategory>Ferny_GeneralStorage</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@ParentName="ASNeolithicChunkStorageBase"]</xpath>
+					<value>
+						<designationCategory>Ferny_ResourcesStorage</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ASNeolithicHayPile"]</xpath>
+					<value>
+						<designationCategory>Ferny_ResourcesStorage</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@ParentName="ASNeolithicLargePotThingBase" or defName="ASNeolithicMealShelf"]</xpath>
+					<value>
+						<designationCategory>Ferny_FoodStorage</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@ParentName="ASNeolithicPlinthBase"]</xpath>
+					<value>
+						<designationCategory>Ferny_GeneralStorage</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@ParentName="ASNeolithicTextileBundleBase"]</xpath>
+					<value>
+						<designationCategory>Ferny_ResourcesStorage</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
+					<value>
+						<designationCategory>Ferny_ResourcesStorage</designationCategory>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
