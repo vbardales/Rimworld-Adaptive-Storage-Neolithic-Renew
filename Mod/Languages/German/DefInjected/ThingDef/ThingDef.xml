@@ -29,9 +29,9 @@
 
 	<!-- Textile Bundle -->
 	<ASNeolithicTextileBundleFabric.label>Bündel</ASNeolithicTextileBundleFabric.label>
-	<ASNeolithicTextileBundleFabric.description>Ein paar Textilien übereinander gestapelt zu einem ordentlichen Haufen.</ASNeolithicTextileBundleFabric.description>
+	<ASNeolithicTextileBundleFabric.description>Ein paar übereinander zu einem ordentlichen Haufen gestapelte Textilien.</ASNeolithicTextileBundleFabric.description>
 	<ASNeolithicTextileBundleLeather.label>Bündel</ASNeolithicTextileBundleLeather.label>
-	<ASNeolithicTextileBundleLeather.description>Ein paar Lederstücke zu einem ordentlichen Haufen gestapelt.</ASNeolithicTextileBundleLeather.description>
+	<ASNeolithicTextileBundleLeather.description>Ein paar zu einem ordentlichen Haufen gestapelte Lederstücke.</ASNeolithicTextileBundleLeather.description>
 
 	<!-- WoodPile -->
 	<ASNeolithicWoodPile.label>Stapel</ASNeolithicWoodPile.label>
