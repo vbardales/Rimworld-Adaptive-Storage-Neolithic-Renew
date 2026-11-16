@@ -1,6 +1,6 @@
 # Publishing Adaptive Storage Neolithic Renew
 
-Publication sheet for Workshop item `3806101377`, updated for 1.2.0 on 2026-10-14 (integration of the upstream source on 2026-09-22, gallery section revised on 2026-10-06 and 2026-10-10).
+Publication sheet for Workshop item `3806101377`, updated for 1.2.0 on 2026-11-16 (integration of the upstream source on 2026-09-22, gallery section revised on 2026-10-06 and 2026-10-10, Russian wording and release notes revised on 2026-11-12 and 2026-11-16).
 The item already exists, so a game upload updates its files and tags but does not resend the description. The description is sent by the CI (`update_description`) from the Markdown block below, converted to BBCode (checked identical to the previous BBCode block on 2026-10-06).
 
 In-game Pickle pass of 2026-09-23 (`STATUS.md`, `Docs/runs/2026-09-23-tested-milestone.md`). The integrated tree follows upstream GitHub `main` at `2bc3fe4`, uses stone chunks as stuff,
