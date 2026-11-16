@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: writeTests[1.2.0]
+workflow_stage: playTests[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -34,6 +34,7 @@ echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - replay-audit 2026-11-16 (second, ledger `.replays/AdaptiveStorageNeolithicRenew-20261116.tsv`, sections 1 to 8, Check-Replay OK): stage writeTests to playTests (all of 7.a to 7.h done: Test-Mod 6 passed, Check-Steps OK, scenario 13 for the BAM patch written). OPEN in playTests, all needing tickets or review: 8.a sha tested (tested_on 3280d85 predates Mod changes of 2026-11-12 to 2026-11-16), 8.c 1.6 run on the current tree (suite and `wsl-deps.bam.map` for feature 13), 8.d captures, 8.f scenario 13 played (stone variants from the framework generators may stay in the default category: read the run, decide), 8.g, 8.i (Thai, German, Chinese and the BAM patch loaded in a run), 8.j, 8.m code review (`699e6ce` to HEAD, 20 files of Mod changed), 1.7 run replay. Next: file the tickets through the Ticket Manager, never a refile with -Runner azure.
   - done 2026-11-16, 6.g and 6.i: owner validated the translation ("traduction validée"), after `/review-translation` page 1 reached a clean round (10 rounds, last with nothing applied, `record-round` 1/1 clean; Thai, German and Chinese integrated from SLOST, Daedalus, Holarula, licence silent). Stage `localize` to `writeTests[1.2.0]`. Next in `writeTests` (replay 2026-11-16): 7.b `Test-Mod.ps1` red (`Check-DefRefs` on the `Ferny_*` categories of `Mod/Patches/BetterArchitectMenu.xml`), a Pickle scenario for the BAM patch (7.a, 7.d, 8.f), 8.m code review reopened by `Mod/` changes, rerun of the 1.7 run (Russian, BAM patch and three new languages came after the 2026-11-07 run); then replay, then `shootGallery`, where she gives her verdict on the 9 subtitled images.
   - owner order 2026-11-16: stop at `localize[1.2.0]` first, her gallery verdict comes only once back at `shootGallery`. Declare dependencies is closed (4.g done, 526274c; 4.h passage skipped by her order). Work of `localize` (AUDIT 6.c, item 37 of TM missions): decide with her the translations of the original found by PiI, German 3115381045 (1.4 to 1.6) and Thai 3341668276 (1.5): licence or author accord, ATTRIBUTION.md, AI sentence, `/review-translation`; our Russian stays ours (PiI lists Russian 3201903546 too); Russian still unreviewed by a speaker. Then 6.g validation by her, back to writeTests, replay (7.b red, BAM scenario, 8.m), then `shootGallery`. The nine subtitled gallery images stay as sent, no verdict now.
   - replay-audit 2026-11-16 (ledger `.replays/AdaptiveStorageNeolithicRenew-20261116.tsv`, sections 1 to 4 read, Check-Replay OK): stage moved shootGallery to declareDependencies. OPEN 4.g (stage-defining): no `workshop_required_items` field (framework 3033901359 is a Workshop hard dependency, owner sets Required items by hand on the Steam page) and no dated dependency, optional-integration and DLC record in STATUS.md (ferny.BetterArchitect added 2026-11-16 via `OptionalCompat.xml`). Redo 4.g here, then 4.h, then replay. Seen later in the chain, not judged: 7.b `Tests/Test-Mod.ps1` red (`Check-DefRefs`: `Ferny_FoodStorage`, `Ferny_GeneralStorage`, `Ferny_ResourcesStorage` in `Mod/Patches/BetterArchitectMenu.xml` unresolved, likely optional-mod defs the check cannot see, to settle); no Pickle scenario for the BAM patch (7.a, 7.d, 8.f); 8.m code review reopened by `Mod/` changes since `699e6ce`; 1.7 run to replay. The gallery work (nine subtitled images sent to Virginie, verdict awaited) is kept as is, nothing deleted.
@@ -95,7 +96,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: b73928b2f28e3f809a00a1dc8153c9cb44cfc8fd
+protocols_read_sha: 08549b2dab81de25df5fc507d91b6ed7708459df
 ---
 # Adaptive Storage Neolithic Renew: status
 
