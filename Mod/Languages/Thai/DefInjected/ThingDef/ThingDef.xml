@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Basket -->
+	<ASNeolithicBasketWoody.label>ตะกร้า</ASNeolithicBasketWoody.label>
+	<ASNeolithicBasketWoody.description>ตะกร้าขนาดใหญ่ที่ทำจากไม้ ผ้า หรือหนังแห้งสำหรับจัดเก็บสิ่งของต่างๆ ทุกประเภท</ASNeolithicBasketWoody.description>
+	<ASNeolithicBasketFabric.label>ตะกร้า</ASNeolithicBasketFabric.label>
+	<ASNeolithicBasketFabric.description>ตะกร้าขนาดใหญ่ที่ทำจากไม้ ผ้า หรือหนังแห้งสำหรับจัดเก็บสิ่งของต่างๆ ทุกประเภท</ASNeolithicBasketFabric.description>
+
+	<!-- Haypile -->
+	<ASNeolithicHayPile.label>กองหญ้าแห้ง</ASNeolithicHayPile.label>
+	<ASNeolithicHayPile.description>กองหญ้าแห้งสำหรับการจัดเก็บที่ง่ายขึ้น</ASNeolithicHayPile.description>
+
+	<!-- Large Pot -->
+	<ASNeolithicLargePot.label>หม้อใหญ่</ASNeolithicLargePot.label>
+	<ASNeolithicLargePot.description>หม้อแกะสลักขนาดใหญ่สำหรับการจัดเก็บอาหารที่เน่าเสียง่าย</ASNeolithicLargePot.description>
+	<ASNeolithicLargePotStone.label>หม้อใหญ่</ASNeolithicLargePotStone.label>
+	<ASNeolithicLargePotStone.description>หม้อแกะสลักขนาดใหญ่สำหรับการจัดเก็บอาหารที่เน่าเสียง่าย</ASNeolithicLargePotStone.description>
+
+	<!-- MealShelf -->
+	<ASNeolithicMealShelf.label>ชั้นวางมื้ออาหาร</ASNeolithicMealShelf.label>
+	<ASNeolithicMealShelf.description>ชั้นวางชั่วคราวสำหรับการจัดเก็บมื้ออาหาร</ASNeolithicMealShelf.description>
+
+	<!-- Plinth -->
+	<ASNeolithicPlinthWoody.label>ฐานยัน</ASNeolithicPlinthWoody.label>
+	<ASNeolithicPlinthWoody.description>แท่นหยาบที่มีการแกะสลักสวยงามสำหรับตั้งแสดงสิ่งของ</ASNeolithicPlinthWoody.description>
+	<ASNeolithicPlinthStone.label>ฐานยัน</ASNeolithicPlinthStone.label>
+	<ASNeolithicPlinthStone.description>แท่นหินหยาบที่มีการแกะสลักสวยงามสำหรับตั้งแสดงสิ่งของ</ASNeolithicPlinthStone.description>
+
+	<!-- Textile Bundle -->
+	<ASNeolithicTextileBundleFabric.label>มัด</ASNeolithicTextileBundleFabric.label>
+	<ASNeolithicTextileBundleFabric.description>สิ่งทอสองสามชิ้นซ้อนกันเป็นกองแบบเรียบร้อย</ASNeolithicTextileBundleFabric.description>
+	<ASNeolithicTextileBundleLeather.label>มัด</ASNeolithicTextileBundleLeather.label>
+	<ASNeolithicTextileBundleLeather.description>สิ่งทอสองสามชิ้นซ้อนกันเป็นกองแบบเรียบร้อย</ASNeolithicTextileBundleLeather.description>
+
+	<!-- WoodPile -->
+	<ASNeolithicWoodPile.label>กอง</ASNeolithicWoodPile.label>
+	<ASNeolithicWoodPile.description>ท่อนไม้ที่ดูหยาบๆ สองสามท่อนถูกโยนทับกันเป็นกอง</ASNeolithicWoodPile.description>
+
+	<!-- ChunkStorage -->
+	<ASNeolithicChunkStorage.label>กองหิน</ASNeolithicChunkStorage.label>
+	<ASNeolithicChunkStorage.description>กองก้อนหินที่สร้างจากก้อนหินและค้ำยันก้อนหินอื่น สร้างง่ายและใช้เป็นที่กำบังได้ค่อนข้างดี</ASNeolithicChunkStorage.description>
+
+</LanguageData>

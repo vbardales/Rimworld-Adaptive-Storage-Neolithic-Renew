@@ -6,6 +6,7 @@ All notable changes to this mod are documented here.
 
 ### Added
 
+- Thai, German and Simplified and Traditional Chinese translations, integrated from the Workshop translations of SLOST (3341668276), Daedalus (3115381045) and Holarula (3821420014), none declaring a licence (credited in `ATTRIBUTION.md`). The stone stack and the stone plinth description were missing from the Thai and German ones and were written with Claude; none of the three languages was checked by a speaker.
 - RimWorld 1.7 support: `<li>1.7</li>` in `supportedVersions` (About.xml). XML-only mod, no assembly, no `1.7/` folder. Draft for 1.2.0: this entry stays unreleased until the Pickle run on 1.7 is green (AUDIT.md, "Passe 1.7").
 
 ### Fixed

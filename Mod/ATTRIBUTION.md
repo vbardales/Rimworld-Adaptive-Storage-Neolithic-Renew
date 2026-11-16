@@ -14,6 +14,18 @@ MIT licence. The copyright notice is preserved verbatim in `LICENSE`:
 The French translation is credited upstream to **Elzetia**. The Russian translation entered upstream
 through **MrBlack-JB**'s contribution.
 
+Further translations found on the Workshop are integrated with their authors named. None of them declares
+a licence, in its files or on its Workshop page, so each is treated as `silent` and credited:
+
+- Thai: **SLOST**, Workshop 3341668276 (a translation of the original module).
+- German: **Daedalus**, Workshop 3115381045 (a translation of the original module).
+- Simplified and Traditional Chinese: **Holarula**, Workshop 3821420014 (a translation of this mod, listed
+  under the Steam account WhyBlyat).
+
+Only the texts of this mod are taken from them. The Thai and German translations lack two texts of the current
+upstream content (the stone stack and the stone plinth description); those were written with Claude (Anthropic).
+The large stone pot and the stone plinth names reuse the names of the large pot and of the wooden plinth.
+
 ## Upstream source used here
 
 The current delivered `Mod/` content follows upstream `main` at commit `2bc3fe4` (2025-02-10), plus

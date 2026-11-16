@@ -41,11 +41,13 @@ The current upstream definitions, balance values, graphics definitions and integ
 
 LANGUAGES
 
-English, French and Russian.
+English, French, Russian, Thai, German and Chinese (Simplified and Traditional).
 
 French: upstream's translation (Elzetia), revised and validated by me.
 
 Russian: upstream's translation (MrBlack-JB); what we corrected (the two research names, the meal shelf, both plinth descriptions, the stone pile description and both basket descriptions) was done with Claude (Anthropic) and reviewed by ChatGPT (OpenAI), and has not been checked by a Russian speaker.
+
+Thai (SLOST), German (Daedalus) and Chinese (Holarula): translations found on the Workshop, none declaring a licence, integrated with their authors' credit. The stone stack and the stone plinth description were missing from the Thai and German ones and were written with Claude (Anthropic). None of these three languages has been checked by a speaker.
 
 COMPATIBILITY
 
@@ -74,6 +76,8 @@ THANKS
 Soul, Phaneron and bradson, for the mod, the Adaptive Storage Framework (https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359), the current source work, and the open licence.
 
 Elzetia and MrBlack-JB, for the French and Russian translations included upstream.
+
+SLOST, Daedalus and Holarula, for the Thai, German and Chinese translations.
 
 Pickle (https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), RimLogging (https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and PickleTools (https://steamcommunity.com/sharedfiles/filedetails/?id=3806142401) were used for development and testing only; none is a dependency of the distributed mod.
 

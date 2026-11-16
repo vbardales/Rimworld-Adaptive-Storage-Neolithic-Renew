@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<ASNeolithicNeolithicStorage.label>คลังยุคหินใหม่</ASNeolithicNeolithicStorage.label>
+	<ASNeolithicNeolithicStorage.description>สร้างภาชนะที่เรียบง่ายและเครื่องมือของคลังสำหรับวัสดุพื้นฐาน</ASNeolithicNeolithicStorage.description>
+
+	<ASNeolithicNeolithicItemDisplay.label>การตั้งแสดงสิ่งของยุคหินใหม่</ASNeolithicNeolithicItemDisplay.label>
+	<ASNeolithicNeolithicItemDisplay.description>สร้างฐานยันที่เรียบง่ายแต่สวยงามสำหรับตั้งแสดงสิ่งของ</ASNeolithicNeolithicItemDisplay.description>
+</LanguageData>

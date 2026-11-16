@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Basket -->
+	<ASNeolithicBasketWoody.label>Korb</ASNeolithicBasketWoody.label>
+	<ASNeolithicBasketWoody.description>Ein großer Korb aus Holz, Stoffen oder getrocknetem Leder, um verschiedene Gegenstände zu lagern.</ASNeolithicBasketWoody.description>
+	<ASNeolithicBasketFabric.label>Korb</ASNeolithicBasketFabric.label>
+	<ASNeolithicBasketFabric.description>Ein großer Korb aus Holz, Stoffen oder getrocknetem Leder, um verschiedene Gegenstände zu lagern.</ASNeolithicBasketFabric.description>
+
+	<!-- Haypile -->
+	<ASNeolithicHayPile.label>Heuhaufen</ASNeolithicHayPile.label>
+	<ASNeolithicHayPile.description>Ein Haufen Heu zur einfacheren Lagerung.</ASNeolithicHayPile.description>
+
+	<!-- Large Pot -->
+	<ASNeolithicLargePot.label>Großer Topf</ASNeolithicLargePot.label>
+	<ASNeolithicLargePot.description>Ein großer geschnitzter Topf zur Lagerung verderblicher Lebensmittel.</ASNeolithicLargePot.description>
+	<ASNeolithicLargePotStone.label>Großer Topf</ASNeolithicLargePotStone.label>
+	<ASNeolithicLargePotStone.description>Ein großer geschnitzter Topf zur Lagerung verderblicher Lebensmittel.</ASNeolithicLargePotStone.description>
+
+	<!-- MealShelf -->
+	<ASNeolithicMealShelf.label>Essensregal</ASNeolithicMealShelf.label>
+	<ASNeolithicMealShelf.description>Ein improvisiertes Regal zur Lagerung von Mahlzeiten.</ASNeolithicMealShelf.description>
+
+	<!-- Plinth -->
+	<ASNeolithicPlinthWoody.label>Podest</ASNeolithicPlinthWoody.label>
+	<ASNeolithicPlinthWoody.description>Ein grobes Podest mit schönen Gravuren zur Präsentation von Gegenständen.</ASNeolithicPlinthWoody.description>
+	<ASNeolithicPlinthStone.label>Podest</ASNeolithicPlinthStone.label>
+	<ASNeolithicPlinthStone.description>Ein grobes Steinpodest mit schönen Gravuren zur Präsentation von Gegenständen.</ASNeolithicPlinthStone.description>
+
+	<!-- Textile Bundle -->
+	<ASNeolithicTextileBundleFabric.label>Bündel</ASNeolithicTextileBundleFabric.label>
+	<ASNeolithicTextileBundleFabric.description>Ein paar Textilien übereinander gestapelt zu einem ordentlichen Haufen.</ASNeolithicTextileBundleFabric.description>
+	<ASNeolithicTextileBundleLeather.label>Bündel</ASNeolithicTextileBundleLeather.label>
+	<ASNeolithicTextileBundleLeather.description>Ein paar Textilien übereinander gestapelt zu einem ordentlichen Haufen.</ASNeolithicTextileBundleLeather.description>
+
+	<!-- WoodPile -->
+	<ASNeolithicWoodPile.label>Stapel</ASNeolithicWoodPile.label>
+	<ASNeolithicWoodPile.description>Ein paar grob aussehende Baumstämme, die zu einem Haufen geworfen wurden.</ASNeolithicWoodPile.description>
+
+	<!-- ChunkStorage -->
+	<ASNeolithicChunkStorage.label>Stapel</ASNeolithicChunkStorage.label>
+	<ASNeolithicChunkStorage.description>Ein Stapel aus Steinbrocken, aus Brocken gebaut, die andere Brocken stützen. Einfach herzustellen und als Deckung recht wirksam.</ASNeolithicChunkStorage.description>
+
+</LanguageData>
