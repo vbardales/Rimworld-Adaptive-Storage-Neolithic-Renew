@@ -4,6 +4,7 @@
 #
 # Better Architect Menu (ferny.BetterArchitect) depends on Harmony (staged by the script) and on Architect Icons
 # (com.bymarcin.architecticons). It declares 1.6 and 1.7. The mod's patch matches it by its name, "Better Architect Menu".
+brrainz.harmony             2009463077
 adaptive.storage.framework   3033901359
 ferny.BetterArchitect        3563882422
 com.bymarcin.architecticons  1195427067
