@@ -9,7 +9,7 @@
 
 	<!-- Haypile -->
 	<ASNeolithicHayPile.label>乾草垛</ASNeolithicHayPile.label>
-	<ASNeolithicHayPile.description>隨意堆疊在一起的乾草，中間插有作為簡單固定手段的木棍。</ASNeolithicHayPile.description>
+	<ASNeolithicHayPile.description>一堆乾草，便於儲存。</ASNeolithicHayPile.description>
 
 	<!-- Large Pot -->
 	<ASNeolithicLargePot.label>大缸</ASNeolithicLargePot.label>
@@ -29,9 +29,9 @@
 
 	<!-- Textile Bundle -->
 	<ASNeolithicTextileBundleFabric.label>捆堆</ASNeolithicTextileBundleFabric.label>
-	<ASNeolithicTextileBundleFabric.description>用繩子捆好並隨意堆疊在一起的織物。</ASNeolithicTextileBundleFabric.description>
+	<ASNeolithicTextileBundleFabric.description>幾塊織物整齊地疊成一堆。</ASNeolithicTextileBundleFabric.description>
 	<ASNeolithicTextileBundleLeather.label>捆堆</ASNeolithicTextileBundleLeather.label>
-	<ASNeolithicTextileBundleLeather.description>用繩子捆好並隨意堆疊在一起的皮革。</ASNeolithicTextileBundleLeather.description>
+	<ASNeolithicTextileBundleLeather.description>幾塊皮革整齊地疊成一堆。</ASNeolithicTextileBundleLeather.description>
 
 	<!-- WoodPile -->
 	<ASNeolithicWoodPile.label>柴堆</ASNeolithicWoodPile.label>
