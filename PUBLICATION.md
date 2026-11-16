@@ -38,7 +38,7 @@ English, French and Russian.
 
 French: upstream's translation (Elzetia), revised and validated by me.
 
-Russian: upstream's translation (MrBlack-JB); what we corrected (the two research names, the meal shelf, the plinth and stone pile descriptions) was done with Claude (Anthropic) and reviewed by ChatGPT (OpenAI), and has not been checked by a Russian speaker.
+Russian: upstream's translation (MrBlack-JB); what we corrected (the two research names, the meal shelf, both plinth descriptions, the stone pile description and both basket descriptions) was done with Claude (Anthropic) and reviewed by ChatGPT (OpenAI), and has not been checked by a Russian speaker.
 
 ## COMPATIBILITY
 
