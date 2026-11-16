@@ -1,0 +1,1 @@
+designationCategory|^Ferny_(FoodStorage|GeneralStorage|ResourcesStorage)$|categories of the optional Better Architect Menu (ferny.BetterArchitect), added only inside the PatchOperationFindMod of Mod/Patches/BetterArchitectMenu.xml, absent without that mod
