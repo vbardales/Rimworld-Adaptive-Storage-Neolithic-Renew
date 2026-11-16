@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: localize[1.2.0]
+workflow_stage: writeTests[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -34,6 +34,7 @@ echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-16, 6.g and 6.i: owner validated the translation ("traduction validée"), after `/review-translation` page 1 reached a clean round (10 rounds, last with nothing applied, `record-round` 1/1 clean; Thai, German and Chinese integrated from SLOST, Daedalus, Holarula, licence silent). Stage `localize` to `writeTests[1.2.0]`. Next in `writeTests` (replay 2026-11-16): 7.b `Test-Mod.ps1` red (`Check-DefRefs` on the `Ferny_*` categories of `Mod/Patches/BetterArchitectMenu.xml`), a Pickle scenario for the BAM patch (7.a, 7.d, 8.f), 8.m code review reopened by `Mod/` changes, rerun of the 1.7 run (Russian, BAM patch and three new languages came after the 2026-11-07 run); then replay, then `shootGallery`, where she gives her verdict on the 9 subtitled images.
   - owner order 2026-11-16: stop at `localize[1.2.0]` first, her gallery verdict comes only once back at `shootGallery`. Declare dependencies is closed (4.g done, 526274c; 4.h passage skipped by her order). Work of `localize` (AUDIT 6.c, item 37 of TM missions): decide with her the translations of the original found by PiI, German 3115381045 (1.4 to 1.6) and Thai 3341668276 (1.5): licence or author accord, ATTRIBUTION.md, AI sentence, `/review-translation`; our Russian stays ours (PiI lists Russian 3201903546 too); Russian still unreviewed by a speaker. Then 6.g validation by her, back to writeTests, replay (7.b red, BAM scenario, 8.m), then `shootGallery`. The nine subtitled gallery images stay as sent, no verdict now.
   - replay-audit 2026-11-16 (ledger `.replays/AdaptiveStorageNeolithicRenew-20261116.tsv`, sections 1 to 4 read, Check-Replay OK): stage moved shootGallery to declareDependencies. OPEN 4.g (stage-defining): no `workshop_required_items` field (framework 3033901359 is a Workshop hard dependency, owner sets Required items by hand on the Steam page) and no dated dependency, optional-integration and DLC record in STATUS.md (ferny.BetterArchitect added 2026-11-16 via `OptionalCompat.xml`). Redo 4.g here, then 4.h, then replay. Seen later in the chain, not judged: 7.b `Tests/Test-Mod.ps1` red (`Check-DefRefs`: `Ferny_FoodStorage`, `Ferny_GeneralStorage`, `Ferny_ResourcesStorage` in `Mod/Patches/BetterArchitectMenu.xml` unresolved, likely optional-mod defs the check cannot see, to settle); no Pickle scenario for the BAM patch (7.a, 7.d, 8.f); 8.m code review reopened by `Mod/` changes since `699e6ce`; 1.7 run to replay. The gallery work (nine subtitled images sent to Virginie, verdict awaited) is kept as is, nothing deleted.
   - done 2026-11-16, resume (after sleep; protocols read 5778ea24 with -Force, dirty file was another session's ecosystem note; TM registered, no archived session, Inbox and Parked empty): the 9 subtitled images of `Art/Gallery/` sent to Virginie (🟠). Next: wait for accept or refuse per image; on acceptance reindex (no gap) and go to `mountPreview`. Still owed: `sync-nsb-npt`, `Prune` of old `gal-*` Evidence folders, shot 9 not scored.
@@ -94,7 +95,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: c6b7b0fc13e075b697e6adc33d506a5f2de47bc0
+protocols_read_sha: b73928b2f28e3f809a00a1dc8153c9cb44cfc8fd
 ---
 # Adaptive Storage Neolithic Renew: status
 
@@ -204,6 +205,8 @@ Addendum 2026-10-10, `0309c0d`: only `Mod/` change since is `About.xml`, descrip
 `not_applicable`. `Mod/` holds no assembly, no C#, no `ModSettings`, `GetSettings`, `MainButtonDef` or `MainTabWindow`. Costs, capacities, research = authored balance data inherited from upstream, not options player needs. Framework owns display options. No empty options page, no shortcut. Revalidate if `Mod/` gains code or settings class.
 
 ## Translation audit, 2026-09-28, French review 2026-10-08
+
+- **2026-11-16, review and validation:** `/review-translation` page 1 reached a clean round after ten rounds (refusals in `Docs/review-refusals.md`); Thai (SLOST 3341668276), German (Daedalus 3115381045) and Chinese Simplified and Traditional (Holarula 3821420014) integrated, licence silent, credited in `ATTRIBUTION.md`, six Thai and six German texts written with Claude; none of Thai, German, Chinese, Russian checked by a speaker (disclosed in `PUBLICATION.md`). Owner validated the translation 2026-11-16.
 
 - **Inventory:** labels and descriptions of `ThingDef`, `ResearchProjectDef`, `ResearchTabDef`. No Keyed folder, no C#, so no code-owned text. English comes from Defs.
 - **French and Russian** live in `Mod/Languages/<Language>/DefInjected/` (`ThingDef/ThingDef.xml`, `ResearchProjectDefs.xml`, `ResearchTabDef.xml` for French). Russian outside English and French gate; vacstone entries unreviewed by Russian speaker.
