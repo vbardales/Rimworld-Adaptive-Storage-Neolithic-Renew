@@ -23,15 +23,15 @@
 
 	<!-- Plinth -->
 	<ASNeolithicPlinthWoody.label>ฐานยัน</ASNeolithicPlinthWoody.label>
-	<ASNeolithicPlinthWoody.description>แท่นหยาบที่มีการแกะสลักสวยงามสำหรับตั้งแสดงสิ่งของ</ASNeolithicPlinthWoody.description>
+	<ASNeolithicPlinthWoody.description>แท่นหยาบที่มีการแกะสลักสวยงามสำหรับตั้งแสดงสิ่งของ สิ่งของที่วางไว้ที่นี่จะดึงดูดความสนใจของผู้ตั้งถิ่นฐาน และความงามของมันจะไม่ถูกมองข้าม</ASNeolithicPlinthWoody.description>
 	<ASNeolithicPlinthStone.label>ฐานยัน</ASNeolithicPlinthStone.label>
-	<ASNeolithicPlinthStone.description>แท่นหินหยาบที่มีการแกะสลักสวยงามสำหรับตั้งแสดงสิ่งของ</ASNeolithicPlinthStone.description>
+	<ASNeolithicPlinthStone.description>แท่นหินหยาบที่มีการแกะสลักสวยงามสำหรับตั้งแสดงสิ่งของ สิ่งของที่วางไว้ที่นี่จะดึงดูดความสนใจของผู้ตั้งถิ่นฐาน และความงามของมันจะไม่ถูกมองข้าม</ASNeolithicPlinthStone.description>
 
 	<!-- Textile Bundle -->
 	<ASNeolithicTextileBundleFabric.label>มัด</ASNeolithicTextileBundleFabric.label>
 	<ASNeolithicTextileBundleFabric.description>สิ่งทอสองสามชิ้นซ้อนกันเป็นกองแบบเรียบร้อย</ASNeolithicTextileBundleFabric.description>
 	<ASNeolithicTextileBundleLeather.label>มัด</ASNeolithicTextileBundleLeather.label>
-	<ASNeolithicTextileBundleLeather.description>สิ่งทอสองสามชิ้นซ้อนกันเป็นกองแบบเรียบร้อย</ASNeolithicTextileBundleLeather.description>
+	<ASNeolithicTextileBundleLeather.description>หนังสองสามชิ้นซ้อนกันเป็นกองแบบเรียบร้อย</ASNeolithicTextileBundleLeather.description>
 
 	<!-- WoodPile -->
 	<ASNeolithicWoodPile.label>กอง</ASNeolithicWoodPile.label>

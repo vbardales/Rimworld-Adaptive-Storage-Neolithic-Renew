@@ -23,15 +23,15 @@
 
 	<!-- Plinth -->
 	<ASNeolithicPlinthWoody.label>Podest</ASNeolithicPlinthWoody.label>
-	<ASNeolithicPlinthWoody.description>Ein grobes Podest mit schönen Gravuren zur Präsentation von Gegenständen.</ASNeolithicPlinthWoody.description>
+	<ASNeolithicPlinthWoody.description>Ein grobes Podest mit schönen Gravuren zur Präsentation von Gegenständen. Hier gelagerte Gegenstände ziehen die Aufmerksamkeit der Kolonisten auf sich, und ihre Schönheit bleibt nicht unbeachtet.</ASNeolithicPlinthWoody.description>
 	<ASNeolithicPlinthStone.label>Podest</ASNeolithicPlinthStone.label>
-	<ASNeolithicPlinthStone.description>Ein grobes Steinpodest mit schönen Gravuren zur Präsentation von Gegenständen.</ASNeolithicPlinthStone.description>
+	<ASNeolithicPlinthStone.description>Ein grobes Steinpodest mit schönen Gravuren zur Präsentation von Gegenständen. Hier gelagerte Gegenstände ziehen die Aufmerksamkeit der Kolonisten auf sich, und ihre Schönheit bleibt nicht unbeachtet.</ASNeolithicPlinthStone.description>
 
 	<!-- Textile Bundle -->
 	<ASNeolithicTextileBundleFabric.label>Bündel</ASNeolithicTextileBundleFabric.label>
 	<ASNeolithicTextileBundleFabric.description>Ein paar Textilien übereinander gestapelt zu einem ordentlichen Haufen.</ASNeolithicTextileBundleFabric.description>
 	<ASNeolithicTextileBundleLeather.label>Bündel</ASNeolithicTextileBundleLeather.label>
-	<ASNeolithicTextileBundleLeather.description>Ein paar Textilien übereinander gestapelt zu einem ordentlichen Haufen.</ASNeolithicTextileBundleLeather.description>
+	<ASNeolithicTextileBundleLeather.description>Ein paar Lederstücke zu einem ordentlichen Haufen gestapelt.</ASNeolithicTextileBundleLeather.description>
 
 	<!-- WoodPile -->
 	<ASNeolithicWoodPile.label>Stapel</ASNeolithicWoodPile.label>

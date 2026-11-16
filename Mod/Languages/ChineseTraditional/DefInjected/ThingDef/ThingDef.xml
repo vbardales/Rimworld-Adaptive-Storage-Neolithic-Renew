@@ -3,42 +3,42 @@
 
 	<!-- Basket -->
 	<ASNeolithicBasketWoody.label>簍筐</ASNeolithicBasketWoody.label>
-	<ASNeolithicBasketWoody.description>用木材製成的簍筐，可儲存各種物品。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：2組\n【可儲存類型】：所有物品</ASNeolithicBasketWoody.description>
+	<ASNeolithicBasketWoody.description>用木材製成的簍筐，可儲存各種物品。\n\n</ASNeolithicBasketWoody.description>
 	<ASNeolithicBasketFabric.label>簍筐</ASNeolithicBasketFabric.label>
-	<ASNeolithicBasketFabric.description>用織物或皮革製成的簍筐，可儲存各種物品。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：2組\n【可儲存類型】：所有物品</ASNeolithicBasketFabric.description>
+	<ASNeolithicBasketFabric.description>用織物或皮革製成的簍筐，可儲存各種物品。\n\n</ASNeolithicBasketFabric.description>
 
 	<!-- Haypile -->
 	<ASNeolithicHayPile.label>乾草垛</ASNeolithicHayPile.label>
-	<ASNeolithicHayPile.description>隨意堆疊在一起的乾草，中間插有作為簡單固定手段的木棍。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：6組\n【可儲存類型】：乾草</ASNeolithicHayPile.description>
+	<ASNeolithicHayPile.description>隨意堆疊在一起的乾草，中間插有作為簡單固定手段的木棍。\n\n</ASNeolithicHayPile.description>
 
 	<!-- Large Pot -->
 	<ASNeolithicLargePot.label>大缸</ASNeolithicLargePot.label>
-	<ASNeolithicLargePot.description>用木材鑿刻成的大缸，可儲存各種容易腐爛變質的食物。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：3組\n【可儲存類型】：生食，乾肉餅，粗飼料</ASNeolithicLargePot.description>
+	<ASNeolithicLargePot.description>用木材鑿刻成的大缸，可儲存各種容易腐爛變質的食物。\n\n</ASNeolithicLargePot.description>
 	<ASNeolithicLargePotStone.label>大理石大缸</ASNeolithicLargePotStone.label>
-	<ASNeolithicLargePotStone.description>用大理石塊鑿刻成的大缸，可儲存各種容易腐爛變質的食物。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：3組\n【可儲存類型】：生食，乾肉餅，粗飼料\n\n&lt;i>&lt;color=#66E0E4FF>Adaptive Storage Neolithic Renew&lt;/color>&lt;/i></ASNeolithicLargePotStone.description>
+	<ASNeolithicLargePotStone.description>用大理石塊鑿刻成的大缸，可儲存各種容易腐爛變質的食物。\n\n</ASNeolithicLargePotStone.description>
 
 	<!-- MealShelf -->
 	<ASNeolithicMealShelf.label>簡易餐盤架</ASNeolithicMealShelf.label>
-	<ASNeolithicMealShelf.description>用於儲存各種烹飪食物的簡易餐盤架。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：3組\n【可儲存類型】：烹飪食物</ASNeolithicMealShelf.description>
+	<ASNeolithicMealShelf.description>用於儲存各種烹飪食物的簡易餐盤架。\n\n</ASNeolithicMealShelf.description>
 
 	<!-- Plinth -->
 	<ASNeolithicPlinthWoody.label>簡易基座</ASNeolithicPlinthWoody.label>
-	<ASNeolithicPlinthWoody.description>雕有美麗花紋的簡易基座，可用於展示你心愛的物品。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：1組\n【可儲存類型】：所有物品</ASNeolithicPlinthWoody.description>
+	<ASNeolithicPlinthWoody.description>雕有美麗花紋的簡易基座，用於展示物品。放在此處的物品會吸引殖民者的注意，其美觀也不會被忽視。</ASNeolithicPlinthWoody.description>
 	<ASNeolithicPlinthStone.label>大理石簡易基座</ASNeolithicPlinthStone.label>
-	<ASNeolithicPlinthStone.description>雕有美麗花紋的大理石簡易基座，可用於展示你心愛的物品。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：1組\n【可儲存類型】：所有物品\n\n&lt;i>&lt;color=#66E0E4FF>Adaptive Storage Neolithic Renew&lt;/color>&lt;/i></ASNeolithicPlinthStone.description>
+	<ASNeolithicPlinthStone.description>雕有美麗花紋的石製簡易基座，用於展示物品。放在此處的物品會吸引殖民者的注意，其美觀也不會被忽視。</ASNeolithicPlinthStone.description>
 
 	<!-- Textile Bundle -->
 	<ASNeolithicTextileBundleFabric.label>捆堆</ASNeolithicTextileBundleFabric.label>
-	<ASNeolithicTextileBundleFabric.description>用繩子捆好並隨意堆疊在一起的織物。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：4組\n【可儲存類型】：織物</ASNeolithicTextileBundleFabric.description>
+	<ASNeolithicTextileBundleFabric.description>用繩子捆好並隨意堆疊在一起的織物。\n\n</ASNeolithicTextileBundleFabric.description>
 	<ASNeolithicTextileBundleLeather.label>捆堆</ASNeolithicTextileBundleLeather.label>
-	<ASNeolithicTextileBundleLeather.description>用繩子捆好並隨意堆疊在一起的皮革。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：4組\n【可儲存類型】：皮革</ASNeolithicTextileBundleLeather.description>
+	<ASNeolithicTextileBundleLeather.description>用繩子捆好並隨意堆疊在一起的皮革。\n\n</ASNeolithicTextileBundleLeather.description>
 
 	<!-- WoodPile -->
 	<ASNeolithicWoodPile.label>柴堆</ASNeolithicWoodPile.label>
-	<ASNeolithicWoodPile.description>隨意堆疊在一起的木柴。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：3組\n【可儲存類型】：原木</ASNeolithicWoodPile.description>
+	<ASNeolithicWoodPile.description>隨意堆疊在一起的木柴。\n\n</ASNeolithicWoodPile.description>
 
 	<!-- ChunkStorage -->
 	<ASNeolithicChunkStorage.label>大理石塊堆</ASNeolithicChunkStorage.label>
-	<ASNeolithicChunkStorage.description>隨意堆疊在一起的大理石塊，可當作簡易掩體來使用。\n\n&lt;color=#E5E54C>儲存能力：&lt;/color>\n\n【最大儲存量】：6組\n【可儲存類型】：石塊\n\n&lt;i>&lt;color=#66E0E4FF>Adaptive Storage Neolithic Renew&lt;/color>&lt;/i></ASNeolithicChunkStorage.description>
+	<ASNeolithicChunkStorage.description>隨意堆疊在一起的大理石塊，可當作簡易掩體來使用。\n\n</ASNeolithicChunkStorage.description>
 
 </LanguageData>
