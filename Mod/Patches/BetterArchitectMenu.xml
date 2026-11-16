@@ -16,7 +16,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@ParentName="ASNeolithicChunkStorageBase"]</xpath>
+					<xpath>Defs/ThingDef[defName="ASNeolithicChunkStorage"]</xpath>
 					<value>
 						<designationCategory>Ferny_ResourcesStorage</designationCategory>
 					</value>
