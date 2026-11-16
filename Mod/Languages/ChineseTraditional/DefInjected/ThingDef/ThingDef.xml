@@ -14,8 +14,8 @@
 	<!-- Large Pot -->
 	<ASNeolithicLargePot.label>大缸</ASNeolithicLargePot.label>
 	<ASNeolithicLargePot.description>用木材鑿刻成的大缸，可儲存各種容易腐爛變質的食物。</ASNeolithicLargePot.description>
-	<ASNeolithicLargePotStone.label>大理石大缸</ASNeolithicLargePotStone.label>
-	<ASNeolithicLargePotStone.description>用大理石塊鑿刻成的大缸，可儲存各種容易腐爛變質的食物。</ASNeolithicLargePotStone.description>
+	<ASNeolithicLargePotStone.label>石製大缸</ASNeolithicLargePotStone.label>
+	<ASNeolithicLargePotStone.description>用石塊鑿刻成的大缸，可儲存各種容易腐爛變質的食物。</ASNeolithicLargePotStone.description>
 
 	<!-- MealShelf -->
 	<ASNeolithicMealShelf.label>簡易餐盤架</ASNeolithicMealShelf.label>
@@ -24,7 +24,7 @@
 	<!-- Plinth -->
 	<ASNeolithicPlinthWoody.label>簡易基座</ASNeolithicPlinthWoody.label>
 	<ASNeolithicPlinthWoody.description>雕有美麗花紋的簡易基座，用於展示物品。放在此處的物品會吸引殖民者的注意，其美觀也不會被忽視。</ASNeolithicPlinthWoody.description>
-	<ASNeolithicPlinthStone.label>大理石簡易基座</ASNeolithicPlinthStone.label>
+	<ASNeolithicPlinthStone.label>石製簡易基座</ASNeolithicPlinthStone.label>
 	<ASNeolithicPlinthStone.description>雕有美麗花紋的石製簡易基座，用於展示物品。放在此處的物品會吸引殖民者的注意，其美觀也不會被忽視。</ASNeolithicPlinthStone.description>
 
 	<!-- Textile Bundle -->
@@ -38,5 +38,5 @@
 	<ASNeolithicWoodPile.description>隨意堆疊在一起的木柴。</ASNeolithicWoodPile.description>
 
 	<!-- ChunkStorage -->
-	<ASNeolithicChunkStorage.label>大理石塊堆</ASNeolithicChunkStorage.label>
-	<ASNeolithicChunkStorage.description>隨意堆疊在一起的大理石塊，可當作簡易掩體來使用。</ASNeolithicChunkStorage.description></LanguageData>
+	<ASNeolithicChunkStorage.label>石塊堆</ASNeolithicChunkStorage.label>
+	<ASNeolithicChunkStorage.description>隨意堆疊在一起的石塊，可當作簡易掩體來使用。</ASNeolithicChunkStorage.description></LanguageData>
