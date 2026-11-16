@@ -1,0 +1,10 @@
+# The "bam" pass: the suite beside Better Architect Menu, whose categories the mod's own gated patch uses. Used with
+#   Run-PickleWsl.ps1 -Mod AdaptiveStorageNeolithicRenew -DepMap wsl-deps.bam.map
+# and read by scripts/stage-pickle-wsl.sh. The pass is named "bam" in the report.
+#
+# Better Architect Menu (ferny.BetterArchitect) depends on Harmony (staged by the script) and on Architect Icons
+# (com.bymarcin.architecticons). It declares 1.6 and 1.7. The mod's patch matches it by its name, "Better Architect Menu".
+adaptive.storage.framework   3033901359
+ferny.BetterArchitect        3563882422
+com.bymarcin.architecticons  1195427067
+nelim.pickletools.research   path:PickleTools/ResearchSteps/Mod

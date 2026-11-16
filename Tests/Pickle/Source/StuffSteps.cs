@@ -26,6 +26,15 @@ namespace AdaptiveStorageNeolithicRenew.PickleSteps
             ctx.Assert(def.label == expected, "label of " + defName + " is '" + def.label + "', not '" + expected + "'");
         }
 
+        // The category a patch of another mod (Better Architect Menu) gives a building; the same shared-name refusal applies.
+        [Then("Adaptive Storage Neolithic Renew: the ThingDef {string} has its designation category {string}")]
+        public void ThingDefDesignationCategory(PickleContext ctx, string defName, string expected)
+        {
+            var def = RequiredDef(ctx, defName);
+            var actual = def.designationCategory == null ? "(none)" : def.designationCategory.defName;
+            ctx.Assert(actual == expected, "designation category of " + defName + " is '" + actual + "', not '" + expected + "'");
+        }
+
         [Then("Adaptive Storage Neolithic Renew: the ThingDef {string} has its description {string}")]
         public void ThingDefDescription(PickleContext ctx, string defName, string expected)
         {

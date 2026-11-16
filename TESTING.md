@@ -32,6 +32,7 @@ Run revised suite in these configurations:
 5. English and French with `[K]Extra Stone`.
 6. Existing save with buildings from former per-stone architecture, to exercise migration.
    **Not played in game, by decision of 2026-09-21** (recorded in `STATUS.md`): backward compatibility checked statically by `Tests/Test-Mod.ps1`, which reads `ChunkBackCompatibility.xml`. Pickle suite has no scenario for it; item not blocker for `tested`.
+7. English with Better Architect Menu (`ferny.BetterArchitect`, Architect Icons, pass map `wsl-deps.bam.map`, feature `13-better-architect-menu`): the mod's own gated patch files baskets, plinths, piles, bundles, stone stack, large pots and meal shelf in Better Architect Menu's categories (2026-11-16). Uses the local step `the ThingDef {string} has its designation category {string}` because the shared def step refuses names shared with a GraphicsDef.
 
 Suite must verify automatically:
 
