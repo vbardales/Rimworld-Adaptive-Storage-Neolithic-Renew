@@ -16,7 +16,7 @@ upstream_mod_remotes:
 upstream_synced: 2026-11-12 Adaptive-Storage-Neolithic-Module＠2bc3fe4
 upstream_synced: 2026-11-12 Adaptive-Storage-Framework＠31ee88b
 dependencies: declared
-workshop_required_items: unverified, owner sets Required items by hand on the Steam page (framework 3033901359); state unknown at 2026-11-16, owner to confirm
+workshop_required_items: done, 2026-11-16 (read in Chrome on the live page of 3806101377: "Éléments requis" lists Adaptive Storage Framework)
 showcase:     complete
 tested_1_7:   yes
 tested_on:    2026-11-07 pickle 3280d85 (1.7 en map cd58 green, 23 passed 2 skipped); 1.6 stones passes of 2026-10-10 on 92fcfaa, see "Passes"
@@ -119,7 +119,7 @@ Read from `Mod/About/About.xml`, `Mod/About/OptionalCompat.xml`, `Mod/Patches/`,
 | DLC | Biotech: `MayRequire="Ludeon.RimWorld.Biotech"` on one `disallowedThingDefs` entry (`Wastepack`) in the basket and on two graphics entries of the large pot; no hard DLC dependency | element-level `MayRequire`, never on an `Operation` | Check-PatchGuards PASS |
 | Game versions | `supportedVersions` 1.6 only; `<li>1.7</li>` only after the green 1.7 run replay | `About.xml` | `tested_1_7: yes` (2026-11-07 run) |
 
-Workshop required items (4.g): framework 3033901359 is the only mandatory Workshop dependency, so it should be set as a Required item on the Steam page of 3806101377 by the owner; no CI step does it. `workshop_required_items` is `unverified` until she confirms (then `done, <date>`).
+Workshop required items (4.g): framework 3033901359 is the only mandatory Workshop dependency; read in Chrome on 2026-11-16, the live Steam page of 3806101377 lists it under "Éléments requis" (only item). `workshop_required_items: done, 2026-11-16`.
 
 ## Audit 2026-10-10
 
