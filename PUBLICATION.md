@@ -102,7 +102,7 @@ Upload files 0 to 9 in order.
 | 5 | `Art/Gallery/5-stacks.jpg` | 1920 x 1080, 275,997 bytes | Granite stacks at 1, 2 and 6 chunks, and a marble stack |
 | 6 | `Art/Gallery/6-plinths.jpg` | 1920 x 1080, 291,925 bytes | Wood and vacstone plinths showing gold and an item |
 | 7 | `Art/Gallery/7-another-mod.jpg` | 1920 x 1080, 315,130 bytes | A stone from another mod (Extra Stone) with its own pot and stack beside granite |
-| 8 | `Art/Gallery/8-tidied.jpg` | 1920 x 1080, 328,102 bytes | The same camp tidy, storage filled |
+| 8 | `Art/Gallery/8-tidied.jpg` | 1920 x 1080, 328,102 bytes | The same camp, tidy and with storage filled |
 | 9 | `Art/Gallery/9-research-window.jpg` | 1920 x 1080, 153,749 bytes | Research window, Storage tab, both projects (no subtitle) |
 
 ### Gallery subtitles

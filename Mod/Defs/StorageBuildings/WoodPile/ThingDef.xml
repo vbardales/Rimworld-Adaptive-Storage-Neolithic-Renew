@@ -8,7 +8,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<description>A couple of rough looking logs thrown upon each other into a pile.</description>
+		<description>A couple of rough-looking logs thrown upon each other into a pile.</description>
 		<fillPercent>0.30</fillPercent>
 		<uiIconPath>ASNeolithic/WoodPile/WoodPile_UI_Icon</uiIconPath>
 		<uiIconScale>1.1</uiIconScale>
