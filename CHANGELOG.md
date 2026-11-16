@@ -10,7 +10,7 @@ All notable changes to this mod are documented here.
 
 ### Fixed
 
-- Russian: the two research names now say "neolithic", the meal shelf is singular, both plinth descriptions gain their second sentence, and a grammar slip in the stone pile description is fixed (ChatGPT review, 2026-11-12; not reviewed by a Russian speaker).
+- Russian: the two research names now say "neolithic", the meal shelf is singular, both plinth descriptions gain their second sentence, a grammar slip in the stone pile description is fixed, and both basket descriptions now list wood, fabric and dried leather (ChatGPT review, 2026-11-12; not reviewed by a Russian speaker).
 
 ## [1.1.3] - 2026-10-11
 

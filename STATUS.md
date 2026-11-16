@@ -26,7 +26,7 @@ audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfa
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in Docs/runs/history.md
 code_review_sha: 699e6ce06bdff98a18718bbf0a0847b925e5197b
 session:      local_73e7e49e-129a-4737-8603-ae05c7dafecf
-updated:      2026-11-12
+updated:      2026-11-16
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
 echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
