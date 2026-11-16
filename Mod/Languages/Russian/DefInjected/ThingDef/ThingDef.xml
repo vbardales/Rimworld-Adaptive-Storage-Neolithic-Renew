@@ -3,9 +3,9 @@
 
 	<!-- Basket -->
 	<ASNeolithicBasketWoody.label>Корзина</ASNeolithicBasketWoody.label>
-	<ASNeolithicBasketWoody.description>Большая корзина из дерева для хранения самых разных вещей.</ASNeolithicBasketWoody.description>
+	<ASNeolithicBasketWoody.description>Большая корзина из дерева, ткани или высушенной кожи для хранения самых разных вещей.</ASNeolithicBasketWoody.description>
 	<ASNeolithicBasketFabric.label>Корзина</ASNeolithicBasketFabric.label>
-	<ASNeolithicBasketFabric.description>Большая корзина из ткани или высушенной кожи для хранения самых разных вещей.</ASNeolithicBasketFabric.description>
+	<ASNeolithicBasketFabric.description>Большая корзина из дерева, ткани или высушенной кожи для хранения самых разных вещей.</ASNeolithicBasketFabric.description>
 
 	<!-- Haypile -->
 	<ASNeolithicHayPile.label>Стог сена</ASNeolithicHayPile.label>
