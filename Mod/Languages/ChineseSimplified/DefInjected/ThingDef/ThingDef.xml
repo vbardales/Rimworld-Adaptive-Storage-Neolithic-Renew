@@ -3,23 +3,23 @@
 
 	<!-- Basket -->
 	<ASNeolithicBasketWoody.label>篓筐</ASNeolithicBasketWoody.label>
-	<ASNeolithicBasketWoody.description>用木材制成的篓筐，可储存各种物品。\n\n</ASNeolithicBasketWoody.description>
+	<ASNeolithicBasketWoody.description>用木材制成的篓筐，可储存各种物品。</ASNeolithicBasketWoody.description>
 	<ASNeolithicBasketFabric.label>篓筐</ASNeolithicBasketFabric.label>
-	<ASNeolithicBasketFabric.description>用织物或皮革制成的篓筐，可储存各种物品。\n\n</ASNeolithicBasketFabric.description>
+	<ASNeolithicBasketFabric.description>用织物或皮革制成的篓筐，可储存各种物品。</ASNeolithicBasketFabric.description>
 
 	<!-- Haypile -->
 	<ASNeolithicHayPile.label>干草垛</ASNeolithicHayPile.label>
-	<ASNeolithicHayPile.description>随意堆叠在一起的干草，中间插有作为简单固定手段的木棍。\n\n</ASNeolithicHayPile.description>
+	<ASNeolithicHayPile.description>随意堆叠在一起的干草，中间插有作为简单固定手段的木棍。</ASNeolithicHayPile.description>
 
 	<!-- Large Pot -->
 	<ASNeolithicLargePot.label>大缸</ASNeolithicLargePot.label>
-	<ASNeolithicLargePot.description>用木材凿刻成的大缸，可储存各种容易腐烂变质的食物。\n\n</ASNeolithicLargePot.description>
+	<ASNeolithicLargePot.description>用木材凿刻成的大缸，可储存各种容易腐烂变质的食物。</ASNeolithicLargePot.description>
 	<ASNeolithicLargePotStone.label>大理石大缸</ASNeolithicLargePotStone.label>
-	<ASNeolithicLargePotStone.description>用大理石块凿刻成的大缸，可储存各种容易腐烂变质的食物。\n\n</ASNeolithicLargePotStone.description>
+	<ASNeolithicLargePotStone.description>用大理石块凿刻成的大缸，可储存各种容易腐烂变质的食物。</ASNeolithicLargePotStone.description>
 
 	<!-- MealShelf -->
 	<ASNeolithicMealShelf.label>简易餐盘架</ASNeolithicMealShelf.label>
-	<ASNeolithicMealShelf.description>用于储存各种烹饪食物的简易餐盘架。\n\n</ASNeolithicMealShelf.description>
+	<ASNeolithicMealShelf.description>用于储存各种烹饪食物的简易餐盘架。</ASNeolithicMealShelf.description>
 
 	<!-- Plinth -->
 	<ASNeolithicPlinthWoody.label>简易基座</ASNeolithicPlinthWoody.label>
@@ -29,16 +29,14 @@
 
 	<!-- Textile Bundle -->
 	<ASNeolithicTextileBundleFabric.label>捆堆</ASNeolithicTextileBundleFabric.label>
-	<ASNeolithicTextileBundleFabric.description>用绳子捆好并随意堆叠在一起的织物。\n\n</ASNeolithicTextileBundleFabric.description>
+	<ASNeolithicTextileBundleFabric.description>用绳子捆好并随意堆叠在一起的织物。</ASNeolithicTextileBundleFabric.description>
 	<ASNeolithicTextileBundleLeather.label>捆堆</ASNeolithicTextileBundleLeather.label>
-	<ASNeolithicTextileBundleLeather.description>用绳子捆好并随意堆叠在一起的皮革。\n\n</ASNeolithicTextileBundleLeather.description>
+	<ASNeolithicTextileBundleLeather.description>用绳子捆好并随意堆叠在一起的皮革。</ASNeolithicTextileBundleLeather.description>
 
 	<!-- WoodPile -->
 	<ASNeolithicWoodPile.label>柴堆</ASNeolithicWoodPile.label>
-	<ASNeolithicWoodPile.description>随意堆叠在一起的木柴。\n\n</ASNeolithicWoodPile.description>
+	<ASNeolithicWoodPile.description>随意堆叠在一起的木柴。</ASNeolithicWoodPile.description>
 
 	<!-- ChunkStorage -->
 	<ASNeolithicChunkStorage.label>大理石块堆</ASNeolithicChunkStorage.label>
-	<ASNeolithicChunkStorage.description>随意堆叠在一起的大理石块，可当作简易掩体来使用。\n\n</ASNeolithicChunkStorage.description>
-
-</LanguageData>
+	<ASNeolithicChunkStorage.description>随意堆叠在一起的大理石块，可当作简易掩体来使用。</ASNeolithicChunkStorage.description></LanguageData>
