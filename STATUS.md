@@ -16,6 +16,7 @@ upstream_mod_remotes:
 upstream_synced: 2026-11-12 Adaptive-Storage-Neolithic-Module＠2bc3fe4
 upstream_synced: 2026-11-12 Adaptive-Storage-Framework＠31ee88b
 dependencies: declared
+workshop_required_items: unverified, owner sets Required items by hand on the Steam page (framework 3033901359); state unknown at 2026-11-16, owner to confirm
 showcase:     complete
 tested_1_7:   yes
 tested_on:    2026-11-07 pickle 3280d85 (1.7 en map cd58 green, 23 passed 2 skipped); 1.6 stones passes of 2026-10-10 on 92fcfaa, see "Passes"
@@ -103,6 +104,22 @@ Read by sweep across every mod. Lives at root, never inside `Mod/`, so Steam nev
 - **Published:** `v1.1.3` (2026-10-11, tag at `e47cceb`, run `38092165205`, Steam item `3806101377`, public). Previous `v1.1.2` (`cd28780`) = rollback target; regression green (2026-10-02).
 - **Target:** `1.1.3`, published 2026-10-11 (CHANGELOG `[1.1.3] - 2026-10-11`, `PUBLICATION.md` section 6). `Mod/` changes since `v1.1.2`: `About.xml` (description now generated from Markdown source), `ModIcon.png`, `Preview.png`, `Basket/ThingDef.xml` (`drawSize` `(2,2)`), French `ThingDef.xml` (nine descriptions, Virginie's review). Nothing in `Mod/` changed since `010cc34`; later commits = documents.
 - **Old vocabulary:** previous `workflow_stage: preTest` = old name (AUDIT.md, section 16: `preTest` maps to `writeTests`). Re-audit result: `playTests[1.1.3]`; left for `shootGallery[1.1.3]` on 2026-10-10 (stones passes green, code review done).
+
+## Dependencies (AUDIT 4.g, 2026-11-16, revision `11b6207`)
+
+Read from `Mod/About/About.xml`, `Mod/About/OptionalCompat.xml`, `Mod/Patches/`, `Mod/Defs/` (no `LoadFolders.xml`, no assembly).
+
+| Kind | Entry | Where declared | Check |
+| --- | --- | --- | --- |
+| Hard dependency | `adaptive.storage.framework`, Workshop 3033901359 | `modDependencies` (with `steamWorkshopUrl` and `downloadUrl`), `loadAfter` | Check-ModBasics PASS |
+| Load order | `Ludeon.RimWorld`, `adaptive.storage.framework` | `loadAfter` | no cycle (one dependency) |
+| Incompatible | `adaptive.storage.neolithic` (original module 3033901895) | `incompatibleWith` | read |
+| Optional integration | `ferny.BetterArchitect` (Better Architect Menu 3563882422), kind `patch`, own gated patch `Mod/Patches/BetterArchitectMenu.xml` (`PatchOperationFindMod`), added 2026-11-16 | `OptionalCompat.xml` | Check-OptionalCompat OK, Check-PatchGuards PASS |
+| Optional, no declaration needed | third-party stones (Extra Stone, kuratheris) join through the framework's `ASFStoneChunks` category; no patch of ours | none | scenario `06-third-party-stone` |
+| DLC | Biotech: `MayRequire="Ludeon.RimWorld.Biotech"` on one `disallowedThingDefs` entry (`Wastepack`) in the basket and on two graphics entries of the large pot; no hard DLC dependency | element-level `MayRequire`, never on an `Operation` | Check-PatchGuards PASS |
+| Game versions | `supportedVersions` 1.6 only; `<li>1.7</li>` only after the green 1.7 run replay | `About.xml` | `tested_1_7: yes` (2026-11-07 run) |
+
+Workshop required items (4.g): framework 3033901359 is the only mandatory Workshop dependency, so it should be set as a Required item on the Steam page of 3806101377 by the owner; no CI step does it. `workshop_required_items` is `unverified` until she confirms (then `done, <date>`).
 
 ## Audit 2026-10-10
 
