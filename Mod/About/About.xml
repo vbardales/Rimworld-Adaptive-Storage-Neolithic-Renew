@@ -53,6 +53,8 @@ COMPATIBILITY
 
 The original mod is declared incompatible because both packages define the same content. Run one or the other.
 
+Better Architect Menu is optional: when it is loaded, the storage buildings sort into its general, resources and food storage categories, and nothing changes without it.
+
 Odyssey, Biotech and stone mods are optional. Compatible stone chunks can use the shared ASFStoneChunks category without one generated building definition per stone type.
 
 Known compatibility limitations reported on the original page, not rechecked here: Alpha Biomes chunks cannot be used as material for chunk stacks, and Expanded Woodworking woods cannot be used for the wood pile, which requires Timber. Compatibility issues with Combat Extended have also been reported.
@@ -78,6 +80,8 @@ Soul, Phaneron and bradson, for the mod, the Adaptive Storage Framework (https:/
 Elzetia and MrBlack-JB, for the French and Russian translations included upstream.
 
 SLOST, Daedalus and Holarula, for the Thai, German and Chinese translations.
+
+ferny, for Better Architect Menu (https://steamcommunity.com/sharedfiles/filedetails/?id=3563882422), whose storage categories the buildings use when it is loaded. It is optional, not a dependency.
 
 Pickle (https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), RimLogging (https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and PickleTools (https://steamcommunity.com/sharedfiles/filedetails/?id=3806142401) were used for development and testing only; none is a dependency of the distributed mod.
 

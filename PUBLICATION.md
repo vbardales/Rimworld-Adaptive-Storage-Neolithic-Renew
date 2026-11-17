@@ -46,6 +46,8 @@ Thai (SLOST), German (Daedalus) and Chinese (Holarula): translations found on th
 
 The original mod is declared incompatible because both packages define the same content. Run one or the other.
 
+Better Architect Menu is optional: when it is loaded, the storage buildings sort into its general, resources and food storage categories, and nothing changes without it.
+
 Odyssey, Biotech and stone mods are optional. Compatible stone chunks can use the shared ASFStoneChunks category without one generated building definition per stone type.
 
 Known compatibility limitations reported on the original page, not rechecked here: Alpha Biomes chunks cannot be used as material for chunk stacks, and Expanded Woodworking woods cannot be used for the wood pile, which requires Timber. Compatibility issues with Combat Extended have also been reported.
@@ -71,6 +73,8 @@ Soul, Phaneron and bradson, for the mod, the [Adaptive Storage Framework](https:
 Elzetia and MrBlack-JB, for the French and Russian translations included upstream.
 
 SLOST, Daedalus and Holarula, for the Thai, German and Chinese translations.
+
+ferny, for [Better Architect Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=3563882422), whose storage categories the buildings use when it is loaded. It is optional, not a dependency.
 
 [Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), [RimLogging](https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and [PickleTools](https://steamcommunity.com/sharedfiles/filedetails/?id=3806142401) were used for development and testing only; none is a dependency of the distributed mod.
 
@@ -159,6 +163,28 @@ PickleTools is the publisher's own private project. Harmony is not used directly
 ### Test and camp integration comments
 
 The 15 thank-you texts (posted 2026-10-11) now live in `WORKSHOP_COMMENTS.md`, section "Sent texts: Adaptive Storage Neolithic Renew".
+
+### Thank-you comments of the 1.2 line (drafted 2026-11-17)
+
+Three new recipients come with 1.2.0, the Thai, German and Chinese translations. Their pages have no comment yet (read 2026-11-17), so there is no mood to match; the texts stay in the owner's plain voice. Post them after the item shows 1.2.0 (`postOnSteam`), one per page, at most three a day. Better Architect Menu (3563882422, ferny) is already `posted` (comment from Architect Studio): this mod only joins its `Covers` in `WORKSHOP_COMMENTS.md`, no second comment. Rows: `WORKSHOP_COMMENTS.md`, status `drafted`.
+
+**[แปลไทย] Adaptive Storage Neolithic Module (SLOST)** (3341668276)
+
+```text
+Thai players of the storage mod get your words now: your translation of the Adaptive Storage Neolithic Module is part of the 1.2.0 update of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url], with your name in the credits. Thank you SLOST :)
+```
+
+**Adaptive Storage Neolithic Module - Deutsch (German Language Pack) (Daedalus)** (3115381045)
+
+```text
+Danke Daedalus! Your German pack for the Adaptive Storage Neolithic Module now ships inside the 1.2.0 update of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url], so the baskets and pots speak German there too. Credited to you, of course xD
+```
+
+**Adaptive Storage Neolithic Renew 汉化 (WhyBlyat, credited as Holarula in our files)** (3821420014)
+
+```text
+Your Chinese version of Adaptive Storage Neolithic Renew, Simplified and Traditional, is now part of the mod itself with the 1.2.0 update, and credited to you. Thank you WhyBlyat for taking the trouble to translate it lol [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]
+```
 
 ### Use This Instead comment (2026-10-11)
 
