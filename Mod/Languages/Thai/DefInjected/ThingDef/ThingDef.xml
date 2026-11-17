@@ -34,7 +34,7 @@
 	<ASNeolithicTextileBundleLeather.description>หนังสองสามชิ้นซ้อนกันเป็นกองแบบเรียบร้อย</ASNeolithicTextileBundleLeather.description>
 
 	<!-- WoodPile -->
-	<ASNeolithicWoodPile.label>กอง</ASNeolithicWoodPile.label>
+	<ASNeolithicWoodPile.label>กองไม้</ASNeolithicWoodPile.label>
 	<ASNeolithicWoodPile.description>ท่อนไม้ที่ดูหยาบๆ สองสามท่อนถูกโยนทับกันเป็นกอง</ASNeolithicWoodPile.description>
 
 	<!-- ChunkStorage -->
