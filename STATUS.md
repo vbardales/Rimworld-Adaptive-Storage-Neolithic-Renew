@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: shootGallery[1.2.0]
+workflow_stage: mountPreview[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -34,6 +34,7 @@ echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-17, owner validated the 9 gallery images ("je valide"): indexes 1 to 9 contiguous, PUBLICATION.md size of image 3 fixed. Stage shootGallery to mountPreview[1.2.0]. Next: Preview redo (AUDIT step 10), social preview upload, sync-nsb-npt, translation-review regen.
   - done 2026-11-17, resume after sleep (protocols read d65924b7, TM registered, no archived session) and ticket `20a4` read (passed 1/1, tree `c62f059`, capture opened full size): shot 3 candidate (about 4: Nelim face and smile visible, empty-handed, logs readable, hen next to a loose hay but about 150 px from the pile, grey post = mod sprite, rack foreground, bottom filled). Converted to `Art/Gallery-clean/3-piles.jpg`, subtitled `Art/Gallery/3-piles.jpg` ("Wood and hay, stacked as they come."), Inbox capture deleted. All 9 images sent to Virginie (plain face is the intended base; she may want the red cheeks back). Next: her accept or refuse per image; on acceptance reindex (no gap) and go to `mountPreview`. Still owed: shot 9 window not scored, `sync-nsb-npt`, translation-review regen (Check-Status WARN), social preview upload.
   - filed 2026-11-17, 1.6 ticket `20261117-195120-588-20a4` on tree `c62f059` (Mod/ same as `ab67921`, `wsl-deps.camp.map`, filter `12-workshop-camp::wood pile and hay pile`, evidence `Tests/Pickle/Inbox/gal-camp-t-c62f059`): refile of `6e99`, which passed 1/1 but whose PNG was minified to 1280x720 jpg before it was rated (evidence moved to `Tests/Pickle/Evidence/gal-camp-s-ab67921`, deleted). Seen on the 1280 copy: Nelim face and mouth visible, hen next to loose hay, logs readable, bottom filled, rack foreground: looks like candidate. Next after `RUN_DONE`: open the full-size capture, rate, convert to `Art/Gallery-clean/3-piles.jpg`, `Add-Subtitle.ps1` (line "Wood and hay, stacked as they come."), copy the capture out of Inbox at once, send all 9 to Virginie.
   - filed 2026-11-17, 1.6 ticket `20261117-183752-789-abe3` on tree `f996055` (`Mod/` frozen until `RUN_DONE`, `wsl-deps.camp.map`, filter `12-workshop-camp::wood pile and hay pile`, evidence `Tests/Pickle/Inbox/gal-camp-r-f996055`): shot 3 REDO again. Ticket `7640` passed 1/1 but its capture (opened full size) still shows the hay in Nelim's hand hiding her mouth facing South; rack foreground at right OK, bottom third bare. Nelim now empty-handed (hay stays on the pile), shotlist row 3 synced, `Check-ShotlistVsScenario` OK. Evidence `gal-camp-q-4a0adc6` deleted (rejected). Next after `RUN_DONE`: `summary.json`, `junit.xml`, open capture full size and at 268 px, rate; convert the new 3 to `Art/Gallery-clean/` `.jpg`, subtitle it with `Add-Subtitle.ps1`, send all 9 to Virginie (plain face is the intended base, ask if she wants the red cheeks back).
@@ -83,7 +84,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: d65924b73972927fb6722555747f29c544b22264
+protocols_read_sha: cc55569852194a8668047613f1fe6a2966b350c3
 ---
 # Adaptive Storage Neolithic Renew: status
 

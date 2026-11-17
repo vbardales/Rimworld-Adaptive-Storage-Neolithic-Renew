@@ -101,7 +101,7 @@ Upload files 0 to 9 in order.
 | 0 | `Art/Gallery/0-preview.png` | 896 x 504, 635,784 bytes | Copy of the Workshop header image |
 | 1 | `Art/Gallery/1-camp-noon.jpg` | 1920 x 1080, 330,570 bytes | Untidy camp at noon: five storage types waiting, loose chunks and logs |
 | 2 | `Art/Gallery/2-baskets.jpg` | 1920 x 1080, 319,832 bytes | Three baskets: empty, one stone, full |
-| 3 | `Art/Gallery/3-piles.jpg` | 1920 x 1080, 343,695 bytes | Wood pile and hay pile |
+| 3 | `Art/Gallery/3-piles.jpg` | 1920 x 1080, 393,835 bytes | Wood pile and hay pile |
 | 4 | `Art/Gallery/4-pots.jpg` | 1920 x 1080, 332,501 bytes | Large pots showing berries, milk and grain |
 | 5 | `Art/Gallery/5-stacks.jpg` | 1920 x 1080, 275,997 bytes | Granite stacks at 1, 2 and 6 chunks, and a marble stack |
 | 6 | `Art/Gallery/6-plinths.jpg` | 1920 x 1080, 291,925 bytes | Wood and vacstone plinths showing gold and an item |
