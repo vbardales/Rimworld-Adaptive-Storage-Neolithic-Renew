@@ -4,15 +4,15 @@
 # Common decor, around the fire: "Campfire" (195, 152) lit, "TorchLamp" (191, 150) and (199, 150) lit, "Stool" (193, 154) and (197, 154), "VFEPD_TanningRack" (200, 151), "VFEPD_BrewingBarrel" (196, 153), "VFEPD_HayBaleLarge" (189, 151), "Plant_Daylily" (188, 149) and (202, 156). Each tight picture dresses its own corner (torch, daylily, stool, bale, barrel). Decor belongs to one picture: placed, photographed, removed.
 #
 # Shot plan (frames are cell rectangles filling 85 percent of the screen; place bare-clearing; hour 12 plus the wait):
-#   1. camp-1-noon, 12:00, medium-tight (reworked 2026-11-13: storage was about 12 px at 268), cells (190, 147) to (198, 151), wait 60. Untidy camp; storage row at z 148: "ASNeolithicTextileBundleFabric" (190, 148), "ASNeolithicWoodPile" (192, 148), "ASNeolithicHayPile" (194, 148), "ASNeolithicMealShelf" (196, 148), "ASNeolithicBasketWoody" (198, 148); "Campfire" (195, 150) lit; Nelim at (193, 150) and Soren at (197, 150), both facing South (the held item no longer hides the face), "WoodLog" and "ChunkGranite" in hand; labrador "Biscuit" at (195, 151) facing South; loose "ChunkGranite" (191, 150) and (198, 150), "WoodLog" (190, 150), "RawBerries" (190, 151), "Hay" (193, 147). Says: the camp is untidy at noon, the storage waits to be filled.
-#   2. camp-2-baskets, 12:05, tight, cells (189, 153) to (196, 157), wait 268. Three "ASNeolithicBasketWoody" at (190, 155), (192, 155), (194, 155): empty, one "Cloth", full ("Cloth" and "Steel"); Nelim at (193, 154) behind the middle basket facing South (reworked 2026-11-13: facing East the chunk hid the face), nothing in hand (reworked again 2026-11-13: the chunk covered the mouth), smiling; squirrel "Noisette" at (195, 156). Torch (191, 152), daylily (188, 154), stool (196, 156). Says: what goes in, shows.
+#   1. camp-1-noon, 12:00, medium-tight (reworked 2026-11-13: storage was about 12 px at 268), cells (190, 148) to (198, 152), wait 60. Untidy camp; storage row at z 148: "ASNeolithicTextileBundleFabric" (190, 149), "ASNeolithicWoodPile" (192, 149), "ASNeolithicHayPile" (194, 149), "ASNeolithicMealShelf" (196, 149), "ASNeolithicBasketWoody" (198, 149); "Campfire" (195, 151) lit; Nelim at (193, 151) and Soren at (197, 151), both facing South (the held item no longer hides the face), "WoodLog" and "ChunkGranite" in hand; labrador "Biscuit" at (195, 152) facing South; loose "ChunkGranite" (191, 151) and (198, 151), "WoodLog" (190, 151), "RawBerries" (191, 152), "Hay" (193, 148). Says: the camp is untidy at noon, the storage waits to be filled.
+#   2. camp-2-baskets, 12:05, tight, cells (189, 152) to (196, 156), wait 268. Three "ASNeolithicBasketWoody" at (190, 154), (192, 154), (194, 154): empty, one "Cloth", full ("Cloth" and "Steel"); Nelim at (193, 153) behind the middle basket facing South (reworked 2026-11-13: facing East the chunk hid the face), nothing in hand (reworked again 2026-11-13: the chunk covered the mouth), smiling; squirrel "Noisette" at (195, 155). Torch (191, 151), daylily (188, 153), stool (196, 155). Says: what goes in, shows.
 #   3. camp-3-piles, 12:10, medium, cells (189, 147) to (199, 152), wait 477. "ASNeolithicWoodPile" (192, 149) with "WoodLog" and "ASNeolithicHayPile" (194, 149) with "Hay"; Nelim at (196, 150) facing West with "Hay" in hand; hen "Plume" at (193, 151); tanning rack (198, 150) in the foreground, bale (196, 152), torch (191, 151). Says: fuel stacked as it comes.
-#   4. camp-4-pots, 12:15, tight, cells (197, 152) to (203, 157), wait 685. "ASNeolithicLargePot" at (198, 154), (200, 154), (202, 154) holding "RawBerries", "Milk", "Pemmican"; Soren at (199, 156) facing North with "Milk" in hand; labrador "Biscuit" at (199, 155) facing the camera; torch (199, 153), bale (202, 152), barrel (197, 156). Says: food for noon, pots show what they hold.
-#   5. camp-5-stacks, 12:20, tight, cells (193, 147) to (201, 151), wait 893. "ASNeolithicChunkStorage" made from "ChunkGranite" at (194, 149) with 1 chunk, (196, 149) with 2, (198, 149) with 6, and made from "ChunkMarble" at (200, 149) with 6; Soren at (196, 151) facing East with "ChunkGranite" in hand; hare "Pomme" at (197, 150); torch (191, 149), stool (197, 151). Says: stone piles up, in two materials.
+#   4. camp-4-pots, 12:15, tight, cells (195, 151) to (201, 156), wait 685. "ASNeolithicLargePot" at (196, 153), (198, 153), (200, 153) holding "RawBerries", "Milk", "Pemmican"; Soren at (197, 155) facing North with "Milk" in hand; labrador "Biscuit" at (197, 154) facing the camera; torch (197, 152), bale (200, 151), barrel (195, 155). Says: food for noon, pots show what they hold.
+#   5. camp-5-stacks, 12:20, tight, cells (193, 148) to (201, 152), wait 893. "ASNeolithicChunkStorage" made from "ChunkGranite" at (194, 150) with 1 chunk, (196, 150) with 2, (198, 150) with 6, and made from "ChunkMarble" at (200, 150) with 6; Soren at (196, 152) facing East with "ChunkGranite" in hand; hare "Pomme" at (197, 151); torch (191, 150), stool (197, 152). Says: stone piles up, in two materials.
 #   6. camp-6-plinths, 12:25, tight, cells (193, 148) to (199, 152), wait 1102. "ASNeolithicPlinthWoody" (194, 150) with "Gold", "ASNeolithicPlinthStone" made from "ChunkGranite" (196, 150) empty, made from "ChunkVacstone" (198, 150) with "Jade"; Nelim at (196, 152) facing South with "Silver" in hand, about to set it on the empty plinth (one tile further north than the first run, so she no longer hides it); peacock "Eclat" at (195, 149) in the foreground. Torch (192, 152) and (196, 148), stool (199, 152), barrels and bales around. Says: the tribe's treasures.
 #   7. camp-7-another-mod, 12:30, medium, cells (192, 152) to (201, 156), wait 1310. "ASNeolithicLargePotStone" and "ASNeolithicChunkStorage" made from "ChunkGranite" at (193, 153) and (195, 153), the same two made from "ChunkKura_Andesite" (Extra Stone) at (198, 153) and (200, 153), granite stack of 2 against andesite stack of 6 so the two stacks read as different at 268 px; frame cut to cells (192, 152) to (201, 156) (reworked 2026-11-13 after the 268 px REDO); Soren at (199, 155) facing South, empty-handed and smiling beside the andesite stack (reworked 2026-11-15: the chunk in hand hid his face and smile in the 9ff3255 capture); cat "Mie" at (197, 154). Says: a stone from another mod gets its own buildings. Risk: granite and andesite may be close in colour at 268 px.
-#   8. camp-8-tidied, 12:40, medium-tight (reworked 2026-11-13: meal sprite hid both faces, storage tiny), cells (190, 147) to (198, 151), wait 1727. Same storage and decor as picture 1, now filled ("Cloth", "WoodLog", "Hay", "MealSimple" on the shelf, "Cloth" and "Steel" in the basket); Nelim at (193, 150) and Soren at (197, 150), both facing South, nothing in hand (the meal sprite hid the mouths, 03dd); labrador "Biscuit" standing at (196, 150) facing South (lying dog read as a pelt, 249e; NPT: no head-raised pose); stools (192, 151) and (198, 151) stay empty (a seated pawn faces the stool, not the camera). Says: the camp is tidy, the tribe rests at noon (mirrors picture 1).
-#   9. window-research-storage: interface window (research window, Storage tab), taken on `window-backdrop-for-height`, cropped, no subtitle, not scored; played by feature 08 (research tab), no scenario here.
+#   8. camp-8-tidied, 12:40, medium-tight (reworked 2026-11-13: meal sprite hid both faces, storage tiny), cells (190, 148) to (198, 152), wait 1727. Same storage and decor as picture 1, now filled ("Cloth", "WoodLog", "Hay", "MealSimple" on the shelf, "Cloth" and "Steel" in the basket); Nelim at (193, 151) and Soren at (197, 151), both facing South, nothing in hand (the meal sprite hid the mouths, 03dd); labrador "Biscuit" standing at (196, 151) facing South (lying dog read as a pelt, 249e; NPT: no head-raised pose); stools (192, 152) and (198, 152) stay empty (a seated pawn faces the stool, not the camera). Says: the camp is tidy, the tribe rests at noon (mirrors picture 1).
+#   9. window-research-storage: interface window (research window, Storage tab), taken on the Sanctuary place `window-backdrop-for-height` (bamboo backdrop, rule of 2026-10-06), cropped, no subtitle, not scored. Reworked 2026-11-17 (owner: wrong map, the 2026-11-15 capture came from the test colony of feature 08): played here on the save "Nelims-tribe", Storage tab opened by its translation key.
 # Subtitles are written in PUBLICATION.md ("Gallery subtitles") once the gallery is finished.
 # Series (criterion k): medium-tight 1 and 8 (opening mess, closing tidy, same frame), medium 3 and 7, tight 2, 4, 5, 6; opening 1, closing 8.
 # Review rule: after the run, open every picture and compare it with the line above; shrink it to 268 px wide and check the subject; redo the one that does not say what it should.
@@ -23,6 +23,7 @@
 @requires:nelim.pickletools.camerazoom
 @requires:nelim.pickletools.colonistrace
 @requires:nelim.pickletools.stagedecor
+@requires:nelim.pickletools.research
 @workshop
 @review
 Feature: the camp pictures of the Workshop page
@@ -35,41 +36,41 @@ Feature: the camp pictures of the Workshop page
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 150)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 150) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 149)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 149) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (198, 149)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (198, 149) is lit
-    And Nelim's Pickle Tools: I place the decor "Stool" at (192, 151)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (198, 151)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 151)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (189, 149) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 149) fully grown
-    And a "ASNeolithicTextileBundleFabric" is built at (190, 148)
-    And a "ASNeolithicWoodPile" is built at (192, 148)
-    And a "ASNeolithicHayPile" is built at (194, 148)
-    And a "ASNeolithicMealShelf" is built at (196, 148)
-    And a "ASNeolithicBasketWoody" is built at (198, 148)
-    And I spawn a "ChunkGranite" at (191, 150)
-    And I spawn a "ChunkGranite" at (198, 150)
-    And I spawn a "WoodLog" at (190, 150)
-    And I spawn a "RawBerries" at (190, 151)
-    And I spawn a "Hay" at (193, 147)
-    And Nelim's Pickle Tools: I frame the cells (190, 147) to (198, 151) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 151)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 151) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 150)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 150) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (198, 150)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (198, 150) is lit
+    And Nelim's Pickle Tools: I place the decor "Stool" at (192, 152)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (198, 152)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 152)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (189, 150) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 150) fully grown
+    And a "ASNeolithicTextileBundleFabric" is built at (190, 149)
+    And a "ASNeolithicWoodPile" is built at (192, 149)
+    And a "ASNeolithicHayPile" is built at (194, 149)
+    And a "ASNeolithicMealShelf" is built at (196, 149)
+    And a "ASNeolithicBasketWoody" is built at (198, 149)
+    And I spawn a "ChunkGranite" at (191, 151)
+    And I spawn a "ChunkGranite" at (198, 151)
+    And I spawn a "WoodLog" at (190, 151)
+    And I spawn a "RawBerries" at (191, 152)
+    And I spawn a "Hay" at (193, 148)
+    And Nelim's Pickle Tools: I frame the cells (190, 148) to (198, 152) filling 85 percent of the screen
     When I wait 60 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (195, 151)
-    And Nelim's Pickle Tools: the animal "Biscuit" stands at (195, 151) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (195, 152)
+    And Nelim's Pickle Tools: the animal "Biscuit" stands at (195, 152) facing South
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" stands at (193, 150) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (193, 151) facing South
     And Nelim's Pickle Tools: the colonist "Nelim" holds "WoodLog" in hand
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" stands at (197, 150) facing South
+    And Nelim's Pickle Tools: "Soren" stands at (197, 151) facing South
     And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkGranite" in hand
     And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
@@ -86,32 +87,32 @@ Feature: the camp pictures of the Workshop page
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 152)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (188, 154) fully grown
-    And Nelim's Pickle Tools: I place the decor "Stool" at (196, 156)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (189, 157) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (195, 157) fully grown
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (196, 153)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (196, 153) is lit
-    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (189, 153)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (194, 157)
-    And I spawn a "WoodLog" at (193, 153)
-    And a "ASNeolithicBasketWoody" is built at (190, 155)
-    And a "ASNeolithicBasketWoody" is built at (192, 155)
-    And a "ASNeolithicBasketWoody" is built at (194, 155)
-    And I spawn a "Cloth" at (192, 155)
-    And I spawn a "Cloth" at (194, 155)
-    And I spawn a "Steel" at (194, 155)
-    And Nelim's Pickle Tools: I frame the cells (189, 153) to (196, 157) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 151)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 151) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 151)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 151) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (188, 153) fully grown
+    And Nelim's Pickle Tools: I place the decor "Stool" at (196, 155)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (189, 156) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (195, 156) fully grown
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (196, 152)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (196, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (189, 152)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (194, 156)
+    And I spawn a "WoodLog" at (193, 152)
+    And a "ASNeolithicBasketWoody" is built at (190, 154)
+    And a "ASNeolithicBasketWoody" is built at (192, 154)
+    And a "ASNeolithicBasketWoody" is built at (194, 154)
+    And I spawn a "Cloth" at (192, 154)
+    And I spawn a "Cloth" at (194, 154)
+    And I spawn a "Steel" at (194, 154)
+    And Nelim's Pickle Tools: I frame the cells (189, 152) to (196, 156) filling 85 percent of the screen
     When I wait 268 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Squirrel" named "Noisette" is spawned at (195, 156)
+    And Nelim's Pickle Tools: an adult animal of kind "Squirrel" named "Noisette" is spawned at (195, 155)
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" stands at (193, 154) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (193, 153) facing South
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -167,34 +168,34 @@ Feature: the camp pictures of the Workshop page
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (199, 153)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (199, 153) is lit
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (202, 152)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (197, 156)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (203, 156) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (197, 153) fully grown
-    And Nelim's Pickle Tools: I place the decor "Stool" at (201, 156)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (204, 153)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (204, 153) is lit
-    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (203, 157)
-    And I spawn a "WoodLog" at (201, 155)
-    And a "ASNeolithicLargePot" is built at (198, 154)
-    And a "ASNeolithicLargePot" is built at (200, 154)
-    And a "ASNeolithicLargePot" is built at (202, 154)
-    And I spawn a "RawBerries" at (198, 154)
-    And I spawn a "Milk" at (200, 154)
-    And I spawn a "Pemmican" at (202, 154)
-    And Nelim's Pickle Tools: I frame the cells (197, 152) to (203, 157) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (193, 151)
+    And Nelim's Pickle Tools: the decor "Campfire" at (193, 151) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (197, 152)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (197, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (200, 151)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (195, 155)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (201, 155) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (195, 152) fully grown
+    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 155)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (202, 152)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (202, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (201, 156)
+    And I spawn a "WoodLog" at (199, 154)
+    And a "ASNeolithicLargePot" is built at (196, 153)
+    And a "ASNeolithicLargePot" is built at (198, 153)
+    And a "ASNeolithicLargePot" is built at (200, 153)
+    And I spawn a "RawBerries" at (196, 153)
+    And I spawn a "Milk" at (198, 153)
+    And I spawn a "Pemmican" at (200, 153)
+    And Nelim's Pickle Tools: I frame the cells (195, 151) to (201, 156) filling 85 percent of the screen
     When I wait 685 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (199, 155)
-    And Nelim's Pickle Tools: the animal "Biscuit" stands at (199, 155) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (197, 154)
+    And Nelim's Pickle Tools: the animal "Biscuit" stands at (197, 154) facing South
     And game speed is paused
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" stands at (199, 156) facing West
+    And Nelim's Pickle Tools: "Soren" stands at (197, 155) facing West
     And Nelim's Pickle Tools: the colonist "Soren" holds "Milk" in hand
     And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: the other colonists are out of frame
@@ -212,46 +213,46 @@ Feature: the camp pictures of the Workshop page
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 149)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 149) is lit
-    And Nelim's Pickle Tools: I place the decor "Stool" at (197, 151)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (193, 150) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (200, 147) fully grown
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (201, 147)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (201, 147) is lit
-    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (194, 151)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 151)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (193, 147)
-    And I spawn a "WoodLog" at (195, 147)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (194, 149)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (196, 149)
-    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 149)
-    And a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (200, 149)
-    And I spawn a "ChunkGranite" at (194, 149)
-    And I spawn a "ChunkGranite" at (196, 149)
-    And I spawn a "ChunkGranite" at (196, 149)
-    And I spawn a "ChunkGranite" at (198, 149)
-    And I spawn a "ChunkGranite" at (198, 149)
-    And I spawn a "ChunkGranite" at (198, 149)
-    And I spawn a "ChunkGranite" at (198, 149)
-    And I spawn a "ChunkGranite" at (198, 149)
-    And I spawn a "ChunkGranite" at (198, 149)
-    And I spawn a "ChunkMarble" at (200, 149)
-    And I spawn a "ChunkMarble" at (200, 149)
-    And I spawn a "ChunkMarble" at (200, 149)
-    And I spawn a "ChunkMarble" at (200, 149)
-    And I spawn a "ChunkMarble" at (200, 149)
-    And I spawn a "ChunkMarble" at (200, 149)
-    And Nelim's Pickle Tools: I frame the cells (193, 147) to (201, 151) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 153)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 153) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 150)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 150) is lit
+    And Nelim's Pickle Tools: I place the decor "Stool" at (197, 152)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (193, 151) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (200, 148) fully grown
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (201, 148)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (201, 148) is lit
+    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (194, 152)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 152)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (193, 148)
+    And I spawn a "WoodLog" at (195, 148)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (194, 150)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (196, 150)
+    And a "ASNeolithicChunkStorage" made from "ChunkGranite" is built at (198, 150)
+    And a "ASNeolithicChunkStorage" made from "ChunkMarble" is built at (200, 150)
+    And I spawn a "ChunkGranite" at (194, 150)
+    And I spawn a "ChunkGranite" at (196, 150)
+    And I spawn a "ChunkGranite" at (196, 150)
+    And I spawn a "ChunkGranite" at (198, 150)
+    And I spawn a "ChunkGranite" at (198, 150)
+    And I spawn a "ChunkGranite" at (198, 150)
+    And I spawn a "ChunkGranite" at (198, 150)
+    And I spawn a "ChunkGranite" at (198, 150)
+    And I spawn a "ChunkGranite" at (198, 150)
+    And I spawn a "ChunkMarble" at (200, 150)
+    And I spawn a "ChunkMarble" at (200, 150)
+    And I spawn a "ChunkMarble" at (200, 150)
+    And I spawn a "ChunkMarble" at (200, 150)
+    And I spawn a "ChunkMarble" at (200, 150)
+    And I spawn a "ChunkMarble" at (200, 150)
+    And Nelim's Pickle Tools: I frame the cells (193, 148) to (201, 152) filling 85 percent of the screen
     When I wait 893 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Pomme" is spawned at (197, 150)
+    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Pomme" is spawned at (197, 151)
     And game speed is paused
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" stands at (196, 151) facing South
+    And Nelim's Pickle Tools: "Soren" stands at (196, 152) facing South
     And Nelim's Pickle Tools: the colonist "Soren" holds "ChunkGranite" in hand
     And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: the other colonists are out of frame
@@ -367,42 +368,42 @@ Feature: the camp pictures of the Workshop page
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 150)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 150) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 149)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 149) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (198, 149)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (198, 149) is lit
-    And Nelim's Pickle Tools: I place the decor "Stool" at (192, 151)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (198, 151)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 151)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (189, 149) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 149) fully grown
-    And a "ASNeolithicTextileBundleFabric" is built at (190, 148)
-    And a "ASNeolithicWoodPile" is built at (192, 148)
-    And a "ASNeolithicHayPile" is built at (194, 148)
-    And a "ASNeolithicMealShelf" is built at (196, 148)
-    And a "ASNeolithicBasketWoody" is built at (198, 148)
-    And I spawn a "Cloth" at (190, 148)
-    And I spawn a "WoodLog" at (192, 148)
-    And I spawn a "Hay" at (194, 148)
-    And I spawn a "MealSimple" at (196, 148)
-    And I spawn a "Cloth" at (198, 148)
-    And I spawn a "Steel" at (198, 148)
-    And Nelim's Pickle Tools: I frame the cells (190, 147) to (198, 151) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 151)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 151) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 150)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 150) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (198, 150)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (198, 150) is lit
+    And Nelim's Pickle Tools: I place the decor "Stool" at (192, 152)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (198, 152)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 152)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (189, 150) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 150) fully grown
+    And a "ASNeolithicTextileBundleFabric" is built at (190, 149)
+    And a "ASNeolithicWoodPile" is built at (192, 149)
+    And a "ASNeolithicHayPile" is built at (194, 149)
+    And a "ASNeolithicMealShelf" is built at (196, 149)
+    And a "ASNeolithicBasketWoody" is built at (198, 149)
+    And I spawn a "Cloth" at (190, 149)
+    And I spawn a "WoodLog" at (192, 149)
+    And I spawn a "Hay" at (194, 149)
+    And I spawn a "MealSimple" at (196, 149)
+    And I spawn a "Cloth" at (198, 149)
+    And I spawn a "Steel" at (198, 149)
+    And Nelim's Pickle Tools: I frame the cells (190, 148) to (198, 152) filling 85 percent of the screen
     When I wait 1727 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (196, 150)
-    And Nelim's Pickle Tools: the animal "Biscuit" stands at (196, 150) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Biscuit" is spawned at (196, 151)
+    And Nelim's Pickle Tools: the animal "Biscuit" stands at (196, 151) facing South
     And I wait 60 ticks
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" stands at (193, 150) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (193, 151) facing South
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" stands at (197, 150) facing South
+    And Nelim's Pickle Tools: "Soren" stands at (197, 151) facing South
     And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -410,3 +411,19 @@ Feature: the camp pictures of the Workshop page
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: the decor is removed
 
+  # 9. The research window, Storage tab, over the bamboo backdrop of the Sanctuary.
+  Scenario: the research window on the storage tab, over the bamboo backdrop
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Sanctuary: I am at the sanctuary "window-backdrop-for-height"
+    And I set the hour to 12
+    And I set the weather to "Clear"
+    And game speed is paused
+    And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
+    When Nelim's Pickle Tools: I open the research tab keyed "ASNeolithicPickle_StorageTab"
+    Then Nelim's Pickle Tools: the research window is on the tab "ASFAdaptiveStorage"
+    And Nelim's Pickle Tools: the research window lists the project "ASNeolithicNeolithicStorage" costing 400
+    And Nelim's Pickle Tools: the research window lists the project "ASNeolithicNeolithicItemDisplay" costing 400
+    And I take a screenshot "camp 9 - the research window on the storage tab"
+    When I close all dialogs
+    And I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
