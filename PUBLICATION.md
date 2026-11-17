@@ -194,7 +194,9 @@ Draft: it goes out only after a green Pickle run on RimWorld 1.7 (STATUS.md, `te
 
 [list]
 [*]Thai, German and Chinese (Simplified and Traditional) translations added, from SLOST, Daedalus and Holarula.
-[*]The mod now declares RimWorld 1.7 next to 1.6. No defs or textures were touched. Russian wording corrected: the two research names, the meal shelf, the plinth descriptions, the stone pile description and both basket descriptions.
+[*]The mod now declares RimWorld 1.7 next to 1.6. No textures were touched. Russian wording corrected: the two research names, the meal shelf, the plinth descriptions, the stone stack description and both basket descriptions.
+[*]Better Architect Menu support: when that mod is loaded, the storage buildings sort into its general, resources and food storage categories. Nothing changes without it.
+[*][url=https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/CHANGELOG.md]Full changelog[/url]
 [/list]
 ```
 
