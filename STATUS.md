@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: shootGallery[1.2.0]
+workflow_stage: writeReleaseDocs[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -34,7 +34,7 @@ echo_review_sha: e6ffabcf077ff792c1b91bd2266f94ccae18c939
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 00e908d974d71662e1bd0a2cbf4345628902f4aa3f9ffd77efea1128d0663271
 remaining:
-  - replay-audit 2026-11-17 (ledger `.replays/AdaptiveStorageNeolithicRenew-20261117.tsv`, sections 1 to 9, Check-Replay OK, 71 done, 11 n/a, 1 open): stage writeReleaseDocs to shootGallery by owner order ("rétrograde"). OPEN 9.e (stage-defining): the `## Gallery (AUDIT.md 9.e), 2026-10-10` table of this file names the old files `1-the-whole-set` to `9-the-tribes-treasures`, current files are `1-camp-noon` to `9-research-window` (nine images validated 2026-11-17, subtitles burned 1 to 8, 9 none by design). DONE 2026-11-17 (same day): table rewritten to the nine current files, sizes and order read from `Art/Gallery/` (3,752,807 bytes, `0-preview.png` `cmp` equal to `Mod/About/Preview.png`); 9.e closed, nothing else open in sections 1 to 10, so the replay target is writeReleaseDocs[1.2.0] again, to restore on the owner's word. `PUBLICATION.md` section 2 byte sizes are stale (recompression), refresh at 11.e. Later, not judged: 11.h `thanks_drafted_line`, 11.j reread, 12.c lint, 12.c bis compress-docs, STATUS.md journal to `Docs/runs/`.
+  - replay-audit 2026-11-17 (ledger `.replays/AdaptiveStorageNeolithicRenew-20261117.tsv`, sections 1 to 9, Check-Replay OK, 71 done, 11 n/a, 1 open): stage writeReleaseDocs to shootGallery by owner order ("rétrograde"). OPEN 9.e (stage-defining): the `## Gallery (AUDIT.md 9.e), 2026-10-10` table of this file names the old files `1-the-whole-set` to `9-the-tribes-treasures`, current files are `1-camp-noon` to `9-research-window` (nine images validated 2026-11-17, subtitles burned 1 to 8, 9 none by design). DONE 2026-11-17 (same day): table rewritten to the nine current files, sizes and order read from `Art/Gallery/` (3,752,807 bytes, `0-preview.png` `cmp` equal to `Mod/About/Preview.png`); 9.e closed, nothing else open in sections 1 to 10, so the replay target is writeReleaseDocs[1.2.0] again, restored to writeReleaseDocs[1.2.0] on the owner's word, 2026-11-17. `PUBLICATION.md` section 2 byte sizes are stale (recompression), refresh at 11.e. Later, not judged: 11.h `thanks_drafted_line`, 11.j reread, 12.c lint, 12.c bis compress-docs, STATUS.md journal to `Docs/runs/`.
   - done 2026-11-17, 10.g: `Check-Status` 0 error (only the STATUS.md size WARN, journal to move to `Docs/runs/` at the closing pass), `Mod/` unchanged since `code_review_sha` apart from `Preview.png`. Stage mountPreview to writeReleaseDocs[1.2.0]. Next at writeReleaseDocs: `thanks_drafted_line` (AUDIT 11.h, draft before asking her the 11.j reread), update note and CHANGELOG `[url]`, compress-docs, prepare-release, move the STATUS.md journal.
   - done 2026-11-17, 10.f: owner said "go"; session uploaded `Mod/About/Preview.png` through Chrome (repo settings, Social preview), reloaded the settings page, `og:image` re-read (`repository-images.githubusercontent.com/1365537105/eabbfe7d-...`), downloaded: 741,056 bytes, sha256 equal to the file, recorded in `social_preview_sha256`. Owner validated the Preview ("je valide :)"). Preview step closed (10.a to 10.f). Next: 10.e cleanup read, `Check-Status`, 10.g to `writeReleaseDocs[1.2.0]`.
   - done 2026-11-17, `sync-nsb-npt` rerun at `mountPreview` (git log only, no profile opened): NSB docs commits since 11:33 (Iori, Celeste, BiB gene renames, Quo, Quaren, Miel, six WDI bodies, `Pawn.gender`, VTW bodytypes) and NPT vanilla face catalogue touch nothing the camp gallery uses (Nelim and Soren as the roster says, no place, animal or step of the suite moved, no property change, no animal of the mod missing from the shots). No scenario edited, no ticket owed. Reads of the NSB section stay dated 2026-11-17.
@@ -93,7 +93,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: fbc6d5a5b3211d46ac440f7c8cd2208c8d7c68f0
+protocols_read_sha: aeecde1639892b6bfdc9ebdc6213f10f92560b83
 ---
 # Adaptive Storage Neolithic Renew: status
 
