@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: mountPreview[1.2.0]
+workflow_stage: writeReleaseDocs[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -34,6 +34,7 @@ echo_review_sha: e6ffabcf077ff792c1b91bd2266f94ccae18c939
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 00e908d974d71662e1bd0a2cbf4345628902f4aa3f9ffd77efea1128d0663271
 remaining:
+  - done 2026-11-17, 10.g: `Check-Status` 0 error (only the STATUS.md size WARN, journal to move to `Docs/runs/` at the closing pass), `Mod/` unchanged since `code_review_sha` apart from `Preview.png`. Stage mountPreview to writeReleaseDocs[1.2.0]. Next at writeReleaseDocs: `thanks_drafted_line` (AUDIT 11.h, draft before asking her the 11.j reread), update note and CHANGELOG `[url]`, compress-docs, prepare-release, move the STATUS.md journal.
   - done 2026-11-17, 10.f: owner said "go"; session uploaded `Mod/About/Preview.png` through Chrome (repo settings, Social preview), reloaded the settings page, `og:image` re-read (`repository-images.githubusercontent.com/1365537105/eabbfe7d-...`), downloaded: 741,056 bytes, sha256 equal to the file, recorded in `social_preview_sha256`. Owner validated the Preview ("je valide :)"). Preview step closed (10.a to 10.f). Next: 10.e cleanup read, `Check-Status`, 10.g to `writeReleaseDocs[1.2.0]`.
   - done 2026-11-17, `sync-nsb-npt` rerun at `mountPreview` (git log only, no profile opened): NSB docs commits since 11:33 (Iori, Celeste, BiB gene renames, Quo, Quaren, Miel, six WDI bodies, `Pawn.gender`, VTW bodytypes) and NPT vanilla face catalogue touch nothing the camp gallery uses (Nelim and Soren as the roster says, no place, animal or step of the suite moved, no property change, no animal of the mod missing from the shots). No scenario edited, no ticket owed. Reads of the NSB section stay dated 2026-11-17.
   - done 2026-11-17, owner order "monte la modIcon en haut à gauche": `icon.corner` bottom-right to top-left in `Art/Preview.config.json` (the badge overhangs the frame by 12.5 percent by design, as in the other corners). Opened at 896 px: icon over bare floor, no subject hidden, version badge top-right clear, text zone unchanged (contrast figures of the mirror entry stand). `Preview.png` 723.7 KB. Commit `e6ffabcf077ff792c1b91bd2266f94ccae18c939`. `social_preview_sha256` stale, upload owed (10.f), her word needed.
