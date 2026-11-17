@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: playTests[1.2.0]
+workflow_stage: shootGallery[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -34,6 +34,7 @@ echo_review_sha: c992f79389746cdab08904785ee2faac55fedb01
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 978673bbc2940a9374592af53f0854ab0e28bb770c258870a215b91a4e6167e5
 remaining:
+  - done 2026-11-17, 8.n: owner said "oui" to leave `playTests[1.2.0]` for `shootGallery[1.2.0]` (8.d, 8.f, 8.m, 8.i closed, update note and NSB sync done, Evidence under 2 MB; protocols read 882a30c0). Next at `shootGallery`: Virginie's verdict on the 9 subtitled images sent 2026-11-16 (accept or refuse per image); on acceptance reindex (no gap) and go to `mountPreview`. Still owed there: shot 9 window not scored.
   - done 2026-11-17, Evidence trimmed from 5.7 MB to 1.9 MB (`Prune-Evidence` now 0 folder over 2 MB). Deleted, all superseded by the greens of `acf2b65`, `33ca61f` or the gallery being accepted: `stones-en-093fc9f`, `ru-093fc9f`, `p16-review-en-1f9c47e`, every `gal-camp-*`, `gal-window-l-4c896eb`; `p17-en-093fc9f` kept as the 1.7 proof without its stdout and screenshots (summary, junit, peak-ram). Older entries of this file that name those folders now point at deleted proofs, their results stay written in the entries. Kept: `bam-en-33ca61f`, `stones-review-en-acf2b65`, `ru-review-acf2b65`, `p17-en-093fc9f`, `p16-stones-fr-0ccdfbc`, `regr-1.1.3-fr-stones`.
   - done 2026-11-17, 8.m on the text diff `5484373..15c26ff` (4 files of `Mod/`, labels, About wording, one closing tag; XML valid, no code): no defect, `code_review_sha` moved to `15c26ff`. 1.2.0 update note (PUBLICATION.md section 6) and CHANGELOG `[Unreleased]` now carry the Better Architect Menu line; the note ends with a `[url]` to CHANGELOG.md; "No defs or textures were touched" became "No textures were touched" (the BAM patch is a patch, not a def); Russian "stone pile" became "stone stack". Nothing left open before `writeReleaseDocs` except `sync-nsb-npt` (Check-Status WARN nsb-sync), the Evidence folder over 2 MB, and the social preview upload.
   - done 2026-11-17, owner said "yes, batch them": the four low findings of the 8.m review applied (German WoodPile "Holzstapel", Thai WoodPile "กองไม้", About.xml and PUBLICATION.md "stone stack" and no "me"/"we", Chinese closing tag on its own line). XML valid, Check-Translations PASS, Check-ModBasics PASS (its WARN about the GitHub source link at the end of the description is not from this edit). `Mod/` changed: `code_review_sha` reopened (text-only diff, review at HEAD before `writeReleaseDocs`), no run owed (labels and About text, no patch or logic; the language runs of `acf2b65` stay the proof unless the owner asks for a refile). Still open: 1.2.0 update note (section 6) lacks the Better Architect Menu line and the CHANGELOG `[url]`.
@@ -106,7 +107,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: 6b415bd04cb9a46f24231cbfba2421978dd16fd2
+protocols_read_sha: 882a30c086dbc69328319f08fef5c7779b1f298c
 ---
 # Adaptive Storage Neolithic Renew: status
 
