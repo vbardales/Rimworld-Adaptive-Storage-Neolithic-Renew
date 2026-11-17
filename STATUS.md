@@ -34,7 +34,7 @@ echo_review_sha: e6ffabcf077ff792c1b91bd2266f94ccae18c939
 publication_changelog_review_sha: 110a0aeac5281c0ef89f4627d99d7011692d9290
 social_preview_sha256: 00e908d974d71662e1bd0a2cbf4345628902f4aa3f9ffd77efea1128d0663271
 remaining:
-  - replay-audit 2026-11-17 (ledger `.replays/AdaptiveStorageNeolithicRenew-20261117.tsv`, sections 1 to 9, Check-Replay OK, 71 done, 11 n/a, 1 open): stage writeReleaseDocs to shootGallery by owner order ("rétrograde"). OPEN 9.e (stage-defining): the `## Gallery (AUDIT.md 9.e), 2026-10-10` table of this file names the old files `1-the-whole-set` to `9-the-tribes-treasures`, current files are `1-camp-noon` to `9-research-window` (nine images validated 2026-11-17, subtitles burned 1 to 8, 9 none by design). Rewrite the table, then go back to mountPreview and writeReleaseDocs[1.2.0]. Later, not judged: 11.h `thanks_drafted_line`, 11.j reread, 12.c lint, 12.c bis compress-docs, STATUS.md journal to `Docs/runs/`.
+  - replay-audit 2026-11-17 (ledger `.replays/AdaptiveStorageNeolithicRenew-20261117.tsv`, sections 1 to 9, Check-Replay OK, 71 done, 11 n/a, 1 open): stage writeReleaseDocs to shootGallery by owner order ("rétrograde"). OPEN 9.e (stage-defining): the `## Gallery (AUDIT.md 9.e), 2026-10-10` table of this file names the old files `1-the-whole-set` to `9-the-tribes-treasures`, current files are `1-camp-noon` to `9-research-window` (nine images validated 2026-11-17, subtitles burned 1 to 8, 9 none by design). DONE 2026-11-17 (same day): table rewritten to the nine current files, sizes and order read from `Art/Gallery/` (3,752,807 bytes, `0-preview.png` `cmp` equal to `Mod/About/Preview.png`); 9.e closed, nothing else open in sections 1 to 10, so the replay target is writeReleaseDocs[1.2.0] again, to restore on the owner's word. `PUBLICATION.md` section 2 byte sizes are stale (recompression), refresh at 11.e. Later, not judged: 11.h `thanks_drafted_line`, 11.j reread, 12.c lint, 12.c bis compress-docs, STATUS.md journal to `Docs/runs/`.
   - done 2026-11-17, 10.g: `Check-Status` 0 error (only the STATUS.md size WARN, journal to move to `Docs/runs/` at the closing pass), `Mod/` unchanged since `code_review_sha` apart from `Preview.png`. Stage mountPreview to writeReleaseDocs[1.2.0]. Next at writeReleaseDocs: `thanks_drafted_line` (AUDIT 11.h, draft before asking her the 11.j reread), update note and CHANGELOG `[url]`, compress-docs, prepare-release, move the STATUS.md journal.
   - done 2026-11-17, 10.f: owner said "go"; session uploaded `Mod/About/Preview.png` through Chrome (repo settings, Social preview), reloaded the settings page, `og:image` re-read (`repository-images.githubusercontent.com/1365537105/eabbfe7d-...`), downloaded: 741,056 bytes, sha256 equal to the file, recorded in `social_preview_sha256`. Owner validated the Preview ("je valide :)"). Preview step closed (10.a to 10.f). Next: 10.e cleanup read, `Check-Status`, 10.g to `writeReleaseDocs[1.2.0]`.
   - done 2026-11-17, `sync-nsb-npt` rerun at `mountPreview` (git log only, no profile opened): NSB docs commits since 11:33 (Iori, Celeste, BiB gene renames, Quo, Quaren, Miel, six WDI bodies, `Pawn.gender`, VTW bodytypes) and NPT vanilla face catalogue touch nothing the camp gallery uses (Nelim and Soren as the roster says, no place, animal or step of the suite moved, no property change, no animal of the mod missing from the shots). No scenario edited, no ticket owed. Reads of the NSB section stay dated 2026-11-17.
@@ -166,24 +166,24 @@ Reads on `exitReason` and scenario count done in 2026-10-08 and 2026-10-09 journ
 - **Clean (10.e):** deleted `Art/Preview-original.png` (first generated version, visual trace) and `Art/shelved-textures/` (nine upstream textures mod never loaded); both recoverable in git (`eb6abc0`). `Art/` now holds minimal set: `ModIcon-source.png`, `Preview-source.png`, `echo-preview.png`, `Preview.config.json`, `ModIcon.ico`, `Preview.ico`, `Gallery/`, `.render/` (ignored). Mod root: only ignored extras.
 - **Social preview (10.f): done 2026-10-10.** Uploaded by session through Chrome on owner's word ("fais le"); `og:image` re-read and downloaded: 659,724 bytes, sha256 equal to `Mod/About/Preview.png`, recorded in `social_preview_sha256`.
 
-## Gallery (AUDIT.md 9.e), 2026-10-10
+## Gallery (AUDIT.md 9.e), 2026-11-17
 
-Folder 2.31 MB (2,312,323 bytes, ten files; subtitled `.jpg` since 2026-10-16, clean `.png` originals in `Art/Gallery-clean/`) of 8, largest image 0.66 MB of 2. Every image opened: `1-` to `6-` in 2026-10-06 and 2026-10-08 reads, `7-` to `9-` re-opened 2026-10-10 (known flaw, owner accepted: thin strip of flowers along left edge, border of place `bare-clearing`).
+Series "noon at the camp", rewritten 2026-11-09 to 2026-11-17 (the storehouse and camp series of 2026-10 were removed). Folder 3.75 MB (3,752,807 bytes, ten files, `.jpg` subtitled 1 to 8, clean originals in `Art/Gallery-clean/`), largest image 0.74 MB (`0-preview.png`) of 2, total under 8 MB. All nine images opened full size and at 268 px (contact sheet) in the 2026-11-17 reads and validated by Virginie ("je valide", 2026-11-17). Place `bare-clearing` of Sanctuary Backlot, save `Nelims-tribe`, played by `12-workshop-camp.feature`; Nelim and Soren, one picture every five game minutes from 12:00. Known: Nelim's face is the plain NSB base, no red cheeks (owner may ask them back); grey post above the hay in 3 is the mod sprite `HayPileStage1.png`.
 
 | # | File | Story and place | Why here |
 | --- | --- | --- | --- |
-| 0 | `0-preview.png` | header image | byte copy of `Mod/About/Preview.png` |
-| 1 | `1-the-whole-set.jpg` | noon at storehouse, `calm-zone-close` | most demonstrative: whole set with contents; Steam shows it large right after header |
-| 2 | `2-a-basket-fills-up.jpg` | same, 12:05, squirrel | mod's central promise: container shows what it holds |
-| 3 | `3-chunk-stacks.jpg` | same, 12:10, hare | stone-as-stuff stacks at several levels, two materials |
-| 4 | `4-large-pots.jpg` | same, 12:15, dog | pots with different foods |
-| 5 | `5-plinths.jpg` | same, 12:20, peacock | plinths showing items |
-| 6 | `6-a-stone-from-another-mod.jpg` | same, 12:25, cat | integration: third-party stone beside granite |
-| 7 | `7-three-baskets.jpg` | camp, `bare-clearing` | tribe at same storage: baskets empty, one item, full |
-| 8 | `8-fuel-and-stone.jpg` | camp | wood and hay piles, granite and marble stacks |
-| 9 | `9-the-tribes-treasures.jpg` | camp | plinths with chief: display side of mod |
+| 0 | `0-preview.png` | header image | byte copy of `Mod/About/Preview.png` (741,056 bytes, `cmp` equal 2026-11-17) |
+| 1 | `1-camp-noon.jpg` | camp at noon, `bare-clearing` | most demonstrative: five storage types waiting, loose chunks and logs; Steam shows it large right after the header |
+| 2 | `2-baskets.jpg` | same camp | mod's central promise: three baskets, empty, one stone, full: a container shows what it holds |
+| 3 | `3-piles.jpg` | same camp | wood pile and hay pile, Nelim empty-handed, hen beside loose hay |
+| 4 | `4-pots.jpg` | same camp | large pots showing berries, milk and grain |
+| 5 | `5-stacks.jpg` | same camp | stone as stuff: granite stacks at 1, 2 and 6 chunks, and a marble stack |
+| 6 | `6-plinths.jpg` | same camp | wood and vacstone plinths showing gold and an item: display side of the mod |
+| 7 | `7-another-mod.jpg` | same camp | integration: a stone from another mod (Extra Stone) with its own pot and stack beside granite |
+| 8 | `8-tidied.jpg` | same camp, tidied | payoff: same camp, everything in its place, storage filled |
+| 9 | `9-research-window.jpg` | interface crop | research window, Storage tab, both projects; no subtitle (interface window) |
 
-Index and table aligned in `PUBLICATION.md` section 2.
+Index and table aligned in `PUBLICATION.md` section 2 (file names and order; its byte sizes predate the 2026-11-17 recompression and are refreshed at `writeReleaseDocs`, 11.e).
 
 ## Code review, 2026-10-10 (AUDIT.md 8.m)
 
