@@ -6,7 +6,7 @@
 # Shot plan (frames are cell rectangles filling 85 percent of the screen; place bare-clearing; hour 12 plus the wait):
 #   1. camp-1-noon, 12:00, medium-tight (reworked 2026-11-13: storage was about 12 px at 268), cells (190, 148) to (198, 152), wait 60. Untidy camp; storage row at z 148: "ASNeolithicTextileBundleFabric" (190, 149), "ASNeolithicWoodPile" (192, 149), "ASNeolithicHayPile" (194, 149), "ASNeolithicMealShelf" (196, 149), "ASNeolithicBasketWoody" (198, 149); "Campfire" (195, 151) lit; Nelim at (193, 151) and Soren at (197, 151), both facing South (the held item no longer hides the face), "WoodLog" and "ChunkGranite" in hand; labrador "Biscuit" at (195, 152) facing South; loose "ChunkGranite" (191, 151) and (198, 151), "WoodLog" (190, 151), "RawBerries" (191, 152), "Hay" (193, 148). Says: the camp is untidy at noon, the storage waits to be filled.
 #   2. camp-2-baskets, 12:05, tight, cells (189, 152) to (196, 156), wait 268. Three "ASNeolithicBasketWoody" at (190, 154), (192, 154), (194, 154): empty, one "Cloth", full ("Cloth" and "Steel"); Nelim at (193, 153) behind the middle basket facing South (reworked 2026-11-13: facing East the chunk hid the face), nothing in hand (reworked again 2026-11-13: the chunk covered the mouth), smiling; squirrel "Noisette" at (195, 155). Torch (191, 151), daylily (188, 153), stool (196, 155). Says: what goes in, shows.
-#   3. camp-3-piles, 12:10, medium, cells (189, 147) to (199, 152), wait 477. "ASNeolithicWoodPile" (192, 149) with "WoodLog" and "ASNeolithicHayPile" (194, 149) with "Hay"; Nelim at (196, 150) facing West with "Hay" in hand; hen "Plume" at (193, 151); tanning rack (198, 150) in the foreground, bale (196, 152), torch (191, 151). Says: fuel stacked as it comes.
+#   3. camp-3-piles, 12:10, medium, cells (189, 147) to (199, 152), wait 477. "ASNeolithicWoodPile" (192, 149) with "WoodLog" and "ASNeolithicHayPile" (194, 149) with "Hay"; Nelim at (196, 150) facing South with "Hay" in hand (reworked 2026-11-17: facing West the hay hid her mouth); hen "Plume" at (193, 151); tanning rack (198, 148) in the foreground (moved south 2026-11-17, was mid-frame), bale (196, 152), torch (191, 151). Says: fuel stacked as it comes.
 #   4. camp-4-pots, 12:15, tight, cells (195, 151) to (201, 156), wait 685. "ASNeolithicLargePot" at (196, 153), (198, 153), (200, 153) holding "RawBerries", "Milk", "Pemmican"; Soren at (197, 155) facing North with "Milk" in hand; labrador "Biscuit" at (197, 154) facing the camera; torch (197, 152), bale (200, 151), barrel (195, 155). Says: food for noon, pots show what they hold.
 #   5. camp-5-stacks, 12:20, tight, cells (193, 148) to (201, 152), wait 893. "ASNeolithicChunkStorage" made from "ChunkGranite" at (194, 150) with 1 chunk, (196, 150) with 2, (198, 150) with 6, and made from "ChunkMarble" at (200, 150) with 6; Soren at (196, 152) facing East with "ChunkGranite" in hand; hare "Pomme" at (197, 151); torch (191, 150), stool (197, 152). Says: stone piles up, in two materials.
 #   6. camp-6-plinths, 12:25, tight, cells (193, 148) to (199, 152), wait 1102. "ASNeolithicPlinthWoody" (194, 150) with "Gold", "ASNeolithicPlinthStone" made from "ChunkGranite" (196, 150) empty, made from "ChunkVacstone" (198, 150) with "Jade"; Nelim at (196, 152) facing South with "Silver" in hand, about to set it on the empty plinth (one tile further north than the first run, so she no longer hides it); peacock "Eclat" at (195, 149) in the foreground. Torch (192, 152) and (196, 148), stool (199, 152), barrels and bales around. Says: the tribe's treasures.
@@ -133,13 +133,13 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (198, 150)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_TanningRack" at (198, 148)
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (196, 152)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 151)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 151) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (189, 152) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (197, 149) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (189, 149) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (190, 148) fully grown
     And Nelim's Pickle Tools: I place the decor "Stool" at (195, 151)
     And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (190, 151)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (197, 151)
@@ -154,7 +154,7 @@ Feature: the camp pictures of the Workshop page
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
-    And Nelim's Pickle Tools: "Nelim" stands at (196, 150) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (196, 150) facing South
     And Nelim's Pickle Tools: the colonist "Nelim" holds "Hay" in hand
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
