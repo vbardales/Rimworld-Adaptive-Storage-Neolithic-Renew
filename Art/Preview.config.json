@@ -13,7 +13,7 @@
   "echo": { "file": "echo-source.png" },
   "icon": {
     "file": "ModIcon-source.png",
-    "corner": "bottom-right"
+    "corner": "top-left"
   },
   "palette": {
     "veil": "#643D1E",
