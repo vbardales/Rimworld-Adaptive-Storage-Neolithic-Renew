@@ -1,6 +1,7 @@
 {
   "panel": {
     "panelAnchor": "bottom-right",
+    "panelBare": true,
     "title": "Adaptive Storage Neolithic Renew",
     "titleParts": [
       { "text": "Adaptive Storage Neolithic" },
@@ -15,7 +16,7 @@
     "corner": "bottom-left"
   },
   "palette": {
-    "veil": "#514A40",
+    "veil": "#643D1E",
     "inkPrimary": "#F2ECE1",
     "inkSecondary": "#EBC583",
     "accent": "#679DEA",
