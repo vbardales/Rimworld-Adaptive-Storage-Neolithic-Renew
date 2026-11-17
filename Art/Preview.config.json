@@ -1,6 +1,6 @@
 {
   "panel": {
-    "panelAnchor": "bottom-right",
+    "panelAnchor": "bottom-left",
     "panelBare": true,
     "title": "Adaptive Storage Neolithic Renew",
     "titleParts": [
@@ -13,7 +13,7 @@
   "echo": { "file": "echo-source.png" },
   "icon": {
     "file": "ModIcon-source.png",
-    "corner": "bottom-left"
+    "corner": "bottom-right"
   },
   "palette": {
     "veil": "#643D1E",
