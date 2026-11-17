@@ -155,7 +155,6 @@ Feature: the camp pictures of the Workshop page
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_TribalA" dyed rgb (184, 116, 42)
     And Nelim's Pickle Tools: "Nelim" stands at (196, 150) facing South
-    And Nelim's Pickle Tools: the colonist "Nelim" holds "Hay" in hand
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
