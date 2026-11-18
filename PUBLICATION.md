@@ -285,7 +285,7 @@ The new mod declares the old one as incompatible. Thanks!
 ## 5. Other Steam fields
 
 - Adult-content questionnaire: **No**. The mod contains storage furniture and cartoon item graphics; no mature content is depicted.
-- Tags: no manual action required for the standard tags; RimWorld resends `Mod`, `1.6` and `1.7` on update (the 1.7 tag needs `update_tags=true`, AUDIT.md "Passe 1.7").
+- Tags: no manual action required for the standard tags; RimWorld resends `Mod`, `1.6` and `1.7` on update (CI replaces the whole tag set with `Mod` plus one tag per `supportedVersions` entry, no option, owner 2026-11-17; the dry-run prints it).
 - Incompatible item: Adaptive Storage Neolithic Module, Workshop id `3033901895`.
 - Visibility: public. Read from the page and API on 2026-09-24 and again on 2026-09-28 (`visibility 0`).
 
