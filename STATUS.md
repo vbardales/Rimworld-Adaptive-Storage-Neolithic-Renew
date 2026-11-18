@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: runNoRegression[1.2.0]
+workflow_stage: cleanUp[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
