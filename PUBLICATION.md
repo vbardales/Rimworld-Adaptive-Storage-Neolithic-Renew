@@ -186,6 +186,58 @@ Danke Daedalus! Your German pack for the Adaptive Storage Neolithic Module now s
 Your Chinese version of Adaptive Storage Neolithic Renew, Simplified and Traditional, is now part of the mod itself with the 1.2.0 update, and credited to you. Thank you WhyBlyat for taking the trouble to translate it lol [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]
 ```
 
+### Thank-you comments for the camp gallery mods (drafted 2026-11-18)
+
+The camp series of 2026-11 was staged with every mod of `Tests/Pickle/wsl-deps.camp.map` (copied from the Sanctuary map). The 15 comments of 2026-10-11 cover the older series; the mods below came with the new one and none of the posted comments names this mod. All eight pages were thanked already by other mod sessions, so these are second, short messages on a page: the owner decides which ones go out. Rows: `WORKSHOP_COMMENTS.md`, status `drafted`, "ASN gallery". Post after the item shows 1.2.0, a few a day. Three more pages (Fashion RIMsta, Fairycore Apparel, Cuter Kids for Facial Animation) and the two Vanilla Expanded ones (Hair, Apparel) have no row at all and wait for the authors' names from PiI.
+
+**Roo's HD Hairstyles (continued) (Qux, after Rooboid)** (3559870636)
+
+```text
+Nelim's long hair in the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] is one of yours. Thank you Qux for keeping the HD hairstyles going, and Rooboid for the originals :)
+```
+
+**Hat Hair Control (lordfelix)** (3760821540)
+
+```text
+Part of the wardrobe setup I load to stage the tribe in the gallery of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thank you lordfelix :)
+```
+
+**AB's Visible Pants (aedbia)** (2986402536)
+
+```text
+The trousers of the tribe in the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] show up thanks to your mod. Thank you aedbia :)
+```
+
+**[VK]FacialAnimation add closed eyes (Vi/Kirisaki)** (3694711465)
+
+```text
+Part of the Facial Animation stack I load to give the tribe in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] a face. Thank you Vi and Kirisaki for the closed eyes :)
+```
+
+**Visual beauty for Facial Animation (SleepyFrieren)** (3685072616)
+
+```text
+The faces of my gallery camp in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] look nicer with this in the stack. Thank you SleepyFrieren :)
+```
+
+**NL Facial Animation - Init Fix (Moshii)** (3609895011)
+
+```text
+Quiet little fix, and the Facial Animation stack behind the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] needs it. Thank you Moshii xD
+```
+
+**NL Facial Animation - Load Fix (CCJ)** (3721489042)
+
+```text
+Another small piece of the Facial Animation stack I load for the tribe in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thank you CCJ :)
+```
+
+**Let's Have a Cat! Continued (akairo original, Bernau31 maintainer)** (3682940618)
+
+```text
+The camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] were staged with this loaded, cats included. Thank you akairo for the original and Bernau31 for carrying it on :)
+```
+
 ### Use This Instead comment (2026-10-11)
 
 Posted by the owner on the [Use This Instead](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787) page (Mlie), after the 1.1.3 publication. Row in `USE_THIS_INSTEAD.md`.
