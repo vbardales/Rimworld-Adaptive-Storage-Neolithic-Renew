@@ -19,8 +19,7 @@ a licence, in its files or on its Workshop page, so each is treated as `silent` 
 
 - Thai: **SLOST**, Workshop 3341668276 (a translation of the original module).
 - German: **Daedalus**, Workshop 3115381045 (a translation of the original module).
-- Simplified and Traditional Chinese: **Holarula**, Workshop 3821420014 (a translation of this mod, listed
-  under the Steam account WhyBlyat).
+- Simplified and Traditional Chinese: **WhyBlyat**, Workshop 3821420014 (a translation of this mod).
 
 Only the texts of this mod are taken from them. The Thai and German translations lack two texts of the current
 upstream content (the stone stack and the stone plinth description); those were written with Claude (Anthropic).

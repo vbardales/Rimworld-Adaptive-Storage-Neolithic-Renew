@@ -40,7 +40,7 @@ French: upstream's translation (Elzetia), revised and validated by the maintaine
 
 Russian: upstream's translation (MrBlack-JB); what was corrected here (the two research names, the meal shelf, both plinth descriptions, the stone stack description and both basket descriptions) was done with Claude (Anthropic) and reviewed by ChatGPT (OpenAI), and has not been checked by a Russian speaker.
 
-Thai (SLOST), German (Daedalus) and Chinese (Holarula): translations found on the Workshop, none declaring a licence, integrated with credit to their authors. The stone stack and the stone plinth description were missing from the Thai and German ones and were written with Claude (Anthropic). None of these three languages has been checked by a speaker.
+Thai (SLOST), German (Daedalus) and Chinese (WhyBlyat): translations found on the Workshop, none declaring a licence, integrated with credit to their authors. The stone stack and the stone plinth description were missing from the Thai and German ones and were written with Claude (Anthropic). None of these three languages has been checked by a speaker.
 
 ## COMPATIBILITY
 
@@ -72,7 +72,7 @@ Soul, Phaneron and bradson, for the mod, the [Adaptive Storage Framework](https:
 
 Elzetia and MrBlack-JB, for the French and Russian translations included upstream.
 
-SLOST, Daedalus and Holarula, for the Thai, German and Chinese translations.
+SLOST, Daedalus and WhyBlyat, for the Thai, German and Chinese translations.
 
 ferny, for [Better Architect Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=3563882422), whose storage categories the buildings use when it is loaded. It is optional, not a dependency.
 
@@ -180,7 +180,7 @@ Thai players of the storage mod get your words now: your translation of the Adap
 Danke Daedalus! Your German pack for the Adaptive Storage Neolithic Module now ships inside the 1.2.0 update of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url], so the baskets and pots speak German there too. Credited to you, of course xD
 ```
 
-**Adaptive Storage Neolithic Renew 汉化 (WhyBlyat, credited as Holarula in our files)** (3821420014)
+**Adaptive Storage Neolithic Renew 汉化 (WhyBlyat)** (3821420014)
 
 ```text
 Your Chinese version of Adaptive Storage Neolithic Renew, Simplified and Traditional, is now part of the mod itself with the 1.2.0 update, and credited to you. Thank you WhyBlyat for taking the trouble to translate it lol [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]
@@ -271,7 +271,7 @@ The Pickle run on RimWorld 1.7 is green (STATUS.md, `tested_1_7: yes`, 2026-11-1
 [h3]1.2.0 - RimWorld 1.7 support[/h3]
 
 [list]
-[*]Thai, German and Chinese (Simplified and Traditional) translations added, from SLOST, Daedalus and Holarula.
+[*]Thai, German and Chinese (Simplified and Traditional) translations added, from SLOST, Daedalus and WhyBlyat.
 [*]The mod now declares RimWorld 1.7 next to 1.6. No textures were touched. Russian wording corrected: the two research names, the meal shelf, the plinth descriptions, the stone stack description and both basket descriptions.
 [*]Better Architect Menu support: when that mod is loaded, the storage buildings sort into its general, resources and food storage categories. Nothing changes without it.
 [*][url=https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/CHANGELOG.md]Full changelog[/url]

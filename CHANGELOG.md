@@ -6,7 +6,7 @@ All notable changes to this mod are documented here.
 
 ### Added
 
-- Thai, German and Simplified and Traditional Chinese translations, integrated from the Workshop translations of SLOST (3341668276), Daedalus (3115381045) and Holarula (3821420014), none declaring a licence (credited in `ATTRIBUTION.md`). The stone stack and the stone plinth description were missing from the Thai and German ones and were written with Claude; none of the three languages was checked by a speaker.
+- Thai, German and Simplified and Traditional Chinese translations, integrated from the Workshop translations of SLOST (3341668276), Daedalus (3115381045) and WhyBlyat (3821420014), none declaring a licence (credited in `ATTRIBUTION.md`). The stone stack and the stone plinth description were missing from the Thai and German ones and were written with Claude; none of the three languages was checked by a speaker.
 - Better Architect Menu support: when that mod is loaded, the storage buildings sort into its general, resources and food storage categories (`Patches/BetterArchitectMenu.xml`, gated by `PatchOperationFindMod`). Nothing changes without it.
 - RimWorld 1.7 support: `<li>1.7</li>` in `supportedVersions` (About.xml). XML-only mod, no assembly, no `1.7/` folder. The Pickle run on 1.7 is green (23 of 23 scenarios, 2026-11-16); the declaration goes in with the 1.2.0 release.
 

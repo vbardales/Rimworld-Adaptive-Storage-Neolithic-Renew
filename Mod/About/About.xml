@@ -47,7 +47,7 @@ French: upstream's translation (Elzetia), revised and validated by the maintaine
 
 Russian: upstream's translation (MrBlack-JB); what was corrected here (the two research names, the meal shelf, both plinth descriptions, the stone stack description and both basket descriptions) was done with Claude (Anthropic) and reviewed by ChatGPT (OpenAI), and has not been checked by a Russian speaker.
 
-Thai (SLOST), German (Daedalus) and Chinese (Holarula): translations found on the Workshop, none declaring a licence, integrated with credit to their authors. The stone stack and the stone plinth description were missing from the Thai and German ones and were written with Claude (Anthropic). None of these three languages has been checked by a speaker.
+Thai (SLOST), German (Daedalus) and Chinese (WhyBlyat): translations found on the Workshop, none declaring a licence, integrated with credit to their authors. The stone stack and the stone plinth description were missing from the Thai and German ones and were written with Claude (Anthropic). None of these three languages has been checked by a speaker.
 
 COMPATIBILITY
 
@@ -79,7 +79,7 @@ Soul, Phaneron and bradson, for the mod, the Adaptive Storage Framework (https:/
 
 Elzetia and MrBlack-JB, for the French and Russian translations included upstream.
 
-SLOST, Daedalus and Holarula, for the Thai, German and Chinese translations.
+SLOST, Daedalus and WhyBlyat, for the Thai, German and Chinese translations.
 
 ferny, for Better Architect Menu (https://steamcommunity.com/sharedfiles/filedetails/?id=3563882422), whose storage categories the buildings use when it is loaded. It is optional, not a dependency.
 
