@@ -344,8 +344,7 @@ The Pickle run on RimWorld 1.7 is green (STATUS.md, `tested_1_7: yes`, 2026-11-1
 - Description: pasted on the page, read back identical on 2026-09-24.
 - Dependency: one, fixed above.
 - Gallery: the owner reports having uploaded the noon series on 2026-10-06 (not checkable without a login), with `0-preview.png`. That upload
-  was 9.27 MB for the folder, over the 8 MB limit; the files in `Art/Gallery/` are now recompressed (3.43 MB for `0-preview.png` and the six noon pictures; with the three camp pictures 7 to 9 the whole folder is 4.98 MB). Whether to
-  re-upload them is the owner's call. The live header image is the one published with 1.1.2 (it carries the earlier ModIcon); the Preview regenerated on 2026-10-05 from the new icon source is not on the page yet, since
+  was 9.27 MB for the folder, over the 8 MB limit. The gallery was then rewritten (2026-11, "noon at the camp") and `Art/Gallery/` now holds ten files, 3,752,807 bytes (section 2), under the limit. The new series is not on the page yet: the owner uploads files 0 to 9 at publication. The live header image is the one published with 1.1.2 (it carries the earlier ModIcon); the Preview regenerated on 2026-10-05 from the new icon source is not on the page yet, since
   `update_preview` is off by default; the next publication can send `Mod/About/Preview.png`.
 - Comments: both posted (section 4).
 - Still open, not blocking: the file half of a Steam-copy subscription test is automated and passes
