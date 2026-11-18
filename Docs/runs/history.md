@@ -403,3 +403,112 @@ Moved verbatim from `STATUS.md` (10 entries).
 - `e4da` 1.6 Russian: wrong filter (`07-russian`), refiled as `459c`.
 - `787f` 1.6 en map: partial (66 scenarios, 63 passed, exit 5, in-progress), deleted, refiled as `ff40`.
 - `be4a` 1.7 en map: 140 passed, 6 failed, 10 skipped; the 6 failures are all in the PickleTools own suite (bill steps, surgery steps, ui steps x2, vanilla smoke, watch mode), none in this mod. Parked in `Tests/Pickle/Parked/nr17-map-en-9b6105d` (minified, `RELEASE.md`), forwarded to PiT by the TM.
+
+
+## Moved from STATUS.md at cleanUp[1.2.0], 2026-11-18
+
+### Done entries of `remaining`
+
+  - done 2026-11-18, Steam description: she pasted the new THANKS BBCode on the page ("good enough", 3d4e239); known gap: the gallery mods have no inline links (28 links would pass the 8,000-character limit), their links stay in `ATTRIBUTION.md`, reached by one link in the Thanks paragraph. Page and `Mod/About.xml` text now agree except the old credits still shipped in the 1.2.0 Mod/ until the next update.
+  - done 2026-11-18, camp-gallery comments closed: the 8 already-thanked pages joined `Covers` (`b1143f5`); the 5 others (FashionRIMsta, Fairycore Apparel 2, Cuter Kids, Vanilla Hair Expanded, Vanilla Apparel Expanded) REMOVED on her word ("retire"): in `wsl-deps.camp.map` only because the map was copied from Sanctuary, feature 12 uses vanilla `Apparel_TribalA`, no picture shows them. Removed from PUBLICATION.md (description line, drafts), both ATTRIBUTION.md, About.xml description (synced), register rows `not_applicable`. NOTE: `Mod/` text changed after v1.2.0 (About.xml description, Mod/ATTRIBUTION.md): the Steam page keeps the old credits until the next update; text-only diff review owed (`code_review_sha` stays `f633ca1`). Next: 14.i `runNoRegression`.
+  - done 2026-11-18, 14.h: the 3 translation thanks posted by her (SLOST, Daedalus, WhyBlyat), rows `posted` (`6ccd27e`, `26ffe54`, next commit). Camp-gallery messages: none left to post (see the next line).
+  - done 2026-11-18, 14.g: stage `postOnSteam[1.2.0]`; gallery `1-` to `9-` re-uploaded by her ("fait"), 14.h gallery step done. Open: 3 translation thanks (SLOST 3341668276, Daedalus 3115381045, WhyBlyat 3821420014) then the 8 second and 5 first camp-gallery messages, all `drafted` in `WORKSHOP_COMMENTS.md`, texts in `PUBLICATION.md` section 4; she posts, row to `posted` after each.
+  - done 2026-11-18, 13.f: stage `startWatch[1.2.0]` (protocols read again, AUDIT 11.h and 13.f to 14.i). 14.f watch: GitHub watch of the repo and Workshop comment notifications are hers; session reads none. Open at `postOnSteam` (14.h): her gallery re-upload `1-` to `9-`; the 3 translation thanks and the camp-gallery messages (`WORKSHOP_COMMENTS.md`); `USE_THIS_INSTEAD.md` row is already `posted` (its new-version cell still says 1.6, add 1.7 if she wants).
+  - done 2026-11-18, PUBLISHED 1.2.0: publish run `44216413289` GREEN (publish and tag-and-release, approved by her), SHA `2a726b8e49003d489fe71d264b421eae79d91c20`, tag `v1.2.0` and GitHub release created by the CI, item 3806101377, options preview+description, `PublishedFileId.txt` unchanged. SUBSCRIBE-TEST 2026-11-18 OK (PiI, Steam update seen at About.xml 02:36, diff of the Workshop folder against `git archive v1.2.0` Mod empty, 219 files, supportedVersions 1.6 and 1.7, 7 languages incl. Thai German Chinese, BetterArchitectMenu.xml present; item stays subscribed). Next (13.b): read the public page (description, change note, tags Mod 1.6 1.7, header image) and record; her manual step: re-upload gallery images `1-` to `9-`; `USE_THIS_INSTEAD.md` row; postOnSteam thanks.
+  - FAILED (before, then fixed by her copying the secret) 2026-11-18, publish run `44215821326` (approved by her, SHA `2a726b8`, options preview+description): `Error: STEAM_REFRESH_TOKEN is required` in steam-publish.mjs, nothing sent to Steam, no tag. The secret `STEAM_REFRESH_TOKEN` is missing from the `steam-production` environment of the repo (new rule 2026-11-17, `docs/PUBLISHING-CI.md`). Only she copies Steam secrets (`Rimworld-Release-Admin/docs/OPERATIONS.md`); after she sets it, re-dispatch the same SHA (`dispatch-publish.sh ... --preview --description`, the dry-run stays valid).
+  - done 2026-11-18, 12.c to 12.h: lint -Strict 0 error 0 warning; CHANGELOG `## [1.2.0] - 2026-11-18`; dry-run run `44214963902` GREEN on `2a726b8e49003d489fe71d264b421eae79d91c20` (version 1.2.0, options update_preview=true update_description=true update_title=false, https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/actions/runs/44214963902). Log READ (12.f): version above v1.1.3, change note first line `[h3]1.2.0 - RimWorld 1.7 support[/h3]` with a `[list]` and the CHANGELOG `[url]`, About.xml description equals PUBLICATION.md plain text, header image on the page 659,724 bytes would become 740,897 (sha cd8ca8a8), description 7,383 characters with the diff read (translations, BAM, THANKS, camp mods), tags to send Mod, 1.6, 1.7 (page has Mod, 1.6: adds 1.7), no build project, `DRY RUN: nothing was sent to Steam`. Gallery (10 files in `Art/Gallery`) is uploaded by hand. Stage moved to `publish[1.2.0]`; publish dispatch waits for her word (the SHA to publish is `2a726b8`, later STATUS-only commits do not change it). Before: owner "oui" to leaving `writeReleaseDocs`: 1.7 declared in `f633ca1` (`<li>1.7</li>` in About.xml and the Pickle companion, Preview rendered with badge 1.7, `0-preview.png` copy, sizes in PUBLICATION.md); 8.m text diff `afdec02..f633ca1`: only `supportedVersions` changed in `Mod/`, no defect, `code_review_sha` moved there. Still to do: 12.c lint -Strict (no WARN), 12.d/12.e (date commit `## [1.2.0]`, dry-run on that SHA, read its printed note, 12.f), 12.h (`Mark-ProtocolsRead`, stage `publish[1.2.0]`). Social preview uploaded 2026-11-18 through Chrome on her word ("Oui, fais-le"); `og:image` downloaded, 740,897 bytes, sha256 equal to `Mod/About/Preview.png`, recorded. At `postOnSteam`, after the item shows 1.2.0: post the 3 translation thanks (SLOST, Daedalus, WhyBlyat), decide with her which of the 8 second and 5 first camp-gallery messages go out (`PUBLICATION.md` section 4, `WORKSHOP_COMMENTS.md` rows `drafted`; check each page creator first), `SUBSCRIBE-TEST?` to PiI (13.b), PR to upstream `bbradson/Adaptive-Storage-Neolithic-Module` with the 1.7 declaration (owner yes 2026-10-13), `docs/USE_THIS_INSTEAD.md` read.
+  - note 2026-11-18: older entries (gallery subtitles of 2026-10-16, `@review` captures, basket `drawSize`, the 2026-11-13 to 11-17 move note) are in `Docs/runs/history.md`; the Steam page still holds the old unsubtitled gallery images until she re-uploads `1-` to `9-` (manual step at `publish`).
+  - done 2026-11-18, 1.7 migration (target `v1.2.0`): green 1.7 run 2026-11-16, declaration in `f633ca1`, `tested_1_7: yes`. Tag `v1.2.0` is created by the CI after the dry-run and her approval; the session does not tag. Earlier detail in `Docs/runs/history.md`.
+
+### Dated sections
+
+## Passes (1.1.3, Mod/ tree of `010cc34`)
+
+| Pass | Result |
+| --- | --- |
+| English `map`, `751e` | exit 0, 49 scenarios, 34 passed, 15 skipped (`@requires`). |
+| French `map`, `7cce` | exit 1: one timeout of 1200-tick wait in `12-performance-regression` on loaded host; replayed alone, `6462`, exit 0, 5/5. No French assertion failed. |
+| Russian `map`, `c2a3` | exit 0, 49 scenarios, 34 passed, 15 skipped. |
+| English `stones`, `438d` | exit 0, `passed`, 49 scenarios, 37 passed, 12 skipped. |
+| French `stones`, `0448` | exit 0, `passed`, 37 of 37 passed (replay without gallery features; `ed73` was `in-progress`, superseded). |
+| Camp and noon series (11, 12) | gallery captures, not regression; frames played 2026-10-06 to 08. |
+
+Reads on `exitReason` and scenario count done in 2026-10-08 and 2026-10-09 journal entries (`Docs/runs/history.md`).
+
+
+## Left `playTests[1.1.3]` and `shootGallery[1.1.3]` (2026-10-10), `mountPreview[1.1.3]` (2026-10-10), now: `writeDocs[1.1.3]`
+
+1. Done 2026-10-10: `438d` and `0448` read, green. Nothing left to replay.
+2. Code review `v1.1.2..HEAD`: done 2026-10-10, no defect, `code_review_sha` written.
+3. `shootGallery[1.1.3]` (AUDIT.md step 9): session directs gallery (GALLERY.md, read 2026-10-10). Decided 2026-10-10: three camp pictures owner accepted on 2026-10-08 join noon series as `7-` to `9-`, one story (same noon, tribe comes to same storage), indexes contiguous.
+
+
+## Shotlist (written 2026-11-09, `shootGallery[1.2.0]`, plan only, no capture, no scenario yet)
+
+Story: "Noon at the camp". Nelim (protagonist, the owner's colonist) and Soren (NSB male alter ego, created by the scenario) tidy the neolithic camp of Nelim's tribe on `bare-clearing` (centre (195, 152), plain earth, no roof), 21 C, clear sky. Start 12:00, each picture waits 5 more game minutes (about 208 ticks per 5 min, +60 settle). Same outfit all day: Nelim in the fixture pants and corset plus `Apparel_TribalA` dyed ochre #B8742A, long loose hair (`Roo_Royal_LongHD`, no hat), `face kit is "smile"`; Soren in `Apparel_TribalA` dyed #3B3A36, `face kit is "smile"`. Temperature held at 20 (no sweat). Common decor around the fire: `Campfire` (195,152) lit, two `TorchLamp`, two `Stool`, `VFEPD_TanningRack`, `VFEPD_BrewingBarrel`, `VFEPD_HayBaleLarge`, `Plant_Daylily` fully grown, ash and straw on the ground; each corner has its own cluster. Loose chunks, logs and berries lie about in shot 1 and are stored by shot 8: the tidying is the story. Anonymous NSB fauna only. Decor removed after each picture.
+
+| # | name | time | frame | what the picture says |
+| --- | --- | --- | --- | --- |
+| 1 | camp-1-noon | 12:00 | medium-tight, cells (190,147) to (198,151) (reworked 2026-11-13) | The camp is untidy at noon, the storage waits to be filled. Five storage types on one row (fabric bundle, wood pile, hay pile, meal shelf, basket), campfire between Nelim (log in hand) and Soren (chunk in hand), both facing South so the held item no longer hides the smile; labrador in front; loose chunks, logs and berries on the ground. |
+| 2 | camp-2-baskets | 12:05 | tight, zoom 2.8, baskets foreground | What goes in, shows. Three baskets (empty, one stone, full); Nelim stands by the middle basket facing South (reworked 2026-11-13), nothing in hand (the chunk covered the mouth), smiling; squirrel beside the full basket. Torch and daylily pot behind. |
+| 3 | camp-3-piles | 12:10 | medium-tight, cells (190,148) to (198,152) | Fuel is stacked as it comes. Wood pile with logs and hay pile; Nelim, empty-handed, facing South (2026-11-17: hay in hand hid her mouth facing West and again facing South, 7640), smiling, at the edge of the hay pile; hen "Plume" at (193, 148) facing South eats the hay that fell at (194, 148); Nelim at (195, 148); tanning rack at (198, 148) in the foreground. |
+| 4 | camp-4-pots | 12:15 | tight, zoom 3 | Food for noon. Large pots (berries, milk, grain) lit by a torch; Soren carries a bowl of `Milk` toward the milk pot; labrador noses the pot, seen from the front; hay bale and barrel foreground. |
+| 5 | camp-5-stacks | 12:20 | tight, zoom 2.5 | Stone piles up, in two materials. Granite stacks at 1, 2, 6 chunks and a marble stack of 6; Soren, `ChunkGranite` in hand, at the 2-stack; hare between the stacks. |
+| 6 | camp-6-plinths | 12:25 | tight, zoom 2.5 | The tribe's treasures. Wood plinth with `Gold`, granite plinth empty, vacstone plinth with `Jade`; Nelim, north of them, holds `Silver` and is about to set it on the empty plinth; peacock in the foreground, front view. |
+| 7 | camp-7-another-mod | 12:30 | medium, zoom 4 | A stone from another mod gets its own buildings. Identical pots and stacks of granite and kuratheris's stone side by side; Soren stands smiling beside the andesite stack, empty-handed (the chunk in hand hid his face, 2026-11-15); cat sleeps between. |
+| 8 | camp-8-tidied | 12:40 | medium-tight, same frame as 1 (reworked 2026-11-13) | The camp is tidy: same row of storage now filled, meal shelf with meals; Nelim and Soren facing South, nothing in hand (meal sprite hid the mouths), smiling, by the fire; labrador standing facing South (a lying dog read as a pelt). Mirrors 1. |
+| 9 | window-research-storage | noon | interface window | Research window on the Storage tab, both projects; `window-backdrop-for-height`, cropped, no subtitle; not scored. |
+
+Subtitles (draft, English, to write in `PUBLICATION.md` at the end): 1 "Noon at the camp, and everything still to put away." 2 "What goes in, shows." 3 "Wood and hay, stacked as they come." 4 "Large pots show what they hold." 5 "Stone piles up, in two materials." 6 "The tribe's treasures, on their plinths." 7 "A stone from another mod joins the camp." 8 "Everything in its place: the camp eats at noon."
+
+Per-criterion display (a to g, j; k once):
+
+| # | a time | b decor | c living | d pawns | e action | f composition | g subject | j mod |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 12:00 clear 21C bare-clearing | fire, torches, stools, rack, barrel, hay bale, daylily, loose chunks and logs | labrador front | Nelim ochre tunic, loose hair, smile; Soren dark tunic, smile | Nelim carries log (just picked it up, about to lay it), Soren hauls a chunk | zoom 6 wide, fire centred, dog foreground | untidy camp to fill | storage set visible, five types in frame |
+| 2 | 12:05 | torch, daylily pot, stool, ash | squirrel | Nelim as above | Nelim chunk in hand before the basket | zoom 2.8, baskets foreground, torch background | three baskets fill up | baskets 268 px readable (tight) |
+| 3 | 12:10 | rack, bale, torch, straw | hen | Nelim | Nelim hay in hand at pile | zoom 4, rack foreground | wood and hay piles | piles readable |
+| 4 | 12:15 | torch, bale, barrel, straw | labrador front | Soren | Soren carries milk bowl | zoom 3, pots centre-left | pots show contents | pots with contents |
+| 5 | 12:20 | stool, torch, ash | hare | Soren | Soren chunk in hand at stack | zoom 2.5 tight | stacks grow, two materials | 1/2/6 steps visible |
+| 6 | 12:25 | torch, daylily, stool | peacock front | Nelim | Nelim sets gold on plinth | zoom 2.5 tight | plinths show items | plinth items readable |
+| 7 | 12:30 | barrel, torch, bale | cat | Soren | Soren carries the other stone | zoom 4, side-by-side pots and stacks | other mod stone has its own buildings | colour contrast granite vs that stone, to check |
+| 8 | 12:40 | fire, torches, stools, shelf, bundle | dog asleep | both seated, smiling | both eating | zoom 6 wide | tidy camp at noon | whole set filled |
+
+k (series): one story (who, where, day, rhythm 12:00 to 12:40 by 5 min steps); medium-tight 1 and 8 (same frame, mess then tidy), medium 3 and 7, tight 2, 4, 5, 6; opening 1 (mess) and closing 8 (tidy, mirrors 1). Rework of 2026-11-13: shots 1, 2, 8 after the 31a4 REDO (storage about 12 px at 268, held item over the face): frame cut to 5 rows (about 25 px per cell at 268), pawns facing South like shot 6 (accepted), no baskets or pots in 1 and 8.
+
+Plan confidence (rule of `score-gallery`): 5, 5, 5, 5, 5, 5, 5, 5, mean 5.0 (no capture yet). Risks, not points: kuratheris stone may not contrast enough with granite at 268 px (check on first capture); steps "holds in hand" and "forced into the job" exist in `steps.md` (ColonistRace), exact forced-job target syntax to read at scenario writing; `Apparel_TribalA` dyed colour step to confirm with NPT; interface-hiding steps of NPT may replace this suite's own. Director's pass (Opus sub-agent, 2026-11-09): kept zoom 6 for shot 1, loose items for the "tidying" story, closing shot 8, time-order renumbering, tighter zooms for 3 to 6, split of piles and shelf, no "arm out/stoops/fan tail/points" gestures; not kept: none rejected.
+
+Verdict after the run: to fill (gap between plan and image is what the next shotlist learns from).
+
+## NSB (sync 2026-11-09, `shootGallery[1.2.0]`)
+
+Places read: 2026-11-17 Tribe read: 2026-11-17 Steps read: 2026-11-18 (sync 2026-11-18, git log and stat only at `writeReleaseDocs`, no scenario touched: NPT since 2026-11-17 holds two `face-parts.md` catalogue commits (vanilla face, no vanilla mouth part), no step renamed, our `face kit is "smile"` unaffected; NSB docs since 2026-11-17 concern Iori, Miel, Daichi, Dalia, BiB gene renames and VTW notes, none names Nelim, Soren, the labrador or our two places; nothing to update. Previous: sync 2026-11-17, git log and diffs only, no profile opened: NSB since 2026-11-16 holds docs commits on `VALIDE.md` (Soren validated except the Chaleur outfit, then Chaleur too: nothing the camp shots change, Soren plays as the roster says), `VTW-BODYTYPES.md`, `NEUTRES-TETE.md`, `TESTING.md`; no place, colonist property, animal or catalogue line this suite uses moved; Soren is Male, VTW, not a neutral-head case; no scenario edited, no ticket owed. NPT: no commit on `docs/steps.md` or the catalogues since 2026-11-16. Rechecked 2026-11-17 11:33: two more NSB docs commits (`c5416c1` neutral head and Non-Binary Gender, `503b567` Miel's lipstick), neither names Nelim, Soren, the labrador or our two places; NPT unchanged; nothing to update. The mod adds no animal, rule 5 table stays empty. Earlier note, git log only, 2026-11-16: no NSB commit on docs since `18abf53` (2026-11-12, pure rename), nothing moved. Earlier 2026-11-13: no NSB commit on docs since 2026-11-12, nothing moved. Earlier note of 2026-11-12: the one NSB commit since 2026-11-09, `18abf53`, renames `docs/` to `Docs/` with 0 changed line, so no place, colonist, look or animal moved; no profile opened, Nelim and Soren as of 2026-11-09) (older Steps read 2026-11-16, git log 2026-11-16: NPT since 2026-11-14 added a ColonistRace mouth-offset step (`b6dec3e`, NSB/ACG face), Simple Ivory catalogue scenarios and HoverSteps/StageDecor docs; no step this suite calls renamed or removed, `Check-Steps.ps1` run, see result in the reply. Earlier 2026-11-14: git log 2026-11-14: no NPT commit on `docs/steps.md` or catalogues since 2026-11-13 noon, `Check-Steps.ps1` resolves every line. Earlier 2026-11-13: no NPT commit on `docs/steps.md` or `ColonistRace/docs/catalogues` since 2026-11-12. Earlier note of 2026-11-12: NPT commits since 2026-11-09: filth removal, tab-bar and speed-controls hiding, pot with a grown plant near a cell, decor burns, floors, tick a thing; none renames or removes a step this suite calls, `Check-Steps.ps1` resolves every line; the pot-with-plant step could replace the hand-set daylily pot in shots 1 to 3, to try at the rework)
+
+Owner rules of 2026-11-05 (and 2026-11-06, 2026-11-07) held: all of NSB is free; a colonist or domestic animal outside NSB needs the owner's express validation before the shotlist counts on it; no change to a colonist's properties without it; every outfit free; every animal the mod includes must be in the gallery.
+
+What changed in NSB since the mod's shots (2026-10-08): `calm-zone-close` and `bare-clearing` still exist, both "zone libre", same centres (200, 185) and (195, 152). A decorated save `Nelims-tribe-decor-mods-z3.rws` was copied to `Mod/Pickle/Fixtures` on 2026-11-09; `Nelims-tribe.rws` (the plain save the mod uses) stays the old one until NSB repoints the scenarios, so nothing to change yet. New NPT steps that could replace this suite's hand-made setup (not played, decided at `write-shotlist`): hide learning helper, colonist bar, item and name labels; `the animals except <name> are kept out of the area`; `the temperature of the map is 20 degrees`; `I fill the storage building ... with N things`.
+
+Included animals (rule 5): the mod adds none (storage furniture only), so the table is empty on purpose.
+
+| Place | Shots | Changes made for the gallery | Last read |
+| --- | --- | --- | --- |
+| `calm-zone-close` (noon series) | 1 to 6 | none (cream square kept, animals cleared first) | 2026-11-09 |
+| `bare-clearing` (camp series) | 7 to 9 | camp decor placed by the suite (campfire, torches, stools, rack, barrel); frames kept inside z 147 to 157 | 2026-11-09 |
+
+| Colonist | Shots | Outfit | Last read | Exceptions |
+| --- | --- | --- | --- | --- |
+| Ayla (kind `Colonist`) | camp 7, 8 | vanilla tribal apparel, to verify | none (not in NSB) | outside NSB, dropped 2026-11-09 (no validation), replaced by Nelim and Soren |
+| Doka (kind `Colonist`) | camp 7, 9 | vanilla tribal apparel, to verify | none (not in NSB) | outside NSB, dropped 2026-11-09 (no validation), replaced by Nelim and Soren |
+| Tahu (kind `Colonist`) | camp (one scenario) | vanilla tribal apparel, to verify | none (not in NSB) | outside NSB, dropped 2026-11-09 (no validation), replaced by Nelim and Soren |
+
+Pictures 7 to 9 with Ayla and Doka were accepted by the owner on 2026-10-08, but a past gallery is not a validation under the rule of 2026-11-05. No scenario with these colonists is replayed before the answer.
+
+| Animal | Shots | Outfit | Last read | Exceptions |
+| --- | --- | --- | --- | --- |
+| cat "Mie" | noon 6, camp | none | CATALOGUE-ANIMAUX 2026-11-09 | species is in the NSB save (3 cats, anonymous fauna): free; the name is a scenario handle, never drawn |
+| chicken "Poulette" / "Plume" | noon 1, camp | none | 2026-11-09 | same (8 chickens in the save) |
+| hare "Pomme" | noon 3, camp | none | 2026-11-09 | same (3 hares) |
+| labrador "Biscuit" | noon 4, camp | none | 2026-11-09 | same (2 labradors in the save, anonymous; NSB's named labrador is Shogun, not used) |
+| peacock "Eclat" | noon 5, camp | none | 2026-11-09 | same (3 peacocks) |
+| squirrel "Noisette" | noon 2 | none | 2026-11-09 | same (11 squirrels) |
+
