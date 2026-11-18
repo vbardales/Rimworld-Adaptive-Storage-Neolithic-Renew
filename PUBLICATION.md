@@ -127,6 +127,7 @@ Pictures 1 to 8 have no interface window, so each carries one English line burne
 | 6 | `6-plinths.jpg` | The tribe's treasures, on their plinths. |
 | 7 | `7-another-mod.jpg` | A stone from another mod joins the camp. |
 | 8 | `8-tidied.jpg` | Everything in its place: the camp rests at noon. |
+| 9 | 9-research-window.jpg | none (interface window, no subtitle) |
 
 Header assets already valid:
 
