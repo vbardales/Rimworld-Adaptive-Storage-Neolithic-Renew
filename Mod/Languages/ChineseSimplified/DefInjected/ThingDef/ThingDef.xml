@@ -39,5 +39,5 @@
 
 	<!-- ChunkStorage -->
 	<ASNeolithicChunkStorage.label>石块堆</ASNeolithicChunkStorage.label>
-	<ASNeolithicChunkStorage.description>随意堆叠在一起的石块，可当作简易掩体来使用。</ASNeolithicChunkStorage.description>
+	<ASNeolithicChunkStorage.description>由石块垒成、支撑着其他石块的石块堆。易于制作，也能提供相当有效的掩护。</ASNeolithicChunkStorage.description>
 </LanguageData>

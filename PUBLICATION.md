@@ -213,7 +213,7 @@ Steam change note for the integrated tree. It is an update to the existing item 
 
 ### 1.2.0
 
-Draft: it goes out only after a green Pickle run on RimWorld 1.7 (STATUS.md, `tested_1_7`), together with `<li>1.7</li>` in `supportedVersions`.
+The Pickle run on RimWorld 1.7 is green (STATUS.md, `tested_1_7: yes`, 2026-11-16, 23 of 23). This note goes out with the release, together with `<li>1.7</li>` in `supportedVersions`, which is declared at publication, not before.
 
 ```text
 [h3]1.2.0 - RimWorld 1.7 support[/h3]
