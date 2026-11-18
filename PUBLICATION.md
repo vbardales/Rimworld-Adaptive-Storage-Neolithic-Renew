@@ -102,7 +102,7 @@ Upload files 0 to 9 in order.
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
-| 0 | `Art/Gallery/0-preview.png` | 896 x 504, 741,056 bytes | Copy of the Workshop header image |
+| 0 | `Art/Gallery/0-preview.png` | 896 x 504, 740,897 bytes | Copy of the Workshop header image |
 | 1 | `Art/Gallery/1-camp-noon.jpg` | 1920 x 1080, 335,009 bytes | Untidy camp at noon: five storage types waiting, loose chunks and logs |
 | 2 | `Art/Gallery/2-baskets.jpg` | 1920 x 1080, 318,759 bytes | Three baskets: empty, one stone, full |
 | 3 | `Art/Gallery/3-piles.jpg` | 1920 x 1080, 393,835 bytes | Wood pile and hay pile |
@@ -130,7 +130,7 @@ Pictures 1 to 8 have no interface window, so each carries one English line burne
 
 Header assets already valid:
 
-- `Mod/About/Preview.png`: 896 x 504, 741,056 bytes, below Steam's 1 MiB limit. Recomposed 2026-09-29 to carry
+- `Mod/About/Preview.png`: 896 x 504, 740,897 bytes, below Steam's 1 MiB limit. Recomposed 2026-09-29 to carry
   the detoured ModIcon bottom-left, tilted `+15deg` (owner's rule; `Art/PREVIEW.md`).
 - `Mod/About/ModIcon.png`: 128 x 128, 37,307 bytes, derived from the owner's `Art/ModIcon-source.png` by the renderer (2026-10-05).
 
@@ -284,7 +284,7 @@ The new mod declares the old one as incompatible. Thanks!
 ## 5. Other Steam fields
 
 - Adult-content questionnaire: **No**. The mod contains storage furniture and cartoon item graphics; no mature content is depicted.
-- Tags: no manual action required for the standard tags; RimWorld resends `Mod` and `1.6` on update.
+- Tags: no manual action required for the standard tags; RimWorld resends `Mod`, `1.6` and `1.7` on update (the 1.7 tag needs `update_tags=true`, AUDIT.md "Passe 1.7").
 - Incompatible item: Adaptive Storage Neolithic Module, Workshop id `3033901895`.
 - Visibility: public. Read from the page and API on 2026-09-24 and again on 2026-09-28 (`visibility 0`).
 
@@ -295,7 +295,7 @@ Steam change note for the integrated tree. It is an update to the existing item 
 
 ### 1.2.0
 
-The Pickle run on RimWorld 1.7 is green (STATUS.md, `tested_1_7: yes`, 2026-11-16, 23 of 23). This note goes out with the release, together with `<li>1.7</li>` in `supportedVersions`, which is declared at publication, not before.
+The Pickle run on RimWorld 1.7 is green (STATUS.md, `tested_1_7: yes`, 2026-11-16, 23 of 23). This note goes out with the release. `<li>1.7</li>` is in `supportedVersions` (About.xml and the Pickle companion) since 2026-11-18, in the same commit as the Preview redo (badge 1.7).
 
 ```text
 [h3]1.2.0 - RimWorld 1.7 support[/h3]

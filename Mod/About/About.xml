@@ -3,7 +3,7 @@
   <packageId>nelim.adaptivestorageneolithic</packageId>
   <name>Adaptive Storage Neolithic Renew</name>
   <author>Soul, Phaneron, bradson - 1.6 adapted by Nelim</author>
-  <supportedVersions><li>1.6</li></supportedVersions>
+  <supportedVersions><li>1.6</li><li>1.7</li></supportedVersions>
   <url>https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew</url>
   <modDependencies>
     <li>
