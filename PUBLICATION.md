@@ -80,7 +80,7 @@ ferny, for [Better Architect Menu](https://steamcommunity.com/sharedfiles/filede
 
 [Extra Stone](https://steamcommunity.com/sharedfiles/filedetails/?id=852103845) by Kuratheris, the third-party stone mod that the stone buildings are tested against. It is not a dependency either.
 
-The camp pictures of the gallery were staged with other mods, none of them a dependency (links in ATTRIBUTION.md): Female Body Variants Continued and Female Apparel Variants Continued (DanZinagri and tiagocc0), WDI's Realistic Bodies (Windonsi and Starkz), Facial Animation Performance Patch (astryl), Facial Animation - WIP and Facial Animation - Experimentals (Nals), Vanilla Textures Expanded - Facial Animation (Oracle of Thessia), Akeron Extras - Facial Animations (Newton Zephyr), Vanilla Experimentals for Facial Animation (SunshineyDays), EyeGenes3 (Lucius), Vanilla Expanded Framework with Vanilla Furniture Expanded - Props and Decor (Oskar Potocki, Sarg Bjornson and the Vanilla Expanded team), Roo's HD Hairstyles (continued) (Qux, after Rooboid), Vanilla Hair Expanded (Oskar Potocki, XeoNovaDan), Hat Hair Control (lordfelix), Vanilla Apparel Expanded (Oskar Potocki, Trunken, Sarg Bjornson), FashionRIMsta (Continued) (Mlie, after spoonshortage and Nackblad), Fairycore - Apparel 2 (Faeris), AB's Visible Pants (aedbia), Let's Have a Cat! Continued (akairo, Bernau31), and the Facial Animation add-ons FacialAnimation add closed eyes (Vi, Kirisaki), Visual beauty for Facial Animation (SleepyFrieren), NL Facial Animation - Init Fix (Moshii), NL Facial Animation - Load Fix (CCJ) and Cuter Kids for Facial Animation (ria), and my own [Venus Touch Waistlines](https://github.com/vbardales/Rimworld-Venus-Touch-Waistlines), which fits the clothes to those bodies.
+The camp pictures of the gallery were staged with other mods, none of them a dependency (links in ATTRIBUTION.md): Female Body Variants Continued and Female Apparel Variants Continued (DanZinagri and tiagocc0), WDI's Realistic Bodies (Windonsi and Starkz), Facial Animation Performance Patch (astryl), Facial Animation - WIP and Facial Animation - Experimentals (Nals), Vanilla Textures Expanded - Facial Animation (Oracle of Thessia), Akeron Extras - Facial Animations (Newton Zephyr), Vanilla Experimentals for Facial Animation (SunshineyDays), EyeGenes3 (Lucius), Vanilla Expanded Framework with Vanilla Furniture Expanded - Props and Decor (Oskar Potocki, Sarg Bjornson and the Vanilla Expanded team), Roo's HD Hairstyles (continued) (Qux, after Rooboid), Hat Hair Control (lordfelix), AB's Visible Pants (aedbia), Let's Have a Cat! Continued (akairo, Bernau31), and the Facial Animation add-ons FacialAnimation add closed eyes (Vi, Kirisaki), Visual beauty for Facial Animation (SleepyFrieren), NL Facial Animation - Init Fix (Moshii) and NL Facial Animation - Load Fix (CCJ), and my own [Venus Touch Waistlines](https://github.com/vbardales/Rimworld-Venus-Touch-Waistlines), which fits the clothes to those bodies.
 
 Full attribution and change history: [ATTRIBUTION.md](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/ATTRIBUTION.md). Released under the MIT licence: [LICENSE](https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/blob/main/LICENSE)
 
@@ -189,37 +189,7 @@ Your Chinese version of Adaptive Storage Neolithic Renew, Simplified and Traditi
 
 ### Thank-you comments for the camp gallery mods (drafted 2026-11-18)
 
-The camp series of 2026-11 was staged with every mod of `Tests/Pickle/wsl-deps.camp.map` (copied from the Sanctuary map). The 15 comments of 2026-10-11 cover the older series; the mods below came with the new one and none of the posted comments names this mod. Eight pages (Roo's HD Hairstyles, Hat Hair Control, AB's Visible Pants, four Facial Animation pages, Let's Have a Cat!) were thanked already by other mod sessions: one thank-you per page, ever, so this mod joins their `Covers` and sends nothing (owner, 2026-11-18, "sauf les covered"; their drafts were removed). Five pages had no comment (Fashion RIMsta, Fairycore Apparel 2, Cuter Kids for Facial Animation, Vanilla Hair Expanded, Vanilla Apparel Expanded): first messages, rows `drafted` in `WORKSHOP_COMMENTS.md`. Post after the item shows 1.2.0, three a day at most./ Authors from the About.xml of each mod (PiI, 2026-11-18, from local files): check the creator's name on the page before posting.
-
-**FashionRIMsta (Continued) (Mlie, after spoonshortage and Nackblad)** (3592569869)
-
-```text
-Loaded with the rest of the wardrobe for the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thank you Mlie for keeping FashionRIMsta going, and spoonshortage and Nackblad for the original :)
-```
-
-**Fairycore - Apparel 2 (Faeris)** (3812924898)
-
-```text
-Part of the wardrobe I load to stage the tribe in the gallery of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thank you Faeris :)
-```
-
-**Cuter Kids for Facial Animation (ria)** (3807706870)
-
-```text
-One more piece of the Facial Animation stack behind the faces of the camp pictures in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thank you ria :)
-```
-
-**Vanilla Hair Expanded (Oskar Potocki, XeoNovaDan)** (1888705256)
-
-```text
-The hairstyles of the tribe in the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url] are staged with this loaded. Thank you Oskar Potocki, XeoNovaDan and the Vanilla Expanded team xD
-```
-
-**Vanilla Apparel Expanded (Oskar Potocki, Trunken, Sarg Bjornson)** (1814987817)
-
-```text
-Part of the wardrobe I load to stage the tribe in the camp pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]. Thank you Oskar Potocki, Trunken, Sarg Bjornson and the Vanilla Expanded team :)
-```
+The camp series of 2026-11 was staged with every mod of `Tests/Pickle/wsl-deps.camp.map` (copied from the Sanctuary map). The 15 comments of 2026-10-11 cover the older series; the mods below came with the new one and none of the posted comments names this mod. Eight pages (Roo's HD Hairstyles, Hat Hair Control, AB's Visible Pants, four Facial Animation pages, Let's Have a Cat!) were thanked already by other mod sessions: one thank-you per page, ever, so this mod joins their `Covers` and sends nothing (owner, 2026-11-18, "sauf les covered"; their drafts were removed). Five more mods of the copied `wsl-deps.camp.map` (FashionRIMsta, Fairycore Apparel 2, Cuter Kids for Facial Animation, Vanilla Hair Expanded, Vanilla Apparel Expanded) were removed from the credits and from the comments on 2026-11-18 (owner, "retire"): the map came from the Sanctuary map, feature 12 dresses both pawns in vanilla `Apparel_TribalA` and no picture shows them. No comment is owed.
 
 ### Use This Instead comment (2026-10-11)
 

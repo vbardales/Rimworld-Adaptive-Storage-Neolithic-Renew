@@ -73,18 +73,13 @@ The camp pictures of the gallery were staged with the mods below, none of them a
 - Vanilla Expanded Framework: https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013
 - Vanilla Furniture Expanded - Props and Decor: https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149
 - Roo's HD Hairstyles (continued): https://steamcommunity.com/sharedfiles/filedetails/?id=3559870636
-- Vanilla Hair Expanded: https://steamcommunity.com/sharedfiles/filedetails/?id=1888705256
 - Hat Hair Control: https://steamcommunity.com/sharedfiles/filedetails/?id=3760821540
-- Vanilla Apparel Expanded: https://steamcommunity.com/sharedfiles/filedetails/?id=1814987817
-- FashionRIMsta (Continued): https://steamcommunity.com/sharedfiles/filedetails/?id=3592569869
-- Fairycore - Apparel 2: https://steamcommunity.com/sharedfiles/filedetails/?id=3812924898
 - AB's Visible Pants: https://steamcommunity.com/sharedfiles/filedetails/?id=2986402536
 - Let's Have a Cat! Continued: https://steamcommunity.com/sharedfiles/filedetails/?id=3682940618
 - FacialAnimation add closed eyes: https://steamcommunity.com/sharedfiles/filedetails/?id=3694711465
 - Visual beauty for Facial Animation: https://steamcommunity.com/sharedfiles/filedetails/?id=3685072616
 - NL Facial Animation - Init Fix: https://steamcommunity.com/sharedfiles/filedetails/?id=3609895011
 - NL Facial Animation - Load Fix: https://steamcommunity.com/sharedfiles/filedetails/?id=3721489042
-- Cuter Kids for Facial Animation: https://steamcommunity.com/sharedfiles/filedetails/?id=3807706870
 
 ## AI disclosure
 
