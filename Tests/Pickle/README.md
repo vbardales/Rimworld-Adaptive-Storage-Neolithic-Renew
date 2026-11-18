@@ -1,42 +1,35 @@
 # Adaptive Storage Neolithic Renew Pickle suite
 
-The suite targets the current upstream stone-as-stuff architecture. The runs of 2026-09-21 played the superseded
-Workshop-based version and do not validate the current `Mod/` tree; their raw reports are gone and their summary
-was folded into the 2026-09-29 trim note of `docs/runs/2026-09-23-tested-milestone.md` (originals in
-`git log -p -- docs/runs/`).
+Suite target current upstream stone-as-stuff architecture. 2026-09-21 runs played superseded Workshop-based version, not validate current `Mod/` tree; raw reports gone, summary folded into 2026-09-29 trim note of `docs/runs/2026-09-23-tested-milestone.md` (originals in `git log -p -- docs/runs/`).
 
 ## Companion mod
 
-`Mod/` is a Pickle companion mod. the shared `scripts/Build-PickleSteps.ps1 -ModRoot` compiles three focused step providers:
+`Mod/` = Pickle companion mod. Shared `scripts/Build-PickleSteps.ps1 -ModRoot` compile three focused step providers:
 
-- research-tab navigation and assertions;
+- research-tab navigation + assertions;
 - publication screenshot setup;
-- building and blueprint placement with an explicit stuff `ThingDef`.
+- building + blueprint placement with explicit stuff `ThingDef`.
 
-The stuff-aware steps are required because the current upstream code has one stone pot, one stone plinth
-and one chunk stack, each made from `ASFStoneChunks`; per-stone generated building defs no longer exist.
+Stuff-aware steps required: current upstream has one stone pot, one stone plinth, one chunk stack, each made from `ASFStoneChunks`; per-stone generated building defs gone.
 
 ## Feature coverage
 
-- `01-loads-on-the-framework`: load, research definitions and research window.
-- `02-generated-stones`: retained filename for history; now checks shared stone defs and granite/vacstone as stuff.
-- `03-contents-review`: content-dependent graphics with review captures.
-- `04-save-reload`: persistence, including the stuffed chunk stack.
-- `05-french-names`: French defs and review captures for granite, vacstone and third-party stuff.
-- `06-third-party-stone`: `[K]Extra Stone` accepted through `ASFStoneChunks` without generated defs.
-- `07-russian-names`: exact-case Russian injection and stuffed buildings.
-- `08`: shared PickleTools research-tab coverage (`@requires:nelim.pickletools.research`). The former `09` (English labels)
-  and `10` (French labels) were removed on 2026-09-23: they re-tested the shared tool's label matching, not this mod, and each
-  failed in the other language's pass. The translated labels are asserted by `05` and `07`.
+- `01-loads-on-the-framework`: load, research defs, research window.
+- `02-generated-stones`: filename kept for history; now check shared stone defs + granite/vacstone as stuff.
+- `03-contents-review`: content-dependent graphics, review captures.
+- `04-save-reload`: persistence, incl. stuffed chunk stack.
+- `05-french-names`: French defs + review captures for granite, vacstone, third-party stuff.
+- `06-third-party-stone`: `[K]Extra Stone` accepted via `ASFStoneChunks`, no generated defs.
+- `07-russian-names`: exact-case Russian injection + stuffed buildings.
+- `08`: shared PickleTools research-tab coverage (`@requires:nelim.pickletools.research`). Former `09` (English labels)
+  and `10` (French labels) removed 2026-09-23: re-tested shared tool label matching, not this mod, each
+  failed in other language pass. Translated labels asserted by `05` and `07`.
 - `11-workshop-captures`: six self-navigating publication captures on Nelim's screenshot studio;
-  the 2026-09-22 English Workshop pass completed 6/6 at maximum zoom. The six raw captures were
-  cropped with `scripts/Crop-WorkshopScreenshots.ps1` and still need the owner's visual approval.
+  2026-09-22 English Workshop pass done 6/6 at max zoom. Six raw captures cropped with `scripts/Crop-WorkshopScreenshots.ps1`, still need owner visual approval.
 - `12-performance-regression`: bounded tick-cost comparison for issue #3, from no module building to
-  twenty-four filled large pots, with a post-warm-up control.
+  twenty-four filled large pots, with post-warm-up control.
 
-All visual checks use `@review`: the scenario loads or creates the required state, moves the camera, pauses
-and emits a capture. A reviewer only accepts or rejects the image. There are no audio scenarios and no
-purely manual checks.
+All visual checks use `@review`: scenario load/create required state, move camera, pause, emit capture. Reviewer only accept/reject image. No audio scenarios, no purely manual checks.
 
 ## Build
 
@@ -46,43 +39,41 @@ pwsh -NoProfile -File ../scripts/Build-PickleSteps.ps1 -ModRoot .
 
 ## Required passes
 
-Use the shared WSL launcher and its dependency maps; do not start Windows RimWorld. Run the English pass with every DLC,
-Odyssey English/French/Russian, and `[K]Extra Stone` English/French. Open every `@review` capture and record
-the result directory, scenario totals, exit reason and log assessment in `STATUS.md`.
+Use shared WSL launcher + its dependency maps; no Windows RimWorld. Run English pass with every DLC,
+Odyssey English/French/Russian, `[K]Extra Stone` English/French. Open every `@review` capture, record
+result dir, scenario totals, exit reason, log assessment in `STATUS.md`.
 
-A Core-only pass (all five DLCs off; its map and wrapper were deleted) is **not playable**: the `test-colony` fixture references Royalty, Biotech and Odyssey
-defs and its load hangs until the watchdog kills the game. Use `wsl-deps.map` (all DLCs)
-for the English, French and Russian passes, `wsl-deps.stones.map` for the third-party-stone pass and `wsl-deps.workshop.map` for the
-Workshop captures. Select features by their
-exact filenames: `-Filter Neolithic` is invalid because Pickle does not match that word in the scenario text. On `wsl-deps.map`,
-English plays 01-04, 08 and 12, French plays 05 and Russian plays 07; 06 and the Kura scenario of 05 need `wsl-deps.stones.map` and are
+Core-only pass (all five DLCs off; map + wrapper deleted) **not playable**: `test-colony` fixture reference Royalty, Biotech, Odyssey
+defs, load hang until watchdog kill game. Use `wsl-deps.map` (all DLCs)
+for English, French, Russian passes, `wsl-deps.stones.map` for third-party-stone pass, `wsl-deps.workshop.map` for
+Workshop captures. Select features by exact filenames: `-Filter Neolithic` invalid, Pickle not match that word in scenario text. On `wsl-deps.map`,
+English play 01-04, 08, 12; French play 05; Russian play 07; 06 and Kura scenario of 05 need `wsl-deps.stones.map`,
 skipped on `wsl-deps.map`.
 
 ## Evidence and untracked files
 
-- `tests/Pickle/Evidence/<run>/` is where `Run-PickleWsl.ps1 -EvidenceDir` copies a run's raw report before the lock is released.
-  It stays **on disk and is ignored by git** (a report is tens of thousands of log lines plus screenshots). What is committed is
-  one short text summary per run in `docs/runs/<date>-<pass>.md`: pass, filter, `exitReason`, scenario counts, cause of any
-  failure and the path of the local raw report. Read `exitReason` before the counts. The launcher's rolling archive keeps only
-  five runs and is not evidence, so do not delete `Evidence/` folders that a summary still points to.
-- **What to keep** (`AGENTS.md`, "Test evidence"): per scenario, only the latest report for the revision now in the repository,
-  plus an older one only if it is the sole proof of a check the latest run did not repeat. Delete a report as soon as a newer
-  one replaces it. Before deleting, list what goes and what stays. `STATUS.md` never points at a raw folder: it points at
-  `docs/runs/`. Minify what stays: keep `summary.json`, `summary.md`, `junit.xml` and `evidence-complete.txt`; reduce
-  `Player.log` to its first 100 lines plus every WARN and ERROR line; delete `messages.ndjson`, `report.html` and every
-  screenshot except the `@review` captures a person opened, saved as JPEG (about 1280 px wide, quality 70).
-- Old-style `tests/pickle-run-*`, `tests/audit-*`, `tests/workflow-*audit*` and `tests/translation-validation-*` folders are
-  ignored too, and must not come back.
-- `tests/Pickle/core-en-*.log` are scratch output of the wrapper launches and are ignored.
-- `*.dds` is ignored repository-wide: every texture has a tracked `.png` twin, and RimWorld loads either. Local `.dds` files
-  left on disk are harmless and are never staged.
+- `tests/Pickle/Evidence/<run>/` = where `Run-PickleWsl.ps1 -EvidenceDir` copy run raw report before lock release.
+  Stay **on disk, ignored by git** (report = tens of thousands log lines + screenshots). Committed:
+  one short text summary per run in `docs/runs/<date>-<pass>.md`: pass, filter, `exitReason`, scenario counts, failure cause, path of local raw report. Read `exitReason` before counts. Launcher rolling archive keep only
+  five runs, not evidence; no delete `Evidence/` folders a summary still point to.
+- **What to keep** (`AGENTS.md`, "Test evidence"): per scenario, only latest report for current repo revision,
+  plus older one only if sole proof of check latest run not repeat. Delete report once newer
+  replace it. Before delete, list what go + what stay. `STATUS.md` never point at raw folder: point at
+  `docs/runs/`. Minify what stay: keep `summary.json`, `summary.md`, `junit.xml`, `evidence-complete.txt`; cut
+  `Player.log` to first 100 lines + every WARN and ERROR line; delete `messages.ndjson`, `report.html`, every
+  screenshot except `@review` captures a person opened, saved as JPEG (~1280 px wide, quality 70).
+- Old-style `tests/pickle-run-*`, `tests/audit-*`, `tests/workflow-*audit*`, `tests/translation-validation-*` folders
+  also ignored, must not return.
+- `tests/Pickle/core-en-*.log` = scratch output of wrapper launches, ignored.
+- `*.dds` ignored repo-wide: every texture has tracked `.png` twin, RimWorld load either. Local `.dds` files
+  on disk harmless, never staged.
 
 ## Criteria for `done -> tested` (AUDIT.md, 2026-09-23)
 
-- **No `@wip`.** None remains in the suite (08 and 11 now carry `@requires`, 09 and 10 were removed above). A run needs no
+- **No `@wip`.** None left in suite (08 and 11 now carry `@requires`, 09 and 10 removed above). Run need no
   `-IncludeWip`.
-- **Every conditional scenario has run, in a pass that stages its condition, and its report was read** (`setName`, suite and
-  scenario names, `exitReason`, counts) before it is cited:
+- **Every conditional scenario ran, in pass staging its condition, report read** (`setName`, suite +
+  scenario names, `exitReason`, counts) before cited:
 
   | Condition (`@requires`) | Scenarios | Pass that plays them |
   | --- | --- | --- |
@@ -91,10 +82,10 @@ skipped on `wsl-deps.map`.
   | `Kura.ExtraStone` | 05, all of 06; 11 third-party stone | `wsl-deps.stones.map` in English and French; `wsl-deps.workshop.map` for 11 |
   | `nelim.pickletools.screenshotstudio` | all of 11 | `wsl-deps.sanctuary.map`, English |
 
-  A skipped scenario is not a passed one: a pass without Odyssey or without the stone mod skips their scenarios, so it is never enough alone.
-- **No manual test left to validate.** Every behavior above is an automated scenario; the architect menu, blueprint frames
-  and inspect-pane card are checked statically (`tests/Test-Mod.ps1`) and listed as not covered by a scenario in `STATUS.md`.
-  The `@review` captures are still to be looked at, which is reading an image a scenario has already put in the intended state.
+  Skipped scenario ≠ passed: pass without Odyssey or stone mod skip their scenarios, never enough alone.
+- **No manual test left to validate.** Every behavior above = automated scenario; architect menu, blueprint frames,
+  inspect-pane card checked statically (`tests/Test-Mod.ps1`), listed as not covered by scenario in `STATUS.md`.
+  `@review` captures still need look = read image scenario already put in intended state.
 
-The rewritten suite was played on 2026-09-23 (see `docs/runs/2026-09-23-tested-milestone.md` and `STATUS.md`): every `@requires` condition ran, all green.
-`docs/runs/` was trimmed to that one file on 2026-09-29; it covers the published `1.1.0`/`1.1.1` tree, not the `1.1.2` fix.
+Rewritten suite played 2026-09-23 (see `docs/runs/2026-09-23-tested-milestone.md` and `STATUS.md`): every `@requires` condition ran, all green.
+`docs/runs/` trimmed to that one file 2026-09-29; cover published `1.1.0`/`1.1.1` tree, not `1.1.2` fix.
