@@ -244,48 +244,9 @@ The Pickle run on RimWorld 1.7 is green (STATUS.md, `tested_1_7: yes`, 2026-11-1
 [/list]
 ```
 
-### 1.1.2
-
-```text
-[h3]1.1.2 - Save-compatibility fix[/h3]
-
-[list]
-[*]Fixed a save-compatibility gap: a legacy stone plinth or stacked chunks that had been minified and reinstalled now migrate correctly (large pots already did).
-[*]Removed an inert MayRequire attribute and a leftover comment. No effect on gameplay.
-[*]Refreshed the Workshop header image, now carrying the mod icon.
-[*]French: reworded several building names and descriptions (haystack, log pile, plinths, meal shelf, stone stack).
-[/list]
-```
-
-### 1.1.1
-
-```text
-[h3]Header image[/h3]
-
-[list]
-[*]Updated the Workshop header image. No change to the mod files.
-[/list]
-```
-
-### 1.1.0
-
-```text
-[h3]Upstream source integration[/h3]
-
-[list]
-[*]Rebased the continuation on the original authors' current GitHub source instead of the older Workshop package.
-[*]Integrated the current definitions, balance work, graphics and textures.
-[*]Switched stone storage to the framework's shared ASFStoneChunks stuff category.
-[*]Added the upstream save-migration patch for the former generated stone buildings, blueprints and frames.
-[*]Removed the obsolete continuation DLL and direct Harmony dependency.
-[*]Kept RimWorld 1.6 support and corrected case-sensitive Russian localization paths.
-[*]Corrected the French plinth description and made the French and Russian plinth descriptions independent of the material.
-[/list]
-```
-
 ## Current state
 
-**Published at `1.1.3` (2026-10-11, tag `v1.1.3` at `e47cceb`).** Kept for the record; `STATUS.md` is authoritative on what is still open.
+**Published at `1.2.0` (2026-11-18, tag `v1.2.0` at `2a726b8`, run `44216413289`).** Kept for the record; `STATUS.md` is authoritative on what is still open.
 
 - Workshop item: `3806101377`, public; `Mod/About/PublishedFileId.txt` committed.
 - Released as `1.1.0` (content), `1.1.1` (header image only) and `1.1.2` (back-compat links and basket filter), tags `v1.1.0`, `v1.1.1` and `v1.1.2` created by the CI after each upload. Tag
