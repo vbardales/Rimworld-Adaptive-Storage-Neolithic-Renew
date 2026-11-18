@@ -394,3 +394,12 @@ Moved verbatim from `STATUS.md` (10 entries).
   - unverified: `@review` captures of the `stones` passes: three opened (English: wooden basket full, third-party andesite pot in French; French replay: research window on the Stockage tab, "Stockage néolithique" and "Présentoir néolithique" read correctly). The others were deleted unopened with the raw reports; their scenarios are green and the opened ones show no defect. Decide at `shootGallery` whether more are needed.
   - note: the basket `drawSize` `(2,2)` is seen in game on 1.1.3 (capture of the wooden basket full, `438d`: a basket of normal size, no error).
   - moved 2026-11-18: the dated entries of 2026-11-13 to 2026-11-17 (replays, tickets, gallery rating and acceptance, Preview redo, reviews, resumes) are in `Docs/runs/history.md`, section "STATUS remaining, entries of 2026-11-13 to 2026-11-17", verbatim (45 entries).
+
+## 2026-11-18, non-regression pass on 9b6105d (runNoRegression[1.2.0])
+
+- `53f9` 1.6 en stones: GREEN, 156 scenarios, 149 passed, 7 skipped by design (`Evidence/nr-stones-en-9b6105d`).
+- `bfc5` 1.6 BAM: GREEN 3/3 (`Evidence/nr-bam-en-9b6105d`).
+- `29c3` 1.6 French (`05-french-names`): GREEN 5/5 (`Evidence/nr-fr-9b6105d`); `30be` failed on a wrong filter (`05-french`), refiled.
+- `e4da` 1.6 Russian: wrong filter (`07-russian`), refiled as `459c`.
+- `787f` 1.6 en map: partial (66 scenarios, 63 passed, exit 5, in-progress), deleted, refiled as `ff40`.
+- `be4a` 1.7 en map: 140 passed, 6 failed, 10 skipped; the 6 failures are all in the PickleTools own suite (bill steps, surgery steps, ui steps x2, vanilla smoke, watch mode), none in this mod. Parked in `Tests/Pickle/Parked/nr17-map-en-9b6105d` (minified, `RELEASE.md`), forwarded to PiT by the TM.
