@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: postOnSteam[1.2.0]
+workflow_stage: runNoRegression[1.2.0]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -35,6 +35,7 @@ echo_review_sha: f633ca10a59bb4af8f20a821ee7b717a3138bc1d
 publication_changelog_review_sha: d209863bb67aeea4d0284d47aaf352373882a111
 social_preview_sha256: cd8ca8a833058d1913eb92ec336a70524192dfdd9809016b5f7d9bf0758d55e6
 remaining:
+  - open 2026-11-18, 14.i: stage `runNoRegression[1.2.0]` (owner "oui"), Mod/ frozen at `d54a9a0` (text-only diff to the published `2a726b8`). Six tickets of the non-regression pass: 1.6 en map, 1.6 en stones (without the camp gallery feature), 1.6 BAM (13), 1.6 French (05), 1.6 Russian (07), 1.7 en map. Labels carry the SHA. Verdict in this STATUS and `Docs/runs/history.md`; then 14.j `cleanUp`, `dormant`.
   - done 2026-11-18, Steam description: she pasted the new THANKS BBCode on the page ("good enough", 3d4e239); known gap: the gallery mods have no inline links (28 links would pass the 8,000-character limit), their links stay in `ATTRIBUTION.md`, reached by one link in the Thanks paragraph. Page and `Mod/About.xml` text now agree except the old credits still shipped in the 1.2.0 Mod/ until the next update.
   - done 2026-11-18, camp-gallery comments closed: the 8 already-thanked pages joined `Covers` (`b1143f5`); the 5 others (FashionRIMsta, Fairycore Apparel 2, Cuter Kids, Vanilla Hair Expanded, Vanilla Apparel Expanded) REMOVED on her word ("retire"): in `wsl-deps.camp.map` only because the map was copied from Sanctuary, feature 12 uses vanilla `Apparel_TribalA`, no picture shows them. Removed from PUBLICATION.md (description line, drafts), both ATTRIBUTION.md, About.xml description (synced), register rows `not_applicable`. NOTE: `Mod/` text changed after v1.2.0 (About.xml description, Mod/ATTRIBUTION.md): the Steam page keeps the old credits until the next update; text-only diff review owed (`code_review_sha` stays `f633ca1`). Next: 14.i `runNoRegression`.
   - done 2026-11-18, 14.h: the 3 translation thanks posted by her (SLOST, Daedalus, WhyBlyat), rows `posted` (`6ccd27e`, `26ffe54`, next commit). Camp-gallery messages: none left to post (see the next line).
@@ -56,7 +57,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: a15ba6cfccea582fc26c4706e9629e8aa1151ef5
+protocols_read_sha: 3e013fbde98de8c2ac1e20e1f4d20a4e2334a0ec
 ---
 # Adaptive Storage Neolithic Renew: status
 
