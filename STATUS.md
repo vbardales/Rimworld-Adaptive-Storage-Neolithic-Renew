@@ -25,7 +25,7 @@ settings_audit: not_applicable
 build_audit:  not_applicable (current upstream architecture has no assembly)
 audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfaa (see "Audit 2026-10-10")
 audit_evidence: STATUS.md, "Audit 2026-10-10"; journal of earlier sections in Docs/runs/history.md
-code_review_sha: fe9f283c9223e55fb00105f923941b0a0ffe4138
+code_review_sha: afdec0270443038abae7c38bf613136359db66e2
 session:      local_73e7e49e-129a-4737-8603-ae05c7dafecf
 updated:      2026-11-17
 thanks_drafted_line: 1.2
@@ -35,6 +35,7 @@ echo_review_sha: e6ffabcf077ff792c1b91bd2266f94ccae18c939
 publication_changelog_review_sha: d209863bb67aeea4d0284d47aaf352373882a111
 social_preview_sha256: 00e908d974d71662e1bd0a2cbf4345628902f4aa3f9ffd77efea1128d0663271
 remaining:
+  - done 2026-11-18, 8.m on the text diff `fe9f283..afdec02` (4 files of `Mod/`: `ATTRIBUTION.md`, `About.xml`, two Chinese `ThingDef.xml` descriptions; read by the session, as on 2026-11-17 for a text-only diff): About XML closed, no em dash, no version number in the description, 7,178 characters, Chinese tags balanced, `Check-ModBasics` PASS (its WARN about the GitHub link at the end of the description is older than this diff). No defect, `code_review_sha` moved to `afdec0270443038abae7c38bf613136359db66e2`. Next: 12.c lint, compress-docs, prepare-release, STATUS.md journal move.
   - done 2026-11-18, 11.j: owner validated the reread of the description, update note and CHANGELOG ("je valide la relecture") at `d209863bb67aeea4d0284d47aaf352373882a111` (description with the 13 gallery mods in THANKS, Chinese credit WhyBlyat); `publication_changelog_review_sha` moved there. Next: 8.m diff review of `Mod/`, 12.c lint, compress-docs, prepare-release, STATUS.md journal move.
   - done 2026-11-18, `/review-translation` round 3 of page 1: nothing to apply (no missing key, no proper noun, no upstream PR), `record-round -Applied 0` answered "1/1 pages clean": translation review finished. Notes kept: Russian, Thai and Chinese still unchecked by a speaker (disclosed in the description and CHANGELOG).
   - done 2026-11-18, owner "go": camp gallery mods credited. Drafts for 13 mods of `wsl-deps.camp.map` that no posted comment covered (8 second messages on pages already thanked, 5 first messages: Fashion RIMsta, Fairycore Apparel 2, Cuter Kids, Vanilla Hair Expanded, Vanilla Apparel Expanded; authors from About.xml via PiI, page creators to check before posting) in `PUBLICATION.md` section 4, rows in `WORKSHOP_COMMENTS.md` (`drafted`). Description THANKS names all of them; the 28 Workshop links moved to a new `ATTRIBUTION.md` section "Mods used to stage the gallery" (root and `Mod/`) because the About description hit 9,223 characters, over the 8,000 limit (now 7,345). About.xml synced with `sync-about-description.mjs --write`. Mud's Tribal Apparel, ETRT and TailorMade removed from THANKS and from the ATTRIBUTION gallery list (owner, 2026-11-18, "if not used, no point": absent from `wsl-deps.camp.map` and from feature 12, which dresses both with vanilla `Apparel_TribalA`); their comments posted 2026-10-11 stay, register rows unchanged. About description now 7,178 characters. `code_review_sha` stays reopened, `publication_changelog_review_sha` stale (her 11.j reread).
