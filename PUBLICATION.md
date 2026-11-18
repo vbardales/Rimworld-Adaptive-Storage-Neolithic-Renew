@@ -95,23 +95,23 @@ is the in-game mod-list icon and is not uploaded to the gallery.
 **Every gallery starts with a byte-for-byte copy of the Preview** (owner's rule, 2026-09-29): `0-preview.png`
 is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regenerated. The nine gallery pictures below follow it
 in the intended order. **Limits** (PUBLISHING.md, owner, 2026-10-06): any number of images, the whole folder under 8 MB and each image
-under 2 MB; the folder is 3.33 MB (3,327,285 bytes, ten files), the largest image 0.64 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
+under 2 MB; the folder is 3.75 MB (3,752,807 bytes, ten files), the largest image 0.74 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
 
 Pictures 1 to 8 are one story, "noon at the camp": Nelim and Soren tidy the neolithic camp of Nelim's tribe on the Sanctuary Backlot place `bare-clearing`, one picture every five game minutes from 12:00 to 12:40, played by Pickle feature `12-workshop-camp.feature` on the save `Nelims-tribe` (shotlist in `STATUS.md`). Picture 9 is the research window on the Storage tab, cropped, with no subtitle. The old storehouse and camp series (2026-09 to 2026-10) were removed on 2026-11-09 (`git rm`); the Steam page keeps them until the new gallery is uploaded. The camp is staged with other mods, none a dependency (see THANKS above).
 Upload files 0 to 9 in order.
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
-| 0 | `Art/Gallery/0-preview.png` | 896 x 504, 635,784 bytes | Copy of the Workshop header image |
-| 1 | `Art/Gallery/1-camp-noon.jpg` | 1920 x 1080, 330,570 bytes | Untidy camp at noon: five storage types waiting, loose chunks and logs |
-| 2 | `Art/Gallery/2-baskets.jpg` | 1920 x 1080, 319,832 bytes | Three baskets: empty, one stone, full |
+| 0 | `Art/Gallery/0-preview.png` | 896 x 504, 741,056 bytes | Copy of the Workshop header image |
+| 1 | `Art/Gallery/1-camp-noon.jpg` | 1920 x 1080, 335,009 bytes | Untidy camp at noon: five storage types waiting, loose chunks and logs |
+| 2 | `Art/Gallery/2-baskets.jpg` | 1920 x 1080, 318,759 bytes | Three baskets: empty, one stone, full |
 | 3 | `Art/Gallery/3-piles.jpg` | 1920 x 1080, 393,835 bytes | Wood pile and hay pile |
-| 4 | `Art/Gallery/4-pots.jpg` | 1920 x 1080, 332,501 bytes | Large pots showing berries, milk and grain |
-| 5 | `Art/Gallery/5-stacks.jpg` | 1920 x 1080, 275,997 bytes | Granite stacks at 1, 2 and 6 chunks, and a marble stack |
-| 6 | `Art/Gallery/6-plinths.jpg` | 1920 x 1080, 291,925 bytes | Wood and vacstone plinths showing gold and an item |
+| 4 | `Art/Gallery/4-pots.jpg` | 1920 x 1080, 405,269 bytes | Large pots showing berries, milk and grain |
+| 5 | `Art/Gallery/5-stacks.jpg` | 1920 x 1080, 355,019 bytes | Granite stacks at 1, 2 and 6 chunks, and a marble stack |
+| 6 | `Art/Gallery/6-plinths.jpg` | 1920 x 1080, 292,130 bytes | Wood and vacstone plinths showing gold and an item |
 | 7 | `Art/Gallery/7-another-mod.jpg` | 1920 x 1080, 315,130 bytes | A stone from another mod (Extra Stone) with its own pot and stack beside granite |
-| 8 | `Art/Gallery/8-tidied.jpg` | 1920 x 1080, 328,102 bytes | The same camp, tidy and with storage filled |
-| 9 | `Art/Gallery/9-research-window.jpg` | 1920 x 1080, 153,749 bytes | Research window, Storage tab, both projects (no subtitle) |
+| 8 | `Art/Gallery/8-tidied.jpg` | 1920 x 1080, 332,352 bytes | The same camp, tidy and with storage filled |
+| 9 | `Art/Gallery/9-research-window.jpg` | 1920 x 1080, 264,248 bytes | Research window, Storage tab, both projects (no subtitle) |
 
 ### Gallery subtitles
 
@@ -130,9 +130,9 @@ Pictures 1 to 8 have no interface window, so each carries one English line burne
 
 Header assets already valid:
 
-- `Mod/About/Preview.png`: 896 x 504, 659,724 bytes, below Steam's 1 MiB limit. Recomposed 2026-09-29 to carry
+- `Mod/About/Preview.png`: 896 x 504, 741,056 bytes, below Steam's 1 MiB limit. Recomposed 2026-09-29 to carry
   the detoured ModIcon bottom-left, tilted `+15deg` (owner's rule; `Art/PREVIEW.md`).
-- `Mod/About/ModIcon.png`: 128 x 128, 36,714 bytes, derived from the owner's `Art/ModIcon-source.png` by the renderer (2026-10-05).
+- `Mod/About/ModIcon.png`: 128 x 128, 37,307 bytes, derived from the owner's `Art/ModIcon-source.png` by the renderer (2026-10-05).
 
 ## 3. Dependency to declare on Steam
 
