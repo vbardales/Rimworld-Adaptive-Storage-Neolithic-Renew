@@ -63,7 +63,6 @@ The camp pictures of the gallery were staged with the mods below, none of them a
 - Female Body Variants Continued: https://steamcommunity.com/sharedfiles/filedetails/?id=3798082132
 - Female Apparel Variants Continued: https://steamcommunity.com/sharedfiles/filedetails/?id=3799726535
 - WDI's Realistic Bodies: https://steamcommunity.com/sharedfiles/filedetails/?id=3527486510
-- TailorMade: Unified Apparel & Body Refitting: https://steamcommunity.com/sharedfiles/filedetails/?id=3756915448
 - Facial Animation Performance Patch: https://steamcommunity.com/sharedfiles/filedetails/?id=3790129900
 - Facial Animation - WIP: https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197
 - Facial Animation - Experimentals: https://steamcommunity.com/sharedfiles/filedetails/?id=2581693737
@@ -71,8 +70,6 @@ The camp pictures of the gallery were staged with the mods below, none of them a
 - Akeron Extras - Facial Animations: https://steamcommunity.com/sharedfiles/filedetails/?id=2889716301
 - Vanilla Experimentals for Facial Animation: https://steamcommunity.com/sharedfiles/filedetails/?id=3753978140
 - EyeGenes3: https://steamcommunity.com/sharedfiles/filedetails/?id=3745223213
-- Mud's Tribal Apparel: https://steamcommunity.com/sharedfiles/filedetails/?id=2796703834
-- ETRT: Tribal Apparel (continued): https://steamcommunity.com/sharedfiles/filedetails/?id=3545351721
 - Vanilla Expanded Framework: https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013
 - Vanilla Furniture Expanded - Props and Decor: https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149
 - Roo's HD Hairstyles (continued): https://steamcommunity.com/sharedfiles/filedetails/?id=3559870636
