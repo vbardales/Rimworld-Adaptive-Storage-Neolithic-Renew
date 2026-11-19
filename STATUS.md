@@ -36,7 +36,7 @@ publication_changelog_review_sha: d209863bb67aeea4d0284d47aaf352373882a111
 social_preview_sha256: cd8ca8a833058d1913eb92ec336a70524192dfdd9809016b5f7d9bf0758d55e6
 remaining:
   - note 2026-11-19, new rules read: a `workflow_stage` change is written only by `/mod-workflow:replay-audit` run by the session at the end of a state (AGENTS.md, `stage-replay` check from 2026-11-20); `preview_source_decision` (keep|redo, date) due at `mountPreview` for 1.2.1 (AUDIT 10.a bis).
-  - note 2026-11-19, Preview rules read for `mountPreview` of 1.2.1: reuse the `palette` already in `Art/Preview.config.json`, `panelBare: true` by default (veil only if text zone under 5:1), ModIcon always on the left, opposite vertical end to the panel (AUDIT 10.b, STYLE_RIMWORLD).
+  - note 2026-11-19, Preview rules read for `mountPreview` of 1.2.1: reuse the `palette` already in `Art/Preview.config.json`, `panelBare: true` by default (veil only if text zone under 4.5:1 (5:1 dropped)), ModIcon always on the left, opposite vertical end to the panel (AUDIT 10.b, STYLE_RIMWORLD).
   - open 2026-11-19, target 1.2.1 (owner "go"): fix item offset in the basket (check other containers), then gallery captures of food, one type and several types (see BACKLOG.md). Chain reopened at `ecosystem` (owner: required for a new version), then `code[1.2.1]`.
   - read 2026-11-18, PiT answer (direct) on 1.7 ticket `be4a`: the 6 red scenarios are the PickleTools own suite on 1.7, no ASN refile owed, no PiT fix planned now (evidence gone from Inbox, PickleTools 1.7 diagnostic not run yet). On a future 1.7 refile, filter those 6 out with `!` terms. Celtic (issue #4): still no reply on 2026-11-18, owner checked; no log, nothing to change in `Mod/`. Only testable lead without the log: a scenario with the original `adaptive.storage.neolithic` 3033901895 enabled next to Renew (owner not asked yet, via TM if wanted).
   - done 2026-11-18, 14.c WSL cleanup through PiI (cross-mod check of all wsl-deps maps): only Kura.ExtraStone 852103845 unsubscribed (https://steamcommunity.com/sharedfiles/filedetails/?id=852103845), every other item of my maps is kept because other mods name it; my camp and stones maps still name Extra Stone, so a next non-regression fetches it again. Nothing touched in WSL by this session. Unsubscribe done by PiI (success:1), nothing for the owner. Docs cleaned (`eaf8d27`). Text-only diff review `f633ca1..HEAD` done (About.xml credits line and ATTRIBUTION.md, 5 camp mods removed, anchor exists, XML parses, both ATTRIBUTION copies equal, no defect), `code_review_sha` moved. Open: `dormant` or a new `code` loop.
@@ -54,7 +54,7 @@ remaining:
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
 ecosystem_line: 1.2
-protocols_read_sha: 57b9b5ee5cd8c5d0b0ef01e5583cd49ff57b0cba
+protocols_read_sha: 84dea0af08439d7fc0959374278d5d35f691a26f
 ---
 # Adaptive Storage Neolithic Renew: status
 
