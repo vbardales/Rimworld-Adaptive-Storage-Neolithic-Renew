@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: dormant[1.2.0]
+workflow_stage: ecosystem
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -35,6 +35,7 @@ echo_review_sha: f633ca10a59bb4af8f20a821ee7b717a3138bc1d
 publication_changelog_review_sha: d209863bb67aeea4d0284d47aaf352373882a111
 social_preview_sha256: cd8ca8a833058d1913eb92ec336a70524192dfdd9809016b5f7d9bf0758d55e6
 remaining:
+  - open 2026-11-19, target 1.2.1 (owner "go"): fix item offset in the basket (check other containers), then gallery captures of food, one type and several types (see BACKLOG.md). Chain reopened at `ecosystem` (owner: required for a new version), then `code[1.2.1]`.
   - read 2026-11-18, PiT answer (direct) on 1.7 ticket `be4a`: the 6 red scenarios are the PickleTools own suite on 1.7, no ASN refile owed, no PiT fix planned now (evidence gone from Inbox, PickleTools 1.7 diagnostic not run yet). On a future 1.7 refile, filter those 6 out with `!` terms. Celtic (issue #4): still no reply on 2026-11-18, owner checked; no log, nothing to change in `Mod/`. Only testable lead without the log: a scenario with the original `adaptive.storage.neolithic` 3033901895 enabled next to Renew (owner not asked yet, via TM if wanted).
   - done 2026-11-18, 14.c WSL cleanup through PiI (cross-mod check of all wsl-deps maps): only Kura.ExtraStone 852103845 unsubscribed (https://steamcommunity.com/sharedfiles/filedetails/?id=852103845), every other item of my maps is kept because other mods name it; my camp and stones maps still name Extra Stone, so a next non-regression fetches it again. Nothing touched in WSL by this session. Unsubscribe done by PiI (success:1), nothing for the owner. Docs cleaned (`eaf8d27`). Text-only diff review `f633ca1..HEAD` done (About.xml credits line and ATTRIBUTION.md, 5 camp mods removed, anchor exists, XML parses, both ATTRIBUTION copies equal, no defect), `code_review_sha` moved. Open: `dormant` or a new `code` loop.
   - open 2026-11-18, Workshop comment by Celtic (profile 76561197994297611, pasted by her): "Tried this - with my modlist it caused an infinite load situation launching the game". No version, modlist or log given. Reply POSTED by her 2026-11-18 (links issue #4), awaiting Celtic. Was drafted for her to post (asks RimWorld version, whether the original Adaptive Storage Neolithic Module 3033901895 is still enabled, Better Architect Menu, Player.log). Not reproduced; Pickle passes green on 1.6 and 1.7 with the framework alone and with BAM. Nothing to change in `Mod/` until a log arrives. GitHub issue #4 opened 2026-11-18 (https://github.com/vbardales/Rimworld-Adaptive-Storage-Neolithic-Renew/issues/4).
@@ -50,7 +51,7 @@ remaining:
   - note: Russian vacstone (six entries) was written by Claude from Odyssey's own term and not reviewed by a Russian speaker. Disclosed in the README, both ATTRIBUTION copies, TESTING.md, CHANGELOG and the About description.
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
-protocols_read_sha: d4d9358c61723fa9b658201b61648bb857a3a462
+protocols_read_sha: df8ff0a7d4e76e952d1c64d0c14a47d9c5190420
 ---
 # Adaptive Storage Neolithic Renew: status
 
