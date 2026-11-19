@@ -187,6 +187,10 @@ Danke Daedalus! Your German pack for the Adaptive Storage Neolithic Module now s
 Your Chinese version of Adaptive Storage Neolithic Renew, Simplified and Traditional, is now part of the mod itself with the 1.2.0 update, and credited to you. Thank you WhyBlyat for taking the trouble to translate it lol [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806101377]Adaptive Storage Neolithic Renew[/url]
 ```
 
+**❌ Phaneron's Basic Storage + Adaptive Storage - Neolithic - Русский Язык**
+
+Not used: our Russian stays ours (`Mod/Languages/Russian/`). No comment owed.
+
 ### Thank-you comments for the camp gallery mods (drafted 2026-11-18)
 
 The camp series of 2026-11 was staged with every mod of `Tests/Pickle/wsl-deps.camp.map` (copied from the Sanctuary map). The 15 comments of 2026-10-11 cover the older series; the mods below came with the new one and none of the posted comments names this mod. Eight pages (Roo's HD Hairstyles, Hat Hair Control, AB's Visible Pants, four Facial Animation pages, Let's Have a Cat!) were thanked already by other mod sessions: one thank-you per page, ever, so this mod joins their `Covers` and sends nothing (owner, 2026-11-18, "sauf les covered"; their drafts were removed). Five more mods of the copied `wsl-deps.camp.map` (FashionRIMsta, Fairycore Apparel 2, Cuter Kids for Facial Animation, Vanilla Hair Expanded, Vanilla Apparel Expanded) were removed from the credits and from the comments on 2026-11-18 (owner, "retire"): the map came from the Sanctuary map, feature 12 dresses both pawns in vanilla `Apparel_TribalA` and no picture shows them. No comment is owed.
