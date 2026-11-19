@@ -171,6 +171,7 @@ Source: PiI `docs/inventory/ecosystem-steam/AdaptiveStorageNeolithicRenew.md` (p
 - Licence check 2026-11-16 (Steam pages read in Chrome, files not downloaded): Thai 3341668276 (SLOST, 2024-10-02) and Chinese 3821420014 (WhyBlyat, 2026-10-17) state NO licence; German 3115381045 (Daedalus, updated 2025-08-15) names the original authors and the translator, no licence either. None is open, so none is integrated: AUDIT 8.0 asks an open licence or the author's accord. Options for the owner: ask each author (Steam comment, outward, needs her yes), or write our own Thai, German and Chinese texts declared in the AI sentence. Decision pending.
 - Owner rule 2026-11-16: a translation is treated like any source: licence `open` or `silent` (none declared) means we integrate it (ATTRIBUTION.md, AI sentence, `/review-translation`); only `forbidden` or `alive` with a ban stops it. So the three are candidates unless their files carry a forbidding licence: PiI is subscribing to read the files (asked 2026-11-16).
 - Framework-wide packs (not read): zh 3050506223, ru 3416530713 and 3531849494, Adaptive Primitive Storage zh 3403607869.
+- ❌ Phaneron's Basic Storage + Adaptive Storage - Neolithic - Русский Язык (Russian pack, owner mark 2026-11-19): not used; our Russian stays ours (`Mod/Languages/Russian/`).
 
 ## What makes this sheet stale
 
