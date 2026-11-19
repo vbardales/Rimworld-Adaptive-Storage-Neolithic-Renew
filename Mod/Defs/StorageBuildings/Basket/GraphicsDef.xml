@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<AdaptiveStorage.GraphicsDef Name="ASNeolithicBasketBase" Abstract="True">
+	<AdaptiveStorage.GraphicsDef>
+		<defName>ASNeolithicBasketWoody</defName>
+		<targetDef>ASNeolithicBasketWoody</targetDef>
 		<showContainedItems>true</showContainedItems>
 		<itemGraphics>
 			<columns>
 				<c0>
 					<rows>
 						<r0>
-							<drawOffset>(0,0,0.45)</drawOffset>
+							<drawOffset>(0,0,0.4)</drawOffset>
 							<stackBehaviour>Circle</stackBehaviour>
 							<stackOffsetFactor>0.3</stackOffsetFactor>
 						</r0>
@@ -15,11 +17,6 @@
 				</c0>
 			</columns>
 		</itemGraphics>
-	</AdaptiveStorage.GraphicsDef>
-	
-	<AdaptiveStorage.GraphicsDef ParentName="ASNeolithicBasketBase">
-		<defName>ASNeolithicBasketWoody</defName>
-		<targetDef>ASNeolithicBasketWoody</targetDef>
 		<graphics>
 			<li>
 				<graphicData>
@@ -31,10 +28,24 @@
 			</li>
 		</graphics>
 	</AdaptiveStorage.GraphicsDef>
-	
-	<AdaptiveStorage.GraphicsDef ParentName="ASNeolithicBasketBase">
+
+	<AdaptiveStorage.GraphicsDef>
 		<defName>ASNeolithicBasketFabric</defName>
 		<targetDef>ASNeolithicBasketFabric</targetDef>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<drawOffset>(0,0,0.4)</drawOffset>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffsetFactor>0.3</stackOffsetFactor>
+						</r0>
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
 		<graphics>
 			<li>
 				<graphicData>
