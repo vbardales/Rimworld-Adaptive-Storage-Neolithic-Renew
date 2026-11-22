@@ -178,6 +178,17 @@ Source: PiI `docs/inventory/ecosystem-steam/AdaptiveStorageNeolithicRenew.md` (p
 - Owner rule 2026-11-16: a translation is treated like any source: licence `open` or `silent` (none declared) means we integrate it (ATTRIBUTION.md, AI sentence, `/review-translation`); only `forbidden` or `alive` with a ban stops it. So the three are candidates unless their files carry a forbidding licence: PiI is subscribing to read the files (asked 2026-11-16).
 - Framework-wide packs (not read): zh 3050506223, ru 3416530713 and 3531849494, Adaptive Primitive Storage zh 3403607869.
 - Ecosystem refresh 2026-11-19 (PiI, for 1.2.1, report `docs/inventory/ecosystem-steam/AdaptiveStorageNeolithicRenew.md`): nothing new since 2026-11-16 aimed at our defs, no fork, duplicate, patch, retexture or new translation; Chinese 3821420014 unchanged; verdict unchanged. One optional framework addon added to the links: Adaptive Storage - Global Settings 3530785055 (1.6 1.7). Sibling modules of the framework are not ours. Nothing to do.
+## Shotlist 1.2.1, 2026-11-22 (write-shotlist, header of `12-workshop-camp.feature`)
+
+Two food pictures added to the "noon at the camp" series, placed after an Opus director pass (kept: insert after 1 and before the tidy picture, not after the pots; A medium-tight on the west side, B tight at the fire; items kept in hand low, ground fallback if a mouth is hidden; hen and squirrel in profile instead of a third Biscuit). Props are vanilla or already in the series (VFE Props and Decor), so no Cat request. New order: 1 noon, 2 one-food (new), 3 baskets, 4 piles, 5 pots, 6 stacks, 7 plinths, 8 another-mod, 9 mixed-food (new), 10 tidied, 11 research window. Existing images in `Art/Gallery` keep their old index until `shootGallery`: they are renamed with the new captures (old 2 to 3, 3 to 4, 4 to 5, 5 to 6, 6 to 7, 7 to 8, 8 to 10, 9 to 11), and `PUBLICATION.md` follows.
+
+| # | Scene | a time | b decor | c living | d pawns | e action | f composition | g subject | j mod | plan |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2 | one food in a pot, 12:02, wait 143 | bare-clearing, clear, 20 degrees | torch (189, 153), bale, two daylilies, stool, barrel, fire out of frame | squirrel "Noisette" in profile, daylilies | Nelim Apparel_TribalA (184, 116, 42), Roo_Royal_LongHD, smile | holds "RawPotatoes" (carry tracker, paused), a second one on the ground, about to pour | medium-tight, cells (188, 150) to (194, 154), west side | a pot that holds one food shows that food | potato sprite pot beside the plain pot | 4.5 |
+| 9 | mixed pot, 12:35, wait 1518 | same place, fire lit | campfire, two torches, stool, daylily, barrel | hen "Plume" in profile pecking corn | Soren Apparel_TribalA (59, 58, 54), smile | holds "RawBerries", about to add the third food | tight, cells (192, 150) to (198, 154), at the fire | several foods in one pot show as a mixed pot | mixed sprite beside the single-corn pot | 4.5 |
+
+Series k: `weak` assumed, -0.5 on every scene (no true wide shot: a wide frame loses the storage at 268 px, learned 2026-11-13), so the plan score is 4.5 for the new scenes (the eight older scenes were 5.0 under the earlier reading of k and now read 4.5 the same way). Main risks: the single-corn pot and the mixed pot may read alike at 268 px; a held item may hide a mouth (ground fallback written). Checks: `Check-ShotlistVsScenario` OK, `Check-Steps` OK. No capture yet.
+
 ## What makes this sheet stale
 
 - Run in game: fill `tested_on`, strike from `remaining` what run covered.
