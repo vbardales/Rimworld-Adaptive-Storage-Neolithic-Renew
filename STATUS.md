@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: code[1.2.1]
+workflow_stage: playTests[1.2.1]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -27,7 +27,7 @@ audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfa
 audit_evidence: STATUS.md, "Audit 2026-10-10"; older journal in git history (Docs/runs/history.md, removed 2026-11-19)
 code_review_sha: 2c18d05454e01f40d15302f8ba62b1ce5f627d9f
 session:      local_4ed646b4-613c-4b9b-a049-cbfd6563a269
-updated:      2026-11-19
+updated:      2026-11-22
 thanks_drafted_line: 1.2
 preview_audit: complete (header image published 2026-10-01 with 1.1.2; a newer Preview, 659,724 bytes, is in `Mod/` for 1.1.3 and goes out with `update_preview`)
 modicon_audit: complete
@@ -35,8 +35,8 @@ echo_review_sha: f633ca10a59bb4af8f20a821ee7b717a3138bc1d
 publication_changelog_review_sha: d209863bb67aeea4d0284d47aaf352373882a111
 social_preview_sha256: cd8ca8a833058d1913eb92ec336a70524192dfdd9809016b5f7d9bf0758d55e6
 remaining:
-  - resume 2026-11-22: plinth ticket `20261122-161703-446-337a` GREEN (summary.json 1/1 passed, camp set, exitReason passed; capture read: gold chunk on the wood plinth, green item on the vacstone plinth, items on the tops). 3.a done (plinths fixed, large pots have no offsets to fix), 3.c done (CHANGELOG `[Unreleased]` Fixed entry). Next: replay-audit at the end of the state, then gallery food captures and the tanyfilina reply. Earlier replay 2026-11-22 (owner typed): stage stays code[1.2.1]. Ledger `.replays/AdaptiveStorageNeolithicRenew-20261122.tsv`.
-  - open 2026-11-19, 1.2.1 basket fix: `Mod/Defs/StorageBuildings/Basket/GraphicsDef.xml` (b8cc557, offsets inline, z 0.4, estimated). Ticket `20261119-150206-112-2f45` GREEN 1/1 (summary.json passed, camp set, read 2026-11-22): capture shows the stones inside the basket opening (middle basket one stone, right basket two), z 0.4 holds. Plinths fixed a794414 (owner oui 2026-11-22, same inline offsets 0.42), FILED ticket `20261122-161703-446-337a` (label "plinth item offset a794414", filter `12-workshop-camp::plinths`, camp map, evidence `Tests/Pickle/Inbox/plinth-offset`). Large pots: no item offsets, showContainedItems false, nothing to fix. Next: read plinth capture; CHANGELOG [Unreleased] entry for basket and plinths. Open question for the owner: also fix the plinths (same defect, `Art/Gallery/6-plinths.jpg`)? Then gallery food captures (one type, several types), reply to tanyfilina (draft given 2026-11-19, owner posts), and `/mod-workflow:replay-audit` at the end of each state (stage never written by hand).
+  - replay `code..` 2026-11-22 (owner typed): stage code[1.2.1] to playTests[1.2.1], first open 8.l (no `Docs/runs/pickle.md`, no run line for tickets 2f45 and 337a, `tested_on` still 2026-11-16) then 8.m (code review of `Basket/GraphicsDef.xml` and `Plinth/GraphicsDef.xml` since `code_review_sha` 2c18d054, Opus sub-agent). Ledger `.replays/AdaptiveStorageNeolithicRenew-20261122-code-end.tsv`.
+  - done 2026-11-22, 1.2.1 item offsets: basket b8cc557 (ticket 2f45 GREEN, stones inside the basket opening) and plinths a794414 (ticket `20261122-161703-446-337a` GREEN 1/1, camp set, exitReason passed, capture read: items on the plinth tops). CHANGELOG `[Unreleased]` Fixed entry written. Large pots: no item offsets, nothing to fix. Then: gallery food captures (one type, several types) at `shootGallery`, reply to tanyfilina (draft given 2026-11-19, owner posts), `preview_source_decision` at `mountPreview`.
   - note 2026-11-19, new rules read: a `workflow_stage` change is written only by `/mod-workflow:replay-audit` run by the session at the end of a state (AGENTS.md, `stage-replay` check from 2026-11-20); `preview_source_decision` (keep|redo, date) due at `mountPreview` for 1.2.1 (AUDIT 10.a bis).
   - note 2026-11-19, Preview rules read for `mountPreview` of 1.2.1: reuse the `palette` already in `Art/Preview.config.json`, `panelBare` allowed from 4.5:1 contrast, never required (owner 2026-11-19), with a bare panel and no `icon.corner` the ModIcon is on the left, opposite vertical end to the panel (AUDIT 10.b, STYLE_RIMWORLD).
   - open 2026-11-19, target 1.2.1 (owner "go"): fix item offset in the basket (check other containers), then gallery captures of food, one type and several types (see BACKLOG.md). Chain reopened at `ecosystem` (owner: required for a new version), then `code[1.2.1]`.
@@ -56,7 +56,7 @@ remaining:
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
 ecosystem_line: 1.2
-protocols_read_sha: 64a7e811384d5be26042e5a29d048c0f02769630
+protocols_read_sha: 4ea15f4bcc10e028b55ba085e5ba6d1c5267e5b1
 ---
 # Adaptive Storage Neolithic Renew: status
 
