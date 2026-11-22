@@ -97,37 +97,41 @@ is `Mod/About/Preview.png` copied as-is. Recopy it whenever the Preview is regen
 in the intended order. **Limits** (PUBLISHING.md, owner, 2026-10-06): any number of images, the whole folder under 8 MB and each image
 under 2 MB; the folder is 3.75 MB (3,752,807 bytes, ten files), the largest image 0.74 MB (`node scripts/Compress-Gallery.cjs` recompresses and checks).
 
-Pictures 1 to 8 are one story, "noon at the camp": Nelim and Soren tidy the neolithic camp of Nelim's tribe on the Sanctuary Backlot place `bare-clearing`, one picture every five game minutes from 12:00 to 12:40, played by Pickle feature `12-workshop-camp.feature` on the save `Nelims-tribe` (shotlist in `STATUS.md`). Picture 9 is the research window on the Storage tab, cropped, with no subtitle. The old storehouse and camp series (2026-09 to 2026-10) were removed on 2026-11-09 (`git rm`); the Steam page keeps them until the new gallery is uploaded. The camp is staged with other mods, none a dependency (see THANKS above).
-Upload files 0 to 9 in order.
+Pictures 1 to 10 are one story, "noon at the camp": Nelim and Soren tidy the neolithic camp of Nelim's tribe on the Sanctuary Backlot place `bare-clearing`, one picture every five game minutes from 12:00 to 12:40, played by Pickle feature `12-workshop-camp.feature` on the save `Nelims-tribe` (shotlist in `STATUS.md`). Picture 9 is the research window on the Storage tab, cropped, with no subtitle. The old storehouse and camp series (2026-09 to 2026-10) were removed on 2026-11-09 (`git rm`); the Steam page keeps them until the new gallery is uploaded. The camp is staged with other mods, none a dependency (see THANKS above).
+Upload files 0 to 11 in order.
 
 | # | File | Size | Shows |
 | --- | --- | --- | --- |
 | 0 | `Art/Gallery/0-preview.png` | 896 x 504, 740,897 bytes | Copy of the Workshop header image |
 | 1 | `Art/Gallery/1-camp-noon.jpg` | 1920 x 1080, 335,009 bytes | Untidy camp at noon: five storage types waiting, loose chunks and logs |
-| 2 | `Art/Gallery/2-baskets.jpg` | 1920 x 1080, 318,759 bytes | Three baskets: empty, one stone, full |
-| 3 | `Art/Gallery/3-piles.jpg` | 1920 x 1080, 393,835 bytes | Wood pile and hay pile |
-| 4 | `Art/Gallery/4-pots.jpg` | 1920 x 1080, 405,269 bytes | Large pots showing berries, milk and grain |
-| 5 | `Art/Gallery/5-stacks.jpg` | 1920 x 1080, 355,019 bytes | Granite stacks at 1, 2 and 6 chunks, and a marble stack |
-| 6 | `Art/Gallery/6-plinths.jpg` | 1920 x 1080, 292,130 bytes | Wood and vacstone plinths showing gold and an item |
-| 7 | `Art/Gallery/7-another-mod.jpg` | 1920 x 1080, 315,130 bytes | A stone from another mod (Extra Stone) with its own pot and stack beside granite |
-| 8 | `Art/Gallery/8-tidied.jpg` | 1920 x 1080, 332,352 bytes | The same camp, tidy and with storage filled |
-| 9 | `Art/Gallery/9-research-window.jpg` | 1920 x 1080, 264,248 bytes | Research window, Storage tab, both projects (no subtitle) |
+| 2 | `Art/Gallery/2-one-food.jpg` | 1920 x 1080, size set at shootGallery | A pot that holds one food shows that food, beside an empty pot |
+| 3 | `Art/Gallery/3-baskets.jpg` | 1920 x 1080, 318,759 bytes | Three baskets: empty, one stone, full |
+| 4 | `Art/Gallery/4-piles.jpg` | 1920 x 1080, 393,835 bytes | Wood pile and hay pile |
+| 5 | `Art/Gallery/5-pots.jpg` | 1920 x 1080, 405,269 bytes | Large pots showing berries, milk and grain |
+| 6 | `Art/Gallery/6-stacks.jpg` | 1920 x 1080, 355,019 bytes | Granite stacks at 1, 2 and 6 chunks, and a marble stack |
+| 7 | `Art/Gallery/7-plinths.jpg` | 1920 x 1080, 292,130 bytes | Wood and vacstone plinths showing gold and an item |
+| 8 | `Art/Gallery/8-another-mod.jpg` | 1920 x 1080, 315,130 bytes | A stone from another mod (Extra Stone) with its own pot and stack beside granite |
+| 9 | `Art/Gallery/9-mixed-food.jpg` | 1920 x 1080, size set at shootGallery | Several foods in one pot show as a mixed pot |
+| 10 | `Art/Gallery/10-tidied.jpg` | 1920 x 1080, 332,352 bytes | The same camp, tidy and with storage filled |
+| 11 | `Art/Gallery/11-research-window.jpg` | 1920 x 1080, 264,248 bytes | Research window, Storage tab, both projects (no subtitle) |
 
 ### Gallery subtitles
 
-Pictures 1 to 8 have no interface window, so each carries one English line burned in at the bottom (`../scripts/Add-Subtitle.ps1`, owner rule 2026-10-15). The clean captures are in `Art/Gallery-clean/` (same index, `.jpg`); `Art/Gallery/` holds the subtitled `.jpg` files to upload. `0-` and `9-` have none.
+Pictures 1 to 10 have no interface window, so each carries one English line burned in at the bottom (`../scripts/Add-Subtitle.ps1`, owner rule 2026-10-15). The clean captures are in `Art/Gallery-clean/` (same index, `.jpg`); `Art/Gallery/` holds the subtitled `.jpg` files to upload. `0-` and `9-` have none.
 
 | # | File | Line |
 | --- | --- | --- |
 | 1 | `1-camp-noon.jpg` | Noon at the camp, and everything still to put away. |
-| 2 | `2-baskets.jpg` | What goes in, shows. |
-| 3 | `3-piles.jpg` | Wood and hay, stacked as they come. |
-| 4 | `4-pots.jpg` | Large pots show what they hold. |
-| 5 | `5-stacks.jpg` | Stone piles up, in two materials. |
-| 6 | `6-plinths.jpg` | The tribe's treasures, on their plinths. |
-| 7 | `7-another-mod.jpg` | A stone from another mod joins the camp. |
-| 8 | `8-tidied.jpg` | Everything in its place: the camp rests at noon. |
-| 9 | 9-research-window.jpg | none (interface window, no subtitle) |
+| 2 | `2-one-food.jpg` | One food in the pot, and you see which. |
+| 3 | `3-baskets.jpg` | What goes in, shows. |
+| 4 | `4-piles.jpg` | Wood and hay, stacked as they come. |
+| 5 | `5-pots.jpg` | Large pots show what they hold. |
+| 6 | `6-stacks.jpg` | Stone piles up, in two materials. |
+| 7 | `7-plinths.jpg` | The tribe's treasures, on their plinths. |
+| 8 | `8-another-mod.jpg` | A stone from another mod joins the camp. |
+| 9 | `9-mixed-food.jpg` | TO WRITE at shootGallery after the redo of picture 9. |
+| 10 | `10-tidied.jpg` | Everything in its place: the camp rests at noon. |
+| 11 | 11-research-window.jpg | none (interface window, no subtitle) |
 
 Header assets already valid:
 

@@ -35,7 +35,7 @@ echo_review_sha: f633ca10a59bb4af8f20a821ee7b717a3138bc1d
 publication_changelog_review_sha: d209863bb67aeea4d0284d47aaf352373882a111
 social_preview_sha256: cd8ca8a833058d1913eb92ec336a70524192dfdd9809016b5f7d9bf0758d55e6
 remaining:
-  - FILED 2026-11-22 `20261122-171016-444-08f9` (label "gallery food pictures 2 and 9", filter `12-workshop-camp::one food in a pot,12-workshop-camp::a mixed pot`, DepMap `wsl-deps.camp.map`, evidence `Tests/Pickle/Inbox/food-pots`), tree frozen at the filing commit. Next on RUN_DONE: open both captures, `score-gallery`, redo or keep, then rename the 1.2.0 images to the new indexes, subtitles in `PUBLICATION.md`.
+  - done 2026-11-22 ticket `20261122-171016-444-08f9` GREEN 2/2 (summary.json passed, camp set), both captures opened, 268 px checked. Picture 2 (one food): CANDIDATE (clean original `Art/Gallery-clean/2-one-food.jpg`, proof `Tests/Pickle/Evidence/gal-food-pots-08f9`; held potatoes hide Nelim's mouth, fire shown though the plan says out of frame, both minor). Picture 9 (mixed food): REDO, capture deleted: the mod's mixed pot sprite is the lidded `LargePotMixed.png`, at 268 px it reads as a closed empty pot, criterion j weak and understanding 3.5. 1.2.0 images renamed to the new indexes (3 to 8, 10, 11) in `Art/` and `PUBLICATION.md` (rows for 2 and 9 added). Next: recompose scene 9 (the story must show through items: Soren adding the foods, potatoes, corn and berries on the ground around the lidded pot, tighter on it; rewrite header, `Check-ShotlistVsScenario`), refile one ticket, then burn subtitles (picture 2 line written, 9 to write), `gallery_validated_sha` by the owner (9.f).
   - replay `writeShotlist..` 2026-11-22 (owner typed): writeShotlist[1.2.1] to shootGallery[1.2.1]. 9.0 and 9.0 bis done (plan 4.5, k malus justified). First open 9.a: captures of pictures 2 (one-food) and 9 (mixed-food) not taken. Next: `/mod-workflow:rate-gallery` (DepMap, tickets for scenes 2 and 9 only), then rename the 1.2.0 images to the new indexes (9.b), subtitles, `gallery_validated_sha` by the owner (9.f). Ledger `.replays/AdaptiveStorageNeolithicRenew-20261122-writeShotlist-end.tsv`.
   - done 2026-11-22, 1.2.1 item offsets: basket b8cc557 (ticket 2f45 GREEN, stones inside the basket opening) and plinths a794414 (ticket `20261122-161703-446-337a` GREEN 1/1, camp set, exitReason passed, capture read: items on the plinth tops). CHANGELOG `[Unreleased]` Fixed entry written. Large pots: no item offsets, nothing to fix. Then: gallery food captures (one type, several types) at `shootGallery`, reply to tanyfilina (draft given 2026-11-19, owner posts), `preview_source_decision` at `mountPreview`.
   - note 2026-11-19, new rules read: a `workflow_stage` change is written only by `/mod-workflow:replay-audit` run by the session at the end of a state (AGENTS.md, `stage-replay` check from 2026-11-20); `preview_source_decision` (keep|redo, date) due at `mountPreview` for 1.2.1 (AUDIT 10.a bis).
@@ -57,7 +57,7 @@ remaining:
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
 ecosystem_line: 1.2
-protocols_read_sha: 041e1a590810a4c9a322aae25034a1f081da5eef
+protocols_read_sha: 588afcca9786e7da139bf5e009dab6cd5de1ba13
 ---
 # Adaptive Storage Neolithic Renew: status
 
