@@ -12,7 +12,7 @@
 #   6. camp-6-stacks, 12:20, tight, cells (193, 148) to (201, 152), wait 893. "ASNeolithicChunkStorage" made from "ChunkGranite" at (194, 150) with 1 chunk, (196, 150) with 2, (198, 150) with 6, and made from "ChunkMarble" at (200, 150) with 6; Soren at (196, 152) facing East with "ChunkGranite" in hand; hare "Pomme" at (197, 151); torch (191, 150), stool (197, 152). Says: stone piles up, in two materials.
 #   7. camp-7-plinths, 12:25, tight, cells (193, 148) to (199, 152), wait 1102. "ASNeolithicPlinthWoody" (194, 150) with "Gold", "ASNeolithicPlinthStone" made from "ChunkGranite" (196, 150) empty, made from "ChunkVacstone" (198, 150) with "Jade"; Nelim at (196, 152) facing South with "Silver" in hand, about to set it on the empty plinth (one tile further north than the first run, so she no longer hides it); peacock "Eclat" at (195, 149) in the foreground. Torch (192, 152) and (196, 148), stool (199, 152), barrels and bales around. Says: the tribe's treasures.
 #   8. camp-8-another-mod, 12:30, medium, cells (192, 152) to (201, 156), wait 1310. "ASNeolithicLargePotStone" and "ASNeolithicChunkStorage" made from "ChunkGranite" at (193, 153) and (195, 153), the same two made from "ChunkKura_Andesite" (Extra Stone) at (198, 153) and (200, 153), granite stack of 2 against andesite stack of 6 so the two stacks read as different at 268 px; frame cut to cells (192, 152) to (201, 156) (reworked 2026-11-13 after the 268 px REDO); Soren at (199, 155) facing South, empty-handed and smiling beside the andesite stack (reworked 2026-11-15: the chunk in hand hid his face and smile in the 9ff3255 capture); cat "Mie" at (197, 154). Says: a stone from another mod gets its own buildings. Risk: granite and andesite may be close in colour at 268 px.
-#   9. camp-9-mixed-food, 12:35, tight, around the campfire, cells (192, 150) to (198, 154), wait 1518 (added 2026-11-22 for 1.2.1; director pass: between another-mod and the tidy camp, the fire announces the closing meal). "ASNeolithicLargePot" at (193, 153) holding only "RawCorn" and at (197, 153) holding "RawPotatoes" and "RawCorn" (the mixed pot sprite); "Campfire" (195, 152) lit; Soren at (195, 154) facing South with "RawBerries" in hand, smiling (the moment: he is about to add the berries as a third food to the mixed pot; carry tracker, game paused, no forced job; small item held low, if it hides his mouth the take is a REDO with the berries on the ground); hen "Plume" at (194, 154) facing West, in profile, pecking a loose "RawCorn" at (193, 154). Torch lit (192, 151) and (198, 151), stool (198, 154), daylily (198, 150), barrel (196, 150). Says: several foods in one pot show as a mixed pot, one food shows its own. Risk: the single corn pot and the mixed pot may read alike at 268 px.
+#   9. camp-9-mixed-food, 12:35, tight, around the campfire, cells (193, 151) to (198, 155), wait 1518 (added 2026-11-22 for 1.2.1; recomposed 2026-11-22 after ticket 08f9: the mod's mixed pot sprite is a lid, so at 268 px it read as a closed empty pot; the foods that go in are now shown around it). "ASNeolithicLargePot" at (194, 153) holding only "RawCorn" (the corn sprite) and at (196, 153) holding "RawPotatoes" and "RawCorn" (the lidded mixed pot sprite); on the ground at the foot of the mixed pot a "RawPotatoes" at (195, 154) and "RawBerries" at (197, 154), a loose "RawCorn" at (194, 154) under the corn pot; "Campfire" (195, 151) lit; Soren at (196, 155) facing South, empty-handed and smiling, between the potatoes and the berries (the moment: he has just closed the lid over the potatoes and corn and is about to add the berries; the foods lie on the ground, nothing in hand so the mouth is free; game paused, no forced job); hen "Plume" at (193, 154) facing East, in profile, pecking the loose corn. Torch lit (193, 151) and (198, 151), stool (198, 154), daylily (198, 153), barrel (197, 151). Says: foods go into a pot, several foods share one lidded pot, one food shows its own. Risk: at 268 px the lid still hides what is inside, the story reads through the foods lying around it and the corn pot beside it.
 #   10. camp-10-tidied, 12:40, medium-tight (reworked 2026-11-13: meal sprite hid both faces, storage tiny), cells (190, 148) to (198, 152), wait 1727. Same storage and decor as picture 1, now filled ("Cloth", "WoodLog", "Hay", "MealSimple" on the shelf, "Cloth" and "Steel" in the basket); Nelim at (193, 151) and Soren at (197, 151), both facing South, nothing in hand (the meal sprite hid the mouths, 03dd); labrador "Biscuit" standing at (196, 151) facing South (lying dog read as a pelt, 249e; NPT: no head-raised pose); stools (192, 152) and (198, 152) stay empty (a seated pawn faces the stool, not the camera). Says: the camp is tidy, the tribe rests at noon (mirrors picture 1).
 #   11. window-research-storage: interface window (research window, Storage tab), taken on the Sanctuary place `window-backdrop-for-height` (bamboo backdrop, rule of 2026-10-06), cropped, no subtitle, not scored. Reworked 2026-11-17 (owner: wrong map, the 2026-11-15 capture came from the test colony of feature 08): played here on the save "Nelims-tribe", Storage tab opened by its translation key.
 # Subtitles are written in PUBLICATION.md ("Gallery subtitles") once the gallery is finished.
@@ -406,7 +406,7 @@ Feature: the camp pictures of the Workshop page
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: the decor is removed
 
-  # 9. 12:35, tight: several foods in one pot show as a mixed pot.
+  # 9. 12:35, tight (recomposed 2026-11-22 after the 08f9 capture: the mixed pot sprite is a lid, so the foods that go in are shown on the ground around it): a lidded pot shows several foods went in, a single-food pot shows its own.
   Scenario: a mixed pot of potatoes and corn beside a corn pot, Soren by the fire
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
@@ -414,31 +414,32 @@ Feature: the camp pictures of the Workshop page
     And I set the hour to 12
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 152)
-    And Nelim's Pickle Tools: the decor "Campfire" at (195, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (192, 151)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (192, 151) is lit
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (195, 151)
+    And Nelim's Pickle Tools: the decor "Campfire" at (195, 151) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (193, 151)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 151) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (198, 151)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (198, 151) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" at (198, 154)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (198, 150) fully grown
-    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (196, 150)
-    And a "ASNeolithicLargePot" is built at (193, 153)
-    And a "ASNeolithicLargePot" is built at (197, 153)
-    And I spawn a "RawCorn" at (193, 153)
-    And I spawn a "RawPotatoes" at (197, 153)
-    And I spawn a "RawCorn" at (197, 153)
-    And I spawn a "RawCorn" at (193, 154)
-    And Nelim's Pickle Tools: I frame the cells (192, 150) to (198, 154) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (198, 153) fully grown
+    And Nelim's Pickle Tools: I place the decor "VFEPD_BrewingBarrel" at (197, 151)
+    And a "ASNeolithicLargePot" is built at (194, 153)
+    And a "ASNeolithicLargePot" is built at (196, 153)
+    And I spawn a "RawCorn" at (194, 153)
+    And I spawn a "RawPotatoes" at (196, 153)
+    And I spawn a "RawCorn" at (196, 153)
+    And I spawn a "RawCorn" at (194, 154)
+    And I spawn a "RawPotatoes" at (195, 154)
+    And I spawn a "RawBerries" at (197, 154)
+    And Nelim's Pickle Tools: I frame the cells (193, 151) to (198, 155) filling 85 percent of the screen
     When I wait 1518 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Plume" is spawned at (194, 154)
-    And Nelim's Pickle Tools: the animal "Plume" stands at (194, 154) facing West
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Plume" is spawned at (193, 154)
+    And Nelim's Pickle Tools: the animal "Plume" stands at (193, 154) facing East
     And game speed is paused
     And Nelim's Pickle Tools: a colonist "Soren" exists
     And Nelim's Pickle Tools: "Soren" gender is male
     And Nelim's Pickle Tools: "Soren" wears "Apparel_TribalA" dyed rgb (59, 58, 54)
-    And Nelim's Pickle Tools: "Soren" stands at (195, 154) facing South
-    And Nelim's Pickle Tools: the colonist "Soren" holds "RawBerries" in hand
+    And Nelim's Pickle Tools: "Soren" stands at (196, 155) facing South
     And Nelim's Pickle Tools: "Soren" face kit is "smile"
     And Nelim's Pickle Tools: the other colonists are out of frame
     And I hide the interface for the Adaptive Storage Neolithic Renew Workshop captures
@@ -447,7 +448,6 @@ Feature: the camp pictures of the Workshop page
     When I bring the interface back after the Adaptive Storage Neolithic Renew Workshop captures
     And Nelim's Pickle Tools: the decor is removed
 
-  # 10. 12:40, medium-tight: the camp is tidy, the storage is filled, the tribe rests by the fire at noon.
   Scenario: the tidy camp, Nelim and Soren by the fire
     Given the save "Nelims-tribe" is loaded
     And Nelim's Pickle Tools: all animals are removed
