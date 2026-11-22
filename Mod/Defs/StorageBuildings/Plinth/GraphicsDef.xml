@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<AdaptiveStorage.GraphicsDef Name="ASNeolithicPlinthGraphicBase" Abstract="True">
+	<AdaptiveStorage.GraphicsDef>
+		<defName>ASNeolithicPlinthWoody</defName>
+		<targetDef>ASNeolithicPlinthWoody</targetDef>
+		<showContainedItems>true</showContainedItems>
 		<itemGraphics>
 			<columns>
 				<c0>
@@ -12,12 +15,6 @@
 				</c0>
 			</columns>
 		</itemGraphics>
-		<showContainedItems>true</showContainedItems>
-	</AdaptiveStorage.GraphicsDef>
-
-	<AdaptiveStorage.GraphicsDef ParentName="ASNeolithicPlinthGraphicBase">
-		<defName>ASNeolithicPlinthWoody</defName>
-		<targetDef>ASNeolithicPlinthWoody</targetDef>
 		<graphics>
 			<li>
 				<graphicData>
@@ -30,11 +27,23 @@
 		</graphics>
 	</AdaptiveStorage.GraphicsDef>
 
-	<AdaptiveStorage.GraphicsDef ParentName="ASNeolithicPlinthGraphicBase">
+	<AdaptiveStorage.GraphicsDef>
 		<defName>ASNeolithicPlinthStone</defName>
 		<targetDefs>
 			<li>ASNeolithicPlinthStone</li>
 		</targetDefs>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<drawOffset>(0,0,0.42)</drawOffset>
+						</r0>
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
 		<graphics>
 			<li>
 				<graphicData>
