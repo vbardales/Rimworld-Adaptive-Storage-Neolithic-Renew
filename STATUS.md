@@ -19,13 +19,13 @@ dependencies: declared
 workshop_required_items: done, 2026-11-16 (read in Chrome on the live page of 3806101377: "Éléments requis" lists Adaptive Storage Framework)
 showcase:     complete
 tested_1_7:   yes
-tested_on:    2026-11-16 pickle 093fc9f (1.7 en map 51fc green 23/23; 1.6 stones en 5406 green 30/30; Russian 6e7f green 2/2; BAM 37cc and cdda red 0/3 then dc4e GREEN 3/3 on 33ca61f 2026-11-17 after the patch defName fix); earlier 2026-11-07 pickle 3280d85 (1.7 en map cd58 green, 23 passed 2 skipped); 1.6 stones passes of 2026-10-10 on 92fcfaa, see "Passes"
+tested_on:    2026-11-22 pickle a794414 (plinths 337a green 1/1, basket 2f45 green 1/1, camp set 1.6, see Docs/runs/pickle.md); earlier 2026-11-16 pickle 093fc9f (1.7 en map 51fc green 23/23; 1.6 stones en 5406 green 30/30; Russian 6e7f green 2/2; BAM 37cc and cdda red 0/3 then dc4e GREEN 3/3 on 33ca61f 2026-11-17 after the patch defName fix); earlier 2026-11-07 pickle 3280d85 (1.7 en map cd58 green, 23 passed 2 skipped); 1.6 stones passes of 2026-10-10 on 92fcfaa, see "Passes"
 workshop:     3806101377
 settings_audit: not_applicable
 build_audit:  not_applicable (current upstream architecture has no assembly)
 audit_revision: 2026-10-10, full re-audit against the current AUDIT.md at 92fcfaa (see "Audit 2026-10-10")
 audit_evidence: STATUS.md, "Audit 2026-10-10"; older journal in git history (Docs/runs/history.md, removed 2026-11-19)
-code_review_sha: 2c18d05454e01f40d15302f8ba62b1ce5f627d9f
+code_review_sha: f8e97651ebfe90e6d9c02bd311f5617e4cfca318
 session:      local_4ed646b4-613c-4b9b-a049-cbfd6563a269
 updated:      2026-11-22
 thanks_drafted_line: 1.2
@@ -35,7 +35,7 @@ echo_review_sha: f633ca10a59bb4af8f20a821ee7b717a3138bc1d
 publication_changelog_review_sha: d209863bb67aeea4d0284d47aaf352373882a111
 social_preview_sha256: cd8ca8a833058d1913eb92ec336a70524192dfdd9809016b5f7d9bf0758d55e6
 remaining:
-  - replay `code..` 2026-11-22 (owner typed): stage code[1.2.1] to playTests[1.2.1], first open 8.l (no `Docs/runs/pickle.md`, no run line for tickets 2f45 and 337a, `tested_on` still 2026-11-16) then 8.m (code review of `Basket/GraphicsDef.xml` and `Plinth/GraphicsDef.xml` since `code_review_sha` 2c18d054, Opus sub-agent). Ledger `.replays/AdaptiveStorageNeolithicRenew-20261122-code-end.tsv`.
+  - replay `code..` 2026-11-22 (owner typed): stage code[1.2.1] to playTests[1.2.1], first open was 8.l and 8.m: both done 2026-11-22 (Docs/runs/pickle.md with the two runs, tested_on updated; Opus review of the two GraphicsDef files since 2c18d054: no defect, code_review_sha moved to f8e97651ebfe90e6d9c02bd311f5617e4cfca318). Next: replay-audit to move on. Ledger `.replays/AdaptiveStorageNeolithicRenew-20261122-code-end.tsv`.
   - done 2026-11-22, 1.2.1 item offsets: basket b8cc557 (ticket 2f45 GREEN, stones inside the basket opening) and plinths a794414 (ticket `20261122-161703-446-337a` GREEN 1/1, camp set, exitReason passed, capture read: items on the plinth tops). CHANGELOG `[Unreleased]` Fixed entry written. Large pots: no item offsets, nothing to fix. Then: gallery food captures (one type, several types) at `shootGallery`, reply to tanyfilina (draft given 2026-11-19, owner posts), `preview_source_decision` at `mountPreview`.
   - note 2026-11-19, new rules read: a `workflow_stage` change is written only by `/mod-workflow:replay-audit` run by the session at the end of a state (AGENTS.md, `stage-replay` check from 2026-11-20); `preview_source_decision` (keep|redo, date) due at `mountPreview` for 1.2.1 (AUDIT 10.a bis).
   - note 2026-11-19, Preview rules read for `mountPreview` of 1.2.1: reuse the `palette` already in `Art/Preview.config.json`, `panelBare` allowed from 4.5:1 contrast, never required (owner 2026-11-19), with a bare panel and no `icon.corner` the ModIcon is on the left, opposite vertical end to the panel (AUDIT 10.b, STYLE_RIMWORLD).
