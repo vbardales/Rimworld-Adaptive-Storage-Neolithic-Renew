@@ -61,7 +61,7 @@ remaining:
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
 ecosystem_line: 1.2
-protocols_read_sha: c207dde0fcaa08952c65b9944d65c0b454d2a2a8
+protocols_read_sha: ac969cb1e1b801c112953243677f1c1507c8914a
 ---
 # Adaptive Storage Neolithic Renew: status
 
