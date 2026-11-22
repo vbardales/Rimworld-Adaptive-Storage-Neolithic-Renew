@@ -2,6 +2,12 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased]
+
+### Fixed
+
+- Baskets and plinths: the item offsets are now written in each def. The inherited ones were not applied, so contained items were drawn outside the basket opening and off the plinth top. Checked in game with a Pickle run (stones inside the baskets, items on the plinths).
+
 ## [1.2.0] - 2026-11-18
 
 ### Added
