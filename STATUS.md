@@ -35,7 +35,7 @@ echo_review_sha: f633ca10a59bb4af8f20a821ee7b717a3138bc1d
 publication_changelog_review_sha: d209863bb67aeea4d0284d47aaf352373882a111
 social_preview_sha256: cd8ca8a833058d1913eb92ec336a70524192dfdd9809016b5f7d9bf0758d55e6
 remaining:
-  - open 2026-11-19, 1.2.1 basket fix: `Mod/Defs/StorageBuildings/Basket/GraphicsDef.xml` (b8cc557, offsets inline, z 0.4, estimated). FILED ticket `20261119-150206-112-2f45` (label "basket item offset b8cc557", `-Filter 12-workshop-camp::three baskets`, map wsl-deps.camp.map, `-SkipDefCheck` because Extra Stone 852103845 is unsubscribed; evidence `Tests/Pickle/Inbox/basket-offset`). Next: read capture; item in the opening: check the other containers; else adjust z. Open question for the owner: also fix the plinths (same defect, `Art/Gallery/6-plinths.jpg`)? Then gallery food captures (one type, several types), reply to tanyfilina (draft given 2026-11-19, owner posts), and `/mod-workflow:replay-audit` at the end of each state (stage never written by hand).
+  - open 2026-11-19, 1.2.1 basket fix: `Mod/Defs/StorageBuildings/Basket/GraphicsDef.xml` (b8cc557, offsets inline, z 0.4, estimated). Ticket `20261119-150206-112-2f45` GREEN 1/1 (summary.json passed, camp set, read 2026-11-22): capture shows the stones inside the basket opening (middle basket one stone, right basket two), z 0.4 holds. Next: check the other containers (pots, plinths), then Inbox `basket-offset` deleted once digested. Open question for the owner: also fix the plinths (same defect, `Art/Gallery/6-plinths.jpg`)? Then gallery food captures (one type, several types), reply to tanyfilina (draft given 2026-11-19, owner posts), and `/mod-workflow:replay-audit` at the end of each state (stage never written by hand).
   - note 2026-11-19, new rules read: a `workflow_stage` change is written only by `/mod-workflow:replay-audit` run by the session at the end of a state (AGENTS.md, `stage-replay` check from 2026-11-20); `preview_source_decision` (keep|redo, date) due at `mountPreview` for 1.2.1 (AUDIT 10.a bis).
   - note 2026-11-19, Preview rules read for `mountPreview` of 1.2.1: reuse the `palette` already in `Art/Preview.config.json`, `panelBare` allowed from 4.5:1 contrast, never required (owner 2026-11-19), with a bare panel and no `icon.corner` the ModIcon is on the left, opposite vertical end to the panel (AUDIT 10.b, STYLE_RIMWORLD).
   - open 2026-11-19, target 1.2.1 (owner "go"): fix item offset in the basket (check other containers), then gallery captures of food, one type and several types (see BACKLOG.md). Chain reopened at `ecosystem` (owner: required for a new version), then `code[1.2.1]`.
@@ -55,7 +55,7 @@ remaining:
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
 ecosystem_line: 1.2
-protocols_read_sha: a0a66f5711b98dad173a64b7edd36d24c2924464
+protocols_read_sha: 9076dc7ed32ed99800d4f0026157da2053469dd4
 ---
 # Adaptive Storage Neolithic Renew: status
 
