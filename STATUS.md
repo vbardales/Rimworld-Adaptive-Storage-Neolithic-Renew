@@ -7,7 +7,7 @@ packageId:    nelim.adaptivestorageneolithic
 repo:         Rimworld-Adaptive-Storage-Neolithic-Renew
 visibility:   public
 detached:     yes
-workflow_stage: writeShotlist[1.2.1]
+workflow_stage: shootGallery[1.2.1]
 licence:      open
 licence_at:   the mod's LICENSE file, MIT, and its README says so too
 upstream_mod_remotes:
@@ -35,7 +35,7 @@ echo_review_sha: f633ca10a59bb4af8f20a821ee7b717a3138bc1d
 publication_changelog_review_sha: d209863bb67aeea4d0284d47aaf352373882a111
 social_preview_sha256: cd8ca8a833058d1913eb92ec336a70524192dfdd9809016b5f7d9bf0758d55e6
 remaining:
-  - replay `writeShotlist..` 2026-11-22 (session run): 9.0 and 9.0 bis done (plan 4.5, k malus assumed and justified: a wide frame loses the storage at 268 px, criterion j weighs more; owner delegated the choice). First open 9.a: captures of pictures 2 and 9 not taken. Proposed stage shootGallery[1.2.1], awaiting the owner oui. Next: `rate-gallery` (DepMap, tickets for scenes 2 and 9 only), then rename the old images to the new indexes.
+  - replay `writeShotlist..` 2026-11-22 (owner typed): writeShotlist[1.2.1] to shootGallery[1.2.1]. 9.0 and 9.0 bis done (plan 4.5, k malus justified). First open 9.a: captures of pictures 2 (one-food) and 9 (mixed-food) not taken. Next: `/mod-workflow:rate-gallery` (DepMap, tickets for scenes 2 and 9 only), then rename the 1.2.0 images to the new indexes (9.b), subtitles, `gallery_validated_sha` by the owner (9.f). Ledger `.replays/AdaptiveStorageNeolithicRenew-20261122-writeShotlist-end.tsv`.
   - done 2026-11-22, 1.2.1 item offsets: basket b8cc557 (ticket 2f45 GREEN, stones inside the basket opening) and plinths a794414 (ticket `20261122-161703-446-337a` GREEN 1/1, camp set, exitReason passed, capture read: items on the plinth tops). CHANGELOG `[Unreleased]` Fixed entry written. Large pots: no item offsets, nothing to fix. Then: gallery food captures (one type, several types) at `shootGallery`, reply to tanyfilina (draft given 2026-11-19, owner posts), `preview_source_decision` at `mountPreview`.
   - note 2026-11-19, new rules read: a `workflow_stage` change is written only by `/mod-workflow:replay-audit` run by the session at the end of a state (AGENTS.md, `stage-replay` check from 2026-11-20); `preview_source_decision` (keep|redo, date) due at `mountPreview` for 1.2.1 (AUDIT 10.a bis).
   - note 2026-11-19, Preview rules read for `mountPreview` of 1.2.1: reuse the `palette` already in `Art/Preview.config.json`, `panelBare` allowed from 4.5:1 contrast, never required (owner 2026-11-19), with a bare panel and no `icon.corner` the ModIcon is on the left, opposite vertical end to the panel (AUDIT 10.b, STYLE_RIMWORLD).
@@ -56,7 +56,7 @@ remaining:
   - note: in French and Russian the stone's own name keeps the English word "chunk" ("Grand pot en granite chunk"). It comes from the chunk def and upstream dropped the translation hook. Not a defect of this mod.
   - note: French validated by Virginie 2026-10-08 (corrections applied, `FRENCH_REVIEW.md` regenerated). English is upstream's and untouched.
 ecosystem_line: 1.2
-protocols_read_sha: da9d9779ffdb51fb7b3c88e8184b34a32781deb6
+protocols_read_sha: 041e1a590810a4c9a322aae25034a1f081da5eef
 ---
 # Adaptive Storage Neolithic Renew: status
 
